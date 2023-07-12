@@ -1,0 +1,11 @@
+bookdown::gitbook:
+  css: style.css
+  config:
+    toc:
+      before: |
+        <li><a href="./">Pacific Salmon Explorer Technical Report</a></li>
+      after: |
+        <li><a href="https://www.salmonwatersheds.ca" target="blank">Salmon Watersheds Program</a></li>
+         <li><a href="https://www.psf.ca" target="blank">Pacific Salmon Foundation</a></li>
+    edit: https://github.com/USERNAME/REPO/edit/BRANCH/%s
+ 

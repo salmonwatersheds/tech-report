@@ -2,7 +2,7 @@
 
 ## Using Indicators to Inform the Status of Salmon and Steelhead Conservation Units and their Habitats { .unnumbered}
 
-We apply a suite of indicators to assess both the biological and habitat status of salmon and steelhead CUs. Defined as “measures of pressures, states, and/or responses,” indicators depict the condition of species, habitats, and/or systems to improve one’s understanding of the linkages among drivers, stressors, conditions, and management actions (ESSA, 2020).  The indicators and approach that we use align with Strategies 1 and 2 of the Wild Salmon Policy (DFO, 2005) that call for standardized assessment and monitoring of the salmon CUs and their freshwater habitats Holt et al., 2009; Stalberg et al., 2009). 
+We apply a suite of indicators to assess both the biological and habitat status of salmon and steelhead CUs. Defined as "measures of pressures, states, and/or responses", indicators depict the condition of species, habitats, and/or systems to improve one’s understanding of the linkages among drivers, stressors, conditions, and management actions (ESSA, 2020).  The indicators and approach that we use align with Strategies 1 and 2 of the Wild Salmon Policy (DFO, 2005) that call for standardized assessment and monitoring of the salmon CUs and their freshwater habitats Holt et al., 2009; Stalberg et al., 2009). 
 
 Relevant salmon and steelhead indicators for informing biological and habitat status have several criteria: 
 
@@ -43,27 +43,27 @@ To characterize key salmon and steelhead population dynamics, temporal trends in
 * hatchery release data, and 
 * recruits-per-spawner datasets. 
 
-The data sources and synthesis vary between the North and Central Coast (Nass, Skeena, Central Coast Regions) and the South Coast (Fraser and Vancouver Island & Mainland Inlets Regions). Region-specific data nuances are included in [Section 5. Regions: Specific Data, Methods, and Results](#regions).
+The data sources and synthesis vary between the North and Central Coast (Nass, Skeena, Central Coast Regions) and the South Coast (Fraser and Vancouver Island & Mainland Inlets Regions). Region-specific data nuances are included in [Regions](#regions).
 
 We use these synthesized data to generate output datasets that are available for download in the [Salmon Data Library](https://www.data.salmonwatersheds.ca) and figures for the eight biological indicators presented in the [Pacific Salmon Explorer](https://www.salmonexplorer.ca). This data compilation exercise also helps identify data gaps across and within Regions. We aim to update these key datasets annually or as new data become available. 
 
 ### Overview of Biological indicators {#overview-biological-indicators}
 
-We use eight indicators to characterize the dynamics and status of each Conservation Unit in the [Pacific Salmon Explorer](https://www.salmonexplorer.ca). These indicators provide information on the current state of salmon and steelhead CUs and trends over time. Here, we describe the general approach we take to synthesizing and visualizing these biological indicators. We have documented specific nuances for each region below (see [Section 5. Regions](#regions)).
+We use eight indicators to characterize the dynamics and status of each Conservation Unit in the [Pacific Salmon Explorer](https://www.salmonexplorer.ca). These indicators provide information on the current state of salmon and steelhead CUs and trends over time. Here, we describe the general approach we take to synthesizing and visualizing these biological indicators. We have documented specific nuances for each region below (see [Regions](#regions)).
 
 #### Spawner Surveys {#spawner-surveys}
 
-**Spawner surveys** are the observed numbers of spawning salmon of each species returning to a specific stream each year. Spawner surveys are a fundamental piece of information for assessing the status of salmon CUs over time. We draw on spawner survey data from the [New Salmon Escapement Database (NuSEDS)](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6) and other sources detailed in [Section 5. Regions](#regions) to visualize the spatial and temporal coverage of spawner surveys for each CU in the Pacific Salmon Explorer.
+**Spawner surveys** are the observed numbers of spawning salmon of each species returning to a specific stream each year. Spawner surveys are a fundamental piece of information for assessing the status of salmon CUs over time. We draw on spawner survey data from the [New Salmon Escapement Database (NuSEDS)](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6) and other sources detailed in [Regions](#regions) to visualize the spatial and temporal coverage of spawner surveys for each CU in the Pacific Salmon Explorer.
 
 DFO has identified both indicator and non-indicator streams across Regions. **Indicator streams** are more intensively and consistently surveyed using methodologies that provide relatively accurate annual abundance estimates. Therefore, indicator streams are understood to provide more reliable indices of abundance and are assumed to be representative of returns to other streams nearby (English et al. 2016). **Non-indicator streams** tend to have less consistent survey coverage, more variable survey methods, and/or may be more difficult to survey. A number of both indicator and non-indicator streams within a CU may be surveyed in a given year. 
 
 A variety of methods are used to survey spawners in both indicator and non-indicator streams, and methods vary by species, CU, and stream. Spawner counts can be produced from a single visual survey of a stream by foot, by counting fish through a complete counting fence, or by aerial (helicopter) surveys. Survey methodology can also change over time according to changes in capacity and funding; for instance, some streams that were historically monitored by visual surveys on foot are now enumerated via a counting fence or aerial surveys (see [Data Quality](#quality-data) section below). 
 
-<!-- For steelhead, we used spawner survey data from a variety of sources, depending on the Region. Steelhead monitoring data have not been maintained in a centralized database like NuSEDs, so we compiled and synthesized spawner survey data for steelhead from disparate sources, including from many monitoring projects led by the Province of BC. Streams with spawner survey data for steelhead have not been classified as indicator and non-indicator streams, so we have provisionally classified all streams with available spawner survey data as indicator streams for steelhead. More specific details on the specific sources of spawner survey data for steelhead are summarized by Region in [Section 5. Regions: Specific Data, Methods, and Results](#regions). -->
+<!-- For steelhead, we used spawner survey data from a variety of sources, depending on the Region. Steelhead monitoring data have not been maintained in a centralized database like NuSEDs, so we compiled and synthesized spawner survey data for steelhead from disparate sources, including from many monitoring projects led by the Province of BC. Streams with spawner survey data for steelhead have not been classified as indicator and non-indicator streams, so we have provisionally classified all streams with available spawner survey data as indicator streams for steelhead. More specific details on the specific sources of spawner survey data for steelhead are summarized by Region in the [Regions](#regions) section. -->
 
 #### Spawner Abundance {#spawner-abundance}
 
-We visualize both observed and estimated **spawner abundance** on the Pacific Salmon Explorer. This indicator provides estimates of the total numbers of spawners that return to spawn each year for each CU. Observed spawner abundance is the sum of all spawner survey data as documented in [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), while estimated spawner abundance generally accounts for streams that are not surveyed in a given year by following expansion procedures. The approach for expanding from observed spawners to estimate the total spawners in a CU depends on the region and species, and are documented in [Section 5. Regions](#regions). Unless specified otherwise, estimated CU-level spawner abundance values are used as inputs in the Trends in Spawner Abundance, Catch and Run Size, and Recruits-per-Spawner indicators described below and when assessing biological status for each CU (see [Appendix 4](#appendix-4)). 
+We visualize both observed and estimated **spawner abundance** on the Pacific Salmon Explorer. This indicator provides estimates of the total numbers of spawners that return to spawn each year for each CU. Observed spawner abundance is the sum of all spawner survey data as documented in [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), while estimated spawner abundance generally accounts for streams that are not surveyed in a given year by following expansion procedures. The approach for expanding from observed spawners to estimate the total spawners in a CU depends on the region and species, and are documented in [Regions](#regions). Unless specified otherwise, estimated CU-level spawner abundance values are used as inputs in the Trends in Spawner Abundance, Catch and Run Size, and Recruits-per-Spawner indicators described below and when assessing biological status for each CU (see [Appendix 4](#appendix-4)). 
 
 #### Run Timing {#run-timing}
 
@@ -268,7 +268,7 @@ knitr::kable(
 
 ### Benchmarks for Assessing Biological Status {#benchmarks-biostatus}
 
-In the Pacific Salmon Explorer, we use the current estimated spawner abundance indicator to assess biological status. In collaboration with our Population Science Advisory Committee, we have developed a set of decision rules to guide our approach to assessing biological status for salmon and steelhead CUs in the Pacific Salmon Explorer (see Section \@ref(bs-decision-rules)). We apply one out of two types of biological benchmarks to quantify the current biological status of CUs, depending on the best available data: (1) spawner-recruit benchmarks and (2) percentile benchmarks (Figure \@ref(fig:wspBench)).
+In the Pacific Salmon Explorer, we use the current estimated spawner abundance indicator to assess biological status. In collaboration with our Population Science Advisory Committee, we have developed a set of decision rules to guide our approach to assessing biological status for salmon and steelhead CUs in the Pacific Salmon Explorer (see [Decision Rules](#bs-decision-rules)). We apply one out of two types of biological benchmarks to quantify the current biological status of CUs, depending on the best available data: (1) spawner-recruit benchmarks and (2) percentile benchmarks (Figure \@ref(fig:wspBench)).
 
 ```{r wspBench, include=TRUE, fig.cap = "Illustration of the Wild Salmon Policy status assessment framework (adapted from Holt et al., 2009). In order to determine the biological status for a given CU, we focus on the geometric mean spawner abundance (metric, blue) under the spawner abundance indicator.", echo = FALSE, out.width=600, fig.align='center', fig.alt=''}
 knitr::include_graphics("figures/wsp_benchmarks.png")
@@ -388,7 +388,7 @@ We have developed the benchmarks that we apply to assess biological based on the
 
 #### Other limitations {#other-limts}
 
-Other limitations are species- or Region-specific; Region-specific limitations are included below in [Section 5. Regions](#regions).
+Other limitations are species- or Region-specific; Region-specific limitations are included below in the [ Regions](#regions) section.
 
 ## Habitat Status: Indicators & Benchmarks  {#indicators-benchmark-hab}
 
@@ -423,7 +423,7 @@ As of 2001, the Province of BC no longer maintains the spawning zones or linear 
 
 #### Additional Technical Reports, Maps, and Databases 
 
-In some Regions, we have worked with technical committees and local salmon and steelhead experts to identify additional spawning or habitat information available within technical reports, previously published maps, and other databases (see [Section 5. Regions: Specific Data, Methods, and Results](#regions).
+In some Regions, we have worked with technical committees and local salmon and steelhead experts to identify additional spawning or habitat information available within technical reports, previously published maps, and other databases (see [Regions](#regions).
 
 #### Expert-elicited Spawning Location Information and Data Review
 
@@ -486,7 +486,7 @@ We take this approach if habitat indicators have a symmetric or moderately skewe
 
 If habitat indicators have a highly skewed distribution, we set the lower benchmark at 0 and the upper benchmark at the statistical threshold for outlier values. Using this approach, watersheds with a 0 value are considered low risk (green), watersheds with outlier values are considered high risk (red), and all other watersheds are considered moderate risk (amber) for that pressure indicator. 
 
-In some cases, the indicator values may be so highly skewed that the outlier threshold is zero. In these cases, we apply a binary approach where watersheds with a 0 value are considered low risk (green, absence), and watersheds with a value above zero are considered high risk (red, presence). This binary approach applies to the Mining Development, Water Licenses, and Waste Water Discharges indicators (Table \@ref(tab:habIndbench)). See [Section 4.2.8: Limitation](#hab-method-limits) for further discussion of relative benchmark rankings. 
+In some cases, the indicator values may be so highly skewed that the outlier threshold is zero. In these cases, we apply a binary approach where watersheds with a 0 value are considered low risk (green, absence), and watersheds with a value above zero are considered high risk (red, presence). This binary approach applies to the Mining Development, Water Licenses, and Waste Water Discharges indicators (Table \@ref(tab:habIndbench)). See [Limitations](#hab-method-limits) section for further discussion of relative benchmark rankings. 
 
 ### Approach to Assessing Cumulative Habitat Pressures {#assess-cumulative-pressure}
 
@@ -494,7 +494,7 @@ Pressures on salmon and steelhead freshwater habitats have both an individual an
 
 Aggregating indicators into a single, composite risk or condition score is an approach taken by a variety of programs that currently monitor watersheds in Canada and the U.S. Pacific Northwest (e.g. FLNRORD’s Forest and Range Evaluation Program, USEPA’s Environmental Monitoring and Assessment Program, USDA Forest Service’s Aquatic and Riparian Effectiveness Monitoring Program). These programs use a variety of methods to aggregate their habitat data, and each approach has strengths and weaknesses (Pickard et al., 2008). Habitat indicator analyses for BC salmon and steelhead CUs (e.g. Cohen Commission analyses of Fraser sockeye CUs (Nelitz et al., 2011) and an indicator-mapping project for the Lower Thompson coho CU (Beauchamp, 2008) generated cumulative habitat stressor or impact scores based on a simple summation of all the individually scored indicators (i.e. a higher total score equates to higher risk). Habitat assessments for southern BC Chinook CUs (Porter et al., 2013b) employed an alternative approach for rating relative risk in watersheds whereby cumulative risk scoring was based on an indicator ‘roll-up’ rule set based on the proportion of the indicators that were rated low, moderate, or high risk.
 
-For the habitat pressure assessments included in the Pacific Salmon Explorer, we apply a set of roll-up rules to assign cumulative pressure scores (see [Appendix 11](#appendix-11)). We calculate this cumulative pressure score for individual 1:20,000 FWA assessment watersheds within the zones of influence of all CUs. Any Region-specific idiosyncrasies are documented within [Section 5. Regions: Specific Data, Methods, and Results](#regions),
+For the habitat pressure assessments included in the Pacific Salmon Explorer, we apply a set of roll-up rules to assign cumulative pressure scores (see [Appendix 11](#appendix-11)). We calculate this cumulative pressure score for individual 1:20,000 FWA assessment watersheds within the zones of influence of all CUs. Any Region-specific idiosyncrasies are documented within the [Regions](#regions) section.
 
 ### Future Resource Development Pressures 
 
@@ -511,7 +511,7 @@ For each Region, we compile data on seven categories of proposed (and current) r
 - Wind power tenures
 - Timber harvesting land base 
 
-For additional processing details, see [Appendix 9](#appendix-9). In some Regions, we are also able to document additional infrastructure; this is detailed in [Section 5. Regions: Specific Data, Methods, and Results](#regions).
+For additional processing details, see [Appendix 9](#appendix-9). In some Regions, we are also able to document additional infrastructure; this is detailed in [Regions](#regions).
 
 ### Limitations: Habitat pressure indicators & analysis methods {#hab-method-limits}
 
@@ -551,7 +551,7 @@ Habitat information is also summarized at the **regional scale** for each Region
 
 On the Pacific Salmon Explorer, we provide an overview of the status and trends of salmon and steelhead CUs at the **BC scale** based on two indicators, run size and biological status. Trends in run size provide a measure of how the total number of returning adult salmon and steelhead has changed over time for each species. We display (1) the total run size (catch + spawner abundance) over time by species in each Region, (2) the standardized run size (catch + spawner abundance) over time by species in each Region, and (3) the percent change between the most recent decade relative to the long-term average. We also summarize the current biological status for each salmon and steelhead species across BC and a visual comparison of biological status across regions via maps. This summary provides a snapshot of the current biological status by species by quantifying the proportion of CUs within a species in the green, amber, and red status zones. It also shows *where* these CUs are located. 
 
-We do not currently visualize habitat summary statistics at the BC scale. Differences in the way habitat benchmarks are quantified (e.g. relative vs. science-based benchmarks; [Section 4.2.5. Habitat Pressure Indicator Benchmarks](#habitat-pressure-indicator-benchmarks) present challenges in making provincial comparisons of habitat status. Through future work with the Habitat Science Advisory Committee, we hope to develop BC-scale habitat summaries.
+We do not currently visualize habitat summary statistics at the BC scale. Differences in the way habitat benchmarks are quantified (e.g. relative vs. science-based benchmarks; see [Habitat Pressure Indicator Benchmarks](#habitat-pressure-indicator-benchmarks) present challenges in making provincial comparisons of habitat status. Through future work with the Habitat Science Advisory Committee, we hope to develop BC-scale habitat summaries.
 
 
 

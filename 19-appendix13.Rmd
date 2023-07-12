@@ -1,0 +1,61 @@
+# Appendix 13: Cumulative Spawning Pressure Results by Region and Conservation Unit {#appendix-134 .unnumbered}
+
+The percentage of watersheds within each CU’s spawning zone of influence that are rated high, moderate, or low risk (i.e., red, amber, green) for cumulative habitat pressures.
+
+```{r app13, include = TRUE, echo = FALSE, message = FALSE, warnings=FALSE}
+options(width = 400)
+library(reactable)
+library(dplyr)
+library(RPostgreSQL)
+
+status_colours <- c("#C06263", "#DED38B", "#83B686")
+
+app13 <- read.csv("tables/appendix13.csv", na.strings = NA)
+
+# ***Remove Yukon and Transboundary for now ***
+app13 <- app13[which(app13$Region %in% c("Yukon", "Transboundary") == FALSE), ]
+
+# *** Remove steelhead for now ***
+app13 <- app13[which(app13$Species != "Steelhead"), ]
+
+# Render table
+reactable::reactable(
+	app13, 
+	# groupBy = c("Region"),
+	defaultColDef = colDef(
+		header = function(value) gsub(".", " ", value, fixed = TRUE),
+		cell = function(value) format(value, nsmall = 1),
+		align = "left",
+		minWidth = 160#,
+		# headerStyle = list(background = "#396D8E", color = "#FFFFFF")
+	),
+	columns = list(
+		Region = colDef(
+			maxWidth = 80
+		),
+		Species = colDef(
+			maxWidth = 100#,
+			# 			style = JS("function(rowInfo, column, state) {
+			#         const { speciesColours } = state.meta
+			#         return { backgroundColor: speciesColours[rowInfo.index] }
+			#       }")
+		),
+		Conservation.Unit = colDef(
+			sticky = "left"
+		)
+	),
+
+	bordered = TRUE,
+	highlight = TRUE,
+	striped = TRUE,
+	resizable = TRUE, 
+	wrap = TRUE,
+	pagination = TRUE,
+	searchable = TRUE,
+	style = list(fontSize = "1.25rem"),
+	showSortIcon = TRUE,
+	defaultSorted = "Region",
+	defaultPageSize = 15
+)
+
+```

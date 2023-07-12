@@ -1,0 +1,15 @@
+Impact Category,Indicator,Metric,Benchmark Type,Benchmark Reference
+Human Development Footprint,Total Land Cover Alteration,% watershed area,relative ranking (type 2),n/a
+,Mining Development,# of mines,"relative ranking (type 2, binary)",n/a
+,Impervious Surfaces,% watershed area,science-based and expert-based,"Paul & Meyer, 2001; Smith, 2005"
+,Linear Development,km/km2,relative ranking (see Appendix 12),n/a
+Hydrologic Processes,Forest Disturbance,% watershed area,relative ranking (type 2),n/a
+,Equivalent Clearcut Area (ECA),% watershed area,green/amber - science-based and expert-based; amber/red - science-based,"green/amber - NOAA, 1996; MOF, 2001; amber/red - Summit/MOE, 2006; FPB, 2011"
+Vegetation Quality,Riparian Disturbance,% watershed area,green/amber - science-based and expert-based; amber/red - science-based,"green/amber - Stalberg et al., 2009; amber/red -Tripp & Bird, 2004 "
+,Insect and Disease Defoliation,% watershed area,relative ranking ,n/a
+,,,(see Appendix 12),
+Surface Erosion,Road Development,km/km2,green/amber - science-based and expert-based; amber/red - science-based,"green/amber - Stalberg et al., 2009; amber/red - MOF, 1995a,b; Porter et al., 2012"
+Fish Passage/Habitat Connectivity,Stream Crossing Density,#/km,relative ranking ,n/a
+,,,(see Appendix 12),
+Water Quantity,Water Licenses,# of permitted water licenses,"relative ranking (type 2, binary)",n/a
+Water Quality,Waste Water Discharges,# of permitted waste water discharges,"relative ranking (type 2, binary)",n/a

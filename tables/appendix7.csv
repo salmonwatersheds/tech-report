@@ -1,0 +1,52 @@
+﻿Dataset Name,Source ,Skeena,Nass,Central Coast,Fraser,Vancouver Island & Mainland Inlets,Haida Gwaii,Columbia
+Aggregate Mining Inventory ,BC EMPR ,2004 ,2004 ,2004 ,2004 ,2004 ,2004 ,2004 
+Base Thematic Mapping (mining polygons) ,DataBC ,1992 ,1992 ,1992 ,1992 ,1992 ,1992 ,1992 
+BC Freshwater Atlas Assessment Watershed Polygons ,DataBC ,2008 ,2012 ,2016 ,2016 ,2016 ,2021 ,2021 
+BC Freshwater Atlas Lake Polygons ,DataBC ,2008 ,2012 ,2016 ,2016 ,2016 ,2016 ,2016 
+BC Freshwater Atlas River Polygons ,DataBC ,2008 ,2012 ,2016 ,2016 ,2016 ,2016 ,2016 
+BC Freshwater Atlas Stream Network ,DataBC ,2008 ,2012 ,2016 ,2016 ,2016 ,2016 ,2016 
+BC Freshwater Atlas Watershed Groups Polygons ,DataBC ,2008 ,2012 ,2016 ,2016 ,2016 ,2016 ,2016 
+BC Freshwater Atlas Wetland Polygons ,DataBC ,2008 ,2012 ,2016 ,2016 ,2016 ,2016 ,2016 
+BC MOE Fish Passage Habitat Model ,BC MOECCS ,2011 ,2011 ,2017 ,2017 ,2017 ,2017 ,2017 
+BC Points of Diversion (POD) with Water License Information ,DataBC ,2012 ,2016 ,2017 ,2018 ,2018 , , 
+Water Licenses Licences - Public ,DataBC , , , , , ,2021 ,2021 
+BC Watershed Atlas Major Watershed Polygons ,DataBC ,2008 ,2008 ,2008 ,2008 ,2008 ,2008 ,2008 
+CanVec Railways ,Natural Resources Canada ,1998 ,1998 ,1998 ,1998 ,1998 ,1998 ,1998 
+CanVec Trails ,Natural Resources Canada ,1998 ,1998 ,1998 ,1998 ,1998 ,1998 ,1998 
+Coal and Mineral Mines (Minfile) ,BC EMPR ,2012 ,2012 ,2017 ,2018 ,2018 , , 
+MINFILE Inventory Database ,DataBC , , , , , ,2021 ,2021 
+Conservation Unit Boundaries ,DFO ,2008 ,2008 ,2008 ,2017; SEL & CK 2019 ,2017; SEL & CK 2019 ,2017; SEL & CK 2019 ,2021 
+Crown Tenures (Utility Corridors and Rights of Ways) ,DataBC ,2012 ,2016 ,2017 ,2018 ,2018 ,2021 ,2021 
+Crown Tenures (Wind and Water Power) ,DataBC ,2012 ,2016 ,2017 ,2018 ,2018 ,2021 ,2021 
+Current Fire Perimeters ,DataBC ,2012 ,2012 ,2017 ,2018 ,2018 ,2021 ,2021 
+Digital Road Atlas (DRA) ,DataBC ,2012 ,2016 ,2017 ,2018 ,2018 , , 
+Forest Tenure Cutblocks ,DataBC ,2012 ,2016 ,2016 ,2018 ,2018 , , 
+Forest Tenure Road Segments (FTEN) ,DataBC ,2012 ,2016 ,2017 ,2018 ,2018 , , 
+Integrated Roads ,BC CEF , , , , , ,2021 ,2021 
+Harvested Areas of BC (consolidated cutblocks) ,DataBC , , ,2015 ,2018 ,2018 , ,2021 
+Logging History on Haida Gwaii 1962 to 2021 ,Gowgaia Institute , , , , , ,2021 , 
+Historical Fire Perimeters ,DataBC ,2012 ,2012 ,2017 ,2018 ,2018 ,2021 ,2021 
+Known BC Fish Observations and BC Fish Distributions (FISS) ,DataBC ,2012 ,2016 ,2016 ,2018 ,2018 ,2021 ,2021 
+Human Disturbance with Base Thematic Mapping ,BC CEF , , , , , ,2021 ,2021 
+"Landcover circa 2000 (agriculture, urban) ",Natural Resources Canada ,2000 ,2000 ,2000 ,2000 ,2000 ,2000 ,2000 
+MOE Waste Water Discharge and Permits Database ,BC MOECCS ,2012 ,2016 ,2016 ,2018 ,2018 ,2021 ,2021 
+OGC Pipeline Rights-of-Way ,DataBC ,2012 ,2016 ,2017 ,2018 ,2018 , , 
+Pipelines: Coastal GasLink Pipeline (proposed) ,Johanna Pfalz (Eclipse GIS) ,2014 ,2014 ,2014 , , , , 
+Pipelines: Oil and Gas Commission Pipeline Segment Permits ,DataBC , , , ,2020 ,2020 , ,2021 
+Pipelines: Pacific Northern Gas (existing) ,Johanna Pfalz (Eclipse GIS) ,2014 ,2014 ,2014 , , , , 
+Pipelines: Pacific Northern Gas Looping Project (proposed) ,Johanna Pfalz (Eclipse GIS) ,2014 ,2014 ,2014 , , , , 
+Pipelines: Pacific Trails Pipeline (proposed) ,Johanna Pfalz (Eclipse GIS) ,2014 ,2014 ,2014 , , , , 
+Pipelines: Prince Rupert Gas Transmission Project (proposed) ,Chartwell Consultants Ltd. ,2016 ,2016 ,2016 , , , , 
+Pipelines: Trans Mountain Expansion Project ,Digitized by PSF from TransMountain map , , , ,2020 ,2020 , , 
+Pipelines: West Coast Connector Gas Transmission Project (proposed) ,Chartwell Consultants Ltd. ,2016 ,2016 ,2016 , , , , 
+Placer Tenures ,DataBC ,2012 ,2012 ,2016 ,2018 ,2018 ,2021 ,2021 
+Power Lines,Expert knowledge (Skeena TAC) ,2010,,,,,,
+Power Lines,BC Hydro NW Transmission Line (BC Hydro) ,,2014,2014,,,,
+Power Lines,CanVec Power Lines (Natural Resources Canada) ,1998,1998,1998,1998,1998,,
+Power Lines,BC Transmission Lines (DataBC) ,,,,2020,2020,,
+Reporting Silviculture Updates and Land Status Tracking System (RESULTS) ,DataBC ,2012 ,2016 ,2017 ,2018 ,2018 , , 
+Spawning Distribution (local experts) ,Technical Advisory Committees ,2012 ,2015 ,2016 ,2019 ,2019 ,2021 ,2021 
+Spawning Distribution (stream survey reports) ,Raincoast Conservation Foundation for the Heiltsuk Nation , , ,2016 , , , , 
+Stream Survey Locations (NuSEDs) ,DFO ,2012 ,2015 ,2014 ,2018 ,2018 ,2021 ,2021 
+Timber Harvesting Land Base ,BC FLNRORD ,2015 ,2015 ,2017 ,2017 ,2017 ,2021 ,2021 
+Vegetation Resources Inventory (VRI) ,DataBC ,2012 ,2012 ,2016 ,2018 ,2018 ,2020 ,2020 

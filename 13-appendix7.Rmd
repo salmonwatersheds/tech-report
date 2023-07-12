@@ -1,0 +1,12 @@
+# Appendix 7: Habitat Pressure Datasets & Data Sources {#appendix-7 .unnumbered}
+
+Habitat pressure datasets, data sources, and dataset publication years.
+
+```{r app7, include=TRUE, echo = FALSE}
+app7 <- read.csv("tables/appendix7.csv")
+names(app7) <- gsub(".", " ", names(app7), fixed = TRUE)
+names(app7)[7] <- "Vancouver Island & Mainland Inlets"
+knitr::kable(
+  app7, booktabs = TRUE
+)
+```

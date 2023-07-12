@@ -1,0 +1,7 @@
+Score, Definition
+0 - Not applicable,No spawner surveys were completed for this Conservation Unit over the most recent generation.
+1 - Low,"4.5 < Q < 6. Most of the spawner surveys were performed with low-effort or inconsistently executed methods, resulting in variable accuracy and precision."
+2 - Medium-Low,"3.5 < Q < 4.5. Most of the spawner surveys were performed with medium to low effort, using methods such as a stream walk, swim, or overhead flight, resulting in unknown accuracy and precision."
+3 - Medium,"2.5 < Q  < 3.5. Most of the spawner surveys were performed with high effort, using methods such as a stream walk, swim, or overhead flight, resulting in medium to high accuracy and precision."
+4 - Medium-High,"1.5 < Q  < 2.5. Most of the spawner surveys were performed with high effort, using methods such as mark-recapture, resulting in medium to high accuracy and precision."
+5 - High,"1 < Q < 1.5. Most of the spawner surveys produce counts of total spawners, using methods such as a fence or fishway, resulting in very high accuracy and precision."

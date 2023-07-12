@@ -1,0 +1,7 @@
+Score,Definition
+0 - Not applicable,No catch data are available for the Conservation Unit over the most recent generation.
+1 - Low,Catch is based on a proportion of catch and/or the exploitation rate in another Conservation Unit or Region (e.g. exploitation for Bella Coola-Dean River coho is assumed to be 60 % of the exploitation rate of the Skeena coho).
+2 - Medium-Low,Statistical area catch is divided proportionally among all Conservation Units that spawn within the statistical area according to their relative spawner abundance.
+3 - Medium,Catch is based on a model that is currently not reproducible or is poorly documented.
+4 - Medium-High,Catch is based on a peer-reviewed model of a large portion of known fisheries that the Conservation Unit is exposed to (i.e. > 75% of the total catch for this Conservation Unit is expected to be accounted for in most years).
+5 - High ,Catch is based on a peer-reviewed model of the majority of known fisheries that the Conservation Unit is exposed to (i.e. > 95% of catch for this Conservation Unit is expected to be accounted for in most years).

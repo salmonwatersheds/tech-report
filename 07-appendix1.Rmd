@@ -1,0 +1,60 @@
+# Appendix 1: Conservation Unit Reference List {#appendix-1 .unnumbered}
+
+Conversation Units (CUs) listed by region and species (click header to sort). The CU names are as appearing in the Pacific Salmon Explorer. The CUID is assigned by PSF to track CUs that we recognize, as these are not always the same as official CUs recognized by DFO (see Regions for details). The Full CU Index is based on Holtby and Ciruna (2007) and is used to cross-reference against NuSEDS and other DFO datasets.
+
+```{r app1, include=TRUE, echo = FALSE}
+options(width = 400)
+library(reactable)
+
+app1 <- read.csv("tables/appendix1.csv")
+# 
+# species_colours <- c("#D4A876", "#B8A6BE", "#BBB172", "#D0A4AA", "#D0A4AA", "#98A879", "#98A879", "#0000FF40")[as.numeric(as.factor(app1$Species))]
+
+# ***Remove Yukon and Transboundary for now ***
+app1 <- app1[which(app1$Region %in% c("Yukon", "Transboundary") == FALSE), ]
+
+# *** Remove steelhead for now ***
+app1 <- app1[which(app1$Species != "Steelhead"), ]
+
+
+# Render table
+reactable::reactable(
+	app1, 
+	defaultColDef = colDef(
+			header = function(value) gsub(".", " ", value, fixed = TRUE),
+		cell = function(value) format(value, nsmall = 1),
+		align = "left",
+		maxWidth = 140
+		# headerStyle = list(background = "#396D8E", color = "#FFFFFF")
+	),
+	columns = list(
+	# 		Species = colDef(
+	# 			maxWidth = 100,
+	# 			style = JS("function(rowInfo, column, state) {
+	#         const { speciesColours } = state.meta
+	#         return { backgroundColor: speciesColours[rowInfo.index] }
+	#       }")
+	# 		),
+		Conservation.Unit = colDef(
+			maxWidth = 220
+		),
+		CUID = colDef(
+			maxWidth = 80
+		),
+		Full.CU.Index = colDef(
+			maxWidth = 80
+		)
+),
+bordered = TRUE,
+highlight = TRUE,
+striped = TRUE,
+resizable = TRUE, 
+wrap = TRUE,
+searchable = TRUE,
+style = list(fontSize = "1.25rem"),
+showSortIcon = TRUE,
+defaultSorted = "Region",
+defaultPageSize = 15
+)
+
+```

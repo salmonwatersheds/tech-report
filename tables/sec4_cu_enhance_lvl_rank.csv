@@ -1,0 +1,6 @@
+CU Enhancement Level,Definition
+None,There are no records of enhancement for this Conservation Unit.
+Low,c=0. There are no records of enhancement for this Conservation Unit over the most recent two generations.
+Moderate,"c=0.01-0.25. Over the most recent two generations, less than 25% of all spawners within the Conservation Unit are from enhanced sources."
+High,"c=0.26-1.0. Over the most recent two generations, more than 25% of all spawners within the Conservation Unit are from enhanced sources."
+Not Assessed,The Enhancement Level for this Conservation Unit has not been assessed.

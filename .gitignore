@@ -1,0 +1,9 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# Ignore figures file
+figures/
+
+tables/code/ignore

@@ -4,7 +4,7 @@ July 12, 2023
 
 ## Overview
 
-This private repo is for internally collaborating on the tech report that documents the methods for assessing status and trends shown in the [Pacific Salmon Explorer](www.salmonexplorer.ca).
+This repo is for internally collaborating on the tech report that documents the methods for assessing status and trends shown in the [Pacific Salmon Explorer](www.salmonexplorer.ca).
 
 ## Files
 

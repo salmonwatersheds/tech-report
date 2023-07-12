@@ -12,7 +12,7 @@ The tech report is produced as a digital publication using R Markdown and [bookd
 
 
 ## Approach to collaborating
-We are trying out the approach outlined here to collaborating using both GitHub and Dropbox. Note that the Dropbox version of the tech report is primarily for viewing by team members who are not contributing changes, and folks who are actively working on the tech report should following the steps below to create a local clone:
+We are trying out the approach outlined [here](https://github.com/kbjarkefur/GitHubDropBox) to collaborating using both GitHub and Dropbox. Note that the Dropbox version of the tech report is primarily for viewing by team members who are not contributing changes, and folks who are actively working on the tech report should following the steps below to create a local clone:
 
 * Each SWP team member contributing to the tech report but create a clone of this repo on their local machine, *not in Dropbox*. For example, in `Documents/tech-report`. Create this clone from within R Studio (File > New Project > Checkout from GitHub repo).
 * **Every time you go to work in your local directory, first pull any changes from GitHub**. This reduces merge conflicts that are a headache to work with. 

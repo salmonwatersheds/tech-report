@@ -7,7 +7,7 @@ library(dplyr)
 
 Each **Region** within the Pacific Salmon Explorer has specific attributes related to management regimes, data collection, documentation protocols, and most importantly, salmon populations and habitats (Figure \@ref(fig:regions)). Here, we document Region-specific data sources, methodological considerations, and social processes used in each of the initial biological status, habitat pressure assessments, and any other unique information for each region currently within the Pacific Salmon Explorer.  
 
-```{r regions, fig.cap = "Map of PSE Regions.", include=TRUE, echo = FALSE, out.width='100%', fig.align='center', fig.alt=''}
+```{r regions, fig.cap = "Map of the PSE Regions.", include=TRUE, echo = FALSE, out.width='100%', fig.align='center', fig.alt=''}
 knitr::include_graphics("figures/regions.png")
 ```
 ## Skeena Region 

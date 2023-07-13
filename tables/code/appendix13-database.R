@@ -40,6 +40,7 @@ app13 <- dbGetQuery(
 	conn = connec, 
 	statement = "SELECT * FROM appdata.vwdl_setr_appendix13"
 )
+app13[which(app13 == -989898)] <- NA
 
 regions <- data.frame(
 	regionid = c(1:10),

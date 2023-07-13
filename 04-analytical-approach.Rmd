@@ -31,7 +31,7 @@ The biological status assessments that we complete and visualize on the Pacific 
 3.	Distribution of spawners within the CU; and
 4.	Fishing mortality relative to stock productivity. 
 
-To characterize key salmon and steelhead population dynamics, temporal trends in fisheries data, and assess the biological status of salmon and steelhead CUs across the Pacific Region, we compile and synthesize the following information: 
+We assess biological status using a metric of current spawner abundance, while providing information on other indicators where available. To characterize key salmon and steelhead population dynamics, temporal trends in fisheries data, and assess the biological status of salmon and steelhead CUs across the Pacific Region, we compile and synthesize the following information: 
 
 * spawner survey locations, 
 * observed spawner counts in indicator and non-indicator streams, 
@@ -43,29 +43,78 @@ To characterize key salmon and steelhead population dynamics, temporal trends in
 * hatchery release data, and 
 * recruits-per-spawner datasets. 
 
-The data sources and synthesis vary between the North and Central Coast (Nass, Skeena, Central Coast Regions) and the South Coast (Fraser and Vancouver Island & Mainland Inlets Regions). Region-specific data nuances are included in [Regions](#regions).
+The data sources and analyses differ among regions, with the main differences occurring between the North and Central Coast (Nass, Skeena, Central Coast Regions) and the South Coast (Fraser and Vancouver Island & Mainland Inlets Regions). Region-specific data nuances are included in [Regions](#regions).
 
-We use these synthesized data to generate output datasets that are available for download in the [Salmon Data Library](https://www.data.salmonwatersheds.ca) and figures for the eight biological indicators presented in the [Pacific Salmon Explorer](https://www.salmonexplorer.ca). This data compilation exercise also helps identify data gaps across and within Regions. We aim to update these key datasets annually or as new data become available. 
+We synthesize the types of data listed above to generate output datasets that are available for download in the [Salmon Data Library](https://www.data.salmonwatersheds.ca). These output datasets are visualized in the [Pacific Salmon Explorer](https://www.salmonexplorer.ca) through the nine population indicators, as well as accompanying information on the extent of hatchery influence and quality of data for each CU in the Hatchery Release Score and Data Quality Scores, respectively. The data compilation exercise also highlights data gaps across and within Regions. We aim to update these key datasets annually or as new input data become available. 
 
 ### Overview of Biological indicators {#overview-biological-indicators}
 
-We use eight indicators to characterize the dynamics and status of each Conservation Unit in the [Pacific Salmon Explorer](https://www.salmonexplorer.ca). These indicators provide information on the current state of salmon and steelhead CUs and trends over time. Here, we describe the general approach we take to synthesizing and visualizing these biological indicators. We have documented specific nuances for each region in the [Regions](#regions) section.
+<!-- SP: The previous version referenced "eight indicators" but they were never listed...and there are nine indicators in the PSE so I am unsure of what was being referred to. I tried to clarify how this section is organized by going through the indicators in order that they appear in the PSE: 
+1. Spawner Surveys
+2. Juvenile Surveys
+3. Hatchery Releases & Hatchery Release Score
+4. Spawner Abundance
+5. Run Timing
+6. Catch and Run Size
+7. Recruits-per-Spawner
+8. Trends in Spawner Abundance
+9. Biological Status
+The data quality score is then be a new section after the Overview of Biological Indicators.
+-->
+We use nine indicators to characterize the population status of each Conservation Unit in the [Pacific Salmon Explorer](https://www.salmonexplorer.ca). 
+
+1. Spawner Surveys
+2. Juvenile Surveys
+3. Hatchery Releases
+4. Spawner Abundance
+5. Run Timing
+6. Catch and Run Size
+7. Recruits-per-Spawner
+8. Trends in Spawner Abundance
+9. Biological Status
+
+These indicators provide information on the current state of salmon and steelhead CUs and trends over time. The first three indicators involve displaying stream-level information organized by CU. The last seven indicators involve synthesizing data at the CU-level, with the Hatchery Release indicator involving both the stream-level release data and a CU-level Hatchery Release Score. Here, we describe the general approach to compile and synthesize data for each of these biological indicators. Detailed methods that depend on the specifics of the available data vary by Region and are documented in the [Regions](#regions) section.
 
 #### Spawner Surveys {#spawner-surveys}
 
 **Spawner surveys** show the observed numbers of spawning salmon of each species returning to specific streams each year. Spawner surveys provide a fundamental piece of information needed to assess the status of salmon CUs over time. We draw on spawner survey data from the [New Salmon Escapement Database (NuSEDS)](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6) and other sources detailed in [Regions](#regions) to visualize the spatial and temporal coverage of spawner surveys for each CU in the [Pacific Salmon Explorer](https://www.salmonexplorer.ca).
 
-DFO has identified both indicator and non-indicator streams across Regions. **Indicator streams** are observed more consistently in recent decades, tend to have higher spawner abundance, and tend to be monitored using more intensive methods that provide greater accuracy. 
+We distingusih spawner surveys in indicator streams and non-indicator streams for each species. **Indicator streams** are observed more consistently in recent decades, tend to have higher spawner abundance, and tend to be monitored using more intensive methods that provide greater accuracy. 
 <!-- SP: Updated this text; I ran a binomial glm to look at what factors influence indicator/non-indicator in NuSEDS and min year, max year, number of obs, and mean estimate classification type are all signficant, with positive effects of both min and max year (i.e. more recently monitored). -->
-Therefore, indicator streams are understood to provide more reliable indices of abundance and are assumed to be representative of returns to other streams nearby (English et al. 2016). **Non-indicator streams** tend to have less consistent survey coverage, more variable survey methods, and/or may be more difficult to survey. A number of both indicator and non-indicator streams within a CU may be surveyed in a given year. 
+Therefore, indicator streams are understood to provide more reliable indices of abundance and are assumed to be representative of returns to other streams nearby (English et al. 2016). **Non-indicator streams** tend to have less consistent survey coverage, more variable survey methods, and/or may be more difficult to survey. A number of both indicator and non-indicator streams within a CU may be surveyed in a given year. On the Pacific Salmon Explorer, for the North and Central Coast Regions (Skeena, Nass, and Central Coast), we use the indicator stream  designation from LGL Ltd (English et al., 2018) and for all other Regions we use the indicator stream designation provided by DFO in NuSEDS.
 
 A variety of methods are used to survey spawners in both indicator and non-indicator streams, and methods vary by species, CU, and stream. Spawner counts can be produced from a single visual survey of a stream by foot, by counting fish through a complete counting fence, or by aerial (helicopter) surveys. Survey methodology can also change over time according to changes in capacity and funding; for instance, some streams that were historically monitored by visual surveys on foot are now enumerated via a counting fence or aerial surveys (see [Data Quality](#quality-data) section below). 
 
 <!-- For steelhead, we used spawner survey data from a variety of sources, depending on the Region. Steelhead monitoring data have not been maintained in a centralized database like NuSEDs, so we compiled and synthesized spawner survey data for steelhead from disparate sources, including from many monitoring projects led by the Province of BC. Streams with spawner survey data for steelhead have not been classified as indicator and non-indicator streams, so we have provisionally classified all streams with available spawner survey data as indicator streams for steelhead. More specific details on the specific sources of spawner survey data for steelhead are summarized by Region in the [Regions](#regions) section. -->
 
+#### Juvenile Surveys {#juvenile-surveys}
+
+Estimates of **Juvenile abundance** indicate the number of out-migrating smolts that were counted in a given year for each stream within a CU (where available).
+<!-- or for some steelhead CUs, the estimated density of juvenile steelhead in a stream for a given year.   -->
+We also calculate the geometric mean of juvenile abundance or density as it is less sensitive to infrequent high abundance years.
+
+#### Hatchery Releases {#hatchery-releases}
+
+While salmon hatcheries can play a role in the conservation and management of Pacific salmon, hatchery releases can also pose risks to wild salmon and steelhead. Juvenile hatchery fish can out compete wild juveniles for limited food resources, and there is increasing evidence that high hatchery salmon abundance at sea is related to decreased wild salmon productivity due to limitations of ocean carrying capacity (Ruggerone & Irvine, 2018; Connors et al., 2020). Hatchery-produced spawners can also reproduce with wild salmon and steelhead, with implications for genetic diversity and productivity of wild populations. Hatchery-produced fish can also exacerbate issues in mixed-stock fisheries, which can affect threatened or at-risk salmon and steelhead populations. 
+
+<!-- SP: This information is slightly different from the More Information tab in the PSE, which I think is more informative. Can we use that text? -->
+Given these concerns and other potential impacts of hatcheries on wild salmon and steelhead abundance and productivity, we visualize the number of fry released from specific locations under the **hatchery releases** indicator. For each hatchery facility (i.e. the facility where eggs are hatched), we show the name, years in use, and facility type. Hatchery operations range in size and production from small to large-scale, with different purposes. There are four types of hatcheries shown on the Pacific Salmon Explorer, as defined by Fisheries and Oceans Canada’s Salmon Enhancement Program (Table \@ref(tab:hatchTypes))
+
+Hatchery facilities may release juvenile fish at one or more release sites. We show the locations and numbers of fish released through time at each of these release sites. Locations also include additional information: the name of the site, the years that site was in use, the type or life stage at which juvenile salmon or steelhead were released, and the broodstock CU (CU from which the hatchery broodstock originate). Juvenile salmon and steelhead are released at various life stages and after various hatchery practices (e.g. some juveniles are released in rivers as fed fry, while others are reared for longer in the hatchery and then transferred to a sea pen in the ocean, where they are eventually released) which can affect their survival (James et al. 2023). Data on hatchery locations, release sites, and release numbers were provided by DFO Salmon Enhancement Program staff or for steelhead, were accessed through the Province of BC's BC Data Catalogue. The information on hatchery releases in streams is also synthesized at the CU-level (see [Hatchery Releases Score](#hatchery-release-score), below).
+
+```{r hatchTypes, include=TRUE, echo = FALSE}
+hatch <- read.csv("tables/sec4_hatcherytypes.csv")
+names(hatch) <- c("Type of Hatchery", "Description")
+knitr::kable(
+  hatch, booktabs = TRUE,
+  caption = 'Types of Hatcheries operated in BC and visualized on the Pacific Salmon Explorer.'
+)
+```
+
+
 #### Spawner Abundance {#spawner-abundance}
 
-We visualize both observed and estimated **spawner abundance** on the [Pacific Salmon Explorer](https://www.salmonexplorer.ca). This indicator provides estimates of the total numbers of spawners that return to spawn each year for each CU. **Observed** spawner abundance is the sum of all spawner survey data as documented in [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), while **estimated** spawner abundance generally accounts for streams that are not surveyed in a given year by following expansion procedures. The approach for expanding from observed spawners to estimate the total spawners in a CU depends on the region and species, and are documented in the [Regions](#regions) section. Unless specified otherwise, estimated CU-level spawner abundance values are used as inputs in the Trends in Spawner Abundance, Catch and Run Size, and Recruits-per-Spawner indicators described below and when assessing biological status for each CU (see [Appendix 4](#appendix-4)). 
+We visualize both observed and estimated **spawner abundance** on the [Pacific Salmon Explorer](https://www.salmonexplorer.ca). This indicator provides estimates of the total numbers of spawners that return to spawn each year for each CU. **Observed** spawner abundance is the sum of all spawner survey data as documented in [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), while **estimated** spawner abundance generally accounts for streams that are not surveyed in a given year by following expansion procedures. The approach for expanding from observed spawners to estimate the total spawners in a CU depends on the region and species, and are documented in the [Regions](#regions) section. Unless specified otherwise, estimated CU-level spawner abundance is used as input in the [Catch and Run Size](#catch-and-runsize), [Recruits-per-Spawner](#recruits-per-spawner), and [Trends in Spawner Abundance](#trends-spawner-abundance) indicators described below and when assessing biological status for each CU (see [Appendix 4](#appendix-4)). 
 
 #### Run Timing {#run-timing}
 
@@ -77,39 +126,22 @@ We visualize both observed and estimated **spawner abundance** on the [Pacific S
 
 #### Recruits-per-Spawner {#recruits-per-spawner}
 
-**Recruits-per-spawner** estimates the number of adult salmon produced per spawner in the previous generation. This indicator provides valuable information on the recruitment of salmon or steelhead within a CU when calculations are available over the long term. This can improve our understanding of survival within and among CUs. If the number of recruits-per-spawner is below one, the population will decline over time. For species with variable age-at-return, estimating the number of recruits for a given brood year requires information on total run size (i.e. catch plus escapement) and the distribution of ages of returning fish over multiple years. 
+**Recruits-per-spawner** estimates the number of adult salmon produced per spawner in the previous generation. This indicator provides valuable information on the recruitment of salmon or steelhead within a CU when calculations are available over the long term. This can improve our understanding of survival within and among CUs. If the number of recruits-per-spawner is below one, the population will decline over time. 
+
+For species with variable age-at-return, estimating the number of recruits for a given brood year requires information on total run size (i.e. catch plus escapement) and the distribution of ages of returning fish over multiple years. 
 <!-- Insert equation? -->
-Recruits-per-spawner is then calculated as the number of recruits divided by the number of spawners for each brood year, based on CU-level estimates of spawning abundance. This indicator is relatively data-intensive and requires information on total run size, spawner abundance, and the ages of salmon or steelhead returning to spawn. 
+Recruits-per-spawner is then calculated as the number of recruits divided by the number of spawners for each brood year, based on CU-level estimates of spawning abundance. This indicator is relatively data-intensive as it requires information on total run size, spawner abundance, and the ages of salmon or steelhead returning to spawn. 
 
 #### Trends in Spawner Abundance {#trends-spawner-abundance}
 
-**Trends in spawner abundance** is an estimate of spawner abundance at a CU-level over the existing time series. This indicator highlights long-term directional changes in abundance that could otherwise be masked by high interannual variability in population abundance. On the Pacific Salmon Explorer, we show the trends in spawner abundance over the entire time series of available data, as well as the most recent three generations, which aligns with the quantitative for status assessments by the [Committee on the Status of Endangered Wildlife in Canada (COSEWIC)](https://cosewic.ca/index.php/en-ca/assessment-process/wildlife-species-assessment-process-categories-guidelines/quantitative-criteria.html). Assuming the data are reliable, considering trends in population abundance over longer time periods may be more likely to detect true changes in abundance and trigger an appropriate management response (d’Eon-Eggerston et al., 2015; Porszt et al., 2012). 
+**Trends in spawner abundance** is an estimate of spawner abundance at the CU-level has changed over the existing time series. This indicator highlights long-term directional changes in abundance that could otherwise be masked by high interannual variability in population abundance. When calculating trends, we take the natural logarithm of spawner abundance and smooth time series using a one-generation moving average, which minimizes the impact of outliers (i.e. anomalously high or low abundance years) on the overall trend (d’Eon-Eggerston et al., 2015). On the Pacific Salmon Explorer, we show the linear trend in log-transformed spawner abundance over the entire time series of available data, as well as the trend over the most recent three generations, which aligns with the quantitative for status assessments by the [Committee on the Status of Endangered Wildlife in Canada (COSEWIC)](https://cosewic.ca/index.php/en-ca/assessment-process/wildlife-species-assessment-process-categories-guidelines/quantitative-criteria.html). Assuming the data are reliable, considering trends in population abundance over longer time periods may be more likely to detect true changes in abundance and trigger an appropriate management response (d’Eon-Eggerston et al., 2015; Porszt et al., 2012). 
 
-#### Juvenile Surveys {#juvenile-surveys}
-
-Estimates of **Juvenile abundance** indicate the number of out-migrating smolts that were counted in a given year for each stream within a CU (where available).
-<!-- or for some steelhead CUs, the estimated density of juvenile steelhead in a stream for a given year.   -->
-We also calculate the geometric mean of juvenile abundance or density as it is less sensitive to infrequent high abundance years.
-
-#### Hatchery Releases {#hatchery-releases}
-
-While salmon hatcheries can play a role in the conservation and management of Pacific salmon, hatchery releases can also pose risks to wild salmon and steelhead. Juvenile hatchery fish can out compete wild juveniles for limited food resources, and there is increasing evidence that high hatchery salmon abundance at sea is related to decreased wild salmon productivity due to limitations of ocean carrying capacity (Ruggerone & Irvine, 2018; Connors et al., 2020). Hatchery-produced spawners can also reproduce with wild salmon and steelhead, with implications for genetic diversity and productivity of wild populations. Hatchery-produced fish can also exacerbate issues in mixed-stock fisheries, which can affect threatened or at-risk salmon and steelhead populations. Given these concerns and other potential impacts of hatcheries on wild salmon and steelhead abundance and productivity, we visualize **hatchery information**, including hatchery locations, type of hatchery, hatchery fish release sites, number of released hatchery fish, and estimates of **hatchery influence** (see [Hatchery Releases Score](#hatchery-release-score) below). For release sites, we show additional information, including the name of the site, the years that site was in use, the type or life stage at which juvenile salmon or steelhead were released, and the broodstock CU (CU from which the hatchery broodstock originate). Juvenile salmon and steelhead are released at various life stages and after various hatchery practices (e.g. some juveniles are released in rivers as fed fry, while others are reared for longer in the hatchery and then transferred to a sea pen in the ocean, where they are eventually released) which can affect their survival. Data on hatchery locations, release sites, and release numbers were provided by DFO Salmon Enhancement Program staff or for steelhead, were accessed through the Province of BC's BC Data Catalogue.
+#### Biological Status
+The assessment of biological status is more involved, and our approach to quantifying metrics and benchmarks is detailed in its own section below, [Benchmarks for Assessing Biological Status](#benchmarks-biostatus).
 
 ### Hatchery Release Score {#hatchery-release-score}
 
-<!-- SP: Since this is based on hatchery returns (i.e. spawners) should it be a hatchery return score? Fish may be released in another CU... -->
-Hatchery operations range in size and production from small to large-scale, with different purposes. There are four types of hatcheries shown on the Pacific Salmon Explorer, as defined by Fisheries and Oceans Canada’s Salmon Enhancement Program (Table \@ref(tab:hatchTypes))
-
-```{r hatchTypes, include=TRUE, echo = FALSE}
-hatch <- read.csv("tables/sec4_hatcherytypes.csv")
-names(hatch) <- c("Type of Hatchery", "Description")
-knitr::kable(
-  hatch, booktabs = TRUE,
-  caption = 'Types of Hatcheries operated in BC and visualized on the Pacific Salmon Explorer.'
-)
-```
-
-These hatcheries release hatchery-produced salmon and steelhead throughout streams in BC, resulting in salmon and steelhead populations that are considered to be hatchery-produced to varying degrees. We assess and display the current Hatchery Releases Score for salmon and steelhead CUs based on a standardized approach that draws on the best available data for all spawning streams within CUs across BC.  The **Hatchery Release Score** is an assessment of the extent of hatchery activity within a CU over the last two generations.
+Hatchery-produced salmon and steelhead are released in streams throughout BC, resulting in salmon and steelhead populations that are considered to be hatchery-produced to varying degrees. We assess and display the current Hatchery Releases Score for salmon and steelhead CUs based on a standardized approach that draws on the best available data for all spawning streams within CUs across BC.  The **Hatchery Release Score** is an assessment of the extent of hatchery activity within a CU over the last two generations.
 <!-- SP: The next sentence doesn't make sense to me. *Stream level* hatchery releases based on intensity within the CU? -->
 <!-- We developed hatchery releases classifications based on the intensity of recent hatchery activity within each CU (High, Moderate, Low, None, Not Assessed; Table \@ref(tab:enhanceAsmt)).  -->
 <!-- SP: The following sentence is too vague and adds nothing above what is shown in the table. Remove.
@@ -124,33 +156,32 @@ knitr::kable(
   caption = 'Stream Hatchery Releases score categories for spawning streams.'
 )
 ```
+<!-- SP: I don't think hatchery release score is appropriate here, since the data include CWTs collected from spawners. I hate to re-open the can of worms, but we should discuss. -->
+The determination of a CU's Hatchery Release Score begins with assessing the extent of hatchery influence among individual spawning streams (indicator and non-indicator) within that CU, based on methods developed by DFO (Brown et al., 2019, 2020). Assessments of stream-level hatchery influence may draw on on three types of information: 1) the number of coded wire tags (CWT) recovered from spawners; 2) the number of juveniles released from hatcheries within the CU; and 3) the number of fish collected for broodstock.  If CWT-based estimates are available, then we use the proportion of returning spawners that have CWTs to quantify stream-level hatchery influence. Otherwise, we use the highest number from either the number of juvenile releases or the number of collected broodstock. This information is used to assign a categorical assessment of stream-level hatchery influence (high, moderate, low, none, not assessed; Table \@ref(tab:enhanceAsmt)). For example, if more than 25% of spawners have CWTs, or more than 25% of years have records of juvenile releases or broodstock collection, then the stream is ranked as having high hatchery influence (Table \@ref(tab:enhanceAsmt)). Data on hatchery activities for each spawning stream for southern BC Chinook were provided by DFO (Brown et al., 2019, 2020). For other species and CUs, we assessed stream-level hatchery influence based on data provided by DFO’s Salmon Enhancement Program. In contrast to Brown et al. (2019), we assessed stream-level hatchery influence over the most recent two generations in alignment with the definition of wild salmon under Canada’s Wild Salmon Policy.
 
-<!-- SP: The terminology here needs to be clarified. Stream Hatchery Release(s) Scores vs Hatchery Release Scores?  -->
-The determination of a CU's Hatchery Release Score begins with assessing the extent of hatchery releases among individual spawning streams (indicator and non-indicator) within that CU, based on methods developed by DFO (Brown et al., 2019, 2020). Assessments of stream-level hatchery releases may draw on on three types of information: 1) the number of coded wire tags (CWT) recovered from spawners; 2) the number of juveniles released from hatcheries within the CU; and 3) the number of fish collected for broodstock.  If CWT-based estimates are available, then we use the proportion of returning spawners that have CWTs to quantify stream-level hatchery releases. Otherwise, we use the highest number from either the number of juvenile releases or the number of collected broodstock. This information is used to assign a categorical assessment of stream-level hatchery releases (High, Moderate, Low, None, Not Assessed; Table \@ref(tab:enhanceAsmt)). For example, if more than 25% of spawners have CWTs, or more than 25% of years have records of juvenile releases or broodstock collection, then the stream is ranked as High (Table \@ref(tab:enhanceAsmt)). Data on hatchery activities for each spawning stream for southern BC Chinook was provided by DFO (Brown et al., 2019, 2020). For other species and CUs, we assessed stream-level hatchery releases based on data provided by DFO’s Salmon Enhancement Program. In contrast to Brown et al. (2019), we assessed stream-level hatchery releases over the most recent two generations in alignment with the definition of wild salmon under Canada’s Wild Salmon Policy.
-
-From the stream-level hatchery releases, we calculate the proportional contribution, $c$, of streams with Moderate or High stream-level hatchery releases to the total spawners in each CU:
+To arrive at a CU-level Hatchery Release Score, we calculate the proportional contribution, $c$, of spawners from streams with moderate or high stream-level hatchery influence to the total spawners in each CU:
 <!-- SP: Completely re-wrote this equation. -->
 $$ c = \frac{\sum_{i \in  H}{\bar{S}_i}}{\sum_{j = 1}^n{\bar{S}_j}}$$
 
-where $\bar{S_i}$ is the geometric mean number of spawners in stream $i$ over the most recent two generations, $H$ are the indices of streams that have Moderate or High stream-level hatchery releases over the most recent two generations, and $n$ is the total number of streams in the CU. The CU-level Hatchery Release Score is then assigned as None, Low, Moderate, or High based on the value of $c$ (Table \@ref(tab:cuenhanceRank)). Note that the distinction between None and Low is related to the timeframe of hatchery releases, with a score of Low indicating that there has been no hatchery releases in the most recent two generations but there are prior recrods of hatchery releases. The CU is assigned a score of Not Assessed if there is insufficient information to assess stream-level hatchery releases.  
+where $\bar{S_i}$ is the geometric mean number of spawners in stream $i$ over the most recent two generations, $H$ are the indices of streams that have moderate or high stream-level hatchery influence over the most recent two generations, and $n$ is the total number of streams in the CU. The CU-level Hatchery Release Score is then assigned as none, low, moderate, or high based on the value of $c$ (Table \@ref(tab:cuenhanceRank)). Note that the distinction between none and low is related to the timeframe of hatchery releases, with a score of low indicating that there has been no records of hatchery influence (either returns of CWT spawners or releases of hatchery fish) in the most recent two generations but there are prior recrods of hatchery influence. The CU is assigned a score of not assessed if there is insufficient information to assess stream-level hatchery releases.  
 
 <!-- SP: Table re-written - previous definitions were incorrect (not % of spawners necessarily because roll-up, and ranges were not complete.) -->
-Table: (\#tab:cuenhanceRank) CU Hatchery Releases ranking categories, as generated based on the categories in Table 2 for individual spawning streams.
+Table: (\#tab:cuenhanceRank) CU Hatchery Releases Scores, as generated based on the categories in Table 2 for individual spawning streams.
 
 |Hatchery Release Score|Definition|
 |:-|:------|
-|None|There are no records of hatchery releases for the CU.|
-|Low|There are no records of hatchery releases for the CU **in the most recent two generations** ($c = 0$).|
-|Moderate|Less than 25% of spawners within the CU are from streams with Moderate or High hatchery releases ($0 < c <0.25$).|
-|High|At least 25% of spawners within the CU are from streams with Moderate or High hatchery releases ($c \geq 0.25$) |
-|Not Assessed|There was insufficient information to assess stream-level hatchery releases for the CU.|
+|None|There are no records of hatchery influence in the CU.|
+|Low|There are no records of hatchery influence in the CU **in the most recent two generations** ($c = 0$).|
+|Moderate|Less than 25% of spawners within the CU are from streams with moderate or high hatchery influence ($0 < c <0.25$).|
+|High|At least 25% of spawners within the CU are from streams with moderate or high hatchery influence ($c \geq 0.25$) |
+|Not Assessed|There was insufficient information to assess stream-level hatchery influence for the CU.|
 
 
 ### Data Quality {#data-quality}
 
-The quality of data shown in the Pacific Salmon Explorer varies widely among Regions, species, CUs, and streams. For instance, spawner abundance obtained from a single aerial survey are less reliable than counts obtained from an unbroken counting fence. We combine spawner survey data with other datasets, such as catch, to determine total run size and to assess the biological status of CUs. As such, measures of **data quality** are important for determining the level of confidence a user should have in the population indicators shown in the Pacific Salmon Explorer. 
+The quality of data shown in the Pacific Salmon Explorer varies widely among Regions, species, CUs, and streams. For instance, spawner abundance obtained from a single aerial survey is less reliable than counts obtained from an unbroken counting fence. We combine spawner survey data with other datasets, such as catch, to determine total run size and to assess the biological status of CUs. The **data quality** for each of these data types is important contextual information when interpreting the population indicators shown in the Pacific Salmon Explorer. 
 
-We developed a standardized approach to assess the quality of data used to estimate spawner abundance and catch for each CU, based on four criteria: 1) spawner survey method, 2) spawner survey coverage, 3) spawner survey execution, and 4) catch estimation method (Table \@ref(tab:cudataQual)). We assign scores of 0-5 to each of these four criteria and present the sum of scores over all four criteria as the overall Data Quality Score for each CU. We then translate the final scores into categories of Poor (1-7), Fair (8-14), or Good (15-20) that are displayed on the Pacific Salmon Explorer. A score of zero means that there were no data for that CU. Note that our current data quality assessments do not consider the quality of benchmarks used to assess Biological Status; however, this is an additional aspect of data quality that we would like to explore in the future.
+We developed a standardized approach to assess the quality of data used to estimate spawner abundance and catch for each CU, based on four criteria: 1) spawner survey method, 2) spawner survey coverage, 3) spawner survey execution, and 4) catch estimation method (Table \@ref(tab:cudataQual)). We assign scores of 0-5 to each of these four criteria and present the sum of scores over all four criteria as the overall Data Quality Score for each CU. We then translate the final scores into categories of Poor (1-7), Fair (8-14), or Good (15-20) that are displayed on the Pacific Salmon Explorer. A score of zero means that there were no data for that CU. Note that our current Data Quality Score does not consider the quality of benchmarks used to assess biological status; however, these benchmarks are derived from the above sources of data.
 
 ```{r cudataQual, include = TRUE, echo = FALSE, warning = FALSE}
 library(reactable)
@@ -170,22 +201,22 @@ dq <- data.frame(
     "Spawner Survey Execution", 
     "Catch Estimation Method"),
   Description = c(
-    "This criterion indicates the quality of spawner survey data, based on the survey methods and sampling effort across all indicator streams within this CU over the most recent generation.", 
-    "This criterion indicates how representative spawner surveys are of the CU, measured as the proportion of total spawners that spawn in indicator streams.", 
-    "This criterion indicates how consistently the indicator streams for the CU have been surveyed, measured as the proportion of indicator streams that were monitored over the most recent generation.", 
-    "This criterion indicates the quality of recent catch estimates for the CU, based on a qualitative assessment of the rigour of the catch estimation method in the most recent generation.")
+    "The quality of spawner survey data, based on the survey methods and sampling effort across all indicator streams within this CU over the most recent generation.", 
+    "How representative spawner surveys are of the CU, measured as the proportion of total spawners that spawn in indicator streams.", 
+    "How consistently the indicator streams for the CU have been surveyed, measured as the proportion of indicator streams that were monitored over the most recent generation.", 
+    "The quality of recent catch estimates for the CU, based on a qualitative assessment of the rigour of the catch estimation method in the most recent generation.")
 )
 
 
 knitr::kable(
  dq, booktabs = TRUE,
- caption = 'Summary of the four criteria used to score overall CU-level data quality, based on the quality of data on spawner abundance and catch estimates.'
+ caption = 'Summary of the four criteria used to assign a Data Quality Score to each CU, based on the quality of data on spawner abundance and catch estimates.'
  )
 ```
 
 #### Spawner Survey Method {#spawner-survey-method}
 
-This criterion indicates the quality of spawner survey data over the most recent generation, based on the survey methods and sampling effort across all indicator streams within the CU. The CU-level **Spawner Survey Method** data quality score is calculated as the average of stream-level data quality scores across all indicator streams (as defined by DFO) within the CU. We only quantify data quality for indicator streams because these are the streams that are typically used in expansion and infilling procedures to generate CU-level spawner abundances, while data for non-indicator streams is not directly used. 
+This criterion indicates the quality of spawner survey data over the most recent generation, based on the survey methods and sampling effort across all indicator streams within the CU. The CU-level **Spawner Survey Method** data quality criteria is calculated as the average of stream-level data quality scores across all indicator streams (as defined by DFO) within the CU. We only quantify data quality for indicator streams because these are the streams that are typically used in expansion and infilling procedures to generate CU-level spawner abundances, while data for non-indicator streams are not directly used. 
 <!-- SP: Add reference to run reconstruction section?? -->
 
 The stream-level data quality scores that we use to calculate a CU-level Spawner Survey Method score are recorded by DFO in the [NuSEDS database](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6) for each population and year. DFO measures stream-level survey quality on a six-point scale based on a standardized scoring rubric (Table \@ref(tab:strmQual)) based on survey methodology and effort. These stream-level data quality scores reflect the highly variable spawner abundance data within and across spawning streams, which arises largely from differences in spawner survey methodology. To improve the communication of the stream-level data quality scores, we translate the "Estimate Classification Type" provided by DFO in NuSEDS into categories labeled as Unknown, Low, Medium-Low, Medium, Medium-High, and High (Table \@ref(tab:strmQual)).
@@ -199,7 +230,7 @@ knitr::kable(
 ```
 
 <!-- SP: GOT TO HERE. Pick up review HERE. -->
-To then determine CU-level Spawner Survey Method data quality scores ($Q$), we calculate a weighted average of the stream-level survey method data quality scores across all indicator streams over the most recent generation within the CU (Table \@ref(tab:cusurveyQual)). Where there are known issues with DFO’s indicator stream list in NuSEDS, we manually override those data quality scores and substitute expert derived assessments of data quality based on expert knowledge of spawner survey methods. We do not include survey years where spawner survey methods are Unknown. We then translate the CU-level Spawner Survey Methods score into a scale of 0-5 (labeled as Not Applicable, Low, Medium-Low, Medium, Medium-High, And High; (Table \@ref(tab:cusurveyQual))). Note that this score reflects the reliability of the estimates of current spawner abundance for a CU over the most recent generation and not the reliability of estimates across the entire time series.
+To determine CU-level Spawner Survey Method data quality scores ($Q$), we calculate a weighted average of the stream-level survey method data quality scores across all indicator streams over the most recent generation within the CU (Table \@ref(tab:cusurveyQual)). Where there are known issues with DFO’s indicator stream list in NuSEDS, we manually override those data quality scores and substitute expert derived assessments of data quality based on expert knowledge of spawner survey methods. We do not include survey years where spawner survey methods are Unknown. We then translate the CU-level Spawner Survey Methods score into a scale of 0-5 (labeled as Not Applicable, Low, Medium-Low, Medium, Medium-High, And High; (Table \@ref(tab:cusurveyQual))). Note that this score reflects the reliability of the estimates of current spawner abundance for a CU over the most recent generation and not the reliability of estimates across the entire time series.
 
 ```{r cusurveyQual, include=TRUE, echo = FALSE}
 cusq <- read.csv("tables/sec4_cu_survey_qual.csv")
@@ -211,12 +242,12 @@ knitr::kable(
 
 #### Spawner Survey Coverage {#spawner-survey-coverage}
 
-This criterion indicates how representative spawner surveys are of the entire Conservation Unit, measured as the proportion of total spawners that spawn in indicator streams. If a CU has a higher proportion of spawners returning to indicator streams. In that case, we assume that the spawner abundance data within that CU is of higher quality since indicator streams are more consistently and reliably surveyed. On the Pacific Salmon Explorer, for the North and Central Coast Regions (Skeena, Nass, and Central Coast), we use the indicator stream list generated and maintained by LGL Ltd (English et al., 2018). We use the indicator stream list provided through the NuSEDS database for all other Regions. 
+This criterion indicates how representative spawner surveys are of the entire CU, measured as the proportion of total spawners that spawn in indicator streams. If a CU has a higher proportion of spawners returning to indicator streams, we assume that the spawner abundance data within that CU is of higher quality since indicator streams are more consistently and reliably surveyed.  
 
 This score is calculated as the average number of spawners in indicator streams divided by the average number of spawners in all indicator and non-indicator streams within the CU, following methods from English et al. (2018). To derive this proportion, we first determine which decade has the greatest coverage of spawner surveys across the indicator and non-indicator streams. We assume that there is a constant proportion of spawners from indicator and non-indicator streams through time. We then calculate the average number of spawners in all indicator and non-indicator streams according to: 
 
-
-where ~s~ = species, ~i~ = indicator stream or river, ~j~ = non-indicator stream or river, ~a = CU, ~d~ = decade, ~y~ = year, E~siady~ = indicator stream spawners, by stratum and E~sjady~ = non-indicator stream spawners, by stratum. This approach is used because it provides a weighted average of the actual number of spawners enumerated with higher quality methodology, rather than only counting the number of indicator and non-indicator streams. We then translate the **Spawner Survey Coverage** score into a scale of 0-5 (labeled as Not Applicable, Low, Medium-Low, Medium, Medium-High, and High; (Table \@ref(tab:spawncovScore))).
+$$C= 5 \times \frac{\sum_{i - 1}^I E_{siady}}{\sum_{i - 1}^I E_{siady} + \sum_{j=1}^J E_{sjady}} $$
+where $s$ = species, $i$ = indicator stream, $j$ = non-indicator stream, $a$ = CU, $d$ = decade, $y$ = year, $E_{siady}$ = indicator stream escapement (i.e. spawners), by stratum, and $E_{sjady}$ = non-indicator stream spawners, by stratum. This approach is used because it provides a weighted average of the actual number of spawners enumerated with higher quality methodology, rather than only counting the number of indicator and non-indicator streams. We then translate the **Spawner Survey Coverage** score into a scale of 0-5 (labeled as Not Applicable, Low, Medium-Low, Medium, Medium-High, and High; (Table \@ref(tab:spawncovScore))).
 
 For CUs that do not use expansion procedures to generate CU-level estimates (e.g. Fraser sockeye, Chinook, and coho, and Vancouver Island & Mainland Inlets Chinook), Spawner Survey Coverage scores were generated via expert opinion. 
 
@@ -230,9 +261,11 @@ knitr::kable(
 
 #### Spawner Survey Execution {#spawner-survey-excecution}
 
-This criterion indicates how consistently indicator streams for the Conservation Unit have been surveyed over the most recent generation, measured as the proportion of monitored indicator streams. To calculate **Spawner Survey Execution**, we calculate the proportion of indicator streams that are surveyed within the CU in each year of the most recent generation and the generational average of the proportions for each year, according to the following formula: 
+This criterion indicates how consistently indicator streams in the CU have been surveyed over the most recent generation, measured as the proportion of monitored indicator streams. To calculate **Spawner Survey Execution**, we calculate the proportion of indicator streams that are surveyed within the CU in each year of the most recent generation and the generational average of the proportions for each year, according to the following formula: 
+<!-- SP: I updated this formula; it is wrong in V11 and was the right formula in a 2020 version I had on file but there were still errors. Discuss.  -->
+$$E=\left( \sum_{y=Y-g+1}^{Y}\frac{ h_y}{I} \right) \times \frac{1}{g} \times 100$$
 
-where ~h~ is the number of indicator streams surveyed in year y of the most recent generation, ~m~ is the total number of indicator streams, and ~n~ is the generation length. We then translate the Spawner Survey Execution score into a scale of 0-5 (labeled as Not Applicable, Low, Medium-Low, Medium, Medium-High, and High; (Table \@ref(tab:spawnexecScore))).
+where $h$ is the number of indicator streams surveyed in year $y$ of the most recent generation, $Y$ is the most recent year of spawner data, $g$ is the generation length, and $I$ is the total number of indicator streams. We then translate the Spawner Survey Execution score into a scale of 0-5 (labeled as Not Applicable, Low, Medium-Low, Medium, Medium-High, and High; (Table \@ref(tab:spawnexecScore))).
 
 ```{r spawnexecScore, include=TRUE, echo = FALSE}
 hatch <- read.csv("tables/sec4_spawn_execscores.csv")
@@ -244,7 +277,7 @@ knitr::kable(
 
 #### Catch Estimates {#catch-estimates}
 
-Catch at the CU-level can be reconstructed using a variety of methods that result in **Catch Estimates** with different levels of uncertainty. This criterion indicates the quality of recent catch estimates for the Conservation Unit in the most recent generation, based on a qualitative assessment of the rigor of the catch estimation method. We calculate this score at the CU-level for the most recent generation based on categories of the type of current catch datasets available on the Pacific Salmon Explorer (Table \@ref(tab:catchestScore)).
+Catch at the CU-level can be reconstructed using a variety of methods that result in **Catch Estimates** with different levels of uncertainty. This criterion indicates the quality of recent catch estimates for the CU in the most recent generation, based on a qualitative assessment of the rigor of the catch estimation method. We calculate this score at the CU-level for the most recent generation based on categories of the type of current catch datasets available on the Pacific Salmon Explorer (Table \@ref(tab:catchestScore)).
 
 ```{r catchestScore, include=TRUE, echo = FALSE}
 ceS <- read.csv("tables/sec4_catch_estscores.csv")
@@ -254,9 +287,9 @@ knitr::kable(
 )
 ```
 
-#### Overall Spawner Abundance and Catch Data Quality {#overall-spwnab-catch-dqual}
+#### Overall Data Quality Score {#overall-spwnab-catch-dqual}
 
-We sum the scores from the four criteria above to calculate each CU's overall Spawner Abundance and Catch Data Quality score. This score represents a standardized assessment of the quality of data used to estimate spawner abundance and catch for the Conservation Unit, based on the four criteria above. While this method applies to the available data, it does weigh spawner data more heavily than catch data by a ratio of 3:1. 
+We sum the scores from the four criteria above to calculate each CU's Overall Data Quality Score. This score represents a standardized assessment of the quality of data used to estimate spawner abundance and catch for the Conservation Unit, based on the four criteria above. While this method applies to the available data, it does weigh spawner data more heavily than catch data by a ratio of 3:1. 
 
 We then translate the final scores into categories of Poor (1-7), Fair (8-14), or Good (15-20) that are displayed on the Pacific Salmon Explorer (Table \@ref(tab:spawnabQual)). A score of 0 means that there were no data to assess.
 
@@ -330,7 +363,7 @@ For each of the $n$ simulated time series, we calculate the 25th and 75th percen
 
 In addition to the standardized assessments of biological status developed by the Pacific salmon and steelhead Foundation, on the Pacific Salmon Explorer, we also display Wild Salmon Policy (WSP) status assessments completed by Fisheries and Oceans Canada (DFO), assessments conducted by the Committee on the Status of Endangered Wildlife in Canada (COSEWIC), and/or assessments conducted by the Province of BC where available (Appendix 4). About 10% of salmon CUs in BC have status assessments completed by DFO for the WSP and/or by COSEWIC (COSEWIC, 2017; COSEWIC, 2018; Fisheries and Oceans Canada, 2018). Fisheries and Oceans Canada does not lead status assessments for steelhead under the WSP, but the Province of BC conducts biological status assessments for some steelhead populations under the == Provincial Framework for Steelhead Management in British Columbia (2016) ==. For steelhead CUs, we visualize the outcomes of Province of BC status These assessments apply multiple metrics and expert judgment to assess status and focus primarily on economically significant Chinook, sockeye, and coho CUs in the Fraser and south coast of BC. When available, we display the WSP and COSEWIC status assessments alongside the standardized status assessments completed by PSF. In some cases, statuses may differ between the different assessments due to varying approaches to status evaluation and/or different years of data being used.
 
-### Decision Rules for Assessing Biological Status {#bs-decision-rules}
+#### Decision Rules for Assessing Biological Status {#bs-decision-rules}
 
 Deciding which benchmarks are most appropriate for assessing the biological status of a given CU depends on the available data. With input from the Population Science Advisory Committee, we have developed a set of decision rules to guide how we apply benchmarks to assess biological status for all CUs on the Pacific Salmon Explorer (Figure \@ref(fig:bsdecisionRules)). 
 

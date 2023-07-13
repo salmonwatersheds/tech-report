@@ -52,6 +52,15 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<script src="libs/core-js-2.5.3/shim.min.js"></script>
+<script src="libs/react-17.0.0/react.min.js"></script>
+<script src="libs/react-17.0.0/react-dom.min.js"></script>
+<script src="libs/reactwidget-1.0.0/react-tools.js"></script>
+<script src="libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<link href="libs/reactable-0.4.4/reactable.css" rel="stylesheet" />
+<script src="libs/reactable-binding-0.4.4/reactable.js"></script>
 
 
 
@@ -258,7 +267,7 @@ Figure 4.1: Benchmarks and biological status zones under the Wild Salmon Policy 
 <li>recruits-per-spawner datasets.</li>
 </ul>
 <p>The data sources and analyses differ among regions, with the main differences occurring between the North and Central Coast (Nass, Skeena, Central Coast Regions) and the South Coast (Fraser and Vancouver Island &amp; Mainland Inlets Regions). Region-specific data nuances are included in <a href="regions.html#regions">Regions</a>.</p>
-<p>We synthesize the types of data listed above to generate output datasets that are available for download in the <a href="https://www.data.salmonwatersheds.ca">Salmon Data Library</a>. Visualization of these output datasets are provided through the eight population indicators presented in the <a href="https://www.salmonexplorer.ca">Pacific Salmon Explorer</a>. The data compilation exercise also highlights data gaps across and within Regions. We aim to update these key datasets annually or as new input data become available.</p>
+<p>We synthesize the types of data listed above to generate output datasets that are available for download in the <a href="https://www.data.salmonwatersheds.ca">Salmon Data Library</a>. These output datasets are visualized in the <a href="https://www.salmonexplorer.ca">Pacific Salmon Explorer</a> through the nine population indicators, as well as accompanying information on the extent of hatchery influence and quality of data for each CU in the Hatchery Release Score and Data Quality Scores, respectively. The data compilation exercise also highlights data gaps across and within Regions. We aim to update these key datasets annually or as new input data become available.</p>
 <div id="overview-biological-indicators" class="section level3 hasAnchor" number="4.1.1">
 <h3><span class="header-section-number">4.1.1</span> Overview of Biological indicators<a href="analytical-approach.html#overview-biological-indicators" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <!-- SP: The previous version referenced "eight indicators" but they were never listed...and there are nine indicators in the PSE so I am unsure of what was being referred to. I tried to clarify how this section is organized by going through the indicators in order that they appear in the PSE: 
@@ -289,9 +298,9 @@ The data quality score is then be a new section after the Overview of Biological
 <div id="spawner-surveys" class="section level4 hasAnchor" number="4.1.1.1">
 <h4><span class="header-section-number">4.1.1.1</span> Spawner Surveys<a href="analytical-approach.html#spawner-surveys" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p><strong>Spawner surveys</strong> show the observed numbers of spawning salmon of each species returning to specific streams each year. Spawner surveys provide a fundamental piece of information needed to assess the status of salmon CUs over time. We draw on spawner survey data from the <a href="https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6">New Salmon Escapement Database (NuSEDS)</a> and other sources detailed in <a href="regions.html#regions">Regions</a> to visualize the spatial and temporal coverage of spawner surveys for each CU in the <a href="https://www.salmonexplorer.ca">Pacific Salmon Explorer</a>.</p>
-<p>DFO has identified both indicator and non-indicator streams across Regions. <strong>Indicator streams</strong> are observed more consistently in recent decades, tend to have higher spawner abundance, and tend to be monitored using more intensive methods that provide greater accuracy.
+<p>We distingusih spawner surveys in indicator streams and non-indicator streams for each species. <strong>Indicator streams</strong> are observed more consistently in recent decades, tend to have higher spawner abundance, and tend to be monitored using more intensive methods that provide greater accuracy.
 <!-- SP: Updated this text; I ran a binomial glm to look at what factors influence indicator/non-indicator in NuSEDS and min year, max year, number of obs, and mean estimate classification type are all signficant, with positive effects of both min and max year (i.e. more recently monitored). -->
-Therefore, indicator streams are understood to provide more reliable indices of abundance and are assumed to be representative of returns to other streams nearby (English et al. 2016). <strong>Non-indicator streams</strong> tend to have less consistent survey coverage, more variable survey methods, and/or may be more difficult to survey. A number of both indicator and non-indicator streams within a CU may be surveyed in a given year.</p>
+Therefore, indicator streams are understood to provide more reliable indices of abundance and are assumed to be representative of returns to other streams nearby (English et al. 2016). <strong>Non-indicator streams</strong> tend to have less consistent survey coverage, more variable survey methods, and/or may be more difficult to survey. A number of both indicator and non-indicator streams within a CU may be surveyed in a given year. On the Pacific Salmon Explorer, for the North and Central Coast Regions (Skeena, Nass, and Central Coast), we use the indicator stream designation from LGL Ltd (English et al., 2018) and for all other Regions we use the indicator stream designation provided by DFO in NuSEDS.</p>
 <p>A variety of methods are used to survey spawners in both indicator and non-indicator streams, and methods vary by species, CU, and stream. Spawner counts can be produced from a single visual survey of a stream by foot, by counting fish through a complete counting fence, or by aerial (helicopter) surveys. Survey methodology can also change over time according to changes in capacity and funding; for instance, some streams that were historically monitored by visual surveys on foot are now enumerated via a counting fence or aerial surveys (see <a href="#quality-data">Data Quality</a> section below).</p>
 <!-- For steelhead, we used spawner survey data from a variety of sources, depending on the Region. Steelhead monitoring data have not been maintained in a centralized database like NuSEDs, so we compiled and synthesized spawner survey data for steelhead from disparate sources, including from many monitoring projects led by the Province of BC. Streams with spawner survey data for steelhead have not been classified as indicator and non-indicator streams, so we have provisionally classified all streams with available spawner survey data as indicator streams for steelhead. More specific details on the specific sources of spawner survey data for steelhead are summarized by Region in the [Regions](#regions) section. -->
 </div>
@@ -305,7 +314,57 @@ We also calculate the geometric mean of juvenile abundance or density as it is l
 <h4><span class="header-section-number">4.1.1.3</span> Hatchery Releases<a href="analytical-approach.html#hatchery-releases" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>While salmon hatcheries can play a role in the conservation and management of Pacific salmon, hatchery releases can also pose risks to wild salmon and steelhead. Juvenile hatchery fish can out compete wild juveniles for limited food resources, and there is increasing evidence that high hatchery salmon abundance at sea is related to decreased wild salmon productivity due to limitations of ocean carrying capacity (Ruggerone &amp; Irvine, 2018; Connors et al., 2020). Hatchery-produced spawners can also reproduce with wild salmon and steelhead, with implications for genetic diversity and productivity of wild populations. Hatchery-produced fish can also exacerbate issues in mixed-stock fisheries, which can affect threatened or at-risk salmon and steelhead populations.</p>
 <!-- SP: This information is slightly different from the More Information tab in the PSE, which I think is more informative. Can we use that text? -->
-<p>Given these concerns and other potential impacts of hatcheries on wild salmon and steelhead abundance and productivity, we visualize the number of fry released from specific hatchery locations under the <strong>hatchery releases</strong> indicator. For each hatchery location, we show the type of hatchery, hatchery fish release sites, number of released hatchery fish each year. For release sites, we show additional information, including the name of the site, the years that site was in use, the type or life stage at which juvenile salmon or steelhead were released, and the broodstock CU (CU from which the hatchery broodstock originate). Juvenile salmon and steelhead are released at various life stages and after various hatchery practices (e.g. some juveniles are released in rivers as fed fry, while others are reared for longer in the hatchery and then transferred to a sea pen in the ocean, where they are eventually released) which can affect their survival. Data on hatchery locations, release sites, and release numbers were provided by DFO Salmon Enhancement Program staff or for steelhead, were accessed through the Province of BC’s BC Data Catalogue. The information on hatchery releases in streams is also synthesized at the CU-level (see <a href="analytical-approach.html#hatchery-release-score">Hatchery Releases Score</a>, below)</p>
+<p>Given these concerns and other potential impacts of hatcheries on wild salmon and steelhead abundance and productivity, we visualize the number of fry released from specific locations under the <strong>hatchery releases</strong> indicator. For each hatchery facility (i.e. the facility where eggs are hatched), we show the name, years in use, and facility type. Hatchery operations range in size and production from small to large-scale, with different purposes. There are four types of hatcheries shown on the Pacific Salmon Explorer, as defined by Fisheries and Oceans Canada’s Salmon Enhancement Program (Table <a href="analytical-approach.html#tab:hatchTypes">4.1</a>)</p>
+<p>Hatchery facilities may release juvenile fish at one or more release sites. We show the locations and numbers of fish released through time at each of these release sites. Locations also include additional information: the name of the site, the years that site was in use, the type or life stage at which juvenile salmon or steelhead were released, and the broodstock CU (CU from which the hatchery broodstock originate). Juvenile salmon and steelhead are released at various life stages and after various hatchery practices (e.g. some juveniles are released in rivers as fed fry, while others are reared for longer in the hatchery and then transferred to a sea pen in the ocean, where they are eventually released) which can affect their survival (James et al. 2023). Data on hatchery locations, release sites, and release numbers were provided by DFO Salmon Enhancement Program staff or for steelhead, were accessed through the Province of BC’s BC Data Catalogue. The information on hatchery releases in streams is also synthesized at the CU-level (see <a href="analytical-approach.html#hatchery-release-score">Hatchery Releases Score</a>, below).</p>
+<table>
+<caption>
+<span id="tab:hatchTypes">Table 4.1: </span>Types of Hatcheries operated in BC and visualized on the Pacific Salmon Explorer.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Type of Hatchery
+</th>
+<th style="text-align:left;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Enhancement operations
+</td>
+<td style="text-align:left;">
+Major hatcheries with high production
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Community economic development
+</td>
+<td style="text-align:left;">
+Smaller-scale community-based hatcheries
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Designated public involvement
+</td>
+<td style="text-align:left;">
+Similar to community economic development but smaller
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Public involvement unit
+</td>
+<td style="text-align:left;">
+Very small-scale hatcheries
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="spawner-abundance" class="section level4 hasAnchor" number="4.1.1.4">
 <h4><span class="header-section-number">4.1.1.4</span> Spawner Abundance<a href="analytical-approach.html#spawner-abundance" class="anchor-section" aria-label="Anchor link to header"></a></h4>
@@ -337,88 +396,78 @@ Recruits-per-spawner is then calculated as the number of recruits divided by the
 </div>
 <div id="hatchery-release-score" class="section level3 hasAnchor" number="4.1.2">
 <h3><span class="header-section-number">4.1.2</span> Hatchery Release Score<a href="analytical-approach.html#hatchery-release-score" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Hatchery operations range in size and production from small to large-scale, with different purposes. There are four types of hatcheries shown on the Pacific Salmon Explorer, as defined by Fisheries and Oceans Canada’s Salmon Enhancement Program (Table <a href="analytical-approach.html#tab:hatchTypes">4.1</a>)</p>
-<table>
-<caption><span id="tab:hatchTypes">Table 4.1: </span>Types of Hatcheries operated in BC and visualized on the Pacific Salmon Explorer.</caption>
-<colgroup>
-<col width="36%" />
-<col width="63%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Type of Hatchery</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Enhancement operations</td>
-<td align="left">Major hatcheries with high production</td>
-</tr>
-<tr class="even">
-<td align="left">Community economic development</td>
-<td align="left">Smaller-scale community-based hatcheries</td>
-</tr>
-<tr class="odd">
-<td align="left">Designated public involvement</td>
-<td align="left">Similar to community economic development but smaller</td>
-</tr>
-<tr class="even">
-<td align="left">Public involvement unit</td>
-<td align="left">Very small-scale hatcheries</td>
-</tr>
-</tbody>
-</table>
-<p>These hatcheries release hatchery-produced salmon and steelhead throughout streams in BC, resulting in salmon and steelhead populations that are considered to be hatchery-produced to varying degrees. We assess and display the current Hatchery Releases Score for salmon and steelhead CUs based on a standardized approach that draws on the best available data for all spawning streams within CUs across BC. The <strong>Hatchery Release Score</strong> is an assessment of the extent of hatchery activity within a CU over the last two generations.
+<p>Hatchery-produced salmon and steelhead are released in streams throughout BC, resulting in salmon and steelhead populations that are considered to be hatchery-produced to varying degrees. We assess and display the current Hatchery Releases Score for salmon and steelhead CUs based on a standardized approach that draws on the best available data for all spawning streams within CUs across BC. The <strong>Hatchery Release Score</strong> is an assessment of the extent of hatchery activity within a CU over the last two generations.
 <!-- SP: The next sentence doesn't make sense to me. *Stream level* hatchery releases based on intensity within the CU? -->
 <!-- We developed hatchery releases classifications based on the intensity of recent hatchery activity within each CU (High, Moderate, Low, None, Not Assessed; Table \@ref(tab:enhanceAsmt)).  -->
 <!-- SP: The following sentence is too vague and adds nothing above what is shown in the table. Remove.
 Here, High and Moderate correspond with streams that have significant hatchery activity, while Low and None are streams with minimal hatchery activity.   -->
 <!-- SP: What definition under the WSP? Definition of hatchery release score? This is not mentioned anywhere above... --></p>
 <table>
-<caption><span id="tab:enhanceAsmt">Table 4.2: </span>Stream Hatchery Releases score categories for spawning streams.</caption>
-<colgroup>
-<col width="26%" />
-<col width="73%" />
-</colgroup>
+<caption>
+<span id="tab:enhanceAsmt">Table 4.2: </span>Stream Hatchery Releases score categories for spawning streams.
+</caption>
 <thead>
-<tr class="header">
-<th align="left">Stream Enhancement Level</th>
-<th align="left">Definition</th>
+<tr>
+<th style="text-align:left;">
+Stream Enhancement Level
+</th>
+<th style="text-align:left;">
+Definition
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left">None</td>
-<td align="left">No records of enhancement</td>
+<tr>
+<td style="text-align:left;">
+None
+</td>
+<td style="text-align:left;">
+No records of enhancement
+</td>
 </tr>
-<tr class="even">
-<td align="left">Low</td>
-<td align="left">No records of enhancement over the previous two generations</td>
+<tr>
+<td style="text-align:left;">
+Low
+</td>
+<td style="text-align:left;">
+No records of enhancement over the previous two generations
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Moderate</td>
-<td align="left">Less than 25% enhancement over the previous two generations</td>
+<tr>
+<td style="text-align:left;">
+Moderate
+</td>
+<td style="text-align:left;">
+Less than 25% enhancement over the previous two generations
+</td>
 </tr>
-<tr class="even">
-<td align="left">High</td>
-<td align="left">More than 25% enhancement over the previous two generations</td>
+<tr>
+<td style="text-align:left;">
+High
+</td>
+<td style="text-align:left;">
+More than 25% enhancement over the previous two generations
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Not Assessed</td>
-<td align="left">The Enhancement Level for this Conservation Unit has not been assessed</td>
+<tr>
+<td style="text-align:left;">
+Not Assessed
+</td>
+<td style="text-align:left;">
+The Enhancement Level for this Conservation Unit has not been assessed
+</td>
 </tr>
 </tbody>
 </table>
-<!-- SP: The terminology here needs to be clarified. Stream Hatchery Release(s) Scores vs Hatchery Release Scores?  -->
-<p>The determination of a CU’s Hatchery Release Score begins with assessing the extent of hatchery releases among individual spawning streams (indicator and non-indicator) within that CU, based on methods developed by DFO (Brown et al., 2019, 2020). Assessments of stream-level hatchery releases may draw on on three types of information: 1) the number of coded wire tags (CWT) recovered from spawners; 2) the number of juveniles released from hatcheries within the CU; and 3) the number of fish collected for broodstock. If CWT-based estimates are available, then we use the proportion of returning spawners that have CWTs to quantify stream-level hatchery releases. Otherwise, we use the highest number from either the number of juvenile releases or the number of collected broodstock. This information is used to assign a categorical assessment of stream-level hatchery releases (High, Moderate, Low, None, Not Assessed; Table <a href="analytical-approach.html#tab:enhanceAsmt">4.2</a>). For example, if more than 25% of spawners have CWTs, or more than 25% of years have records of juvenile releases or broodstock collection, then the stream is ranked as High (Table <a href="analytical-approach.html#tab:enhanceAsmt">4.2</a>). Data on hatchery activities for each spawning stream for southern BC Chinook was provided by DFO (Brown et al., 2019, 2020). For other species and CUs, we assessed stream-level hatchery releases based on data provided by DFO’s Salmon Enhancement Program. In contrast to Brown et al. (2019), we assessed stream-level hatchery releases over the most recent two generations in alignment with the definition of wild salmon under Canada’s Wild Salmon Policy.</p>
-<p>From the stream-level hatchery releases, we calculate the proportional contribution, <span class="math inline">\(c\)</span>, of streams with Moderate or High stream-level hatchery releases to the total spawners in each CU:
+<!-- SP: I don't think hatchery release score is appropriate here, since the data include CWTs collected from spawners. I hate to re-open the can of worms, but we should discuss. -->
+<p>The determination of a CU’s Hatchery Release Score begins with assessing the extent of hatchery influence among individual spawning streams (indicator and non-indicator) within that CU, based on methods developed by DFO (Brown et al., 2019, 2020). Assessments of stream-level hatchery influence may draw on on three types of information: 1) the number of coded wire tags (CWT) recovered from spawners; 2) the number of juveniles released from hatcheries within the CU; and 3) the number of fish collected for broodstock. If CWT-based estimates are available, then we use the proportion of returning spawners that have CWTs to quantify stream-level hatchery influence. Otherwise, we use the highest number from either the number of juvenile releases or the number of collected broodstock. This information is used to assign a categorical assessment of stream-level hatchery influence (high, moderate, low, none, not assessed; Table <a href="analytical-approach.html#tab:enhanceAsmt">4.2</a>). For example, if more than 25% of spawners have CWTs, or more than 25% of years have records of juvenile releases or broodstock collection, then the stream is ranked as having high hatchery influence (Table <a href="analytical-approach.html#tab:enhanceAsmt">4.2</a>). Data on hatchery activities for each spawning stream for southern BC Chinook were provided by DFO (Brown et al., 2019, 2020). For other species and CUs, we assessed stream-level hatchery influence based on data provided by DFO’s Salmon Enhancement Program. In contrast to Brown et al. (2019), we assessed stream-level hatchery influence over the most recent two generations in alignment with the definition of wild salmon under Canada’s Wild Salmon Policy.</p>
+<p>To arrive at a CU-level Hatchery Release Score, we calculate the proportional contribution, <span class="math inline">\(c\)</span>, of spawners from streams with moderate or high stream-level hatchery influence to the total spawners in each CU:
 <!-- SP: Completely re-wrote this equation. -->
 <span class="math display">\[ c = \frac{\sum_{i \in  H}{\bar{S}_i}}{\sum_{j = 1}^n{\bar{S}_j}}\]</span></p>
-<p>where <span class="math inline">\(\bar{S_i}\)</span> is the geometric mean number of spawners in stream <span class="math inline">\(i\)</span> over the most recent two generations, <span class="math inline">\(H\)</span> are the indices of streams that have Moderate or High stream-level hatchery releases over the most recent two generations, and <span class="math inline">\(n\)</span> is the total number of streams in the CU. The CU-level Hatchery Release Score is then assigned as None, Low, Moderate, or High based on the value of <span class="math inline">\(c\)</span> (Table <a href="analytical-approach.html#tab:cuenhanceRank">4.3</a>). Note that the distinction between None and Low is related to the timeframe of hatchery releases, with a score of Low indicating that there has been no hatchery releases in the most recent two generations but there are prior recrods of hatchery releases. The CU is assigned a score of Not Assessed if there is insufficient information to assess stream-level hatchery releases.</p>
+<p>where <span class="math inline">\(\bar{S_i}\)</span> is the geometric mean number of spawners in stream <span class="math inline">\(i\)</span> over the most recent two generations, <span class="math inline">\(H\)</span> are the indices of streams that have moderate or high stream-level hatchery influence over the most recent two generations, and <span class="math inline">\(n\)</span> is the total number of streams in the CU. The CU-level Hatchery Release Score is then assigned as none, low, moderate, or high based on the value of <span class="math inline">\(c\)</span> (Table <a href="analytical-approach.html#tab:cuenhanceRank">4.3</a>). Note that the distinction between none and low is related to the timeframe of hatchery releases, with a score of low indicating that there has been no records of hatchery influence (either returns of CWT spawners or releases of hatchery fish) in the most recent two generations but there are prior recrods of hatchery influence. The CU is assigned a score of not assessed if there is insufficient information to assess stream-level hatchery releases.</p>
 <!-- SP: Table re-written - previous definitions were incorrect (not % of spawners necessarily because roll-up, and ranges were not complete.) -->
 <table>
-<caption><span id="tab:cuenhanceRank">Table 4.3: </span> CU Hatchery Releases ranking categories, as generated based on the categories in Table 2 for individual spawning streams.</caption>
+<caption><span id="tab:cuenhanceRank">Table 4.3: </span> CU Hatchery Releases Scores, as generated based on the categories in Table 2 for individual spawning streams.</caption>
 <colgroup>
 <col width="22%" />
 <col width="77%" />
@@ -432,368 +481,625 @@ Here, High and Moderate correspond with streams that have significant hatchery a
 <tbody>
 <tr class="odd">
 <td align="left">None</td>
-<td align="left">There are no records of hatchery releases for the CU.</td>
+<td align="left">There are no records of hatchery influence in the CU.</td>
 </tr>
 <tr class="even">
 <td align="left">Low</td>
-<td align="left">There are no records of hatchery releases for the CU <strong>in the most recent two generations</strong> (<span class="math inline">\(c = 0\)</span>).</td>
+<td align="left">There are no records of hatchery influence in the CU <strong>in the most recent two generations</strong> (<span class="math inline">\(c = 0\)</span>).</td>
 </tr>
 <tr class="odd">
 <td align="left">Moderate</td>
-<td align="left">Less than 25% of spawners within the CU are from streams with Moderate or High hatchery releases (<span class="math inline">\(0 &lt; c &lt;0.25\)</span>).</td>
+<td align="left">Less than 25% of spawners within the CU are from streams with moderate or high hatchery influence (<span class="math inline">\(0 &lt; c &lt;0.25\)</span>).</td>
 </tr>
 <tr class="even">
 <td align="left">High</td>
-<td align="left">At least 25% of spawners within the CU are from streams with Moderate or High hatchery releases (<span class="math inline">\(c \geq 0.25\)</span>)</td>
+<td align="left">At least 25% of spawners within the CU are from streams with moderate or high hatchery influence (<span class="math inline">\(c \geq 0.25\)</span>)</td>
 </tr>
 <tr class="odd">
 <td align="left">Not Assessed</td>
-<td align="left">There was insufficient information to assess stream-level hatchery releases for the CU.</td>
+<td align="left">There was insufficient information to assess stream-level hatchery influence for the CU.</td>
 </tr>
 </tbody>
 </table>
 </div>
 <div id="data-quality" class="section level3 hasAnchor" number="4.1.3">
 <h3><span class="header-section-number">4.1.3</span> Data Quality<a href="analytical-approach.html#data-quality" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The quality of data shown in the Pacific Salmon Explorer varies widely among Regions, species, CUs, and streams. For instance, spawner abundance obtained from a single aerial survey are less reliable than counts obtained from an unbroken counting fence. We combine spawner survey data with other datasets, such as catch, to determine total run size and to assess the biological status of CUs. As such, measures of <strong>data quality</strong> are important for determining the level of confidence a user should have in the population indicators shown in the Pacific Salmon Explorer.</p>
-<p>We developed a standardized approach to assess the quality of data used to estimate spawner abundance and catch for each CU, based on four criteria: 1) spawner survey method, 2) spawner survey coverage, 3) spawner survey execution, and 4) catch estimation method (Table <a href="analytical-approach.html#tab:cudataQual">4.4</a>). We assign scores of 0-5 to each of these four criteria and present the sum of scores over all four criteria as the overall Data Quality Score for each CU. We then translate the final scores into categories of Poor (1-7), Fair (8-14), or Good (15-20) that are displayed on the Pacific Salmon Explorer. A score of zero means that there were no data for that CU. Note that our current data quality assessments do not consider the quality of benchmarks used to assess Biological Status; however, this is an additional aspect of data quality that we would like to explore in the future.</p>
+<p>The quality of data shown in the Pacific Salmon Explorer varies widely among Regions, species, CUs, and streams. For instance, spawner abundance obtained from a single aerial survey is less reliable than counts obtained from an unbroken counting fence. We combine spawner survey data with other datasets, such as catch, to determine total run size and to assess the biological status of CUs. The <strong>data quality</strong> for each of these data types is important contextual information when interpreting the population indicators shown in the Pacific Salmon Explorer.</p>
+<p>We developed a standardized approach to assess the quality of data used to estimate spawner abundance and catch for each CU, based on four criteria: 1) spawner survey method, 2) spawner survey coverage, 3) spawner survey execution, and 4) catch estimation method (Table <a href="analytical-approach.html#tab:cudataQual">4.4</a>). We assign scores of 0-5 to each of these four criteria and present the sum of scores over all four criteria as the overall Data Quality Score for each CU. We then translate the final scores into categories of Poor (1-7), Fair (8-14), or Good (15-20) that are displayed on the Pacific Salmon Explorer. A score of zero means that there were no data for that CU. Note that our current Data Quality Score does not consider the quality of benchmarks used to assess biological status; however, these benchmarks are derived from the above sources of data.</p>
 <table>
-<caption><span id="tab:cudataQual">Table 4.4: </span>Summary of the four criteria used to score overall CU-level data quality, based on the quality of data on spawner abundance and catch estimates.</caption>
-<colgroup>
-<col width="8%" />
-<col width="10%" />
-<col width="81%" />
-</colgroup>
+<caption>
+<span id="tab:cudataQual">Table 4.4: </span>Summary of the four criteria used to assign a Data Quality Score to each CU, based on the quality of data on spawner abundance and catch estimates.
+</caption>
 <thead>
-<tr class="header">
-<th align="left">Category</th>
-<th align="left">Criteria</th>
-<th align="left">Description</th>
+<tr>
+<th style="text-align:left;">
+Category
+</th>
+<th style="text-align:left;">
+Criteria
+</th>
+<th style="text-align:left;">
+Description
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left">Spawner Survey Data</td>
-<td align="left">Spawner Survey Method</td>
-<td align="left">This criterion indicates the quality of spawner survey data, based on the survey methods and sampling effort across all indicator streams within this CU over the most recent generation.</td>
+<tr>
+<td style="text-align:left;">
+Spawner Survey Data
+</td>
+<td style="text-align:left;">
+Spawner Survey Method
+</td>
+<td style="text-align:left;">
+The quality of spawner survey data, based on the survey methods and sampling effort across all indicator streams within this CU over the most recent generation.
+</td>
 </tr>
-<tr class="even">
-<td align="left">Spawner Survey Data</td>
-<td align="left">Spawner Survey Coverage</td>
-<td align="left">This criterion indicates how representative spawner surveys are of the CU, measured as the proportion of total spawners that spawn in indicator streams.</td>
+<tr>
+<td style="text-align:left;">
+Spawner Survey Data
+</td>
+<td style="text-align:left;">
+Spawner Survey Coverage
+</td>
+<td style="text-align:left;">
+How representative spawner surveys are of the CU, measured as the proportion of total spawners that spawn in indicator streams.
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Spawner Survey Data</td>
-<td align="left">Spawner Survey Execution</td>
-<td align="left">This criterion indicates how consistently the indicator streams for the CU have been surveyed, measured as the proportion of indicator streams that were monitored over the most recent generation.</td>
+<tr>
+<td style="text-align:left;">
+Spawner Survey Data
+</td>
+<td style="text-align:left;">
+Spawner Survey Execution
+</td>
+<td style="text-align:left;">
+How consistently the indicator streams for the CU have been surveyed, measured as the proportion of indicator streams that were monitored over the most recent generation.
+</td>
 </tr>
-<tr class="even">
-<td align="left">Catch Data</td>
-<td align="left">Catch Estimation Method</td>
-<td align="left">This criterion indicates the quality of recent catch estimates for the CU, based on a qualitative assessment of the rigour of the catch estimation method in the most recent generation.</td>
+<tr>
+<td style="text-align:left;">
+Catch Data
+</td>
+<td style="text-align:left;">
+Catch Estimation Method
+</td>
+<td style="text-align:left;">
+The quality of recent catch estimates for the CU, based on a qualitative assessment of the rigour of the catch estimation method in the most recent generation.
+</td>
 </tr>
 </tbody>
 </table>
 <div id="spawner-survey-method" class="section level4 hasAnchor" number="4.1.3.1">
 <h4><span class="header-section-number">4.1.3.1</span> Spawner Survey Method<a href="analytical-approach.html#spawner-survey-method" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>This criterion indicates the quality of spawner survey data over the most recent generation, based on the survey methods and sampling effort across all indicator streams within the CU. The CU-level <strong>Spawner Survey Method</strong> data quality score is calculated as the average of stream-level data quality scores across all indicator streams (as defined by DFO) within the CU. We only quantify data quality for indicator streams because these are the streams that are typically used in expansion and infilling procedures to generate CU-level spawner abundances, while data for non-indicator streams is not directly used.
+<p>This criterion indicates the quality of spawner survey data over the most recent generation, based on the survey methods and sampling effort across all indicator streams within the CU. The CU-level <strong>Spawner Survey Method</strong> data quality criteria is calculated as the average of stream-level data quality scores across all indicator streams (as defined by DFO) within the CU. We only quantify data quality for indicator streams because these are the streams that are typically used in expansion and infilling procedures to generate CU-level spawner abundances, while data for non-indicator streams are not directly used.
 <!-- SP: Add reference to run reconstruction section?? --></p>
 <p>The stream-level data quality scores that we use to calculate a CU-level Spawner Survey Method score are recorded by DFO in the <a href="https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6">NuSEDS database</a> for each population and year. DFO measures stream-level survey quality on a six-point scale based on a standardized scoring rubric (Table <a href="analytical-approach.html#tab:strmQual">4.5</a>) based on survey methodology and effort. These stream-level data quality scores reflect the highly variable spawner abundance data within and across spawning streams, which arises largely from differences in spawner survey methodology. To improve the communication of the stream-level data quality scores, we translate the “Estimate Classification Type” provided by DFO in NuSEDS into categories labeled as Unknown, Low, Medium-Low, Medium, Medium-High, and High (Table <a href="analytical-approach.html#tab:strmQual">4.5</a>).</p>
 <table>
-<caption><span id="tab:strmQual">Table 4.5: </span>Stream Survey Quality Criteria for the Estimate Classification field in NuSEDS (provided by Bruce Baxter, DFO), showing our categories in the “Data Quality Score on the Pacific Salmon Explorer” column.</caption>
-<colgroup>
-<col width="12%" />
-<col width="10%" />
-<col width="28%" />
-<col width="18%" />
-<col width="12%" />
-<col width="9%" />
-<col width="8%" />
-</colgroup>
+<caption>
+<span id="tab:strmQual">Table 4.5: </span>Stream Survey Quality Criteria for the Estimate Classification field in NuSEDS (provided by Bruce Baxter, DFO), showing our categories in the “Data Quality Score on the Pacific Salmon Explorer” column.
+</caption>
 <thead>
-<tr class="header">
-<th align="left">Data.Quality.Score.on.the.Pacific.Salmon.Explorer</th>
-<th align="left">Estimate.Type</th>
-<th align="left">Survey.Method.s.</th>
-<th align="left">Reliability..within.stock.comparisons.</th>
-<th align="left">Units</th>
-<th align="left">Accuracy</th>
-<th align="left">Precision</th>
+<tr>
+<th style="text-align:left;">
+Data.Quality.Score.on.the.Pacific.Salmon.Explorer
+</th>
+<th style="text-align:left;">
+Estimate.Type
+</th>
+<th style="text-align:left;">
+Survey.Method.s.
+</th>
+<th style="text-align:left;">
+Reliability..within.stock.comparisons.
+</th>
+<th style="text-align:left;">
+Units
+</th>
+<th style="text-align:left;">
+Accuracy
+</th>
+<th style="text-align:left;">
+Precision
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left">High</td>
-<td align="left">1: True Abundance, high resolution</td>
-<td align="left">Total, seasonal counts through fence or fishway; virtually no bypass</td>
-<td align="left">Reliable resolution of between year differences &gt;10% (in absolute units)</td>
-<td align="left">Absolute abundance</td>
-<td align="left">Actual, very high</td>
-<td align="left">Infinite (i.e. + or - 0%)</td>
+<tr>
+<td style="text-align:left;">
+High
+</td>
+<td style="text-align:left;">
+1: True Abundance, high resolution
+</td>
+<td style="text-align:left;">
+Total, seasonal counts through fence or fishway; virtually no bypass
+</td>
+<td style="text-align:left;">
+Reliable resolution of between year differences &gt;10% (in absolute units)
+</td>
+<td style="text-align:left;">
+Absolute abundance
+</td>
+<td style="text-align:left;">
+Actual, very high
+</td>
+<td style="text-align:left;">
+Infinite (i.e. + or - 0%)
+</td>
 </tr>
-<tr class="even">
-<td align="left">Medium-High</td>
-<td align="left">2: True Abundance, medium resolution</td>
-<td align="left">High effort (5 or more trips), standard methods (e.g. mark-recapture, serial counts for area under the curve, etc.)</td>
-<td align="left">Reliable resolution of between year differences &gt;25% (in absolute units)</td>
-<td align="left">Absolute abundance</td>
-<td align="left">Actual or assigned estimate and high</td>
-<td align="left">Actual estimate, high to moderate</td>
+<tr>
+<td style="text-align:left;">
+Medium-High
+</td>
+<td style="text-align:left;">
+2: True Abundance, medium resolution
+</td>
+<td style="text-align:left;">
+High effort (5 or more trips), standard methods (e.g. mark-recapture, serial counts for area under the curve, etc.)
+</td>
+<td style="text-align:left;">
+Reliable resolution of between year differences &gt;25% (in absolute units)
+</td>
+<td style="text-align:left;">
+Absolute abundance
+</td>
+<td style="text-align:left;">
+Actual or assigned estimate and high
+</td>
+<td style="text-align:left;">
+Actual estimate, high to moderate
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Medium</td>
-<td align="left">3: Relative Abundance, high resolution</td>
-<td align="left">High effort (5 or more trips), standard methods (e.g. equal effort surveys executed by walk, swim, overflight, etc.)</td>
-<td align="left">Reliable resolution of between year differences &gt;25% (in absolute units)</td>
-<td align="left">Relative abundance linked to method</td>
-<td align="left">Assigned range and medium to high</td>
-<td align="left">Assigned estimate, medium to high</td>
+<tr>
+<td style="text-align:left;">
+Medium
+</td>
+<td style="text-align:left;">
+3: Relative Abundance, high resolution
+</td>
+<td style="text-align:left;">
+High effort (5 or more trips), standard methods (e.g. equal effort surveys executed by walk, swim, overflight, etc.)
+</td>
+<td style="text-align:left;">
+Reliable resolution of between year differences &gt;25% (in absolute units)
+</td>
+<td style="text-align:left;">
+Relative abundance linked to method
+</td>
+<td style="text-align:left;">
+Assigned range and medium to high
+</td>
+<td style="text-align:left;">
+Assigned estimate, medium to high
+</td>
 </tr>
-<tr class="even">
-<td align="left">Medium-Low</td>
-<td align="left">4: Relative Abundance, medium resolution</td>
-<td align="left">Low to moderate effort (1-4 trips), known survey method</td>
-<td align="left">Reliable resolution of between year differences &gt;200% (in relative units)</td>
-<td align="left">Relative abundance linked to method</td>
-<td align="left">Unknown assumed fairly constant</td>
-<td align="left">Unknown assumed fairly constant</td>
+<tr>
+<td style="text-align:left;">
+Medium-Low
+</td>
+<td style="text-align:left;">
+4: Relative Abundance, medium resolution
+</td>
+<td style="text-align:left;">
+Low to moderate effort (1-4 trips), known survey method
+</td>
+<td style="text-align:left;">
+Reliable resolution of between year differences &gt;200% (in relative units)
+</td>
+<td style="text-align:left;">
+Relative abundance linked to method
+</td>
+<td style="text-align:left;">
+Unknown assumed fairly constant
+</td>
+<td style="text-align:left;">
+Unknown assumed fairly constant
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Low</td>
-<td align="left">5: Relative Abundance, low resolution</td>
-<td align="left">Low effort (e.g. 1 trip), use of vaguely defined, inconsistent, or poorly executed methods</td>
-<td align="left">Uncertain numeric comparisons, but high reliability for presence or absence</td>
-<td align="left">Relative abundance, but vague or no i.d. on method</td>
-<td align="left">Unknown assumed highly variable</td>
-<td align="left">Unknown assumed highly variable</td>
+<tr>
+<td style="text-align:left;">
+Low
+</td>
+<td style="text-align:left;">
+5: Relative Abundance, low resolution
+</td>
+<td style="text-align:left;">
+Low effort (e.g. 1 trip), use of vaguely defined, inconsistent, or poorly executed methods
+</td>
+<td style="text-align:left;">
+Uncertain numeric comparisons, but high reliability for presence or absence
+</td>
+<td style="text-align:left;">
+Relative abundance, but vague or no i.d. on method
+</td>
+<td style="text-align:left;">
+Unknown assumed highly variable
+</td>
+<td style="text-align:left;">
+Unknown assumed highly variable
+</td>
 </tr>
-<tr class="even">
-<td align="left">Low</td>
-<td align="left">6: Presence or Absence</td>
-<td align="left">Any of above</td>
-<td align="left">Moderate to high reliability for presence/absence</td>
-<td align="left">(+) or (-)</td>
-<td align="left">Medium to high</td>
-<td align="left">Unknown</td>
+<tr>
+<td style="text-align:left;">
+Low
+</td>
+<td style="text-align:left;">
+6: Presence or Absence
+</td>
+<td style="text-align:left;">
+Any of above
+</td>
+<td style="text-align:left;">
+Moderate to high reliability for presence/absence
+</td>
+<td style="text-align:left;">
+(+) or (-)
+</td>
+<td style="text-align:left;">
+Medium to high
+</td>
+<td style="text-align:left;">
+Unknown
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Unknown</td>
-<td align="left">Unknown</td>
-<td align="left">Unknown</td>
-<td align="left">Unknown</td>
-<td align="left">Unknown</td>
-<td align="left">Unknown</td>
-<td align="left">Unknown</td>
+<tr>
+<td style="text-align:left;">
+Unknown
+</td>
+<td style="text-align:left;">
+Unknown
+</td>
+<td style="text-align:left;">
+Unknown
+</td>
+<td style="text-align:left;">
+Unknown
+</td>
+<td style="text-align:left;">
+Unknown
+</td>
+<td style="text-align:left;">
+Unknown
+</td>
+<td style="text-align:left;">
+Unknown
+</td>
 </tr>
 </tbody>
 </table>
 <!-- SP: GOT TO HERE. Pick up review HERE. -->
-<p>To then determine CU-level Spawner Survey Method data quality scores (<span class="math inline">\(Q\)</span>), we calculate a weighted average of the stream-level survey method data quality scores across all indicator streams over the most recent generation within the CU (Table <a href="analytical-approach.html#tab:cusurveyQual">4.6</a>). Where there are known issues with DFO’s indicator stream list in NuSEDS, we manually override those data quality scores and substitute expert derived assessments of data quality based on expert knowledge of spawner survey methods. We do not include survey years where spawner survey methods are Unknown. We then translate the CU-level Spawner Survey Methods score into a scale of 0-5 (labeled as Not Applicable, Low, Medium-Low, Medium, Medium-High, And High; (Table <a href="analytical-approach.html#tab:cusurveyQual">4.6</a>)). Note that this score reflects the reliability of the estimates of current spawner abundance for a CU over the most recent generation and not the reliability of estimates across the entire time series.</p>
+<p>To determine CU-level Spawner Survey Method data quality scores (<span class="math inline">\(Q\)</span>), we calculate a weighted average of the stream-level survey method data quality scores across all indicator streams over the most recent generation within the CU (Table <a href="analytical-approach.html#tab:cusurveyQual">4.6</a>). Where there are known issues with DFO’s indicator stream list in NuSEDS, we manually override those data quality scores and substitute expert derived assessments of data quality based on expert knowledge of spawner survey methods. We do not include survey years where spawner survey methods are Unknown. We then translate the CU-level Spawner Survey Methods score into a scale of 0-5 (labeled as Not Applicable, Low, Medium-Low, Medium, Medium-High, And High; (Table <a href="analytical-approach.html#tab:cusurveyQual">4.6</a>)). Note that this score reflects the reliability of the estimates of current spawner abundance for a CU over the most recent generation and not the reliability of estimates across the entire time series.</p>
 <table>
-<caption><span id="tab:cusurveyQual">Table 4.6: </span>CU-level Survey Quality scores. Q = CU-level survey quality score (the weighted average of the stream-level survey method data quality values for all indicator streams over the most recent generation).</caption>
-<colgroup>
-<col width="8%" />
-<col width="91%" />
-</colgroup>
+<caption>
+<span id="tab:cusurveyQual">Table 4.6: </span>CU-level Survey Quality scores. Q = CU-level survey quality score (the weighted average of the stream-level survey method data quality values for all indicator streams over the most recent generation).
+</caption>
 <thead>
-<tr class="header">
-<th align="left">Score</th>
-<th align="left">Definition</th>
+<tr>
+<th style="text-align:left;">
+Score
+</th>
+<th style="text-align:left;">
+Definition
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left">0 - Not applicable</td>
-<td align="left">No spawner surveys were completed for this Conservation Unit over the most recent generation.</td>
+<tr>
+<td style="text-align:left;">
+0 - Not applicable
+</td>
+<td style="text-align:left;">
+No spawner surveys were completed for this Conservation Unit over the most recent generation.
+</td>
 </tr>
-<tr class="even">
-<td align="left">1 - Low</td>
-<td align="left">4.5 &lt; Q &lt; 6. Most of the spawner surveys were performed with low-effort or inconsistently executed methods, resulting in variable accuracy and precision.</td>
+<tr>
+<td style="text-align:left;">
+1 - Low
+</td>
+<td style="text-align:left;">
+4.5 &lt; Q &lt; 6. Most of the spawner surveys were performed with low-effort or inconsistently executed methods, resulting in variable accuracy and precision.
+</td>
 </tr>
-<tr class="odd">
-<td align="left">2 - Medium-Low</td>
-<td align="left">3.5 &lt; Q &lt; 4.5. Most of the spawner surveys were performed with medium to low effort, using methods such as a stream walk, swim, or overhead flight, resulting in unknown accuracy and precision.</td>
+<tr>
+<td style="text-align:left;">
+2 - Medium-Low
+</td>
+<td style="text-align:left;">
+3.5 &lt; Q &lt; 4.5. Most of the spawner surveys were performed with medium to low effort, using methods such as a stream walk, swim, or overhead flight, resulting in unknown accuracy and precision.
+</td>
 </tr>
-<tr class="even">
-<td align="left">3 - Medium</td>
-<td align="left">2.5 &lt; Q &lt; 3.5. Most of the spawner surveys were performed with high effort, using methods such as a stream walk, swim, or overhead flight, resulting in medium to high accuracy and precision.</td>
+<tr>
+<td style="text-align:left;">
+3 - Medium
+</td>
+<td style="text-align:left;">
+2.5 &lt; Q &lt; 3.5. Most of the spawner surveys were performed with high effort, using methods such as a stream walk, swim, or overhead flight, resulting in medium to high accuracy and precision.
+</td>
 </tr>
-<tr class="odd">
-<td align="left">4 - Medium-High</td>
-<td align="left">1.5 &lt; Q &lt; 2.5. Most of the spawner surveys were performed with high effort, using methods such as mark-recapture, resulting in medium to high accuracy and precision.</td>
+<tr>
+<td style="text-align:left;">
+4 - Medium-High
+</td>
+<td style="text-align:left;">
+1.5 &lt; Q &lt; 2.5. Most of the spawner surveys were performed with high effort, using methods such as mark-recapture, resulting in medium to high accuracy and precision.
+</td>
 </tr>
-<tr class="even">
-<td align="left">5 - High</td>
-<td align="left">1 &lt; Q &lt; 1.5. Most of the spawner surveys produce counts of total spawners, using methods such as a fence or fishway, resulting in very high accuracy and precision.</td>
+<tr>
+<td style="text-align:left;">
+5 - High
+</td>
+<td style="text-align:left;">
+1 &lt; Q &lt; 1.5. Most of the spawner surveys produce counts of total spawners, using methods such as a fence or fishway, resulting in very high accuracy and precision.
+</td>
 </tr>
 </tbody>
 </table>
 </div>
 <div id="spawner-survey-coverage" class="section level4 hasAnchor" number="4.1.3.2">
 <h4><span class="header-section-number">4.1.3.2</span> Spawner Survey Coverage<a href="analytical-approach.html#spawner-survey-coverage" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>This criterion indicates how representative spawner surveys are of the entire Conservation Unit, measured as the proportion of total spawners that spawn in indicator streams. If a CU has a higher proportion of spawners returning to indicator streams. In that case, we assume that the spawner abundance data within that CU is of higher quality since indicator streams are more consistently and reliably surveyed. On the Pacific Salmon Explorer, for the North and Central Coast Regions (Skeena, Nass, and Central Coast), we use the indicator stream list generated and maintained by LGL Ltd (English et al., 2018). We use the indicator stream list provided through the NuSEDS database for all other Regions.</p>
+<p>This criterion indicates how representative spawner surveys are of the entire CU, measured as the proportion of total spawners that spawn in indicator streams. If a CU has a higher proportion of spawners returning to indicator streams, we assume that the spawner abundance data within that CU is of higher quality since indicator streams are more consistently and reliably surveyed.</p>
 <p>This score is calculated as the average number of spawners in indicator streams divided by the average number of spawners in all indicator and non-indicator streams within the CU, following methods from English et al. (2018). To derive this proportion, we first determine which decade has the greatest coverage of spawner surveys across the indicator and non-indicator streams. We assume that there is a constant proportion of spawners from indicator and non-indicator streams through time. We then calculate the average number of spawners in all indicator and non-indicator streams according to:</p>
-<p>where <sub>s</sub> = species, <sub>i</sub> = indicator stream or river, <sub>j</sub> = non-indicator stream or river, ~a = CU, <sub>d</sub> = decade, <sub>y</sub> = year, E<sub>siady</sub> = indicator stream spawners, by stratum and E<sub>sjady</sub> = non-indicator stream spawners, by stratum. This approach is used because it provides a weighted average of the actual number of spawners enumerated with higher quality methodology, rather than only counting the number of indicator and non-indicator streams. We then translate the <strong>Spawner Survey Coverage</strong> score into a scale of 0-5 (labeled as Not Applicable, Low, Medium-Low, Medium, Medium-High, and High; (Table <a href="analytical-approach.html#tab:spawncovScore">4.7</a>)).</p>
+<p><span class="math display">\[C= 5 \times \frac{\sum_{i - 1}^I E_{siady}}{\sum_{i - 1}^I E_{siady} + \sum_{j=1}^J E_{sjady}} \]</span>
+where <span class="math inline">\(s\)</span> = species, <span class="math inline">\(i\)</span> = indicator stream, <span class="math inline">\(j\)</span> = non-indicator stream, <span class="math inline">\(a\)</span> = CU, <span class="math inline">\(d\)</span> = decade, <span class="math inline">\(y\)</span> = year, <span class="math inline">\(E_{siady}\)</span> = indicator stream escapement (i.e. spawners), by stratum, and <span class="math inline">\(E_{sjady}\)</span> = non-indicator stream spawners, by stratum. This approach is used because it provides a weighted average of the actual number of spawners enumerated with higher quality methodology, rather than only counting the number of indicator and non-indicator streams. We then translate the <strong>Spawner Survey Coverage</strong> score into a scale of 0-5 (labeled as Not Applicable, Low, Medium-Low, Medium, Medium-High, and High; (Table <a href="analytical-approach.html#tab:spawncovScore">4.7</a>)).</p>
 <p>For CUs that do not use expansion procedures to generate CU-level estimates (e.g. Fraser sockeye, Chinook, and coho, and Vancouver Island &amp; Mainland Inlets Chinook), Spawner Survey Coverage scores were generated via expert opinion.</p>
 <table>
-<caption><span id="tab:spawncovScore">Table 4.7: </span>Spawner survey coverage scores.</caption>
-<colgroup>
-<col width="17%" />
-<col width="82%" />
-</colgroup>
+<caption>
+<span id="tab:spawncovScore">Table 4.7: </span>Spawner survey coverage scores.
+</caption>
 <thead>
-<tr class="header">
-<th align="left">Score</th>
-<th align="left">Definition</th>
+<tr>
+<th style="text-align:left;">
+Score
+</th>
+<th style="text-align:left;">
+Definition
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left">0 - Not applicable</td>
-<td align="left">No spawner surveys were completed for this Conservation Unit.</td>
+<tr>
+<td style="text-align:left;">
+0 - Not applicable
+</td>
+<td style="text-align:left;">
+No spawner surveys were completed for this Conservation Unit.
+</td>
 </tr>
-<tr class="even">
-<td align="left">1 - Low</td>
-<td align="left">1-30% of spawners within the Conservation Unit are represented by indicator streams.</td>
+<tr>
+<td style="text-align:left;">
+1 - Low
+</td>
+<td style="text-align:left;">
+1-30% of spawners within the Conservation Unit are represented by indicator streams.
+</td>
 </tr>
-<tr class="odd">
-<td align="left">2 - Medium-Low</td>
-<td align="left">30-49% of spawners within the Conservation Unit are represented by indicator streams.</td>
+<tr>
+<td style="text-align:left;">
+2 - Medium-Low
+</td>
+<td style="text-align:left;">
+30-49% of spawners within the Conservation Unit are represented by indicator streams.
+</td>
 </tr>
-<tr class="even">
-<td align="left">3 - Medium</td>
-<td align="left">50-69% of spawners within the Conservation Unit are represented by indicator streams.</td>
+<tr>
+<td style="text-align:left;">
+3 - Medium
+</td>
+<td style="text-align:left;">
+50-69% of spawners within the Conservation Unit are represented by indicator streams.
+</td>
 </tr>
-<tr class="odd">
-<td align="left">4 - Medium- High</td>
-<td align="left">70-89% of spawners within the Conservation Unit are represented by indicator streams.</td>
+<tr>
+<td style="text-align:left;">
+4 - Medium- High
+</td>
+<td style="text-align:left;">
+70-89% of spawners within the Conservation Unit are represented by indicator streams.
+</td>
 </tr>
-<tr class="even">
-<td align="left">5 - High</td>
-<td align="left">90-100% of spawners within the Conservation Unit are represented by indicator streams.</td>
+<tr>
+<td style="text-align:left;">
+5 - High
+</td>
+<td style="text-align:left;">
+90-100% of spawners within the Conservation Unit are represented by indicator streams.
+</td>
 </tr>
 </tbody>
 </table>
 </div>
 <div id="spawner-survey-excecution" class="section level4 hasAnchor" number="4.1.3.3">
 <h4><span class="header-section-number">4.1.3.3</span> Spawner Survey Execution<a href="analytical-approach.html#spawner-survey-excecution" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>This criterion indicates how consistently indicator streams for the Conservation Unit have been surveyed over the most recent generation, measured as the proportion of monitored indicator streams. To calculate <strong>Spawner Survey Execution</strong>, we calculate the proportion of indicator streams that are surveyed within the CU in each year of the most recent generation and the generational average of the proportions for each year, according to the following formula:</p>
-<p>where <sub>h</sub> is the number of indicator streams surveyed in year y of the most recent generation, <sub>m</sub> is the total number of indicator streams, and <sub>n</sub> is the generation length. We then translate the Spawner Survey Execution score into a scale of 0-5 (labeled as Not Applicable, Low, Medium-Low, Medium, Medium-High, and High; (Table <a href="analytical-approach.html#tab:spawnexecScore">4.8</a>)).</p>
+<p>This criterion indicates how consistently indicator streams in the CU have been surveyed over the most recent generation, measured as the proportion of monitored indicator streams. To calculate <strong>Spawner Survey Execution</strong>, we calculate the proportion of indicator streams that are surveyed within the CU in each year of the most recent generation and the generational average of the proportions for each year, according to the following formula:
+<!-- SP: I updated this formula; it is wrong in V11 and was the right formula in a 2020 version I had on file but there were still errors. Discuss.  -->
+<span class="math display">\[E=\left( \sum_{y=Y-g+1}^{Y}\frac{ h_y}{I} \right) \times \frac{1}{g} \times 100\]</span></p>
+<p>where <span class="math inline">\(h\)</span> is the number of indicator streams surveyed in year <span class="math inline">\(y\)</span> of the most recent generation, <span class="math inline">\(Y\)</span> is the most recent year of spawner data, <span class="math inline">\(g\)</span> is the generation length, and <span class="math inline">\(I\)</span> is the total number of indicator streams. We then translate the Spawner Survey Execution score into a scale of 0-5 (labeled as Not Applicable, Low, Medium-Low, Medium, Medium-High, and High; (Table <a href="analytical-approach.html#tab:spawnexecScore">4.8</a>)).</p>
 <table>
-<caption><span id="tab:spawnexecScore">Table 4.8: </span>Spawner survey execution scores.</caption>
-<colgroup>
-<col width="14%" />
-<col width="85%" />
-</colgroup>
+<caption>
+<span id="tab:spawnexecScore">Table 4.8: </span>Spawner survey execution scores.
+</caption>
 <thead>
-<tr class="header">
-<th align="left">Score</th>
-<th align="left">Definition</th>
+<tr>
+<th style="text-align:left;">
+Score
+</th>
+<th style="text-align:left;">
+Definition
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left">0 - Not applicable</td>
-<td align="left">No surveys were completed for this Conservation Unit over the most recent generation.</td>
+<tr>
+<td style="text-align:left;">
+0 - Not applicable
+</td>
+<td style="text-align:left;">
+No surveys were completed for this Conservation Unit over the most recent generation.
+</td>
 </tr>
-<tr class="even">
-<td align="left">1 - Low</td>
-<td align="left">1-20% of all indicator streams in the Conservation Unit were surveyed each year in the most recent generation.</td>
+<tr>
+<td style="text-align:left;">
+1 - Low
+</td>
+<td style="text-align:left;">
+1-20% of all indicator streams in the Conservation Unit were surveyed each year in the most recent generation.
+</td>
 </tr>
-<tr class="odd">
-<td align="left">2 - Medium-Low</td>
-<td align="left">21-40% of all indicator streams in the Conservation Unit were surveyed each year in the most recent generation.</td>
+<tr>
+<td style="text-align:left;">
+2 - Medium-Low
+</td>
+<td style="text-align:left;">
+21-40% of all indicator streams in the Conservation Unit were surveyed each year in the most recent generation.
+</td>
 </tr>
-<tr class="even">
-<td align="left">3 - Medium</td>
-<td align="left">41-60% of all indicator streams in the Conservation Unit were surveyed each year in the most recent generation.</td>
+<tr>
+<td style="text-align:left;">
+3 - Medium
+</td>
+<td style="text-align:left;">
+41-60% of all indicator streams in the Conservation Unit were surveyed each year in the most recent generation.
+</td>
 </tr>
-<tr class="odd">
-<td align="left">4 - Medium-High</td>
-<td align="left">61-80% of indicator streams in the Conservation Unit were surveyed each year over the most recent generation.</td>
+<tr>
+<td style="text-align:left;">
+4 - Medium-High
+</td>
+<td style="text-align:left;">
+61-80% of indicator streams in the Conservation Unit were surveyed each year over the most recent generation.
+</td>
 </tr>
-<tr class="even">
-<td align="left">5 - High</td>
-<td align="left">81-100% of all indicator streams in the Conservation Unit were surveyed each year in the most recent generation.</td>
+<tr>
+<td style="text-align:left;">
+5 - High
+</td>
+<td style="text-align:left;">
+81-100% of all indicator streams in the Conservation Unit were surveyed each year in the most recent generation.
+</td>
 </tr>
 </tbody>
 </table>
 </div>
 <div id="catch-estimates" class="section level4 hasAnchor" number="4.1.3.4">
 <h4><span class="header-section-number">4.1.3.4</span> Catch Estimates<a href="analytical-approach.html#catch-estimates" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>Catch at the CU-level can be reconstructed using a variety of methods that result in <strong>Catch Estimates</strong> with different levels of uncertainty. This criterion indicates the quality of recent catch estimates for the Conservation Unit in the most recent generation, based on a qualitative assessment of the rigor of the catch estimation method. We calculate this score at the CU-level for the most recent generation based on categories of the type of current catch datasets available on the Pacific Salmon Explorer (Table <a href="analytical-approach.html#tab:catchestScore">4.9</a>).</p>
+<p>Catch at the CU-level can be reconstructed using a variety of methods that result in <strong>Catch Estimates</strong> with different levels of uncertainty. This criterion indicates the quality of recent catch estimates for the CU in the most recent generation, based on a qualitative assessment of the rigor of the catch estimation method. We calculate this score at the CU-level for the most recent generation based on categories of the type of current catch datasets available on the Pacific Salmon Explorer (Table <a href="analytical-approach.html#tab:catchestScore">4.9</a>).</p>
 <table>
-<caption><span id="tab:catchestScore">Table 4.9: </span>Catch estimates scores.</caption>
-<colgroup>
-<col width="7%" />
-<col width="92%" />
-</colgroup>
+<caption>
+<span id="tab:catchestScore">Table 4.9: </span>Catch estimates scores.
+</caption>
 <thead>
-<tr class="header">
-<th align="left">Score</th>
-<th align="left">Definition</th>
+<tr>
+<th style="text-align:left;">
+Score
+</th>
+<th style="text-align:left;">
+Definition
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left">0 - Not applicable</td>
-<td align="left">No catch data are available for the Conservation Unit over the most recent generation.</td>
+<tr>
+<td style="text-align:left;">
+0 - Not applicable
+</td>
+<td style="text-align:left;">
+No catch data are available for the Conservation Unit over the most recent generation.
+</td>
 </tr>
-<tr class="even">
-<td align="left">1 - Low</td>
-<td align="left">Catch is based on a proportion of catch and/or the exploitation rate in another Conservation Unit or Region (e.g. exploitation for Bella Coola-Dean River coho is assumed to be 60 % of the exploitation rate of the Skeena coho).</td>
+<tr>
+<td style="text-align:left;">
+1 - Low
+</td>
+<td style="text-align:left;">
+Catch is based on a proportion of catch and/or the exploitation rate in another Conservation Unit or Region (e.g. exploitation for Bella Coola-Dean River coho is assumed to be 60 % of the exploitation rate of the Skeena coho).
+</td>
 </tr>
-<tr class="odd">
-<td align="left">2 - Medium-Low</td>
-<td align="left">Statistical area catch is divided proportionally among all Conservation Units that spawn within the statistical area according to their relative spawner abundance.</td>
+<tr>
+<td style="text-align:left;">
+2 - Medium-Low
+</td>
+<td style="text-align:left;">
+Statistical area catch is divided proportionally among all Conservation Units that spawn within the statistical area according to their relative spawner abundance.
+</td>
 </tr>
-<tr class="even">
-<td align="left">3 - Medium</td>
-<td align="left">Catch is based on a model that is currently not reproducible or is poorly documented.</td>
+<tr>
+<td style="text-align:left;">
+3 - Medium
+</td>
+<td style="text-align:left;">
+Catch is based on a model that is currently not reproducible or is poorly documented.
+</td>
 </tr>
-<tr class="odd">
-<td align="left">4 - Medium-High</td>
-<td align="left">Catch is based on a peer-reviewed model of a large portion of known fisheries that the Conservation Unit is exposed to (i.e. &gt; 75% of the total catch for this Conservation Unit is expected to be accounted for in most years).</td>
+<tr>
+<td style="text-align:left;">
+4 - Medium-High
+</td>
+<td style="text-align:left;">
+Catch is based on a peer-reviewed model of a large portion of known fisheries that the Conservation Unit is exposed to (i.e. &gt; 75% of the total catch for this Conservation Unit is expected to be accounted for in most years).
+</td>
 </tr>
-<tr class="even">
-<td align="left">5 - High</td>
-<td align="left">Catch is based on a peer-reviewed model of the majority of known fisheries that the Conservation Unit is exposed to (i.e. &gt; 95% of catch for this Conservation Unit is expected to be accounted for in most years).</td>
+<tr>
+<td style="text-align:left;">
+5 - High
+</td>
+<td style="text-align:left;">
+Catch is based on a peer-reviewed model of the majority of known fisheries that the Conservation Unit is exposed to (i.e. &gt; 95% of catch for this Conservation Unit is expected to be accounted for in most years).
+</td>
 </tr>
 </tbody>
 </table>
 </div>
 <div id="overall-spwnab-catch-dqual" class="section level4 hasAnchor" number="4.1.3.5">
-<h4><span class="header-section-number">4.1.3.5</span> Overall Spawner Abundance and Catch Data Quality<a href="analytical-approach.html#overall-spwnab-catch-dqual" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>We sum the scores from the four criteria above to calculate each CU’s overall Spawner Abundance and Catch Data Quality score. This score represents a standardized assessment of the quality of data used to estimate spawner abundance and catch for the Conservation Unit, based on the four criteria above. While this method applies to the available data, it does weigh spawner data more heavily than catch data by a ratio of 3:1.</p>
+<h4><span class="header-section-number">4.1.3.5</span> Overall Data Quality Score<a href="analytical-approach.html#overall-spwnab-catch-dqual" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>We sum the scores from the four criteria above to calculate each CU’s Overall Data Quality Score. This score represents a standardized assessment of the quality of data used to estimate spawner abundance and catch for the Conservation Unit, based on the four criteria above. While this method applies to the available data, it does weigh spawner data more heavily than catch data by a ratio of 3:1.</p>
 <p>We then translate the final scores into categories of Poor (1-7), Fair (8-14), or Good (15-20) that are displayed on the Pacific Salmon Explorer (Table <a href="analytical-approach.html#tab:spawnabQual">4.10</a>). A score of 0 means that there were no data to assess.</p>
 <table>
-<caption><span id="tab:spawnabQual">Table 4.10: </span>Overall Spawner Abundance and Catch Data Quality Scores.</caption>
-<colgroup>
-<col width="44%" />
-<col width="55%" />
-</colgroup>
+<caption>
+<span id="tab:spawnabQual">Table 4.10: </span>Overall Spawner Abundance and Catch Data Quality Scores.
+</caption>
 <thead>
-<tr class="header">
-<th align="left">Sum.of.Scores.from.the.four.Criteria</th>
-<th align="left">Score.Displayed.on.the.Pacific.Salmon.Explorer</th>
+<tr>
+<th style="text-align:left;">
+Sum.of.Scores.from.the.four.Criteria
+</th>
+<th style="text-align:left;">
+Score.Displayed.on.the.Pacific.Salmon.Explorer
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left">0</td>
-<td align="left">Not Applicable</td>
+<tr>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+Not Applicable
+</td>
 </tr>
-<tr class="even">
-<td align="left">07-Jan</td>
-<td align="left">Poor</td>
+<tr>
+<td style="text-align:left;">
+07-Jan
+</td>
+<td style="text-align:left;">
+Poor
+</td>
 </tr>
-<tr class="odd">
-<td align="left">14-Aug</td>
-<td align="left">Fair</td>
+<tr>
+<td style="text-align:left;">
+14-Aug
+</td>
+<td style="text-align:left;">
+Fair
+</td>
 </tr>
-<tr class="even">
-<td align="left">15-20</td>
-<td align="left">Good</td>
+<tr>
+<td style="text-align:left;">
+15-20
+</td>
+<td style="text-align:left;">
+Good
+</td>
 </tr>
 </tbody>
 </table>
@@ -949,107 +1255,227 @@ Figure 4.4: salmon and steelhead Habitat Mapper: A Collaborative Tool for Mappin
 <h3><span class="header-section-number">4.2.4</span> Overview of Habitat Pressure Indicators<a href="analytical-approach.html#overview-of-habitat-pressure-indicators" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Once we have identified salmon and steelhead habitat and ZOIs, we use a set of habitat pressure indicators to derive coarse-scale assessments of pressures on salmon and steelhead freshwater habitats. The 12 individual habitat pressure indicators that we use allow us to quantify the potential risks to salmon and steelhead spawning habitat within each Region and CU (Table <a href="analytical-approach.html#tab:habInddefs">4.11</a>).</p>
 <table>
-<caption><span id="tab:habInddefs">Table 4.11: </span>Habitat indicator definitions and their relevance to salmon and steelhead habitat. (Note that watershed refers to the Province of British Columbia’s 1:20,000 Freshwater Atlas (FWA) Assessment Watersheds.)</caption>
-<colgroup>
-<col width="4%" />
-<col width="4%" />
-<col width="4%" />
-<col width="32%" />
-<col width="53%" />
-</colgroup>
+<caption>
+<span id="tab:habInddefs">Table 4.11: </span>Habitat indicator definitions and their relevance to salmon and steelhead habitat. (Note that watershed refers to the Province of British Columbia’s 1:20,000 Freshwater Atlas (FWA) Assessment Watersheds.)
+</caption>
 <thead>
-<tr class="header">
-<th align="left">Impact.Category</th>
-<th align="left">Indicator</th>
-<th align="left">Metric</th>
-<th align="left">Definition</th>
-<th align="left">Relevance</th>
+<tr>
+<th style="text-align:left;">
+Impact.Category
+</th>
+<th style="text-align:left;">
+Indicator
+</th>
+<th style="text-align:left;">
+Metric
+</th>
+<th style="text-align:left;">
+Definition
+</th>
+<th style="text-align:left;">
+Relevance
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left">Human Development Footprint</td>
-<td align="left">Total Land Cover Alteration</td>
-<td align="left">% watershed area</td>
-<td align="left">The percentage of the total watershed area that has been altered by human activity.</td>
-<td align="left">Total land cover alteration is a synthesis of the indicators for forest disturbance, urban land use, agriculture/rural land use, mining development, and other smaller developments. This indicator represents a suite of potential changes to hydrological processes and sedimentation, with potential impacts on salmon habitats.</td>
+<tr>
+<td style="text-align:left;">
+Human Development Footprint
+</td>
+<td style="text-align:left;">
+Total Land Cover Alteration
+</td>
+<td style="text-align:left;">
+% watershed area
+</td>
+<td style="text-align:left;">
+The percentage of the total watershed area that has been altered by human activity.
+</td>
+<td style="text-align:left;">
+Total land cover alteration is a synthesis of the indicators for forest disturbance, urban land use, agriculture/rural land use, mining development, and other smaller developments. This indicator represents a suite of potential changes to hydrological processes and sedimentation, with potential impacts on salmon habitats.
+</td>
 </tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Mining Development</td>
-<td align="left"># of mines</td>
-<td align="left">The number of active and past-producing coal, mineral, or aggregate (gravel) mine sites within a watershed.</td>
-<td align="left">The footprint of a mine and mining processes can change geomorphology and the hydrological processes of water bodies nearby. Mining can contribute to the deposition of fine sediments, which can affect salmon prey densities and salmon survival.</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Mining Development
+</td>
+<td style="text-align:left;">
+# of mines
+</td>
+<td style="text-align:left;">
+The number of active and past-producing coal, mineral, or aggregate (gravel) mine sites within a watershed.
+</td>
+<td style="text-align:left;">
+The footprint of a mine and mining processes can change geomorphology and the hydrological processes of water bodies nearby. Mining can contribute to the deposition of fine sediments, which can affect salmon prey densities and salmon survival.
+</td>
 </tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">Impervious Surfaces</td>
-<td align="left">% watershed area</td>
-<td align="left">The percentage of the total watershed area that is represented by hard, impervious surfaces (e.g. paved)</td>
-<td align="left">Extensive impervious surfaces in a watershed can alter and affect natural hydrologic flow patterns and lead to stream degradation through changes in geomorphology and hydrology. They can also lead to increased nutrient loading and contaminant loads downstream.</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Impervious Surfaces
+</td>
+<td style="text-align:left;">
+% watershed area
+</td>
+<td style="text-align:left;">
+The percentage of the total watershed area that is represented by hard, impervious surfaces (e.g. paved)
+</td>
+<td style="text-align:left;">
+Extensive impervious surfaces in a watershed can alter and affect natural hydrologic flow patterns and lead to stream degradation through changes in geomorphology and hydrology. They can also lead to increased nutrient loading and contaminant loads downstream.
+</td>
 </tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Linear Development</td>
-<td align="left">km/km2</td>
-<td align="left">The density of all linear developments within a watershed, including roads, railways, utility corridors, pipelines, power lines, telecom cables, right of ways, etc.</td>
-<td align="left">Linear development gives an indication of the overall level of development from resource activities that may affect salmon habitats.</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Linear Development
+</td>
+<td style="text-align:left;">
+km/km2
+</td>
+<td style="text-align:left;">
+The density of all linear developments within a watershed, including roads, railways, utility corridors, pipelines, power lines, telecom cables, right of ways, etc.
+</td>
+<td style="text-align:left;">
+Linear development gives an indication of the overall level of development from resource activities that may affect salmon habitats.
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Hydrologic Processes</td>
-<td align="left">Forest Disturbance</td>
-<td align="left">% watershed area</td>
-<td align="left">The percentage of total watershed area that has been disturbed by logging and burning in the last 60 years.</td>
-<td align="left">Logging and other disturbances that reduce forest cover can change watershed hydrology by affecting rainfall interception, transpiration, and snowmelt processes. Changes over time can affect salmon habitats through altered peak flows, low flows, and annual water yields.</td>
+<tr>
+<td style="text-align:left;">
+Hydrologic Processes
+</td>
+<td style="text-align:left;">
+Forest Disturbance
+</td>
+<td style="text-align:left;">
+% watershed area
+</td>
+<td style="text-align:left;">
+The percentage of total watershed area that has been disturbed by logging and burning in the last 60 years.
+</td>
+<td style="text-align:left;">
+Logging and other disturbances that reduce forest cover can change watershed hydrology by affecting rainfall interception, transpiration, and snowmelt processes. Changes over time can affect salmon habitats through altered peak flows, low flows, and annual water yields.
+</td>
 </tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Equivalent Clearcut Area (ECA)</td>
-<td align="left">% watershed area</td>
-<td align="left">The percentage of total watershed area that is considered functionally and hydrologically comparable to a clearcut forest. Landscapes that have been altered by urban, road, rail, and forestry development, as well as crown tenure, were considered.</td>
-<td align="left">ECA reflects the pressure on salmon habitat mainly from potential increases in peak flow.</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Equivalent Clearcut Area (ECA)
+</td>
+<td style="text-align:left;">
+% watershed area
+</td>
+<td style="text-align:left;">
+The percentage of total watershed area that is considered functionally and hydrologically comparable to a clearcut forest. Landscapes that have been altered by urban, road, rail, and forestry development, as well as crown tenure, were considered.
+</td>
+<td style="text-align:left;">
+ECA reflects the pressure on salmon habitat mainly from potential increases in peak flow.
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Vegetation Quality</td>
-<td align="left">Riparian Disturbance</td>
-<td align="left">% watershed area</td>
-<td align="left">The percentage of the riparian zone, defined as a 30m buffer around all streams, lakes, and wetlands, that have been altered by human activity in each watershed.</td>
-<td align="left">Disturbance to riparian areas can affect salmon habitats by destabilizing stream banks, increasing surface erosion and sedimentation, reducing nutrient and woody debris inputs to water bodies, and increasing stream temperatures if streamside shading is diminished.</td>
+<tr>
+<td style="text-align:left;">
+Vegetation Quality
+</td>
+<td style="text-align:left;">
+Riparian Disturbance
+</td>
+<td style="text-align:left;">
+% watershed area
+</td>
+<td style="text-align:left;">
+The percentage of the riparian zone, defined as a 30m buffer around all streams, lakes, and wetlands, that have been altered by human activity in each watershed.
+</td>
+<td style="text-align:left;">
+Disturbance to riparian areas can affect salmon habitats by destabilizing stream banks, increasing surface erosion and sedimentation, reducing nutrient and woody debris inputs to water bodies, and increasing stream temperatures if streamside shading is diminished.
+</td>
 </tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Insect and Disease Defoliation</td>
-<td align="left">% watershed area</td>
-<td align="left">The percentage of pine forests that have been killed by insects or disease in each watershed.</td>
-<td align="left">Forest defoliation from insects or disease can reduce precipitation interception, reduce transpiration, and lead to increased soil moisture. The resulting changes to peak flows and groundwater supplies can affect salmon habitats.</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Insect and Disease Defoliation
+</td>
+<td style="text-align:left;">
+% watershed area
+</td>
+<td style="text-align:left;">
+The percentage of pine forests that have been killed by insects or disease in each watershed.
+</td>
+<td style="text-align:left;">
+Forest defoliation from insects or disease can reduce precipitation interception, reduce transpiration, and lead to increased soil moisture. The resulting changes to peak flows and groundwater supplies can affect salmon habitats.
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Surface Erosion</td>
-<td align="left">Road Development</td>
-<td align="left">km/km2</td>
-<td align="left">The average density of all roads within a watershed</td>
-<td align="left">Road development can interrupt subsurface flow, increase peak flows, and interfere with natural patterns of overland water flow in a watershed. Roads are a significant cause of increased erosion and fine sediment generation, which can impact downstream spawning and rearing habitats.</td>
+<tr>
+<td style="text-align:left;">
+Surface Erosion
+</td>
+<td style="text-align:left;">
+Road Development
+</td>
+<td style="text-align:left;">
+km/km2
+</td>
+<td style="text-align:left;">
+The average density of all roads within a watershed
+</td>
+<td style="text-align:left;">
+Road development can interrupt subsurface flow, increase peak flows, and interfere with natural patterns of overland water flow in a watershed. Roads are a significant cause of increased erosion and fine sediment generation, which can impact downstream spawning and rearing habitats.
+</td>
 </tr>
-<tr class="even">
-<td align="left">Fish Passage / Habitat Connectivity</td>
-<td align="left">Stream Crossing Density</td>
-<td align="left">#/km</td>
-<td align="left">The total number of stream crossings per km of the total length of modeled salmon habitat in a watershed.</td>
-<td align="left">Stream crossings can create problems for fish passage by interfering with or blocking access to upstream spawning or rearing habitats, thus decreasing the total amount of available salmon habitat. Stream crossings can also affect water delivery to the stream network, causing increased peak flows and become a source of fine sediment delivery to streams.</td>
+<tr>
+<td style="text-align:left;">
+Fish Passage / Habitat Connectivity
+</td>
+<td style="text-align:left;">
+Stream Crossing Density
+</td>
+<td style="text-align:left;">
+#/km
+</td>
+<td style="text-align:left;">
+The total number of stream crossings per km of the total length of modeled salmon habitat in a watershed.
+</td>
+<td style="text-align:left;">
+Stream crossings can create problems for fish passage by interfering with or blocking access to upstream spawning or rearing habitats, thus decreasing the total amount of available salmon habitat. Stream crossings can also affect water delivery to the stream network, causing increased peak flows and become a source of fine sediment delivery to streams.
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Water Quantity</td>
-<td align="left">Water Licenses</td>
-<td align="left"># of permitted water licenses</td>
-<td align="left">The total number of water licenses permitted for water withdrawal for domestic, industrial, agricultural, power, and storage uses from points of diversion within a watershed.</td>
-<td align="left">Heavy allocation and use of both surface and subsurface water for human use can affect salmon habitat by reducing instream flows to levels that could, at critical times of the year, limit physical access to spawning and rearing habitats or potentially expose redds. Reductions in both surface and subsurface water supply can also lead to increased water temperatures, which can impact salmon at all life stages.</td>
+<tr>
+<td style="text-align:left;">
+Water Quantity
+</td>
+<td style="text-align:left;">
+Water Licenses
+</td>
+<td style="text-align:left;">
+# of permitted water licenses
+</td>
+<td style="text-align:left;">
+The total number of water licenses permitted for water withdrawal for domestic, industrial, agricultural, power, and storage uses from points of diversion within a watershed.
+</td>
+<td style="text-align:left;">
+Heavy allocation and use of both surface and subsurface water for human use can affect salmon habitat by reducing instream flows to levels that could, at critical times of the year, limit physical access to spawning and rearing habitats or potentially expose redds. Reductions in both surface and subsurface water supply can also lead to increased water temperatures, which can impact salmon at all life stages.
+</td>
 </tr>
-<tr class="even">
-<td align="left">Water Quality</td>
-<td align="left">Waste Water Discharges</td>
-<td align="left"># of permitted waste water discharges</td>
-<td align="left">The number of permitted waste water management discharge sites within a watershed.</td>
-<td align="left">Waste water discharge from municipal and industrial sources can impact water quality in salmon habitats through either chemical contamination, which can directly injure or kill aquatic life, or excessive nutrient enrichment (eutrophication), which can result in dissolved oxygen depletion in water bodies and suffocate aquatic organisms.</td>
+<tr>
+<td style="text-align:left;">
+Water Quality
+</td>
+<td style="text-align:left;">
+Waste Water Discharges
+</td>
+<td style="text-align:left;">
+# of permitted waste water discharges
+</td>
+<td style="text-align:left;">
+The number of permitted waste water management discharge sites within a watershed.
+</td>
+<td style="text-align:left;">
+Waste water discharge from municipal and industrial sources can impact water quality in salmon habitats through either chemical contamination, which can directly injure or kill aquatic life, or excessive nutrient enrichment (eutrophication), which can result in dissolved oxygen depletion in water bodies and suffocate aquatic organisms.
+</td>
 </tr>
 </tbody>
 </table>
@@ -1069,121 +1495,253 @@ Figure 4.4: salmon and steelhead Habitat Mapper: A Collaborative Tool for Mappin
 <h3><span class="header-section-number">4.2.5</span> Habitat Pressure Indicator Benchmarks<a href="analytical-approach.html#hab-press-benchmarks" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Similar to the biological status assessments, we quantify benchmarks for each indicator to assess habitat status. Using benchmarks allows us to categorize the risk of habitat degradation as low, moderate, or high (green, amber, or red status zones, respectively). When available, we use empirical benchmarks for habitat pressure indicators based on published literature (e.g. Stalberg et al., 2009). When empirical benchmarks are not available, we develop benchmarks based on relative distribution curves for each indicator across the full spatial extent of individual Regions on the Pacific Salmon Explorer (i.e. Fraser Region, Skeena Region, etc.; (Table <a href="analytical-approach.html#tab:habIndbench">4.12</a>)). While this approach is consistent with the recommendations of Stalberg et al. (2009), it is considered an interim approach until empirical or expert-based benchmarks become available.</p>
 <table>
-<caption><span id="tab:habIndbench">Table 4.12: </span>Benchmark types for individual habitat pressure indicators.</caption>
-<colgroup>
-<col width="13%" />
-<col width="12%" />
-<col width="14%" />
-<col width="27%" />
-<col width="32%" />
-</colgroup>
+<caption>
+<span id="tab:habIndbench">Table 4.12: </span>Benchmark types for individual habitat pressure indicators.
+</caption>
 <thead>
-<tr class="header">
-<th align="left">Impact.Category</th>
-<th align="left">Indicator</th>
-<th align="left">Metric</th>
-<th align="left">Benchmark.Type</th>
-<th align="left">Benchmark.Reference</th>
+<tr>
+<th style="text-align:left;">
+Impact.Category
+</th>
+<th style="text-align:left;">
+Indicator
+</th>
+<th style="text-align:left;">
+Metric
+</th>
+<th style="text-align:left;">
+Benchmark.Type
+</th>
+<th style="text-align:left;">
+Benchmark.Reference
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left">Human Development Footprint</td>
-<td align="left">Total Land Cover Alteration</td>
-<td align="left">% watershed area</td>
-<td align="left">relative ranking (type 2)</td>
-<td align="left">n/a</td>
+<tr>
+<td style="text-align:left;">
+Human Development Footprint
+</td>
+<td style="text-align:left;">
+Total Land Cover Alteration
+</td>
+<td style="text-align:left;">
+% watershed area
+</td>
+<td style="text-align:left;">
+relative ranking (type 2)
+</td>
+<td style="text-align:left;">
+n/a
+</td>
 </tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Mining Development</td>
-<td align="left"># of mines</td>
-<td align="left">relative ranking (type 2, binary)</td>
-<td align="left">n/a</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Mining Development
+</td>
+<td style="text-align:left;">
+# of mines
+</td>
+<td style="text-align:left;">
+relative ranking (type 2, binary)
+</td>
+<td style="text-align:left;">
+n/a
+</td>
 </tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">Impervious Surfaces</td>
-<td align="left">% watershed area</td>
-<td align="left">science-based and expert-based</td>
-<td align="left">Paul &amp; Meyer, 2001; Smith, 2005</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Impervious Surfaces
+</td>
+<td style="text-align:left;">
+% watershed area
+</td>
+<td style="text-align:left;">
+science-based and expert-based
+</td>
+<td style="text-align:left;">
+Paul &amp; Meyer, 2001; Smith, 2005
+</td>
 </tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Linear Development</td>
-<td align="left">km/km2</td>
-<td align="left">relative ranking (see Appendix 12)</td>
-<td align="left">n/a</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Linear Development
+</td>
+<td style="text-align:left;">
+km/km2
+</td>
+<td style="text-align:left;">
+relative ranking (see Appendix 12)
+</td>
+<td style="text-align:left;">
+n/a
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Hydrologic Processes</td>
-<td align="left">Forest Disturbance</td>
-<td align="left">% watershed area</td>
-<td align="left">relative ranking (type 2)</td>
-<td align="left">n/a</td>
+<tr>
+<td style="text-align:left;">
+Hydrologic Processes
+</td>
+<td style="text-align:left;">
+Forest Disturbance
+</td>
+<td style="text-align:left;">
+% watershed area
+</td>
+<td style="text-align:left;">
+relative ranking (type 2)
+</td>
+<td style="text-align:left;">
+n/a
+</td>
 </tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Equivalent Clearcut Area (ECA)</td>
-<td align="left">% watershed area</td>
-<td align="left">green/amber - science-based and expert-based; amber/red - science-based</td>
-<td align="left">green/amber - NOAA, 1996; MOF, 2001; amber/red - Summit/MOE, 2006; FPB, 2011</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Equivalent Clearcut Area (ECA)
+</td>
+<td style="text-align:left;">
+% watershed area
+</td>
+<td style="text-align:left;">
+green/amber - science-based and expert-based; amber/red - science-based
+</td>
+<td style="text-align:left;">
+green/amber - NOAA, 1996; MOF, 2001; amber/red - Summit/MOE, 2006; FPB, 2011
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Vegetation Quality</td>
-<td align="left">Riparian Disturbance</td>
-<td align="left">% watershed area</td>
-<td align="left">green/amber - science-based and expert-based; amber/red - science-based</td>
-<td align="left">green/amber - Stalberg et al., 2009; amber/red -Tripp &amp; Bird, 2004</td>
+<tr>
+<td style="text-align:left;">
+Vegetation Quality
+</td>
+<td style="text-align:left;">
+Riparian Disturbance
+</td>
+<td style="text-align:left;">
+% watershed area
+</td>
+<td style="text-align:left;">
+green/amber - science-based and expert-based; amber/red - science-based
+</td>
+<td style="text-align:left;">
+green/amber - Stalberg et al., 2009; amber/red -Tripp &amp; Bird, 2004
+</td>
 </tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Insect and Disease Defoliation</td>
-<td align="left">% watershed area</td>
-<td align="left">relative ranking</td>
-<td align="left">n/a</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Insect and Disease Defoliation
+</td>
+<td style="text-align:left;">
+% watershed area
+</td>
+<td style="text-align:left;">
+relative ranking
+</td>
+<td style="text-align:left;">
+n/a
+</td>
 </tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">(see Appendix 12)</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+(see Appendix 12)
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="even">
-<td align="left">Surface Erosion</td>
-<td align="left">Road Development</td>
-<td align="left">km/km2</td>
-<td align="left">green/amber - science-based and expert-based; amber/red - science-based</td>
-<td align="left">green/amber - Stalberg et al., 2009; amber/red - MOF, 1995a,b; Porter et al., 2012</td>
+<tr>
+<td style="text-align:left;">
+Surface Erosion
+</td>
+<td style="text-align:left;">
+Road Development
+</td>
+<td style="text-align:left;">
+km/km2
+</td>
+<td style="text-align:left;">
+green/amber - science-based and expert-based; amber/red - science-based
+</td>
+<td style="text-align:left;">
+green/amber - Stalberg et al., 2009; amber/red - MOF, 1995a,b; Porter et al., 2012
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Fish Passage/Habitat Connectivity</td>
-<td align="left">Stream Crossing Density</td>
-<td align="left">#/km</td>
-<td align="left">relative ranking</td>
-<td align="left">n/a</td>
+<tr>
+<td style="text-align:left;">
+Fish Passage/Habitat Connectivity
+</td>
+<td style="text-align:left;">
+Stream Crossing Density
+</td>
+<td style="text-align:left;">
+#/km
+</td>
+<td style="text-align:left;">
+relative ranking
+</td>
+<td style="text-align:left;">
+n/a
+</td>
 </tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">(see Appendix 12)</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+(see Appendix 12)
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Water Quantity</td>
-<td align="left">Water Licenses</td>
-<td align="left"># of permitted water licenses</td>
-<td align="left">relative ranking (type 2, binary)</td>
-<td align="left">n/a</td>
+<tr>
+<td style="text-align:left;">
+Water Quantity
+</td>
+<td style="text-align:left;">
+Water Licenses
+</td>
+<td style="text-align:left;">
+# of permitted water licenses
+</td>
+<td style="text-align:left;">
+relative ranking (type 2, binary)
+</td>
+<td style="text-align:left;">
+n/a
+</td>
 </tr>
-<tr class="even">
-<td align="left">Water Quality</td>
-<td align="left">Waste Water Discharges</td>
-<td align="left"># of permitted waste water discharges</td>
-<td align="left">relative ranking (type 2, binary)</td>
-<td align="left">n/a</td>
+<tr>
+<td style="text-align:left;">
+Water Quality
+</td>
+<td style="text-align:left;">
+Waste Water Discharges
+</td>
+<td style="text-align:left;">
+# of permitted waste water discharges
+</td>
+<td style="text-align:left;">
+relative ranking (type 2, binary)
+</td>
+<td style="text-align:left;">
+n/a
+</td>
 </tr>
 </tbody>
 </table>

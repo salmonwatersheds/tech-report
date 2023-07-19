@@ -5,5 +5,8 @@
 
 # Ignore figures file
 figures/
+_book/
 
 tables/code/ignore
+
+

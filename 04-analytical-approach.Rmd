@@ -456,7 +456,6 @@ In addition, recent simulation analyses to determine the influence of these expa
 
 We have developed the benchmarks to assess biological<!-- BSC: "status"? --> based on the latest and most comprehensive available literature and in consultation with our Population Science Advisory Committee. However, there are still alternative approaches that we could consider, and we will continue to apply best practices and our iterative approach to the application of benchmarks to deriving biological status.<!-- BSC: suggested writing of latter sentence: "However, we recognize the existence of alternative approaches, and we are committed to continuously assess and refine our iterative approach using best practices."--> For example, if available, habitat-based benchmarks (e.g. Parken et al., 2006) could be applied to situations where other biological benchmarks cannot be used.
 
-
 #### Other limitations {#other-limts}
 
 Other limitations are species- or Region-specific; the latter are included below in the [Regions](#regions) section.

@@ -266,3 +266,4 @@ results-6
 biological-status-14
 habitat-status-6
 conclusions
+cu-est-spawner-abundance

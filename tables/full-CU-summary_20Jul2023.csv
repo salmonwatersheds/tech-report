@@ -1,0 +1,469 @@
+"region","species_name","cuid","cu_name_pse","exp","curr_spw","curr_spw_start_year","curr_spw_end_year","cu_enh_rank","psf_status","cosewic_status","cosewic_status_yr","wsp_status","wsp_status_yr","rollup_hi_pct","rollup_mod_pct","rollup_lo_pct"
+"Skeena","Lake sockeye",171,"Alastair",0.12,12348,2014,2019,"None","good",NA,NA,NA,NA,NA,NA,1
+"Skeena","Lake sockeye",174,"Ecstall/Lower",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Skeena","Lake sockeye",175,"Johnston",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Skeena","Lake sockeye",176,"Kitsumkalum",0.18,27542,2015,2019,"None","good",NA,NA,NA,NA,0.18024980070647,0.444065812257747,0.375684387035783
+"Skeena","Lake sockeye",177,"Lakelse",0.06,17993,2015,2019,"High","good",NA,NA,NA,NA,0.637364262095101,0.309711407057329,0.0529243308475697
+"Skeena","Lake sockeye",178,"Mcdonell/Dennis/Aldrich",0.07,6664,2015,2019,"None","good",NA,NA,NA,NA,0.410926039421688,0.423923510696352,0.16515044988196
+"Skeena","Lake sockeye",180,"Babine/Onerka",0.26,21905,2015,2019,"None","fair",NA,NA,NA,NA,0.56157147626108,0.356917344556048,0.0815111791828718
+"Skeena","Lake sockeye",181,"Bulkley/Maxan",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,1,NA,NA
+"Skeena","Lake sockeye",183,"Gitanyow (Kitwanga/Kitwancool)",0.13,799,2015,2019,"None","poor",NA,NA,NA,NA,0.33967757066506,0.66032242933494,NA
+"Skeena","Lake sockeye",185,"Morice/Atna",0.15,23001,2014,2019,"None","poor",NA,NA,NA,NA,0.130378710994244,0.0204613565096902,0.849159932496065
+"Skeena","Lake sockeye",186,"Nilkitkwa",0.37,126456,2015,2019,"None","fair",NA,NA,NA,NA,0.398751111820947,0.494120308695348,0.107128579483705
+"Skeena","Lake sockeye",187,"Stephens",0.12,7048,2015,2019,"None","good",NA,NA,NA,NA,NA,NA,1
+"Skeena","Lake sockeye",188,"Swan/Club",0.14,4115,2015,2019,"None","poor",NA,NA,NA,NA,NA,NA,1
+"Skeena","Lake sockeye",189,"Tahlo/Morrison",0.3,17469,2015,2019,"None","good",NA,NA,NA,NA,0.123228817747491,0.876771182252509,NA
+"Skeena","Lake sockeye",190,"Asitika",0.18,930,2015,2019,"None","good",NA,NA,NA,NA,NA,NA,1
+"Skeena","Lake sockeye",191,"Azuklotz",0.18,4584,2015,2019,"None","good",NA,NA,NA,NA,NA,NA,1
+"Skeena","Lake sockeye",192,"Bear",0.2,8772,2015,2019,"None","fair",NA,NA,NA,NA,NA,0.176785613140604,0.823214386859396
+"Skeena","Lake sockeye",193,"Damshilgwit",0.3,452,2015,2019,"None","good",NA,NA,NA,NA,NA,NA,1
+"Skeena","Lake sockeye",194,"Johanson",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,0.588263943706521,0.411736056293479
+"Skeena","Lake sockeye",195,"Kluatantan",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Skeena","Lake sockeye",196,"Kluayaz",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Skeena","Lake sockeye",197,"Motase",0.3,195,2015,2019,"None","poor",NA,NA,NA,NA,NA,NA,1
+"Skeena","Lake sockeye",198,"Sicintine",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Skeena","Lake sockeye",199,"Slamgeesh",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Skeena","Lake sockeye",200,"Spawning",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Skeena","Lake sockeye",201,"Sustut",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Skeena","Coho",202,"Lower Skeena",0.26,89652,2016,2019,"Moderate","good",NA,NA,NA,NA,0.222630436318616,0.363335962603912,0.414033601077472
+"Skeena","Lake sockeye",203,"Babine (enhanced)",0.36,380890,2015,2019,"High","good",NA,NA,NA,NA,0.56157147626108,0.356917344556049,0.0815111791828718
+"Skeena","Chinook",205,"Ecstall",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.0967212732475966,0.101802521073826,0.801476205678578
+"Skeena","Chinook",206,"Kalum-Early",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,0.230901062427546,0.475664543725651,0.293434393846804
+"Skeena","Chinook",207,"Kalum-Late",0.43,7605,2014,2019,"High","good",NA,NA,NA,NA,0.507250957059552,0.439748361655643,0.0530006812848047
+"Skeena","Pink (odd)",209,"Lower Skeena River (odd)",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.23321838053629,0.342169704842487,0.424611914621223
+"Skeena","Chinook",210,"Lower Skeena",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,0.160358507204754,0.290532298933745,0.549109193861501
+"Skeena","Chum",211,"Lower Skeena",0.13,1701,2016,2019,"Low","poor",NA,NA,NA,NA,0.215716744384632,0.304382965107263,0.479900290508107
+"Skeena","Chinook",212,"Upper Skeena",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.0525864346042554,0.136591650783841,0.810821914611903
+"Skeena","Pink (odd)",213,"Middle-Upper Skeena (odd)",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.547028856975754,0.40281182067109,0.0501593223531555
+"Skeena","Chum",214,"Middle Skeena",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.555501509036144,0.39228803079947,0.0522104601643861
+"Skeena","Coho",215,"Middle Skeena",0.26,210254,2016,2019,"Moderate","good",NA,NA,NA,NA,0.456814416310053,0.371438657308516,0.171746926381431
+"Skeena","River sockeye",216,"Skeena River-High Interior (river-type)",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,0.16458246604289,0.83541753395711
+"Skeena","Chinook",217,"Middle Skeena-Mainstem Tributaries",0.41,5038,2014,2019,"Low","fair",NA,NA,NA,NA,0.389938252746468,0.326045324250462,0.28401642300307
+"Skeena","Pink (even)",218,"Middle-Upper Skeena (even)",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.547028856975754,0.402811820671091,0.0501593223531556
+"Skeena","Pink (even)",219,"Nass-Skeena Estuary (even)",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,0.150339580872724,0.302434096693412,0.547226322433863
+"Skeena","Chum",220,"Skeena Estuary",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,0.296855350219896,0.490394381511588,0.212750268268516
+"Skeena","Chinook",221,"Upper Bulkley River",NA,NA,NA,NA,"High","data-deficient",NA,NA,NA,NA,0.735870074490936,0.264129925509065,NA
+"Skeena","Chinook",222,"Middle Skeena-Large Lakes",0.41,19477,2014,2019,"High","good",NA,NA,NA,NA,0.400803005423644,0.350394228742944,0.248802765833413
+"Skeena","Pink (odd)",223,"Nass-Skeena Estuary (odd)",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,0.271032670085059,0.474244433822995,0.254722896091946
+"Skeena","Chinook",224,"Skeena Estuary",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,NA,1,NA
+"Skeena","Coho",225,"Skeena Estuary",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,0.301857276175905,0.601167655764402,0.0969750680596929
+"Skeena","River sockeye",226,"Skeena River (river-type)",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.47733837962048,0.256939938894512,0.265721681485009
+"Skeena","Chinook",227,"Lakelse",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,0.616002666702842,0.383997333297158,NA
+"Skeena","Chinook",229,"Zymoetz",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.172464446048525,0.486799645502257,0.340735908449218
+"Skeena","Lake sockeye",230,"Footsore/Hodder",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Skeena","Coho",231,"Upper Skeena",0.26,11596,2016,2019,"None","good",NA,NA,NA,NA,0.0252269334162278,0.122273178954354,0.852499887629418
+"Skeena","Chinook",241,"Sicintine",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,0.193778771842201,0.806221228157799
+"Skeena","Chum",242,"Upper Skeena",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,1,NA
+"Columbia","Chinook",301,"Okanagan",NA,37,2014,2018,"None","data-deficient","Endangered",2017,"Red",2012,1,NA,NA
+"Fraser","Chinook",302,"Boundary Bay (Fall 4-1)",NA,NA,NA,NA,"High","data-deficient","Threatened",2018,NA,NA,1,NA,NA
+"Fraser","Chinook",303,"Lower Fraser River (Fall 4-1)",NA,NA,NA,NA,"Moderate","data-deficient","Threatened",2015,"Green",2012,1,NA,NA
+"Fraser","Chinook",304,"Lower Fraser River (Spring 5-2)",NA,NA,NA,NA,"Low","data-deficient","Special Concern",2015,NA,NA,0.22476387887085,0.77523612112915,NA
+"Fraser","Chinook",305,"Lower Fraser River-Upper Pitt (Summer 5-2)",NA,NA,NA,NA,"Low","data-deficient","Endangered",2015,"Data Deficient",2012,0.661840340312434,0.192800578948942,0.145359080738624
+"Fraser","Chinook",306,"Lower Fraser River (Summer 5-2)",NA,NA,NA,NA,"Low","data-deficient","Threatened",2015,"Data Deficient",2012,0.311322949073338,0.35986584520997,0.328811205716692
+"Fraser","Chinook",307,"Lower Fraser River-Maria Slough (Summer 4-1)",NA,NA,NA,NA,"High","data-deficient","Endangered",2018,NA,NA,1,NA,NA
+"Fraser","Chinook",308,"Fraser Canyon-Nahatlatch (Spring 5-2)",NA,NA,NA,NA,"None","data-deficient","Endangered",2015,"Data Deficient",2012,0.249528348288355,0.340190488903668,0.410281162807977
+"Fraser","Chinook",309,"Middle Fraser River-Portage (Fall 5-2)",NA,NA,NA,NA,"None","data-deficient","Endangered",2015,"Red",2012,0.90108988367307,NA,0.0989101163269302
+"Fraser","Chinook",310,"Middle Fraser River (Spring 5-2)",NA,NA,NA,NA,"Moderate","data-deficient","Threatened",2015,"Red",2012,0.570272378108808,0.322506573493281,0.10722104839791
+"Fraser","Chinook",311,"Middle Fraser River (Summer 5-2)",NA,NA,NA,NA,"Moderate","data-deficient","Threatened",2015,"Amber",2012,0.558104290827005,0.263487315109278,0.178408394063718
+"Fraser","Chinook",312,"Upper Fraser River (Spring 5-2)",NA,NA,NA,NA,"Low","data-deficient","Endangered",2015,"Red",2012,0.251127425016357,0.443809395828925,0.305063179154718
+"Fraser","Chinook",313,"South Thompson River (Summer 4-1)",NA,NA,NA,NA,"None","data-deficient","Not at risk",2015,"Green",2012,0.588271433621196,0.270604623332735,0.141123943046069
+"Fraser","Chinook",314,"South Thompson River (Summer 5-2)",NA,NA,NA,NA,"Moderate","data-deficient","Endangered",2018,"Red_amber",2012,0.672945101290082,0.296095232839052,0.0309596658708655
+"Fraser","Chinook",315,"Shuswap River (Summer 4-1)",NA,NA,NA,NA,"Moderate","data-deficient","Not at risk",2015,NA,NA,0.620400948365578,0.379599051634422,NA
+"Fraser","Chinook",316,"South Thompson River-Bessette Creek (Summer 4-2)",NA,NA,NA,NA,"None","data-deficient","Endangered",2015,"Red",2012,1,NA,NA
+"Fraser","Chinook",317,"Lower Thompson River (Spring 4-2)",NA,NA,NA,NA,"Moderate","data-deficient","Endangered",2018,"Red",2012,0.691994492905813,0.265291169051838,0.0427143380423492
+"Fraser","Chinook",318,"North Thompson River (Spring 5-2)",NA,NA,NA,NA,"Low","data-deficient","Endangered",2015,"Red",2012,0.828713061692927,0.171286938307073,NA
+"Fraser","Chinook",319,"North Thompson River (Summer 5-2)",NA,NA,NA,NA,"Low","data-deficient","Endangered",2015,"Red",2012,0.732816744821241,0.15247486638545,0.11470838879331
+"Vancouver Island & Mainland Inlets","Chinook",320,"Southern Mainland-Georgia Strait (Fall x-1)",NA,NA,NA,NA,"High","data-deficient","Data Deficient",2018,NA,NA,0.253578191627717,0.266907327295051,0.479514481077231
+"Vancouver Island & Mainland Inlets","Chinook",321,"East Vancouver Island-Goldstream (Fall x-1)",NA,NA,NA,NA,"High","data-deficient","Special Concern",2018,NA,NA,1,NA,NA
+"Vancouver Island & Mainland Inlets","Chinook",322,"East Vancouver Island-Cowichan and Koksilah (Fall x-1)",NA,NA,NA,NA,"High","data-deficient","Special Concern",2018,NA,NA,0.74233469536729,0.210605016458682,0.047060288174028
+"Vancouver Island & Mainland Inlets","Chinook",323,"East Vancouver Island-Nanaimo (Spring x-2)",NA,NA,NA,NA,"None","data-deficient","Endangered",2015,"Data Deficient",2012,NA,1,NA
+"Vancouver Island & Mainland Inlets","Chinook",324,"East Vancouver Island-Nanaimo and Chemainus (Fall x-1)",NA,NA,NA,NA,"High","data-deficient","Special Concern",2018,NA,NA,0.677894912988718,0.322105087011282,NA
+"Vancouver Island & Mainland Inlets","Chinook",325,"East Vancouver Island-Qualicum and Puntledge (Fall x-1)",NA,NA,NA,NA,"High","data-deficient","Special Concern",2018,NA,NA,0.710309789993969,0.289690210006031,NA
+"Vancouver Island & Mainland Inlets","Chinook",326,"Southern Mainland-Southern Fjords (Fall x-1)",NA,NA,NA,NA,"High","data-deficient","Data Deficient",2018,NA,NA,0.0626995077211973,0.563957173577795,0.373343318701007
+"Vancouver Island & Mainland Inlets","Chinook",327,"East Vancouver Island-North (Fall x-1)",NA,NA,NA,NA,"High","data-deficient","Not at risk",2018,"Red",2012,0.625869967014985,0.295930094710995,0.0781999382740197
+"Vancouver Island & Mainland Inlets","Chinook",328,"West Vancouver Island-South (Fall x-1)",NA,NA,NA,NA,"High","data-deficient","Threatened",2018,"Red",2012,0.395542186986075,0.407683405558911,0.196774407455014
+"Vancouver Island & Mainland Inlets","Chinook",329,"West Vancouver Island-Nootka and Kyuquot (Fall x-1)",NA,NA,NA,NA,"High","data-deficient","Threatened",2018,"Red",2012,0.545191949402342,0.310175268348285,0.144632782249373
+"Vancouver Island & Mainland Inlets","Chinook",330,"West Vancouver Island-North (Fall x-1)",NA,NA,NA,NA,"High","data-deficient","Data Deficient",2018,NA,NA,0.575183115488141,0.424816884511859,NA
+"Vancouver Island & Mainland Inlets","Chinook",331,"Homathko (Summer x-x)",NA,NA,NA,NA,"None","data-deficient","Data Deficient",2015,"Data Deficient",2012,NA,0.493688300125778,0.506311699874222
+"Vancouver Island & Mainland Inlets","Chinook",332,"Klinaklini (Summer 5-2)",NA,NA,NA,NA,"None","data-deficient","Data Deficient",2015,"Data Deficient",2012,0.0283068390638396,0.291993203456137,0.679699957480023
+"Fraser","Chinook",333,"South Thompson-Adams River Upper",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.459718827731466,0.540281172268534,NA
+"Vancouver Island & Mainland Inlets","Chinook",334,"East Vancouver Island-Georgia Strait (Summer 4-1)",NA,NA,NA,NA,"High","data-deficient","Endangered",2018,NA,NA,0.724353027767778,0.240390446056917,0.035256526175305
+"Nass","Chinook",401,"Portland Sound-Observatory Inlet-Lower Nass",0.32,1369,2010,2014,"Low","good",NA,NA,NA,NA,0.102213329197105,0.49836692653867,0.399419744264225
+"Nass","Chinook",402,"Upper Nass",0.45,10716,2010,2014,"None","fair",NA,NA,NA,NA,0.39109634906033,0.368762701933608,0.240140949006062
+"Nass","Chum",404,"Portland Inlet",0.18,11848,2011,2014,"Low","fair",NA,NA,NA,NA,NA,0.349389997841944,0.650610002158056
+"Nass","Chum",405,"Lower Nass",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.302639858282308,0.543664131564737,0.153696010152955
+"Nass","Chum",406,"Portland Canal-Observatory",0.15,12952,2011,2014,"Low","poor",NA,NA,NA,NA,0.0311579352154218,0.422911577440572,0.545930487344006
+"Nass","Coho",408,"Lower Nass",0.57,83265,2011,2014,"Low","good",NA,NA,NA,NA,0.275505468574893,0.555826301925876,0.168668229499231
+"Nass","Coho",409,"Upper Nass",0.57,15469,2011,2014,"None","good",NA,NA,NA,NA,0.355411593931299,0.433801038013634,0.210787368055067
+"Nass","Coho",410,"Portland Sound-Observatory Inlet-Portland Canal",0.42,29299,2011,2014,"Low","fair",NA,NA,NA,NA,0.0196721545198204,0.473715974019595,0.506611871460585
+"Nass","Pink (even)",412,"Upper Nass (even)",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.481878953406041,0.51812104659396,NA
+"Nass","Pink (odd)",414,"Nass-Portland-Observatory (odd)",0.19,1417685,2013,2014,"None","good",NA,NA,NA,NA,0.107540591797583,0.474562259300093,0.417897148902324
+"Nass","Pink (odd)",415,"Upper Nass (odd)",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.481878953406041,0.518121046593959,NA
+"Nass","Lake sockeye",418,"Clements",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,1,NA
+"Nass","Lake sockeye",419,"Leverson",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Nass","Lake sockeye",420,"Bowser",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.0579662057086875,0.514357465212644,0.427676329078669
+"Nass","Lake sockeye",421,"Damdochax",0.51,2938,2010,2014,"None","fair",NA,NA,NA,NA,NA,NA,1
+"Nass","Lake sockeye",422,"Fred Wright",0.47,795,2010,2014,"None","poor",NA,NA,NA,NA,NA,1,NA
+"Nass","Lake sockeye",423,"Kwinageese",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,1,NA
+"Nass","Lake sockeye",424,"Meziadin",0.48,156998,2010,2014,"None","fair",NA,NA,NA,NA,0.354541722032821,0.324740503260264,0.320717774706915
+"Nass","Lake sockeye",425,"Oweegee",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,1,NA,NA
+"Nass","River sockeye",426,"Lower Nass-Portland (river-type)",0.46,25015,2011,2014,"None","good",NA,NA,NA,NA,0.505616723582879,0.494383276417121,NA
+"Nass","River sockeye",427,"Upper Nass River (river-type)",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.611343785858397,0.165071877087657,0.223584337053947
+"Central Coast","Chum",500,"Smith Inlet",0,6547,2018,2021,"None","poor",NA,NA,NA,NA,0.194614668741561,0.35114551376997,0.454239817488469
+"Central Coast","Chum",501,"Rivers Inlet",0,4396,2018,2021,"None","poor",NA,NA,NA,NA,0.0603768432963238,0.734425788724324,0.205197367979353
+"Central Coast","Chum",502,"Wannock",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,NA,0.449342677485728,0.550657322514272
+"Central Coast","Chum",503,"Spiller-Fitz-Hugh-Burke",0.17,91839,2018,2021,"Moderate","fair",NA,NA,NA,NA,0.183462203337847,0.166326739728422,0.650211056933731
+"Central Coast","Chum",504,"Bella Coola-Dean Rivers",0.27,115116,2018,2021,"Moderate","fair",NA,NA,NA,NA,0.336387485288606,0.422369481700754,0.24124303301064
+"Central Coast","Chum",505,"Bella Coola River-Late",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,1,NA,NA
+"Central Coast","Chum",506,"Hecate Lowlands",0.08,33474,2018,2021,"Moderate","poor",NA,NA,NA,NA,0.00621125566051229,0.109769497958801,0.884019246380687
+"Central Coast","Chum",507,"Mussel-Kynoch",0,21837,2018,2021,"None","poor",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Chum",508,"Douglas-Gardner",0,54356,2018,2021,"Moderate","poor",NA,NA,NA,NA,0.11822664975566,0.358321784561375,0.523451565682965
+"Central Coast","Chinook",509,"Docee",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.380936566996583,0.493753957213707,0.12530947578971
+"Central Coast","Chinook",510,"Rivers Inlet",0.37,485,2017,2021,"Low","poor",NA,NA,NA,NA,0.0499058219172152,0.447321324358392,0.502772853724393
+"Central Coast","Chinook",511,"Wannock",0.37,5970,2017,2021,"Moderate","good",NA,NA,NA,NA,NA,0.449342677485728,0.550657322514272
+"Central Coast","Chinook",512,"Bella Coola-Bentinck",0.38,10934,2017,2021,"High","good",NA,NA,NA,NA,0.393885984591047,0.244526060641021,0.361587954767932
+"Central Coast","Chinook",513,"Dean River",0.17,730,2017,2021,"None","good",NA,NA,NA,NA,0.0744768156368614,0.443167331108146,0.482355853254993
+"Central Coast","Chinook",514,"North & Central Coast-Late",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,0.106074913920925,0.893925086079075
+"Central Coast","Chinook",515,"North & Central Coast-Early",0.17,900,2017,2021,"Moderate","good",NA,NA,NA,NA,0.131310624530563,0.283554414199028,0.585134961270409
+"Central Coast","Coho",516,"Smith Inlet",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.317663404178833,0.328081798910642,0.354254796910525
+"Central Coast","Coho",517,"Rivers Inlet",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,0.0497654747859603,0.561804319252295,0.388430205961745
+"Central Coast","Coho",518,"Bella Coola-Dean Rivers",0.24,16437,2018,2021,"Moderate","fair",NA,NA,NA,NA,0.502736254212024,0.396844126952983,0.100419618834994
+"Central Coast","Coho",519,"Mussel-Kynoch",0.24,2443,2018,2021,"None","poor",NA,NA,NA,NA,NA,0.126470127074068,0.873529872925932
+"Central Coast","Coho",520,"Hecate Strait Mainland",0.24,43587,2018,2021,"Moderate","fair",NA,NA,NA,NA,0.0537738600472142,0.16565374541327,0.780572394539516
+"Central Coast","Coho",521,"Brim-Wahoo",0.24,5489,2018,2021,"None","good",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Coho",522,"Douglas Channel-Kitimat Arm",0.24,92022,2018,2021,"Moderate","good",NA,NA,NA,NA,0.276759141086172,0.336130551699439,0.387110307214389
+"Central Coast","Coho",523,"Northern Coastal Streams",0.24,70257,2018,2021,"Low","good",NA,NA,NA,NA,0.0755455037437634,0.249020708911355,0.675433787344882
+"Central Coast","Lake sockeye",524,"Long",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,NA,0.280397059144825,0.719602940855174
+"Central Coast","Lake sockeye",525,"Owikeno",0,124339,2017,2021,"Low","poor",NA,NA,NA,NA,0.0475243408041949,0.156010498104895,0.79646516109091
+"Central Coast","Lake sockeye",527,"Wannock (Owikeno)",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,0.0475243408041949,0.156010498104895,0.79646516109091
+"Central Coast","Lake sockeye",528,"South Atnarko Lakes",NA,NA,NA,NA,"High","data-deficient",NA,NA,NA,NA,0.156365152626147,0.179791166604271,0.663843680769582
+"Central Coast","Lake sockeye",529,"Backland",0,36,2017,2021,"None","poor",NA,NA,NA,NA,NA,0.287841962298715,0.712158037701285
+"Central Coast","Lake sockeye",530,"Soda Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",532,"Canoona",0,3305,2017,2021,"None","good",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",533,"Dome",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",534,"Evelyn",0,1300,2017,2021,"None","good",NA,NA,NA,NA,NA,1,NA
+"Central Coast","Lake sockeye",535,"Kainet Creek",0,1151,2017,2021,"None","good",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",536,"Kimsquit",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",537,"Kitkiata",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,1,NA
+"Central Coast","Lake sockeye",538,"Kitlope",0,14780,2017,2021,"None","poor",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",539,"Pine River",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",540,"Banks",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",541,"Bloomfield",0,810,2017,2021,"None","fair",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",542,"Bolton Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",543,"Bonilla",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",544,"Borrowman Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",545,"Busey Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",546,"Cartwright Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",547,"Chic Chic",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",548,"Citeyats",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",549,"Fannie Cove",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",550,"Curtis Inlet",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",551,"Dallain Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",552,"Deer",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",553,"Devon",0.01,2180,2017,2021,"None","fair",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",554,"Douglas Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",555,"Elizabeth",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",556,"Elsie/Hoy",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,1,NA
+"Central Coast","Lake sockeye",557,"End Hill Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",558,"Evinrude Inlet",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",559,"Freeda",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",560,"Hartley Bay",0,1145,2017,2021,"None","good",NA,NA,NA,NA,NA,1,NA
+"Central Coast","Lake sockeye",561,"Hevenor Inlet",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",562,"Higgins Lagoon",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",563,"Kadjusdis River",0,3800,2017,2021,"Low","good",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",564,"Kdelmashan Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",565,"Keecha",0.01,1600,2017,2021,"None","good",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",566,"Kent Inlet Lagoon Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",567,"Kenzuwash Creeks",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",568,"Keswar Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",569,"Kildidt Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",570,"Kildidt Lagoon Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",571,"Kisameet",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",572,"Koeye",0.06,7488,2017,2021,"None","good",NA,NA,NA,NA,NA,0.12443914147421,0.87556085852579
+"Central Coast","Lake sockeye",573,"Kooryet",0.01,446,2017,2021,"None","poor",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",574,"Kunsoot River",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,1,NA,NA
+"Central Coast","Lake sockeye",575,"Kwakwa Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",576,"Lewis Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",577,"Limestone Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",578,"Lowe/Simpson/Weir",0.01,3061,2017,2021,"None","poor",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",579,"Mary Cove Creek",0,660,2017,2021,"Moderate","poor",NA,NA,NA,NA,NA,1,NA
+"Central Coast","Lake sockeye",580,"Mcdonald Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",581,"Mcloughlin",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,1,NA,NA
+"Central Coast","Lake sockeye",582,"Mikado",0.01,4410,2017,2021,"None","good",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",583,"Monckton Inlet Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",584,"Namu",0.03,3623,2017,2021,"None","good",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",585,"Port John",0.02,542,2017,2021,"None","good",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",586,"Powles Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",587,"Price Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",588,"Roderick",0,264,2017,2021,"High","poor",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",589,"Ryan Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",590,"Salter",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",591,"Scoular/Kilpatrick",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",592,"Sheneeza Inlet",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",593,"Ship Point Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",594,"Spencer Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",595,"Stannard Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",596,"Talamoosa Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",597,"Tankeeah River",0,2000,2017,2021,"High","poor",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",598,"Treneman Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",599,"Tsimtack/Moore/Roger",0.01,1900,2017,2021,"None","good",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",600,"Tuno Creek East",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",601,"Tuno Creek West",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",602,"Tyler Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",603,"Wale Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",604,"Watt Bay",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",605,"West Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",606,"Yaaklele Lagoon",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Central Coast","Lake sockeye",607,"Yeo",0,735,2017,2021,"None","good",NA,NA,NA,NA,1,NA,NA
+"Central Coast","Pink (even)",608,"Hecate Lowlands (even)",0.09,449484,2020,2021,"None","fair",NA,NA,NA,NA,0.0432670144628312,0.159447466805978,0.797285518731191
+"Central Coast","Pink (even)",609,"Hecate Strait-Fjords (even)",0.1,11874814,2020,2021,"None","good",NA,NA,NA,NA,0.153642969970622,0.377439298451517,0.46891773157786
+"Central Coast","Pink (odd)",610,"Homathko-Klinaklini-Smith-Rivers-Bella Coola-Dean (odd)",0,461427,2020,2021,"Low","poor",NA,NA,NA,NA,0.387651567702331,0.504807289904924,0.107541142392745
+"Central Coast","Pink (odd)",611,"Hecate Strait-Lowlands (odd)",0,614739,2020,2021,"None","good",NA,NA,NA,NA,0.0532910276634986,0.15757701467294,0.789131957663561
+"Central Coast","Pink (odd)",612,"Hecate Strait-Fjords (odd)",0,1295152,2020,2021,"None","good",NA,NA,NA,NA,0.126726217362729,0.309809380158295,0.563464402478974
+"Central Coast","River sockeye",613,"Rivers-Smith Inlets (river-type)",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,0.775013625730427,0.224986374269573
+"Central Coast","River sockeye",614,"Northern Coastal Fjords (river-type)",0.01,2318,2018,2021,"None","poor",NA,NA,NA,NA,0.177910272799636,0.223332268697717,0.598757458502647
+"Central Coast","River sockeye",615,"Northern Coastal Streams (river-type)",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.0204704409874578,0.300227926980697,0.679301632031845
+"Fraser","Chum",701,"Lower Fraser",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,0.667211995706104,0.208498825843694,0.124289178450201
+"Fraser","Coho",704,"Lillooet",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,0.224479752859405,0.49413896978045,0.281381277360146
+"Fraser","Coho",705,"Fraser Canyon",NA,NA,NA,NA,"Moderate","data-deficient","Threatened",2015,"Amber",2011,0.60563615137244,0.166934021554092,0.227429827073468
+"Fraser","Coho",707,"Lower Thompson",NA,NA,NA,NA,"Moderate","data-deficient","Threatened",2015,"Amber_green",2011,0.649541199253261,0.275259665666413,0.0751991350803253
+"Fraser","Coho",708,"South Thompson",NA,NA,NA,NA,"Moderate","data-deficient","Threatened",2015,"Amber",2011,0.494856233628854,0.369304735227425,0.135839031143722
+"Fraser","Coho",709,"North Thompson",NA,NA,NA,NA,"Moderate","data-deficient","Threatened",2015,"Amber_green",2011,0.655203122275647,0.262475175429004,0.0823217022953493
+"Fraser","Pink (odd)",710,"Fraser River (odd)",0.04,8313181,2021,2021,"Moderate","good",NA,NA,NA,NA,0.593246474159795,0.293123597706297,0.113629928133909
+"Fraser","Lake sockeye",711,"Chilliwack-Early Summer (cyclic)",NA,NA,NA,NA,"None","data-deficient","Not at risk",2015,"Amber_green",2014,0.206646214735822,0.669867305410407,0.123486479853771
+"Fraser","Lake sockeye",712,"Cultus-Late",NA,NA,NA,NA,"High","data-deficient","Endangered",2015,"Red",2014,0.824732558986415,0.175267441013585,NA
+"Fraser","Lake sockeye",713,"Harrison-Downstream Migrating-Late",NA,392,2018,2021,"None","poor","Special Concern",2015,"Amber_green",2014,0.159407748503088,0.309661506253756,0.530930745243157
+"Fraser","Lake sockeye",714,"Harrison-Upstream Migrating-Late",NA,3684,2018,2021,"None","poor","Endangered",2015,"Red",2014,1,NA,NA
+"Fraser","Lake sockeye",715,"Pitt-Early Summer",NA,8962,2018,2021,"High","poor","Not at risk",2015,"Green",2014,0.100170610502952,0.343403764303494,0.556425625193554
+"Fraser","Lake sockeye",716,"Lillooet-Harrison-Late",NA,10721,2018,2021,"None","poor","Special Concern",2015,"Amber",2014,0.125433893116568,0.332284998583483,0.542281108299949
+"Fraser","Lake sockeye",718,"Nahatlatch-Early Summer",NA,2531,2018,2021,"None","fair","Special Concern",2015,"Amber",2014,0.0486880612617518,0.203118204533672,0.748193734204576
+"Fraser","Lake sockeye",719,"Anderson-Seton-Early Summer",NA,9012,2018,2021,"High","poor","Not at risk",2015,"Amber_green",2014,0.243555653913281,0.235244163625364,0.521200182461355
+"Fraser","Lake sockeye",720,"Chilko-Early Summer",NA,NA,NA,NA,"None","data-deficient","Not at risk",2015,"Green",2014,NA,NA,1
+"Fraser","Lake sockeye",721,"Chilko-Summer",NA,267851,2018,2021,"None","poor","Not at risk",2015,"Green",2014,NA,0.185364703901943,0.814635296098057
+"Fraser","Lake sockeye",725,"Francois-Fraser-Summer",NA,80820,2018,2021,"Low","poor","Special Concern",2015,"Amber_green",2014,0.621306039402273,0.322241512436994,0.0564524481607328
+"Fraser","Lake sockeye",727,"Nadina-Francois-Early Summer",NA,35054,2018,2021,"None","good","Not at risk",2015,"Amber_green",2014,0.621306039402273,0.322241512436994,0.0564524481607328
+"Fraser","Lake sockeye",728,"Quesnel-Summer (cyclic)",NA,NA,NA,NA,"Moderate","data-deficient","Endangered",2015,"Red_amber",2014,0.327127255799358,0.244305901416602,0.42856684278404
+"Fraser","Lake sockeye",729,"Seton-Late (de novo)",NA,1016,2018,2021,"None","poor","Endangered",2015,"Red",2014,0.243555653913281,0.235244163625364,0.521200182461355
+"Fraser","Lake sockeye",731,"Takla-Trembleur-Stuart-Summer (cyclic)",NA,NA,NA,NA,"None","data-deficient","Endangered",2015,"Red_amber",2014,0.301155148727716,0.392103434361919,0.306741416910366
+"Fraser","Lake sockeye",732,"Takla-Trembleur-Early Stuart (cyclic)",NA,NA,NA,NA,"None","data-deficient","Endangered",2015,"Red",2014,0.207110601697727,0.408258318240528,0.384631080061745
+"Fraser","Lake sockeye",734,"Taseko-Early Summer",NA,177,2018,2021,"None","fair","Endangered",2015,"Red",2014,0.0293718620834367,0.351631366322531,0.618996771594032
+"Fraser","Lake sockeye",735,"Bowron-Early Summer",NA,654,2018,2021,"None","poor","Endangered",2015,"Red",2014,NA,0.413887441223724,0.586112558776276
+"Fraser","Lake sockeye",738,"Shuswap-Early Summer (cyclic)",NA,NA,NA,NA,"Low","data-deficient","Not at risk",2015,"Amber",2014,0.447131133602702,0.275382390849266,0.277486475548032
+"Fraser","Lake sockeye",739,"Shuswap-Late (cyclic)",NA,NA,NA,NA,"None","data-deficient","Not at risk",2015,"Amber_green",2014,0.447131133602702,0.275382390849266,0.277486475548032
+"Fraser","Lake sockeye",740,"Kamloops-Early Summer",NA,3756,2018,2021,"None","poor","Special Concern",2015,"Amber",2014,0.454827127674182,0.273872338156392,0.271300534169426
+"Fraser","River sockeye",742,"Widgeon (river-type)",NA,174,2018,2021,"None","fair","Threatened",2015,"Red",2014,NA,1,NA
+"Fraser","River sockeye",745,"Harrison River (river-type)",NA,22251,2018,2021,"None","poor","Not at risk",2015,"Green",2014,1,NA,NA
+"Fraser","Coho",749,"Interior Fraser",NA,NA,NA,NA,"None","data-deficient","Threatened",2015,"Amber",2011,0.410492154068024,0.275059818714457,0.314448027217519
+"Fraser","Coho",750,"Lower Fraser",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,0.731884615482827,0.180646241982083,0.0874691425350898
+"Fraser","Lake sockeye",751,"Adams & Momich Lakes-Early Summer",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.351840193018137,0.356215901766295,0.291943905215568
+"Fraser","Lake sockeye",752,"North Barriere-Early Summer (de novo)",NA,1027,2018,2021,"None","poor","Threatened",2015,"Amber",2014,0.491805653248829,0.463747195295926,0.0444471514552452
+"Fraser","Lake sockeye",753,"Fraser-Early Summer",NA,NA,NA,NA,"None","extinct",NA,NA,NA,NA,0.626103211991116,0.318159461199604,0.0557373268092798
+NA,NA,754,NA,NA,NA,NA,NA,"None",NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,755,NA,NA,NA,NA,NA,"None",NA,NA,NA,NA,NA,NA,NA,NA
+"Vancouver Island & Mainland Inlets","Chum",900,"Southern Coastal Streams",NA,1410,2017,2020,"Low","poor",NA,NA,NA,NA,0.217494608823266,0.566308991786692,0.216196399390042
+"Vancouver Island & Mainland Inlets","Chum",901,"Bute Inlet",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,NA,0.528814518366472,0.471185481633528
+"Vancouver Island & Mainland Inlets","Chum",902,"Loughborough",NA,9517,2017,2020,"Low","poor",NA,NA,NA,NA,0.495299974036143,0.379080187756854,0.125619838207003
+"Vancouver Island & Mainland Inlets","Chum",903,"Northeast Vancouver Island",NA,2237,2017,2020,"Moderate","poor",NA,NA,NA,NA,0.454857780876244,0.430625314192564,0.114516904931191
+"Vancouver Island & Mainland Inlets","Chum",904,"Georgia Strait",NA,568406,2017,2020,"Moderate","good",NA,NA,NA,NA,0.679311949434927,0.212877918617123,0.107810131947949
+"Vancouver Island & Mainland Inlets","Chum",905,"Howe Sound-Burrard Inlet",NA,171508,2017,2020,"Moderate","fair",NA,NA,NA,NA,0.555992256586292,0.348101233633304,0.0959065097804039
+"Fraser","Coho",906,"Boundary Bay",NA,NA,NA,NA,"High","data-deficient",NA,NA,NA,NA,1,NA,NA
+"Vancouver Island & Mainland Inlets","Coho",907,"Howe Sound-Burrard Inlet",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,0.575260160598597,0.323263923061699,0.101475916339704
+"Vancouver Island & Mainland Inlets","Coho",908,"Georgia Strait Mainland",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,0.45015596315121,0.243145832644877,0.306698204203913
+"Vancouver Island & Mainland Inlets","Coho",909,"Southern Coastal Streams-Queen Charlotte Strait-Johnstone Strait-Southern Fjords",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,0.282367427984009,0.426031391885735,0.291601180130256
+"Vancouver Island & Mainland Inlets","Coho",910,"East Vancouver Island-Georgia Strait",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,0.641813864932208,0.285331242400709,0.0728548926670833
+"Vancouver Island & Mainland Inlets","Coho",911,"East Vancouver Island-Johnstone Strait-Southern Fjords",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,0.426832429761423,0.491641583469818,0.0815259867687593
+"Vancouver Island & Mainland Inlets","Coho",912,"Nahwitti Lowland",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,0.498668457305063,0.402741980877932,0.0985895618170049
+"Vancouver Island & Mainland Inlets","Coho",913,"Juan de Fuca-Pachena",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,0.437228457018014,0.498893610493937,0.0638779324880489
+"Vancouver Island & Mainland Inlets","Coho",914,"West Vancouver Island",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,0.521256810199022,0.343012118865312,0.135731070935666
+"Vancouver Island & Mainland Inlets","Coho",915,"Clayoquot",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,0.314634313513794,0.20629914644792,0.479066540038286
+"Vancouver Island & Mainland Inlets","Coho",916,"Homathko-Klinaklini Rivers",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,0.275420724033923,0.724579275966077
+"Vancouver Island & Mainland Inlets","Pink (even)",917,"Georgia Strait (even)",0.15,152684,2018,2018,"Moderate","fair",NA,NA,NA,NA,0.512203757678682,0.325274488030539,0.162521754290778
+"Vancouver Island & Mainland Inlets","Pink (even)",918,"West Vancouver Island (even)",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,0.650061245761451,0.285724159907918,0.0642145943306308
+"Vancouver Island & Mainland Inlets","Pink (even)",919,"Northwest Vancouver Island (even)",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,0.603641056673062,0.35375705363236,0.0426018896945779
+"Vancouver Island & Mainland Inlets","Pink (even)",920,"Southern Fjords (even)",0.12,575090,2018,2018,"Moderate","fair",NA,NA,NA,NA,0.314898764312498,0.469050437729697,0.216050797957805
+"Vancouver Island & Mainland Inlets","Pink (odd)",921,"East Howe Sound-Burrard Inlet (odd)",0.19,110104,2019,2019,"Moderate","poor",NA,NA,NA,NA,0.568290113318213,0.431709886681787,NA
+"Vancouver Island & Mainland Inlets","Pink (odd)",922,"Georgia Strait (odd)",0.19,1296234,2019,2019,"Moderate","fair",NA,NA,NA,NA,0.501297268687483,0.298899616436007,0.19980311487651
+"Vancouver Island & Mainland Inlets","Pink (odd)",923,"East Vancouver Island-Johnstone Strait (odd)",0.08,108129,2019,2019,"Moderate","good",NA,NA,NA,NA,0.690047732053678,0.249725641983728,0.0602266259625939
+"Vancouver Island & Mainland Inlets","Pink (odd)",924,"Nahwitti (odd)",0.02,8272,2019,2019,"Moderate","poor",NA,NA,NA,NA,0.450309597968138,0.469867790320715,0.0798226117111472
+"Vancouver Island & Mainland Inlets","Pink (odd)",925,"West Vancouver Island (odd)",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.650061245761451,0.285724159907918,0.0642145943306308
+"Vancouver Island & Mainland Inlets","Pink (odd)",926,"Southern Fjords (odd)",0.06,8383,2019,2019,"None","poor",NA,NA,NA,NA,0.301371588412926,0.380391776560596,0.318236635026477
+"Vancouver Island & Mainland Inlets","Lake sockeye",927,"Fulmore",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,1,NA,NA
+"Vancouver Island & Mainland Inlets","Lake sockeye",928,"Heydon",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,1,NA
+"Vancouver Island & Mainland Inlets","Lake sockeye",929,"Kakweiken",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,0.184264186506452,0.815735813493548
+"Vancouver Island & Mainland Inlets","Lake sockeye",930,"Loose",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,1,NA,NA
+"Vancouver Island & Mainland Inlets","Lake sockeye",931,"Mackenzie",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,1,NA
+"Vancouver Island & Mainland Inlets","Lake sockeye",932,"Phillips",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,0.35430756006002,0.64569243993998
+"Vancouver Island & Mainland Inlets","Lake sockeye",933,"Sakinaw",NA,NA,NA,NA,"High","data-deficient","Endangered",2012,NA,NA,NA,1,NA
+"Vancouver Island & Mainland Inlets","Lake sockeye",935,"Tzoonie",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,1,NA
+NA,NA,936,NA,NA,NA,NA,NA,"None",NA,NA,NA,NA,NA,NA,NA,NA
+"Vancouver Island & Mainland Inlets","Lake sockeye",937,"Ida-Bonanza",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.460086908115629,0.539913091884371,NA
+"Vancouver Island & Mainland Inlets","Lake sockeye",938,"Nahwitti",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.305372892483419,0.567597930823898,0.127029176692683
+"Vancouver Island & Mainland Inlets","Lake sockeye",939,"Nimpkish",0.03,46980,2016,2020,"Low","fair",NA,NA,NA,NA,0.144828089784842,0.706453074755001,0.148718835460157
+"Vancouver Island & Mainland Inlets","Lake sockeye",941,"Quatse",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.747569465644735,0.252430534355265,NA
+"Vancouver Island & Mainland Inlets","Lake sockeye",942,"Schoen",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,0.334009135665897,0.665990864334103
+"Vancouver Island & Mainland Inlets","Lake sockeye",943,"Shushartie",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,1,NA
+"Vancouver Island & Mainland Inlets","Lake sockeye",944,"Woss",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,0.464560037780119,0.535439962219881
+"Vancouver Island & Mainland Inlets","Lake sockeye",945,"Alice",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.522308325759729,0.332439438404484,0.145252235835787
+"Vancouver Island & Mainland Inlets","Lake sockeye",946,"Canoe Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Vancouver Island & Mainland Inlets","Lake sockeye",947,"Cecilia",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Vancouver Island & Mainland Inlets","Lake sockeye",948,"Cheewat",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,1,NA
+"Vancouver Island & Mainland Inlets","Lake sockeye",949,"Clayoquot",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Vancouver Island & Mainland Inlets","Lake sockeye",950,"Deserted",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,1,NA,NA
+"Vancouver Island & Mainland Inlets","Lake sockeye",951,"Fairy",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,0.22992278668694,0.737322440264672,0.0327547730483872
+"Vancouver Island & Mainland Inlets","Lake sockeye",952,"Great Central",0.31,96155,2016,2020,"None","fair",NA,NA,NA,NA,0.277744429731897,0.47502729854286,0.247228271725243
+"Vancouver Island & Mainland Inlets","Lake sockeye",953,"Henderson",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.341959663597993,0.658040336402007,NA
+"Vancouver Island & Mainland Inlets","Lake sockeye",954,"Hesquiat",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,0.585278158046547,0.414721841953453
+"Vancouver Island & Mainland Inlets","Lake sockeye",955,"Hobiton",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Vancouver Island & Mainland Inlets","Lake sockeye",956,"Jansen",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,1,NA,NA
+"Vancouver Island & Mainland Inlets","Lake sockeye",957,"Kanim",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,1,NA,NA
+"Vancouver Island & Mainland Inlets","Lake sockeye",958,"Kennedy",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.362748084949764,0.377409934022066,0.259841981028171
+"Vancouver Island & Mainland Inlets","Lake sockeye",959,"Maggie",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.510757739628217,0.489242260371783,NA
+"Vancouver Island & Mainland Inlets","Lake sockeye",960,"Megin",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Vancouver Island & Mainland Inlets","Lake sockeye",961,"Muchalat",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.321879824944341,0.556234783338969,0.12188539171669
+"Vancouver Island & Mainland Inlets","Lake sockeye",962,"Muriel",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,1,NA,NA
+"Vancouver Island & Mainland Inlets","Lake sockeye",963,"Nitinat",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.341206141417867,0.54631414624454,0.112479712337593
+"Vancouver Island & Mainland Inlets","Lake sockeye",964,"O'Connell",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,1,NA,NA
+"Vancouver Island & Mainland Inlets","Lake sockeye",966,"Park River",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,1,NA,NA
+"Vancouver Island & Mainland Inlets","Lake sockeye",967,"Power",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Vancouver Island & Mainland Inlets","Lake sockeye",969,"Sproat",0.29,179943,2016,2020,"None","good",NA,NA,NA,NA,0.427748133831347,0.452886033110189,0.119365833058464
+"Vancouver Island & Mainland Inlets","Lake sockeye",970,"William-Brink",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,1,NA
+"Vancouver Island & Mainland Inlets","River sockeye",971,"Southern Fjords (river-type)",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.377664824544819,0.387915096132353,0.234420079322828
+"Vancouver Island & Mainland Inlets","River sockeye",972,"West Vancouver Island (river-type)",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,0.451033765157468,0.349698842193966,0.199267392648566
+"Vancouver Island & Mainland Inlets","River sockeye",973,"East Vancouver Island & Georgia Strait (river-type)",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.429924588151604,0.457384511101434,0.112690900746963
+"Vancouver Island & Mainland Inlets","River sockeye",974,"NW Vancouver Island (river-type)",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.58102834056736,0.309823690895714,0.109147968536926
+"Vancouver Island & Mainland Inlets","Lake sockeye",976,"Vernon",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,1,NA
+"Vancouver Island & Mainland Inlets","Chum",977,"Northwest Vancouver Island",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,0.63685645976291,0.302642235163613,0.060501305073476
+"Vancouver Island & Mainland Inlets","Chum",978,"Southwest & West Vancouver Island",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,0.517787915054091,0.295131176615899,0.187080908330011
+"Vancouver Island & Mainland Inlets","Chum",979,"Upper Knight",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,0.216884461780488,0.783115538219512
+"Columbia","Lake sockeye",1300,"Osoyoos",NA,21052,2017,2020,"None","good",NA,NA,NA,NA,0.918186391141979,0.0785435882242634,0.00327002063375716
+"Haida Gwaii","Chum",800,"North Haida Gwaii-Stanley Creek",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,1,NA
+"Haida Gwaii","Chum",801,"East Haida Gwaii",NA,32216,2017,2021,"Low","poor",NA,NA,NA,NA,0.294486821482136,0.32346847553005,0.382044702987814
+"Haida Gwaii","Chum",802,"North Haida Gwaii",NA,8871,2017,2021,"None","poor",NA,NA,NA,NA,0.82197581413946,0.0824508634787762,0.0955733223817642
+"Haida Gwaii","Chum",803,"West Haida Gwaii",NA,42474,2017,2021,"Low","fair",NA,NA,NA,NA,0.0295077268363229,0.256963199821371,0.713529073342306
+"Haida Gwaii","Chum",804,"Skidegate",NA,47349,2017,2021,"Moderate","fair",NA,NA,NA,NA,0.580063375666431,0.147344330094908,0.272592294238661
+"Haida Gwaii","Chinook",805,"North Haida Gwaii",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,0.759779349905592,0.134495369581857,0.105725280512551
+"Haida Gwaii","Chinook",806,"East Haida Gwaii",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.318908860937497,0.621210652465477,0.0598804865970263
+"Haida Gwaii","Coho",807,"East Haida Gwaii",NA,29388,2018,2021,"Moderate","poor",NA,NA,NA,NA,0.352161742027659,0.310727852014193,0.337110405958148
+"Haida Gwaii","Coho",808,"West Haida Gwaii",NA,14406,2018,2021,"Low","good",NA,NA,NA,NA,0.0448684811096945,0.285513313568525,0.66961820532178
+"Haida Gwaii","Coho",809,"Haida Gwaii-Graham Island Lowlands",NA,58780,2018,2021,"Moderate","fair",NA,NA,NA,NA,0.5731339377528,0.143420914795835,0.283445147451365
+"Haida Gwaii","Pink (even)",810,"North Haida Gwaii (even)",0.12,1376401,2020,2020,"None","good",NA,NA,NA,NA,0.716145550756085,0.151553385509671,0.132301063734244
+"Haida Gwaii","Pink (even)",811,"East Haida Gwaii (even)",0,1041460,2020,2020,"Low","good",NA,NA,NA,NA,0.324692261994036,0.319110823206156,0.356196914799807
+"Haida Gwaii","Pink (even)",812,"West Haida Gwaii (even)",0,16773,2020,2020,"None","poor",NA,NA,NA,NA,0.0539254455394269,0.343145840038125,0.602928714422448
+"Haida Gwaii","Pink (odd)",813,"East Haida Gwaii (odd)",0,38954,2021,2021,"Low","good",NA,NA,NA,NA,0.329637667605906,0.329138824042998,0.341223508351096
+"Haida Gwaii","Pink (odd)",814,"North Haida Gwaii (odd)",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.743636198258684,0.120302780935904,0.136061020805412
+"Haida Gwaii","Pink (odd)",815,"West Haida Gwaii (odd)",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.062512210692361,0.397786329553586,0.539701459754052
+"Haida Gwaii","River sockeye",816,"East Haida Gwaii (river-type)",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.390176794235748,0.400030779907015,0.209792425857236
+"Haida Gwaii","River sockeye",817,"North Haida Gwaii (river-type)",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.755157382872063,0.244842617127937,NA
+"Haida Gwaii","River sockeye",818,"West Haida Gwaii (river-type)",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.0948659381589217,0.428069898940184,0.477064162900894
+"Haida Gwaii","Lake sockeye",819,"Ain-Skundale-Ian",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.347869942848481,0.578921189257324,0.0732088678941949
+"Haida Gwaii","Lake sockeye",820,"Awun",0.2,6714,2017,2021,"None","good",NA,NA,NA,NA,1,NA,NA
+"Haida Gwaii","Lake sockeye",821,"Fairfax",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,1,NA
+"Haida Gwaii","Lake sockeye",822,"Jalun",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Haida Gwaii","Lake sockeye",823,"Marian/Eden",0.2,2249,2017,2021,"None","poor",NA,NA,NA,NA,1,NA,NA
+"Haida Gwaii","Lake sockeye",824,"Mathers",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,1,NA
+"Haida Gwaii","Lake sockeye",825,"Mercer",0.2,4472,2017,2021,"None","good",NA,NA,NA,NA,NA,NA,1
+"Haida Gwaii","Lake sockeye",826,"Skidegate",0.2,11184,2017,2021,"None","good",NA,NA,NA,NA,1,NA,NA
+"Haida Gwaii","Lake sockeye",827,"Yakoun",0.2,4952,2017,2021,"None","poor",NA,NA,NA,NA,0.695536476622004,NA,0.304463523377996
+"Transboundary","Chinook",1004,"Alsek",NA,4263,2017,2021,"Low","poor",NA,NA,NA,NA,NA,NA,0.492558415183936
+"Transboundary","Chinook",1005,"Lynn Canal",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,NA
+"Transboundary","Chinook",1006,"Taku-Early Timing",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,0.0321816647250058,0.967818335274994
+"Transboundary","Chinook",1007,"Taku-Mid Timing",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Transboundary","Chinook",1008,"Taku-Late Timing",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,0.0833277138008837,0.916672286199116
+"Transboundary","Chinook",1009,"Whiting",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Transboundary","Chinook",1010,"Stikine-Early Timing",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,0.0946032912231642,0.278942739379748,0.610514661642351
+"Transboundary","Chinook",1011,"Stikine-Late Timing",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,NA,0.0703556929650173,0.645412571378886
+"Transboundary","Chinook",1012,"Unuk",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,NA
+"Transboundary","Chum",1000,"Lynn Canal",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,NA
+"Transboundary","Chum",1001,"Taku",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,0.555288114343672
+"Transboundary","Chum",1002,"Whiting",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,NA
+"Transboundary","Chum",1003,"Unuk",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,NA
+"Transboundary","Chum",1032,"Lower Stikine",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,0.0436017544749701,0.73574830585988
+"Transboundary","Coho",1013,"Alsek",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,NA,NA,0.149736164520937
+"Transboundary","Coho",1014,"Lynn Canal",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,NA
+"Transboundary","Coho",1015,"Taku-Late Timing",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,0.679390131262563
+"Transboundary","Coho",1016,"Whiting",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Transboundary","Coho",1017,"Lower Stikine",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.0111499710558988,0.0347707293694491,0.697762850569318
+"Transboundary","Coho",1018,"Unuk",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,NA
+"Transboundary","Coho",1034,"Taku-Early Timing",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,0.0348938294645044,0.965106170535496
+"Transboundary","Coho",1035,"Taku-Mid Timing",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,0.0800208325762929,0.919979167423707
+"Transboundary","Pink (even)",1019,"Transboundary Fjords (even)",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.0170629801933056,0.0563750776227291,0.795216986627864
+"Transboundary","Pink (odd)",1020,"Transboundary Fjords (odd)",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.0170629801933056,0.0563750776227291,0.795216986627864
+"Transboundary","Lake sockeye",1024,"Border",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,NA
+"Transboundary","Lake sockeye",1025,"Christina",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Transboundary","Lake sockeye",1026,"Tahltan",NA,9780,2017,2021,"High","fair",NA,NA,NA,NA,0.0779709566253443,0.284139296712988,0.637889746661667
+"Transboundary","Lake sockeye",1027,"Kuthai",NA,191,2017,2021,"None","poor",NA,NA,NA,NA,NA,NA,1
+"Transboundary","Lake sockeye",1028,"Little Trapper",NA,8513,2017,2021,"Moderate","fair",NA,NA,NA,NA,NA,NA,1
+"Transboundary","Lake sockeye",1029,"Tatsamenie",NA,6806,2017,2021,"High","good",NA,NA,NA,NA,NA,NA,1
+"Transboundary","Lake sockeye",1031,"Blanchard",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,0.663115507216047
+"Transboundary","Lake sockeye",1033,"King Salmon",NA,6475,2018,2021,"Moderate","good",NA,NA,NA,NA,NA,NA,1
+"Transboundary","Lake sockeye",1036,"Chutine",NA,50,2017,2021,"None","fair",NA,NA,NA,NA,NA,NA,1
+"Transboundary","Lake sockeye",1037,"Whiting",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,0.81984589211381
+"Transboundary","Lake sockeye",1038,"Klukshu",NA,8863,2017,2021,"None","fair",NA,NA,NA,NA,NA,NA,NA
+"Transboundary","Lake sockeye",1039,"Nesketahin",NA,274,2017,2021,"None","poor",NA,NA,NA,NA,NA,NA,NA
+"Transboundary","River sockeye",1021,"Alsek (river-type)",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,NA,NA,0.398544221880835
+"Transboundary","River sockeye",1022,"Chilkat (river-type)",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,NA
+"Transboundary","River sockeye",1023,"Northern Transboundary Fjords (river-type)",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,0.0129680182877844,0.0637501967813828,0.850172279686074
+"Skeena","Steelhead",280,"Upper Skeena Headwaters",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,0.539698977829255,0.460301022170745
+"Skeena","Steelhead",281,"Upper Sustut",NA,258,2018,2022,"None","poor",NA,NA,NA,NA,NA,0.536552213829605,0.463447786170395
+"Skeena","Steelhead",282,"Upper Skeena",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,1
+"Skeena","Steelhead",283,"Kispiox",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,0.654949251293382,0.156693424111071,0.188357324595547
+"Skeena","Steelhead",284,"Babine",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.882243148875964,0.0554985218162444,0.0622583293077921
+"Skeena","Steelhead",285,"Middle Skeena",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,0.536651449254841,0.463348550745159,NA
+"Skeena","Steelhead",286,"Suskwa",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,0.169451143335879,0.830548856664121,NA
+"Skeena","Steelhead",287,"Bulkley",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,1,NA,NA
+"Skeena","Steelhead",288,"Skeena Coastal Summers",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,0.57341859372249,0.272698631537013,0.153882774740497
+"Skeena","Steelhead",289,"Morice",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,0.629404777235363,0.275339385441511,0.095255837323126
+"Skeena","Steelhead",290,"Skeena Coastal Winters",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,0.470687000649146,0.529312999350854
+"Nass","Steelhead",480,"Nass Summer",0.23,10366,2018,2022,"None","fair",NA,NA,NA,NA,0.384583866306859,0.506674766106114,0.108741367587028
+"Nass","Steelhead",481,"Nass Winter",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,1,NA
+"Central Coast","Steelhead",680,"North Coast Winter",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,0.161874803170872,0.268513832709999,0.569611364119129
+"Central Coast","Steelhead",681,"North Coast Summer",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,NA
+"Central Coast","Steelhead",682,"Central Coast Winter",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.102824273390178,0.465000635504013,0.432175091105809
+"Central Coast","Steelhead",683,"Transition Summer",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,0.475415403144246,0.371928927061421,0.152655669794332
+"Fraser","Steelhead",780,"Mid Fraser Summer",NA,51,2018,2022,"Moderate","poor","Endangered",2020,NA,NA,0.137265876316937,0.473606855311877,0.389127268371186
+"Fraser","Steelhead",781,"Thompson Summer",NA,208,2018,2022,"Low","poor","Endangered",2020,NA,NA,0.546993203818972,0.412786771938916,0.040220024242112
+"Fraser","Steelhead",782,"Lower Fraser Winter",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,0.663832730051781,0.31629705385668,0.0198702160915389
+"Fraser","Steelhead",783,"Fraser Canyon Summer",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,0.377124245575214,0.249474913213251,0.373400841211535
+"Fraser","Steelhead",784,"Lower Fraser Summer",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,0.273156732309176,0.726843267690824,NA
+"Fraser","Steelhead",785,"Boundary Bay Winter",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,1,NA,NA
+"Haida Gwaii","Steelhead",880,"Haida Gwaii Winter",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,0.533424820463405,0.206759187576597,0.259815991959998
+"Vancouver Island & Mainland Inlets","Steelhead",980,"South Coast Winter",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,0.288905710419879,0.461158498052696,0.249935791527424
+"Vancouver Island & Mainland Inlets","Steelhead",981,"East Vancouver Island Winter",NA,202,2018,2022,"Moderate","poor",NA,NA,NA,NA,0.647006018318579,0.352993981681422,NA
+"Vancouver Island & Mainland Inlets","Steelhead",982,"West Vancouver Island Winter",NA,NA,NA,NA,"Low","data-deficient",NA,NA,NA,NA,0.480099817898411,0.407922174704226,0.111978007397362
+"Vancouver Island & Mainland Inlets","Steelhead",983,"South Coast Summer",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,0.0856137849374111,0.387198085188018,0.527188129874571
+"Vancouver Island & Mainland Inlets","Steelhead",984,"West Vancouver Island Summer",NA,222,2018,2022,"Moderate","poor",NA,NA,NA,NA,0.460233858568484,0.340046533578247,0.199719607853269
+"Vancouver Island & Mainland Inlets","Steelhead",985,"East Vancouver Island Summer",NA,64,2018,2022,"Low","poor",NA,NA,NA,NA,0.389364580425413,0.549885203070441,0.0607502165041462
+"Transboundary","Steelhead",1080,"Alsek Summer",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,NA
+"Transboundary","Steelhead",1081,"Taku Summer",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,0.079147137563362,0.920852862436638
+"Transboundary","Steelhead",1082,"Taku Winter",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,0.475597053971487
+"Transboundary","Steelhead",1083,"Stikine Summer",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,1,NA
+"Transboundary","Steelhead",1084,"Stikine Winter",NA,NA,NA,NA,"None","data-deficient",NA,NA,NA,NA,NA,NA,0.868948806410501
+"Columbia","Steelhead",1380,"Mid Columbia Summer",NA,NA,NA,NA,"Moderate","data-deficient",NA,NA,NA,NA,1,NA,NA
+"Fraser","Lake sockeye",760,"Adams-Early Summer",NA,NA,NA,NA,NA,"extinct",NA,NA,NA,NA,0.390490210069618,0.287540765864136,0.321969024066246
+"Fraser","Lake sockeye",756,"Alouette-Early Summer",NA,NA,NA,NA,NA,"extinct",NA,NA,NA,NA,0.601532619174187,NA,0.398467380825813
+"Fraser","Lake sockeye",757,"Coquitlam-Early Summer",NA,NA,NA,NA,NA,"extinct",NA,NA,NA,NA,0.294525091690131,NA,0.705474908309869
+"Fraser","Lake sockeye",758,"Kawkawa-Late",NA,NA,NA,NA,NA,"extinct",NA,NA,NA,NA,1,NA,NA
+"Fraser","Lake sockeye",761,"Momich-Early Summer",NA,NA,NA,NA,NA,"extinct",NA,NA,NA,NA,0.16813632447101,0.720026436834228,0.111837238694762
+"Fraser","Lake sockeye",763,"North Barriere-Early Summer",NA,NA,NA,NA,NA,"extinct",NA,NA,NA,NA,0.693696870104831,0.282284152057861,0.0240189778373084
+"Fraser","Lake sockeye",759,"Seton-Summer",NA,NA,NA,NA,NA,"extinct",NA,NA,NA,NA,0.243555653913281,0.235244163625364,0.521200182461355
+"Haida Gwaii","Lake sockeye",828,"Marie",NA,NA,NA,NA,NA,"data-deficient",NA,NA,NA,NA,1,NA,NA
+"Yukon","Chinook",1201,"Big Salmon",NA,12009,2014,2019,NA,"good",NA,NA,NA,NA,NA,NA,NA
+"Yukon","Chinook",1204,"Middle Yukon",NA,10600,2014,2019,NA,"good",NA,NA,NA,NA,NA,NA,NA
+"Yukon","Chinook",1202,"Nordenskiold",NA,NA,NA,NA,NA,"data-deficient",NA,NA,NA,NA,NA,NA,NA
+"Yukon","Chinook",1207,"Northern Yukon",NA,7395,2014,2019,NA,"good",NA,NA,NA,NA,NA,NA,NA
+"Yukon","Chinook",1210,"Old Crow",NA,NA,NA,NA,NA,"data-deficient",NA,NA,NA,NA,NA,NA,NA
+"Yukon","Chinook",1203,"Pelly",NA,8559,2014,2019,NA,"good",NA,NA,NA,NA,NA,NA,NA
+"Yukon","Chinook",1209,"Porcupine",NA,NA,NA,NA,NA,"data-deficient",NA,NA,NA,NA,NA,NA,NA
+"Yukon","Chinook",1208,"Salmon Fork",NA,NA,NA,NA,NA,"data-deficient",NA,NA,NA,NA,NA,NA,NA
+"Yukon","Chinook",1205,"Stewart",NA,3833,2014,2019,NA,"good",NA,NA,NA,NA,NA,NA,NA
+"Yukon","Chinook",1212,"Teslin",NA,6935,2014,2019,NA,"good",NA,NA,NA,NA,NA,NA,NA
+"Yukon","Chinook",1211,"Upper Yukon",NA,3835,2014,2019,NA,"good",NA,NA,NA,NA,NA,NA,NA
+"Yukon","Chinook",1206,"White",NA,6701,2014,2019,NA,"good",NA,NA,NA,NA,NA,NA,NA
+"Yukon","Chum",1216,"Donjek Kluane",NA,NA,NA,NA,NA,"data-deficient",NA,NA,NA,NA,NA,NA,NA
+"Yukon","Chum",1213,"Middle Yukon",NA,NA,NA,NA,NA,"data-deficient",NA,NA,NA,NA,NA,NA,NA
+"Yukon","Chum",1214,"North Yukon",NA,NA,NA,NA,NA,"data-deficient",NA,NA,NA,NA,NA,NA,NA
+"Yukon","Chum",1217,"Porcupine",NA,NA,NA,NA,NA,"data-deficient",NA,NA,NA,NA,NA,NA,NA
+"Yukon","Chum",1218,"Stewart",NA,NA,NA,NA,NA,"data-deficient",NA,NA,NA,NA,NA,NA,NA
+"Yukon","Chum",1219,"Teslin",NA,NA,NA,NA,NA,"data-deficient",NA,NA,NA,NA,NA,NA,NA
+"Yukon","Chum",1215,"White",NA,NA,NA,NA,NA,"data-deficient",NA,NA,NA,NA,NA,NA,NA
+"Yukon","Coho",1220,"Porcupine",NA,NA,NA,NA,NA,"data-deficient",NA,NA,NA,NA,NA,NA,NA

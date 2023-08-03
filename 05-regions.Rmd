@@ -165,7 +165,7 @@ kableExtra::kbl(habStat[2:nrow(habStat),],
 	
 ## Nass Region
 
-In northern BC, the Nass River watershed is the third-largest watershed in the province and includes several major tributaries, including the Bell-Irving, Cranberry, Meziadin, Kwinageese, and Damdochax Rivers. The Nass Region (Figure \@ref(fig:nassMap)), which consists of the watersheds draining into Portland Canal and Observatory Inlet, contains extensive spawning and rearing habitat for all five species of Pacific salmon, as well as steelhead. These salmon populations are managed as 22 CUs under the Wild Salmon Policy: 2-Chinook, 3-chum, 3-coho, 4-pink, and 10-sockeye CUs ([Appendix 1](#appendix-1)). The process of data gathering, synthesis, outreach, and engagement to complete the initial assessments within the Nass Region was conducted over four years, from 2015 to 2019.
+In northern BC, the Nass River watershed is the third-largest watershed in the province and includes several major tributaries, including the Bell-Irving, Cranberry, Meziadin, Kwinageese, and Damdochax Rivers. The Nass Region (Figure \@ref(fig:nassMap)), which consists of the watersheds draining into Portland Canal and Observatory Inlet, contains extensive spawning and rearing habitat for all five species of Pacific salmon. These salmon populations are managed as 22 CUs under the Wild Salmon Policy: 2-Chinook, 3-chum, 3-coho, 4-pink, and 10-sockeye CUs ([Appendix 1](#appendix-1)). The process of data gathering, synthesis, outreach, and engagement to complete the initial assessments within the Nass Region was conducted over four years, from 2015 to 2019.
 
 We worked with First Nations in the Nass Region to garner feedback on the Pacific Salmon Explorer approach and analyses through the Nisga’a-Canada-BC Nass Joint Technical Committee and the Gitanyow Fisheries Authority. In addition, in 2015-2016, we formed a Nass Technical Advisory Committee to engage with First Nations, DFO regional biologists and managers, and other salmon experts throughout the watershed.
 
@@ -944,7 +944,7 @@ The headwaters of the Columbia River in Canada are part of a vast system over 20
 knitr::include_graphics("figures/columbia_map.png")
 ```
 
-The Columbia River has an extensive history of development, including dams – salmon have been extirpated from most of the upper Columbia drainage in Canada for more than 80 years. The Okanagan River sub-basin contains the only remaining salmon populations. While two CUs are currently defined, local and traditional knowledge and downstream observations suggest a spring Chinook run (distinct from the current Chinook CU) and coho also occur in the region. Steelhead passage also occurs through the Zosel dam, just south end of Osoyoos lake, a cross border lake. 
+The Columbia River has an extensive history of development, including dams – salmon have been extirpated from most of the upper Columbia drainage in Canada for more than 80 years. The Okanagan River sub-basin contains the only remaining salmon populations. While two CUs are currently defined, local and traditional knowledge and downstream observations suggest a spring Chinook run (distinct from the current Chinook CU) and coho also occur in the region. <!-- Steelhead passage also occurs through the Zosel dam, just south end of Osoyoos lake, a cross border lake. -->
 
 ### Biological Data and Analytical Methods
 

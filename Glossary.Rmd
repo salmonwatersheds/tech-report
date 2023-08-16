@@ -1,0 +1,113 @@
+#Glossary
+
+**Benchmark**: A standard point of reference against which a condition can be 
+compared. 
+
+**Brood year**: The year that a cohort of salmon spawns.
+Carrying capacity: The maximum population size that can be sustained 
+indefinitely in the absence of harvesting. Carrying capacity can refer to specific 
+habitats (e.g. a sockeye nursery lake) or over the lifetime of a species (e.g. 
+across life stages). 
+
+**Catch**: The number of adult salmon that are caught in commercial, recreational, 
+and First Nations fisheries. 
+
+**Conservation Unit (CU)**: A geographically, ecologically, and genetically distinct 
+population group of wild Pacific salmon. A CU can contain one or more 
+populations of salmon. Conservation Units were created under Canada’s Wild 
+Salmon Policy to enable DFO to identify and manage the diversity of wild 
+salmon. www.salmonwatersheds.ca/wsp/
+
+**CU-level**: Conservation Unit level is the resolution or geographic scale of the 
+data used for biological status assessments.
+DFO or Fisheries and Oceans Canada: The federal government branch 
+responsible for fisheries and oceans management in Canada. Formerly the 
+Department of Fisheries and Oceans is still widely referred to as DFO. 
+Escapement: The number of mature salmon that pass through (escape) 
+fisheries capture and return to freshwater to spawn. 
+Exploitation rate: The proportion of the total run or yearly population that is 
+caught in all fisheries. 
+Freshwater Atlas (FWA): A standardized dataset for mapping British 
+Columbia’s hydrological features, created by the Province of British Columbia. 
+Freshwater Atlas Data
+FWA watershed: Watersheds as represented in the Province of British 
+Columbia’s Freshwater Atlas (FWA) Assessment Watersheds dataset, which are 
+defined at a 1:20,000 watershed scale. FWA assessment watersheds are
+delineated with sizes between 2,000 to 10,000 hectares by the province. 
+Habitat indicator: Characteristics of the environment that, when measured, 
+describe habitat condition, the magnitude of stress, degree of exposure to a 
+stressor, or ecological response to exposure. 
+Indicator stream / non-indicator stream: All spawning streams that are 
+listed to be monitored by DFO are classified as an indicator or non-indicator 
+128
+stream. Indicator streams are those that have been identified in some Regions 
+as providing more reliable indices of spawner abundance. Indicator streams tend 
+to give relatively accurate annual spawner abundance estimates, given that they 
+use higher quality methodologies and are more intensively/regularly surveyed. 
+Indicator streams are also assumed to be representative of spawner returns to 
+other streams in close geographic proximity. Non-indicator streams are typically 
+less consistently surveyed, using more variable methodologies, and/or may 
+simply be difficult to survey (e.g. poor water quality, remote location, etc.).
+Life history stage: A classification scheme that divides salmon life stages into 
+categories such as migration, spawning, egg incubation, fry, and juvenile 
+rearing, which are based on body morphology, behavior, and reproductive 
+potential.
+
+**Pacific Salmon Explorer**: An online data visualization tool created by the 
+Pacific Salmon Foundation displays information on Pacific salmon and their 
+habitats in British Columbia. salmonexplorer.ca
+
+**Population**: A group of interbreeding salmon that are sufficiently geographically 
+isolated from others such that persistent adaptations to their local environmental 
+conditions develop over time. These adaptations have been linked to distinct lifehistory strategies in order to maximize fitness over time. 
+
+**Pressure indicator**: Measurable extent or intensity of natural processes or 
+human activities that can directly or indirectly lead to changes in habitat 
+conditions or state that can be measured qualitatively or quantitatively. 
+Recruitment: The individual juveniles that survive and are added to a 
+population. Recruitment in the context of salmon management usually refers to 
+the abundance of adults before fishing. Recruitment is typically calculated as the 
+sum of escapement, all fisheries catches, and estimated pre-spawn and postrelease mortality. 
+
+**Region**: A geographic boundary by which Conservation Units are grouped into 
+assessment areas.
+Riparian zone: The area of vegetation near streams and other water bodies 
+that is influenced by the proximity to water. For management, DFO guidelines 
+typically recognize the riparian zone as the terrestrial area within 30 meters of 
+any water body.
+Risk: The risk of adverse effects to salmon habitats within a defined zone of 
+influence. Increasing risk levels are defined based on the extent or intensity of 
+impacts relative to defined benchmarks for each habitat indicator.
+Run size: The total number of adult salmon that return each year from the 
+ocean, including those that reach the spawning grounds (i.e. estimated spawner 
+129
+abundance) and those that are caught or intercepted on route to the spawning 
+grounds in fisheries. 
+Salmon Habitat Mapper: An online spatial data visualization tool for exploring 
+and contributing salmon spawning data, created by the Pacific Salmon 
+Foundation to simplify the process of engaging with local experts to document 
+salmon spawning habitat. The Salmon Habitat Mapper allows users to navigate 
+interactive maps and add additional spawning data or comment on existing 
+locations via a password-accessible portal. This data then improves the habitat 
+assessments visualized in the Pacific Salmon Explorer. 
+Smolt: A juvenile salmon that is mature enough to migrate from freshwater to 
+the marine environment. 
+Sockeye (lake- vs. river-type): Sockeye belong to one of two distinct life 
+history types, which are described as separate sockeye Conservation Units. After 
+hatching, fry from lake-type sockeye Conservation Units migrate to a rearing 
+lake where they spend a year feeding and maturing into smolts, whereas fry 
+from river-type sockeye Conservation Units rear in flowing water and migrate to 
+the ocean as smolts soon after emergence.
+State indicator: Physical, chemical, or biological attributes measured to 
+characterize environmental conditions. 
+Status: Condition relative to a defined indicator benchmark. 
+Watershed: The area of land that drains water, sediment, and dissolved 
+materials into a stream, river, lake, or ocean. Watersheds can be defined at 
+various spatial scales, with delineated boundaries ranging from a single tributary 
+stream to an entire mainstem river. 
+Wild salmon: Salmon are considered “wild” if they have spent their entire life 
+cycle in the wild, originate from parents produced by natural spawning that has 
+also continuously lived in the wild. 
+Zone of influence (ZOI): Areas upstream or adjacent to the habitats used by 
+salmon during various life stages (e.g. spawning or rearing). ZOIs represent the 
+geographic extent for the assessment of habitat pressure indicators. 

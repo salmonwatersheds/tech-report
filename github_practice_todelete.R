@@ -1,4 +1,5 @@
 
 # 1st line of text
 
-# Bruno writes second sentence.
+# Bruno and Sylvain wrote the second sentence.
+

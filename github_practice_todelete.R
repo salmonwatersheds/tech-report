@@ -7,6 +7,8 @@
 
 blabla
 Bruno: fkfj f
+Sylvain: fjjfjfjf
+
 ## This section 2 is common
 
 blahaa
@@ -20,3 +22,4 @@ fasasd
 
 afdfdsa
 Bruno: hfhfhhf
+Sylvain: fjfkjfk fdlkjf 

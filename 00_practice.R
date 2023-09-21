@@ -2,4 +2,6 @@
 # This is a practice script.
 
 # Bruno's 1st sentence.
-# Here some more info.
+
+# Clare's 2nd sentence.
+# My shoulder is really sore today. Argh.

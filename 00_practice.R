@@ -1,4 +1,5 @@
 
 # This is a practice script.
 
-# Clare 1st sentence 
+# Bruno's 1st sentence.
+# Clare's 2nd sentence.

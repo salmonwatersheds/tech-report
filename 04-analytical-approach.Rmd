@@ -2,7 +2,7 @@
 
 ## Using Indicators to Inform the Status of salmon Conservation Units and their Habitats {.unnumbered}
 
-We apply a suite of indicators to assess both the biological and habitat status of salmon CUs. Defined as "measures of pressures, states, and/or responses", indicators depict the condition of species, habitats, and/or systems to improve one's understanding of the linkages among drivers, stressors, conditions, and management actions **(ESSA, 2020)**. The indicators and approach that we use align with Strategies 1 and 2 of the Wild Salmon Policy [@DFO2005] that call for standardized assessment and monitoring of the salmon CUs and their freshwater habitats [@Holt2009; @Stalberg2009].
+We apply a suite of indicators to assess both the biological and habitat status of salmon CUs. Defined as "measures of pressures, states, and/or responses", indicators depict the condition of species, habitats, and/or systems to improve one's understanding of the linkages among drivers, stressors, conditions, and management actions **(ESSA, 2020)**. The indicators and approach that we use align with Strategies 1 and 2 of the Wild Salmon Policy [@DFO2005a] that call for standardized assessment and monitoring of the salmon CUs and their freshwater habitats [@Holt2009; @Stalberg2009].
 
 Relevant salmon indicators for informing biological and habitat status have several criteria:
 
@@ -171,7 +171,7 @@ where $\bar{S_i}$ is the geometric mean number of spawners in stream $i$ over th
 <!-- SP: Table re-written - previous definitions were incorrect (not % of spawners necessarily because roll-up, and ranges were not complete.) -->
 
 | Hatchery Release Score | Definition                                                                                                        |
-|:-----------------|:-----------------------------------------------------|
+|:-------------------|:---------------------------------------------------|
 | None                   | There are no records of hatchery influence in the CU                                                              |
 | Low                    | There are no records of hatchery influence in the CU **in the most recent two generations** ($c = 0$)             |
 | Moderate               | Less than 25% of spawners within the CU are from streams with moderate or high hatchery influence ($0 < c <0.25$) |

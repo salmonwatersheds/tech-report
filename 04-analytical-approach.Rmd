@@ -171,7 +171,7 @@ where $\bar{S_i}$ is the geometric mean number of spawners in stream $i$ over th
 <!-- SP: Table re-written - previous definitions were incorrect (not % of spawners necessarily because roll-up, and ranges were not complete.) -->
 
 | Hatchery Release Score | Definition                                                                                                        |
-|:--------------------|:--------------------------------------------------|
+|:---------------------|:-------------------------------------------------|
 | None                   | There are no records of hatchery influence in the CU                                                              |
 | Low                    | There are no records of hatchery influence in the CU **in the most recent two generations** ($c = 0$)             |
 | Moderate               | Less than 25% of spawners within the CU are from streams with moderate or high hatchery influence ($0 < c <0.25$) |

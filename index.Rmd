@@ -6,9 +6,6 @@ site: bookdown::bookdown_site
 documentclass: book
 bibliography:
 - book.bib
-- packages.bib
-- PSE_refs.bib
-# biblio-style: "apalike"
 csl: canadian-journal-of-fisheries-and-aquatic-sciences.csl 
 link-citations: true
 description: null

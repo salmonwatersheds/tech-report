@@ -16,7 +16,7 @@ app13 <- read.csv("tables/appendix13.csv", na.strings = NA)
 app13 <- app13[which(app13$Region %in% c("Yukon", "Transboundary") == FALSE), ]
 
 # *** Remove steelhead for now ***
-app13 <- app13[which(app13$Species != "Steelhead"), ]
+# app13 <- app13[which(app13$Species != "Steelhead"), ]
 
 # Render table
 reactable::reactable(

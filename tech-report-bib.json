@@ -1,0 +1,2412 @@
+[
+	{
+		"id": "nelitzRefiningHabitatIndicators2007",
+		"type": "report",
+		"title": "Refining habitat indicators for Strategy 2 of the Wild Salmon Policy: Practical assessment of indicators",
+		"author": [
+			{
+				"family": "Nelitz",
+				"given": "Marc"
+			},
+			{
+				"family": "Wieckowski",
+				"given": "Katherine"
+			},
+			{
+				"family": "Porter",
+				"given": "Marc"
+			},
+			{
+				"family": "Perrin",
+				"given": "Chris"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2007"
+				]
+			]
+		}
+	},
+	{
+		"id": "cox-rogersFisheriesOceansCanada2012",
+		"type": "report",
+		"abstract": "Overview This memo provides estimates of Skeena sockeye sub-stock timing and abundance entering Area ¾ estimated using genetic (mDNA) samples collected from the Skeena River Tyee Test Fishery from 2000-2010. The genetic samples represent proportionate daily catch sampling conducted at Tyee from mid-June through early September each year. Logistic and cost constraints precluded analyzing all collected samples, and so ~25% to 35% (n = 500 to 1000) of each annual collection was sub-sampled based on weekly test fishery sockeye CPUE (Week 71 = July 1-7, Week 72 = July 8-15 etc). Stock composition analysis of the weekly samples was conducted by DFO's Molecular Genetics Lab in Nanaimo. The stock composition results were expanded to abundance (by stock) using post-season estimates of weekly aggregate-stock sockeye escapement past the Tyee Test fishery from 2000-2010. Expressed proportionally, these data provide \"timing\" by stock entering (escaping) into the Skeena River each year. However, escapement timing at Tyee does not represent annual run-timing into Area ¾ because of catch removals in the marine fishery. To correct for this bias, reconstructed weekly sockeye harvest rates for the Area ¾ marine fishery from 2000-2010 (Cox-Rogers and Splisted 2010, with updates) were applied to backward-lagged test fishery escapements (by stock) to estimate incoming Area ¾ abundance. The results were then smoothed and plotted for timing interpretation. Results • The \"Data\" tab on the Excel spreadsheet \"TyeeSxtimingDNA2000-2010Feb12.xls\" provides the weekly and annual Tyee Test fishery mDNA stock composition results from 2000-2010. Subsequent expansion to reconstructed Area ¾ abundance/timing by sub-stock for each year is also on this tab. • The \"Graphs\" tab on the Excel spreadsheet \"TyeeSxtimingDNA2000-2010Feb12.xls\" summarizes just the 2000-2010 Area ¾ smoothed entry timing proportions by stock",
+		"event-place": "Ottawa, Canada",
+		"publisher": "Fisheries and Oceans Canada",
+		"publisher-place": "Ottawa, Canada",
+		"title": "Fisheries and Oceans Canada Memorandum: Skeena sockeye sub-stock run-timing and abundance evaluated using Tyee test fishery DNA: 2000-2010.",
+		"URL": "https://www.google.com/url?q=https://data.skeenasalmon.info/dataset/skeena-sockeye-sub-stock-run-timing-and-abundance-evaluated-using-tyee-fishery-dna-2000-2010/resource/cce05daa-f3bd-4e98-ba36-755799b6297d&sa=D&source=docs&ust=1676065389718195&usg=AOvVaw1N1B5W3ergIjEj8uPcUvIs",
+		"author": [
+			{
+				"family": "Cox-Rogers",
+				"given": "Steve"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2012"
+				]
+			]
+		}
+	},
+	{
+		"id": "broadheadRiparianFishForest2009",
+		"type": "book",
+		"ISBN": "0-9687611-1-9",
+		"publisher": "Gowgaia Institute",
+		"title": "The riparian fish forest : a portrait of riparian habitats on Haida Gwaii (the Queen Charlotte Islands) ; project technical report",
+		"author": [
+			{
+				"family": "Broadhead",
+				"given": "John"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2009"
+				]
+			]
+		}
+	},
+	{
+		"id": "englishNorthCentralCoast2006",
+		"type": "report",
+		"title": "North and Central Coast Core Stock Assessment Program for Salmon",
+		"author": [
+			{
+				"family": "English",
+				"given": "K K"
+			},
+			{
+				"family": "Peacock",
+				"given": "D"
+			},
+			{
+				"family": "Spilsted",
+				"given": "B"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2006"
+				]
+			]
+		}
+	},
+	{
+		"id": "englishReviewEscapementIndicator2016",
+		"type": "report",
+		"title": "Review of Escapement Indicator Streams for the North and Central Coast Salmon Monitoring Program Final Report",
+		"author": [
+			{
+				"family": "English",
+				"given": "Karl K"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2016"
+				]
+			]
+		}
+	},
+	{
+		"id": "carverAssessmentWatershedsRegional2009",
+		"type": "report",
+		"title": "Assessment Watersheds for Regional Level Applications",
+		"author": [
+			{
+				"family": "Carver",
+				"given": "Martin"
+			},
+			{
+				"family": "Gray",
+				"given": "Malcolm"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2009"
+				]
+			]
+		}
+	},
+	{
+		"id": "porterNassAreaCumulative2016",
+		"type": "report",
+		"publisher": "Pacific Salmon Foundation",
+		"title": "The Nass Area Cumulative Pressures on Salmon Habitat Technical Habitat",
+		"author": [
+			{
+				"family": "Porter",
+				"given": "M."
+			},
+			{
+				"family": "Leslie-Gottschligg",
+				"given": "M."
+			},
+			{
+				"family": "Bryan",
+				"given": "K."
+			},
+			{
+				"family": "Chen",
+				"given": "S."
+			},
+			{
+				"family": "Casley",
+				"given": "S."
+			},
+			{
+				"family": "Connors",
+				"given": "K."
+			},
+			{
+				"family": "Jones",
+				"given": "E."
+			},
+			{
+				"family": "Honka",
+				"given": "L."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2016"
+				]
+			]
+		}
+	},
+	{
+		"id": "beblowKitwangaRiverSalmon2018",
+		"type": "report",
+		"title": "Kitwanga River Salmon Enumeration Facility (KSEF)-2017 Annual Report",
+		"author": [
+			{
+				"family": "Beblow",
+				"given": "Jordan"
+			},
+			{
+				"family": "Mark",
+				"given": "R P Bio"
+			},
+			{
+				"family": "Cleveland",
+				"given": "C"
+			},
+			{
+				"family": "Bio",
+				"given": "R P"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2023",
+					6,
+					5
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2018"
+				]
+			]
+		}
+	},
+	{
+		"id": "brownCanadianScienceAdvisory2019",
+		"type": "report",
+		"title": "Canadian Science Advisory Secretariat (CSAS) Pre-COSEWIC review of southern British Columbia Chinook Salmon (Oncorhynchus tshawytscha) conservation units, Part I: Background",
+		"URL": "http://www.dfo-mpo.gc.ca/csas-sccs/",
+		"author": [
+			{
+				"family": "Brown",
+				"given": "G S"
+			},
+			{
+				"family": "Baillie",
+				"given": "S J"
+			},
+			{
+				"family": "Thiess",
+				"given": "M E"
+			},
+			{
+				"family": "Bailey",
+				"given": "R E"
+			},
+			{
+				"family": "Candy",
+				"given": "J R"
+			},
+			{
+				"family": "Parken",
+				"given": "C K"
+			},
+			{
+				"family": "Willis",
+				"given": "D M"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "columbiariverdartColumbiaBasinAdult2022",
+		"type": "webpage",
+		"title": "Columbia Basin Adult Passage Historical Run Timing",
+		"URL": "http://www.cbr.washington.edu/dart/query/adult_hrt.",
+		"author": [
+			{
+				"literal": "Columbia River DART"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2022"
+				]
+			]
+		}
+	},
+	{
+		"id": "connorsAtnarkoSockeyeRecovery2016",
+		"type": "report",
+		"page": "-62",
+		"title": "Atnarko sockeye recovery plan.",
+		"author": [
+			{
+				"family": "Connors",
+				"given": "B.M.",
+				"suffix": ""
+			},
+			{
+				"literal": "Atnarko Sockeye recovery planning committee"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2016"
+				]
+			]
+		}
+	},
+	{
+		"id": "bcministryofenvironmentmoe.FreshwaterAtlasExecutive2017",
+		"type": "report",
+		"title": "Freshwater Atlas Executive Summary Integrated Land Management Bureau Ministry of Agriculture and Lands",
+		"author": [
+			{
+				"literal": "BC Ministry of Environment (MOE)."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2023",
+					7,
+					12
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2017"
+				]
+			]
+		}
+	},
+	{
+		"id": "bcministryofenvironmentmoeFreshwaterAtlasProvince2017",
+		"type": "webpage",
+		"title": "Freshwater Atlas – Province of British Columbia.",
+		"URL": "https://www2.gov.bc.ca/gov/content/data/geographic-data-services/topographic-data/freshwater",
+		"author": [
+			{
+				"literal": "BC Ministry of Environment (MOE)"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2017"
+				]
+			]
+		}
+	},
+	{
+		"id": "bcministryofenvironmentmoeFisheriesInformationSummary2017",
+		"type": "webpage",
+		"title": "Fisheries information summary system (FISS)",
+		"URL": "https://cmnmaps.ca/DFO_FISS/",
+		"author": [
+			{
+				"literal": "BC Ministry of Environment (MOE)"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2017"
+				]
+			]
+		}
+	},
+	{
+		"id": "bcministryofforestsmofCoastalWatershedAssessment1995",
+		"type": "report",
+		"title": "Coastal watershed assessment procedure guidebook (CWAP)",
+		"author": [
+			{
+				"literal": "BC Ministry of Forests (MOF)"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1995"
+				]
+			]
+		}
+	},
+	{
+		"id": "bcministryofforestsmofInteriorWatershedAssessment1995",
+		"type": "report",
+		"title": "Interior watershed assessment procedure guidebook (IWAP)",
+		"author": [
+			{
+				"literal": "BC Ministry of Forests (MOF)"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1995"
+				]
+			]
+		}
+	},
+	{
+		"id": "brownPreCOSEWICReviewSouthern2019",
+		"type": "report",
+		"collection-title": "2019/011",
+		"publisher": "DFO. Canadian Science Advisory Secretariat Research Document",
+		"title": "Pre-COSEWIC review of southern British Columbia Chinook Salmon (Oncorhynchus tshawytscha) conservation units, Part I: Background.",
+		"author": [
+			{
+				"family": "Brown",
+				"given": "G. S.",
+				"suffix": "Baillie, S. J., Thiess, M. E., Bailey, R. E., Candy, J. R., Parken, C. K., & Willis, D. M."
+			},
+			{
+				"family": "Baillie",
+				"given": "S. J."
+			},
+			{
+				"family": "Thiess",
+				"given": "M. E."
+			},
+			{
+				"family": "Bailey",
+				"given": "R. E"
+			},
+			{
+				"family": "Candy",
+				"given": "J. R"
+			},
+			{
+				"family": "Parken",
+				"given": "C. K"
+			},
+			{
+				"family": "Willis",
+				"given": "D. M"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "brown2020SummaryAbundance2020",
+		"type": "article-journal",
+		"container-title": "Canadian Technical Report of Fisheries and Aquatic Sciences",
+		"page": "xii + 214 p.",
+		"title": "2020 Summary of Abundance Data for Chinook Salmon (Oncorhynchus tshawytscha) in Southern British Columbia, Canada.",
+		"URL": "https://salmonwatersheds.ca/library/lib_460/",
+		"volume": "3401",
+		"author": [
+			{
+				"family": "Brown",
+				"given": "G. S"
+			},
+			{
+				"family": "Thiess",
+				"given": "M. E"
+			},
+			{
+				"family": "Wor",
+				"given": "C."
+			},
+			{
+				"family": "Holt",
+				"given": "C. A."
+			},
+			{
+				"family": "Patten",
+				"given": "B."
+			},
+			{
+				"family": "Bailey",
+				"given": "R. E."
+			},
+			{
+				"family": "Parken",
+				"given": "C.K."
+			},
+			{
+				"family": "Baillie",
+				"given": "S.J."
+			},
+			{
+				"family": "Candy",
+				"given": "J.R."
+			},
+			{
+				"family": "Willis",
+				"given": "D.M."
+			},
+			{
+				"family": "Hertz",
+				"given": "E."
+			},
+			{
+				"family": "Connors",
+				"given": "B."
+			},
+			{
+				"family": "Pestal",
+				"given": "G. P."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	},
+	{
+		"id": "connorsClimateCompetitionInfluence2020",
+		"type": "article-journal",
+		"container-title": "Canadian Journal of Fisheries and Aquatic Sciences",
+		"issue": "6",
+		"page": "943-949",
+		"title": "Climate and competition influence sockeye salmon population dynamics across the Northeast Pacific Ocean.",
+		"URL": "https://doi.org/10.1139/cjfas-2019-0422",
+		"volume": "77",
+		"author": [
+			{
+				"family": "Connors",
+				"given": "B."
+			},
+			{
+				"family": "Malick",
+				"given": "M. J."
+			},
+			{
+				"family": "Ruggerone",
+				"given": "G. T."
+			},
+			{
+				"family": "Rand",
+				"given": "P."
+			},
+			{
+				"family": "Adkison",
+				"given": "M."
+			},
+			{
+				"family": "Irvine",
+				"given": "J. R."
+			},
+			{
+				"family": "Campbell",
+				"given": "R."
+			},
+			{
+				"family": "Gorman",
+				"given": "K."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	},
+	{
+		"id": "connorsNassRegionSnapshots2019",
+		"type": "report",
+		"event-place": "Vancouver, BC",
+		"publisher": "The Pacific Salmon Foundation",
+		"publisher-place": "Vancouver, BC",
+		"title": "The Nass Region: Snapshots of salmon population status",
+		"URL": "https://salmonwatersheds.ca/library/lib_453/",
+		"author": [
+			{
+				"family": "Connors",
+				"given": "K."
+			},
+			{
+				"family": "Hertz",
+				"given": "E."
+			},
+			{
+				"family": "Jones",
+				"given": "E"
+			},
+			{
+				"family": "Honka",
+				"given": "L."
+			},
+			{
+				"family": "Kellock",
+				"given": "K."
+			},
+			{
+				"family": "Alexander",
+				"given": "R"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "connorsBCCentralCoast2018",
+		"type": "report",
+		"event-place": "Vancouver, BC",
+		"publisher": "The Pacific Salmon Foundation",
+		"publisher-place": "Vancouver, BC",
+		"title": "BC Central Coast: A snapshot of salmon populations and their habitats",
+		"URL": "https://salmonwatersheds.ca/library/lib_442/",
+		"author": [
+			{
+				"family": "Connors",
+				"given": "K."
+			},
+			{
+				"family": "Jones",
+				"given": "E.",
+				"suffix": ""
+			},
+			{
+				"family": "Kellock",
+				"given": "K."
+			},
+			{
+				"family": "Hertz",
+				"given": "E."
+			},
+			{
+				"family": "Honka",
+				"given": "L."
+			},
+			{
+				"family": "Belzile",
+				"given": "J."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2018"
+				]
+			]
+		}
+	},
+	{
+		"id": "cosewicCOSEWICAssessmentStatus2017",
+		"type": "report",
+		"event-place": "Ottawa, Canada",
+		"publisher": "Committee on the Status of Endangered Wildlife in Canada",
+		"publisher-place": "Ottawa, Canada",
+		"title": "COSEWIC Assessment and status report on the Chinook Salmon (Oncorhynchus tshawytscha), Okanagan population in Canada",
+		"author": [
+			{
+				"literal": "COSEWIC"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2017"
+				]
+			]
+		}
+	},
+	{
+		"id": "cosewicCOSEWICAssessmentStatus2018",
+		"type": "report",
+		"event-place": "Ottawa, Canada",
+		"publisher": "Committee on the Status of Endangered Wildlife in Canada",
+		"publisher-place": "Ottawa, Canada",
+		"title": "COSEWIC assessment and status report on the Chinook Salmon Oncorhynchus tshawytscha, Designatable Units in Southern British Columbia (Part One – Designatable Units with no or low levels of artificial releases in the last 12 years)",
+		"author": [
+			{
+				"literal": "COSEWIC"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2018"
+				]
+			]
+		}
+	},
+	{
+		"id": "cox-rogersUpdateAssessmentSockeye2012",
+		"type": "report",
+		"publisher": "DFO",
+		"title": "Update Assessment of Sockeye Salmon Production from Babine Lake, British Columbia. Canadian Technical Report of Fisheries and Aquatic Sciences 2956.",
+		"author": [
+			{
+				"family": "Cox-Rogers",
+				"given": "S."
+			},
+			{
+				"family": "Spilsted",
+				"given": "B."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2012"
+				]
+			]
+		}
+	},
+	{
+		"id": "deon-eggertsonReliableIdentificationDeclining2015",
+		"type": "article-journal",
+		"container-title": "Conservation Letters",
+		"issue": "2",
+		"page": "86-96",
+		"title": "Reliable Identification of Declining Populations in an Uncertain World.",
+		"volume": "8",
+		"author": [
+			{
+				"family": "D’Eon-Eggertson",
+				"given": "F."
+			},
+			{
+				"family": "Dulvy",
+				"given": "N. K."
+			},
+			{
+				"family": "Peterman",
+				"given": "R. M."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2015"
+				]
+			]
+		}
+	},
+	{
+		"id": "englishExtendTimeSeries2012",
+		"type": "report",
+		"title": "Extend the time series of catch and escapement estimates for Skeena sockeye, pink, chum, and coho salmon stocks",
+		"URL": "https://salmonwatersheds.ca/library/lib_262/",
+		"author": [
+			{
+				"family": "English",
+				"given": "K.K."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2012"
+				]
+			]
+		}
+	},
+	{
+		"id": "fisheriesandoceanscanadadfo2017FraserSockeye2018",
+		"type": "report",
+		"event-place": "Vancouver, BC",
+		"publisher": "Canadian Science Advisory Secretariat Research Document 2018/017.",
+		"publisher-place": "Vancouver, BC",
+		"title": "The 2017 Fraser sockeye salmon (Oncorhynchus nerka) integrated biological status re-assessment under the Wild Salmon Policy.",
+		"author": [
+			{
+				"literal": "Fisheries and Oceans Canada (DFO)"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2018"
+				]
+			]
+		}
+	},
+	{
+		"id": "DFO2019",
+		"type": "report",
+		"page": "434",
+		"title": "Salmon Integrated Fisheries Management Plan – Northern BC June 1, 2018 – May 31, 2019. A Pacific Region Final Report.",
+		"author": [
+			{
+				"literal": "Fisheries and Oceans Canada (DFO)"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "forestpracticesboardfpb.CumulativeEffectsAssessment2011",
+		"type": "report",
+		"title": "Cumulative effects assessment: A case study for the Kiskatinaw River Watershed special report",
+		"author": [
+			{
+				"literal": "Forest Practices Board (FPB)."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2011"
+				]
+			]
+		}
+	},
+	{
+		"id": "forest&rangeevaluationprogramfrepTier1WatershedlevelFish2019",
+		"type": "report",
+		"event-place": "Vancouver, BC, Canada",
+		"publisher": "Prepared for BC Ministry of Forest, Lands and Natural Resource Operations and BC Ministry of Environment and Climate Change Strategy by ESSA Technologies",
+		"publisher-place": "Vancouver, BC, Canada",
+		"title": "Tier-1 Watershed-level Fish Values Monitoring Protocol",
+		"author": [
+			{
+				"literal": "Forest & Range Evaluation Program (FREP)"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "grant2017FraserSockeye2020a",
+		"type": "report",
+		"publisher": "DFO. Canadian Science Advisory Secretariat Research Document 2020/038.",
+		"title": "The 2017 Fraser sockeye salmon (Oncorhynchus nerka) integrated biological status re-assessment under the Wild Salmon Policy using standardized metrics and expert judgment.",
+		"author": [
+			{
+				"family": "Grant",
+				"given": "S. C. H."
+			},
+			{
+				"family": "Holt",
+				"given": "C. A."
+			},
+			{
+				"family": "Pestal",
+				"given": "G."
+			},
+			{
+				"family": "Davis",
+				"given": "B.M."
+			},
+			{
+				"family": "MacDonald",
+				"given": "B. L."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	},
+	{
+		"id": "holtIndicatorsStatusBenchmarks2009",
+		"type": "article-journal",
+		"container-title": "Canadian Science Advisory Secreteriat Research Document",
+		"page": "vii + 74 p.",
+		"title": "Indicators of status and benchmarks for Conservation Units in Canada’s Wild Salmon Policy",
+		"URL": "http://www.dfo-mpo.gc.ca/csas-sccs/publications/resdocs-docrech/2009/2009_058-eng.htm",
+		"volume": "2009/058",
+		"author": [
+			{
+				"family": "Holt",
+				"given": "C.A"
+			},
+			{
+				"family": "Cass",
+				"given": "A."
+			},
+			{
+				"family": "Holtby",
+				"given": "B."
+			},
+			{
+				"family": "Riddell",
+				"given": "B"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2009"
+				]
+			]
+		}
+	},
+	{
+		"id": "hudsonOperationalMethodAssessing2007",
+		"type": "report",
+		"event-place": "Nanaimo, BC",
+		"publisher": "Res. Sec., Coast For. Reg., BC Min. For. Technical Report TR-032/2007",
+		"publisher-place": "Nanaimo, BC",
+		"title": "An operational method of assessing hydrologic recovery for Vancouver Island and south coastal BC",
+		"author": [
+			{
+				"family": "Hudson",
+				"given": "R."
+			},
+			{
+				"family": "Horel",
+				"given": "G"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2007"
+				]
+			]
+		}
+	},
+	{
+		"id": "hyattChasingIllusionSuccessful2019",
+		"type": "article-journal",
+		"container-title": "In C. C. Krueger, W. W. Taylor, & S.-J. Youn (Eds.), From Catastrophe to Recovery: Stories of Fish Management Success. American Fisheries Society.",
+		"title": "Chasing an Illusion? Successful Restoration of Okanagan River Sockeye Salmon Oncorhynchus nerka in a Sea of Uncertainty.",
+		"URL": "https://salmonwatersheds.ca/library/lib_515/",
+		"author": [
+			{
+				"family": "Hyatt",
+				"given": "K. D."
+			},
+			{
+				"family": "Stockwell",
+				"given": "M. M."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "hyattImpactAdaptationResponses2013",
+		"type": "article-journal",
+		"container-title": "Canadian Water Resources Journal / Revue canadienne des ressources hydriques",
+		"issue": "4",
+		"page": "689-713",
+		"title": "Impact and Adaptation Responses of Okanagan River Sockeye Salmon (Oncorhynchus nerka) to Climate Variation and Change Effects During Freshwater Migration: Stock Restoration and Fisheries Management Implications,",
+		"URL": "https://doi.org/10.4296/cwrj2804689",
+		"volume": "28",
+		"author": [
+			{
+				"family": "Hyatt",
+				"given": "K.D"
+			},
+			{
+				"family": "Stockwell",
+				"given": "M.M"
+			},
+			{
+				"family": "Rankin",
+				"given": "D.P."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2013"
+				]
+			]
+		}
+	},
+	{
+		"id": "kormanBenchmarkAnalysisPacific2013",
+		"type": "report",
+		"event-place": "Vancouver, BC",
+		"publisher": "Prepared by Ecometric Research Inc. and LGL Ltd. for the Pacific Salmon Foundation",
+		"publisher-place": "Vancouver, BC",
+		"title": "Benchmark Analysis for Pacific Salmon Conservation Units in the Skeena Watershed",
+		"URL": "ttps://salmonwatersheds.ca/library/lib_318/",
+		"author": [
+			{
+				"family": "Korman",
+				"given": "J."
+			},
+			{
+				"family": "English",
+				"given": "K"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2013"
+				]
+			]
+		}
+	},
+	{
+		"id": "kormanEvaluationFrameworkAssessing2019",
+		"type": "report",
+		"publisher": "DFO. Canadian Science Advisory Secretariat Research Document 2019/001.",
+		"title": "Evaluation framework for assessing potential Pacific Salmon Commission reference points for population status and associated allowable exploitation rates for Strait of Georgia and Fraser River Coho Salmon Management Units.",
+		"author": [
+			{
+				"family": "Korman",
+				"given": "J."
+			},
+			{
+				"family": "Sawada",
+				"given": "J"
+			},
+			{
+				"family": "Bradford",
+				"given": "M.J."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "mahonyRecoveryPotentialAssessment2019",
+		"type": "report",
+		"page": "ix-106",
+		"publisher": "DFO Can. Sci. Advis. Sec. Res. Doc. 2021/009.",
+		"title": "Recovery Potential Assessment for the Okanagan Chinook Salmon (Oncorhynchus tshawytscha)",
+		"author": [
+			{
+				"family": "Mahony",
+				"given": "A."
+			},
+			{
+				"family": "Challenger",
+				"given": "W."
+			},
+			{
+				"family": "Robichaud",
+				"given": "D."
+			},
+			{
+				"family": "Wright",
+				"given": "H."
+			},
+			{
+				"family": "Bussanich",
+				"given": "R."
+			},
+			{
+				"family": "Sharma",
+				"given": "R."
+			},
+			{
+				"family": "Enns",
+				"given": "J."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "matylewichSummaryOkanaganChinook2019",
+		"type": "report",
+		"page": "89",
+		"publisher": "Pacific Salmon Commission Technical Report No. 42",
+		"title": "A Summary of Okanagan Chinook Information Requested by the Pacific Salmon Commission.",
+		"URL": "https://salmonwatersheds.ca/library/lib_502/",
+		"author": [
+			{
+				"family": "Matylewich",
+				"given": "M."
+			},
+			{
+				"family": "Oatman",
+				"given": "M."
+			},
+			{
+				"family": "Parken",
+				"given": "C."
+			},
+			{
+				"family": "Riddell",
+				"given": "B."
+			},
+			{
+				"family": "Tweit",
+				"given": "B."
+			},
+			{
+				"family": "Wright",
+				"given": "H."
+			},
+			{
+				"family": "Baldwin",
+				"given": "C."
+			},
+			{
+				"family": "Garrison",
+				"given": "R"
+			},
+			{
+				"family": "Lothrop",
+				"given": "R."
+			},
+			{
+				"family": "McGrath",
+				"given": "E"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "nelitzEvaluatingStatusFraser2011",
+		"type": "report",
+		"page": "222",
+		"publisher": "ESSA Technologies Ltd. Cohen Commission Technical Report, 3",
+		"title": "Evaluating the status of Fraser River sockeye salmon and role of freshwater ecology in their decline",
+		"URL": "https://www.researchgate.net/publication/274721543_Evaluating_the_status_of_Fraser_River_sockeye_salmon_and_role_of_freshwater_ecology_in_their_decline",
+		"author": [
+			{
+				"family": "Nelitz",
+				"given": "M."
+			},
+			{
+				"family": "Porter",
+				"given": "M."
+			},
+			{
+				"family": "Parkinson",
+				"given": "K."
+			},
+			{
+				"family": "Wieckowski",
+				"given": "K."
+			},
+			{
+				"family": "Marmorek",
+				"given": "D."
+			},
+			{
+				"family": "Bryan",
+				"given": "K."
+			},
+			{
+				"family": "Hall",
+				"given": "A."
+			},
+			{
+				"family": "Abraham",
+				"given": "D."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2011"
+				]
+			]
+		}
+	},
+	{
+		"id": "noaafisheriesCoastalSalmonConservation1996",
+		"type": "report",
+		"title": "Coastal salmon conservation: working guidance for comprehensive salmon restoration initiatives on the Pacific Coast.",
+		"author": [
+			{
+				"literal": "NOAA Fisheries"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1996"
+				]
+			]
+		}
+	},
+	{
+		"id": "parkenHabitatbasedMethodsEstimate2006",
+		"type": "report",
+		"publisher": "DFO. Canadian Science Advisory Secretariat Research Document 2006/083.",
+		"title": "Habitat-based methods to estimate escapement goals for data-limited Chinook salmon stocks in British Columbia",
+		"URL": "https://salmonwatersheds.ca/library/lib_230/",
+		"author": [
+			{
+				"family": "Parken",
+				"given": "C.K"
+			},
+			{
+				"family": "McNicol",
+				"given": "R. E."
+			},
+			{
+				"family": "Irvine",
+				"given": "J. R."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2006"
+				]
+			]
+		}
+	},
+	{
+		"id": "paulStreamsUrbanLandscape2001",
+		"type": "article-journal",
+		"container-title": "Annual Review of Ecology and Systematics,",
+		"page": "333-365",
+		"title": "Streams in the Urban Landscape.",
+		"URL": "https://doi.org/10.1146/annurev.ecolsys.32.081501.114040",
+		"volume": "32",
+		"author": [
+			{
+				"family": "Paul",
+				"given": "M."
+			},
+			{
+				"family": "Meyer",
+				"given": "J. L."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2001"
+				]
+			]
+		}
+	},
+	{
+		"id": "porsztReliabilityIndicatorsDecline2012",
+		"type": "article-journal",
+		"container-title": "Conservation Biology",
+		"issue": "5",
+		"page": "894-904",
+		"title": "Reliability of Indicators of Decline in Abundance.",
+		"URL": "https://doi.org/10.1111/j.1523-1739.2012.01882.x",
+		"volume": "26",
+		"author": [
+			{
+				"family": "Porszt",
+				"given": "E. J."
+			},
+			{
+				"family": "Peterman",
+				"given": "R. M."
+			},
+			{
+				"family": "Dulvy",
+				"given": "N. K."
+			},
+			{
+				"family": "Cooper",
+				"given": "A. B."
+			},
+			{
+				"family": "Irvine",
+				"given": "J. R."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2012"
+				]
+			]
+		}
+	},
+	{
+		"id": "porterSkeenaSalmonConservation2014",
+		"type": "report",
+		"event-place": "Vancouver, BC",
+		"publisher": "Report prepared by ESSA Technologies Ltd. for the Pacific Salmon Foundation.",
+		"publisher-place": "Vancouver, BC",
+		"title": "Skeena Salmon Conservation Units habitat report cards: Chinook, coho, pink, chum, and river sockeye.",
+		"URL": "https://salmonwatersheds.ca/library/lib_356",
+		"author": [
+			{
+				"family": "Porter",
+				"given": "M."
+			},
+			{
+				"family": "Pickard",
+				"given": "D."
+			},
+			{
+				"family": "Casley",
+				"given": "S.",
+				"suffix": ""
+			},
+			{
+				"family": "Ochoski",
+				"given": "N."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2014"
+				]
+			]
+		}
+	},
+	{
+		"id": "smithSalmonHabitatLimiting2005",
+		"type": "report",
+		"event-place": "Olympia, Washington.",
+		"publisher-place": "Olympia, Washington.",
+		"title": "Salmon Habitat Limiting Factors in Washington State",
+		"author": [
+			{
+				"family": "Smith",
+				"given": "C."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2005"
+				]
+			]
+		}
+	},
+	{
+		"id": "stalbergCanadaPolicyConservation2009",
+		"type": "article-journal",
+		"container-title": "Canadian Manuscript Report of Fisheries and Aquatic Sciences",
+		"page": "xiii + 135 p.",
+		"title": "Canada’s Policy for Conservation of Wild Pacific Salmon: Stream, Lake, and Estuarine Habitat Indicators",
+		"URL": "https://salmonwatersheds.ca/library/lib_a_680_0711/",
+		"volume": "2859",
+		"author": [
+			{
+				"family": "Stalberg",
+				"given": "H. C.",
+				"suffix": ""
+			},
+			{
+				"family": "Lauzier",
+				"given": "R. B."
+			},
+			{
+				"family": "Macisaac",
+				"given": "E. A."
+			},
+			{
+				"family": "Porter",
+				"given": "M."
+			},
+			{
+				"family": "Murray",
+				"given": "C."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2009"
+				]
+			]
+		}
+	},
+	{
+		"id": "stockwellMethodsSummaryObservations2020",
+		"type": "article-journal",
+		"container-title": "Can. Data. Rep. Fish. Aquat. Sci.",
+		"page": "vii-61",
+		"title": "Methods and Summary Observations of Okanagan Sockeye Salmon Spawn Timing, Fry Emergence, and Associated Water Temperatures (Brood Years 2002-2018).",
+		"volume": "1300",
+		"author": [
+			{
+				"family": "Stockwell",
+				"given": "M. M."
+			},
+			{
+				"family": "Hyatt",
+				"given": "K. D."
+			},
+			{
+				"family": "Alex",
+				"given": "K."
+			},
+			{
+				"family": "Louie",
+				"given": "C."
+			},
+			{
+				"family": "Machin",
+				"given": "D."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	},
+	{
+		"id": "stockwellSummaryOkanaganSockeye2003",
+		"type": "article-journal",
+		"container-title": "Can. Data. Rep. Fish. Aquat. Sci.",
+		"page": "34-plus data CDROM",
+		"title": "A summary of Okanagan sockeye salmon (Oncorhynchus nerka) escapement surveys by date and river segment from 1947 to 2001.",
+		"URL": "https://salmonwatersheds.ca/library/lib_508/",
+		"volume": "1106",
+		"author": [
+			{
+				"family": "Stockwell",
+				"given": "M.M"
+			},
+			{
+				"family": "Hyatt",
+				"given": "K.D."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2003"
+				]
+			]
+		}
+	},
+	{
+		"id": "summitenvironmentalconsultantssummit/moeCommunityWatershedAdaptive2006",
+		"type": "report",
+		"event-place": "Victoria, BC",
+		"publisher": "Report prepared for BC. Ministry of Environment, Ecosystems Branch.",
+		"publisher-place": "Victoria, BC",
+		"title": "Community watershed adaptive management trials: FFT Work Project 21.",
+		"author": [
+			{
+				"literal": "Summit Environmental Consultants (Summit/MOE)"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2006"
+				]
+			]
+		}
+	},
+	{
+		"id": "templeSmallStreamSurveys2007",
+		"type": "report",
+		"event-place": "Victoria, BC",
+		"publisher": "Report prepared by Raincoast Conservation Foundation.",
+		"publisher-place": "Victoria, BC",
+		"title": "Small Stream Surveys Final Report 2003-2006",
+		"author": [
+			{
+				"family": "Temple",
+				"given": "N."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2007"
+				]
+			]
+		}
+	},
+	{
+		"id": "arifinTransactionCostAnalysis2006",
+		"type": "report",
+		"title": "Transaction Cost Analysis of Upstream-Downstream Relations in Watershed Services: Lessons from Community-Based Forestry Management in Sumatra, Indonesia.",
+		"URL": "https://www.researchgate.net/publication/23511865_Transaction_Cost_Analysis_of_Upstream-Downstream_Relations_in_Watershed_Services_Lessons_from_Community-Based_Forestry_Management_in_Sumatra_Indonesia",
+		"author": [
+			{
+				"family": "Arifin",
+				"given": "Bustanul."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2006"
+				]
+			]
+		}
+	},
+	{
+		"id": "wadeSynthesisSmoltSpawner2018",
+		"type": "report",
+		"publisher": "Canadian Manuscript Report of Fisheries and Aquatic Sciences 3161.",
+		"title": "Synthesis of smolt and spawner abundance information for coho salmon from south coast British Columbia streams.",
+		"author": [
+			{
+				"family": "Wade",
+				"given": "J."
+			},
+			{
+				"family": "Irvine",
+				"given": "J. R."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2018"
+				]
+			]
+		}
+	},
+	{
+		"id": "winklerRevisedSnowRecovery2015",
+		"type": "report",
+		"publisher": "Prov. B.C., Victoria, B.C. Exten. Note 116.",
+		"title": "Revised snow recovery estimates for pine-dominated forests in interior British Columbia.",
+		"URL": "https://www.for.gov.bc.ca/hfd/pubs/docs/en/EN116.PDF",
+		"author": [
+			{
+				"family": "Winkler",
+				"given": "R."
+			},
+			{
+				"family": "Boon",
+				"given": "S."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2015"
+				]
+			]
+		}
+	},
+	{
+		"id": "wrightShorelineSurveysSockeye2008",
+		"type": "report",
+		"title": "Shoreline surveys of sockeye (Oncorhynchus nerka) spawner distribution and abundance for the Great Central Lake Sub-Basin – 2008.",
+		"author": [
+			{
+				"family": "Wright",
+				"given": "M. C."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2008"
+				]
+			]
+		}
+	},
+	{
+		"id": "wadeFrameworkReviewingApproving2019",
+		"type": "report",
+		"publisher": "DFO",
+		"title": "Framework for Reviewing and Approving Revisions to Wild Salmon Policy Conservation Units",
+		"URL": "http://www.dfo-mpo.gc.ca/csas-sccs/",
+		"author": [
+			{
+				"family": "Wade",
+				"given": "J"
+			},
+			{
+				"family": "Hamilton",
+				"given": "S"
+			},
+			{
+				"family": "Baxter",
+				"given": "B"
+			},
+			{
+				"family": "Brown",
+				"given": "G"
+			},
+			{
+				"family": "Grant",
+				"given": "S C H"
+			},
+			{
+				"family": "Holt",
+				"given": "C"
+			},
+			{
+				"family": "Thiess",
+				"given": "M"
+			},
+			{
+				"family": "Withler",
+				"given": "R"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					4,
+					13
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "trippRiparianEffectivenessEvaluations2004",
+		"type": "report",
+		"event-place": "Victoria",
+		"publisher-place": "Victoria",
+		"title": "Riparian effectiveness evaluations",
+		"author": [
+			{
+				"family": "Tripp",
+				"given": "D."
+			},
+			{
+				"family": "Bird",
+				"given": "S."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2004"
+				]
+			]
+		}
+	},
+	{
+		"id": "porterTierWatershedlevelFish2012a",
+		"type": "report",
+		"event-place": "Vancouver, BC",
+		"publisher": "prepared by ESSA Technologies Ltd. for BC Ministry of Forests, Lands and  Natural Resource Operations and BC Ministry of Environment.",
+		"publisher-place": "Vancouver, BC",
+		"title": "Tier 1  watershed-level fish values monitoring protocol. Draft report (version 3.1)",
+		"author": [
+			{
+				"family": "Porter",
+				"given": "M."
+			},
+			{
+				"family": "Casley",
+				"given": "S."
+			},
+			{
+				"family": "Pickard",
+				"given": "D."
+			},
+			{
+				"family": "Snead",
+				"given": "E."
+			},
+			{
+				"family": "Wieckowski",
+				"given": "K"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2012"
+				]
+			]
+		}
+	},
+	{
+		"id": "pickardSkeenaRiverEstuary2015b",
+		"type": "report",
+		"publisher": "Pacific Salmon Foundation",
+		"title": "Skeena River Estuary Assessment: Technical Report",
+		"URL": "https://salmonwatersheds.ca/document/lib_433/",
+		"author": [
+			{
+				"family": "Pickard",
+				"given": "D."
+			},
+			{
+				"family": "Porter",
+				"given": "M."
+			},
+			{
+				"family": "Olson",
+				"given": "E."
+			},
+			{
+				"family": "Connors",
+				"given": "B."
+			},
+			{
+				"family": "Kellock",
+				"given": "K."
+			},
+			{
+				"family": "Jones",
+				"given": "E."
+			},
+			{
+				"family": "Connors",
+				"given": "K."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2015"
+				]
+			]
+		}
+	},
+	{
+		"id": "peacockEvaluatingConsequencesCommon2020",
+		"type": "article-journal",
+		"abstract": "Information on biological status is essential for designing, implementing, and evaluating management strategies and recovery plans for threatened or exploited species. However, the data required to quantify status are often limited, and it is important to understand how assessments of status may be biased by assumptions in data analysis. For Pacific salmon, biological status assessments based on spawner abundances and spawner–recruitment (SR) analyses often involve “run reconstructions” that impute missing spawner data, expand observed spawner abundance to account for unmonitored streams, assign catch to individual stocks, and quantify age-at-return. Using a stochastic simulation approach, we quantified how common assumptions in run reconstructions biased assessments of biological status based on spawner abundance. We found that status assessments were robust to most common assumptions in run reconstructions, even in the face of declining monitoring coverage, but that overestimating catch tended to increase rates of status misclassification. Our results lend confidence to biological status assessments based on spawner abundances and SR analyses, even in the face of incomplete data.",
+		"container-title": "Canadian Journal of Fisheries and Aquatic Sciences",
+		"DOI": "10.1139/CJFAS-2019-0432/ASSET/IMAGES/CJFAS-2019-0432IEQ43.GIF",
+		"ISSN": "12057533",
+		"issue": "12",
+		"note": "publisher: Canadian Science Publishing",
+		"page": "1904-1920",
+		"title": "Evaluating the consequences of common assumptions in run reconstructions on Pacific salmon biological status assessments",
+		"URL": "https://cdnsciencepub.com/doi/10.1139/cjfas-2019-0432",
+		"volume": "77",
+		"author": [
+			{
+				"family": "Peacock",
+				"given": "Stephanie J."
+			},
+			{
+				"family": "Hertz",
+				"given": "Eric"
+			},
+			{
+				"family": "Holt",
+				"given": "Carrie A."
+			},
+			{
+				"family": "Connors",
+				"given": "Brendan"
+			},
+			{
+				"family": "Freshwater",
+				"given": "Cameron"
+			},
+			{
+				"family": "Connors",
+				"given": "Katrina"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2023",
+					8,
+					16
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	},
+	{
+		"id": "fisheriesandoceanscanadaPacificRegionFinal2019",
+		"type": "report",
+		"publisher": "A Pacific Region Final Report. 434 pages.",
+		"title": "Pacific Region Final Integrated Fisheries Management Plan Southern BC Salmon",
+		"author": [
+			{
+				"literal": "Fisheries and Oceans Canada"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2023",
+					8,
+					16
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "beauchampLowerThompsonCoho2008",
+		"type": "report",
+		"publisher": "Prepared for Fisheries and Oceans Canada. Oceans, Habitat and  Enhancement Branch (OHEB)",
+		"title": "Lower Thompson Coho Conservation Unit indicators mapping  project",
+		"author": [
+			{
+				"family": "Beauchamp",
+				"given": "W."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2008"
+				]
+			]
+		}
+	},
+	{
+		"id": "englishNorthCentralCoast2018",
+		"type": "report",
+		"abstract": "English, K., Peacock, D., Challenger, W., Noble, C., Beveridge, I., Robichaud, D., Beach, K., Hertz, E., and Connors, K. 2018. North and Central Coast Salmon Escapement, Catch, Run Size and Exploitation Rate Estimates for each Salmon Conservation Unit for 1954-2017. Prepared by LGL Ltd. for the Pacific Salmon Foundation. 125p.",
+		"publisher": "Prepared by LGL Ltd. for the Pacific Salmon Foundation. 125p.",
+		"title": "North and Central Coast Salmon Escapement, Catch, Run Size and Exploitation Rate Estimates for each Salmon Conservation Unit for 1954-2017.",
+		"author": [
+			{
+				"family": "English",
+				"given": "K."
+			},
+			{
+				"family": "Peacock",
+				"given": "D."
+			},
+			{
+				"family": "Challenger",
+				"given": "W."
+			},
+			{
+				"family": "Noble",
+				"given": "C."
+			},
+			{
+				"family": "Beveridge",
+				"given": "I."
+			},
+			{
+				"family": "Robichaud",
+				"given": "D."
+			},
+			{
+				"family": "Beach",
+				"given": "K."
+			},
+			{
+				"family": "Hertz",
+				"given": "E."
+			},
+			{
+				"family": "Connors",
+				"given": "K."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2018"
+				]
+			]
+		}
+	},
+	{
+		"id": "porterSkeenaLakeSockeye2013a",
+		"type": "report",
+		"event-place": "Vancouver, BC",
+		"publisher": "Report prepared by ESSA Technologies Ltd. for the Pacific Salmon Foundation.",
+		"publisher-place": "Vancouver, BC",
+		"title": "Skeena Lake Sockeye Conservation Units: Habitat report cards.",
+		"URL": "https://salmonwatersheds.ca/library/lib_277/",
+		"author": [
+			{
+				"family": "Porter",
+				"given": "M."
+			},
+			{
+				"family": "Pickard",
+				"given": "D. C."
+			},
+			{
+				"family": "Casley",
+				"given": "S."
+			},
+			{
+				"family": "Ochoski",
+				"given": "N."
+			},
+			{
+				"family": "Bryan",
+				"given": "K."
+			},
+			{
+				"family": "Huang",
+				"given": "S."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2013"
+				]
+			]
+		}
+	},
+	{
+		"id": "nationalresearchcouncilUpstreamSalmonSociety1996",
+		"type": "book",
+		"publisher": "Committee on Protection and Management of Pacific Northwest Anadromous Salmonids",
+		"title": "Upstream: Salmon and Society in the Pacific Northwest",
+		"URL": "https://nap.nationalacademies.org/catalog/4976/upstream-salmon-and-society-in-the-pacific-northwest",
+		"author": [
+			{
+				"literal": "National Research Council"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1996"
+				]
+			]
+		}
+	},
+	{
+		"id": "pickardSkeenaSalmonConservation2013b",
+		"type": "report",
+		"publisher": "Prepared for the Skeena Salmon Program Pacific Salmon Foundation",
+		"title": "Skeena Salmon Conservation Unit: Snapshots",
+		"author": [
+			{
+				"family": "Pickard",
+				"given": "D C"
+			},
+			{
+				"family": "Porter",
+				"given": "M"
+			},
+			{
+				"family": "Farrell",
+				"given": "G"
+			},
+			{
+				"family": "Bryan",
+				"given": "K"
+			},
+			{
+				"family": "Casely",
+				"given": "S"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2013"
+				]
+			]
+		}
+	},
+	{
+		"id": "pickardWorkPlanPilot2008",
+		"type": "report",
+		"event-place": "Victoria, BC",
+		"publisher": "Report prepared by ESSA Technologies Ltd. for BC Ministry of the Environment.",
+		"publisher-place": "Victoria, BC",
+		"title": "Work plan to pilot the Fisheries Sensitive Watershed (FSW) monitoring framework.",
+		"author": [
+			{
+				"family": "Pickard",
+				"given": "D."
+			},
+			{
+				"family": "Porter",
+				"given": "M."
+			},
+			{
+				"family": "Wieckowski",
+				"given": "K."
+			},
+			{
+				"family": "Marmorek",
+				"given": "D."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2008"
+				]
+			]
+		}
+	},
+	{
+		"id": "ruggeroneNumbersBiomassNatural2018",
+		"type": "article-journal",
+		"container-title": "Marine and Coastal Fisheries",
+		"issue": "2",
+		"page": "152-168",
+		"title": "Numbers and Biomass of Natural- and Hatchery-Origin Pink Salmon, Chum Salmon, and Sockeye Salmon in the North Pacific Ocean",
+		"URL": "https://doi.org/10.1002/mcf2.10023",
+		"volume": "10",
+		"author": [
+			{
+				"family": "Ruggerone",
+				"given": "G. T."
+			},
+			{
+				"family": "Irvine",
+				"given": "J. R."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2018"
+				]
+			]
+		}
+	},
+	{
+		"id": "smithWildSalmonPolicy2016",
+		"type": "report",
+		"publisher": "Unpublished report prepared for Fisheries and Oceans Canada.",
+		"title": "Wild Salmon Policy 2 – Strategy 2: Fish Habitat Status Report for the Bedwell River and Ursus Creek Watershed.",
+		"author": [
+			{
+				"family": "Smith",
+				"given": "M"
+			},
+			{
+				"family": "Wright",
+				"given": "M.C."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2016"
+				]
+			]
+		}
+	},
+	{
+		"id": "wrightWildSalmonPolicy2011",
+		"type": "report",
+		"publisher": "Unpublished reReport prepared for Fisheries and Oceans Canada, Resource Restoration.",
+		"title": "Wild Salmon Policy - Strategy 2: Fish Habitat Status for the Somass-Sproat-Stamp-Ash Watershed.",
+		"URL": "ttps://salmonwatersheds.ca/library/lib_168/",
+		"author": [
+			{
+				"family": "Wright",
+				"given": "M. C."
+			},
+			{
+				"family": "Saraga",
+				"given": "R."
+			},
+			{
+				"family": "DeVisser",
+				"given": "M."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2011"
+				]
+			]
+		}
+	},
+	{
+		"id": "connorsSkeenaSalmonConservation2013b",
+		"type": "report",
+		"publisher": "Prepared for the Skeena Salmon Program Pacific Salmon Foundation",
+		"title": "Skeena Salmon Conservation Unit Snapshots",
+		"URL": "https://salmonwatersheds.ca/library/lib_420/",
+		"author": [
+			{
+				"family": "Connors",
+				"given": "B.M."
+			},
+			{
+				"family": "Pickard",
+				"given": "D C"
+			},
+			{
+				"family": "Porter",
+				"given": "M"
+			},
+			{
+				"family": "Farrell",
+				"given": "G"
+			},
+			{
+				"family": "Bryan",
+				"given": "K"
+			},
+			{
+				"family": "Casely",
+				"given": "S"
+			},
+			{
+				"family": "Huang",
+				"given": "S."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2013"
+				]
+			]
+		}
+	},
+	{
+		"id": "DFO2005",
+		"type": "report",
+		"event-place": "Vancouver, BC",
+		"note": "ISBN: 0662405382",
+		"publisher": "Fisheries and Oceans Canada",
+		"publisher-place": "Vancouver, BC",
+		"title": "Canada's Policy for Conservation of Wild Pacific Salmon",
+		"URL": "https://www.pac.dfo-mpo.gc.ca/fm-gp/salmon-saumon/wsp-pss/policy-politique-eng.html",
+		"author": [
+			{
+				"literal": "DFO"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					3,
+					23
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2005"
+				]
+			]
+		}
+	},
+	{
+		"id": "parkinsonPopulationDatabaseDefining2005",
+		"type": "report",
+		"title": "A population database for defining Conservation Units in Steelhead trout",
+		"author": [
+			{
+				"family": "Parkinson",
+				"given": "by EA"
+			},
+			{
+				"family": "Keeley",
+				"given": "Er"
+			},
+			{
+				"family": "Taylor",
+				"given": "Eb"
+			},
+			{
+				"family": "Pollard",
+				"given": "S"
+			},
+			{
+				"family": "Tautz",
+				"given": "Af"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2005"
+				]
+			]
+		}
+	},
+	{
+		"id": "tautzSkeenaSteelheadConservation2011",
+		"type": "report",
+		"title": "Skeena Steelhead Conservation Units",
+		"author": [
+			{
+				"family": "Tautz",
+				"given": "A F"
+			},
+			{
+				"family": "Pollard",
+				"given": "S"
+			},
+			{
+				"family": "Hooton",
+				"given": "R S"
+			},
+			{
+				"family": "Ptolemy",
+				"given": "R A"
+			},
+			{
+				"family": "Taylor",
+				"given": "E B"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2011"
+				]
+			]
+		}
+	},
+	{
+		"id": "ministryofforestsProvincialFrameworkSteelhead2016",
+		"type": "report",
+		"title": "Provincial Framework for Steelhead Management in British Columbia",
+		"author": [
+			{
+				"family": "Ministry of Forests",
+				"given": "Lands",
+				"suffix": "and Natural Resource Operations Fish and Wildlife Branch"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2016"
+				]
+			]
+		}
+	},
+	{
+		"id": "holtbyConservationUnitsPacific2007",
+		"type": "article-journal",
+		"container-title": "Canadian Science Advisory Secreteriat Research Document",
+		"title": "Conservation Units for Pacific Salmon under the Wild Salmon Policy",
+		"URL": "https://www.dfo-mpo.gc.ca/csas-sccs/publications/resdocs-docrech/2007/2007_070-eng.htm",
+		"volume": "070",
+		"author": [
+			{
+				"family": "Holtby",
+				"given": "Blair L."
+			},
+			{
+				"family": "Ciruna",
+				"given": "Kristine A."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2023",
+					10,
+					19
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2007"
+				]
+			]
+		}
+	},
+	{
+		"id": "James2023",
+		"type": "article-journal",
+		"container-title": "Canadian Journal of Fisheries and Aquatic Sciences",
+		"DOI": "10.1139/cjfas-2022-0121",
+		"page": "1-19",
+		"title": "Size and timing of hatchery releases influence juvenile-to-adult survival rates of British Columbia Chinook (Oncorhynchus tshawytscha) and coho (Oncorhynchus kisutch) salmon",
+		"URL": "dx.doi.org/10.1139/cjfas-2022-0121",
+		"volume": "00",
+		"author": [
+			{
+				"family": "James",
+				"given": "Samantha E"
+			},
+			{
+				"family": "Doherty",
+				"given": "Beau"
+			},
+			{
+				"family": "Cox",
+				"given": "Sean P."
+			},
+			{
+				"family": "Pearsall",
+				"given": "Isobel A"
+			},
+			{
+				"family": "Riddell",
+				"given": "Brian"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2023"
+				]
+			]
+		}
+	},
+	{
+		"id": "holtEvaluatingBenchmarksBiological2018a",
+		"type": "article-journal",
+		"container-title": "DFO Can. Sci. Advis. Sec. Res. Doc.",
+		"issue": "/011",
+		"page": "ix + 87",
+		"title": "Evaluating Benchmarks of Biological Status for Data-limited Populations (Conservation Units) of Pacific Salmon, Focusing on Chum Salmon in Southern BC.",
+		"URL": "http://www.dfo-mpo.gc.ca/csas-sccs/Publications/ResDocs-DocRech/2018/2018_011-eng.html",
+		"author": [
+			{
+				"family": "Holt",
+				"given": "C."
+			},
+			{
+				"family": "Davis",
+				"given": "B."
+			},
+			{
+				"family": "Dobson",
+				"given": "D."
+			},
+			{
+				"family": "Godbout",
+				"given": "L."
+			},
+			{
+				"family": "Luedke",
+				"given": "W."
+			},
+			{
+				"family": "Tadey",
+				"given": "J."
+			},
+			{
+				"family": "Van Will",
+				"given": "P."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2018"
+				]
+			]
+		}
+	},
+	{
+		"id": "fisheriesandoceanscanadaWildSalmonPolicy2018",
+		"type": "report",
+		"abstract": "Introduction The goal of Canada’s Wild Salmon Policy (WSP) \"To restore and maintain healthy and diverse salmon populations and their habitats for the benefit and enjoyment of the people of Canada in perpetuity\" (WSP, 2005, P.8). WSP Implementation Plan This Plan describes Fisheries and Oceans Canada’s commitment to Canada’s Policy for Conservation of Pacific Wild Salmon (Wild Salmon Policy or WSP) through three key themes: Assessment, Maintaining and Rebuilding Stocks, and Accountability. Over the next five years, DFO will develop common guidance, standardized methods, and useful tools to advance the long-term goal and objectives of the WSP.",
+		"title": "Wild Salmon Policy 2018 to 2022 Implementation Plan",
+		"URL": "https://www.pac.dfo-mpo.gc.ca/fm-gp/species-especes/salmon-saumon/wsp-pss/ip-pmo/intro-eng.html",
+		"author": [
+			{
+				"literal": "Fisheries and Oceans Canada"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2018"
+				]
+			]
+		}
+	}
+]

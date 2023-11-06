@@ -1856,6 +1856,7 @@
 		"abstract": "English, K., Peacock, D., Challenger, W., Noble, C., Beveridge, I., Robichaud, D., Beach, K., Hertz, E., and Connors, K. 2018. North and Central Coast Salmon Escapement, Catch, Run Size and Exploitation Rate Estimates for each Salmon Conservation Unit for 1954-2017. Prepared by LGL Ltd. for the Pacific Salmon Foundation. 125p.",
 		"publisher": "Prepared by LGL Ltd. for the Pacific Salmon Foundation. 125p.",
 		"title": "North and Central Coast Salmon Escapement, Catch, Run Size and Exploitation Rate Estimates for each Salmon Conservation Unit for 1954-2017.",
+		"URL": "https://salmonwatersheds.ca/document/lib_451/",
 		"author": [
 			{
 				"family": "English",
@@ -1994,6 +1995,28 @@
 			"date-parts": [
 				[
 					"2013"
+				]
+			]
+		}
+	},
+	{
+		"id": "bcministryofforestsmofWatershedAssessmentProcedure2001",
+		"type": "report",
+		"collection-title": "Version 2.1",
+		"event-place": "Victoria, BC",
+		"publisher": "Forest Practices Branch, Ministry of Forests.",
+		"publisher-place": "Victoria, BC",
+		"title": "Watershed assessment procedure guidebook",
+		"URL": "http://www.publications.gov.bc.ca",
+		"author": [
+			{
+				"literal": "BC Ministry of Forests (MOF)"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2001"
 				]
 			]
 		}
@@ -2405,6 +2428,50 @@
 			"date-parts": [
 				[
 					"2018"
+				]
+			]
+		}
+	},
+	{
+		"id": "PSFSalmonWatersheds",
+		"type": "webpage",
+		"abstract": "The Pacific Salmon Foundation’s Salmon Watersheds Program works to provide a common understanding of the status of Pacific salmon, steelhead, and their habitats in Canada.",
+		"container-title": "PSF’s Salmon Watersheds Program",
+		"language": "en",
+		"title": "PSF’s Salmon Watersheds Program: Documents: North and Central Coast Salmon Escapement, Catch, Run Size and Exploitation Rate Estimates for each Salmon Conservation Unit for 1954-2014",
+		"title-short": "PSF’s Salmon Watersheds Program",
+		"URL": "https://salmonwatersheds.ca",
+		"accessed": {
+			"date-parts": [
+				[
+					"2023",
+					11,
+					6
+				]
+			]
+		}
+	},
+	{
+		"id": "fernando2017SlamgeeshSalmon2018",
+		"type": "report",
+		"language": "en",
+		"page": "6 p.",
+		"publisher": "Gitksan Watershed Authorities",
+		"source": "Zotero",
+		"title": "2017 Slamgeesh Salmon Project – Post Season AFS Activity Report",
+		"URL": "https://gitksanwatershed.com/wp-content/uploads/2017/02/2017-Slamgeesh-Project-Summary-AFS-Tech-Report.pdf",
+		"author": [
+			{
+				"family": "Fernando",
+				"given": "Alicia"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2018",
+					3,
+					31
 				]
 			]
 		}

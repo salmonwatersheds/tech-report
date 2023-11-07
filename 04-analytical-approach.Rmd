@@ -4,7 +4,7 @@
 
 We apply a suite of indicators to assess both the biological and habitat status of salmon CUs. Defined as "measures of pressures, states, and/or responses", indicators depict the condition of species, habitats, and/or systems to improve one's understanding of the linkages among drivers, stressors, conditions, and management actions **(ESSA, 2020)**. The indicators and approach that we use align with Strategies 1 and 2 of the Wild Salmon Policy [@DFO2005] that call for standardized assessment and monitoring of the salmon CUs and their freshwater habitats [@holtIndicatorsStatusBenchmarks2009; @stalbergCanadaPolicyConservation2009].
 
-Relevant salmon indicators for informing biological and habitat status have several criteria:
+Relevant salmon indicators for informing population and habitat status have several criteria:
 
 -   They are measurable, relevant to the health and persistence of salmon as they characterize either key population dynamics or habitat conditions;
 -   The data are available over broad spatial and temporal scales;
@@ -14,7 +14,7 @@ Relevant salmon indicators for informing biological and habitat status have seve
 -   The indicators can be tracked over time;
 -   They can be used to inform management decisions for threatened or at-risk salmon CUs.
 
-To quantify the suite of biological and habitat status indicators that we use, we have continued to lead a major effort to compile and synthesize salmon-related data in each of the Regions where we operate. While a large amount of salmon-related data already exists, they are often not readily available, not well documented, and not compiled in a single location. Our efforts focus on bringing existing information together in a standardized format into a single, centralized location (i.e. the Salmon Data Library) and summarizing the data in valuable ways for monitoring and assessing salmon CUs and their habitats (i.e. the Pacific Salmon Explorer).
+To quantify the suite of population and habitat status indicators that we use, we have continued to lead a major effort to compile and synthesize salmon-related data in each of the Regions where we operate. While a large amount of salmon-related data already exists, they are often not readily available, not well documented, and not compiled in a single location. Our efforts focus on bringing existing information together in a standardized format into a single, centralized location (i.e. the Salmon Data Library) and summarizing the data in valuable ways for monitoring and assessing salmon CUs and their habitats (i.e. the Pacific Salmon Explorer).
 
 We then calculate and apply benchmarks for each indicator to assess status using a 'stoplight' approach. The result is a qualitative assessment of each indicator as either red, amber, or green, depending on the current data relative to a lower or upper benchmark (Figure \@ref(fig:wspFramework)). The intent is that decision-makers can then apply management measures to improve the status of a CU and/or salmon-bearing watershed, for example, from Red to Amber or Amber to Green [@DFO2005].
 
@@ -22,16 +22,9 @@ We then calculate and apply benchmarks for each indicator to assess status using
 knitr::include_graphics("figures/wsp.png")
 ```
 
-## Biological Status: Indicators & Benchmarks {#indicators-benchmarks-assess-bs}
+## Population Status: Indicators & Benchmarks {#indicators-benchmarks-pop}
 
-The biological status assessments that we complete and visualize on the Pacific Salmon Explorer are guided by the approaches recommended under Strategy 1 of the Wild Salmon Policy [@DFO2005] and by [@holtIndicatorsStatusBenchmarks2009], as well as additional recommendations from our independent Population Science Advisory Committee. Candidate benchmarks for evaluating the status of CUs have been proposed for four classes of indicators [@holtIndicatorsStatusBenchmarks2009], which include:
-
-1.  Current spawner abundance;
-2.  Trends in spawner abundance over time;
-3.  Distribution of spawners within the CU; and
-4.  Fishing mortality relative to stock productivity.
-
-We assess biological status using a metric of current spawner abundance, while providing information on other indicators where available. To characterize key salmon population dynamics, temporal trends in fisheries data, and assess the biological status of salmon CUs across the Pacific Region, we compile and synthesize the following information:
+To characterize key salmon population dynamics, temporal trends in fisheries data, and assess the biological status of salmon CUs across the Pacific Region, we compile and synthesize the following information:
 
 -   Spawner survey locations;
 -   Observed spawner counts in indicator and non-indicator streams;
@@ -47,7 +40,7 @@ The data sources and analyses differ among regions, with the main differences oc
 
 We synthesize the types of data listed above to generate output datasets that are available for download in the [Salmon Data Library](https://www.data.salmonwatersheds.ca). These output datasets are visualized in the [Pacific Salmon Explorer](https://www.salmonexplorer.ca) through [nine population indicators](#overview-biological-indicators). These datasets also inform a CU-level [Hatchery Release Score](#hatchery-release-score) and [Data Quality Score](#data-quality-score). The data compilation exercise also highlights data gaps across and within Regions. We aim to update these key datasets annually or as new input data become available.
 
-### Overview of Biological indicators {#overview-biological-indicators}
+### Overview of Population Indicators {#overview-population-indicators}
 
 ```{=html}
 <!-- SP: The previous version referenced "eight indicators" but they were never listed...and there are nine indicators in the PSE so I am unsure of what was being referred to. I tried to clarify how this section is organized by going through the indicators in order that they appear in the PSE: 
@@ -75,7 +68,7 @@ We use nine indicators to characterize the population status of each Conservatio
 8.  Trends in Spawner Abundance
 9.  Biological Status
 
-These indicators provide information on the current state of salmon CUs and trends over time. The first three indicators involve displaying stream-level information organized by CU. The last seven indicators involve synthesizing data at the CU-level, with the Hatchery Release indicator involving both the stream-level release data and a CU-level Hatchery Release Score. Here, we describe the general approach to compile and synthesize data for each of these biological indicators. Detailed methods that depend on the specifics of the available data vary by Region and are documented in the [Regions](#regions) section.
+These indicators provide information on the current state of salmon CUs and trends over time. The first three indicators involve displaying stream-level information organized by CU. The last seven indicators involve synthesizing data at the CU-level, with the Hatchery Release indicator involving both the stream-level release data and a CU-level Hatchery Release Score. Here, we describe the general approach to compile and synthesize data for each of these population indicators. Detailed methods that depend on the specifics of the available data vary by Region and are documented in the [Regions](#regions) section.
 
 #### Spawner Surveys {#spawner-surveys}
 
@@ -136,7 +129,14 @@ For species with variable age-at-return, estimating the number of recruits for a
 
 #### Biological Status
 
-The assessment of **biological status** is more involved, and our approach to quantifying metrics and benchmarks is detailed in section [Benchmarks for Assessing Biological Status](#benchmarks-biostatus).
+The **biological status** assessments that we complete and visualize on the Pacific Salmon Explorer are guided by the approaches recommended under Strategy 1 of the Wild Salmon Policy [@DFO2005] and by [@holtIndicatorsStatusBenchmarks2009], as well as additional recommendations from our independent Population Science Advisory Committee. Candidate benchmarks for evaluating the status of CUs have been proposed for four classes of indicators [@holtIndicatorsStatusBenchmarks2009], which include:
+
+1.  Current spawner abundance;
+2.  Trends in spawner abundance over time;
+3.  Distribution of spawners within the CU; and
+4.  Fishing mortality relative to stock productivity.
+
+We assess biological status using a metric of current spawner abundance, while providing information on other indicators where available. The assessment of biological status is more involved, and our approach to quantifying metrics and benchmarks is detailed in section [Benchmarks for Assessing Biological Status](#benchmarks-biostatus).
 
 ### Hatchery Release Score {#hatchery-release-score}
 
@@ -163,7 +163,7 @@ where $\bar{S_i}$ is the geometric mean number of spawners in stream $i$ over th
 <!-- SP: Table re-written - previous definitions were incorrect (not % of spawners necessarily because roll-up, and ranges were not complete.) -->
 
 | Hatchery Release Score | Definition                                                                                                        |
-|:-----------------------|:-----------------------------------------------|
+|:------------------------|:-----------------------------------------------|
 | None                   | There are no records of hatchery influence in the CU                                                              |
 | Low                    | There are no records of hatchery influence in the CU **in the most recent two generations** ($c = 0$)             |
 | Moderate               | Less than 25% of spawners within the CU are from streams with moderate or high hatchery influence ($0 < c <0.25$) |
@@ -239,7 +239,7 @@ knitr::kable(
 
 This criterion indicates how representative spawner surveys are of the entire CU, measured as the proportion of total spawners that spawn in indicator streams. If a CU has a higher proportion of spawners returning to indicator streams, we assume that the spawner abundance data within that CU is of higher quality since indicator streams are more consistently and reliably surveyed.
 
-This score is calculated as the average number of spawners in indicator streams divided by the average number of spawners in all indicator and non-indicator streams within the CU, following methods from @. To derive this proportion, we first determine which decade has the greatest coverage of spawner surveys across the indicator and non-indicator streams. We assume that there is a constant proportion of spawners from indicator and non-indicator streams through time. We then calculate the average number of spawners in all indicator and non-indicator streams according to:
+This score is calculated as the average number of spawners in indicator streams divided by the average number of spawners in all indicator and non-indicator streams within the CU, following methods from \@. To derive this proportion, we first determine which decade has the greatest coverage of spawner surveys across the indicator and non-indicator streams. We assume that there is a constant proportion of spawners from indicator and non-indicator streams through time. We then calculate the average number of spawners in all indicator and non-indicator streams according to:
 
 $$C= 5 \times \frac{\sum_{i - 1}^I E_{siady}}{\sum_{i - 1}^I E_{siady} + \sum_{j=1}^J E_{sjady}} $$ where $s$ = species, $i$ = indicator stream, $j$ = non-indicator stream, $a$ = CU, $d$ = decade, $y$ = year, $E_{siady}$ = indicator stream escapement (i.e. spawners), by stratum, and $E_{sjady}$ = non-indicator stream spawners, by stratum. This approach is used because it provides a weighted average of the actual number of spawners enumerated with higher quality methodology, rather than only counting the number of indicator and non-indicator streams. We then translate the **Spawner Survey Coverage** score into a scale of 0-5 (labeled as Not Applicable, Low, Medium-Low, Medium, Medium-High, and High; Table \@ref(tab:spawncovScore)).
 
@@ -395,13 +395,13 @@ Given the iterative and incremental development approach that we take to visuali
 
 Over time, DFO may re-classify CUs if: 1) CU-level spawner abundance declines to a point where the CU is lost ("extinct"), 2) a CU is extinct and then re-introduced with different genetic stock ("de novo"), 3) a CU is created by introducing populations to a location where they were not previously present ("transplant"). We visualize these categories on the Pacific Salmon Explorer, intending to maintain a historical record of Pacific salmon's changing genetic diversity and abundance (see [Appendix 1](#0) and [Appendix 4](#0)).
 
-### Limitations: Biological Indicators & Assessment Approach
+### Limitations: Biological Status Assessments
 
 There are a number of limitations to the biological status assessments that we visualize on the Pacific Salmon Explorer. Some limitations, such as CU-level estimates of spawner abundance, developing benchmarks, and monitoring coverage, apply to all species and Regions. These caveats should be considered when interpreting the results of the biological status assessments and included in future research priorities.
 
 #### CU-level Estimates of Spawner Abundance {#cu-est-spawner-abundance}
 
-If a complete census or true count of spawners is not available for all streams within a CU, DFO applies expansion factors to generate CU-level estimates of spawner abundance. The number of indicator streams that are counted in a given year for each CU (spawner survey coverage) has been declining since the late 1990s in many Regions included in the Pacific Salmon Explorer [e.g. @englishNorthCentralCoast2018], leading to increasing uncertainty when extrapolating from spawner counts at monitored streams to CU-level estimates of spawner abundance. This is particularly problematic if the realtive contribution of streams within a CU changes through time. Nonetheless, the expansion factor approach applied by DFO is generally recognized as the best practice for generating CU-level estimates of spawner abundance in many cases [e.g. on the North and Central Coast; @englishExtendTimeSeries2012). Our work aims to derive biological status assessments of individual CUs relative to different metrics and not, for example, to set management targets or catch allocation, so the assumptions that support these expansion procedures should not overly influence this work.
+If a complete census or true count of spawners is not available for all streams within a CU, DFO applies expansion factors to generate CU-level estimates of spawner abundance. The number of indicator streams that are counted in a given year for each CU (spawner survey coverage) has been declining since the late 1990s in many Regions included in the Pacific Salmon Explorer [e.g. @englishNorthCentralCoast2018], leading to increasing uncertainty when extrapolating from spawner counts at monitored streams to CU-level estimates of spawner abundance. This is particularly problematic if the realtive contribution of streams within a CU changes through time. Nonetheless, the expansion factor approach applied by DFO is generally recognized as the best practice for generating CU-level estimates of spawner abundance in many cases [e.g. on the North and Central Coast; @englishExtendTimeSeries2012). Our work aims to derive biological status assessments of individual CUs relative to benchmarks and not, for example, to set management targets or catch allocation, so the assumptions that support these expansion procedures should not overly influence this work.
 
 In addition, recent simulation analyses to determine the influence of these expansion factors on biological status assessments using our approach found that they were robust to a range of expansion procedures [@peacockEvaluatingConsequencesCommon2020]. @peacockEvaluatingConsequencesCommon2020 suggest that, under certain conditions, declining monitoring coverage (to a point) has little impact on the accuracy of benchmarks or biological status assessments using our methods. We have also attempted to account for differing levels of monitoring coverage as part of our work to quantify data quality for visualization on the Pacific Salmon Explorer (see [Data Quality](#data-quality)).
 
@@ -409,7 +409,7 @@ In addition, recent simulation analyses to determine the influence of these expa
 
 We have developed the benchmarks to assess biological<!-- BSC: "status"? --> based on the latest and most comprehensive available literature and in consultation with our Population Science Advisory Committee. However, there are still alternative approaches that we could consider, and we will continue to apply best practices and our iterative approach to the application of benchmarks to deriving biological status.<!-- BSC: suggested writing of latter sentence: "However, we recognize the existence of alternative approaches, and we are committed to continuously assess and refine our iterative approach using best practices."--> For example, if available, habitat-based benchmarks [e.g. @Parken2006] could be applied to situations where other biological benchmarks cannot be used.
 
-#### Other limitations {#other-limts}
+#### Other Limitations {#other-limts}
 
 Other limitations are species- or Region-specific; the latter are included below in the [Regions](#regions) section.
 
@@ -439,7 +439,7 @@ We need to know where salmon spawn to identify ZOIs and assess pressures on salm
 
 #### Fisheries Information Summary System
 
-The FISS database is a legacy project which was a jointly funded initiative between BC Fisheries and DFO, intending to provide fish habitat data for water bodies throughout BC and the Yukon [@bcministryofenvironmentmoeFisheriesInformationSummary2017]. FISS data is distributed under two datasets via [DataBC](<https://www2.gov.bc.ca/gov/content/data/about-data-management/databc>) on the [BC Data Catalogue](<https://www2.gov.bc.ca/gov/content/data/bc-data-catalogue>). The two datasets, specifically, are "BC Historical Fish Distribution Zones (50,000)" and "Known BC Fish Observations and BC Fish Distributions." The latter dataset is described as "the most current and comprehensive information source on fish presence for the province" in the DataBC.
+The FISS database is a legacy project which was a jointly funded initiative between BC Fisheries and DFO, intending to provide fish habitat data for water bodies throughout BC and the Yukon [@bcministryofenvironmentmoeFisheriesInformationSummary2017]. FISS data is distributed under two datasets via [DataBC](https://www2.gov.bc.ca/gov/content/data/about-data-management/databc) on the [BC Data Catalogue](https://www2.gov.bc.ca/gov/content/data/bc-data-catalogue). The two datasets, specifically, are "BC Historical Fish Distribution Zones (50,000)" and "Known BC Fish Observations and BC Fish Distributions." The latter dataset is described as "the most current and comprehensive information source on fish presence for the province" in the DataBC.
 
 As of 2001, the Province of BC no longer maintains the spawning zones or linear distribution dataset ("BC Historical Fish Distribution - Zones (50,000)"), but the Known BC Fish Observations and BC Fish Distributions dataset is actively maintained. This dataset houses the legacy FISS data as well as data from other provincially maintained sources. However, efforts to maintain fish location data are not standardized province-wide, and thus both data coverage and accuracy vary across BC. The province continues to document ongoing data submissions from organizations or individuals required to report fisheries data and sampling information as part of the reporting requirements for a Scientific Fish Collection Permit (a permit to capture or collect fish specimens for scientific or other non-recreational or commercial purposes). The province also documents submissions of non-permitted fish and fish habitat information on a voluntary basis. While presenting some challenges, these datasets are the most comprehensive source of spawning data available province-wide, so we use them as a base representation of spawning locations. We filtered these datasets to Pacific salmon species and spawning activity types to identify spawning locations.
 

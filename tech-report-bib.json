@@ -37,7 +37,7 @@
 		"publisher": "Fisheries and Oceans Canada",
 		"publisher-place": "Ottawa, Canada",
 		"title": "Fisheries and Oceans Canada Memorandum: Skeena sockeye sub-stock run-timing and abundance evaluated using Tyee test fishery DNA: 2000-2010.",
-		"URL": "https://www.google.com/url?q=https://data.skeenasalmon.info/dataset/skeena-sockeye-sub-stock-run-timing-and-abundance-evaluated-using-tyee-fishery-dna-2000-2010/resource/cce05daa-f3bd-4e98-ba36-755799b6297d&sa=D&source=docs&ust=1676065389718195&usg=AOvVaw1N1B5W3ergIjEj8uPcUvIs",
+		"URL": "https://data.skeenasalmon.info/dataset/skeena-sockeye-sub-stock-run-timing-and-abundance-evaluated-using-tyee-fishery-dna-2000-2010/resource/cce05daa-f3bd-4e98-ba36-755799b6297d",
 		"author": [
 			{
 				"family": "Cox-Rogers",
@@ -54,10 +54,10 @@
 	},
 	{
 		"id": "broadheadRiparianFishForest2009",
-		"type": "book",
-		"ISBN": "0-9687611-1-9",
+		"type": "report",
 		"publisher": "Gowgaia Institute",
-		"title": "The riparian fish forest : a portrait of riparian habitats on Haida Gwaii (the Queen Charlotte Islands) ; project technical report",
+		"title": "The riparian fish forest: A portrait of riparian habitats on Haida Gwaii (the Queen Charlotte Islands) Project Technical Report",
+		"URL": "https://salmonwatersheds.ca/library/lib_465/",
 		"author": [
 			{
 				"family": "Broadhead",
@@ -75,7 +75,9 @@
 	{
 		"id": "englishNorthCentralCoast2006",
 		"type": "report",
+		"publisher": "Report prepared by LGL Limited for the Pacific Salmon Foundation and Fisheries and Oceans Canada",
 		"title": "North and Central Coast Core Stock Assessment Program for Salmon",
+		"URL": "https://salmonwatersheds.ca/library/lib_441/",
 		"author": [
 			{
 				"family": "English",
@@ -225,10 +227,12 @@
 		}
 	},
 	{
-		"id": "brownCanadianScienceAdvisory2019",
-		"type": "report",
-		"title": "Canadian Science Advisory Secretariat (CSAS) Pre-COSEWIC review of southern British Columbia Chinook Salmon (Oncorhynchus tshawytscha) conservation units, Part I: Background",
+		"id": "brownPreCOSEWICReviewSouthern2019c",
+		"type": "article-journal",
+		"container-title": "Canadian Science Advisory Secretariat Research Document",
+		"title": "Pre-COSEWIC review of southern British Columbia Chinook Salmon (Oncorhynchus tshawytscha) conservation units, Part I: Background",
 		"URL": "http://www.dfo-mpo.gc.ca/csas-sccs/",
+		"volume": "2019/011",
 		"author": [
 			{
 				"family": "Brown",
@@ -400,51 +404,6 @@
 			"date-parts": [
 				[
 					"1995"
-				]
-			]
-		}
-	},
-	{
-		"id": "brownPreCOSEWICReviewSouthern2019",
-		"type": "report",
-		"collection-title": "2019/011",
-		"publisher": "DFO. Canadian Science Advisory Secretariat Research Document",
-		"title": "Pre-COSEWIC review of southern British Columbia Chinook Salmon (Oncorhynchus tshawytscha) conservation units, Part I: Background.",
-		"author": [
-			{
-				"family": "Brown",
-				"given": "G. S.",
-				"suffix": "Baillie, S. J., Thiess, M. E., Bailey, R. E., Candy, J. R., Parken, C. K., & Willis, D. M."
-			},
-			{
-				"family": "Baillie",
-				"given": "S. J."
-			},
-			{
-				"family": "Thiess",
-				"given": "M. E."
-			},
-			{
-				"family": "Bailey",
-				"given": "R. E"
-			},
-			{
-				"family": "Candy",
-				"given": "J. R"
-			},
-			{
-				"family": "Parken",
-				"given": "C. K"
-			},
-			{
-				"family": "Willis",
-				"given": "D. M"
-			}
-		],
-		"issued": {
-			"date-parts": [
-				[
-					"2019"
 				]
 			]
 		}
@@ -1860,7 +1819,7 @@
 		"author": [
 			{
 				"family": "English",
-				"given": "K."
+				"given": "K.K."
 			},
 			{
 				"family": "Peacock",

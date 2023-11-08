@@ -25,7 +25,7 @@ During the initial development of the Pacific Salmon Explorer for the Skeena, we
 
 ### Conservation Unit Changes
 
-Based on feedback from the Skeena Technical Advisory Committee, we made several changes to the CU list, such that the CUs listed in the Pacific Salmon Explorer may differ from those provided by DFO. Specifically, we combined the Mcdonnell, Aldrich, and Dennis lake-type sockeye CUs into a single CU (Mcdonnell/Aldrich/Dennis) since the contribution of each of these lakes cannot be currently assessed from the estimated spawner abundance data. For the same reason, we combined the Morice and Atna lake-type sockeye CUs (Morice/Atna), and the Bulkley and Maxan (Bulkley/Maxan) lake-type sockeye CUs. Currently, the Swan and Club Lake lake-type sockeye CUs are combined into a single Swan/Club CU, but subsequent CU lists for DFO specify that these stream surveys are now all part of the Stephens CU, and we will be updating the PSE accordingly in 2024. <!--# Need to update to Stephens CU. --> 
+Based on feedback from the Skeena Technical Advisory Committee, we made several changes to the CU list, such that the CUs listed in the Pacific Salmon Explorer may differ from those provided by DFO. Specifically, we combined the Mcdonnell, Aldrich, and Dennis lake-type sockeye CUs into a single CU (Mcdonnell/Aldrich/Dennis) since the contribution of each of these lakes cannot be currently assessed from the estimated spawner abundance data. For the same reason, we combined the Morice and Atna lake-type sockeye CUs (Morice/Atna), and the Bulkley and Maxan (Bulkley/Maxan) lake-type sockeye CUs. Currently, the Swan and Club Lake lake-type sockeye CUs are combined into a single Swan/Club CU, but subsequent CU lists for DFO specify that these stream surveys are now all part of the Stephens CU, and we will be updating the PSE accordingly in 2024. <!--# Need to update to Stephens CU. -->
 
 We split the Babine lake-type sockeye CU into four CUs based on run-timing and enhancement. The wild portions of the CU are split into Babine/Onerka (early timing), Tahlo/Morrison (mid timing), and Nilkitkwa (late timing). The enhanced portion of the CU (originating from the Pinkut and Fulton spawning channels) is considered as the Babine (enhanced) CU.
 
@@ -33,11 +33,11 @@ We split the Babine lake-type sockeye CU into four CUs based on run-timing and e
 
 On the North and Central Coast, including the Skeena Region, PSF primarily accessed data through the North and Central Coast (NCC) Database [@englishNorthCentralCoast2018]. The NCC Database is a database produced and maintained by [LGL Ltd.](https://lgl.com/), who synthesize datasets on spawner surveys, catch, exploitation rate, and age structure. LGL also includes generated datasets for CU-level estimates of spawner abundance, run size, and exploitation rate. For the most part, data in the NCC Database have been sourced by LGL from DFO's [New Salmon Escapement Database (NuSEDS)](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), the [Fisheries Operating System (FOS)](https://open.canada.ca/data/en/dataset/7ac5fe02-308d-4fff-b805-80194f8ddeb4), and other DFO databases. Details regarding nuances to the data and analytical methods specific to the Skeena Region are described below.
 
-#### Spawner Surveys
+#### Spawner Surveys {#spawner-surveys}
 
 Spawner survey data for streams in the Skeena Region were sourced from DFO's [New Salmon Escapement Database (NuSEDS)](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6). For a description of the spawner survey indicator, see the [Overview of Biological Indicators: Spawner Surveys](#spawner-surveys).
 
-#### Spawner Abundance
+#### Spawner Abundance {#spawner-abundance}
 
 Observed spawner abundance for CUs in the Skeena Region is the sum of all spawner survey data documented in NuSEDS, as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance).
 
@@ -49,17 +49,17 @@ For Skeena Chinook, the methods used to derive spawner abundance estimates for C
 
 In contrast to Chinook, there has been more consistent distribution and quantity of monitoring effort for Skeena sockeye CUs dating back to 1960. For Skeena sockeye CUs, the spawner abundance time series starts in 1960 because this was the first year of pre-1982 run reconstruction analysis (Les Jantz, DFO, pers. comm.). The fact that a large portion of Skeena sockeye have been enumerated at the Babine fence since 1949 provides greater confidence in the annual escapement estimates for sockeye than for Skeena Chinook in the 1960-1984 period.
 
-#### Run Timing
+#### Run Timing {#run-timing}
 
 Estimates of peak timing of river entry for the different sockeye CUs were estimated from DNA sampled from fish caught in the Tyee test fishery near the mouth of the Skeena River between 2000-2010 [@cox-rogersFisheriesOceansCanada2012]. The duration of the timing of river entry is assumed to have a bell-shaped curve (i.e. normal distribution), so the shape of the curves is defined by the mean and standard deviation of the available run timing data. However, in most instances, there is insufficient data to determine if a different distribution would better describe the shape of the curve. A normal distribution curve is likely a reasonable approximation for run timing in most cases if the run timing is unimodal (i.e. if there is a single peak in run timing). If the run timing is bi-modal (i.e. if there are two run timing groups), the assumption of spread is likely reasonable, but the peak may be misleading.
 
 Note that these run timing curves were only used to estimate exploitation rates for Skeena sockeye CUs. A conservative assumption of relatively broad run timing (80-110 days) for each sockeye CU was used so that exploitation rates would not be sensitive to small shifts in fishery timing. For some CUs, run timing information is not available, and for some species, run timing is assumed to be the same for all CUs. Run timing for other species was estimated by DFO North Coast staff. See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
 
-#### Catch & Run Size 
+#### Catch & Run Size {#catch-run-size}
 
 Catch and run size, and subsequent exploitation rates for CUs in the Skeena region were calculated by LGL and DFO from the Fisheries Operating System (FOS) and other DFO databases. We accessed these datasets via the North and Central Coast (NCC) Database, maintained by LGL Ltd. [@englishNorthCentralCoast2018]. For a description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#catch-run-size).
 
-#### Recruits-per-Spawner
+#### Recruits-per-Spawner {#recruits-per-spawner}
 
 Recruits-per-spawner data for CUs in the Skeena Region were derived from the DFO age database and CU-level estimates of spawner abundance and catch and run size, accessed from the NCC Database [@englishNorthCentralCoast2018]. For a description of recruits-per-spawner methods, see [Overview of Population Indicators: Recruits-per-Spawner](#recruits-per-spawner).
 
@@ -67,11 +67,11 @@ Recruits-per-spawner data for CUs in the Skeena Region were derived from the DFO
 
 Trends in spawner abundance for CUs in the Skeena Region were derived from the CU-level estimates of spawner abundance accessed from the NCC Database [@englishNorthCentralCoast2018]. For a description of trends in spawner abundance methods, see [Overview of Population Indicators: Trends in Spawner Abundance](#spawner-abundance).
 
-#### Juvenile Surveys
+#### Juvenile Surveys {#juvenile-surveys}
 
 Juvenile abundance data for the Babine (enhanced), Babine/Onerka, Tahlo/Morrison, and Nilkitkwa lake-type sockeye CUs were available in @cox-rogersFisheriesOceansCanada2012. Juvenile abundance estimates for the Gitanyow lake-type sockeye CU were available from @beblowKitwangaRiverSalmon2018. Juvenile abundance of the Slamgeesh lake-type sockeye CU was available from @fernando2017SlamgeeshSalmon2018 and previous reports. For a description of the juvenile survey's indicator, see [Overview of Population Indicators: Juvenile Surveys](#juvenile-surveys).
 
-#### Hatchery Releases
+#### Hatchery Releases {#hatchery-releases}
 
 Hatchery releases in the Skeena Region for all species were provided by DFO (Joan Bateman, DFO Salmonid Enhancement Program). Refer to [Overview of Population Indicators: Hatchery Releases](#hatchery-releases) for details on data and analytical methods.
 
@@ -91,6 +91,7 @@ The pink (even-year) Nass-Skeena Estuary CU spans the boundary between the Skeen
 
 Methods for delineating Chinook CU spawning zones of influence (ZOIs) vary by region in accordance with the CU delineation approach used by DFO. In the Skeena, Nass, and Central Coast regions, Chinook CUs are defined using a more restrictive geographic representation, which resulted in fewer (or no) spawning locations occurring within the CU boundaries. As such, spawning ZOIs for each Chinook CU were delineated using the extent of all 1:20K FWA Assessment Watersheds that directly intersected with Skeena Chinook CU boundaries.
 
+````{=html}
 <!-- ### Results 
 
 #### Biological Status
@@ -165,6 +166,7 @@ kableExtra::kbl(habStat[2:nrow(habStat),],
 ```
 
 --->
+````
 
 ## Nass Region
 
@@ -230,6 +232,7 @@ The pink (even-year) Nass-Skeena Estuary CU spans the boundary between the Skeen
 
 Methods for delineating Chinook CU spawning zones of influence (ZOIs) vary by region in accordance with the CU delineation approach used by DFO. In the Skeena, Nass, and Central Coast regions, Chinook CUs are defined using a more restrictive geographic representation, which resulted in fewer (or no) spawning locations occurring within the CU boundaries. As such, spawning ZOIs for each Chinook CU were delineated using the extent of all 1:20K FWA Assessment Watersheds that directly intersected with Nass Chinook CU boundaries.
 
+````{=html}
 <!-- ### Results 
 
 #### Biological Status
@@ -293,6 +296,7 @@ kableExtra::kbl(habStat[2:nrow(habStat),],
 
 ```
 -->
+````
 
 ## Central Coast Region
 
@@ -322,7 +326,7 @@ There are several nuances to the data sources and analytical methods specific to
 
 **Observed spawner abundance** for CUs in the Central Coast Region is the sum of all spawner survey data documented in NuSEDS, as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). Similar to our work in the Skeena and Nass, we accessed most of these datasets via the North and Central Coast (NCC) database, maintained by LGL Ltd. [@englishNorthCentralCoast2018].
 
-Central Coast CU-level **estimates of spawner abundance** (run reconstructions) were sourced from the North and Central Coast (NCC) database. In addition, updated estimated spawner abundance data for the South Atnarko Lakes CU was accessed from DFO [@Connors2016]. Central Coast CU-level estimated spawner abundance time series were developed for the NCC database according to the expansion factors described in the Skeena Region section above.
+Central Coast CU-level **estimates of spawner abundance** (run reconstructions) were sourced from the North and Central Coast (NCC) database. In addition, updated estimated spawner abundance data for the South Atnarko Lakes CU was accessed from DFO [@connorsAtnarkoSockeyeRecovery2016]. Central Coast CU-level estimated spawner abundance time series were developed for the NCC database according to the expansion factors described in the Skeena Region section above.
 
 #### Run Timing
 
@@ -330,7 +334,7 @@ We currently do not have CU-level **run timing** data for any CUs in the Central
 
 #### Catch & Run Size
 
-**Catch and run size**, and subsequent exploitation rates for CUs on the Central Coast were calculated by DFO and LGL from data in the Fisheries Operating System (FOS) and other DFO databases. Similar to our work in the Skeena and Nass, we accessed most of these datasets via the North and Central Coast (NCC) Database, maintained by LGL Ltd. [@englishNorthCentralCoast2018]. In addition, we sourced updated catch data from DFO for the South Atnarko Lakes CU [@Connors2016]. For a description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#bs-indicators).
+**Catch and run size**, and subsequent exploitation rates for CUs on the Central Coast were calculated by DFO and LGL from data in the Fisheries Operating System (FOS) and other DFO databases. Similar to our work in the Skeena and Nass, we accessed most of these datasets via the North and Central Coast (NCC) Database, maintained by LGL Ltd. [@englishNorthCentralCoast2018]. In addition, we sourced updated catch data from DFO for the South Atnarko Lakes CU [@connorsAtnarkoSockeyeRecovery2016]. For a description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#bs-indicators).
 
 #### Recruits-per-Spawner
 
@@ -368,6 +372,7 @@ Methods for delineating Chinook CU **spawning zones of influence (ZOIs)** vary b
 
 In addition to the spawning habitat information we acquired from the Fisheries Information Summary System (FISS) database and local knowledge derived through expert elicitation, we received additional spawning habitat information from a technical report provided by Diana Chan and Mike Reid (Fisheries, Heiltsuk First Nation) [@Temple2007].
 
+````{=html}
 <!-- ### Results 
 
 #### Biological Status
@@ -438,14 +443,13 @@ kableExtra::kbl(habStat[2:nrow(habStat),],
 
 ```
 -->
+````
 
 ## Fraser Region
 
 The Fraser River watershed and adjacent coastal watersheds (collectively, the "Fraser Region"; (Figure \@ref(fig:fraserMap))) support an incredible diversity of salmon with `r length(which(cu_list$Region == "Fraser"))` CUs. There are 8 CUs in the Fraser Region designated as extinct by DFO, two of which have been reintroduced and are new de novo CUs [Appendix 1](#appendix-1). By species, the Fraser Region supports `r length(which(cu_list$Region == "Fraser" & cu_list$Species == "Chinook"))` Chinook, `r length(which(cu_list$Region == "Fraser" & cu_list$Species == "Chum"))` chum, `r length(which(cu_list$Region == "Fraser" & cu_list$Species == "Coho"))` coho, `r length(which(cu_list$Region == "Fraser" & cu_list$Species %in% c("Pink (even)", "Pink (odd)")))` pink, `r length(which(cu_list$Region == "Fraser" & cu_list$Species == "River sockeye"))` river-type sockeye, `r length(which(cu_list$Region == "Fraser" & cu_list$Species == "Lake sockeye"))` lake-type sockeye, and `r length(which(cu_list$Region == "Fraser" & cu_list$Species == "Steelhead"))` steelhead CUs ([Appendix 1](#appendix-1)).
 
-DFO officially uses the European designation to indicate age class for CUs within the Fraser Region. 
-<!-- Eric - what is this? Add reference of description.  -->
-However, in the Pacific Salmon Explorer and this report, we use the Gilbert-Rich designation, which is more familiar to most users. We made this decision based on feedback from the Population Science Advisory Committee and other local users in the Region. The process of data gathering, synthesis, outreach, and engagement to complete the initial assessments within the Fraser Region was conducted over two years, from the spring of 2018 to 2020.
+DFO officially uses the European designation to indicate age class for CUs within the Fraser Region. <!-- Eric - what is this? Add reference of description.  --> However, in the Pacific Salmon Explorer and this report, we use the Gilbert-Rich designation, which is more familiar to most users. We made this decision based on feedback from the Population Science Advisory Committee and other local users in the Region. The process of data gathering, synthesis, outreach, and engagement to complete the initial assessments within the Fraser Region was conducted over two years, from the spring of 2018 to 2020.
 
 ```{r fraserMap, fig.cap = "Map of the Fraser Region.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
 knitr::include_graphics("figures/fraser_map.png")
@@ -503,7 +507,7 @@ Nuances regarding **biological status** assessments for Fraser CUs are listed be
 
 ##### Southern BC Chinook CUs
 
-For 19 Southern BC Chinook CUs in the Fraser Region, we only visualize biological status assessed in the most recent Wild Salmon Policy report [@DFO2018] and status assessments completed by COSEWIC [@cosewicCOSEWICAssessmentStatus2018] for several reasons. First, there are no CU-level spawner-recruitment data available for these CUs. Thus, we cannot apply our spawner-recruitment benchmarks to assess status (see [Decision Rules for Assessing Biological Status](#bs-decision-rules)). In addition, these CUs likely exhibit low productivity (\<1.5%) and a relatively high exploitation rate (\>40%). As a result, it is inappropriate to use our percentile benchmarks because it has been shown to result in status assessments that are not precautionary [@Holt2018]. The WSP and COSEWIC approaches apply these CUs because they apply multiple metrics and expert judgment to assess status.
+For 19 Southern BC Chinook CUs in the Fraser Region, we only visualize biological status assessed in the most recent Wild Salmon Policy report [@brownPreCOSEWICReviewSouthern2019c] and status assessments completed by COSEWIC [@cosewicCOSEWICAssessmentStatus2018] for several reasons. First, there are no CU-level spawner-recruitment data available for these CUs. Thus, we cannot apply our spawner-recruitment benchmarks to assess status (see [Decision Rules for Assessing Biological Status](#bs-decision-rules)). In addition, these CUs likely exhibit low productivity (\<1.5%) and a relatively high exploitation rate (\>40%). As a result, it is inappropriate to use our percentile benchmarks because it has been shown to result in status assessments that are not precautionary [@Holt2018]. The WSP and COSEWIC approaches apply these CUs because they apply multiple metrics and expert judgment to assess status.
 
 #### Fraser sockeye with cyclic dominance
 
@@ -517,6 +521,7 @@ Nuances regarding habitat pressure indicator data and analytical methods for the
 
 Methods for delineating Chinook CU **spawning zones of influence (ZOIs)** vary by region in accordance with the CU delineation approach used by DFO. In the Fraser and Vancouver Island and Mainland Inlet regions, Chinook CUs are geographically more broadly defined, which means that the methods employed for determining pink, chum, and coho spawning ZOIs were also applicable to Chinook CUs. The localized spawning ZOI for each Fraser Chinook CU was delineated by capturing the extent of all 1:20K FWA assessment watersheds that directly intersect with known spawning locations for Chinook.
 
+````{=html}
 <!-- ### Results 
 
 #### Biological Status
@@ -587,11 +592,11 @@ kableExtra::kbl(habStat[2:nrow(habStat),],
 ```
 
 -->
+````
 
 ## Vancouver Island & Mainland Inlets
 
 Vancouver Island & Mainland Inlets on the Pacific Salmon Explorer includes `r length(which(cu_list$Region == "Vancouver Island & Mainland Inlets"))` distinct CUs, including all five species of Pacific salmon and steelhead. By species, the Region supports `r length(which(cu_list$Region == "Vancouver Island & Mainland Inlets" & cu_list$Species == "Chinook"))` Chinook, `r length(which(cu_list$Region == "Vancouver Island & Mainland Inlets" & cu_list$Species == "Chum"))` chum, `r length(which(cu_list$Region == "Vancouver Island & Mainland Inlets" & cu_list$Species == "Coho"))` coho, `r length(which(cu_list$Region == "Vancouver Island & Mainland Inlets" & cu_list$Species %in% c("Pink (even)", "Pink (odd)")))` pink, `r length(which(cu_list$Region == "Vancouver Island & Mainland Inlets" & cu_list$Species == "River sockeye"))` river-type sockeye, `r length(which(cu_list$Region == "Vancouver Island & Mainland Inlets" & cu_list$Species == "Lake sockeye"))` lake-type sockeye, and `r length(which(cu_list$Region == "Vancouver Island & Mainland Inlets" & cu_list$Species == "Steelhead"))` steelhead CUs ([Appendix 1](#appendix-1)).
-
 
 We defined the Vancouver Island & Mainland Inlets Region according to similar criteria used on the Central Coast: geographic proximity to other Regions within the Pacific Salmon Explorer, geographic extent of CUs mainly contained within the Region and FWA Watershed Groups. The resulting Vancouver Island & Mainland Inlets Region (Figure \@ref(fig:VIMIMap)) encompasses 76,411 km$^2$ across Vancouver Island and the adjacent mainland fjords and inlets, from Burrard Inlet and Howe Sound in the south to Smith Inlet and the northern Broughton Archipelago in the north. The process of data gathering, synthesis, outreach, and engagement to complete the initial assessments within the Vancouver Island & Mainland Inlets Region was conducted over two years, from the spring of 2018 to 2020.
 
@@ -599,7 +604,7 @@ For the Vancouver Island & Mainland Inlet Region, we engaged with First Nations,
 
 ### Conservation Unit Changes
 
-The Sakinaw sockeye CU was declared extinct in the wild by DFO as of 2009 [@DFO2018]. However, there is still a population from a captive broodstock program maintaining a hatchery-derived population in Sakinaw Lake. However, since this CU was immediately reintroduced from broodstock from the same CU, it does not meet the criteria for being declared de novo [@Wade2019].
+The Sakinaw sockeye CU was declared extinct in the wild by DFO as of 2009 [@fisheriesandoceanscanadadfo2017FraserSockeye2018]. However, there is still a population from a captive broodstock program maintaining a hatchery-derived population in Sakinaw Lake. However, since this CU was immediately reintroduced from broodstock from the same CU, it does not meet the criteria for being declared de novo [@Wade2019].
 
 ```{r VIMIMap, fig.cap = "Map of the Vancouver Island & Mainland Inlets Region.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
 knitr::include_graphics("figures/VIMI_region.png")
@@ -651,7 +656,7 @@ Nuances regarding **biological status** assessments forVancouver Island & Mainla
 
 ##### Southern BC Chinook CUs
 
-For 14 Southern BC Chinook CUs in the Vancouver Island & Mainland Inlets Region, we only visualize biological status as assessed in the most recent Wild Salmon Policy report [@DFO2018 and COSEWIC status assessments [@cosewicCOSEWICAssessmentStatus2018] for several reasons [@brown2020SummaryAbundance2020]. First, there are no CU-level spawner-recruitment data available for these CUs. Thus, we cannot apply our spawner-recruitment benchmarks to assess status (see [Decision Rules for Assessing Biological Status](#bs-decision-rules)). In addition, these CUs exhibit low productivity (\<1.5%) and a relatively high exploitation rate (\>40%). As a result, it is inappropriate to our percentile benchmarks because it has been shown to potentially result in status assessments that are not precautionary [@Holt2018]. Therefore, the WSP and COSEWIC approaches apply to these CUs because they apply multiple metrics and expert judgment to assess status.
+For 14 Southern BC Chinook CUs in the Vancouver Island & Mainland Inlets Region, we only visualize biological status as assessed in the most recent Wild Salmon Policy report [@brownPreCOSEWICReviewSouthern2019c and COSEWIC status assessments [@cosewicCOSEWICAssessmentStatus2018] for several reasons [@brown2020SummaryAbundance2020]. First, there are no CU-level spawner-recruitment data available for these CUs. Thus, we cannot apply our spawner-recruitment benchmarks to assess status (see [Decision Rules for Assessing Biological Status](#bs-decision-rules)). In addition, these CUs exhibit low productivity (\<1.5%) and a relatively high exploitation rate (\>40%). As a result, it is inappropriate to our percentile benchmarks because it has been shown to potentially result in status assessments that are not precautionary [@Holt2018]. Therefore, the WSP and COSEWIC approaches apply to these CUs because they apply multiple metrics and expert judgment to assess status.
 
 ### Habitat Data and Analytical Methods
 
@@ -673,6 +678,7 @@ A large portion of southeast Vancouver Island is privately managed forests. As s
 
 In addition to the spawning habitat information we acquired from the Fisheries Information Summary System (FISS) database and local knowledge derived through expert elicitation, we received additional spawning habitat information from a technical report provided by Graham Murrell (Fisheries Manager, Hupacasath First Nation; @Wright2008).
 
+````{=html}
 <!-- ### Results 
 
 #### Biological Status
@@ -739,10 +745,11 @@ kableExtra::kbl(habStat[2:nrow(habStat),],
 ```
 
 -->
+````
 
 ## Haida Gwaii Region
 
-The archipelago of Haida Gwaii is located off the North Central Coast of BC (Figure \@ref(fig:hgMap)), composed of two main islands; Graham Island (northern) and Moresby Island (southern), with hundreds of other smaller islands in total composing nearly 10,000 square kilometers. The Hecate Strait separates Haida Gwaii from mainland British Columbia by about 100 kilometers. Salmon-bearing waters on Haida Gwaii range from an abundance of small streams along the many kilometers of coastline to larger well-known salmon rivers such as the Yakoun and Tlell Rivers. All five species of Pacific salmon spawn and rear on Haida Gwaii within `r length(which(cu_list$Region == "Haida Gwaii")) ` CUs. These CUs include: `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Chinook")) ` Chinook, `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Chum")) ` chum, `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Coho")) ` coho, `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Pink (even)")) ` pink (even-year), `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Pink (odd)")) ` pink (odd-year), `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Lake sockeye")) ` sockeye (lake-type), `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "River sockeye")) ` sockeye (river-type), and `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Steelhead")) ` steelhead CU. The process of data gathering and synthesis to complete the initial assessments within the Haida Gwaii Region was completed over one year (2021).
+The archipelago of Haida Gwaii is located off the North Central Coast of BC (Figure \@ref(fig:hgMap)), composed of two main islands; Graham Island (northern) and Moresby Island (southern), with hundreds of other smaller islands in total composing nearly 10,000 square kilometers. The Hecate Strait separates Haida Gwaii from mainland British Columbia by about 100 kilometers. Salmon-bearing waters on Haida Gwaii range from an abundance of small streams along the many kilometers of coastline to larger well-known salmon rivers such as the Yakoun and Tlell Rivers. All five species of Pacific salmon spawn and rear on Haida Gwaii within `r length(which(cu_list$Region == "Haida Gwaii"))` CUs. These CUs include: `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Chinook"))` Chinook, `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Chum"))` chum, `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Coho"))` coho, `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Pink (even)"))` pink (even-year), `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Pink (odd)"))` pink (odd-year), `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Lake sockeye"))` sockeye (lake-type), `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "River sockeye"))` sockeye (river-type), and `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Steelhead"))` steelhead CU. The process of data gathering and synthesis to complete the initial assessments within the Haida Gwaii Region was completed over one year (2021).
 
 In order to develop the Pacific Salmon Explorer for Haida Gwaii, we engaged with the Haida Nation, DFO, the Gowgaia Institute, Parks Canada, and other salmon experts in Haida Gwaii. We received input and feedback throughout the engagement processes, which included an in-person meeting in September 2021, meeting follow-up, and extended outreach.
 
@@ -840,15 +847,15 @@ The spatial data processing method for calculating equivalent clearcut area (ECA
 
 ECA disturbance types were identified as "recoverable" and "non-recoverable." Non-recoverable disturbance types are those where the land disturbance is considered permanent and recorded as 100% ECA. Non-recoverable disturbance types include railway and airports, transmission lines, major rights of ways, mining, oil & gas infrastructure, seismic infrastructure (not present on Haida Gwaii), agriculture, and urban areas. Recoverable disturbance types, where the hydrologic function of the landscape is expected to recover over time (i.e. second-growth forest), include harvested areas, burned areas, and areas impacted by mountain pine beetle (not present on Haida Gwaii). ECA recovery curves identify a recovery factor based on stand height. Projected stand height is sourced from the VRI dataset. ECA recovery curves were updated in 2019 to differentiate recovery rates for interior and coastal forests (FREP 2019).
 
-A "non-recoverable" layer was created by first merging and dissolving all non-recoverable disturbance types. Harvested and burned area polygons were dissolved based on projected stand height and then merged with the non-recoverable layer. Lastly, harvested area and burned area polygons without stand height but with a date of disturbance were dissolved based on time since disturbance (years) and merged with the non-recoverable and recoverable polygons with stand height. This combined ECA layer was overlaid with the FWA assessment watersheds. The growth recovery of each polygon was calculated based on stand height using the coastal recovery curve or using a time since disturbance surrogate method where stand height information was not readily available. The growth recovery of each recoverable polygon with stand height information was calculated using the following equation: 
+A "non-recoverable" layer was created by first merging and dissolving all non-recoverable disturbance types. Harvested and burned area polygons were dissolved based on projected stand height and then merged with the non-recoverable layer. Lastly, harvested area and burned area polygons without stand height but with a date of disturbance were dissolved based on time since disturbance (years) and merged with the non-recoverable and recoverable polygons with stand height. This combined ECA layer was overlaid with the FWA assessment watersheds. The growth recovery of each polygon was calculated based on stand height using the coastal recovery curve or using a time since disturbance surrogate method where stand height information was not readily available. The growth recovery of each recoverable polygon with stand height information was calculated using the following equation:
 
-$$ ECA = A \times C \times (1-R/100) $$
-where $A$ is the original polygon area, $C$ is the proportion of the opening covered by functional regeneration (determined from Table A2.1, MOF, 2001), and $R$ is the recovery factor (for coastal forests from @Hudson2007 and from @Winkler2015 for interior forests). For non-recoverable polygons, there is no functional regeneration or recovery factor, so for these polygons, $C$ will be equal to 1, and $R$ will be equal to 0. Where stand height is not available (e.g. for harvested areas sourced from the Gowgaia Institute) a time since disturbance surrogate was used to estimate ECA: 1-10 yrs = 100% ECA, 11-20 = 75%, 21-40 = 25% and 40-50 yrs = 5%, \>50 years = 0%[^BC Cumulative Effects Framework (BC CEF) ECA method includes an additional step to approximate stand height where not available in VRI before defaulting to this time since disturbance surrogate ECA estimate. This data was not available to us at the time of our assessments but our upcoming work to revise our habitat indicator methods will aim to source ECA directly from BC CEF or to update our methods to fill stand height data gaps where possible.] . ECA was summed for each FWA watershed then divided by the total watershed area to give an ECA percentage for each watershed.
+$$ ECA = A \times C \times (1-R/100) $$ where $A$ is the original polygon area, $C$ is the proportion of the opening covered by functional regeneration (determined from Table A2.1, MOF, 2001), and $R$ is the recovery factor (for coastal forests from @Hudson2007 and from @Winkler2015 for interior forests). For non-recoverable polygons, there is no functional regeneration or recovery factor, so for these polygons, $C$ will be equal to 1, and $R$ will be equal to 0. Where stand height is not available (e.g. for harvested areas sourced from the Gowgaia Institute) a time since disturbance surrogate was used to estimate ECA: 1-10 yrs = 100% ECA, 11-20 = 75%, 21-40 = 25% and 40-50 yrs = 5%, \>50 years = 0%[\^BC Cumulative Effects Framework (BC CEF) ECA method includes an additional step to approximate stand height where not available in VRI before defaulting to this time since disturbance surrogate ECA estimate. This data was not available to us at the time of our assessments but our upcoming work to revise our habitat indicator methods will aim to source ECA directly from BC CEF or to update our methods to fill stand height data gaps where possible.] . ECA was summed for each FWA watershed then divided by the total watershed area to give an ECA percentage for each watershed.
 
 #### Spawning Habitat Information from Expert Knowledge Holders
 
 In addition to the spawning habitat information we acquired from DataBC (primarily from the Fisheries Information Summary System (FISS) database), we collaborated with representatives from Haida Fisheries, Fisheries and Oceans Canada's Salmon Enhancement Program, Parks Canada, the Gowgaia Institute, the Hecate Strait Streamkeepers, and independent salmon experts to identify local salmon spawning locations. The collective identified 16 new salmon-bearing watersheds that had not been previously documented, further enhancing the baseline of available information for Haida Gwaii salmon.
 
+````{=html}
 <!-- ### Results 
 
 #### Biological Status
@@ -916,6 +923,7 @@ kableExtra::kbl(habStat[2:nrow(habStat),],
 ```
 
 -->
+````
 
 ## Columbia Region
 
@@ -1005,6 +1013,7 @@ where A is the original polygon area, C is the proportion of the opening covered
 
 Spawning areas identified in the Known BC Fish Observations and Distributions were minimal. We supplemented this data with local knowledge and information in published literature, including sockeye [@stockwellSummaryOkanaganSockeye2003; @hyattChasingIllusionSuccessful2019; @stockwellMethodsSummaryObservations2020] and Chinook [@matylewichSummaryOkanaganChinook2019; @mahonyRecoveryPotentialAssessment2019].
 
+````{=html}
 <!-- ### Results
 
 #### Biological Status
@@ -1054,3 +1063,4 @@ kableExtra::kbl(habStat[2:nrow(habStat),],
 ```
 
  -->
+````

@@ -9,6 +9,11 @@ bibliography: tech-report-bib.json
 csl: canadian-journal-of-fisheries-and-aquatic-sciences.csl 
 link-citations: true
 description: null
+editor_options:
+  markdown:
+    canonical: true
+html_document:
+    anchor_sections: false
 ---
 
 # Preface {.unnumbered}

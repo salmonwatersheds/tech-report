@@ -2,7 +2,11 @@
 	{
 		"id": "NelitzEtAl2007RefiningHabitatIndicators",
 		"type": "report",
+		"event-place": "Kamloops, BC",
+		"genre": "Final report prepared by ESSA Technologies Ltd. and Limnotek Research and Development for Fisheries and Oceans Canada",
+		"publisher-place": "Kamloops, BC",
 		"title": "Refining habitat indicators for Strategy 2 of the Wild Salmon Policy: Practical assessment of indicators",
+		"URL": "https://salmonwatersheds.ca/document/lib_11/",
 		"author": [
 			{
 				"family": "Nelitz",
@@ -5087,5 +5091,37 @@
 				"given": "Brian"
 			}
 		]
+	},
+	{
+		"id": "http://zotero.org/groups/5243880/items/T9USTT8E",
+		"type": "report",
+		"event-place": "Kamloops, BC",
+		"genre": "Final report prepared by ESsA Technologies Ltd. for Fisheries and Oceans Canada",
+		"publisher-place": "Kamloops, BC",
+		"title": "Refining habitat indicators for Strategy 2 of the Wild Salmon Policy: Identifying metrics and benchmarks",
+		"URL": "https://salmonwatersheds.ca/document/lib_10/",
+		"author": [
+			{
+				"family": "Nelitz",
+				"given": "Marc"
+			},
+			{
+				"family": "Wieckowski",
+				"given": "Katherine"
+			},
+			{
+				"family": "Porter",
+				"given": "Marc"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2007",
+					9,
+					5
+				]
+			]
+		}
 	}
 ]

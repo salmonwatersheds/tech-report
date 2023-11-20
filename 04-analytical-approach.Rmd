@@ -2,7 +2,7 @@
 
 ## Using Indicators to Inform the Status of salmon Conservation Units and their Habitats {.unnumbered}
 
-We apply a suite of indicators to assess both the biological and habitat status of salmon CUs. Defined as "measures of pressures, states, and/or responses", indicators depict the condition of species, habitats, and/or systems to improve one's understanding of the linkages among drivers, stressors, conditions, and management actions **(ESSA, 2020)**. The indicators and approach that we use align with Strategies 1 and 2 of the Wild Salmon Policy [@DFO2005] that call for standardized assessment and monitoring of the salmon CUs and their freshwater habitats [@HoltEtAl2009IndicatorsStatusBenchmarks; @StalbergEtAl2009CanadaPolicyConservation].
+We apply a suite of indicators to assess both the biological and habitat status of salmon Conservation Units (CUs). Defined as "measures of pressures, states, and/or responses", indicators depict the condition of species, habitats, and/or systems to improve one's understanding of the linkages among drivers, stressors, conditions, and management actions [@NelitzEtAl2007RefiningHabitatIndicatorsa]. The indicators and approach that we use align with Strategies 1 and 2 of the Wild Salmon Policy [@DFO2005] that call for standardized assessment and monitoring of the salmon CUs and their freshwater habitats [@HoltEtAl2009IndicatorsStatusBenchmarks; @StalbergEtAl2009CanadaPolicyConservation].
 
 Relevant salmon indicators for informing population and habitat status have several criteria:
 

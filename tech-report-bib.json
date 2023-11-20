@@ -2,7 +2,11 @@
 	{
 		"id": "NelitzEtAl2007RefiningHabitatIndicators",
 		"type": "report",
+		"event-place": "Kamloops, BC",
+		"genre": "Final report prepared by ESSA Technologies Ltd. and Limnotek Research and Development for Fisheries and Oceans Canada",
+		"publisher-place": "Kamloops, BC",
 		"title": "Refining habitat indicators for Strategy 2 of the Wild Salmon Policy: Practical assessment of indicators",
+		"URL": "https://salmonwatersheds.ca/document/lib_11/",
 		"author": [
 			{
 				"family": "Nelitz",
@@ -1232,7 +1236,7 @@
 		"container-title": "Conservation Biology",
 		"issue": "5",
 		"page": "894-904",
-		"title": "Reliability of Indicators of Decline in Abundance.",
+		"title": "Reliability of Indicators of Decline in Abundance",
 		"URL": "https://doi.org/10.1111/j.1523-1739.2012.01882.x",
 		"volume": "26",
 		"author": [
@@ -1871,7 +1875,7 @@
 		"event-place": "Vancouver, BC",
 		"publisher": "Report prepared by ESSA Technologies Ltd. for the Pacific Salmon Foundation.",
 		"publisher-place": "Vancouver, BC",
-		"title": "Skeena Lake Sockeye Conservation Units: Habitat report cards.",
+		"title": "Skeena Lake Sockeye Conservation Units: Habitat report cards",
 		"URL": "https://salmonwatersheds.ca/library/lib_277/",
 		"author": [
 			{
@@ -2421,15 +2425,24 @@
 	},
 	{
 		"id": "BaxterUpperSustutLower",
-		"type": "article-journal",
-		"issue": "June 1997",
-		"title": "Upper Sustut , Lower Sustut , and Bear River Steelhead : Summary of Current Data and Status Review , 1997 by",
+		"type": "report",
+		"event-place": "Smithers, BC",
+		"publisher": "British Columbia Ministry of Environment, Lands, and Parks. Fisheries Branch. Skeena Region.",
+		"publisher-place": "Smithers, BC",
+		"title": "Upper Sustut , Lower Sustut , and Bear River Steelhead : Summary of Current Data and Status Review , 1997",
 		"author": [
 			{
 				"family": "Baxter",
 				"given": "James S"
 			}
-		]
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1997"
+				]
+			]
+		}
 	},
 	{
 		"id": "SmithWard2000TrendsWildAdult",
@@ -3310,28 +3323,6 @@
 		]
 	},
 	{
-		"id": "BritishColumbiaMinistryofForestLandsandNaturalResourcesOperations-FishandWildlifeBranch2016ProvincialFrameworkSteelhead",
-		"type": "report",
-		"event-place": "Victoria, BC",
-		"publisher": "Province of British Columbia",
-		"publisher-place": "Victoria, BC",
-		"title": "Provincial Framework for Steelhead Management in British Columbia",
-		"URL": "https://www2.gov.bc.ca/assets/gov/environment/plants-animals-and-ecosystems/fish-fish-habitat/fishery-resources/provincial-framework-for-steelhead-management-in-bc-april-2016.pdf",
-		"author": [
-			{
-				"family": "British Columbia Ministry of Forest, Lands, and Natural Resources Operations - Fish and Wildlife Branch",
-				"given": ""
-			}
-		],
-		"issued": {
-			"date-parts": [
-				[
-					"2016"
-				]
-			]
-		}
-	},
-	{
 		"id": "ProvinceofBritishColumbia2005SteelheadStreamClassification",
 		"type": "report",
 		"abstract": "POLICY STATEMENT Purpose: The use of hatchery steelhead (Oncorhynchus mykiss) and/or retention of wild steelhead can provide angling benefits, but may also impose risks to wild stocks. The overall purpose of this policy is to manage the risks in order to maintain healthy, self-sustaining wild steelhead stocks. It is the Policy of the Ministry: 1. That all streams containing steelhead will be classified as: (a) wild; or (b) hatchery-augmented. 2. Streams will be classified as wild unless specifically designated as hatchery-augmented. 3. That streams designated \"wild\" will be managed to maintain and protect the abundance, distribution and genetic diversity of indigenous steelhead stocks in the province while providing angling opportunities when stock abundance permits. 4. That streams designated \"hatchery-augmented\" will be managed to maintain or develop new angling opportunities while minimizing risks to wild indigenous steelhead.",
@@ -3695,11 +3686,6 @@
 				]
 			]
 		}
-	},
-	{
-		"id": "Skeena_CatalogueofSalmonStreamsandSpawningEscapementsofS_Hanocketal1983Pdfa",
-		"type": "article-journal",
-		"title": "Skeena_CatalogueofSalmonStreamsandSpawningEscapementsofS_Hanocketal1983.pdf"
 	},
 	{
 		"id": "WilsonEtAl2021PhenologicalMismatchCarryover",
@@ -5105,5 +5091,37 @@
 				"given": "Brian"
 			}
 		]
+	},
+	{
+		"id": "NelitzEtAl2007RefiningHabitatIndicatorsa",
+		"type": "report",
+		"event-place": "Kamloops, BC",
+		"genre": "Final report prepared by ESsA Technologies Ltd. for Fisheries and Oceans Canada",
+		"publisher-place": "Kamloops, BC",
+		"title": "Refining habitat indicators for Strategy 2 of the Wild Salmon Policy: Identifying metrics and benchmarks",
+		"URL": "https://salmonwatersheds.ca/document/lib_10/",
+		"author": [
+			{
+				"family": "Nelitz",
+				"given": "Marc"
+			},
+			{
+				"family": "Wieckowski",
+				"given": "Katherine"
+			},
+			{
+				"family": "Porter",
+				"given": "Marc"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2007",
+					9,
+					5
+				]
+			]
+		}
 	}
 ]

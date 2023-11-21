@@ -1,3 +1,3 @@
 # Appendix 11: Roll-up Rules for Salmon Habitat Assessments {#appendix-11 .unnumbered}
 
-Coming soon!
+The habitat assessments are currently undergoing revision, and new information will be available here in 2024 that reflects the updated approach to processing spatial habitat data. For a description of the approach used from 2016 - 2024, see [previous versions of this technical report](https://salmonwatersheds.ca/document/lib_475/).

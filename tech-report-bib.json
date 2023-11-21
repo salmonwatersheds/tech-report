@@ -5123,5 +5123,51 @@
 				]
 			]
 		}
+	},
+	{
+		"id": "DavidBustard1993",
+		"type": "report",
+		"event-place": "Smithers, BC",
+		"publisher": "Prepared for BC Eniviroment",
+		"publisher-place": "Smithers, BC",
+		"title": "Juvenile Steelhead Surveys in the Kitwanga, Morice, Sustut, and Zymoetz Rivers 1992",
+		"URL": "https://a100.gov.bc.ca/pub/acat/documents/r17456/Bustard1993combo_1260819118944_bcdbf9a37fb58b3f9e997fca38ec6e8dc9d50e64bbc17b1ab9d8ba7874fb928c.pdf",
+		"author": [
+			{
+				"family": "David Bustard & Associates",
+				"given": ""
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1993"
+				]
+			]
+		}
+	},
+	{
+		"id": "WilliamsonCJ2002UpperSkeena",
+		"type": "report",
+		"event-place": "Smithers, BC",
+		"language": "en",
+		"number": "Skeena Fisheries Report SK #137",
+		"publisher": "British Columbia Ministry of Water, Land and Air Protection. Fisheries Branch. Skeena Region.",
+		"publisher-place": "Smithers, BC",
+		"source": "Zotero",
+		"title": "Upper Skeena and Kispiox River Juvenile Steelhead Surveys 1999",
+		"author": [
+			{
+				"family": "Williamson",
+				"given": "C J"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2002"
+				]
+			]
+		}
 	}
 ]

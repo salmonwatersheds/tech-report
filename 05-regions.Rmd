@@ -51,7 +51,7 @@ For Skeena Chinook, the methods used to derive spawner abundance estimates for C
 
 In contrast to Chinook, there has been more consistent distribution and quantity of monitoring effort for Skeena sockeye CUs dating back to 1960. For Skeena sockeye CUs, the spawner abundance time series starts in 1960 because this was the first year of pre-1982 run reconstruction analysis (Les Jantz, DFO, pers. comm.). The fact that a large portion of Skeena sockeye have been enumerated at the Babine fence since 1949 provides greater confidence in the annual escapement estimates for sockeye than for Skeena Chinook in the 1960-1984 period.
 
-For steelhead, we did not apply expansion procedures to observed spawner abundance data to produce estimated spawner abundance. Instead, where spawner survey data approximate the CU-scale (i.e. counts or estimates are produced that are inclusive of all steelhead populations in the CU), we present these data as estimated spawner abundance. Data sources for these data include @SkeenaFisheriesBranch2019UpperSustutRiver and @Saimoto2011. For the case of the Bulkley and Morice CUs, estimates from @Saimoto2011 represent the total number of spawners returning to these two CUs combined and there is not precedence for estimating the proportion of spawners returning to each individual CU. We visualize these estimates as the estimated spawner abundance for both the Bulkley and Morice CUs (i.e. the same estimated spawner abundance data are visualized for the spawner abundance indicator for both CUs).
+For steelhead, we did not apply expansion procedures to observed spawner abundance data to produce estimated spawner abundance. Instead, where spawner survey data approximate the CU-scale (i.e. counts or estimates are produced that are inclusive of all steelhead populations in the CU), we present these data as estimated spawner abundance. Data sources for these data include custodians at the Skeena Region Office of the Province of BC's Fish and Wildlife Branch, @SkeenaFisheriesBranch2019UpperSustutRiver, and @Saimoto2011. For the case of the Bulkley and Morice CUs, estimates from @Saimoto2011 represent the total number of spawners returning to these two CUs combined and there is not precedence for estimating the proportion of spawners returning to each individual CU. We visualize these estimates as the estimated spawner abundance for both the Bulkley and Morice CUs (i.e. the same estimated spawner abundance data are visualized for the spawner abundance indicator for both CUs).
 
 #### Run Timing {#run-timing}
 
@@ -73,15 +73,15 @@ Trends in spawner abundance for CUs in the Skeena Region were derived from the C
 
 #### Juvenile Surveys {#juvenile-surveys}
 
-Juvenile abundance data for the Babine (enhanced), Babine/Onerka, Tahlo/Morrison, and Nilkitkwa lake-type sockeye CUs were available in @cox-rogersFisheriesOceansCanada2012. Juvenile abundance estimates for the Gitanyow lake-type sockeye CU were available from @beblowKitwangaRiverSalmon2018. Juvenile abundance of the Slamgeesh lake-type sockeye CU was available from @fernando2017SlamgeeshSalmon2018 and previous reports. For steelhead, data were sourced from For a description of the juvenile survey's indicator, see [Overview of Population Indicators: Juvenile Surveys](#juvenile-surveys).
+Juvenile abundance data for the Babine (enhanced), Babine/Onerka, Tahlo/Morrison, and Nilkitkwa lake-type sockeye CUs were available in @cox-rogersFisheriesOceansCanada2012. Juvenile abundance estimates for the Gitanyow lake-type sockeye CU were available from @beblowKitwangaRiverSalmon2018. Juvenile abundance of the Slamgeesh lake-type sockeye CU was available from @fernando2017SlamgeeshSalmon2018 and previous reports. For steelhead, data were sourced for the Kispoix, Middle Skeena, Morice, and Skeena Coastal Summers CUs from @DavidBustard1993 and @WilliamsonCJ2002UpperSkeena. For a description of the juvenile survey's indicator, see [Overview of Population Indicators: Juvenile Surveys](#juvenile-surveys).
 
 #### Hatchery Releases {#hatchery-releases}
 
-Hatchery releases in the Skeena Region for all species were provided by DFO (Joan Bateman, DFO Salmonid Enhancement Program). Refer to [Overview of Population Indicators: Hatchery Releases](#hatchery-releases) for details on data and analytical methods.
+Hatchery releases in the Skeena Region for all species were provided by DFO (Joan Bateman, DFO Salmonid Enhancement Program). For steelhead, Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia\'s [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#0){style="font-size: 11pt;"} for details on data and analytical methods.
 
 #### Biological Status
 
-The biological status assessments for CUs in the Skeena Region reflect data sourced from the NCC database and are current up to 2017. <!-- Eric - need to check this. I think Skeena is updated to 2019? --> The original approach and results for Skeena biological status assessments are described in @kormanBenchmarkAnalysisPacific2013. As new data become available, we will update the analyses and results in this report and the Pacific Salmon Explorer. See [Benchmarks for Assessing Biological Status](#benchmarks-biostatus) and [Decision Rules for Assessing Biological Status](#bs-decision-rules) for more details on biological status assessment methods.
+The biological status assessments for CUs in the Skeena Region reflect data sourced from the NCC database and are current up to 2017. <!-- Eric - need to check this. I think Skeena is updated to 2019? --> For steelhead, data was sourced from data custodians at the Skeena Region Office of the Province of BC's Fish and Wildlife Branch and from @SkeenaFisheriesBranch2019UpperSustutRiver and are current up to 2022. The original approach and results for Skeena biological status assessments are described in @kormanBenchmarkAnalysisPacific2013. As new data become available, we will update the analyses and results in this report and the Pacific Salmon Explorer. See [Benchmarks for Assessing Biological Status](#benchmarks-biostatus) and [Decision Rules for Assessing Biological Status](#bs-decision-rules) for more details on biological status assessment methods.
 
 ### Habitat Data and Analytical Methods
 
@@ -184,17 +184,17 @@ knitr::include_graphics("figures/nass_map.png")
 
 ### Population Data and Analytical Methods
 
-As with the Skeena Region, many of the datasets necessary to understand the dynamics of salmon CUs in the Nass Region have been compiled and stored through the North and Central Coast (NCC) Database [@englishNorthCentralCoast2018; see Skeena Region]. In addition to these data, we also compiled additional data for six CUs (Lower Nass and Upper Nass coho; Fred Wright, Damodochax, and Meziadin lake-type sockeye; Lower Nass-Portland river-type sockeye) through a review of preliminary data with Nisga'a Lisims Government and LGL Limited staff. Details regarding nuances to the data and analytical methods that are specific to the Nass Region are described below.
+As with the Skeena Region, many of the datasets necessary to understand the dynamics of salmon CUs in the Nass Region have been compiled and stored through the North and Central Coast (NCC) Database [@englishNorthCentralCoast2018; see Skeena Region]. In addition to these data, we also compiled additional data for six CUs (Lower Nass and Upper Nass coho; Fred Wright, Damodochax, and Meziadin lake-type sockeye; Lower Nass-Portland river-type sockeye) through a review of preliminary data with Nisga'a Lisims Government and LGL Limited staff. For steelhead, data were sourced from @lgllimited2023 (see our [steelhead-specific Github repository](https://github.com/salmonwatersheds/steelhead-status) for all raw steelhead population data compiled). Details regarding nuances to the data and analytical methods that are specific to the Nass Region are described below.
 
 #### Spawner Surveys
 
-Spawner survey data for streams in the Nass Region were sourced from DFO's New Salmon Escapement Database (NuSEDS). For a description of the spawner survey indicator, see [Overview of Population Indicators: Spawner Surveys](#spawner-surveys).
+Spawner survey data for streams in the Nass Region were sourced from DFO's New Salmon Escapement Database (NuSEDS). For a description of the spawner survey indicator, see [Overview of Population Indicators: Spawner Surveys](#spawner-surveys). For steelhead, spawner survey data were provided directly from the Nisga'a Lisims Goverment Fish and Wildlife and LGL Limited [@lgllimited2023].
 
 #### Spawner Abundance
 
 Observed spawner abundance for CUs in the Nass Region is the sum of all spawner survey data as documented in NuSEDS, as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). Nass Region CU-level estimates of spawner abundance (run reconstructions) were sourced from the North and Central Coast (NCC) Database. Nass CU-level estimated spawner abundance time series were developed for the NCC Database according to the expansion factors described in the Skeena Region section above.
 
-In addition, CU-level estimates of spawner abundance for five Nass CUs are derived from additional spawner enumeration methods. Specifically, three CUs have mark-recapture programs operated by Nisga'a Fisheries, and Wildlife's lower Nass River fish wheels have mark-recapture programs. These programs have been part of Nisga'a Treaty fisheries work since 1992.
+In addition, CU-level estimates of spawner abundance for five Nass CUs are derived from additional spawner enumeration methods. Specifically, three CUs have mark-recapture programs operated by Nisga'a Fisheries, and Wildlife's lower Nass River fish wheels have mark-recapture programs. These programs have been part of Nisga'a Treaty fisheries work since 1992. For steelhead, spawner abundance data were provided directly from the Nisga'a Lisims Goverment Fish and Wildlife and LGL Limited [@lgllimited2023].
 
 #### Run Timing
 
@@ -210,7 +210,7 @@ Recruits-per-spawner data for CUs in the Nass Region were derived from the DFO a
 
 #### Trends in Spawner Abundance
 
-Trends in spawner abundance for CUs on the Central Coast were derived from the CU-level estimates of spawner abundance accessed from the NCC database [@englishNorthCentralCoast2018]. For a description of trends in spawner abundance methods, see [Overview of Population Indicators: Trends in Spawner Abundance](#spawner-abundance).
+Trends in spawner abundance for CUs on the Central Coast were derived from the CU-level estimates of spawner abundance accessed from the NCC database [@englishNorthCentralCoast2018, @lgllimited2023]. For a description of trends in spawner abundance methods, see [Overview of Population Indicators: Trends in Spawner Abundance](#spawner-abundance).
 
 #### Juvenile Surveys
 
@@ -218,11 +218,11 @@ Trends in spawner abundance for CUs on the Central Coast were derived from the C
 
 #### Hatchery Releases
 
-Hatchery releases in the Nass Region for all species were provided by DFO (Joan Bateman, Salmonid Enhancement Program). Refer to [Overview of Population Indicators: Hatchery Releases](#hatchery-releases) for details on data and analytical methods.
+Hatchery releases in the Nass Region for all species were provided by DFO (Joan Bateman, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia\'s [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#0){style="font-size: 11pt;"} for details on data and analytical methods.
 
 #### Biological Status
 
-The biological status assessments for CUs in the Nass Region currently reflect data sourced from the NCC Database that are current to *2017*. As new data become available, we will update the analyses and results in this report and the Pacific Salmon Explorer. See [Benchmarks for Assessing Biological Status](#benchmarks-biostatus) and [Decision Rules for Assessing Biological Status](#bs-decision-rules) for more details on biological status assessment methods.
+The biological status assessments for CUs in the Nass Region currently reflect data sourced from the NCC Database that are current to *2017*. For steelhead, spawner abundance data were provided by the Nisga'a Lisims Goverment Fish and Wildlife and LGL Limited and are current up to 2022 [@lgllimited2023]. As new data become available, we will update the analyses and results in this report and the Pacific Salmon Explorer. See [Benchmarks for Assessing Biological Status](#benchmarks-biostatus) and [Decision Rules for Assessing Biological Status](#bs-decision-rules) for more details on biological status assessment methods.
 
 ### Habitat Data and Analytical Methods
 
@@ -314,13 +314,15 @@ For the Central Coast Region, we worked with two technical committees (one for t
 
 As part of the Technical Committee review process, we removed two CUs from the project (Whalen Lake and Owikeno-Late sockeye (lake-type) CUs). The Whalen Lake sockeye CU is included in [@holtbyConservationUnitsPacific2007], but long-time Charter Patrolman and Technical Committee member, Stan Hutchings, recommended removing it from the list of CUs. An impassable waterfall prevents sockeye from accessing Whalen Lake, which is the spawning and rearing lake for this CU. As such, we removed this CU from the project. The Owikeno-Late sockeye CU is not listed in [@holtbyConservationUnitsPacific2007] but was provisionally designated as a CU by Blair Holtby in 2008. However, a Technical Committee member from Wuikinuxv advised us that this CU is not distinguishable from other sockeye CUs in the lake. Furthermore, this CU was not included on the most recent list of CUs published on the Government of Canada's Open Data portal. Given that it was not in the most current list of CUs, it lacks baseline data, and we could not find any documentation about its creation. Therefore, we removed this CU from the project.
 
+For steelhead in the Central Coast Region, we used CUs defined in @ParkinsonEtAl2005PopulationDatabaseDefining. Through our work and conversations with the Steelhead Technical Working Group, we identified a key issue with the spatial boundaries for some steelhead CUs for coastal winter-run populations, including the North Coast Winter CU. The CU boundaries for these CUs did not include watersheds that contain both a winter and coastal summer populations of steelhead. These watersheds were only included in the corresponding coastal summer-run CU (in this case, the North Coast Summer CU). To address this issue in a standardized way, we expanded the CU boundaries for the winter-run CUs to include the entirety of watersheds in the corresponding summer-run CU, resulting in an overlapping region between the North Coast Winter and North Coast Summer CUs where steelhead from multiple CUs spawn. This approach did not capture watershed-specific nuances in the distribution of winter- and summer-run steelhead populations, which are often not documented. However, these changes to the North Coast Winter CU ensure the CU is not missing key watersheds.
+
 ```{r CentralMap, fig.cap = "Map of the Central Coast Region.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
 knitr::include_graphics("figures/centralcoast_map.png")
 ```
 
 ### Population Data and Analytical Methods
 
-There are several nuances to the data sources and analytical methods specific to the Central Coast Region. These nuances are listed below.
+There are several nuances to the data sources and analytical methods specific to the Central Coast Region. These nuances are listed below. For steelhead in general, there is no centralized public database for population data so these data were compiled from disparate sources, including from online databases, individual reports, and data custodians (see our [steelhead-specific Github repository](https://github.com/salmonwatersheds/steelhead-status) for all raw steelhead population data compiled). These nuances are listed below.
 
 #### Spawner Surveys
 
@@ -354,7 +356,7 @@ We currently do not have CU-level **run timing** data for any CUs in the Central
 
 #### Hatchery Releases
 
-Hatchery releases in the Central Coast Region for all species were provided by DFO (Joan Bateman, Salmonid Enhancement Program). Refer to [Overview of Population Indicators: Hatchery Releases](#hatchery-releases) for details on data and analytical methods.
+Hatchery releases in the Central Coast Region for all species were provided by DFO (Joan Bateman, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia\'s [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#0){style="font-size: 11pt;"} for details on data and analytical methods.
 
 #### Biological Status
 
@@ -503,7 +505,7 @@ In the Fraser Region, we accessed **juvenile survey** data for two sockeye CUs: 
 
 #### Hatchery Releases
 
-**Hatchery releases** in the Fraser Region for all species were provided by DFO (Joan Bateman, Salmonid Enhancement Program). Refer to [Overview of Population Indicators: Hatchery Releases](#hatchery-releases) for details on data and analytical methods.
+**Hatchery releases** in the Fraser Region for all species were provided by DFO (Joan Bateman, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia\'s [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#0){style="font-size: 11pt;"} for details on data and analytical methods.
 
 #### Biological Status
 
@@ -652,7 +654,7 @@ We currently do not have CU-level **run timing** data for any CUs in the Vancouv
 
 #### Hatchery Releases
 
-**Hatchery releases** in the Vancouver Island & Mainland Inlets Region for all species were provided by DFO (Joan Bateman, Salmonid Enhancement Program). Refer to [Overview of Population Indicators: Hatchery Releases](#hatchery-releases) for details on data and analytical methods.
+**Hatchery releases** in the Vancouver Island & Mainland Inlets Region for all species were provided by DFO (Joan Bateman, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia\'s [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#0){style="font-size: 11pt;"} for details on data and analytical methods.
 
 #### Biological Status
 
@@ -805,7 +807,7 @@ On Haida Gwaii, there are some specific nuances to catch data that are important
 
 #### Hatchery Releases
 
-**Hatchery releases** in the Haida Gwaii Region for all species were provided by DFO (Joan Bateman, Salmonid Enhancement Program). Refer to [Overview of Population Indicators: Hatchery Releases](#hatchery-releases) for details on data and analytical methods.
+**Hatchery releases** in the Haida Gwaii Region for all salmon species were provided by DFO (Joan Bateman, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia\'s [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#0){style="font-size: 11pt;"} for details on data and analytical methods.
 
 #### Biological Status
 
@@ -973,7 +975,7 @@ Estimates of the average timing at which Okanagan watershed salmon return to spa
 
 #### Hatchery Releases
 
-**Hatchery releases** in the Columbia Region for all species were provided by DFO (Joan Bateman, Salmonid Enhancement Program). Refer to [Overview of Population Indicators, H: Hatchery Releases](#hatchery-releases) for details on data and analytical methods.
+**Hatchery releases** in the Columbia Region for all species were provided by DFO (Joan Bateman, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia\'s [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators, H: Hatchery Releases](#0){style="font-size: 11pt;"} for details on data and analytical methods.
 
 #### Biological Status
 

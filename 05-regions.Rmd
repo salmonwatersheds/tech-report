@@ -13,7 +13,7 @@ Each **Region** within the Pacific Salmon Explorer has specific attributes relat
 knitr::include_graphics("figures/regions.png")
 ```
 
-## Skeena Region
+## Skeena Region {#skeena-region}
 
 The Skeena River watershed, located along the north coast of BC, is the second-largest in the province, contains important tributaries, including the Babine, Kispiox, and Bulkley Rivers, and is one of the most productive river systems in BC. All five species of Pacific salmon spawn and rear in the lower and upper portions of the Skeena River Basin (Figure \@ref(fig:skeenaMap)) within `r length(which(cu_list$Region == "Skeena"))` CUs: `r length(which(cu_list$Region == "Skeena" & cu_list$Species == "Chinook"))` Chinook, `r length(which(cu_list$Region == "Skeena" & cu_list$Species == "Chum"))` chum, , `r length(which(cu_list$Region == "Skeena" & cu_list$Species == "Coho"))` coho, `r length(which(cu_list$Region == "Skeena" & cu_list$Species %in% c("Pink (odd)", "Pink (even)")))` pink, `r length(which(cu_list$Region == "Skeena" & cu_list$Species == "River sockeye"))` river-type sockeye, `r length(which(cu_list$Region == "Skeena" & cu_list$Species == "Lake sockeye"))` lake-type sockeye, and `r length(which(cu_list$Region == "Skeena" & cu_list$Species == "Steelhead"))` steelhead ([Appendix 1](#appendix-1)). The initial process of data gathering, synthesis, outreach, and engagement to complete the initial assessments for five salmon species within the Skeena Region was conducted over five years, from 2010 to 2014. Subsequent updates to those data have occurred regularly, and steelhead were added in 2023.
 
@@ -23,7 +23,7 @@ knitr::include_graphics("figures/skeena_map.png")
 
 During the initial development of the Pacific Salmon Explorer for the Skeena, we formed a Skeena Technical Advisory Committee and engaged with First Nations, DFO, and other salmon experts throughout the watershed. Through the Technical Advisory Committee process, we received input and feedback from the Gitanyow Fisheries Authority, DFO, Office of the Wet'suwet'en, Lake Babine Nation, Gitxsan Watershed Authorities, Gitxaala First Nation, North Coast-Skeena First Nations Stewardship Society, SkeenaWild Conservation Trust, Bulkley Valley Research Centre, Suskwa Research, BC Ministry of Environment, and DFO.
 
-### Conservation Unit Changes
+### Conservation Unit Changes {#skeena-cu-changes}
 
 Based on feedback from the Skeena Technical Advisory Committee, we made several changes to the CU list, such that the CUs listed in the Pacific Salmon Explorer may differ from those provided by DFO. Specifically, we combined the Mcdonnell, Aldrich, and Dennis lake-type sockeye CUs into a single CU (Mcdonnell/Aldrich/Dennis) since the contribution of each of these lakes cannot be currently assessed from the estimated spawner abundance data. For the same reason, we combined the Morice and Atna lake-type sockeye CUs (Morice/Atna), and the Bulkley and Maxan (Bulkley/Maxan) lake-type sockeye CUs. Currently, the Swan and Club Lake lake-type sockeye CUs are combined into a single Swan/Club CU, but subsequent CU lists for DFO specify that these stream surveys are now all part of the Stephens CU, and we will be updating the PSE accordingly in 2024. <!--# Need to update to Stephens CU. -->
 
@@ -31,15 +31,15 @@ We split the Babine lake-type sockeye CU into four CUs based on run-timing and e
 
 For steelhead, we used CUs defined by @TautzEtAl2011SkeenaSteelheadConservation for steelhead in the Skeena watershed. No changes were made to the CUs defined in this publication.
 
-### Population Data and Analytical Methods
+### Population Data and Analytical Methods {#skeena-pop-methods}
 
 On the North and Central Coast, including the Skeena Region, PSF primarily accessed data through the North and Central Coast (NCC) Database [@EnglishEtAl2018NorthCentralCoast]. The NCC Database is a database produced and maintained by [LGL Ltd.](https://lgl.com/), who synthesize datasets on spawner surveys, catch, exploitation rate, and age structure. LGL also includes generated datasets for CU-level estimates of spawner abundance, run size, and exploitation rate. For the most part, data in the NCC Database have been sourced by LGL from DFO's [New Salmon Escapement Database (NuSEDS)](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), the [Fisheries Operating System (FOS)](https://open.canada.ca/data/en/dataset/7ac5fe02-308d-4fff-b805-80194f8ddeb4), and other DFO databases. For steelhead, there is no centralized public database for population data so these data were compiled from disparate sources, including from online databases, individual reports, and data custodians (see our [steelhead-specific Github repository](https://github.com/salmonwatersheds/steelhead-status) for all raw steelhead population data compiled). Details regarding nuances to the data and analytical methods specific to the Skeena Region are described below.
 
-#### Spawner Surveys {#spawner-surveys}
+#### Spawner Surveys {#skeena-spawner-surveys}
 
 Spawner survey data for streams in the Skeena Region were sourced from DFO's [New Salmon Escapement Database (NuSEDS)](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6). For a description of the spawner survey indicator, see the [Overview of Biological Indicators: Spawner Surveys](#spawner-surveys). For steelhead, spawner survey data for streams in the Skeena Region were compiled from regional data custodians at the Skeena Region Office of the Province of BC's Fish and Wildlife Branch and from published reports, including from @BaxterUpperSustutLower, @Mitchell2000, @SaimotoSaimoto2011WetSuwetFisheries, and @SkeenaFisheriesBranch2019UpperSustutRiver.
 
-#### Spawner Abundance {#spawner-abundance}
+#### Spawner Abundance {#skeena-spawner-abundance}
 
 Observed spawner abundance for CUs in the Skeena Region is the sum of all spawner survey data documented in NuSEDS, as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance).
 
@@ -53,45 +53,45 @@ In contrast to Chinook, there has been more consistent distribution and quantity
 
 For steelhead, we did not apply expansion procedures to observed spawner abundance data to produce estimated spawner abundance. Instead, where spawner survey data approximate the CU-scale (i.e. counts or estimates are produced that are inclusive of all steelhead populations in the CU), we present these data as estimated spawner abundance. Data sources for these data include custodians at the Skeena Region Office of the Province of BC's Fish and Wildlife Branch, @SkeenaFisheriesBranch2019UpperSustutRiver, and @SaimotoSaimoto2011WetSuwetFisheries. For the case of the Bulkley and Morice CUs, estimates from @SaimotoSaimoto2011WetSuwetFisheries represent the total number of spawners returning to these two CUs combined and there is not precedence for estimating the proportion of spawners returning to each individual CU. We visualize these estimates as the estimated spawner abundance for both the Bulkley and Morice CUs (i.e. the same estimated spawner abundance data are visualized for the spawner abundance indicator for both CUs).
 
-#### Run Timing {#run-timing}
+#### Run Timing {#skeena-run-timing}
 
 Estimates of peak timing of river entry for the different sockeye CUs were estimated from DNA sampled from fish caught in the Tyee test fishery near the mouth of the Skeena River between 2000-2010 [@Cox-Rogers2012FisheriesOceansCanada]. The duration of the timing of river entry is assumed to have a bell-shaped curve (i.e. normal distribution), so the shape of the curves is defined by the mean and standard deviation of the available run timing data. However, in most instances, there is insufficient data to determine if a different distribution would better describe the shape of the curve. A normal distribution curve is likely a reasonable approximation for run timing in most cases if the run timing is unimodal (i.e. if there is a single peak in run timing). If the run timing is bi-modal (i.e. if there are two run timing groups), the assumption of spread is likely reasonable, but the peak may be misleading.
 
 Note that these run timing curves were only used to estimate exploitation rates for Skeena sockeye CUs. A conservative assumption of relatively broad run timing (80-110 days) for each sockeye CU was used so that exploitation rates would not be sensitive to small shifts in fishery timing. For some CUs, run timing information is not available, and for some species, run timing is assumed to be the same for all CUs. Run timing for other species was estimated by DFO North Coast staff. See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
 
-#### Catch & Run Size {#catch-run-size}
+#### Catch & Run Size {#skeena-catch-run-size}
 
 Catch and run size, and subsequent exploitation rates for CUs in the Skeena region were calculated by LGL and DFO from the Fisheries Operating System (FOS) and other DFO databases. We accessed these datasets via the North and Central Coast (NCC) Database, maintained by LGL Ltd. [@EnglishEtAl2018NorthCentralCoast]. For a description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#catch-run-size).
 
-#### Recruits-per-Spawner {#recruits-per-spawner}
+#### Recruits-per-Spawner {#skeena-recruits-per-spawner}
 
 Recruits-per-spawner data for CUs in the Skeena Region were derived from the DFO age database and CU-level estimates of spawner abundance and catch and run size, accessed from the NCC Database [@EnglishEtAl2018NorthCentralCoast]. For a description of recruits-per-spawner methods, see [Overview of Population Indicators: Recruits-per-Spawner](#recruits-per-spawner).
 
-#### Trends in Spawner Abundance
+#### Trends in Spawner Abundance {#skeena-trends-in-spawner-abundance}
 
 Trends in spawner abundance for CUs in the Skeena Region were derived from the CU-level estimates of spawner abundance accessed from the NCC Database [@EnglishEtAl2018NorthCentralCoast]. For a description of trends in spawner abundance methods, see [Overview of Population Indicators: Trends in Spawner Abundance](#spawner-abundance).
 
-#### Juvenile Surveys {#juvenile-surveys}
+#### Juvenile Surveys {#skeena-juvenile-surveys}
 
 Juvenile abundance data for the Babine (enhanced), Babine/Onerka, Tahlo/Morrison, and Nilkitkwa lake-type sockeye CUs were available in @Cox-Rogers2012FisheriesOceansCanada. Juvenile abundance estimates for the Gitanyow lake-type sockeye CU were available from @BeblowEtAl2018KitwangaRiverSalmon. Juvenile abundance of the Slamgeesh lake-type sockeye CU was available from @Fernando20182017SlamgeeshSalmon and previous reports. For steelhead, data were sourced for the Kispoix, Middle Skeena, Morice, and Skeena Coastal Summers CUs from @DavidBustard1993 and @WilliamsonCJ2002UpperSkeena. For a description of the juvenile survey's indicator, see [Overview of Population Indicators: Juvenile Surveys](#juvenile-surveys).
 
-#### Hatchery Releases {#hatchery-releases}
+#### Hatchery Releases {#skeena-hatchery-releases}
 
 Hatchery releases in the Skeena Region for all species were provided by DFO (Joan Bateman, DFO Salmonid Enhancement Program). For steelhead, Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia's [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#0){style="font-size: 11pt;"} for details on data and analytical methods.
 
-#### Biological Status
+#### Biological Status {#skeena-biological-status}
 
 The biological status assessments for CUs in the Skeena Region reflect data sourced from the NCC database and are current up to 2017. <!-- Eric - need to check this. I think Skeena is updated to 2019? --> For steelhead, data was sourced from data custodians at the Skeena Region Office of the Province of BC's Fish and Wildlife Branch and from @SkeenaFisheriesBranch2019UpperSustutRiver and are current up to 2022. The original approach and results for Skeena biological status assessments are described in @KormanEnglish2013BenchmarkAnalysisPacific. As new data become available, we will update the analyses and results in this report and the Pacific Salmon Explorer. See [Benchmarks for Assessing Biological Status](#benchmarks-biostatus) and [Decision Rules for Assessing Biological Status](#bs-decision-rules) for more details on biological status assessment methods.
 
-### Habitat Data and Analytical Methods
+### Habitat Data and Analytical Methods {#skeena-hab-methods}
 
 Nuances regarding habitat pressure indicator data and analytical methods for the Skeena Region are listed below. Refer to [Indicators and Benchmarks for Assessing Habitat Status](#indicators-benchmark-hab) for information on habitat pressure indicators, benchmarks, and the analytical methods used to assess habitat status. Additional details on habitat pressure indicators, data sources, data currency, and benchmarks specific to the Skeena Region are available in [Appendix 6 (Description of Habitat Pressure Indicators & Relevance to Salmon)](#appendix-6), [Appendix 7 (Habitat Pressure Datasets & Data Sources)](#appendix-7), [Appendix 8 (Spatial Data Processing for Habitat Pressure Indicators)](#appendix-8), [Appendix 9 (Spatial Data Processing for Future Pressures)](#appendix-9), [Appendix 12 (Habitat Pressure Benchmark Values by Region)](#appendix-12).
 
-#### Trans-regional Conservation Units
+#### Trans-regional Conservation Units {#skeena-trans-cus}
 
 The pink (even-year) Nass-Skeena Estuary CU spans the boundary between the Skeena and Nass regions. For habitat indicators that used relative benchmarks, habitat status for this trans-regional CU was assessed based on benchmarks derived from the Skeena Region because a significant portion of this CU's spawning habitat fell inside the Skeena Region.
 
-#### Spawning Zones of Influence
+#### Spawning Zones of Influence {#skeena-spawning-zois}
 
 Methods for delineating Chinook CU spawning zones of influence (ZOIs) vary by region in accordance with the CU delineation approach used by DFO. In the Skeena, Nass, and Central Coast regions, Chinook CUs are defined using a more restrictive geographic representation, which resulted in fewer (or no) spawning locations occurring within the CU boundaries. As such, spawning ZOIs for each Chinook CU were delineated using the extent of all 1:20K FWA Assessment Watersheds that directly intersected with Skeena Chinook CU boundaries.
 
@@ -172,7 +172,7 @@ kableExtra::kbl(habStat[2:nrow(habStat),],
 --->
 ````
 
-## Nass Region
+## Nass Region {#nass-region}
 
 In northern BC, the Nass River watershed is the third-largest watershed in the province and includes several major tributaries, including the Bell-Irving, Cranberry, Meziadin, Kwinageese, and Damdochax Rivers. The Nass Region (Figure \@ref(fig:nassMap)), which consists of the watersheds draining into Portland Canal and Observatory Inlet, contains extensive spawning and rearing habitat for all five species of Pacific salmon. These salmon populations comprise `r length(which(cu_list$Region == "Nass"))` CUs: `r length(which(cu_list$Region == "Nass" & cu_list$Species == "Chinook"))` Chinook, `r length(which(cu_list$Region == "Nass" & cu_list$Species == "Chum"))` chum, `r length(which(cu_list$Region == "Nass" & cu_list$Species == "Coho"))` coho, `r length(which(cu_list$Region == "Nass" & cu_list$Species %in% c("Pink (even)", "Pink (odd)")))` pink, `r length(which(cu_list$Region == "Nass" & cu_list$Species == "River sockeye"))` river-type sockeye, `r length(which(cu_list$Region == "Nass" & cu_list$Species == "Lake sockeye"))` lake-type sockeye, and `r length(which(cu_list$Region == "Nass" & cu_list$Species == "Steelhead"))` steelhead CUs ([Appendix 1](#appendix-1)). The initial process of data gathering, synthesis, outreach, and engagement to complete the initial assessments within the Nass Region was conducted from 2015 to 2019.
 
@@ -182,7 +182,7 @@ We worked with First Nations in the Nass Region to garner feedback on the Pacifi
 knitr::include_graphics("figures/nass_map.png")
 ```
 
-### Population Data and Analytical Methods
+### Population Data and Analytical Methods {#nass-pop-methods}
 
 As with the Skeena Region, many of the datasets necessary to understand the dynamics of salmon CUs in the Nass Region have been compiled and stored through the North and Central Coast (NCC) Database [@EnglishEtAl2018NorthCentralCoast; see Skeena Region]. In addition to these data, we also compiled additional data for six CUs (Lower Nass and Upper Nass coho; Fred Wright, Damodochax, and Meziadin lake-type sockeye; Lower Nass-Portland river-type sockeye) through a review of preliminary data with Nisga'a Lisims Government and LGL Limited staff. For steelhead, data were sourced from @LGLLimitedNisgaaFisheriesWildlife2023PreliminaryAreaSalmon (see our [steelhead-specific Github repository](https://github.com/salmonwatersheds/steelhead-status) for all raw steelhead population data compiled). Details regarding nuances to the data and analytical methods that are specific to the Nass Region are described below.
 

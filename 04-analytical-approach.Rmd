@@ -377,11 +377,11 @@ A spawner-recruit relationship must be available to calculate spawner-recruit be
 
 **4. Are the CU-level estimates of catch of medium-low quality or higher?**
 
-Errors in estimating catch can lead to misclassification of status using spawner-recruit benchmarks [@peacockEvaluatingConsequencesCommon2020]. As such, we do not apply spawner-recruit when CU-level catch estimates are highly uncertain (i.e. the data quality score for catch estimates is low or medium-low; see [Data Quality](#data-quality)).
+Errors in estimating catch can lead to misclassification of status using spawner-recruit benchmarks [@PeacockEtAl2020EvaluatingConsequencesCommon]. As such, we do not apply spawner-recruit when CU-level catch estimates are highly uncertain (i.e. the data quality score for catch estimates is low or medium-low; see [Data Quality](#data-quality)).
 
 **5. Is there published evidence of cyclic dominance for the CU?**
 
-Some CUs have population dynamics characterized by cyclic dominance (e.g. a four-year generation length that involves a dominant brood year that is most abundant, a sub-dominant brood year, followed by two brood lines with lower abundance). For these cyclic dominant CUs we do not pool data across brood lines to generate estimates of current spawner abundance or to generate CU-level benchmarks because spawner abundance is so different from year to year [@grant2017FraserSockeye2020a]. For these CUs, we currently only visualize biological status assessments on the Pacific Salmon Explorer developed through integrated status assessments that incorporate expert judgment and quantitative modeling, where available [e.g. @fisheriesandoceanscanadadfo2017FraserSockeye2018].
+Some CUs have population dynamics characterized by cyclic dominance (e.g. a four-year generation length that involves a dominant brood year that is most abundant, a sub-dominant brood year, followed by two brood lines with lower abundance). For these cyclic dominant CUs we do not pool data across brood lines to generate estimates of current spawner abundance or to generate CU-level benchmarks because spawner abundance is so different from year to year [@GrantEtAl20202017FraserSockeyec]. For these CUs, we currently only visualize biological status assessments on the Pacific Salmon Explorer developed through integrated status assessments that incorporate expert judgment and quantitative modeling, where available [e.g. @FisheriesandOceansCanadaDFO20182017FraserSockeyeb].
 
 **6. Does the CU-level spawner abundance time series span at least 20 years?**
 

@@ -2,7 +2,7 @@
 
 We define ZOIs for the spawning life stage for each salmon CU. A spawning ZOI represents the area of land that drains directly into the spawning habitat of a specific salmon CU.
 
-To spatially define ZOIs, we use the Province of British Columbia’s 1:20,000 Freshwater Atlas (FWA) Assessment Watersheds dataset (hereafter, 1:20K FWA assessment watersheds), which is a geospatial dataset freely available online via DataBC. The rules for defining ZOIs were initially developed by the Skeena Technical Advisory Committee (Porter et al. 2013, 2014) with specific nuances that vary by species and life stage.
+To spatially define ZOIs, we use the Province of British Columbia's 1:20,000 Freshwater Atlas (FWA) Assessment Watersheds dataset (hereafter, 1:20K FWA assessment watersheds), which is a geospatial dataset freely available online via DataBC. The rules for defining ZOIs were initially developed by the Skeena Technical Advisory Committee (Porter et al. 2013, 2014) with specific nuances that vary by species and life stage.
 
 Spatial processing for all ZOIs has been conducted using ArcGIS Desktop 10.6 using Python scripts, which allow automatic querying of the FWA hierarchical coding systems to identify areas upslope of a given spawning area. For lake-type sockeye CU, this process identifies all of those streams that are directly upslope of spawning lakes and captures them. ZOIs for all species across all regions are manually reviewed, verified, and corrected as needed.
 
@@ -24,7 +24,7 @@ Methods for delineating Chinook CU spawning zones of influence vary by region in
 
 **Spawning ZOI (Skeena, Nass, Central Coast, and Haida Gwaii Regions ):** All the FWA assessment watersheds that intersect directly with Chinook CU locations, regardless of whether or not spawning locations were identified for Chinook within an assessment watershed.
 
-**Spawning ZOI (Fraser, VIMI, and Columbia Regions):** Defined by the full extent of the 1:20K FWA assessment watersheds that directly intersect with identified spawning locations for each Chinook CU. In the Columbia region, assessment watersheds that contained spawning locations upstream of the CU boundary were included as part of the CU’s spawning ZOI.
+**Spawning ZOI (Fraser, VIMI, and Columbia Regions):** Defined by the full extent of the 1:20K FWA assessment watersheds that directly intersect with identified spawning locations for each Chinook CU. In the Columbia region, assessment watersheds that contained spawning locations upstream of the CU boundary were included as part of the CU's spawning ZOI.
 
 ### Coho CU Zones of Influence {.unnumbered}
 
@@ -33,3 +33,7 @@ Methods for delineating Chinook CU spawning zones of influence vary by region in
 ### Pink CU Zones of Influence {.unnumbered}
 
 **Spawning ZOI:** Defined by the full extent of the 1:20K FWA assessment watersheds that directly intersect with identified spawning locations for each pink salmon CU.
+
+### Steelhead CU Zones of Influence {.unnumbered}
+
+**Spawning ZOI:** Defined for each steelhead CU by the full extent of the 1:20K FWA assessment watersheds within CU boundaries that directly intersect with identified spawning locations of steelhead or rivers with the presence of spawning steelhead populations identified or inferred from research by @ParkinsonEtAl2005PopulationDatabaseDefining.

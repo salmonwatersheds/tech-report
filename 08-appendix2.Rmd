@@ -1,0 +1,5 @@
+# Appendix 2: Conservation Unit Maps by Region and Species {#appendix-2 .unnumbered}
+
+Previous versions of this Technical Report contained static maps of Conservation Units (CUs) by Region and species. We are currently revising the interface of the [Pacific Salmon Explorer](https://www.salmonexplorer.ca) to improve map-based navigation and visualization, including the ability to visualize CU boundaries more easily. These new maps will be available at [www.salmonexplorer.ca](https://www.salmonexplorer.ca) in March 2024. 
+
+To view past versions of static maps, see [Version 11](https://salmonwatersheds.ca/document/lib_475/) or email info@salmonwatersheds.ca to request specific maps. 

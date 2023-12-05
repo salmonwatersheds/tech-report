@@ -18,7 +18,7 @@ html_document:
 
 # Preface {.unnumbered}
 
-This report is a living document. It will be updated as we add new Regions to the [Pacific Salmon Explorer](https://www.salmonexplorer.ca), as updated data become available, as our data sources, methods, and approaches incrementally evolve, and as we receive feedback on this report. We will update the version number with each new version of the report. To access old versions of the report, please contact [info\@salmonwatersheds.ca](info@salmonwatersheds.ca).
+This report is a living document. It will be updated as we add new Regions to the [Pacific Salmon Explorer](https://www.salmonexplorer.ca), as updated data become available, as our data sources, methods, and approaches incrementally evolve, and as we receive feedback on this report. We will update the version number with each new version of the report. Version 11 was the last version published as a static PDF, and is available in our [Document Library](https://salmonwatersheds.ca/document/lib_475/). To access older versions of the report, please contact [info\@salmonwatersheds.ca](info@salmonwatersheds.ca).
 
 ```{r include=TRUE, echo = FALSE, out.width='60%', fig.align='center', fig.alt='Illustration by Aimée van Drimmelen.'}
 knitr::include_graphics("figures/BABIES_WEB.png")
@@ -38,7 +38,7 @@ knitr::include_graphics("figures/illustration-Aimee-VD-fingerlings-sm.jpg")
 
 ## Citation {.unnumbered}
 
-Pacific Salmon Foundation. 2023. Methods for Assessing Status and Trends in Pacific Salmon Conservation Units and their Freshwater Habitats. The Pacific Salmon Foundation, Vancouver BC, Canada. Version 12.
+Pacific Salmon Foundation. 2023. Methods for Assessing Status and Trends in Pacific Salmon Conservation Units and their Freshwater Habitats. The Pacific Salmon Foundation, Vancouver BC, Canada. Version 12. Available at <https://salmonwatersheds.ca/document/lib_475/> [Accessed dd-mm-yyyy].
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages

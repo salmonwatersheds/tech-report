@@ -1,6 +1,6 @@
 # Appendix 1: Conservation Unit Reference List {#appendix-1 .unnumbered}
 
-Conversation Units (CUs) listed by region and species (click header to sort). The CU names are as appearing in the Pacific Salmon Explorer. The CUID is assigned by PSF to track CUs that we recognize, as these are not always the same as official CUs recognized by DFO (see Regions for details). The Full CU Index is based on @HoltbyCiruna2007ConservationUnitsPacific and is used to cross-reference against NuSEDS and other DFO datasets.
+Conversation Units (CUs) listed by region and species (click header to sort). The CU names are as appearing in the Pacific Salmon Explorer. The CUID is assigned by PSF to track CUs that we recognize, as these are not always the same as official CUs recognized by DFO (see Regions for details). The Full CU Index (a.k.a. `FULL_CU_IN`) is based on @HoltbyCiruna2007ConservationUnitsPacific and is used to cross-reference against NuSEDS and other DFO datasets.
 
 ```{r app1, include=TRUE, echo = FALSE}
 options(width = 400)

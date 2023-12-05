@@ -1,6 +1,6 @@
 # Appendix 5: Rules for Defining Zones of Influence {#appendix-5 .unnumbered}
 
-We define ZOIs for the spawning life stage for each salmon CU. A spawning ZOI represents the area of land that drains directly into the spawning habitat of a specific salmon CU.
+We define Zones of Influence (ZOIs) for the spawning life stage for each salmon CU. A spawning ZOI represents the area of land that drains directly into the spawning habitat of a specific salmon CU.
 
 To spatially define ZOIs, we use the Province of British Columbia's 1:20,000 Freshwater Atlas (FWA) Assessment Watersheds dataset (hereafter, 1:20K FWA assessment watersheds), which is a geospatial dataset freely available online via DataBC. The rules for defining ZOIs were initially developed by the Skeena Technical Advisory Committee (Porter et al. 2013, 2014) with specific nuances that vary by species and life stage.
 

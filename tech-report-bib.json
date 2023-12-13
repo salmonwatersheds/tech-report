@@ -149,6 +149,7 @@
 		"type": "report",
 		"publisher": "Pacific Salmon Foundation",
 		"title": "The Nass Area Cumulative Pressures on Salmon Habitat Technical Habitat",
+		"URL": "https://salmonwatersheds.ca/document/lib_437/",
 		"author": [
 			{
 				"family": "Porter",
@@ -299,6 +300,7 @@
 		"page": "62 pp.",
 		"publisher": "Report prepared by ESSA Technologies Ltd. for Nuxalk Nation",
 		"title": "Atnarko sockeye recovery plan",
+		"URL": "https://salmonwatersheds.ca/document/lib_462/",
 		"author": [
 			{
 				"family": "Connors",
@@ -626,6 +628,7 @@
 		"publisher": "Committee on the Status of Endangered Wildlife in Canada",
 		"publisher-place": "Ottawa, Canada",
 		"title": "COSEWIC Assessment and status report on the Chinook Salmon (Oncorhynchus tshawytscha), Okanagan population in Canada",
+		"URL": "https://salmonwatersheds.ca/document/lib_503/",
 		"author": [
 			{
 				"literal": "COSEWIC"
@@ -932,11 +935,12 @@
 	{
 		"id": "HyattEtAl2013ImpactAdaptationResponses",
 		"type": "article-journal",
+		"archive": "https://doi.org/10.4296/cwrj2804689",
 		"container-title": "Canadian Water Resources Journal / Revue canadienne des ressources hydriques",
 		"issue": "4",
 		"page": "689-713",
 		"title": "Impact and Adaptation Responses of Okanagan River Sockeye Salmon (Oncorhynchus nerka) to Climate Variation and Change Effects During Freshwater Migration: Stock Restoration and Fisheries Management Implications,",
-		"URL": "https://doi.org/10.4296/cwrj2804689",
+		"URL": "https://salmonwatersheds.ca/document/lib_507/",
 		"volume": "28",
 		"author": [
 			{
@@ -1019,6 +1023,7 @@
 		"page": "ix-106",
 		"publisher": "DFO Can. Sci. Advis. Sec. Res. Doc. 2021/009.",
 		"title": "Recovery Potential Assessment for the Okanagan Chinook Salmon (Oncorhynchus tshawytscha)",
+		"URL": "https://salmonwatersheds.ca/document/lib_506/",
 		"author": [
 			{
 				"family": "Mahony",
@@ -1474,8 +1479,8 @@
 	{
 		"id": "Arifin2006TransactionCostAnalysisb",
 		"type": "report",
+		"archive": "https://www.researchgate.net/publication/23511865_Transaction_Cost_Analysis_of_Upstream-Downstream_Relations_in_Watershed_Services_Lessons_from_Community-Based_Forestry_Management_in_Sumatra_Indonesia",
 		"title": "Transaction Cost Analysis of Upstream-Downstream Relations in Watershed Services: Lessons from Community-Based Forestry Management in Sumatra, Indonesia.",
-		"URL": "https://www.researchgate.net/publication/23511865_Transaction_Cost_Analysis_of_Upstream-Downstream_Relations_in_Watershed_Services_Lessons_from_Community-Based_Forestry_Management_in_Sumatra_Indonesia",
 		"author": [
 			{
 				"family": "Arifin",
@@ -1722,6 +1727,7 @@
 		"id": "PeacockEtAl2020EvaluatingConsequencesCommon",
 		"type": "article-journal",
 		"abstract": "Information on biological status is essential for designing, implementing, and evaluating management strategies and recovery plans for threatened or exploited species. However, the data required to quantify status are often limited, and it is important to understand how assessments of status may be biased by assumptions in data analysis. For Pacific salmon, biological status assessments based on spawner abundances and spawner–recruitment (SR) analyses often involve “run reconstructions” that impute missing spawner data, expand observed spawner abundance to account for unmonitored streams, assign catch to individual stocks, and quantify age-at-return. Using a stochastic simulation approach, we quantified how common assumptions in run reconstructions biased assessments of biological status based on spawner abundance. We found that status assessments were robust to most common assumptions in run reconstructions, even in the face of declining monitoring coverage, but that overestimating catch tended to increase rates of status misclassification. Our results lend confidence to biological status assessments based on spawner abundances and SR analyses, even in the face of incomplete data.",
+		"archive": "https://cdnsciencepub.com/doi/10.1139/cjfas-2019-0432",
 		"container-title": "Canadian Journal of Fisheries and Aquatic Sciences",
 		"DOI": "10.1139/CJFAS-2019-0432/ASSET/IMAGES/CJFAS-2019-0432IEQ43.GIF",
 		"ISSN": "12057533",
@@ -1729,7 +1735,7 @@
 		"note": "publisher: Canadian Science Publishing",
 		"page": "1904-1920",
 		"title": "Evaluating the consequences of common assumptions in run reconstructions on Pacific salmon biological status assessments",
-		"URL": "https://cdnsciencepub.com/doi/10.1139/cjfas-2019-0432",
+		"URL": "https://salmonwatersheds.ca/document/lib_501/",
 		"volume": "77",
 		"author": [
 			{
@@ -2149,12 +2155,13 @@
 	{
 		"id": "DFO2005",
 		"type": "report",
+		"archive": "https://www.pac.dfo-mpo.gc.ca/fm-gp/salmon-saumon/wsp-pss/policy-politique-eng.html",
 		"event-place": "Vancouver, BC",
 		"note": "ISBN: 0662405382",
 		"publisher": "Fisheries and Oceans Canada",
 		"publisher-place": "Vancouver, BC",
 		"title": "Canada's Policy for Conservation of Wild Pacific Salmon",
-		"URL": "https://www.pac.dfo-mpo.gc.ca/fm-gp/salmon-saumon/wsp-pss/policy-politique-eng.html",
+		"URL": "https://salmonwatersheds.ca/document/lib_578/",
 		"author": [
 			{
 				"literal": "DFO"
@@ -2278,7 +2285,7 @@
 		"id": "Walters2008",
 		"type": "report",
 		"page": "0-144",
-		"title": "Report of the Skeena Independent Science Review panel",
+		"title": "Report of the Skeena Independent Science Review Panel",
 		"author": [
 			{
 				"family": "Walters",
@@ -2346,9 +2353,11 @@
 	{
 		"id": "COSEWIC2020",
 		"type": "report",
+		"archive": "https://www.canada.ca/en/environment-climate-",
 		"note": "ISBN: 8199383984",
+		"publisher": "The Committee on the Status of Endangered Wildlife in Canada",
 		"title": "COSEWIC assessment and status report on the Steelhead Trout Oncorhynchus mykiss (Thompson River and Chilcotin River populations) in Canada",
-		"URL": "https://www.canada.ca/en/environment-climate-",
+		"URL": "https://salmonwatersheds.ca/document/lib_537/",
 		"author": [
 			{
 				"literal": "COSEWIC"
@@ -2365,7 +2374,10 @@
 	{
 		"id": "ParkinsonEtAl2005PopulationDatabaseDefining",
 		"type": "report",
+		"number": "Fisheries Management Report 119",
+		"publisher": "Province of British Columbia",
 		"title": "A population database for defining Conservation Units in Steelhead trout",
+		"URL": "https://salmonwatersheds.ca/document/lib_521/",
 		"author": [
 			{
 				"family": "Parkinson",
@@ -2399,7 +2411,9 @@
 	{
 		"id": "TautzEtAl2011SkeenaSteelheadConservation",
 		"type": "report",
+		"publisher": "A project of the Skeena Watershed Initiative supported by the Living Rivers Fund and the Pacific Salmon Foundation",
 		"title": "Skeena Steelhead Conservation Units",
+		"URL": "https://salmonwatersheds.ca/document/lib_b_979/",
 		"author": [
 			{
 				"family": "Tautz",
@@ -2434,11 +2448,10 @@
 		"id": "MinistryofForests2016ProvincialFrameworkSteelhead",
 		"type": "report",
 		"title": "Provincial Framework for Steelhead Management in British Columbia",
+		"URL": "https://salmonwatersheds.ca/document/lib_560/",
 		"author": [
 			{
-				"family": "Ministry of Forests",
-				"given": "Lands",
-				"suffix": "and Natural Resource Operations Fish and Wildlife Branch"
+				"literal": "Ministry of Forests, Lands, and Natural Resource Operations Fish and Wildlife Branch"
 			}
 		],
 		"issued": {
@@ -2452,9 +2465,10 @@
 	{
 		"id": "HoltbyCiruna2007ConservationUnitsPacific",
 		"type": "article-journal",
+		"archive": "https://www.dfo-mpo.gc.ca/csas-sccs/publications/resdocs-docrech/2007/2007_070-eng.htm",
 		"container-title": "Canadian Science Advisory Secreteriat Research Document",
 		"title": "Conservation Units for Pacific Salmon under the Wild Salmon Policy",
-		"URL": "https://www.dfo-mpo.gc.ca/csas-sccs/publications/resdocs-docrech/2007/2007_070-eng.htm",
+		"URL": "https://salmonwatersheds.ca/document/lib_4/",
 		"volume": "070",
 		"author": [
 			{
@@ -2779,6 +2793,7 @@
 		"id": "Peard2017ResultsKloiyaRiver",
 		"type": "report",
 		"title": "Results of the Kloiya River Resistivity Counter 2016",
+		"URL": "https://salmonwatersheds.ca/document/lib_585/",
 		"author": [
 			{
 				"family": "Peard",
@@ -3106,12 +3121,13 @@
 	{
 		"id": "Bison2022StatusUpdateFraser",
 		"type": "report",
+		"archive": "https://www2.gov.bc.ca/assets/gov/environment/plants-animals-and-ecosystems/fish-fish-habitat/fishery-resources/interior-fraser-steelhead/ifs_status_update_19_oct_2022.pdf",
 		"event-place": "Kamloops, BC",
 		"page": "7",
 		"publisher": "Province of British Columbia, Ministry of Forests, Lands and Natural Resource Operations - Thompson Okanagan Region",
 		"publisher-place": "Kamloops, BC",
 		"title": "Status Update for Fraser River Late-Run Summer Steelhead",
-		"URL": "https://www2.gov.bc.ca/assets/gov/environment/plants-animals-and-ecosystems/fish-fish-habitat/fishery-resources/interior-fraser-steelhead/ifs_status_update_19_oct_2022.pdf",
+		"URL": "https://salmonwatersheds.ca/document/lib_562/",
 		"author": [
 			{
 				"family": "Bison",
@@ -3399,24 +3415,6 @@
 				"given": "Natural Resource"
 			}
 		]
-	},
-	{
-		"id": "ProvinceofBritishColumbia2005SteelheadStreamClassification",
-		"type": "report",
-		"abstract": "POLICY STATEMENT Purpose: The use of hatchery steelhead (Oncorhynchus mykiss) and/or retention of wild steelhead can provide angling benefits, but may also impose risks to wild stocks. The overall purpose of this policy is to manage the risks in order to maintain healthy, self-sustaining wild steelhead stocks. It is the Policy of the Ministry: 1. That all streams containing steelhead will be classified as: (a) wild; or (b) hatchery-augmented. 2. Streams will be classified as wild unless specifically designated as hatchery-augmented. 3. That streams designated \"wild\" will be managed to maintain and protect the abundance, distribution and genetic diversity of indigenous steelhead stocks in the province while providing angling opportunities when stock abundance permits. 4. That streams designated \"hatchery-augmented\" will be managed to maintain or develop new angling opportunities while minimizing risks to wild indigenous steelhead.",
-		"title": "Steelhead Stream Classification Policy",
-		"author": [
-			{
-				"literal": "Province of British Columbia"
-			}
-		],
-		"issued": {
-			"date-parts": [
-				[
-					"2005"
-				]
-			]
-		}
 	},
 	{
 		"id": "Hagen2001PopulationSizeBridge",
@@ -3711,10 +3709,10 @@
 	},
 	{
 		"id": "BockingEtAl2005NassRiverSteelhead",
-		"type": "article-journal",
+		"type": "report",
 		"abstract": "This report describes a habitat-based steelhead production model for the Nass watershed and presents the results for 63 sub-basin watersheds of 3rd order size or greater (1:20,000 mapping). The primary objective was to develop a habitat-based method for estimating smolt production capacity and spawning potential of Nass River tributary streams based on watershed features, physical habitat data, and biological production parameters. The model predicts the amount of suitable habitat available to support juvenile (fry) steelhead for rearing and converts these habitat estimates into production estimates for smolts and minimum escapement levels required to fully seed the available habitat. The watersheds studied include 26 winter steelhead populations systems, 34 summer population systems, and two sympatric systems. The model was run for accessible area of 4th order or larger streams (4th order model) as well as for 3rd order or larger streams (3rd order model). Six different models were used to estimate the number of smolts at stream carrying capacity (based on the amount of useable length or area for fry). Three of the models used carrying capacity estimates of smolt production for the Keogh River, on northern Vancouver Island; and three used carrying capacity estimates of smolt production for the Cranberry River, a Nass summer run steelhead tributary. Including just 4th order or larger tributaries, smolt production estimates for all confirmed steelhead habitat in the winter population systems ranged from 17,774 to 55,266 for the six different models. Smolt production estimates for all confirmed habitats for the sympatric populations ranged from 2,759 to 9,891. Smolt production estimates for all confirmed habitats for the summer populations ranged from 86,417 to 248,272. Using the Model 6 smolt production estimate (Adjusted Areas Model), and only including tributaries for which steelhead are known to be present, the required number of winter run spawners to fully seed fry habitat in the lower Nass River tributaries was estimated to be 1,204. For the sympatric populations, the required number of spawners was estimated to be 310. The estimated required number of spawners for the summer populations with confirmed steelhead presence was 12,386 which is within the range of recent mark-recapture estimates of this aggregate of summer stocks for the period 1997-2001. The model was particularly sensitive to alkalinity, mean smolt age, and egg-to-fry survival estimates.",
-		"issue": "February",
-		"page": "76-76",
+		"number": "Skeena Fisheries Report #SK142",
+		"publisher": "BC Ministry of Water, Land and Air Protection.",
 		"title": "Nass River steelhead habitat capability production model and preliminary escapement goals",
 		"author": [
 			{
@@ -3743,6 +3741,7 @@
 		"type": "article-journal",
 		"page": "63p + Appendices-63p + Appendices",
 		"title": "Results of Steelhead Stock Monitoring (1988-2006) in the Bella Coola River and Implications for Population Recovery",
+		"URL": "https://salmonwatersheds.ca/document/lib_584/",
 		"author": [
 			{
 				"family": "Ptolemy",
@@ -3797,7 +3796,6 @@
 		"type": "report",
 		"publisher": "Prepared for the Thompson Steelhead Technical Committee",
 		"title": "Independent Review of the Science and Management of Thompson River Steelhead",
-		"URL": "https://davidlevy.ca/ThompsonSteelheadIndependentReviewFinalMarch2014.pdf",
 		"author": [
 			{
 				"family": "Levy",
@@ -4437,12 +4435,13 @@
 	{
 		"id": "SkeenaFisheriesBranch2019UpperSustutRiver",
 		"type": "report",
+		"archive": "http://wwwt.env.gov.bc.ca/skeena/fish/sk_series_reports/sk178.pdf",
 		"event-place": "Smithers, BC",
 		"number": "Skeena Fisheries Report SK 178",
 		"publisher": "Province of British Columbia, Ministry of Forests, Lands, Natural Resource Operations and Rural Development, Skeena Region",
 		"publisher-place": "Smithers, BC",
 		"title": "Upper Sustut River Steelhead Enumeration 2018",
-		"URL": "http://wwwt.env.gov.bc.ca/skeena/fish/sk_series_reports/sk178.pdf",
+		"URL": "https://salmonwatersheds.ca/document/lib_563/",
 		"author": [
 			{
 				"family": "Skeena Fisheries Branch",
@@ -4937,11 +4936,12 @@
 	{
 		"id": "HoltEtAl2018EvaluatingBenchmarksBiological",
 		"type": "article-journal",
+		"archive": "http://www.dfo-mpo.gc.ca/csas-sccs/Publications/ResDocs-DocRech/2018/2018_011-eng.html",
 		"container-title": "DFO Can. Sci. Advis. Sec. Res. Doc.",
 		"issue": "/011",
 		"page": "ix + 87",
 		"title": "Evaluating Benchmarks of Biological Status for Data-limited Populations (Conservation Units) of Pacific Salmon, Focusing on Chum Salmon in Southern BC.",
-		"URL": "http://www.dfo-mpo.gc.ca/csas-sccs/Publications/ResDocs-DocRech/2018/2018_011-eng.html",
+		"URL": "https://salmonwatersheds.ca/document/lib_580/",
 		"author": [
 			{
 				"family": "Holt",
@@ -5141,25 +5141,34 @@
 	},
 	{
 		"id": "BeamishEtAlRelevanceCatchesSteelhead",
-		"type": "article-journal",
+		"type": "report",
 		"abstract": "There were 57 steelhead caught in a study of the winter ecology of Pacific salmon in the Gulf of Alaska from February 25 to March 25, 2022. The study used experimental gillnets and baited longlines to capture Pacific salmon with steelhead only captured in gillnets. Steelhead catches were the largest of all Pacific salmon catches with most steelhead caught in the top 4 m of the gillnet that was set at the surface and all steelhead were caught in the top 6 m. These catches and a review of published studies indicated that steelhead spend virtually all of their life in the open ocean in the surface few meters. There were 34 ocean age 1 and 21 ocean age 2 steelhead with 9 of these fish mature. DNA identification of these mature steelhead indicated they were returning to the Columbia River, Puget Sound, West Coast of Vancouver Island and the Nass River area. These fish would arrive in rivers after the calendar winter and would be expected to spawn quickly. There were 45 other fish identified to their spawning location using DNA, but the spawning location assignments of all steelhead are tentative because of the limited baseline data base. There were no ocean age 2 fish that had a second annulus and 16 of 33 ocean age 1 fish had an annulus. The circuli on the scales of ocean age 1 fish that formed after the annulus ranged from 2 to 7 indicating that annuli on the scales of all steelhead form over a protracted period. Steelhead were caught at some stations where surface temperatures exceeded the upper thermal limit published for steelhead in the winter. The inherited requirement to live at the ocean surface and the continued ocean warming that includes recent marine heat events, identify the urgent need to better understand the ocean ecology of steelhead, particularly in the winter.",
 		"language": "en",
+		"number": "NPAFC Doc. 2112.",
+		"publisher": "Fisheries and Oceans Canada and Pacific Salmon Foundation.",
 		"source": "Zotero",
 		"title": "Relevance of the Catches of Steelhead in the Study of the Ocean Ecology of Pacific Salmon in the Gulf of Alaska in the Winter of 2022",
 		"author": [
 			{
 				"family": "Beamish",
-				"given": "Richard"
+				"given": "R"
 			},
 			{
 				"family": "Neville",
-				"given": "Chrys"
+				"given": "C"
 			},
 			{
 				"family": "Riddell",
-				"given": "Brian"
+				"given": "B"
 			}
-		]
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2023"
+				]
+			]
+		}
 	},
 	{
 		"id": "NelitzEtAl2007RefiningHabitatIndicatorsa",
@@ -5276,6 +5285,7 @@
 		"number": "BRGMON-09",
 		"publisher": "Instream Fisheries Research Inc. and Splitrock Environmental for BC Hydro",
 		"title": "Bridge River Project Water Use Plan: Seton River Habitat and Fish Monitoring Implementation Year 7",
+		"URL": "https://salmonwatersheds.ca/document/lib_586/",
 		"author": [
 			{
 				"family": "Buchanan",
@@ -5346,6 +5356,72 @@
 			"date-parts": [
 				[
 					"2021"
+				]
+			]
+		}
+	},
+	{
+		"id": "Scheuerell2016ExplicitSolutionCalculating",
+		"type": "article-journal",
+		"abstract": "<p> Stock-recruitment models have been used for decades in fisheries management as a means of formalizing the expected number of offspring that recruit to a fishery based on the number of parents. In particular, Ricker’s stock recruitment model is widely used due to its flexibility and ease with which the parameters can be estimated. After model fitting, the spawning stock size that produces the maximum sustainable yield ( <italic>S</italic> <sub>MSY</sub> ) to a fishery, and the harvest corresponding to it ( <italic>U</italic> <sub>MSY</sub> ), are two of the most common biological reference points of interest to fisheries managers. However, to date there has been no explicit solution for either reference point because of the transcendental nature of the equation needed to solve for them. Therefore, numerical or statistical approximations have been used for more than 30 years. Here I provide explicit formulae for calculating both <italic>S</italic> <sub>MSY</sub> and <italic>U</italic> <sub>MSY</sub> in terms of the productivity and density-dependent parameters of Ricker’s model. </p>",
+		"container-title": "PeerJ",
+		"DOI": "10.7717/peerj.1623",
+		"ISSN": "2167-8359",
+		"issue": "1",
+		"note": "PMID: 27004147",
+		"page": "e1623",
+		"title": "An explicit solution for calculating optimum spawning stock size from Ricker’s stock recruitment model",
+		"URL": "https://peerj.com/articles/1623",
+		"volume": "4",
+		"author": [
+			{
+				"family": "Scheuerell",
+				"given": "Mark D."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2016"
+				]
+			]
+		}
+	},
+	{
+		"id": "SuYajima2021R2jagsUsingRun",
+		"type": "software",
+		"abstract": "Providing wrapper functions to implement Bayesian analysis in JAGS. Some major features include monitoring convergence of a MCMC model using Rubin and Gelman Rhat statistics, automatically running a MCMC model till it converges, and implementing parallel processing of a MCMC model for multiple chains.",
+		"license": "GPL (> 2)",
+		"source": "R-Packages",
+		"title": "R2jags: Using R to Run 'JAGS'",
+		"title-short": "R2jags",
+		"URL": "https://cran.r-project.org/web/packages/R2jags/index.html",
+		"version": "0.7-1",
+		"author": [
+			{
+				"family": "Su",
+				"given": "Yu-Sung"
+			},
+			{
+				"family": "Yajima",
+				"given": "Masanao"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2023",
+					12,
+					12
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					8,
+					5
 				]
 			]
 		}

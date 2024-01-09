@@ -38,7 +38,7 @@ knitr::include_graphics("figures/illustration-Aimee-VD-fingerlings-sm.jpg")
 
 ## Suggested Citation {.unnumbered}
 
-Pacific Salmon Foundation. 2023. Methods for Assessing Status and Trends in Pacific Salmon Conservation Units and their Freshwater Habitats. The Pacific Salmon Foundation, Vancouver BC, Canada. **Version 12.** Available at <https://salmonwatersheds.ca/document/lib_475/> [Accessed dd-mm-yyyy].
+Pacific Salmon Foundation. 2024. Methods for Assessing Status and Trends in Pacific Salmon Conservation Units and their Freshwater Habitats. The Pacific Salmon Foundation, Vancouver BC, Canada. **Version 12.** Available at <https://salmonwatersheds.ca/document/lib_475/> [Accessed dd-mm-yyyy].
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages

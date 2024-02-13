@@ -56,6 +56,6 @@
 
 **Watershed**: The area of land that drains water, sediment, and dissolved materials into a stream, river, lake, or ocean. Watersheds can be defined at various spatial scales, with delineated boundaries ranging from a single tributary stream to an entire mainstem river. 
 
-**Wild salmon*88**: Salmon are considered “wild” if they have spent their entire life cycle in the wild, originate from parents produced by natural spawning that has also continuously lived in the wild. 
+**Wild salmon**: Salmon are considered “wild” if they have spent their entire life cycle in the wild, originate from parents produced by natural spawning that has also continuously lived in the wild. 
 
 **Zone of influence (ZOI)**: Areas upstream or adjacent to the habitats used by salmon during various life stages (e.g. spawning or rearing). ZOIs represent the geographic extent for the assessment of habitat pressure indicators. 

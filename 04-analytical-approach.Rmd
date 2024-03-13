@@ -111,7 +111,9 @@ We visualize both observed and estimated **spawner abundance** on the [Pacific S
 
 #### Run Timing {#run-timing}
 
-**Run timing** is estimated using a range of methods, from models based on daily counting fence data to expert judgment reporting mean and standard deviation of the annual return time for each CU. Where data are available, we visualize the estimated run timing as a normal distribution for each CU.
+**Run timing** represents the average time window over which adult salmon enter freshwater on their return migrations to spawn. Run timing is estimated using a range of methods, including test fisheries, daily counting at weirs, and expert judgment. These different methods are reflected in the run timing [Data Quality Score](#data-quality). We adjust run timing estimates that are from test fisheries outside of the estuary or from sampling more than 100 km upstream to account for the time it takes salmon to migration to/from the river mouth, so that the run timing shown in the Pacific Salmon Explorer represents river entry timing regardless of where the data were collected. The methods for estimating run timing and approaches to compiling these data for specific CUs are detailed in the [Regions](#regions) chapter and in [Wilson and Peacock (in prep.)](https://bookdown.org/salmonwatersheds/life-cycle-timing).
+
+Where data are available, we show the estimated run timing for each CU as the proportion of the CU that is expected to enter freshwater on a given day averaged over all historical information for the CU. Often, daily counts are not available but there is information on the dates for start (2.5th percentile), peak (50th percentile), and end (2.5th percentile) run timing. In these cases, we assume a mixed normal distribution with different standard deviations for the left- and right-hand sides based on the start and end dates, respectively. If the end date or start date is missing, we assume equal tails. If only peak or start date is available, we assume a standard deviation equal to the average standard deviation among other CUs of the same region and species.
 
 #### Catch & Run Size {#catch-and-runsize}
 

@@ -174,46 +174,59 @@ where $\bar{S_i}$ is the geometric mean number of spawners in stream $i$ over th
 
 : (#tab:cuenhanceRank) CU Hatchery Releases Scores, as generated based on the categories in Table \@ref(tab:enhanceAsmt) for individual spawning streams.
 
-### Data Quality Score {#data-quality}
+### Data Quality Scores {#data-quality}
 
 The quality of data shown in the Pacific Salmon Explorer varies widely among Regions, species, CUs, and streams. For instance, spawner abundance obtained from a single aerial survey is less reliable than counts obtained from an unbroken counting fence. We combine spawner survey data with other datasets, such as catch, to determine total run size and to assess the biological status of CUs. The **data quality** for each of these data types is important to consider when interpreting the population indicators shown in the Pacific Salmon Explorer.
 
-We developed a standardized approach to assess the quality of data used to estimate spawner abundance and catch for each CU, based on four criteria: 1) spawner survey method, 2) spawner survey coverage, 3) spawner survey execution, and 4) catch estimation method (Table \@ref(tab:cudataQual)). We assign scores of 0-5 to each of these four criteria and present the sum of scores over all four criteria as the overall **Data Quality Score** for each CU. We then translate the final scores into categories of Poor (1-7), Fair (8-14), or Good (15-20) that are displayed on the Pacific Salmon Explorer. A score of zero means that there were no data for that CU. Note that our current Data Quality Score does not consider the quality of benchmarks used to assess biological status; however, these benchmarks are derived from the above sources of data.
+We developed a standardized approach to assess the quality of data used to estimate populations indicators for each CU based on one or more of seven data quality criteria (Table \@ref(tab:cudataQual)). We assign scores of 0-5 to each of these four criteria and present the average score across relevant criteria as the **Data Quality Score** ($Q$) for each population indicator and CU. Numeric scores are translated to categorical data quality outcomes of low ($0 < Q \leq 1$), low-medium ($1 < Q \leq 2$), medium ($2 < Q \leq 3$), medium-high ($3 < Q \leq 4$), and high ($4 < Q \leq 5$). A score of zero means that there were no data for that CU. 
 
-```{r cudataQual, include = TRUE, echo = FALSE, warning = FALSE}
-library(reactable)
-# hatch <- read.csv("tables/sec4_cu_data_qual.csv")
-# knitr::kable(
-#  dq, booktabs = TRUE,
-#  caption = 'Summary of the four criteria used to score overall CU-level data quality, based on the quality of data on spawner abundance and catch estimates.'
-# )
+| Data quality criteria | Definition | Relevant population indicator(s) |
+|:------------------------|:----------------------------------------|:-----------------------------------------|
+| Spawner survey method | The quality of spawner survey data, based on the survey methods used across all indicator streams within the CU over the most recent generation. | Spawner surveys, spawner abundance, recruits-per-spawner, trends in spawner abundance, biological status |
+| Spawner survey coverage | How representative spawner surveys are of the CU, measured as the proportion of total spawners in the CU that spawn in indicator streams. | Spawner abundance, recruits-per-spawner, trends in spawner abundance, biological status |
+| Spawner survey execution | How consistently indicator streams have been monitored, measured as the proportion of indicator streams that were surveyed in the most recent generation. | Spawner abundance, recruits-per-spawner, trends in spawner abundance, biological status | 
+| Juvenile survey method | The quality of juvenile survey data, based on the survey methods used across all juvenile surveys in the CU. | Juvenile surveys | 
+| Run timing method | The quality of run timing data, based on the number of years of data, the currency of the data, and whether sampling captured the entirety of the run. | Run timing | 
+| Catch estimation method | The quality of catch estimates for the CU in the most recent generation based on a qualitative assessment of the rigor of the catch estimation method. | Catch and run size, recruits-per-spawner, biological status | 
+| Stock ID | The quality of recent stock identification data used in catch estimation for the CU. | Catch and run size, recruits-per-spawner, biological status |
 
-dq <- data.frame(
-  Category = c(
-    rep("Spawner Survey Data", 3), 
-    "Catch Data"),
-  Criteria = c(
-    "Spawner Survey Method", 
-    "Spawner Survey Coverage", 
-    "Spawner Survey Execution", 
-    "Catch Estimation Method"),
-  Description = c(
-    "The quality of spawner survey data, based on the survey methods and sampling effort across all indicator streams within this CU over the most recent generation", 
-    "How representative spawner surveys are of the CU, measured as the proportion of total spawners that spawn in indicator streams", 
-    "How consistently the indicator streams for the CU have been surveyed, measured as the proportion of indicator streams that were monitored over the most recent generation", 
-    "The quality of recent catch estimates for the CU, based on a qualitative assessment of the rigour of the catch estimation method in the most recent generation")
-)
+: (#tab:cudataQual) Summary of the seven criteria used to score overall CU-level data quality for population indicators.
 
 
-knitr::kable(
- dq, booktabs = TRUE,
- caption = 'Summary of the four criteria used to assign a Data Quality Score to each CU, based on the quality of data on spawner abundance and catch estimates.'
- )
-```
+<!-- ```{r cudataQual, include = TRUE, echo = FALSE, warning = FALSE} -->
+<!-- library(reactable) -->
+<!-- # hatch <- read.csv("tables/sec4_cu_data_qual.csv") -->
+<!-- # knitr::kable( -->
+<!-- #  dq, booktabs = TRUE, -->
+<!-- #  caption = 'Summary of the four criteria used to score overall CU-level data quality, based on the quality of data on spawner abundance and catch estimates.' -->
+<!-- # ) -->
+
+<!-- dq <- data.frame( -->
+<!--   Category = c( -->
+<!--     rep("Spawner Survey Data", 3),  -->
+<!--     "Catch Data"), -->
+<!--   Criteria = c( -->
+<!--     "Spawner Survey Method",  -->
+<!--     "Spawner Survey Coverage",  -->
+<!--     "Spawner Survey Execution",  -->
+<!--     "Catch Estimation Method"), -->
+<!--   Description = c( -->
+<!--     "The quality of spawner survey data, based on the survey methods and sampling effort across all indicator streams within this CU over the most recent generation",  -->
+<!--     "How representative spawner surveys are of the CU, measured as the proportion of total spawners that spawn in indicator streams",  -->
+<!--     "How consistently the indicator streams for the CU have been surveyed, measured as the proportion of indicator streams that were monitored over the most recent generation",  -->
+<!--     "The quality of recent catch estimates for the CU, based on a qualitative assessment of the rigour of the catch estimation method in the most recent generation") -->
+<!-- ) -->
+
+
+<!-- knitr::kable( -->
+<!--  dq, booktabs = TRUE, -->
+<!--  caption = 'Summary of the four criteria used to assign a Data Quality Score to each CU, based on the quality of data on spawner abundance and catch estimates.' -->
+<!--  ) -->
+<!-- ``` -->
 
 #### Spawner Survey Method {#spawner-survey-method}
 
-This criterion indicates the quality of spawner survey data over the most recent generation, based on the survey methods and sampling effort across all indicator streams within the CU. The CU-level **Spawner Survey Method** data quality criteria is calculated as the average of stream-level data quality scores across all indicator streams (as defined by DFO) within the CU. We only quantify data quality for indicator streams because these are the streams that are typically used in expansion and infilling procedures to generate CU-level spawner abundances, while data for non-indicator streams are not directly used. <!-- SP: Add reference to run reconstruction section?? -->
+This criterion indicates the quality of spawner survey data over the most recent generation, based on the survey methods and sampling effort across all indicator streams within the CU. The CU-level **Spawner survey method** data quality criteria is calculated as the average of stream-level data quality scores across all indicator streams (as defined by DFO) within the CU. We only quantify data quality for indicator streams because these are the streams that are typically used in expansion and infilling procedures to generate CU-level spawner abundances, while data for non-indicator streams are not directly used. <!-- SP: Add reference to run reconstruction section?? -->
 
 The stream-level data quality scores that we use to calculate a CU-level Spawner Survey Method score are recorded by DFO in the [NuSEDS database](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6) for each population and year. DFO measures stream-level survey quality on a six-point scale based on a standardized scoring rubric (Table \@ref(tab:strmQual)) based on survey methodology and effort. These stream-level data quality scores reflect the highly variable spawner abundance data within and across spawning streams, which arises largely from differences in spawner survey methodology. To improve the communication of the stream-level data quality scores, we translate the "Estimate Classification Type" provided by DFO in NuSEDS into categories labeled as Unknown, Low, Medium-Low, Medium, Medium-High, and High (Table \@ref(tab:strmQual)).
 
@@ -226,8 +239,8 @@ knitr::kable(
 ```
 
 <!-- BSC:I added "check.names = F" in read.csv() because the " ", "(" and ")" were replaced by "." in header -->
-
-To determine CU-level Spawner Survey Method data quality scores ($Q$), we calculate a weighted average of the stream-level survey method data quality scores across all indicator streams over the most recent generation within the CU (Table \@ref(tab:cusurveyQual)). Where there are known issues with DFO's indicator stream list in NuSEDS, we manually override those data quality scores and substitute expert derived assessments of data quality based on expert knowledge of spawner survey methods. We do not include survey years where spawner survey methods are Unknown. We then translate the CU-level Spawner Survey Methods score into a scale of 0-5 (labeled as Not Applicable, Low, Medium-Low, Medium, Medium-High, And High; Table \@ref(tab:cusurveyQual)). Note that this score reflects the reliability of the estimates of current spawner abundance for a CU over the most recent generation and not the reliability of estimates across the entire time series.
+ <!-- SP: What is the weighting by?  -->
+To determine CU-level spawner survey method criteria, we calculate a weighted average of the stream-level survey method data quality scores across all indicator streams over the most recent generation within the CU (Table \@ref(tab:cusurveyQual)). Where there are known issues with DFO's indicator stream list in NuSEDS, we manually override those data quality scores and substitute expert derived assessments of data quality based on expert knowledge of spawner survey methods. We do not include survey years where spawner survey methods are `Unknown`. Note that this score reflects the reliability of the estimates of current spawner abundance for a CU over the most recent generation and not the reliability of estimates across the entire time series.
 
 ```{r cusurveyQual, include=TRUE, echo = FALSE}
 cusq <- read.csv("tables/sec4_cu_survey_qual.csv")
@@ -238,14 +251,14 @@ knitr::kable(
 ```
 
 #### Spawner Survey Coverage {#spawner-survey-coverage}
-
+<!-- SP: Need to clarify this description -->
 This criterion indicates how representative spawner surveys are of the entire CU, measured as the proportion of total spawners that spawn in indicator streams. If a CU has a higher proportion of spawners returning to indicator streams, we assume that the spawner abundance data within that CU is of higher quality since indicator streams are more consistently and reliably surveyed.
 
-This score is calculated as the average number of spawners in indicator streams divided by the average number of spawners in all indicator and non-indicator streams within the CU, following methods from \@. To derive this proportion, we first determine which decade has the greatest coverage of spawner surveys across the indicator and non-indicator streams. We assume that there is a constant proportion of spawners from indicator and non-indicator streams through time. We then calculate the average number of spawners in all indicator and non-indicator streams according to:
+This score is calculated as the average number of spawners in indicator streams divided by the average number of spawners in all indicator and non-indicator streams within the CU. To derive this proportion, we first determine which decade has the greatest coverage of spawner surveys across the indicator and non-indicator streams. We assume that there is a constant proportion of spawners from indicator and non-indicator streams through time. We then calculate the average number of spawners in all indicator and non-indicator streams according to:
 
-$$C= 5 \times \frac{\sum_{i - 1}^I E_{siady}}{\sum_{i - 1}^I E_{siady} + \sum_{j=1}^J E_{sjady}} $$ where $s$ = species, $i$ = indicator stream, $j$ = non-indicator stream, $a$ = CU, $d$ = decade, $y$ = year, $E_{siady}$ = indicator stream escapement (i.e. spawners), by stratum, and $E_{sjady}$ = non-indicator stream spawners, by stratum. This approach is used because it provides a weighted average of the actual number of spawners enumerated with higher quality methodology, rather than only counting the number of indicator and non-indicator streams. We then translate the **Spawner Survey Coverage** score into a scale of 0-5 (labeled as Not Applicable, Low, Medium-Low, Medium, Medium-High, and High; Table \@ref(tab:spawncovScore)).
+$$C= 5 \times \frac{\sum_{i - 1}^I E_{siady}}{\sum_{i - 1}^I E_{siady} + \sum_{j=1}^J E_{sjady}} $$ where $s$ = species, $i$ = indicator stream, $j$ = non-indicator stream, $a$ = CU, $d$ = decade, $y$ = year, $E_{siady}$ = indicator stream escapement (i.e. spawners), by stratum, and $E_{sjady}$ = non-indicator stream spawners, by stratum. This approach is used because it provides a weighted average of the actual number of spawners enumerated with higher quality methodology, rather than only counting the number of indicator and non-indicator streams. We then translate the **spawner survey coverage** score into a scale of 0-5 (labeled as Not Applicable, Low, Medium-Low, Medium, Medium-High, and High; Table \@ref(tab:spawncovScore)).
 
-For CUs that do not use expansion procedures to generate CU-level estimates (e.g. Fraser sockeye, Chinook, and coho, and Vancouver Island & Mainland Inlets Chinook), Spawner Survey Coverage scores were generated via expert opinion.
+For CUs that do not use expansion procedures to generate CU-level estimates (e.g. Fraser sockeye, Chinook, and coho, and Vancouver Island & Mainland Inlets Chinook), spawner survey coverage scores were generated via expert opinion.
 
 ```{r spawncovScore, include=TRUE, echo = FALSE}
 hatch <- read.csv("tables/sec4_spawn_coverscores.csv")

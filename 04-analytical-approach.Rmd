@@ -111,13 +111,13 @@ We visualize both observed and estimated **spawner abundance** on the [Pacific S
 
 #### Run Timing {#run-timing}
 
-**Run timing** represents the average time window over which adult salmon enter freshwater on their return migrations to spawn. Run timing is estimated using a range of methods, including test fisheries, daily counting at weirs, and expert judgment. These different methods are reflected in the run timing [Data Quality Score](#data-quality). We adjust run timing estimates that are from test fisheries outside of the estuary or from sampling more than 100 km upstream to account for the time it takes salmon to migration to/from the river mouth, so that the run timing shown in the Pacific Salmon Explorer represents river entry timing regardless of where the data were collected. The methods for estimating run timing and approaches to compiling these data for specific CUs are detailed in the [Regions](#regions) chapter and in [Wilson and Peacock (in prep.)](https://bookdown.org/salmonwatersheds/life-cycle-timing).
+**Run timing** represents the average time window over which adult salmon enter freshwater on their return migrations to spawn. Run timing is estimated using a range of methods, including test fisheries, daily counting at weirs, and expert judgment. We adjust run timing estimates based on the sampling location so that the run timing shown in the Pacific Salmon Explorer represents river entry timing regardless of where the data were collected. Specifically, data that are from test fisheries operating more than 100 km from the mouth of the river (e.g., Area 20 test fisheries for some Fraser CUs) or from sampling more than 1-day migration upstream are adjusted for the time it takes salmon to migration to/from the river mouth based on published estimates of migration speed by species. The methods for estimating run timing and approaches to compiling these data for specific CUs are detailed in the [Regions](#regions) chapter and in [Wilson and Peacock (in prep.)](https://bookdown.org/salmonwatersheds/life-cycle-timing).
 
-Where data are available, we show the estimated run timing for each CU as the proportion of the CU that is expected to enter freshwater on a given day averaged over all historical information for the CU. Often, daily counts are not available but there is information on the dates for start (2.5th percentile), peak (50th percentile), and end (2.5th percentile) run timing. In these cases, we assume a mixed normal distribution with different standard deviations for the left- and right-hand sides based on the start and end dates, respectively. If the end date or start date is missing, we assume equal tails. If only peak or start date is available, we assume a standard deviation equal to the average standard deviation among other CUs of the same region and species.
+Where data are available, we show the estimated run timing for each CU as the relative proportion of the CU that is expected to enter freshwater on a given day averaged over all historical information for the CU. Often, daily counts are not available but there is information on the dates for start (2.5th percentile), peak (50th percentile), and end (2.5th percentile) run timing. In these cases, we assume a mixed normal distribution with different standard deviations for the left- and right-hand sides based on the start and end dates, respectively. If the end date or start date is missing, we assume equal tails. If only peak or start date is available, we assume a standard deviation equal to the average standard deviation among other CUs of the same region and species. If applied, these assumptions are reflected in the run timing data quality criteria (see [Data Quality](#data-quality)).
 
 #### Catch & Run Size {#catch-and-runsize}
 
-**Catch** estimates report the number of adult salmon caught in commercial (including both Canadian and U.S.), recreational, and First Nations' food, social, and ceremonial (FSC) fisheries. **Run Size** refers to the number of adult salmon that return from the ocean in a given year, including both **escapement** (i.e. estimated spawner abundance) and those that are caught (i.e. catch) at a CU-level. The **exploitation rate** is calculated as the proportion of a given run caught in all fisheries. This indicator provides important information on the long-term harvest rate of each CU, which has implications for the number of salmon returning to spawning grounds over time.
+**Catch** estimates report the number of adult salmon caught in commercial (including both Canadian and U.S.), recreational, and First Nations' food, social, and ceremonial (FSC) fisheries. **Run size** refers to the number of adult salmon that return from the ocean in a given year, including both **escapement** (i.e. estimated spawner abundance) and those that are caught (i.e. catch) at a CU-level. The **exploitation rate** is calculated as the proportion of a given run caught in all fisheries. This indicator provides important information on the long-term harvest rate of each CU, which has implications for the number of salmon returning to spawning grounds over time.
 
 #### Recruits-per-Spawner {#recruits-per-spawner}
 
@@ -186,7 +186,7 @@ We developed a standardized approach to assess the quality of data used to estim
 | Spawner survey coverage | How representative spawner surveys are of the CU, measured as the proportion of total spawners in the CU that spawn in indicator streams. | Spawner abundance, recruits-per-spawner, trends in spawner abundance, biological status |
 | Spawner survey execution | How consistently indicator streams have been monitored, measured as the proportion of indicator streams that were surveyed in the most recent generation. | Spawner abundance, recruits-per-spawner, trends in spawner abundance, biological status | 
 | Juvenile survey method | The quality of juvenile survey data, based on the survey methods used across all juvenile surveys in the CU. | Juvenile surveys | 
-| Run timing method | The quality of run timing data, based on the number of years of data, the currency of the data, and whether sampling captured the entirety of the run. | Run timing | 
+| Run timing quality | The quality of run timing data, based on the number of years of data, the currency of the data, and whether sampling captured the entirety of the run. | Run timing | 
 | Catch estimation method | The quality of catch estimates for the CU in the most recent generation based on a qualitative assessment of the rigor of the catch estimation method. | Catch and run size, recruits-per-spawner, biological status | 
 | Stock ID | The quality of recent stock identification data used in catch estimation for the CU. | Catch and run size, recruits-per-spawner, biological status |
 
@@ -282,9 +282,30 @@ knitr::kable(
 )
 ```
 
-#### Catch Estimates {#catch-estimates}
+#### Juvenile Survey Method {#juvenile-survey-method}
 
-Catch at the CU-level can be reconstructed using a variety of methods that result in **Catch Estimates** with different levels of uncertainty. This criterion indicates the quality of recent catch estimates for the CU in the most recent generation, based on a qualitative assessment of the rigor of the catch estimation method. We calculate this score at the CU-level for the most recent generation based on categories of the type of current catch datasets available on the Pacific Salmon Explorer (Table \@ref(tab:catchestScore)).
+**To be completed.**
+<!-- SP: For Eric to do.  -->
+
+#### Run Timing Quality {#run-timing-quality}
+
+The CU-level **run timing quality** criterion is based on the number of years of data, the currency of the data, and whether sampling captured the entirety of the run (Table \@ref(tab:rtdataQual)). For some CUs, run timing is monitored at a single location either near the mouth of the river or (for lake-type sockeye) near the rearing lake. In geographically large and/or coastal CUs where component river populations may display a range in run timing, there may be run timing estimates available for different locations within the CU. When run timing was available for multiple locations within a CU, we combined estimates from different locations. Thus, when determining the run timing data quality, "5 years of direct counts" may correspond to five years of data from a single location or 1 year of data from each of 5 locations.  
+
+| Score | Definition | R
+|:------------------------|:----------------------------------------|
+| NA - Not applicable | It was not possible to estimate run timing for the CU with available data. |
+| 1 - Low | 1-2 years of direct counts but very low numbers **or** part of the run was missed **or** or estimates of the peak **and** range of run timing was not available for the specific CU and the distribution of run timing was based on other, similar CUs (e.g., same species and region). |
+| 2 - Medium-Low | Fewer than 5 years of direct counts, with last monitoring prior to 2000
+| 3 - Medium | Fewer than 5 years of direct counts, with monitoring more recent than 2000
+| 4 - Medium-High | More than 5 years of direct counts, with last monitoring prior to 2000
+| 5 - High | More than 5 years of direct counts, with monitoring more recent than 2000
+
+: (#tab:rtdataQual) Run timing data quality criteria were scored on a scale of 1 to 5 based on the number of years of data, the currency of the data, and whether sampling captured the entirety of the run.
+
+
+#### Catch Estimation Method {#catch-estimation-method}
+
+Catch at the CU-level can be reconstructed using a variety of methods that result in catch estimates with different levels of uncertainty. The **catch estimation method** criterion indicates the quality of recent catch estimates for the CU in the most recent generation, based on a qualitative assessment of the rigor of the catch estimation method. We calculate this score at the CU-level for the most recent generation based on categories of the type of current catch datasets available on the Pacific Salmon Explorer (Table \@ref(tab:catchestScore)).
 
 ```{r catchestScore, include=TRUE, echo = FALSE}
 ceS <- read.csv("tables/sec4_catch_estscores.csv")
@@ -294,19 +315,10 @@ knitr::kable(
 )
 ```
 
-#### Overall Data Quality Score {#overall-spwnab-catch-dqual}
+### Stock ID {#stock-id}
 
-We sum the scores from the four criteria above to calculate each CU's Overall Data Quality Score. This score represents a standardized assessment of the quality of data used to estimate spawner abundance and catch for the Conservation Unit, based on the four criteria above. While this method applies to the available data, it does weigh spawner data more heavily than catch data by a ratio of 3:1.
-
-We then translate the final scores into categories of Poor (1-7), Fair (8-14), or Good (15-20) that are displayed on the Pacific Salmon Explorer (Table \@ref(tab:spawnabQual)). A score of 0 means that there were no data to assess.
-
-```{r spawnabQual, include=TRUE, echo = FALSE}
-hatch <- read.csv("tables/sec4_spawnab_data_qual.csv", check.names = F)
-knitr::kable(
-  hatch, booktabs = TRUE,
-  caption = 'Overall Spawner Abundance and Catch Data Quality Scores.'
-)
-```
+**To be completed.**
+<!-- SP: For Eric to do.  -->
 
 ### Benchmarks for Assessing Biological Status {#benchmarks-biostatus}
 

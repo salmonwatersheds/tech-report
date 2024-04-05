@@ -1,6 +1,6 @@
 # Appendix 13: Cumulative Spawning Pressure Results by Region and Conservation Unit {#appendix-13 .unnumbered}
 
-The percentage of watersheds within each CU’s spawning zone of influence that are rated high, moderate, or low risk (i.e., red, amber, green) for cumulative habitat pressures.
+The percentage of watersheds within each Conservation Unit's (CU’s) spawning zone of influence that are rated high, moderate, or low risk (i.e., red, amber, green) for cumulative habitat pressures.
 
 ```{r app13, include = TRUE, echo = FALSE, message = FALSE, warnings=FALSE}
 options(width = 400)

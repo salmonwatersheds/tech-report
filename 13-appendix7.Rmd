@@ -1,6 +1,6 @@
 # Appendix 7: Habitat Pressure Datasets & Data Sources {#appendix-7 .unnumbered}
 
-Habitat pressure datasets, data sources, and dataset publication years.
+Habitat pressure data sets, data sources, and data set publication years.
 
 ```{r app7, include=TRUE, echo = FALSE}
 app7 <- read.csv("tables/appendix7.csv")

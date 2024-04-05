@@ -1,3 +1,3 @@
 # Appendix 12: Habitat Pressure Benchmark Values by Region {#appendix-12 .unnumbered}
 
-Coming soon!
+The habitat pressure indicators are currently undergoing revision, and new information will be available here in 2024 that reflects the updated approach to processing spatial habitat data. For a description of the approach used from 2016 - 2024, see [previous versions of this technical report (Version 110)](https://salmonwatersheds.ca/document/lib_475/).

@@ -72,13 +72,13 @@ These indicators provide information on the current state of salmon CUs and tren
 
 #### Spawner Surveys {#spawner-surveys}
 
-**Spawner surveys** show the observed numbers of spawning salmon of each species returning to specific streams each year. Spawner surveys provide a fundamental piece of information needed to assess the status of salmon CUs over time. In the [Pacific Salmon Explorer](https://www.salmonexplorer.ca) we draw on spawner survey data from the [New Salmon Escapement Database (NuSEDS)](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6) and other sources detailed in the region [Regions](#regions) section to visualize the spatial and temporal coverage of spawner surveys for each CU in the [Pacific Salmon Explorer](https://www.salmonexplorer.ca).
+**Spawner surveys** show the observed numbers of spawning salmon of each species returning to specific streams each year. Spawner surveys provide a fundamental piece of information needed to assess the status of salmon CUs over time. In the [Pacific Salmon Explorer](https://www.salmonexplorer.ca) we draw on spawner survey data from the [New Salmon Escapement Database (NuSEDS)](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6) and other sources detailed in the region [Regions](#regions) section to visualize the spatial and temporal coverage of spawner surveys for each CU in the [Pacific Salmon Explorer](https://www.salmonexplorer.ca). The NuSEDS data requires substantial cleaning prior integration into the PSE due to inconsistencies in populations and locations names and identification numbers (see [Appendix 1](#appendix-1) for an exhaustive description of the cleaning procedure).
 
-We distinguish spawner surveys in indicator streams and non-indicator streams for each species. **Indicator streams** are observed more consistently in recent decades, tend to have higher spawner abundance and to be monitored using more intensive methods that provide greater accuracy. <!-- SP: Updated this text; I ran a binomial glm to look at what factors influence indicator/non-indicator in NuSEDS and min year, max year, number of obs, and mean estimate classification type are all signficant, with positive effects of both min and max year (i.e. more recently monitored). --> Therefore, indicator streams are understood to provide more reliable indices of abundance and are assumed to be representative of returns to other streams nearby [@English2016ReviewEscapementIndicatorb]. **Non-indicator streams** tend to have less consistent survey coverage, more variable survey methods, and/or may be more difficult to survey. A number of both indicator and non-indicator streams within a CU may be surveyed in a given year. On the Pacific Salmon Explorer, we use the indicator stream designation from LGL Ltd [@EnglishEtAl2018NorthCentralCoast] for the North and Central Coast Regions (Skeena, Nass, and Central Coast), and the indicator stream designation provided by DFO in NuSEDS for all other Regions.
+We distinguish spawner surveys in indicator streams and non-indicator streams for each species. **Indicator streams** are observed consistently in recent decades, tend to have high spawner abundance and to be monitored using intensive methods that provide greater accuracy. <!-- SP: Updated this text; I ran a binomial glm to look at what factors influence indicator/non-indicator in NuSEDS and min year, max year, number of obs, and mean estimate classification type are all signficant, with positive effects of both min and max year (i.e. more recently monitored). --> Therefore, indicator streams are understood to provide reliable indices of abundance and are assumed to be representative of returns to other streams nearby [@English2016ReviewEscapementIndicatorb]. In comparison, **non-indicator streams** tend to have less consistent survey coverage, more variable survey methods, and/or may be more difficult to survey. A number of both indicator and non-indicator streams within a CU may be surveyed in a given year. On the Pacific Salmon Explorer, we use the indicator stream designation from LGL Ltd [@EnglishEtAl2018NorthCentralCoast] for the North and Central Coast Regions (Skeena, Nass, and Central Coast), and from DFO (NuSEDS) for all other Regions.
 
-A variety of methods are used to survey spawners in both indicator and non-indicator streams, and methods vary by species, CU, and stream. Spawner counts can be produced from a single visual survey of a stream by foot, by counting fish through a complete counting fence, or by aerial (helicopter) surveys. Survey methodology can also change over time according to changes in capacity and funding. For instance, some streams that were historically monitored by visual surveys on foot are now enumerated via a counting fence or aerial surveys (see [Data Quality](#quality-data) section below).
+A variety of methods are used to survey spawners in both indicator and non-indicator streams, and methods vary by species, CU, and stream. Spawner counts can be produced from a single visual survey of a stream by foot, by counting fish through a complete counting fence, or by aerial (helicopter) surveys. Survey methodology can also change over time according to changes in capacity and funding. For instance, some streams that were historically monitored by visual surveys on foot are now enumerated via a counting fence or aerial surveys. We account for these discrepancies in the survey methods by defining a Data Quality Score to each CU (see [Data Quality](#data-quality) section below).
 
-For steelhead, we used spawner survey data from a variety of sources, depending on the Region. Steelhead monitoring data have not been maintained in a centralized database like NuSEDS, so we compiled and synthesized spawner survey data for steelhead from disparate sources, including from many monitoring projects led by the Province of BC. Streams with spawner survey data for steelhead have not been classified as indicator and non-indicator streams, so we have provisionally classified all streams with available spawner survey data as indicator streams for steelhead. More specific details on the specific sources of spawner survey data for steelhead are summarized by Region in the [Regions](#regions) section.
+For steelhead, we used spawner survey data from a variety of sources, depending on the Region. Steelhead monitoring data have not been maintained in a centralized database like NuSEDS, so we compiled and synthesized spawner survey data from disparate sources, including many monitoring projects led by the Province of BC. Streams with spawner survey data for steelhead have not been classified as indicator and non-indicator streams. Consequently, we provisionally classified all streams with available spawner survey data as indicator streams. More specific details on the specific sources of spawner survey data for steelhead are summarized by Region in the [Regions](#regions) section.
 
 #### Juvenile Surveys {#juvenile-surveys}
 
@@ -164,8 +164,8 @@ where $\bar{S_i}$ is the geometric mean number of spawners in stream $i$ over th
 
 <!-- SP: Table re-written - previous definitions were incorrect (not % of spawners necessarily because roll-up, and ranges were not complete.) -->
 
-| Hatchery Release Score | Definition |
-|:------------------------|:----------------------------------------------|
+| Hatchery Release Score | Definition                                                                                                        |
+|:------------------------|:---------------------------------------------|
 | None                   | There are no records of hatchery influence in the CU                                                              |
 | Low                    | There are no records of hatchery influence in the CU **in the most recent two generations** ($c = 0$)             |
 | Moderate               | Less than 25% of spawners within the CU are from streams with moderate or high hatchery influence ($0 < c <0.25$) |
@@ -178,50 +178,72 @@ where $\bar{S_i}$ is the geometric mean number of spawners in stream $i$ over th
 
 The quality of data shown in the Pacific Salmon Explorer varies widely among Regions, species, CUs, and streams. For instance, spawner abundance obtained from a single aerial survey is less reliable than counts obtained from an unbroken counting fence. We combine spawner survey data with other datasets, such as catch, to determine total run size and to assess the biological status of CUs. The **data quality** for each of these data types is important to consider when interpreting the population indicators shown in the Pacific Salmon Explorer.
 
-We developed a standardized approach to assess the quality of data used to estimate populations indicators for each CU based on one or more of seven data quality criteria (Table \@ref(tab:cudataQual)). We assign scores of 0-5 to each of these four criteria and present the average score across relevant criteria as the **Data Quality Score** ($Q$) for each population indicator and CU. Numeric scores are translated to categorical data quality outcomes of low ($0 < Q \leq 1$), low-medium ($1 < Q \leq 2$), medium ($2 < Q \leq 3$), medium-high ($3 < Q \leq 4$), and high ($4 < Q \leq 5$). A score of zero means that there were no data for that CU. 
+We developed a standardized approach to assess the quality of data used to estimate populations indicators for each CU based on one or more of seven data quality criteria (Table \@ref(tab:cudataQual)). We assign scores of 0-5 to each of these four criteria and present the average score across relevant criteria as the **Data Quality Score** ($Q$) for each population indicator and CU. Numeric scores are translated to categorical data quality outcomes of low ($0 < Q \leq 1$), low-medium ($1 < Q \leq 2$), medium ($2 < Q \leq 3$), medium-high ($3 < Q \leq 4$), and high ($4 < Q \leq 5$). A score of zero means that there were no data for that CU.
 
-| Data quality criteria | Definition | Relevant population indicator(s) |
-|:------------------------|:----------------------------------------|:-----------------------------------------|
-| Spawner survey method | The quality of spawner survey data, based on the survey methods used across all indicator streams within the CU over the most recent generation. | Spawner surveys, spawner abundance, recruits-per-spawner, trends in spawner abundance, biological status |
-| Spawner survey coverage | How representative spawner surveys are of the CU, measured as the proportion of total spawners in the CU that spawn in indicator streams. | Spawner abundance, recruits-per-spawner, trends in spawner abundance, biological status |
-| Spawner survey execution | How consistently indicator streams have been monitored, measured as the proportion of indicator streams that were surveyed in the most recent generation. | Spawner abundance, recruits-per-spawner, trends in spawner abundance, biological status | 
-| Juvenile survey method | The quality of juvenile survey data, based on the survey methods used across all juvenile surveys in the CU. | Juvenile surveys | 
-| Run timing quality | The quality of run timing data, based on the number of years of data, the currency of the data, and whether sampling captured the entirety of the run. | Run timing | 
-| Catch estimation method | The quality of catch estimates for the CU in the most recent generation based on a qualitative assessment of the rigor of the catch estimation method. | Catch and run size, recruits-per-spawner, biological status | 
-| Stock ID | The quality of recent stock identification data used in catch estimation for the CU. | Catch and run size, recruits-per-spawner, biological status |
+| Data quality criteria    | Definition                                                                                                                                                | Relevant population indicator(s)                                                                         |
+|:-----------------|:--------------------------|:--------------------------|
+| Spawner survey method    | The quality of spawner survey data, based on the survey methods used across all indicator streams within the CU over the most recent generation.          | Spawner surveys, spawner abundance, recruits-per-spawner, trends in spawner abundance, biological status |
+| Spawner survey coverage  | How representative spawner surveys are of the CU, measured as the proportion of total spawners in the CU that spawn in indicator streams.                 | Spawner abundance, recruits-per-spawner, trends in spawner abundance, biological status                  |
+| Spawner survey execution | How consistently indicator streams have been monitored, measured as the proportion of indicator streams that were surveyed in the most recent generation. | Spawner abundance, recruits-per-spawner, trends in spawner abundance, biological status                  |
+| Juvenile survey method   | The quality of juvenile survey data, based on the survey methods used across all juvenile surveys in the CU.                                              | Juvenile surveys                                                                                         |
+| Run timing quality       | The quality of run timing data, based on the number of years of data, the currency of the data, and whether sampling captured the entirety of the run.    | Run timing                                                                                               |
+| Catch estimation method  | The quality of catch estimates for the CU in the most recent generation based on a qualitative assessment of the rigor of the catch estimation method.    | Catch and run size, recruits-per-spawner, biological status                                              |
+| Stock ID                 | The quality of recent stock identification data used in catch estimation for the CU.                                                                      | Catch and run size, recruits-per-spawner, biological status                                              |
 
 : (#tab:cudataQual) Summary of the seven criteria used to score overall CU-level data quality for population indicators.
 
-
 <!-- ```{r cudataQual, include = TRUE, echo = FALSE, warning = FALSE} -->
+
 <!-- library(reactable) -->
+
 <!-- # hatch <- read.csv("tables/sec4_cu_data_qual.csv") -->
+
 <!-- # knitr::kable( -->
+
 <!-- #  dq, booktabs = TRUE, -->
+
 <!-- #  caption = 'Summary of the four criteria used to score overall CU-level data quality, based on the quality of data on spawner abundance and catch estimates.' -->
+
 <!-- # ) -->
 
 <!-- dq <- data.frame( -->
+
 <!--   Category = c( -->
+
 <!--     rep("Spawner Survey Data", 3),  -->
+
 <!--     "Catch Data"), -->
+
 <!--   Criteria = c( -->
+
 <!--     "Spawner Survey Method",  -->
+
 <!--     "Spawner Survey Coverage",  -->
+
 <!--     "Spawner Survey Execution",  -->
+
 <!--     "Catch Estimation Method"), -->
+
 <!--   Description = c( -->
+
 <!--     "The quality of spawner survey data, based on the survey methods and sampling effort across all indicator streams within this CU over the most recent generation",  -->
+
 <!--     "How representative spawner surveys are of the CU, measured as the proportion of total spawners that spawn in indicator streams",  -->
+
 <!--     "How consistently the indicator streams for the CU have been surveyed, measured as the proportion of indicator streams that were monitored over the most recent generation",  -->
+
 <!--     "The quality of recent catch estimates for the CU, based on a qualitative assessment of the rigour of the catch estimation method in the most recent generation") -->
+
 <!-- ) -->
 
-
 <!-- knitr::kable( -->
+
 <!--  dq, booktabs = TRUE, -->
+
 <!--  caption = 'Summary of the four criteria used to assign a Data Quality Score to each CU, based on the quality of data on spawner abundance and catch estimates.' -->
+
 <!--  ) -->
+
 <!-- ``` -->
 
 #### Spawner Survey Method {#spawner-survey-method}
@@ -239,8 +261,8 @@ knitr::kable(
 ```
 
 <!-- BSC:I added "check.names = F" in read.csv() because the " ", "(" and ")" were replaced by "." in header -->
- <!-- SP: What is the weighting by?  -->
-To determine CU-level spawner survey method criteria, we calculate a weighted average of the stream-level survey method data quality scores across all indicator streams over the most recent generation within the CU (Table \@ref(tab:cusurveyQual)). The average survey method score over the most recent generation for each stream is weighted by the geometric average spawner abundance of that survey stream over the sum of the average spawner abundances to all indicator streams in the CU. Where there are known issues with DFO's indicator stream list in NuSEDS, we manually override those data quality scores and substitute expert derived assessments of data quality based on expert knowledge of spawner survey methods. Specifically, this includes streams on the north and central coast [@English2016ReviewEscapementIndicatorb] and southern BC Chinook [@BrownEtAl20202020SummaryAbundance]. We do not include survey years where spawner survey methods are `Unknown` in the survey method scores. Note that this score reflects the reliability of the estimates of current spawner abundance for a CU over the most recent generation and not the reliability of estimates across the entire time series.
+
+<!-- SP: What is the weighting by?  --> To determine CU-level spawner survey method criteria, we calculate a weighted average of the stream-level survey method data quality scores across all indicator streams over the most recent generation within the CU (Table \@ref(tab:cusurveyQual)). The average survey method score over the most recent generation for each stream is weighted by the geometric average spawner abundance of that survey stream over the sum of the average spawner abundances to all indicator streams in the CU. Where there are known issues with DFO's indicator stream list in NuSEDS, we manually override those data quality scores and substitute expert derived assessments of data quality based on expert knowledge of spawner survey methods. Specifically, this includes streams on the north and central coast [@English2016ReviewEscapementIndicatorb] and southern BC Chinook [@BrownEtAl20202020SummaryAbundance]. We do not include survey years where spawner survey methods are `Unknown` in the survey method scores. Note that this score reflects the reliability of the estimates of current spawner abundance for a CU over the most recent generation and not the reliability of estimates across the entire time series.
 
 ```{r cusurveyQual, include=TRUE, echo = FALSE}
 cusq <- read.csv("tables/sec4_cu_survey_qual.csv")
@@ -251,7 +273,9 @@ knitr::kable(
 ```
 
 #### Spawner Survey Coverage {#spawner-survey-coverage}
+
 <!-- SP: Need to clarify this description -->
+
 This criterion indicates how representative spawner surveys are of the entire CU, measured as the proportion of total spawners that spawn in indicator streams. If a CU has a higher proportion of spawners returning to indicator streams, we assume that the spawner abundance data within that CU is of higher quality since indicator streams are more consistently and reliably surveyed.
 
 This score is calculated as the average number of spawners in indicator streams divided by the average number of spawners in all indicator and non-indicator streams within the CU. To derive this proportion, we first determine which decade has the greatest coverage of spawner surveys across the indicator and non-indicator streams. We assume that there is a constant proportion of spawners from indicator and non-indicator streams through time. We then calculate the average number of spawners in all indicator and non-indicator streams according to:
@@ -284,24 +308,22 @@ knitr::kable(
 
 #### Juvenile Survey Method {#juvenile-survey-method}
 
-**To be completed.**
-<!-- SP: For Eric to do.  -->
+**To be completed.** <!-- SP: For Eric to do.  -->
 
 #### Run Timing Quality {#run-timing-quality}
 
-The CU-level **run timing quality** criterion is based on the number of years of data, the currency of the data, and whether sampling captured the entirety of the run (Table \@ref(tab:rtdataQual)). For some CUs, run timing is monitored at a single location either near the mouth of the river or (for lake-type sockeye) near the rearing lake. In geographically large and/or coastal CUs where component river populations may display a range in run timing, there may be run timing estimates available for different locations within the CU. When run timing was available for multiple locations within a CU, we combined estimates from different locations. Thus, when determining the run timing data quality, "5 years of direct counts" may correspond to five years of data from a single location or 1 year of data from each of 5 locations.  
+The CU-level **run timing quality** criterion is based on the number of years of data, the currency of the data, and whether sampling captured the entirety of the run (Table \@ref(tab:rtdataQual)). For some CUs, run timing is monitored at a single location either near the mouth of the river or (for lake-type sockeye) near the rearing lake. In geographically large and/or coastal CUs where component river populations may display a range in run timing, there may be run timing estimates available for different locations within the CU. When run timing was available for multiple locations within a CU, we combined estimates from different locations. Thus, when determining the run timing data quality, "5 years of direct counts" may correspond to five years of data from a single location or 1 year of data from each of 5 locations.
 
-| Score | Definition | R
-|:------------------------|:----------------------------------------|
-| NA - Not applicable | It was not possible to estimate run timing for the CU with available data. |
-| 1 - Low | 1-2 years of direct counts but very low numbers **or** part of the run was missed **or** or estimates of the peak **and** range of run timing was not available for the specific CU and the distribution of run timing was based on other, similar CUs (e.g., same species and region). |
-| 2 - Medium-Low | Fewer than 5 years of direct counts, with last monitoring prior to 2000
-| 3 - Medium | Fewer than 5 years of direct counts, with monitoring more recent than 2000
-| 4 - Medium-High | More than 5 years of direct counts, with last monitoring prior to 2000
-| 5 - High | More than 5 years of direct counts, with monitoring more recent than 2000
+| Score               | Definition                                                                                                                                                                                                                                                                              |
+|:---------------------------|:-------------------------------------------|
+| NA - Not applicable | It was not possible to estimate run timing for the CU with available data.                                                                                                                                                                                                              |
+| 1 - Low             | 1-2 years of direct counts but very low numbers **or** part of the run was missed **or** or estimates of the peak **and** range of run timing was not available for the specific CU and the distribution of run timing was based on other, similar CUs (e.g., same species and region). |
+| 2 - Medium-Low      | Fewer than 5 years of direct counts, with last monitoring prior to 2000                                                                                                                                                                                                                 |
+| 3 - Medium          | Fewer than 5 years of direct counts, with monitoring more recent than 2000                                                                                                                                                                                                              |
+| 4 - Medium-High     | More than 5 years of direct counts, with last monitoring prior to 2000                                                                                                                                                                                                                  |
+| 5 - High            | More than 5 years of direct counts, with monitoring more recent than 2000                                                                                                                                                                                                               |
 
 : (#tab:rtdataQual) Run timing data quality criteria were scored on a scale of 1 to 5 based on the number of years of data, the currency of the data, and whether sampling captured the entirety of the run.
-
 
 #### Catch Estimation Method {#catch-estimation-method}
 
@@ -317,8 +339,7 @@ knitr::kable(
 
 ### Stock ID {#stock-id}
 
-**To be completed.**
-<!-- SP: For Eric to do.  -->
+**To be completed.** <!-- SP: For Eric to do.  -->
 
 ### Benchmarks for Assessing Biological Status {#benchmarks-biostatus}
 
@@ -354,8 +375,7 @@ The density-dependence parameter is estimated independently for each CU using CU
 
 <!-- SP: Question: Do we use habitat capacity estimates for ALL SEL CUs?? Or only some? Also, note that prior on Smax should be max spawners not mean spawners. Or should it? Korman and English (2013) use mean...  If these data are unavailable, we use $S_{\text{max},i} = 1 / \hat{S}_{\text{max},i}$ where $\hat{S}_{\text{max},i}$ is the maximum observed spawner abundance for CU $i$. -->
 
-We estimate parameters $a_i$ and $b_i$ for each CU $i$ by fitting the linearized Ricker model to spawner and recruit data:
-$$ \log \left( \frac{R_{i,t}}{S_{i,t}} \right) = a_i - b_i S_{i,t}$$ where $a_i$ is drawn from a region/species hyperdistribution as described above, with priors $\log (\mu_a) \sim N(0.5, 1000)$, $\sigma_a = \sqrt(1/\tau_a)$ where $\tau_a \sim \text{Gamma}(0.5, 0.5)$. The above linearized Ricker model is fit to all CUs for a given region and species together using the R package `R2jags` [@SuYajima2021R2jagsUsingRun], with a total number of iterations of 100,000, removing 5000 iterations for burnin and applying a thinning interval of 10. The resulting posterior draws for $a_i$ and $b_i$ are used to calculate posteriors for $S_{MSY}$ and $S_{GEN}$. The posteriors for these upper and lower benchmarks are summarized by calculating the highest posterior density (HPD) and 95% highest posterior density interval (HPDI). We chose to use these summary statistics instead of the mean or median because the posteriors for $S_{MSY}$ and $S_{GEN}$ were, in some cases, quite skewed given the tendancy for spawner abundance to be log-normally distributed. For CUs with extremely low productivity, $S_{MSY}$ can be less than $S_{GEN}$, yielding benchmark values that do not make biological sense [@HoltEtAl2018EvaluatingBenchmarksBiological; @PeacockEtAl2020EvaluatingConsequencesCommon]. We do not use spawner-recruit benchmarks in these cases and instead apply percentile benchmarks. 
+We estimate parameters $a_i$ and $b_i$ for each CU $i$ by fitting the linearized Ricker model to spawner and recruit data: $$ \log \left( \frac{R_{i,t}}{S_{i,t}} \right) = a_i - b_i S_{i,t}$$ where $a_i$ is drawn from a region/species hyperdistribution as described above, with priors $\log (\mu_a) \sim N(0.5, 1000)$, $\sigma_a = \sqrt(1/\tau_a)$ where $\tau_a \sim \text{Gamma}(0.5, 0.5)$. The above linearized Ricker model is fit to all CUs for a given region and species together using the R package `R2jags` [@SuYajima2021R2jagsUsingRun], with a total number of iterations of 100,000, removing 5000 iterations for burnin and applying a thinning interval of 10. The resulting posterior draws for $a_i$ and $b_i$ are used to calculate posteriors for $S_{MSY}$ and $S_{GEN}$. The posteriors for these upper and lower benchmarks are summarized by calculating the highest posterior density (HPD) and 95% highest posterior density interval (HPDI). We chose to use these summary statistics instead of the mean or median because the posteriors for $S_{MSY}$ and $S_{GEN}$ were, in some cases, quite skewed given the tendancy for spawner abundance to be log-normally distributed. For CUs with extremely low productivity, $S_{MSY}$ can be less than $S_{GEN}$, yielding benchmark values that do not make biological sense [@HoltEtAl2018EvaluatingBenchmarksBiological; @PeacockEtAl2020EvaluatingConsequencesCommon]. We do not use spawner-recruit benchmarks in these cases and instead apply percentile benchmarks.
 
 <!-- Need to add description of generation length. -->
 

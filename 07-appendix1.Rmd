@@ -58,3 +58,106 @@ defaultPageSize = 15
 )
 
 ```
+
+# NuSEDS data processing
+
+## cleaning procedure
+
+The objective of the procedure is to obtain the yearly counts of each salmon populations in surveyed in their respective stream. This data in NuSEDS is separated in two datasets. The **all_areas_nuseds** dataset contains the divers observed yearly counts (i.e. NATURAL_ADULT_SPAWNERS, NATURAL_SPAWNERS_TOTAL, etc.) and associated methods (i.e. ESTIMATE_METHOD, ESTIMATE_CLASSIFICATION, etc.) and waterbody names (i.e. GFE_ID, WATERBODY, GAZETTED_NAME, etc.) for each population-related fields (i.e. POP_ID, POPULATION). The **conservation_unit_system_sites** links each population (POP_ID, population) to their respective Conservation Unit (CU_NAME, FULL_CU_IN, CU_LONGT, CU_LAT, etc.) and provides the stream-related information (GFE_ID, SYSTEM_SITE, X_LONGT, Y_LAT). Ideally the two datasets could be merge by using the population and location identification number POP_ID and GFE_ID. Unfortunately, there are numerous **time series** (i.e. a series of yearly counts for a given population in a given location) are **problematic**, which occurs when:
+
+-   A series present in all_areas_nuseds but absent in conservation_unit_system_sites.
+
+-   Multiple time series of a same population (i.e. same POP_ID) are observed in multiple locations (i.e. different GFE_IDs), which should not occur because the a POP_ID should be defined for a unique location.
+
+The observation of problematic time series revealed inconsistencies such as missing, duplicated, and conflicting data points.
+
+In order to rescue as much data as possible, we attempted to solve these issues by either (*i*) **deleting** a problematic series, (*ii*) **combining** or (*iii*) **summing** it to an **alternative series** (i.e., a series present in the focal dataset that shares either the same POP_ID or GFE_ID and species), or (*iv*) **creating** a new time series in conservation_unit_system_sites. In each case, we used all the information available in the different fields and made assumptions based on our professional judgement. Below are more details about the different interventions applied to problematic time series:
+
+-   We **deleted** a time series (or a portion of it) from all_areas_nuseds when (1) it was a duplicate of another time series, (2) it had less than four data points, or (3) the lack of information prevented to combine or merge it to an alternative series or to create a new series in conservation_unit_system_sites (e.g. if run timing was unknown).
+
+-   We **combined** a time series with an alternative series when data points where not in conflict (i.e. different value for a same year) and the information available in the other fields was not prescriptive (e.g. the population belong to the same CU, the locations have similar names or spatial coordinates).
+
+-   We **summed** a time series to an alternative series having different POP_ID but same GFE_ID and CU_NAME and with conflicting data points.
+
+-   We **created** a new series in conservation_unit_system_sites (i.e. a new row with a unique POP_ID - GFE_ID combination) when it could not be deleted, merged or combined to an alternative series.
+
+The diverse and idiosyncratic nature of these problematic cases prevents the establishment of a systematic and simple cleaning process. Many of these cases were resolved individually by observing and comparing time series and accounting for the information available. Here below is an exhaustive description of the cleaning process.
+
+1.  Remove the time series (i.e. unique POP_ID - GFE_ID associations) with only NAs and/or 0s in all_areas_nuseds (n = 4491; 25%)
+
+2.  Assess all the time series present in conservation_unit_system_sites but not in all_areas_nuseds (n = 259)
+
+2.2. Cases with presence of alternative series in NUSEDS (n = 4).
+
+-   Each case was assessed visually.
+
+2.3. Cases with no alternative time series in all_areas_nuseds (n = 254)
+
+-   The rows corresponding to these series are removed from conservation_unit_system_sites.
+
+2.4. Case with multiple GFE_ID for a single POP_ID (n = 1)
+
+-   The problematic series was simply removed from conservation_unit_system_sites.
+
+3.  Case of series with same POP_ID but different GFE_IDs in conservation_unit_system_sites (n = 1).
+
+-   Two time series had the same POP_ID but different GFE_ID. Both series were kept because they are not compatible, have recent data points.
+
+4. Assess all the time series present in all_areas_nuseds but not in conservation_unit_system_sites (n = 171)
+
+4.1. Remove series with <= 3 data points (n = 94)
+
+4.2. Cases of series with alternative POP_ID and no alternative GFE_ID (n = 6)
+
+-   Each case was assessed visually.
+
+4.3. Cases of series with alternative GFE_ID with or without alternative POP_ID (n = 34)
+
+- Problematic series with the same POP_IDs (e.g. series with POP_ID = 47925 and GFE_ID = 15, 31516 ad 31740, respectively) having the same alternative series (e.g. series with POP_ID = 47925 and GFE_ID = 14) are assessed together.
+
+4.4. Cases with no alternative series (n = 37)
+
+- These series were removed from all_areas_nuseds.
+
+- In future we could investigate and attempt to rescue the series with > 10 data points.
+
+5. Merge all_areas_nuseds and conservation_unit_system_sites.
+
+6. Assess time series with a same CU_NAME and GFE_ID (n = 62).
+
+- In all cases but one there are only 2 series
+
+- Case 1: there is only one data point in one of the series; if it is compatible, then merge to other series, if not, remove from all_areas_nuseds.
+
+- Case 2: One of the series is 100% duplicated with the other one: to remove from all_areas_nuseds.
+
+- Case 3: the rest of the series are merged; adding the values when data point are in conflict.
+
+
+
+## Estimation of population counts
+
+
+The **observed count** for each series is the maximum value of the following fields in all_areas_nuseds: NATURAL_ADULT_SPAWNERS, NATURAL_JACK_SPAWNERS, NATURAL_SPAWNERS_TOTAL, ADULT_BROODSTOCK_REMOVALS, JACK_BROODSTOCK_REMOVALS, TOTAL_BROODSTOCK_REMOVALS, OTHER_REMOVALS and TOTAL_RETURN_TO_RIVER.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -103,9 +103,9 @@ The diverse and idiosyncratic nature of these problematic cases prevents the est
 
 -   Two time series had the same POP_ID but different GFE_ID. Both series were kept because they are not compatible, have recent data points.
 
-4. Assess all the time series present in all_areas_nuseds but not in conservation_unit_system_sites (n = 171)
+4.  Assess all the time series present in all_areas_nuseds but not in conservation_unit_system_sites (n = 171)
 
-4.1. Remove series with <= 3 data points (n = 94)
+4.1. Remove series with \<= 3 data points (n = 94)
 
 4.2. Cases of series with alternative POP_ID and no alternative GFE_ID (n = 6)
 
@@ -113,51 +113,26 @@ The diverse and idiosyncratic nature of these problematic cases prevents the est
 
 4.3. Cases of series with alternative GFE_ID with or without alternative POP_ID (n = 34)
 
-- Problematic series with the same POP_IDs (e.g. series with POP_ID = 47925 and GFE_ID = 15, 31516 ad 31740, respectively) having the same alternative series (e.g. series with POP_ID = 47925 and GFE_ID = 14) are assessed together.
+-   Problematic series with the same POP_IDs (e.g. series with POP_ID = 47925 and GFE_ID = 15, 31516 ad 31740, respectively) having the same alternative series (e.g. series with POP_ID = 47925 and GFE_ID = 14) are assessed together.
 
 4.4. Cases with no alternative series (n = 37)
 
-- These series were removed from all_areas_nuseds.
+-   These series were removed from all_areas_nuseds.
 
-- In future we could investigate and attempt to rescue the series with > 10 data points.
+-   In future we could investigate and attempt to rescue the series with \> 10 data points.
 
-5. Merge all_areas_nuseds and conservation_unit_system_sites.
+5.  Merge all_areas_nuseds and conservation_unit_system_sites.
 
-6. Assess time series with a same CU_NAME and GFE_ID (n = 62).
+6.  Assess time series with a same CU_NAME and GFE_ID (n = 62).
 
-- In all cases but one there are only 2 series
+-   In all cases but one there are only 2 series
 
-- Case 1: there is only one data point in one of the series; if it is compatible, then merge to other series, if not, remove from all_areas_nuseds.
+-   Case 1: there is only one data point in one of the series; if it is compatible, then merge to other series, if not, remove from all_areas_nuseds.
 
-- Case 2: One of the series is 100% duplicated with the other one: to remove from all_areas_nuseds.
+-   Case 2: One of the series is 100% duplicated with the other one: to remove from all_areas_nuseds.
 
-- Case 3: the rest of the series are merged; adding the values when data point are in conflict.
-
-
+-   Case 3: the rest of the series are merged; adding the values when data point are in conflict.
 
 ## Estimation of population counts
 
-
 The **observed count** for each series is the maximum value of the following fields in all_areas_nuseds: NATURAL_ADULT_SPAWNERS, NATURAL_JACK_SPAWNERS, NATURAL_SPAWNERS_TOTAL, ADULT_BROODSTOCK_REMOVALS, JACK_BROODSTOCK_REMOVALS, TOTAL_BROODSTOCK_REMOVALS, OTHER_REMOVALS and TOTAL_RETURN_TO_RIVER.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

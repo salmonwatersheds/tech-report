@@ -308,8 +308,17 @@ knitr::kable(
 
 #### Juvenile Survey Method {#juvenile-survey-method}
 
-**To be completed.** <!-- SP: For Eric to do.  -->
+This criterion indicates the quality of the juvenile survey data over the most recent generation based on method type and execution.
 
+| Score               | Definition                                                                                                                                                                                                                                                                              |
+|:---------------------------|:-------------------------------------------|
+| NA - Not applicable | A Not Applicable score indicates that no juvenile surveys were completed for this Conservation Unit over the most recent generation.                                                                                                                                                                                                              |
+| 1 - Low             | A Low score indicates that most of the juvenile surveys were performed with low-effort or inconsistently executed methods, resulting in variable accuracy and precision. |
+
+| 2 - Medium-Low      | A Medium-Low score indicates that most of the juvenile surveys were performed with medium to low effort.                                                                                                                                                                                                                 |
+| 3 - Medium          | A Medium score indicates that most of the juvenile surveys were performed with medium effort.                                                                                                                                                                                                               |
+| 4 - Medium-High     | A Medium-High score indicates that most of the juvenile surveys were performed with high effort.                                                                                                                                                                                                                   |
+| 5 - High            | A High score indicates that most of the juvenile surveys produce counts of total juveniles.                                                                                                                                                                                                               |
 #### Run Timing Quality {#run-timing-quality}
 
 The CU-level **run timing quality** criterion is based on the number of years of data, the currency of the data, and whether sampling captured the entirety of the run (Table \@ref(tab:rtdataQual)). For some CUs, run timing is monitored at a single location either near the mouth of the river or (for lake-type sockeye) near the rearing lake. In geographically large and/or coastal CUs where component river populations may display a range in run timing, there may be run timing estimates available for different locations within the CU. When run timing was available for multiple locations within a CU, we combined estimates from different locations. Thus, when determining the run timing data quality, "5 years of direct counts" may correspond to five years of data from a single location or 1 year of data from each of 5 locations.
@@ -318,6 +327,7 @@ The CU-level **run timing quality** criterion is based on the number of years of
 |:---------------------------|:-------------------------------------------|
 | NA - Not applicable | It was not possible to estimate run timing for the CU with available data.                                                                                                                                                                                                              |
 | 1 - Low             | 1-2 years of direct counts but very low numbers **or** part of the run was missed **or** or estimates of the peak **and** range of run timing was not available for the specific CU and the distribution of run timing was based on other, similar CUs (e.g., same species and region). |
+
 | 2 - Medium-Low      | Fewer than 5 years of direct counts, with last monitoring prior to 2000                                                                                                                                                                                                                 |
 | 3 - Medium          | Fewer than 5 years of direct counts, with monitoring more recent than 2000                                                                                                                                                                                                              |
 | 4 - Medium-High     | More than 5 years of direct counts, with last monitoring prior to 2000                                                                                                                                                                                                                  |
@@ -339,7 +349,17 @@ knitr::kable(
 
 ### Stock ID {#stock-id}
 
-**To be completed.** <!-- SP: For Eric to do.  -->
+Stock identification quality is based on the reliability of the genetics data to be able to attribute an individual fish to a CU.
+
+| Score               | Definition                                                                                                                                                                                                                                                                              |
+|:---------------------------|:-------------------------------------------|
+| NA - Not applicable | It was not possible to estimate stock identification quality for the CU with available data.                                                                                                                                                                                                              |
+| 1 - Low             | <50% correct classification of individual salmon to a CU |
+
+| 2 - Medium-Low      | 50-80% correct classification of individual salmon to a CU                                                                                                                                                                                                                 |
+| 3 - Medium          | 80-90% correct classification of individual salmon to a CU                                                                                                                                                                                                              |
+| 4 - Medium-High     | 90-95% correct classification of individual salmon to a CU                                                                                                                                                                                                                  |
+| 5 - High            | >95% correct classification of individual salmon to a CU                                                                                                                                                                                                               |
 
 ### Benchmarks for Assessing Biological Status {#benchmarks-biostatus}
 
@@ -411,7 +431,6 @@ We require at least one annual estimate of spawner abundance over the most recen
 
 **2. Is there a spawner-recruit relationship available with CU-level catch estimates medium-low quality or higher?**
 
-<!-- SP: Should this be revised to read, "Are both spawner and recruit data available at the CU-level? -->
 
 A spawner-recruit relationship must be available to calculate spawner-recruit benchmarks. Most spawner-recruit relationships have over 10 data points (see [Appendix 4](#appendix-4)). Furthermore, errors in estimating catch can lead to misclassification of status using spawner-recruit benchmarks [@PeacockEtAl2020EvaluatingConsequencesCommon]. As such, we do not apply spawner-recruit when CU-level catch estimates are highly uncertain (i.e. the data quality score for catch estimates is low; see [Data Quality](#data-quality)).
 

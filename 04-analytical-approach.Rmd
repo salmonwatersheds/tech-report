@@ -405,39 +405,31 @@ knitr::include_graphics("figures/decision_rules_biostatus.png")
 
 We use the following guiding questions to determine which benchmarks to apply given the available data for a CU.
 
-**1. Does the CU have Spawner Abundance data?**
-
-Data on the number of spawners returning to the whole CU within the most recent are required to assess current biological status. If there are not Spawner Abundance data (i.e. estimates of the number of spawners returning to the whole CU) available within the most recent generation, then the CU is assessed as data deficient for biological status.
-
-**2. Is there a spawner-recruit relationship available?**
-
-<!-- SP: Should this be revised to read, "Are both spawner and recruit data available at the CU-level? -->
-
-A spawner-recruit relationship must be available to calculate spawner-recruit benchmarks. Most spawner-recruit relationships have over 10 data points (see [Appendix 4](#appendix-4)).
-
-**3. Are the CU-level estimates of catch of medium-low quality or higher?**
-
-Errors in estimating catch can lead to misclassification of status using spawner-recruit benchmarks [@PeacockEtAl2020EvaluatingConsequencesCommon]. As such, we do not apply spawner-recruit when CU-level catch estimates are highly uncertain (i.e. the data quality score for catch estimates is low or medium-low; see [Data Quality](#data-quality)).
-
-**4. Is there published evidence of cyclic dominance for the CU?**
-
-Some CUs have population dynamics characterized by cyclic dominance (e.g. a four-year generation length that involves a dominant brood year that is most abundant, a sub-dominant brood year, followed by two brood lines with lower abundance). For these cyclic dominant CUs we do not pool data across brood lines to generate estimates of current spawner abundance or to generate CU-level benchmarks because spawner abundance is so different from year to year [@GrantEtAl20202017FraserSockeyec]. For these CUs, we currently only visualize biological status assessments on the Pacific Salmon Explorer developed through integrated status assessments that incorporate expert judgment and quantitative modeling, where available [e.g. @FisheriesandOceansCanadaDFO20182017FraserSockeyeb].
-
-**5. Does the CU-level spawner abundance time series span at least 20 years?**
-
-Estimates of spawner abundance over a relatively long time series are required to assess the biological status of a CU. We require a minimum of 20 years of annual estimates of spawner abundance, although we do not require that these estimates are continuous. In some cases, we may use only a subset of the available time series. We do this if expert opinion suggests that using the entire time series is not appropriate.
-
-**6. Is there a spawner abundance estimate at the CU-level for at least one year over the most recent generation?**
+**1. Is there an estimate of spawner abundance for the CU for at least one year over the most recent generation?**
 
 We require at least one annual estimate of spawner abundance over the most recent generation to quantify current spawner abundance. We then take the geometric mean of current spawner abundance over the most recent generation to compare to the estimated benchmarks for that CU to assess biological status.
 
-**7. Is the productivity of the CU expected to be below 2.5 and exploitation above 40%?**
+**2. Is there a spawner-recruit relationship available with CU-level catch estimates medium-low quality or higher?**
 
-We do not apply percentile benchmarks if productivity is low (\< 2.5) and fisheries exploitation is high (\> 40%). In these cases, percentile benchmarks can result in biological status assessments that are overly optimistic and, therefore, risky from a long-term management perspective [@HoltEtAl2018EvaluatingBenchmarksBiological; @PeacockEtAl2020EvaluatingConsequencesCommon].
+<!-- SP: Should this be revised to read, "Are both spawner and recruit data available at the CU-level? -->
 
-**8. Is the status outcome in the *Red* (Poor) category based on percentile benchmarks?**
+A spawner-recruit relationship must be available to calculate spawner-recruit benchmarks. Most spawner-recruit relationships have over 10 data points (see [Appendix 4](#appendix-4)). Furthermore, errors in estimating catch can lead to misclassification of status using spawner-recruit benchmarks [@PeacockEtAl2020EvaluatingConsequencesCommon]. As such, we do not apply spawner-recruit when CU-level catch estimates are highly uncertain (i.e. the data quality score for catch estimates is low; see [Data Quality](#data-quality)).
 
-For cases where there is information to suggest that a CU is experiencing productivity below 2.5 and/or exploitation above 40%, we will only report on status outcomes based on percentile benchmarks if the status is in the *red zone*. In these cases, the potential bias will not have resulted in an overly optimistic status outcome because the red status zone is the lowest status zone. If the application of percentile benchmarks in these situations results in an *amber* or *green* status outcome, we will report this CU as *Not Assessed* on the PSE.
+**3. Is there published evidence of cyclic dominance for the CU?**
+
+Some CUs have population dynamics characterized by cyclic dominance (e.g. a four-year generation length that involves a dominant brood year that is most abundant, a sub-dominant brood year, followed by two brood lines with lower abundance). For these cyclic dominant CUs we do not pool data across brood lines to generate estimates of current spawner abundance or to generate CU-level benchmarks because spawner abundance is so different from year to year [@GrantEtAl20202017FraserSockeyec]. For these CUs, we currently only visualize biological status assessments on the Pacific Salmon Explorer developed through integrated status assessments that incorporate expert judgment and quantitative modeling, where available [e.g. @FisheriesandOceansCanadaDFO20182017FraserSockeyeb].
+
+**4. Does the CU-level spawner abundance time series span at least 20 years?**
+
+Estimates of spawner abundance over a relatively long time series are required to assess the biological status of a CU. We require a minimum of 20 years of annual estimates of spawner abundance, although we do not require that these estimates are continuous. In some cases, we may use only a subset of the available time series. We do this if expert opinion suggests that using the entire time series is not appropriate.
+
+**5. Is the CU expected to have productivity less than 2.5 and/or exploitation greater than 40% ?**
+
+In most circumstances, we do not apply percentile benchmarks if productivity is low (\< 2.5) and/or fisheries exploitation is high (\> 40%). In these cases, percentile benchmarks can result in biological status assessments that are overly optimistic and, therefore, risky from a long-term management perspective [@HoltEtAl2018EvaluatingBenchmarksBiological; @PeacockEtAl2020EvaluatingConsequencesCommon].
+
+**6. Is the status outcome in the *Red* (Poor) category based on percentile benchmarks?**
+
+For cases where there is information to suggest that a CU is experiencing productivity below 2.5 and/or exploitation above 40%, we will only report on status outcomes based on percentile benchmarks if the status is in the *red zone*. In these cases, the potential bias will not have resulted in an overly optimistic status outcome because the red status zone is the lowest status zone. 
 
 For a number of CUs across all Regions, data limitations mean that we cannot assess the current biological status. In these cases, we categorize these CUs as data deficient. We consider three types of data deficiencies when assessing biological status for the Pacific Salmon Explorer. First, some CUs have no available run reconstruction and, therefore, no CU-level spawner abundance estimate. This could be caused by the absence of data for that CU in NuSEDS, indicating that no records of spawner surveys conducted for the CU have been recorder since 1954. Alternatively, it could be that the CU does not have an identified indicator stream, which means that CU-level estimates of spawner abundance cannot be estimated, <!-- SP: I think we can reconsider this given the unreliability of DFO's indicator classification. Could be a project for Bruno...maybe we can come up with some defensible criteria and classify indicators ourselves? --> and biological status cannot be assessed. Second, some CUs have no data on spawner abundance for the most recent generation, which prevent from generating an estimate of current abundance to compare against the benchmarks and assess biological status. Finally, in some cases, there is sufficient data (i.e. run reconstructions) to assess biological status using our methods, but our technical committees and Population Science Advisory Committee have advised to not assess status using our standardized approach due to the complexity of a species or CU life history (e.g. Fraser River cyclic sockeye CUs; see @GrantEtAl20202017FraserSockeyec [Fraser Region]), other data challenges, or assumptions that are currently a barrier to applying our standardized approach.
 

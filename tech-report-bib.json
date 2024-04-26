@@ -1,5 +1,37 @@
 [
 	{
+		"id": "WaltersEtAl2008ReportSkeenaIndependent",
+		"type": "report",
+		"genre": "A report to the Canadian Department of Fisheries and Oceans and the British Columbia Ministry of the Environment",
+		"page": "144",
+		"title": "Report of the Skeena Independent Science Review panel",
+		"author": [
+			{
+				"family": "Walters",
+				"given": "C J"
+			},
+			{
+				"family": "Lichatowich",
+				"given": "J A"
+			},
+			{
+				"family": "Peterman",
+				"given": "R M"
+			},
+			{
+				"family": "Reynolds",
+				"given": "J D"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2008"
+				]
+			]
+		}
+	},
+	{
 		"id": "NelitzEtAl2007RefiningHabitatIndicators",
 		"type": "report",
 		"event-place": "Kamloops, BC",
@@ -193,6 +225,33 @@
 		}
 	},
 	{
+		"id": "PestalEtAl2020TakuRiverSockeye",
+		"type": "report",
+		"title": "Taku River Sockeye Salmon Stock Assessment Review and Updated 1984-2018 Abundance Estimates",
+		"URL": "www.psc.org",
+		"author": [
+			{
+				"family": "Pestal",
+				"given": "G"
+			},
+			{
+				"family": "Schwarz",
+				"given": "C J"
+			},
+			{
+				"family": "Clark",
+				"given": "R A"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	},
+	{
 		"id": "BeblowEtAl2018KitwangaRiverSalmon",
 		"type": "report",
 		"title": "Kitwanga River Salmon Enumeration Facility (KSEF)-2017 Annual Report",
@@ -348,7 +407,7 @@
 	{
 		"id": "BCMinistryofEnvironmentMOE2017FreshwaterAtlasProvince",
 		"type": "webpage",
-		"title": "Freshwater Atlas – Province of British Columbia.",
+		"title": "Freshwater Atlas – Province of British Columbia",
 		"URL": "https://www2.gov.bc.ca/gov/content/data/geographic-data-services/topographic-data/freshwater",
 		"author": [
 			{
@@ -2153,7 +2212,7 @@
 		}
 	},
 	{
-		"id": "DFO2005",
+		"id": "DFO2005CanadaPolicyConservation",
 		"type": "report",
 		"archive": "https://www.pac.dfo-mpo.gc.ca/fm-gp/salmon-saumon/wsp-pss/policy-politique-eng.html",
 		"event-place": "Vancouver, BC",
@@ -2164,7 +2223,7 @@
 		"URL": "https://salmonwatersheds.ca/document/lib_578/",
 		"author": [
 			{
-				"literal": "DFO"
+				"literal": "Fisheries and Oceans Canada"
 			}
 		],
 		"accessed": {
@@ -2277,46 +2336,6 @@
 			"date-parts": [
 				[
 					"2001"
-				]
-			]
-		}
-	},
-	{
-		"id": "Walters2008",
-		"type": "report",
-		"page": "0-144",
-		"title": "Report of the Skeena Independent Science Review Panel",
-		"author": [
-			{
-				"family": "Walters",
-				"given": "C J"
-			},
-			{
-				"family": "Lichatowich",
-				"given": "J A"
-			},
-			{
-				"family": "Peterman",
-				"given": "R A"
-			},
-			{
-				"family": "Reynolds",
-				"given": "J D"
-			}
-		],
-		"accessed": {
-			"date-parts": [
-				[
-					"2022",
-					1,
-					20
-				]
-			]
-		},
-		"issued": {
-			"date-parts": [
-				[
-					"2008"
 				]
 			]
 		}
@@ -4457,32 +4476,6 @@
 		}
 	},
 	{
-		"id": "LGLLimitedNisgaaFisheriesWildlife2023PreliminaryAreaSalmon",
-		"type": "report",
-		"event-place": "Available upon request.",
-		"number": "Nisga'a Fisheries Report #22-16",
-		"publisher": "Prepared for the Pacific Salmon Foundation and Nisga'a-Canada-BC Treaty's Joint Fisheries Management Committee",
-		"publisher-place": "Available upon request.",
-		"title": "Preliminary Area 3 Salmon (2018-2022) and Nass River Summer-Run Steelhead (1994-2022) Escapement, Catch, Run Size, and Exploitation Rate Estimates",
-		"author": [
-			{
-				"family": "LGL Limited",
-				"given": ""
-			},
-			{
-				"family": "Nisga'a Fisheries & Wildlife",
-				"given": ""
-			}
-		],
-		"issued": {
-			"date-parts": [
-				[
-					"2023"
-				]
-			]
-		}
-	},
-	{
 		"id": "ChudykNarver1976CommercialInterceptionsSteelhead",
 		"type": "report",
 		"event-place": "Smithers, BC",
@@ -5361,6 +5354,55 @@
 		}
 	},
 	{
+		"id": "CTC2023AnnualReportCatch",
+		"type": "article-journal",
+		"container-title": "Pacific Salmon Commission Joint Chinook Technical Committtee Report",
+		"language": "en",
+		"page": "xiii + 202 p.",
+		"source": "Zotero",
+		"title": "Annual Report of Catch and Escapement for 2022",
+		"URL": "https://www.psc.org/publications/technical-reports/technical-committee-reports/chinook/",
+		"volume": "TCCHINOOK (23)-02",
+		"author": [
+			{
+				"family": "CTC",
+				"given": ""
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2023",
+					7,
+					6
+				]
+			]
+		}
+	},
+	{
+		"id": "TTC2022FinalEstimatesTransboundary",
+		"type": "article-journal",
+		"container-title": "Pacific Salmon Commission Transboundary Technical Committee Report",
+		"page": "xii + 162 p.",
+		"title": "Final Estimates of Transboundary River Salmon Production, Harvest and Escapement and a Review of Joint Enhancement Activities in 2020",
+		"URL": "https://www.psc.org/publications/technical-reports/technical-committee-reports/transboundary/",
+		"volume": "TCTR (22)-01",
+		"author": [
+			{
+				"family": "TTC",
+				"given": ""
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2022",
+					3
+				]
+			]
+		}
+	},
+	{
 		"id": "Scheuerell2016ExplicitSolutionCalculating",
 		"type": "article-journal",
 		"abstract": "<p> Stock-recruitment models have been used for decades in fisheries management as a means of formalizing the expected number of offspring that recruit to a fishery based on the number of parents. In particular, Ricker’s stock recruitment model is widely used due to its flexibility and ease with which the parameters can be estimated. After model fitting, the spawning stock size that produces the maximum sustainable yield ( <italic>S</italic> <sub>MSY</sub> ) to a fishery, and the harvest corresponding to it ( <italic>U</italic> <sub>MSY</sub> ), are two of the most common biological reference points of interest to fisheries managers. However, to date there has been no explicit solution for either reference point because of the transcendental nature of the equation needed to solve for them. Therefore, numerical or statistical approximations have been used for more than 30 years. Here I provide explicit formulae for calculating both <italic>S</italic> <sub>MSY</sub> and <italic>U</italic> <sub>MSY</sub> in terms of the productivity and density-dependent parameters of Ricker’s model. </p>",
@@ -5422,6 +5464,178 @@
 					"2021",
 					8,
 					5
+				]
+			]
+		}
+	},
+	{
+		"id": "SalmonWatershedsProgram2024StatusSteelheadPopulations",
+		"type": "report",
+		"event-place": "Vancouver, B.C.",
+		"publisher": "Pacific Salmon Foundation",
+		"publisher-place": "Vancouver, B.C.",
+		"title": "The Status of Steelhead Populations in BC: 2024 Snapshot Report",
+		"URL": "https://salmonwatersheds.ca/document/lib_598",
+		"author": [
+			{
+				"family": "Salmon Watersheds Program",
+				"given": ""
+			}
+		],
+		"contributor": [
+			{
+				"family": "Atkinson",
+				"given": "Clare"
+			},
+			{
+				"family": "Bryan",
+				"given": "Katy"
+			},
+			{
+				"family": "Connors",
+				"given": "Katrina"
+			},
+			{
+				"family": "Hertz",
+				"given": "Eric"
+			},
+			{
+				"family": "Honka",
+				"given": "Leah"
+			},
+			{
+				"family": "Peacock",
+				"given": "Stephanie"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2024"
+				]
+			]
+		}
+	},
+	{
+		"id": "ArbeiderEtAlInteriorFraserCoho",
+		"type": "article-journal",
+		"container-title": "Canadian Science Advisory Secretariat Research Document",
+		"language": "en",
+		"page": "xi + 211 p.",
+		"source": "Zotero",
+		"title": "Interior Fraser Coho Salmon Recovery Potential Assessment",
+		"URL": "https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/40888721.pdf",
+		"volume": "2020/025",
+		"author": [
+			{
+				"family": "Arbeider",
+				"given": "Michael"
+			},
+			{
+				"family": "Ritchie",
+				"given": "Lynda"
+			},
+			{
+				"family": "Braun",
+				"given": "Doug"
+			},
+			{
+				"family": "Jenewein",
+				"given": "Brittany"
+			},
+			{
+				"family": "Rickards",
+				"given": "Karen"
+			},
+			{
+				"family": "Dionne",
+				"given": "Kaitlyn"
+			},
+			{
+				"family": "Holt",
+				"given": "Carrie"
+			},
+			{
+				"family": "Labelle",
+				"given": "Marc"
+			},
+			{
+				"family": "Nicklin",
+				"given": "Pete"
+			},
+			{
+				"family": "Mozin",
+				"given": "Paul"
+			},
+			{
+				"family": "Grant",
+				"given": "Paul"
+			},
+			{
+				"family": "Parken",
+				"given": "Chuck"
+			},
+			{
+				"family": "Bailey",
+				"given": "Richard"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					6
+				]
+			]
+		}
+	},
+	{
+		"id": "FoosStark2022TakuRiverNahlin",
+		"type": "report",
+		"number": "PSC NF-20210I-33B",
+		"publisher": "Pacific Salmon Commission",
+		"title": "Taku River - Nahlin River Chinook Salmon Enumeration - 2021",
+		"URL": "https://www.psc.org/publications/endowment-fund-projects/",
+		"author": [
+			{
+				"family": "Foos",
+				"given": "Aaron"
+			},
+			{
+				"family": "Stark",
+				"given": "Sean"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2022",
+					2
+				]
+			]
+		}
+	},
+	{
+		"id": "Pahlke1992EscapementsChinookSalmon",
+		"type": "report",
+		"event-place": "Anchorage, AK",
+		"language": "en",
+		"number": "Fishery Data Series No. 92-32",
+		"publisher": "Alaska Department of Fish and Game",
+		"publisher-place": "Anchorage, AK",
+		"source": "Zotero",
+		"title": "Escapements of Chinook Salmon in Southeast Alaska and Transboundary Rivers in 1991",
+		"author": [
+			{
+				"family": "Pahlke",
+				"given": "Keith A"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1992",
+					9
 				]
 			]
 		}

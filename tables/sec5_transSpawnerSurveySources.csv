@@ -1,0 +1,66 @@
+Species,Conservation.Unit,Stream.Name,Indicator,Source,TTC.Series
+CK,Alsek,Alsek River,N,TTC,E.7. Alsek Escapement
+CK,Alsek,Blanchard River,N,TTC,E.8. Blanchard River Aerial Index
+CK,Alsek,Goat Creek,Y,TTC,E.8. Goat Creek Aerial Index
+CK,Alsek,Klukshu River,Y,TTC,E.5. Klukshu - Escapement
+CK,Alsek,Takhanne River,Y,TTC,E.8. Takhanne River Aerial Index
+CK,Lynn Canal,Stonehouse,N,Pahlke (1992),
+CK,Stikine-Early Timing,Beatty Creek,N,TTC,B.13. Beatty Aerial
+CK,Stikine-Early Timing,Christina Creek,N,NuSEDS,
+CK,Stikine-Early Timing,Little Tahltan River,Y,TTC,B.34. Little Tahltan natural spawners
+CK,Stikine-Early Timing,Tahltan River,N,NuSEDS,
+CK,Stikine-Late Timing,Iskut River,N,NuSEDS,
+CK,Stikine-Late Timing,Katete River,N,NuSEDS,
+CK,Taku-Early Timing,Dudidontu River,Y,TTC,D.8. Dudidontu Aerial Index
+CK,Taku-Early Timing,Nahlin River,Y,TTC,D.8. Nahlin Aerial Index
+CK,Taku-Early Timing,Nahlin River Sonar,N,Aaron Foos (pers. comm.),
+CK,Taku-Early Timing,Tseta Creek,Y,TTC,D.8. Tseta Aerial Index
+CK,Taku-Late Timing,Hackett River,N,NuSEDS,
+CK,Taku-Late Timing,Kowatua River,Y,TTC,D.8. Kowatua Aerial Index
+CK,Taku-Late Timing,Tatsatua River,Y,TTC,D.8. Tatsamenie Aerial Index
+CK,Taku-Mid Timing,Nakina River,Y,TTC,D.8. Nakina Aerial Index
+CM,Taku,Canyon Island,N,TTC,D.24. Canyon Island Fishwheel Raw Count
+CO,Alsek,Klukshu River,Y,TTC,E.15. Klukshu Escapement
+CO,Lower Stikine,Bronson Creek,N,TTC,B.30. Bronson Slough Aerial Index
+CO,Lower Stikine,Christina Creek,N,TTC,B.30. Christina Creek Aerial Index
+CO,Lower Stikine,Craig River,Y,TTC,B.30. Craig River Aerial Index
+CO,Lower Stikine,Katete River,Y,TTC,B.30. Katete River Aerial Index
+CO,Lower Stikine,Porcupine River,Y,TTC,B.30. Porcupine Slough Aerial Index
+CO,Lower Stikine,Scud River,Y,TTC,B.30. Scud Slough Aerial Index
+CO,Lower Stikine,Verrett River,Y,TTC,B.30. Verrett River Aerial Index
+CO,Lower Stikine,West Katete River,Y,TTC,B.30. West Katete River Aerial Index
+CO,Taku-Early Timing,Dudidontu River,N,NuSEDS,
+CO,Taku-Early Timing,Nahlin River,N,NuSEDS,
+CO,Taku-Late Timing,Flannigan Slough,N,NuSEDS,
+CO,Taku-Mid Timing,Hackett River,N,NuSEDS,
+CO,Taku-Mid Timing,Little Trapper Lake,N,NuSEDS,
+CO,Taku-Mid Timing,Tatsatua River,N,NuSEDS,
+PKE,Transboundary Fjords (even),Canyon Island,N,TTC,D.24. Canyon Island Fishwheel Raw Count
+PKE,Transboundary Fjords (even),Nakina River,N,NuSEDS,
+PKO,Transboundary Fjords (odd),Canyon Island,N,TTC,D.24. Canyon Island Fishwheel Raw Count
+PKO,Transboundary Fjords (odd),Nakina River,N,NuSEDS,
+SEL,Christina,Christina Creek,N,TTC,B.25. Christina Creek Aerial Index
+SEL,Chutine,Chutine River,Y,TTC,B.25. Chutine River Aerial Index
+SEL,King Salmon,King Salmon Lake,Y,TTC,D.16. King Salmon Total Spawning Escapement
+SEL,Klukshu,Klukshu River,Y,TTC,E.10. Klukshu - Escapement
+SEL,Kuthai,Kuthai Lake,Y,TTC,D.19. Kuthai Lake Spawning Escapement Total
+SEL,Little Trapper,Little Trapper Lake,Y,TTC,D.15. Little Trapper Spawning Escapement Total
+SEL,Nesketahin,Nesketahin Lake,N,TTC,E.13. Neskataheen Lake Aerial Index
+SEL,Nesketahin,Village Creek,Y,TTC,E.13. Village Creek Counter
+SEL,Tahltan,Tahltan River,Y,TTC,B.32. Tahltan Lake - Counts after harvest samples
+SEL,Tatsamenie,Tatsamenie Lake,Y,TTC,D.14. Tatsamenie Spawning Escapement Total
+SEL,Tatsamenie,Tatsatua River,N,NuSEDS,
+SER,Alsek (river-type),Tatshenshini River,N,NuSEDS,E.13. Tatshenshini River Aerial Index
+SER,Northern Transboundary Fjords (river-type),Bronson Creek,Y,TTC,B.25. Bronson Slough Aerial Index
+SER,Northern Transboundary Fjords (river-type),Craig River,N,TTC,B.25. Craig River Aerial Index
+SER,Northern Transboundary Fjords (river-type),Hackett River,N,NuSEDS,
+SER,Northern Transboundary Fjords (river-type),Nahlin River,N,TTC,Nahlin River Weir
+SER,Northern Transboundary Fjords (river-type),Nakina River,N,NuSEDS,
+SER,Northern Transboundary Fjords (river-type),Porcupine River,Y,TTC,B.25. Porcupine Slough Aerial Index
+SER,Northern Transboundary Fjords (river-type),Scud River,Y,TTC,B.25. Scud River Aerial Index
+SER,Northern Transboundary Fjords (river-type),Stikine River,Y,TTC,B.26. Escapement - Mainstem
+SER,Northern Transboundary Fjords (river-type),Taku River,Y,TTC,D.17. Natural Spawning Escapement
+SER,Northern Transboundary Fjords (river-type),Tuya River,N,NuSEDS,
+SER,Northern Transboundary Fjords (river-type),Verrett River,Y,TTC,B.25. Verret River Aerial Index
+SER,Northern Transboundary Fjords (river-type),Verrett Slough,Y,TTC,B.25. Verret Sloughs Aerial Index
+SH,Taku Summer,Canyon Island,N,TTC,D.24. Canyon Island Fishwheel Raw Count

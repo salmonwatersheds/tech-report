@@ -13,6 +13,120 @@ Each **Region** within the Pacific Salmon Explorer has specific attributes relat
 knitr::include_graphics("figures/regions.png")
 ```
 
+## Transboundary Region {#transboundary-region}
+
+At the northwestern edge of BC lie some of the most remote and rugged salmon-bearing river basins in the province, including the Alsek, Chilkat, Taku, Whiting, Stikine, and Unuk. These river basins span Territories of the Champagne and Aishihik First Nations, Taku River Tlingit, and Tahltan First Nations and the international border between Canada and the United States (US). Salmon spawn in the headwaters of Canadian rivers and lakes and migrate out to the ocean in southeast Alaska. This northern Transboundary Region hosts five species of Pacific salmon and steelhead, including `r length(which(cu_list$Region == "Transboundary"))` CUs: `r length(which(cu_list$Region == "Transboundary" & cu_list$Species == "Chinook"))` Chinook, `r length(which(cu_list$Region == "Transboundary" & cu_list$Species == "Chum"))` chum, `r length(which(cu_list$Region == "Transboundary" & cu_list$Species == "Coho"))` coho, `r length(which(cu_list$Region == "Transboundary" & cu_list$Species %in% c("Pink (even)", "Pink (odd)")))` pink, `r length(which(cu_list$Region == "Transboundary" & cu_list$Species == "River sockeye"))` river-type sockeye, `r length(which(cu_list$Region == "Transboundary" & cu_list$Species == "Lake sockeye"))` lake-type sockeye, and `r length(which(cu_list$Region == "Transboundary" & cu_list$Species == "Steelhead"))` steelhead CUs ([Appendix 1](#appendix-1)).
+
+The first round of data compilation and local consultation in the Transboundary Region took place from 2021-2024 in collaboration with a Transboundary Technical Working Group, made up of fisheries staff from the Tahltan Central Government, Taku River Tlingit First Nation, the Champagne and Aishihik First Nations, and DFO Regional Biologists, as well as independent salmon experts. This work was funded by the BC Salmon Restoration and Innovation Fund. We also retained Gottfried Pestal (Solv Consulting) to assist in compiling Transboundary population data and providing technical advice on the feasibility of estimating certain indicators.
+
+### Population Data and Analytical Methods {#transboundary-pop-methods}
+
+Because of the Transboundary life-cycles of salmon in this region, most monitoring data are focused on mandatory reporting under the Pacific Salmon Treaty between Canada and the US. Specifically, we relied heavily on data in the Transboundary Technical Committee (TTC) reports and associated appendices [@TTC2022FinalEstimatesTransboundary]. Data in published reports often lag behind data collection by 2-3 years, and we were able to obtain up-to-date version of report appendices from DFO on request (Aaron Foos, pers. comm.). The TTC reports are focused on "Treaty stocks", equivalent to Stock Management Units, for Chinook, coho, and sockeye in the major river basins (Alsek, Stikine, Taku). Information on CUs outside of these Treaty stocks was sparse.
+
+#### Spawner Surveys {#transboundary-spawner-surveys}
+
+Annual spawner survey data were mostly acquired from NuSEDS and the TTC annual reports. There are over 20 appendices in the annual TTC reports that include escapement estimates from assessment projects including fishwheels, weirs, video weirs, sonars, snorkel surveys and aerial surveys. Where spawner estimates were reported in both datasets, they were most often identical. For some streams and years, the TTC estimates were lower. For example, the Klukshu River Chinook, coho, and sockeye estimates from 2000-2020 were often lower in the TTC reports than in NuSEDS. There were fewer cases where TTC estimates were higher than NuSEDS and these differences tended to be smaller in magnitude. 
+
+Based on guidance from the TWG, who advised that data in TTC reports were more reliable and current than in NuSEDS, we preferentially relied on TTC data when spawner surveys were reported in both sources. In some cases (e.g. Klukshu River coho), the NuSEDS time series extended further back in time than the TTC data, but estimates differed between the two sources in more recent years. In these cases, we used only the TTC data, even though that meant losing some historical data that were in NuSEDS, to avoid misrepresenting changes in abundance through time that are due to different data processing steps between data sources.
+
+We report the published estimates directly from the TTC or NuSEDS for all spawner surveys except the Taku River survey of the Northern Transboundary Fjords river-type sockeye CU. In this case, the Taku River sockeye reconstruction from TTC includes the river-type sockeye CU and four lake-type sockeye CUs. Since 2004, all four lake-type sockeye CUs have weirs and thus their contribution to can be accounted for to estimate the river-type component of the overall Taku River sockeye. We do not report spawner survey data for Taku River prior to 2004, when the estimates could not be attributed to CUs. 
+
+There were two additional spawner surveys that we extracted from sources other than the TTC reports and NuSEDS. A sonar project on the Nahlin River, funded by the Pacific Salmon Commission’s Northern Fund, provided Chinook estimates from 2016 – 202336. The sonar project targets large Chinook (>659 mm mid-eye to fork length) and the estimates are separate from the Nahlin River Chinook estimates in the TTC report. In addition, the Lynn Canal Chinook CU was monitored from 1981-1991 at Stonehouse Creek [@Pahlke1992EscapementsChinookSalmon].
+
+Along with spawner survey counts, we compiled additional information including species, site, year, quality, and method and synthesized these data by CU. Spawner survey method and data quality are consistently reported in NuSEDS, but often had to be extracted from footnotes or within the text for TTC-reported data.
+
+```{r transSpawnerSurveySource, include=TRUE, echo = FALSE}
+sss <- read.csv("tables/sec5_transSpawnerSurveySources.csv")
+
+knitr::kable(
+  sss, col.names = c("Species", "Conservation Unit", "Stream Name", "Indicator", "Source", "TTC Appendix & Series"), booktabs = TRUE,
+  caption = 'Data sources for 65 spawner surveys in the Transboundary region. In some cases, data were available both from NuSEDS and from the TTC, in which case we preferentially source data from the TTC appendices. The TTC Series refers to the specific Appendix and variable name from the TTC reports (note appendix numbers reflect reports from 2024 onward).'
+)
+```
+
+#### Spawner Abundance {#transboundary-spawner-abundance}
+
+The available data from the TTC [@TTC2022FinalEstimatesTransboundary] provide CU-level estimated spawner abundance for eight of the 44 CUs in the Transboundary Region. These CUs are located in the Alsek, Stikine, and Taku River basins. Seven of these CUs are lake-type sockeye with a weir at the downstream extent of the CU (i.e. outlet of the lake) such that this spawner survey can also provide the CU-level estimated spawner abundance. One Chinook CU (Alsek Chinook) has reliable spawner survey data at the Klukshu River that is expanded to represent the entire CU. There are no CU-level spawner abundances for CUs in the Chilkat, Unuk, or Whiting watersheds, or for the coho, chum, pink and steelhead CUs of the Region. 
+
+#### Run Timing {#transboundary-run-timing}
+
+Run timing for Transboundary CUs was compiled from several sources. Start, peak, and end migration dates for Taku River lake-type sockeye CUs were based on migration past the Canyon Island fish wheel reported by @PestalEtAl2020TakuRiverSockeye. Tahltan lake-type sockeye daily passage through the Tahltan fence is reported in the TTC reports
+
+#### Catch & Run Size {#transboundary-catch-run-size}
+
+The TTC reports on weekly harvest and effort, annual harvest, and annual estimates of catch (based on coded-wire tags – CWT – or genetic stock identification – GSI) in US and Canadian commercial, recreational, and First Nations fisheries for specific Stock Management Units (SMUs) and indicator populations covered by the Treaty. From TTC report [@TTC2022FinalEstimatesTransboundary], estimates of spawners, Canadian catch, US catch, and run size are available for the following SMUs: Alsek Chinook, Alsek sockeye, Stikine Chinook, Stikine sockeye, Taku Chinook, Taku coho, and Taku sockeye. In the Stikine, the catch and run size information is further split into the mainstem and Tahltan River components. Based on these data, we provide CU-level estimates of catch and run size for the Alsek Chinook CU and the Tahltan lake-type sockeye CU.
+
+#### Recruits-per-Spawner {#transboundary-recruits-per-spawner}
+
+There were no recruits-per-spawner data available at the CU-level for the Transboundary Region.
+
+#### Juvenile Surveys {#transboundary-juvenile-surveys}
+
+#### Hatchery Releases {#transboundary-juvenile-surveys}
+
+#### Biological Status {#transboundary-juvenile-surveys}
+
+
+## Nass Region {#nass-region}
+
+In northern BC, the Nass River watershed is the third-largest watershed in the province and includes several major tributaries, including the Bell-Irving, Cranberry, Meziadin, Kwinageese, and Damdochax Rivers. The Nass Region (Figure \@ref(fig:nassMap)), which consists of the watersheds draining into Portland Canal and Observatory Inlet, contains extensive spawning and rearing habitat for all five species of Pacific salmon. These salmon populations comprise `r length(which(cu_list$Region == "Nass"))` CUs: `r length(which(cu_list$Region == "Nass" & cu_list$Species == "Chinook"))` Chinook, `r length(which(cu_list$Region == "Nass" & cu_list$Species == "Chum"))` chum, `r length(which(cu_list$Region == "Nass" & cu_list$Species == "Coho"))` coho, `r length(which(cu_list$Region == "Nass" & cu_list$Species %in% c("Pink (even)", "Pink (odd)")))` pink, `r length(which(cu_list$Region == "Nass" & cu_list$Species == "River sockeye"))` river-type sockeye, `r length(which(cu_list$Region == "Nass" & cu_list$Species == "Lake sockeye"))` lake-type sockeye, and `r length(which(cu_list$Region == "Nass" & cu_list$Species == "Steelhead"))` steelhead CUs ([Appendix 1](#appendix-1)). The initial process of data gathering, synthesis, outreach, and engagement to complete the initial assessments within the Nass Region was conducted from 2015 to 2019.
+
+We worked with First Nations in the Nass Region to garner feedback on the Pacific Salmon Explorer approach and analyses through the Nisga'a-Canada-BC Nass Joint Technical Committee and the Gitanyow Fisheries Authority. In addition, in 2015 - 2016, we formed a Nass Technical Advisory Committee to engage with First Nations, DFO regional biologists and managers, and other salmon experts throughout the watershed.
+
+```{r nassMap, fig.cap = "Map of the Nass Region.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
+knitr::include_graphics("figures/nass_map.png")
+```
+
+### Population Data and Analytical Methods {#nass-pop-methods}
+
+As with the Skeena Region, many of the datasets necessary to understand the dynamics of salmon CUs in the Nass Region have been compiled and stored through the North and Central Coast (NCC) Database [@EnglishEtAl2018NorthCentralCoast; see Skeena Region]. In addition to these data, we also compiled additional data for six CUs (Lower Nass and Upper Nass coho; Fred Wright, Damodochax, and Meziadin lake-type sockeye; Lower Nass-Portland river-type sockeye) through a review of preliminary data with Nisga'a Lisims Government and LGL Limited staff. For steelhead, data were sourced from @LGLLimitedNisgaaFisheriesWildlife2023PreliminaryAreaSalmon (see our [steelhead-specific Github repository](https://github.com/salmonwatersheds/steelhead-status) for all raw steelhead population data compiled). Details regarding nuances to the data and analytical methods that are specific to the Nass Region are described below.
+
+#### Spawner Surveys {#nass-spawner-surveys}
+
+Spawner survey data for streams in the Nass Region were sourced from DFO's New Salmon Escapement Database (NuSEDS). For a description of the spawner survey indicator, see [Overview of Population Indicators: Spawner Surveys](#spawner-surveys). For steelhead, spawner survey data were provided directly from the Nisga'a Lisims Goverment Fish and Wildlife and LGL Limited [@LGLLimitedNisgaaFisheriesWildlife2023PreliminaryAreaSalmon].
+
+#### Spawner Abundance {#nass-spawner-abundance}
+
+Observed spawner abundance for CUs in the Nass Region is the sum of all spawner survey data as documented in NuSEDS, as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). Nass Region CU-level estimates of spawner abundance (run reconstructions) were sourced from the North and Central Coast (NCC) Database. Nass CU-level estimated spawner abundance time series were developed for the NCC Database according to the expansion factors described in the Skeena Region section above.
+
+In addition, CU-level estimates of spawner abundance for five Nass CUs are derived from additional spawner enumeration methods. Specifically, three CUs have mark-recapture programs operated by Nisga'a Fisheries, and Wildlife's lower Nass River fish wheels have mark-recapture programs. These programs have been part of Nisga'a Treaty fisheries work since 1992. For steelhead, spawner abundance data were provided directly from the Nisga'a Lisims Goverment Fish and Wildlife and LGL Limited [@LGLLimitedNisgaaFisheriesWildlife2023PreliminaryAreaSalmon].
+
+#### Run Timing {#nass-run-timing}
+
+We currently do not have CU-level run timing data visualized for any CUs in the Nass Region. See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
+
+#### Catch & Run Size {#nass-run-timing}
+
+Catch and run size, and subsequent exploitation rates for CUs in the Nass Region were calculated by LGL, Nisga'a Fish and Wildlife, and DFO from the Fisheries Operating System (FOS) and other DFO databases. Similar to our work in the Skeena, we accessed most of these datasets via the North and Central Coast (NCC) Database, maintained by LGL Ltd. [@EnglishEtAl2018NorthCentralCoast]. For a description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#catch-and-runsize).
+
+#### Recruits-per-Spawner {#nass-recruits-per-spawner}
+
+Recruits-per-spawner data for CUs in the Nass Region were derived from the DFO age database and CU-level estimates of spawner abundance and catch and run size accessed from the NCC Database [@EnglishEtAl2018NorthCentralCoast]. For a description of recruits-per-spawner methods, see [Overview of Population Indicators: Recruits-per-Spawner](#recruits-per-spawner).
+
+#### Juvenile Surveys {#nass-juvenile-surveys}
+
+**Juvenile surveys** for the Lower Nass coho CU was provided by Nisga'a Fish and Wildlife. For a description of the juvenile surveys indicator, see [Overview of Population Indicators: Juvenile Surveys](#juvenile-surveys).
+
+#### Hatchery Releases
+
+Hatchery releases in the Nass Region for all species were provided by DFO (Joan Bateman, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia's [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#0){style="font-size: 11pt;"} for details on data and analytical methods.
+
+#### Biological Status
+
+The biological status assessments for CUs in the Nass Region currently reflect data sourced from the NCC Database that are current to *2017*. For steelhead, spawner abundance data were provided by the Nisga'a Lisims Goverment Fish and Wildlife and LGL Limited and are current up to 2022 [@LGLLimitedNisgaaFisheriesWildlife2023PreliminaryAreaSalmon]. As new data become available, we will update the analyses and results in this report and the Pacific Salmon Explorer. See [Benchmarks for Assessing Biological Status](#benchmarks-biostatus) and [Decision Rules for Assessing Biological Status](#bs-decision-rules) for more details on biological status assessment methods.
+
+### Habitat Data and Analytical Methods
+
+Nuances regarding habitat pressure indicator data and analytical methods for the Nass Region are listed below. Refer to [Population Status: Indicators & Benchmarks](#indicators-benchmarks-pop) for information on habitat pressure indicators, benchmarks, and the analytical methods used to assess habitat status. Additional details on habitat pressure indicators, data sources, data currency, and benchmarks specific to the Nass Region are available in [Appendix 6 (Description of Habitat Pressure Indicators & Relevance to Salmon)](#appendix-6), [Appendix 7 (Habitat Pressure Datasets & Data Sources)](#appendix-7), [Appendix 8 (Spatial Data Processing for Habitat Pressure Indicators)](#appendix-8), [Appendix 9 (Spatial Data Processing for Future Pressures)](#appendix-9), and [Appendix 12 (Habitat Pressure Benchmark Values by Region)](#appendix-12).
+
+#### Trans-regional Conservation Units
+
+The pink (even-year) Nass-Skeena Estuary CU spans the boundary between the Skeena and Nass Regions. For habitat indicators that used relative benchmarks, habitat status for this trans-regional CU was assessed based on benchmarks derived from the Skeena Region because a significant portion of this CU's spawning habitat fell inside the Skeena Region.
+
+#### Spawning Zones of Influence
+
+Methods for delineating Chinook CU spawning zones of influence (ZOIs) vary by region in accordance with the CU delineation approach used by DFO. In the Skeena, Nass, and Central Coast regions, Chinook CUs are defined using a more restrictive geographic representation, which resulted in fewer (or no) spawning locations occurring within the CU boundaries. As such, spawning ZOIs for each Chinook CU were delineated using the extent of all 1:20K FWA Assessment Watersheds that directly intersected with Nass Chinook CU boundaries.
+
 ## Skeena Region {#skeena-region}
 
 The Skeena River watershed, located along the north coast of BC, is the second-largest in the province, contains important tributaries, including the Babine, Kispiox, and Bulkley Rivers, and is one of the most productive river systems in BC. All five species of Pacific salmon spawn and rear in the lower and upper portions of the Skeena River Basin (Figure \@ref(fig:skeenaMap)) within `r length(which(cu_list$Region == "Skeena"))` CUs: `r length(which(cu_list$Region == "Skeena" & cu_list$Species == "Chinook"))` Chinook, `r length(which(cu_list$Region == "Skeena" & cu_list$Species == "Chum"))` chum, , `r length(which(cu_list$Region == "Skeena" & cu_list$Species == "Coho"))` coho, `r length(which(cu_list$Region == "Skeena" & cu_list$Species %in% c("Pink (odd)", "Pink (even)")))` pink, `r length(which(cu_list$Region == "Skeena" & cu_list$Species == "River sockeye"))` river-type sockeye, `r length(which(cu_list$Region == "Skeena" & cu_list$Species == "Lake sockeye"))` lake-type sockeye, and `r length(which(cu_list$Region == "Skeena" & cu_list$Species == "Steelhead"))` steelhead ([Appendix 1](#appendix-1)). The initial process of data gathering, synthesis, outreach, and engagement to complete the initial assessments for five salmon species within the Skeena Region was conducted over five years, from 2010 to 2014. Subsequent updates to those data have occurred regularly, and steelhead were added in 2023.
@@ -94,213 +208,6 @@ The pink (even-year) Nass-Skeena Estuary CU spans the boundary between the Skeen
 #### Spawning Zones of Influence {#skeena-spawning-zois}
 
 Methods for delineating Chinook CU spawning zones of influence (ZOIs) vary by region in accordance with the CU delineation approach used by DFO. In the Skeena, Nass, and Central Coast regions, Chinook CUs are defined using a more restrictive geographic representation, which resulted in fewer (or no) spawning locations occurring within the CU boundaries. As such, spawning ZOIs for each Chinook CU were delineated using the extent of all 1:20K FWA Assessment Watersheds that directly intersected with Skeena Chinook CU boundaries.
-
-````{=html}
-<!-- ### Results 
-
-#### Biological Status
-
-This section provides a high-level overview of the biological status results for all 55 salmon CUs in the Skeena Region. Of the 55 CUs we examined in the Region, we assessed biological status for 31 CUs (56%). The remaining 24 salmon CUs (44%) had insufficient information for evaluating their biological status (see [Decision Rules for Assessing Biological Status](#bs-decision-rules) for the criteria used to define data deficient CUs). Of the CUs for which we were able to assess biological status, 18 (58%) are in the green status zone, 4 (13%) are in the amber zone, and 9 (29%) are in the red status zone. Biological status for all CUs is displayed by species in Figures \@ref(fig:skckBsmap), \@ref(fig:skchBsmap), \@ref(fig:skcoBsmap), \@ref(fig:skpkoBsmap), \@ref(fig:skpkeBsmap), \@ref(fig:skselBsmap), and \@ref(fig:skserBsmap), below. More information on biological status and benchmarks for each CU is available [Table A.6 in Appendix 4](#appendix-4-tbl4). Full results are available online through the Pacific Salmon Explorer, where individual figures, maps, data, and summary statistics are provided for each CU in the Region. The results of these assessments reflect data that are current to **2017**.  As new data becomes available, we will update the analyses and results in this report and on the Pacific Salmon Explorer.
-
-```{r skckBsmap, fig.cap = "Pacific Salmon Foundation biological status of Skeena Chinook salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/skck_bsmap.png")
-```
-
-```{r skchBsmap, fig.cap = "Pacific Salmon Foundation biological status of Skeena chum salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/skch_bsmap.png")
-```
-
-```{r skcoBsmap, fig.cap = "Pacific Salmon Foundation biological status of Skeena coho salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/skco_bsmap.png")
-```
-
-```{r skpkoBsmap, fig.cap = "Pacific Salmon Foundation biological status of Skeena pink (odd-year) salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/skpko_bsmap.png")
-```
-
-```{r skpkeBsmap, fig.cap = "Pacific Salmon Foundation biological status of Skeena pink (even-year) salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/skpke_bsmap.png")
-```
-
-```{r skselBsmap, fig.cap = "Pacific Salmon Foundation biological status of Skeena sockeye (lake-type) salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/sksel_bsmap.png")
-```
-
-```{r skserBsmap, fig.cap = "Pacific Salmon Foundation biological status of Skeena sockeye (river-type) salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/skser_bsmap.png")
-```
-
-#### Habitat Status
-
-We completed habitat assessments for watersheds within the 55 salmon CUs in the Skeena Region. The habitat assessments produce two levels of outputs for spawning ZOIs: (1) a risk rating for each FWA assessment watershed in the study area for each individual habitat pressure indicator; (2) a cumulative pressure score for each FWA assessment watershed in the study area, representing the risk to a watershed from all habitat pressures combined. Of the 1,183 1:20K FWA assessment watersheds assessed in the Skeena Region, 80% (n= 941) were designated as spawning habitat based on compiled spawning location data. These 941 watersheds represent the combined spawning ZOI for all species. In terms of the cumulative pressure scores for the combined spawning ZOI for all species, 28% of spawning habitat in the Skeena Region is high risk (red), 33% is moderate risk (amber), and 40% is low risk (green). The percentage of spawning habitat in each risk category for each indicator is summarized in (Table \@ref(tab:skHabstat)).
-
-Quantifying both individual and cumulative pressures at the FWA assessment watershed-scale provides a snapshot of habitat pressures across the Skeena Region and highlights which CUs face the greatest risk. Specifically, an overview of habitat pressures emerges from identifying:
-
-1.  the percentage area of the combined spawning ZOI for all species that is rated high, moderate, or low risk (i.e. red, amber, green) for each of the evaluated individual habitat pressure indicators; and
-
-2.  the percentage area of the combined spawning ZOI for all species that is rated high, moderate, or low risk (i.e. red, amber, green) for cumulative habitat pressures.
-
-More information on habitat pressure benchmark values for each indicator is available in [Appendix 12](#appendix-12). More information on cumulative spawning Pressure Results by Region and Conservation Unit is available in [Appendix 13](#appendix-13). Full results are available online through the Pacific Salmon Explorer. The results can be downloaded directly from the Pacific Salmon Explorer for each CU, while the datasets compiled for the analysis are also available for download via the Salmon Data Library.
-
-In addition, the Skeena River estuary was assessed in 2015, and results are available on the Pacific Salmon Explorer. For details on the Skeena estuary, habitat assessment methods, see [@Pickard2015].
-
-```{r skHabstat, include=TRUE, echo = FALSE}
-habStat <- read.csv("tables/sec5_sk_habstat.csv", header = FALSE)
-# knitr::kable(
-#   habStat, booktabs = TRUE,
-#   caption = "The percentage of area within the Skeena Region's combined spawning ZOI for all species rated high, moderate, or low risk (i.e. red, amber, green) for cumulative pressures and each of the evaluated individual habitat pressure indicators."
-# )
-
-colnames(habStat) <- NULL
-
-habStat[2,2] <- cell_spec(habStat[2,2], format = "html", background = "#C06263", font = "bold", color = "white")
-habStat[2,3] <- cell_spec(habStat[2,3], format = "html", background = "#DED38B", font = "bold", color = "white")
-habStat[2,4] <- cell_spec(habStat[2,4], format = "html", background = "#83B686", font = "bold", color = "white")
-
-kableExtra::kbl(habStat[2:nrow(habStat),],
-								format = "html",
-								escape = FALSE,
-								caption = "The percentage of area within the Skeena Region's combined spawning ZOI for all species rated high, moderate, or low risk (i.e. red, amber, green) for cumulative pressures and each of the evaluated individual habitat pressure indicators.",
-								row.names = FALSE) %>%
-  row_spec(1, bold = TRUE, color = "white", background = "#396D8E") %>%
-	# cell_spec(habStat[2,2], format = "html", background = "#C06263", font = "bold", color = "white") %>%
-	column_spec(column = c(2:4), width = "4cm") %>%
-  kable_styling(bootstrap_options = c("striped", "hover")) %>%
-	add_header_above(c("", "% Area of Spawning Habitat" = 3), background = "#396D8E", color = "white") 
-```
-
---->
-````
-
-## Nass Region {#nass-region}
-
-In northern BC, the Nass River watershed is the third-largest watershed in the province and includes several major tributaries, including the Bell-Irving, Cranberry, Meziadin, Kwinageese, and Damdochax Rivers. The Nass Region (Figure \@ref(fig:nassMap)), which consists of the watersheds draining into Portland Canal and Observatory Inlet, contains extensive spawning and rearing habitat for all five species of Pacific salmon. These salmon populations comprise `r length(which(cu_list$Region == "Nass"))` CUs: `r length(which(cu_list$Region == "Nass" & cu_list$Species == "Chinook"))` Chinook, `r length(which(cu_list$Region == "Nass" & cu_list$Species == "Chum"))` chum, `r length(which(cu_list$Region == "Nass" & cu_list$Species == "Coho"))` coho, `r length(which(cu_list$Region == "Nass" & cu_list$Species %in% c("Pink (even)", "Pink (odd)")))` pink, `r length(which(cu_list$Region == "Nass" & cu_list$Species == "River sockeye"))` river-type sockeye, `r length(which(cu_list$Region == "Nass" & cu_list$Species == "Lake sockeye"))` lake-type sockeye, and `r length(which(cu_list$Region == "Nass" & cu_list$Species == "Steelhead"))` steelhead CUs ([Appendix 1](#appendix-1)). The initial process of data gathering, synthesis, outreach, and engagement to complete the initial assessments within the Nass Region was conducted from 2015 to 2019.
-
-We worked with First Nations in the Nass Region to garner feedback on the Pacific Salmon Explorer approach and analyses through the Nisga'a-Canada-BC Nass Joint Technical Committee and the Gitanyow Fisheries Authority. In addition, in 2015 - 2016, we formed a Nass Technical Advisory Committee to engage with First Nations, DFO regional biologists and managers, and other salmon experts throughout the watershed.
-
-```{r nassMap, fig.cap = "Map of the Nass Region.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/nass_map.png")
-```
-
-### Population Data and Analytical Methods {#nass-pop-methods}
-
-As with the Skeena Region, many of the datasets necessary to understand the dynamics of salmon CUs in the Nass Region have been compiled and stored through the North and Central Coast (NCC) Database [@EnglishEtAl2018NorthCentralCoast; see Skeena Region]. In addition to these data, we also compiled additional data for six CUs (Lower Nass and Upper Nass coho; Fred Wright, Damodochax, and Meziadin lake-type sockeye; Lower Nass-Portland river-type sockeye) through a review of preliminary data with Nisga'a Lisims Government and LGL Limited staff. For steelhead, data were sourced from @LGLLimitedNisgaaFisheriesWildlife2023PreliminaryAreaSalmon (see our [steelhead-specific Github repository](https://github.com/salmonwatersheds/steelhead-status) for all raw steelhead population data compiled). Details regarding nuances to the data and analytical methods that are specific to the Nass Region are described below.
-
-#### Spawner Surveys
-
-Spawner survey data for streams in the Nass Region were sourced from DFO's New Salmon Escapement Database (NuSEDS). For a description of the spawner survey indicator, see [Overview of Population Indicators: Spawner Surveys](#spawner-surveys). For steelhead, spawner survey data were provided directly from the Nisga'a Lisims Goverment Fish and Wildlife and LGL Limited [@LGLLimitedNisgaaFisheriesWildlife2023PreliminaryAreaSalmon].
-
-#### Spawner Abundance
-
-Observed spawner abundance for CUs in the Nass Region is the sum of all spawner survey data as documented in NuSEDS, as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). Nass Region CU-level estimates of spawner abundance (run reconstructions) were sourced from the North and Central Coast (NCC) Database. Nass CU-level estimated spawner abundance time series were developed for the NCC Database according to the expansion factors described in the Skeena Region section above.
-
-In addition, CU-level estimates of spawner abundance for five Nass CUs are derived from additional spawner enumeration methods. Specifically, three CUs have mark-recapture programs operated by Nisga'a Fisheries, and Wildlife's lower Nass River fish wheels have mark-recapture programs. These programs have been part of Nisga'a Treaty fisheries work since 1992. For steelhead, spawner abundance data were provided directly from the Nisga'a Lisims Goverment Fish and Wildlife and LGL Limited [@LGLLimitedNisgaaFisheriesWildlife2023PreliminaryAreaSalmon].
-
-#### Run Timing
-
-We currently do not have CU-level run timing data visualized for any CUs in the Nass Region. See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
-
-#### Catch & Run Size
-
-Catch and run size, and subsequent exploitation rates for CUs in the Nass Region were calculated by LGL, Nisga'a Fish and Wildlife, and DFO from the Fisheries Operating System (FOS) and other DFO databases. Similar to our work in the Skeena, we accessed most of these datasets via the North and Central Coast (NCC) Database, maintained by LGL Ltd. [@EnglishEtAl2018NorthCentralCoast]. For a description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#catch-and-runsize).
-
-#### Recruits-per-Spawner
-
-Recruits-per-spawner data for CUs in the Nass Region were derived from the DFO age database and CU-level estimates of spawner abundance and catch and run size accessed from the NCC Database [@EnglishEtAl2018NorthCentralCoast]. For a description of recruits-per-spawner methods, see [Overview of Population Indicators: Recruits-per-Spawner](#recruits-per-spawner).
-
-#### Trends in Spawner Abundance
-
-Trends in spawner abundance for CUs on the Central Coast were derived from the CU-level estimates of spawner abundance accessed from the NCC database [@EnglishEtAl2018NorthCentralCoast, @LGLLimitedNisgaaFisheriesWildlife2023PreliminaryAreaSalmon]. For a description of trends in spawner abundance methods, see [Overview of Population Indicators: Trends in Spawner Abundance](#spawner-abundance).
-
-#### Juvenile Surveys
-
-\*Juvenile survey\*\* data for the Lower Nass coho CU was provided by Nisga'a Fish and Wildlife. For a description of the juvenile survey's indicator, see [Overview of Population Indicators: Juvenile Surveys](#juvenile-surveys).
-
-#### Hatchery Releases
-
-Hatchery releases in the Nass Region for all species were provided by DFO (Joan Bateman, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia's [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#0){style="font-size: 11pt;"} for details on data and analytical methods.
-
-#### Biological Status
-
-The biological status assessments for CUs in the Nass Region currently reflect data sourced from the NCC Database that are current to *2017*. For steelhead, spawner abundance data were provided by the Nisga'a Lisims Goverment Fish and Wildlife and LGL Limited and are current up to 2022 [@LGLLimitedNisgaaFisheriesWildlife2023PreliminaryAreaSalmon]. As new data become available, we will update the analyses and results in this report and the Pacific Salmon Explorer. See [Benchmarks for Assessing Biological Status](#benchmarks-biostatus) and [Decision Rules for Assessing Biological Status](#bs-decision-rules) for more details on biological status assessment methods.
-
-### Habitat Data and Analytical Methods
-
-Nuances regarding habitat pressure indicator data and analytical methods for the Nass Region are listed below. Refer to [Population Status: Indicators & Benchmarks](#indicators-benchmarks-pop) for information on habitat pressure indicators, benchmarks, and the analytical methods used to assess habitat status. Additional details on habitat pressure indicators, data sources, data currency, and benchmarks specific to the Nass Region are available in [Appendix 6 (Description of Habitat Pressure Indicators & Relevance to Salmon)](#appendix-6), [Appendix 7 (Habitat Pressure Datasets & Data Sources)](#appendix-7), [Appendix 8 (Spatial Data Processing for Habitat Pressure Indicators)](#appendix-8), [Appendix 9 (Spatial Data Processing for Future Pressures)](#appendix-9), and [Appendix 12 (Habitat Pressure Benchmark Values by Region)](#appendix-12).
-
-#### Trans-regional Conservation Units
-
-The pink (even-year) Nass-Skeena Estuary CU spans the boundary between the Skeena and Nass Regions. For habitat indicators that used relative benchmarks, habitat status for this trans-regional CU was assessed based on benchmarks derived from the Skeena Region because a significant portion of this CU's spawning habitat fell inside the Skeena Region.
-
-#### Spawning Zones of Influence
-
-Methods for delineating Chinook CU spawning zones of influence (ZOIs) vary by region in accordance with the CU delineation approach used by DFO. In the Skeena, Nass, and Central Coast regions, Chinook CUs are defined using a more restrictive geographic representation, which resulted in fewer (or no) spawning locations occurring within the CU boundaries. As such, spawning ZOIs for each Chinook CU were delineated using the extent of all 1:20K FWA Assessment Watersheds that directly intersected with Nass Chinook CU boundaries.
-
-````{=html}
-<!-- ### Results 
-
-#### Biological Status
-
-This section provides a high-level overview of the biological status results for all 22 salmon CUs in the Nass Region. Of the 22 CUs examined in the Region, we assessed biological status for 13 CUs (59%). The remaining 9 CUs (41%) had insufficient information for evaluating their biological status (see [Decision Rules for Assessing Biological Status](#bs-decision-rules) for the criteria used to define data deficient CUs). Of the CUs for which we assessed biological status, 10 (77%) are in the green status zone, 3 (23%) are in the amber zone, and none are in the red status zone. Biological status for all CUs is displayed by species in Figures \@ref(fig:nackBsmap), \@ref(fig:nachBsmap), \@ref(fig:nacoBsmap), \@ref(fig:napkoBsmap), \@ref(fig:napkeBsmap), \@ref(fig:naselBsmap), and \@ref(fig:naserBsmap), below. More information on biological status and benchmarks for each CU are available in [Table A.7. in Appendix 4](#appendix-4-tbl7). Full results are available online through the Pacific Salmon Explorer, where individual figures, maps, data, and summary statistics are provided for each CU in the Region. The results of these assessments reflect data that are current to **2017**. As new data become available, we will update the analyses and results in this report and on the Pacific Salmon Explorer.
-
-```{r nackBsmap, fig.cap = "Pacific Salmon Foundation biological status of Nass Chinook salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/nack_bsmap.png")
-```
-
-```{r nachBsmap, fig.cap = "Pacific Salmon Foundation biological status of Nass chum salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/nach_bsmap.png")
-```
-
-```{r nacoBsmap, fig.cap = "Pacific Salmon Foundation biological status of Nass coho salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/naco_bsmap.png")
-```
-
-```{r napkoBsmap, fig.cap = "Pacific Salmon Foundation biological status of Nass pink (odd) salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/napko_bsmap.png")
-```
-
-```{r napkeBsmap, fig.cap = "Pacific Salmon Foundation biological status of Nass pink (even) salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/napke_bsmap.png")
-```
-
-```{r naselBsmap, fig.cap = "Pacific Salmon Foundation biological status of Nass sockeye (lake-type) salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/nasel_bsmap.png")
-```
-
-#### Habitat Status
-
-We completed habitat assessments for watersheds within the 22 salmon CUs in the Nass Region. The habitat assessments produce two levels of outputs for spawning ZOIs: (1) a risk rating for each FWA assessment watershed in the study area for each individual habitat pressure indicator; (2) a cumulative pressure score for each FWA assessment watershed in the study area, representing the risk to a watershed from all habitat pressures combined. Of the 550 1:20K FWA assessment watersheds assessed in the Nass Region, 42% (n = 229) were designated as spawning habitat based on compiled spawning location data. These 229 watersheds represent the combined spawning ZOI for all species. In terms of the cumulative pressure scores for the combined spawning ZOI for all species, 21% of spawning habitat in the Nass Region is high risk (red), 42% is moderate risk (amber), and 37% is low risk (green). The percentage of spawning habitat in each risk category for each indicator is summarized in (Table \@ref(tab:naHabstat)) below.
-
-Quantifying both individual and cumulative pressures at the FWA assessment watershed-scale provides a snapshot of habitat pressures across the Nass Region and highlights which CUs face the greatest risk. Specifically, an overview of habitat pressures emerges from identifying:
-
-1.  the percentage area of the combined spawning ZOI for all species that is rated high, moderate, or low risk (i.e. red, amber, green) for each of the evaluated individual habitat pressure indicators; and
-
-2.  the percentage area of the combined spawning ZOI for all species that is rated high, moderate, or low risk (i.e. red, amber, green) for cumulative habitat pressures.
-
-More information on habitat pressure benchmark values for each indicator is available in [Appendix 12](#appendix-12). More information on cumulative spawning Pressure Results by Region and Conservation Unit is available in [Appendix 13](#appendix-13). Full results are available online through the Pacific Salmon Explorer. The results can be downloaded directly from the Pacific Salmon Explorer for each CU. The datasets compiled for the analysis are also available for download via the Salmon Data Library.
-
-```{r naHabstat, include=TRUE, echo = FALSE}
-
-habStat <- read.csv("tables/sec5_na_habstat.csv", header = FALSE)
-
-colnames(habStat) <- NULL
-habStat[2,2] <- cell_spec(habStat[2,2], format = "html", background = "#C06263", font = "bold", color = "white")
-habStat[2,3] <- cell_spec(habStat[2,3], format = "html", background = "#DED38B", font = "bold", color = "white")
-habStat[2,4] <- cell_spec(habStat[2,4], format = "html", background = "#83B686", font = "bold", color = "white")
-
-kableExtra::kbl(habStat[2:nrow(habStat),],
-									format = "html",
-								escape = FALSE,
-								caption = "The percentage of area within the Nass Region's combined spawning ZOI for all species rated high, moderate, or low risk (i.e. red, amber, green) for cumulative pressures and each of the evaluated individual habitat pressure indicators.",
-								row.names = FALSE) %>%
-  row_spec(1, bold = TRUE, color = "white", background = "#396D8E") %>%
-	column_spec(column = c(2:4), width = "4cm") %>%
-  kable_styling(bootstrap_options = c("striped", "hover")) %>%
-	add_header_above(c("", "% Area of Spawning Habitat" = 3), color = "white", background = "#396D8E") 
-
-```
--->
-````
 
 ## Central Coast Region
 

@@ -4,7 +4,7 @@ The R script containing the code for the NuSEDS data processing procedure descri
 
 ## Cleaning Procedure
 
-The objective of the procedure is to obtain the yearly counts of each salmon populations in their respective stream. The NuSEDS data is separated in two datasets. The **all_areas_nuseds** dataset contains the observed yearly counts (related fields: NATURAL_ADULT_SPAWNERS, NATURAL_SPAWNERS_TOTAL, etc.) for each population (related fields: SPECIES, POP_ID, POPULATION) in their respective locations (related fields: AREA, GFE_ID, WATERBODY, GAZETTED_NAME, etc.), along with the associated methods used (related fields: ESTIMATE_METHOD, ESTIMATE_CLASSIFICATION, ENUMERATION_METHODS). The **conservation_unit_system_sites** dataset links each population (related fields: POP_ID, population) to their respective Conservation Unit (related fields: CU_NAME, FULL_CU_IN, CU_LONGT, CU_LAT, etc.) and streams (related fields: GFE_ID, SYSTEM_SITE, X_LONGT, Y_LAT). Ideally the two datasets could be merge by using the population and location identification number POP_ID and GFE_ID, respectively. Unfortunately, numerous **time series** (i.e. a series of yearly counts for a given population in a given location) are **problematic**, which occurs when:
+The objective of the procedure is to obtain the yearly counts of each salmon populations in their respective stream. The NuSEDS data is separated in two datasets. The **all_areas_nuseds** dataset contains the observed yearly counts (related fields: NATURAL_ADULT_SPAWNERS, NATURAL_SPAWNERS_TOTAL, etc.) for each population (related fields: SPECIES, POP_ID, POPULATION) in their respective locations (related fields: AREA, GFE_ID, WATERBODY, GAZETTED_NAME, etc.), along with the associated methods used (related fields: ESTIMATE_METHOD, ESTIMATE_CLASSIFICATION, ENUMERATION_METHODS). The **conservation_unit_system_sites** dataset links each population (related fields: POP_ID, population) to their respective Conservation Unit (related fields: CU_NAME, FULL_CU_IN, CU_LONGT, CU_LAT, etc.) and streams (related fields: GFE_ID, SYSTEM_SITE, X_LONGT, Y_LAT). Ideally the two datasets could be merged using the population and location identification number POP_ID and GFE_ID, respectively. Unfortunately, numerous **time series** (i.e. a series of yearly counts for a given population in a given location) are **problematic**, which occurs when:
 
 -   A time series is present in all_areas_nuseds but its POP_ID and GFE_ID association is absent in conservation_unit_system_sites.
 
@@ -76,3 +76,11 @@ The diverse and idiosyncratic nature of these problematic cases prevented the es
 ## Estimation of population counts
 
 The **observed count** for each series is the maximum value of the following fields in all_areas_nuseds: NATURAL_ADULT_SPAWNERS, NATURAL_JACK_SPAWNERS, NATURAL_SPAWNERS_TOTAL, ADULT_BROODSTOCK_REMOVALS, JACK_BROODSTOCK_REMOVALS, TOTAL_BROODSTOCK_REMOVALS, OTHER_REMOVALS and TOTAL_RETURN_TO_RIVER.
+
+## Coordinates adjustment
+
+There are 41 locations (with a unique GFE_ID) with identical coordinates in conservation_unit_system_sites. This is because the Y_LAT and X_LONGT field does not corresponds to the survey locations but to the "location of the mouth of the waterbody if flowing, or the centroid if not". Consequently, all locations within a water body have the same coordinates. In large rivers (e.g. Thompson river), such imprecision can shift the coordinates 100s of km away from the true assessment location. We conseqeuntly manually adjusted the coordiantes of certain locations to prevent duplication and to improve spatial accuracy.
+
+
+
+

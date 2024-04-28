@@ -2,7 +2,7 @@
 
 ## Using Indicators to Inform the Status of salmon Conservation Units and their Habitats {.unnumbered}
 
-We apply a suite of indicators to assess both the biological and habitat status of salmon Conservation Units (CUs). Defined as "measures of pressures, states, and/or responses", indicators depict the condition of species, habitats, and/or systems to improve one's understanding of the linkages among drivers, stressors, conditions, and management actions [@NelitzEtAl2007RefiningHabitatIndicatorsa]. The indicators and approach that we use align with Strategies 1 and 2 of the Wild Salmon Policy [@DFO2005] that call for standardized assessment and monitoring of the salmon CUs and their freshwater habitats [@HoltEtAl2009IndicatorsStatusBenchmarks; @StalbergEtAl2009CanadaPolicyConservation].
+We apply a suite of indicators to assess both the biological and habitat status of salmon Conservation Units (CUs). Defined as "measures of pressures, states, and/or responses", indicators depict the condition of species, habitats, and/or systems to improve one's understanding of the linkages among drivers, stressors, conditions, and management actions [@NelitzEtAl2007RefiningHabitatIndicatorsa]. The indicators and approach that we use align with Strategies 1 and 2 of the Wild Salmon Policy [@DFO2005CanadaPolicyConservation] that call for standardized assessment and monitoring of the salmon CUs and their freshwater habitats [@HoltEtAl2009IndicatorsStatusBenchmarks; @StalbergEtAl2009CanadaPolicyConservation].
 
 Relevant salmon indicators for informing population and habitat status have several criteria:
 
@@ -16,7 +16,7 @@ Relevant salmon indicators for informing population and habitat status have seve
 
 To quantify the suite of population and habitat status indicators that we use, we have continued to lead a major effort to compile and synthesize salmon-related data in each of the Regions where we operate. While a large amount of salmon-related data already exists, they are often not readily available, not well documented, and not compiled in a single location. Our efforts focus on bringing existing information together in a standardized format into a single, centralized location (i.e. the Salmon Data Library) and summarizing the data in valuable ways for monitoring and assessing salmon CUs and their habitats (i.e. the Pacific Salmon Explorer).
 
-We then calculate and apply benchmarks for each indicator to assess status using a 'stoplight' approach. The result is a qualitative assessment of each indicator as either red, amber, or green, depending on the current data relative to a lower or upper benchmark (Figure \@ref(fig:wspFramework)). The intent is that decision-makers can then apply management measures to improve the status of a CU and/or salmon-bearing watershed, for example, from Red to Amber or Amber to Green [@DFO2005].
+We then calculate and apply benchmarks for each indicator to assess status using a 'stoplight' approach. The result is a qualitative assessment of each indicator as either red, amber, or green, depending on the current data relative to a lower or upper benchmark (Figure \@ref(fig:wspFramework)). The intent is that decision-makers can then apply management measures to improve the status of a CU and/or salmon-bearing watershed, for example, from Red to Amber or Amber to Green [@DFO2005CanadaPolicyConservation].
 
 ```{r wspFramework, include=TRUE, echo = FALSE, out.width=600, fig.align='center', fig.alt='Wild Salmon Policy assessment framework.', fig.cap="Benchmarks and biological status zones under the Wild Salmon Policy (DFO, 2005)."}
 knitr::include_graphics("figures/wsp.png")
@@ -131,7 +131,7 @@ For species with variable age-at-return, estimating the number of recruits for a
 
 #### Biological Status
 
-The **biological status** assessments that we complete and visualize on the Pacific Salmon Explorer are guided by the approaches recommended under Strategy 1 of the Wild Salmon Policy [@DFO2005] and by [@HoltEtAl2009IndicatorsStatusBenchmarks], as well as additional recommendations from our independent Population Science Advisory Committee. Candidate benchmarks for evaluating the status of CUs have been proposed for four classes of indicators [@HoltEtAl2009IndicatorsStatusBenchmarks], which include:
+The **biological status** assessments that we complete and visualize on the Pacific Salmon Explorer are guided by the approaches recommended under Strategy 1 of the Wild Salmon Policy [@DFO2005CanadaPolicyConservation] and by [@HoltEtAl2009IndicatorsStatusBenchmarks], as well as additional recommendations from our independent Population Science Advisory Committee. Candidate benchmarks for evaluating the status of CUs have been proposed for four classes of indicators [@HoltEtAl2009IndicatorsStatusBenchmarks], which include:
 
 1.  Current spawner abundance;
 2.  Trends in spawner abundance over time;
@@ -178,7 +178,7 @@ where $\bar{S_i}$ is the geometric mean number of spawners in stream $i$ over th
 
 The quality of data shown in the Pacific Salmon Explorer varies widely among Regions, species, CUs, and streams. For instance, spawner abundance obtained from a single aerial survey is less reliable than counts obtained from an unbroken counting fence. We combine spawner survey data with other datasets, such as catch, to determine total run size and to assess the biological status of CUs. The **data quality** for each of these data types is important to consider when interpreting the population indicators shown in the Pacific Salmon Explorer.
 
-We developed a standardized approach to assess the quality of data used to estimate populations indicators for each CU based on one or more of seven data quality criteria (Table \@ref(tab:cudataQual)). We assign scores of 0-5 to each of these four criteria and present the average score across relevant criteria as the **Data Quality Score** ($Q$) for each population indicator and CU. Numeric scores are translated to categorical data quality outcomes of low ($0 < Q \leq 1$), low-medium ($1 < Q \leq 2$), medium ($2 < Q \leq 3$), medium-high ($3 < Q \leq 4$), and high ($4 < Q \leq 5$). A score of zero means that there were no data for that CU.
+We developed a standardized approach to assess the quality of data used to estimate populations indicators for each CU based on one or more of seven data quality criteria (Table \@ref(tab:cudataQual)). We assign scores of 1-5 to each of these four criteria and present the average score across relevant criteria as the **Data Quality Score** ($Q$) for each population indicator and CU. Numeric scores are translated to categorical data quality outcomes of low ($1 \leq Q < 1.5$), low-medium ($1.5 \leq Q < 2.5$), medium ($2.5 \leq Q < 3.5$), medium-high ($3.5 \leq Q < 4.5$), and high ($4.5 \leq Q \leq 5$). A score of zero means that there were no data for that CU..
 
 | Data quality criteria    | Definition                                                                                                                                                | Relevant population indicator(s)                                                                         |
 |:-----------------|:--------------------------|:--------------------------|
@@ -310,29 +310,29 @@ knitr::kable(
 
 This criterion indicates the quality of the juvenile survey data over the most recent generation based on method type and execution.
 
-| Score               | Definition                                                                                                                                                                                                                                                                              |
+| Score               | Definition|
 |:---------------------------|:-------------------------------------------|
-| NA - Not applicable | A Not Applicable score indicates that no juvenile surveys were completed for this Conservation Unit over the most recent generation.                                                                                                                                                                                                              |
+| NA - Not applicable | A Not Applicable score indicates that no juvenile surveys were completed for this Conservation Unit over the most recent generation.|
 | 1 - Low             | A Low score indicates that most of the juvenile surveys were performed with low-effort or inconsistently executed methods, resulting in variable accuracy and precision. |
+| 2 - Medium-Low      | A Medium-Low score indicates that most of the juvenile surveys were performed with medium to low effort.|
+| 3 - Medium          | A Medium score indicates that most of the juvenile surveys were performed with medium effort.|
+| 4 - Medium-High     | A Medium-High score indicates that most of the juvenile surveys were performed with high effort.|
+| 5 - High            | A High score indicates that most of the juvenile surveys produce counts of total juveniles.|
+: (#tab:juvSurvdataQual) Data quality scores and their definitions for the juvenile survey data quality criteria. 
 
-| 2 - Medium-Low      | A Medium-Low score indicates that most of the juvenile surveys were performed with medium to low effort.                                                                                                                                                                                                                 |
-| 3 - Medium          | A Medium score indicates that most of the juvenile surveys were performed with medium effort.                                                                                                                                                                                                               |
-| 4 - Medium-High     | A Medium-High score indicates that most of the juvenile surveys were performed with high effort.                                                                                                                                                                                                                   |
-| 5 - High            | A High score indicates that most of the juvenile surveys produce counts of total juveniles.                                                                                                                                                                                                               |
+
 #### Run Timing Quality {#run-timing-quality}
 
 The CU-level **run timing quality** criterion is based on the number of years of data, the currency of the data, and whether sampling captured the entirety of the run (Table \@ref(tab:rtdataQual)). For some CUs, run timing is monitored at a single location either near the mouth of the river or (for lake-type sockeye) near the rearing lake. In geographically large and/or coastal CUs where component river populations may display a range in run timing, there may be run timing estimates available for different locations within the CU. When run timing was available for multiple locations within a CU, we combined estimates from different locations. Thus, when determining the run timing data quality, "5 years of direct counts" may correspond to five years of data from a single location or 1 year of data from each of 5 locations.
 
-| Score               | Definition                                                                                                                                                                                                                                                                              |
+| Score               | Definition |
 |:---------------------------|:-------------------------------------------|
-| NA - Not applicable | It was not possible to estimate run timing for the CU with available data.                                                                                                                                                                                                              |
+| NA - Not applicable | It was not possible to estimate run timing for the CU with available data. |
 | 1 - Low             | 1-2 years of direct counts but very low numbers **or** part of the run was missed **or** or estimates of the peak **and** range of run timing was not available for the specific CU and the distribution of run timing was based on other, similar CUs (e.g., same species and region). |
-
-| 2 - Medium-Low      | Fewer than 5 years of direct counts, with last monitoring prior to 2000                                                                                                                                                                                                                 |
-| 3 - Medium          | Fewer than 5 years of direct counts, with monitoring more recent than 2000                                                                                                                                                                                                              |
-| 4 - Medium-High     | More than 5 years of direct counts, with last monitoring prior to 2000                                                                                                                                                                                                                  |
-| 5 - High            | More than 5 years of direct counts, with monitoring more recent than 2000                                                                                                                                                                                                               |
-
+| 2 - Medium-Low      | Fewer than 5 years of direct counts, with last monitoring prior to 2000|
+| 3 - Medium          | Fewer than 5 years of direct counts, with monitoring more recent than 2000|
+| 4 - Medium-High     | More than 5 years of direct counts, with last monitoring prior to 2000|
+| 5 - High            | More than 5 years of direct counts, with monitoring more recent than 2000|
 : (#tab:rtdataQual) Run timing data quality criteria were scored on a scale of 1 to 5 based on the number of years of data, the currency of the data, and whether sampling captured the entirety of the run.
 
 #### Catch Estimation Method {#catch-estimation-method}
@@ -347,19 +347,19 @@ knitr::kable(
 )
 ```
 
-### Stock ID {#stock-id}
+#### Stock ID {#stock-id}
 
 Stock identification quality is based on the reliability of the genetics data to be able to attribute an individual fish to a CU.
 
-| Score               | Definition                                                                                                                                                                                                                                                                              |
+| Score               | Definition  |
 |:---------------------------|:-------------------------------------------|
-| NA - Not applicable | It was not possible to estimate stock identification quality for the CU with available data.                                                                                                                                                                                                              |
+| NA - Not applicable | It was not possible to estimate stock identification quality for the CU with available data. |
 | 1 - Low             | <50% correct classification of individual salmon to a CU |
-
-| 2 - Medium-Low      | 50-80% correct classification of individual salmon to a CU                                                                                                                                                                                                                 |
-| 3 - Medium          | 80-90% correct classification of individual salmon to a CU                                                                                                                                                                                                              |
-| 4 - Medium-High     | 90-95% correct classification of individual salmon to a CU                                                                                                                                                                                                                  |
-| 5 - High            | >95% correct classification of individual salmon to a CU                                                                                                                                                                                                               |
+| 2 - Medium-Low      | 50-80% correct classification of individual salmon to a CU |
+| 3 - Medium          | 80-90% correct classification of individual salmon to a CU |
+| 4 - Medium-High     | 90-95% correct classification of individual salmon to a CU |
+| 5 - High            | >95% correct classification of individual salmon to a CU |
+: (#tab:stockIDdataQual) Data quality scores and their definitions for the stock ID data quality criteria. 
 
 ### Benchmarks for Assessing Biological Status {#benchmarks-biostatus}
 
@@ -478,7 +478,7 @@ Other limitations are species- or Region-specific; the latter are included below
 
 ## Habitat Status: Indicators & Benchmarks {#indicators-benchmark-hab}
 
-Our assessments of habitat status that we complete and visualize on the Pacific Salmon Explorer follow the approaches developed for evaluating status under Strategy 2 of the Wild Salmon Policy [@DFO2005]. Following this guidance, monitoring should be informed by information on a suite of **habitat indicators**. These indicators represent different characteristics of the environment, such as the habitat condition, magnitude of stress, degree of exposure to a stressor, or ecological response to exposure. To evaluate the potential risk of degradation to freshwater salmon habitat, each indicator should pertain to salmon and reflect a clear scientific understanding of a direct or indirect relationship between itself and its impact on salmon. <!-- BSC: I find the sentence long and confusion from "... each indicator should...", here is my suggestion: "...each indicator should represent environmental conditions that have scientifically proven impacts on salmon.-->
+Our assessments of habitat status that we complete and visualize on the Pacific Salmon Explorer follow the approaches developed for evaluating status under Strategy 2 of the Wild Salmon Policy [@DFO2005CanadaPolicyConservation]. Following this guidance, monitoring should be informed by information on a suite of **habitat indicators**. These indicators represent different characteristics of the environment, such as the habitat condition, magnitude of stress, degree of exposure to a stressor, or ecological response to exposure. To evaluate the potential risk of degradation to freshwater salmon habitat, each indicator should pertain to salmon and reflect a clear scientific understanding of a direct or indirect relationship between itself and its impact on salmon. <!-- BSC: I find the sentence long and confusion from "... each indicator should...", here is my suggestion: "...each indicator should represent environmental conditions that have scientifically proven impacts on salmon.-->
 
 Habitat indicators can be further described as either pressure indicators or state indicators following the two-tiered pressure and state indicator framework described by @StalbergEtAl2009CanadaPolicyConservation. **Pressure indicators** are natural processes or human activities that can directly or indirectly induce qualitative or quantitative changes in environmental conditions [@StalbergEtAl2009CanadaPolicyConservation]. **State indicators** are physical, chemical, or biological attributes measured to characterize environmental conditions on the ground [@StalbergEtAl2009CanadaPolicyConservation]. Distinguishing features between pressure and state indicators include the scale of assessment, the resolution of input data, and the cost of assessment and monitoring. Pressure indicators are often assessed for large geographic areas using remotely sensed information. Evaluation and quantification of pressure indicators are less resource intensive because data collection and monitoring are typically not based on on-the-ground field studies. On the other hand, state indicators are assessed for smaller geographic areas, typically necessitating higher-resolution data for assessment and quantification, and require more resources due to the need for on-the-ground fieldwork. Our work to date focuses on pressure indicators, serving as the first step towards gaining an understanding of habitat conditions over broad geographic extents. Our overarching objective is to use these habitat pressure indicators to identify priority areas where finer-scale state indicator assessments and monitoring will subsequently be conducted.
 
@@ -490,7 +490,7 @@ The base reporting unit for our assessments of habitat pressure indicators is th
 
 ### Identifying salmon Spawning Habitat
 
-Our assessment methodology uses the concept of a **zone of influence (ZOI)** to identify the area of land considered to influence freshwater salmon habitat. Using ZOIs to assess salmon freshwater habitats aligns with Strategy 2 of the Wild Salmon Policy, in that 1) the identification of habitats that support or limit salmon production is necessary to inform assessment, monitoring, and protection priorities; and 2) habitat requirements vary by species, life history characteristics and phase, and geography [@DFO2005].
+Our assessment methodology uses the concept of a **zone of influence (ZOI)** to identify the area of land considered to influence freshwater salmon habitat. Using ZOIs to assess salmon freshwater habitats aligns with Strategy 2 of the Wild Salmon Policy, in that 1) the identification of habitats that support or limit salmon production is necessary to inform assessment, monitoring, and protection priorities; and 2) habitat requirements vary by species, life history characteristics and phase, and geography [@DFO2005CanadaPolicyConservation].
 
 -   We define ZOIs for the spawning life stage for each salmon CU. A **spawning ZOI** represents the area of land that drains into the spawning habitat of a specific salmon CU.
 
@@ -617,6 +617,57 @@ Additional research is needed to define science-based benchmarks for some pressu
 #### Cumulative Pressure Scores {#cp-scores}
 
 The approach we use to calculate overall cumulative pressure scores for freshwater salmon habitats is a roll-up rule set described in [Appendix 11](#appendix-11). This approach implies that each indicator is weighted equally in terms of the overall cumulative pressure score. We do not weight certain indicators as having more or less impact on salmon habitat over others. Determining how best to aggregate indicators to calculate overall cumulative pressure scores is a challenge, and while this approach is transparent and easily understood by a range of audiences, it is certainly not the only way to aggregate indicators, nor necessarily the best way.
+
+
+### Overview of Habitat State Indicators
+
+Habitat state indicators are defined within Strategy 2 of the WSP [@StalbergEtAl2009CanadaPolicyConservation] as physical or chemical attributes measured to characterize the environmental conditions within salmon habitats. At a local scale (i.e., watershed or individual CU), habitat managers would be expected to use both pressure and state indicators as available to evaluate habitat status and better understand salmon habitat conservation or restoration priorities. As identified in @StalbergEtAl2009CanadaPolicyConservation a requirement for field measurement means that state indicators are generally more difficult and more expensive to monitor than are pressure indicators. Second, high natural variability in habitat conditions may require a high sampling effort to reliably detect meaningful differences or changes in values for habitat state indicators (i.e., low statistical power). Thus, localized monitoring of different habitat state indicators, while of critical importance for understanding the actual on-the-ground condition of salmon habitats, must be designed, analyzed, and interpreted appropriately to allow for integration of such information to inform broader inferences of habitat status across watersheds, CUs, or provincial regions.
+
+Work to quantify habitat state indicators has started with two indicators related to climate changes in salmon watersheds: stream temperature and stream flows. 
+
+#### Stream temperature
+
+Stream temperature is an important variable that structures aquatic ecosystems, dictating the species that can survive and thrive in an area and affecting the behaviour and life-history timing of those present [@FicklinEtAl2023RethinkingRiverWater]. Stream temperature is generally projected to increase throughout BC and the Yukon with climate change, as air temperatures rise, and hydrologic regimes shift from snow- or glacier-dominated to rainfall-dominated. For example, summer water temperatures in the Fraser River have warmed by ~1.5 °C since the 1950s [@BritishColumbiaMinistryofEnvironment2015IndicatorsClimateChangea]. These rising temperatures may have negative impacts on all freshwater life stages of salmon (Table 4). We were interested in identifying an indicator that would provide information on increases to stream temperatures that may negatively affect salmonids. We chose to focus on the 7-day running average of the daily maximum temperature (`7DADM`), which is sensitive to changes in high stream temperatures that persist for a period of several days or more.
+
+To quantify the `7DADM`, continuous logger data recorded at hourly intervals are needed because spot measurements may not capture daily maximum temperatures. Although continuous stream temperature monitoring is becoming more prevalent, these data are not compiled and made available by a single agency, such as the Water Survey of Canada does for flow data. We compiled stream temperature data from a variety of sources (Table 3) and calculated daily max temperatures from the full timeseries and then calculated the 7DADM. We then performed a basic quality-assurance/quality-control (QA/QC) of the daily maxima through the following steps:
+
+1. Removing values < 0 ˚C
+2. Removing values > 30 ˚C
+3. Removing values that showed an increase or decrease of more than 2.5 ˚C from the previous day (more than 99% of day-to-day changes were less than +/- 2.3 ˚C)
+
+From the remaining data, we calculated the `7DADM` for each location by taking the average of the daily maximum temperatures for the current and previous 6 days (i.e., right-aligned 7-day moving average), ignoring missing data. 
+
+In the Pacific Salmon Explorer, stream temperature monitoring locations can be sorted by the station name or by the maximum `7DADM` in the most recent year. In the stream temperature overlays, we visualize the median (blue line) and range (grey) of the `7DADM` for each day-of-year across all years on record. We also show the daily `7DADM` for the most recent year of data. To facilitate the interpretation of these data in the context of what it means for salmon, we show a general 18 ˚C threshold as a horizontal red dashed line. 
+
+| Source | Number of monitoring locations |Median days of data per station (2.5th, 97.5th quantiles) | Date range | 
+|:--------------- |:---------- |:--------------- |:-----------|
+| [Province of BC](https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/water-science-data/water-data-tools/real-time-water-data-reporting) | 266 | 477 (60, 3050) | 1995-2021 |
+| [Water Survey of Canada](https://www.canada.ca/en/environment-climate-change/services/water-overview/quantity/monitoring/survey.html) | 179 | 1599 (74, 6646) | 1996-2022 |
+| [Yukon River Panel](https://www.yukonriverpanel.com/publications/data-sets/) (Al von Finster) | 20 | 1719 (242, 3388) | 2011-2020 |
+: (#tab:streamTempDataSources) Sources of stream temperature data shown in the Pacific Salmon Explorer. 
+
+
+#### Stream flow
+
+Climate change is impacting the hydrology of freshwater ecosystems by altering precipitation patterns, reducing the snowpack and hastening glacial retreat, and changing the timing of spring snow melt, leading to more variable flows and changing the timing of peak flows [@UlIslamEtAl2019QuantifyingProjectedChanges]. The impacts of changing hydrographs on salmon will depend on season and life-stage. However, in general we expect salmon to experience lower flows in late summer and early fall during critical adult migration and spawning periods. 
+
+To track when and where critical low flows are occurring, we calculated a 7-day running average of daily flows from the [Water Survey of Canada’s HYDAT](https://www.canada.ca/en/environment-climate-change/services/water-overview/quantity/monitoring/survey/data-products-services/national-archive-hydat.html) data for stations in BC and the Yukon. The minimum value for the smoothed flow in each year was compared to the Mean Annual Discharge (MAD) to calculate the minimum % MAD. HYDAT data were downloaded via the `tidyhydat` R package [@Albers2017TidyhydatExtractTidy], and smoothed daily flows and MAD were calculated for each station using functions in the `fasstr` R package [@GoetzSchwarz2022FasstrAnalyzeSummarize].
+
+For low stream flow, benchmarks for the minimum % MAD follow guidelines from the Province of British Columbia’s Environmental Flow Needs (EFNs) Policy [@BCMinistryofForestsLands2022EnvironmentalFlowNeeds]. Specifically, BC’s EFN Risk Assessment Framework assumes that mean monthly discharge:
+* Greater than 20% lt MAD (long-term mean annual discharge) represent low flow sensitivity;
+* Between 10 and 20% lt MAD represent moderate flow sensitivity; and
+* Less than 10% of lt MAD represent high flow sensitivity.
+
+Following this Framework, we visualize a lower benchmark on minimum % MAD of 10% and upper benchmark of 20% when we show annual hydrographs in the Pacific Salmon Explorer.
+
+### Limitations: Habitat State Indicators & Analysis Methods
+
+Although the importance of stream temperature to aquatic ecosystems is undisputed, there is no central agency tasked with monitoring and reporting onstream temperature, like the Water Survey of Canada does for river flow and levels. Thus, there are major limitations in both the spatial and temporal coverage of stream temperature data. In particular, there are relatively few time series than span multiple years, making it difficult to identify trends over time. PSF is working to address the general lack of centralized, accessible stream temperature data by working with partners throughout BC and the Yukon to coordinate stream temperature monitoring and compile data into a centralized, quality-controlled database. However, this initiative is in its infancy, and our current stream temperature database may not provide a complete picture of the temperature stress that Pacific salmon may be experiencing throughout their range.
+
+Even where there are stream temperature data, the analysis and interpretation can be challenged by poor data quality or poorly located stations that do not accurately capture conditions experienced by fish. Stream temperature loggers can be displaced or dewatered, resulting in misleading time series. Although we performed an initial QA/QC to remove errors and extreme outliers, due to the large number of stations it is not feasible to examine each time series in detail. Future work could use more sophisticated algorithms and comparison to nearby recorded air temperatures to identify potential dewatering events [e.g., @Chezik2019RiverNetworkStructuring]. We also recognize that rivers are 3-dimensional environments, and there may be considerable fine-scale variability in stream temperature (e.g., thermal refugia) that is not captured by data loggers at a single point location. PSF is working with academics and communities to better understand the thermal landscape of rivers and how this may affect interpretation of stream temperature logger data.
+
+Benchmarks for stream temperature that are specific to salmonids have been identified in BC [@OliverFidler2001WaterQualityGuideline] and the US Pacific Northwest [@UnitedStatesEnvironmentalProtectionAgency2003EPARegion10], but new research is uncovering just how variable thermal tolerance can be among salmon populations [@ZilligEtAl2021OneSizeDoes]. We have developed the stream-temperature visualizations in a way that is flexible to incorporate different thermal tolerance and optimal temperature ranges for different life-stages, species, and CUs, and will endeavor to update this information to reflect the latest state of knowledge. In the meantime, we recognize that the benchmarks presented may not represent the specific thermal requirements of individuals CUs, and should be used as approximate guidelines.
+For low stream flow, we assumed a lower benchmark on minimum % MAD of 10% and upper benchmark of 20%. We recognize that many small streams have historically gone dry in the summer months, and that these benchmarks may be overly conservative in these cases where salmon have adapted to low-flow conditions. In other places, flow needs for specific stages and species may be much greater than 20% MAD [@WarkentinEtAl2022LowSummerRiver]. Thus, we caution that these are general benchmarks and local considerations must be taken into account when making management decisions.
 
 ## Reporting Status Across Spatial Scales
 

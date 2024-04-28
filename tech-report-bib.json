@@ -225,6 +225,31 @@
 		}
 	},
 	{
+		"id": "Albers2017TidyhydatExtractTidy",
+		"type": "article-journal",
+		"abstract": "Provides functions to access historical and real-time national 'hydrometric' data from Water Survey of Canada data sources (<http://dd.weather.gc.ca/hydrometric/csv/> and <http://collaboration.cmc.ec.gc.ca/cmc/hydrometrics/www/>) and then applies tidy data principles.",
+		"container-title": "The Journal of Open Source Software",
+		"DOI": "10.21105/joss.00511",
+		"ISSN": "2475-9066",
+		"issue": "20",
+		"page": "511",
+		"title": "tidyhydat: Extract and Tidy Canadian Hydrometric Data",
+		"volume": "2",
+		"author": [
+			{
+				"family": "Albers",
+				"given": "Sam"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2017"
+				]
+			]
+		}
+	},
+	{
 		"id": "PestalEtAl2020TakuRiverSockeye",
 		"type": "report",
 		"title": "Taku River Sockeye Salmon Stock Assessment Review and Updated 1984-2018 Abundance Estimates",
@@ -2239,6 +2264,43 @@
 			"date-parts": [
 				[
 					"2005"
+				]
+			]
+		}
+	},
+	{
+		"id": "WarkentinEtAl2022LowSummerRiver",
+		"type": "article-journal",
+		"abstract": "1. Climate change and human activities are transforming river flows globally, with potentially large consequences for freshwater life. To help inform watershed and flow management, there is a need for empirical studies linking flows and fish pro- ductivity. 2. We tested the effects of river conditions and other factors on 22 years of Chinook salmon productivity in a watershed in British Columbia, Canada. 3. Freshwater conditions during adult salmon migration and spawning, as well as dur- ing juvenile rearing, explained a large amount of variation in productivity. 4. August river flows while salmon fry reared had the strongest effect on productivity—our model predicted that cohorts that experience 50% below average flow in the August of rearing have 21% lower productivity. 5. These contemporary relationships are set within long-term changes in climate, land use, andhydrology.Over the last century, average August river discharge decreased by 26%, air temperatures warmed, and water withdrawals increased. Seventeen percent of the watershed was logged in the last 20 years. 6. Our results suggest that, in order to remain stable, this Chinook salmon population being assessed for legal protection requires substantially higher August flow than previously recommended. Changing flow regimes—driven by watershed impacts and climate change—can threaten imperilled fish populations.",
+		"container-title": "Ecological Solutions and Evidence",
+		"DOI": "10.1002/2688-8319.12124",
+		"ISSN": "2688-8319",
+		"issue": "1",
+		"page": "1-12",
+		"title": "Low summer river flows associated with low productivity of Chinook salmon in a watershed with shifting hydrology",
+		"volume": "3",
+		"author": [
+			{
+				"family": "Warkentin",
+				"given": "Luke"
+			},
+			{
+				"family": "Parken",
+				"given": "Charles K."
+			},
+			{
+				"family": "Bailey",
+				"given": "Richard"
+			},
+			{
+				"family": "Moore",
+				"given": "Jonathan W."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2022"
 				]
 			]
 		}
@@ -5469,6 +5531,28 @@
 		}
 	},
 	{
+		"id": "UnitedStatesEnvironmentalProtectionAgency2003EPARegion10",
+		"type": "report",
+		"abstract": "U.S. Environmental Protection Agency (USEPA). 2003. EPA Region 10 Guidance for Pacific Northwest State and Tribal Water Quality Standards. Region 10, Seattle, WA. EPA 910-B-03-002. 49pp. Available at: <http://www.epa.gov/r10earth/ temperature.htm>. Website accessed on June 23, 2004.",
+		"event-place": "Seattle, WA",
+		"note": "issue: 910-B-03-002",
+		"page": "49",
+		"publisher-place": "Seattle, WA",
+		"title": "EPA Region 10 Guidance for Pacific Northwest State and Tribal Water Quality Standards",
+		"author": [
+			{
+				"literal": "United States Environmental Protection Agency"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2003"
+				]
+			]
+		}
+	},
+	{
 		"id": "SalmonWatershedsProgram2024StatusSteelheadPopulations",
 		"type": "report",
 		"event-place": "Vancouver, B.C.",
@@ -5512,6 +5596,26 @@
 			"date-parts": [
 				[
 					"2024"
+				]
+			]
+		}
+	},
+	{
+		"id": "BritishColumbiaMinistryofEnvironment2015IndicatorsClimateChangea",
+		"type": "report",
+		"abstract": "Both the UN Intergovernmental Panel on Climate Change and the US National Academy of Science have concluded that the global atmosphere is warming. They agree, moreover, that most of the warming observed over the last 50 years can be attributed to human activities that release greenhouse gases into the atmosphere. British Columbia, for example, produced almost 16 tonnes of green- house gases per person in 1999, most through the burning of fossil fuels for trans- portation and industrial activity. Atmospheric warming affects other parts of the climate system, including precipitation, air, wind and ocean currents, cloud cover, and the hydrological cycle. Climate change in turn affects other closely related physical systems, as well as biological systems, and the human communities that depend on these systems. This report documents how the climate in British Columbia changed during the 20th century and the rates at which these changes occurred. It outlines the potential impacts of these changes on freshwater, marine, and terrestrial ecosystems and on human communities. It describes how climate change is likely to affect the province during the 21st century",
+		"note": "container-title: BC Ministry of Environment and Climate Change Strategy, National Library of Canada\nvolume: 4\nissue: 2016\nISBN: 0772647321",
+		"page": "48",
+		"title": "Indicators of Climate Change for British Columbia: 2016 Update",
+		"author": [
+			{
+				"literal": "British Columbia Ministry of Environment"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2015"
 				]
 			]
 		}
@@ -5636,6 +5740,230 @@
 				[
 					"1992",
 					9
+				]
+			]
+		}
+	},
+	{
+		"id": "FicklinEtAl2023RethinkingRiverWater",
+		"type": "article-journal",
+		"container-title": "Nature Water",
+		"DOI": "10.1038/s44221-023-00027-2",
+		"issue": "February",
+		"note": "publisher: Springer US",
+		"page": "125-128",
+		"title": "Rethinking river water temperature in a changing , human-dominated world",
+		"volume": "1",
+		"author": [
+			{
+				"family": "Ficklin",
+				"given": "Darren L"
+			},
+			{
+				"family": "Hannah",
+				"given": "David M"
+			},
+			{
+				"family": "Wanders",
+				"given": "Niko"
+			},
+			{
+				"family": "Dugdale",
+				"given": "Stephen J"
+			},
+			{
+				"family": "England",
+				"given": "Judy"
+			},
+			{
+				"family": "Klaus",
+				"given": "Julian"
+			},
+			{
+				"family": "Kelleher",
+				"given": "Christa"
+			},
+			{
+				"family": "Khamis",
+				"given": "Kieran"
+			},
+			{
+				"family": "Charlton",
+				"given": "Matt B"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2023"
+				]
+			]
+		}
+	},
+	{
+		"id": "UlIslamEtAl2019QuantifyingProjectedChanges",
+		"type": "article-journal",
+		"abstract": "In response to ongoing and future-projected global warming, mid-latitude, nival river basins are expected to transition from a snowmelt-dominated flow regime to a nival-pluvial one with an earlier spring freshet of reduced magnitude. There is, however, a rich variation in responses that depends on factors such as the topographic complexity of the basin and the strength of maritime influences. We illustrate the potential effects of a strong maritime influence by studying future changes in cold season flow variability in the Fraser River Basin (FRB) of British Columbia, a large extratropical watershed extending from the Rocky Mountains to the Pacific Coast. We use a process-based hydrological model driven by an ensemble of 21 statistically downscaled simulations from the Coupled Model Intercomparison Project Phase 5 (CMIP5), following the Representative Concentration Pathway 8.5 (RCP 8.5).</p> <p>Warming under RCP 8.5 leads to reduced winter snowfall, shortening the average snow accumulation season by about one-third. Despite this, large increases in cold season rainfall lead to unprecedented cold season peak flows and increased overall runoff variability in the VIC simulations. Increased cold season rainfall is shown to be the dominant climatic driver in the Coast Mountains, contributing 60&thinsp;% to mean cold season runoff changes in the 2080s. Cold season runoff at the outlet of the basin increases by 70&thinsp;% by the 2080s, and its interannual variability more than doubles when compared to the 1990s, suggesting substantial challenges for operational flow forecasting in the region. Furthermore, almost half of the basin (45&thinsp;%) transitions from a snow-dominated runoff regime in the 1990s to a primarily rain-dominated regime in the 2080s, according to a snowmelt pulse detection algorithm. While these projections are consistent with the anticipated transition from a nival to a nival-pluvial hydrologic regime, the marked increase in FRB cold season runoff is likely linked to more frequent landfalling atmospheric rivers in the region projected in the CMIP5 models, providing insights for other maritime-influenced extratropical basins.",
+		"container-title": "Hydrology and Earth System Sciences",
+		"DOI": "10.5194/hess-23-811-2019",
+		"ISSN": "16077938",
+		"issue": "2",
+		"page": "811-828",
+		"title": "Quantifying projected changes in runoff variability and flow regimes of the Fraser River Basin, British Columbia",
+		"volume": "23",
+		"author": [
+			{
+				"family": "Ul Islam",
+				"given": "Siraj"
+			},
+			{
+				"family": "Curry",
+				"given": "Charles L."
+			},
+			{
+				"family": "Déry",
+				"given": "Stephen J."
+			},
+			{
+				"family": "Zwiers",
+				"given": "Francis W."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "GoetzSchwarz2022FasstrAnalyzeSummarize",
+		"type": "software",
+		"title": "fasstr: Analyze, Summarize, and Visualize Daily Streamflow Data",
+		"URL": "https://cran.r-project.org/package=fasstr",
+		"author": [
+			{
+				"family": "Goetz",
+				"given": "Jon"
+			},
+			{
+				"family": "Schwarz",
+				"given": "Carl James"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2022"
+				]
+			]
+		}
+	},
+	{
+		"id": "BCMinistryofForestsLands2022EnvironmentalFlowNeeds",
+		"type": "report",
+		"event-place": "Victoria, BC",
+		"publisher": "Province of British Columbia",
+		"publisher-place": "Victoria, BC",
+		"title": "Environmental Flow Needs Policy",
+		"URL": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/water-licensing-rights/water-policies/environmental-flow-needs",
+		"author": [
+			{
+				"family": "BC Ministry of Forests, Lands",
+				"given": "Natural Resource Operations and Rural Development"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2022"
+				]
+			]
+		}
+	},
+	{
+		"id": "Chezik2019RiverNetworkStructuring",
+		"type": "thesis",
+		"publisher": "Simon Fraser University",
+		"title": "River network structuring of climate and landscape effects in salmon watersheds",
+		"URL": "https://summit.sfu.ca/item/18782",
+		"author": [
+			{
+				"family": "Chezik",
+				"given": "Kyle August"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "OliverFidler2001WaterQualityGuideline",
+		"type": "report",
+		"event-place": "Victoria, B.C.",
+		"note": "issue: March",
+		"publisher": "Ministry of Environment, Lands, and Parks (Water Quality Section)",
+		"publisher-place": "Victoria, B.C.",
+		"title": "Towards a Water Quality Guideline for Temperature in the Province of British Columbia",
+		"URL": "https://www2.gov.bc.ca/assets/gov/environment/air-land-water/water/waterquality/water-quality-guidelines/approved-wqgs/temperature-tech.pdf",
+		"author": [
+			{
+				"family": "Oliver",
+				"given": "G.G."
+			},
+			{
+				"family": "Fidler",
+				"given": "L.E."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2001"
+				]
+			]
+		}
+	},
+	{
+		"id": "ZilligEtAl2021OneSizeDoes",
+		"type": "article-journal",
+		"abstract": "Pacific salmonids, cold-water fishes native to the northern hemisphere, span a massive geographic range (~ 33° latitude) and are exposed to a wide variety of environmental conditions regionally and temporally. California is home to the greatest concentration of at-risk anadromous salmonids and warming river temperatures pose both current and future threats to numerous populations. Thermal standards for management of California populations are currently based on guidelines for multiple salmonid species and from populations across the Pacific Coast. However, a growing body of literature suggests that salmonid populations exhibit population-specific thermal requirements. Furthermore, in California, salmonid populations regularly encounter temperatures that exceed current thermal standards based upon performance of outside populations. This review focuses on Chinook salmon (Oncorhynchus tshawytscha), providing evidence for interpopulation variation in thermal performance across life stages, and explores the drivers of variation. To describe the formation of interpopulation variation, we define fundamental and ecological thermal physiologies. Fundamental thermal physiology is the composite of intrinsic physiological traits and abiotic factors that define a species’ thermal window. Ecological and environmental interactions constrain this fundamental thermal physiology, yielding an ecological thermal physiology. Thermal physiology, viewed through this lens, provides researchers and managers avenues for salmonid research and conservation at the population scale. A more nuanced approach to west-coast salmonid conservation will be required to protect the most at-risk and vulnerable populations. Successful salmonid management must incorporate population-specific traits and present and future watershed conditions.",
+		"container-title": "Reviews in Fish Biology and Fisheries",
+		"DOI": "10.1007/s11160-020-09632-w",
+		"ISSN": "15735184",
+		"issue": "1",
+		"note": "publisher: Springer International Publishing\nISBN: 0123456789",
+		"page": "95-114",
+		"title": "One size does not fit all: variation in thermal eco-physiology among Pacific salmonids",
+		"URL": "https://doi.org/10.1007/s11160-020-09632-w",
+		"volume": "31",
+		"author": [
+			{
+				"family": "Zillig",
+				"given": "Kenneth W."
+			},
+			{
+				"family": "Lusardi",
+				"given": "Robert A."
+			},
+			{
+				"family": "Moyle",
+				"given": "Peter B."
+			},
+			{
+				"family": "Fangue",
+				"given": "Nann A."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2021"
 				]
 			]
 		}

@@ -137,24 +137,6 @@
 		}
 	},
 	{
-		"id": "English2016ReviewEscapementIndicatorb",
-		"type": "report",
-		"title": "Review of Escapement Indicator Streams for the North and Central Coast Salmon Monitoring Program Final Report",
-		"author": [
-			{
-				"family": "English",
-				"given": "Karl K"
-			}
-		],
-		"issued": {
-			"date-parts": [
-				[
-					"2016"
-				]
-			]
-		}
-	},
-	{
 		"id": "CarverGray2009AssessmentWatershedsRegional",
 		"type": "report",
 		"title": "Assessment Watersheds for Regional Level Applications",
@@ -631,11 +613,11 @@
 		"author": [
 			{
 				"family": "Connors",
-				"given": "K."
+				"given": "K"
 			},
 			{
 				"family": "Hertz",
-				"given": "E."
+				"given": "E"
 			},
 			{
 				"family": "Jones",
@@ -643,11 +625,11 @@
 			},
 			{
 				"family": "Honka",
-				"given": "L."
+				"given": "L"
 			},
 			{
 				"family": "Kellock",
-				"given": "K."
+				"given": "K"
 			},
 			{
 				"family": "Alexander",
@@ -673,28 +655,27 @@
 		"author": [
 			{
 				"family": "Connors",
-				"given": "K."
+				"given": "K"
 			},
 			{
 				"family": "Jones",
-				"given": "E.",
-				"suffix": ""
+				"given": "E"
 			},
 			{
 				"family": "Kellock",
-				"given": "K."
+				"given": "K"
 			},
 			{
 				"family": "Hertz",
-				"given": "E."
+				"given": "E"
 			},
 			{
 				"family": "Honka",
-				"given": "L."
+				"given": "L"
 			},
 			{
 				"family": "Belzile",
-				"given": "J."
+				"given": "J"
 			}
 		],
 		"issued": {
@@ -782,11 +763,11 @@
 		"author": [
 			{
 				"family": "D’Eon-Eggertson",
-				"given": "F."
+				"given": "F"
 			},
 			{
 				"family": "Dulvy",
-				"given": "N. K."
+				"given": "N K"
 			},
 			{
 				"family": "Peterman",
@@ -944,15 +925,15 @@
 		"author": [
 			{
 				"family": "Holt",
-				"given": "C.A"
+				"given": "C A"
 			},
 			{
 				"family": "Cass",
-				"given": "A."
+				"given": "A"
 			},
 			{
 				"family": "Holtby",
-				"given": "B."
+				"given": "B"
 			},
 			{
 				"family": "Riddell",
@@ -1373,20 +1354,19 @@
 		"author": [
 			{
 				"family": "Porter",
-				"given": "M."
+				"given": "M"
 			},
 			{
 				"family": "Pickard",
-				"given": "D."
+				"given": "D"
 			},
 			{
 				"family": "Casley",
-				"given": "S.",
-				"suffix": ""
+				"given": "S"
 			},
 			{
 				"family": "Ochoski",
-				"given": "N."
+				"given": "N"
 			}
 		],
 		"issued": {
@@ -1920,39 +1900,39 @@
 		"author": [
 			{
 				"family": "English",
-				"given": "K.K."
+				"given": "K K"
 			},
 			{
 				"family": "Peacock",
-				"given": "D."
+				"given": "D"
 			},
 			{
 				"family": "Challenger",
-				"given": "W."
+				"given": "W"
 			},
 			{
 				"family": "Noble",
-				"given": "C."
+				"given": "C"
 			},
 			{
 				"family": "Beveridge",
-				"given": "I."
+				"given": "I"
 			},
 			{
 				"family": "Robichaud",
-				"given": "D."
+				"given": "D"
 			},
 			{
 				"family": "Beach",
-				"given": "K."
+				"given": "K"
 			},
 			{
 				"family": "Hertz",
-				"given": "E."
+				"given": "E"
 			},
 			{
 				"family": "Connors",
-				"given": "K."
+				"given": "K"
 			}
 		],
 		"issued": {
@@ -1974,27 +1954,27 @@
 		"author": [
 			{
 				"family": "Porter",
-				"given": "M."
+				"given": "M"
 			},
 			{
 				"family": "Pickard",
-				"given": "D. C."
+				"given": "D C"
 			},
 			{
 				"family": "Casley",
-				"given": "S."
+				"given": "S"
 			},
 			{
 				"family": "Ochoski",
-				"given": "N."
+				"given": "N"
 			},
 			{
 				"family": "Bryan",
-				"given": "K."
+				"given": "K"
 			},
 			{
 				"family": "Huang",
-				"given": "S."
+				"given": "S"
 			}
 		],
 		"issued": {
@@ -2020,6 +2000,24 @@
 			"date-parts": [
 				[
 					"1996"
+				]
+			]
+		}
+	},
+	{
+		"id": "English2016ReviewEscapementIndicator",
+		"type": "report",
+		"title": "Review of Escapement Indicator Streams for the North and Central Coast Salmon Monitoring Program Final Report",
+		"author": [
+			{
+				"family": "English",
+				"given": "Karl K"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2016"
 				]
 			]
 		}
@@ -2201,7 +2199,7 @@
 		"author": [
 			{
 				"family": "Connors",
-				"given": "B.M."
+				"given": "B M"
 			},
 			{
 				"family": "Pickard",
@@ -2225,7 +2223,7 @@
 			},
 			{
 				"family": "Huang",
-				"given": "S."
+				"given": "S"
 			}
 		],
 		"issued": {
@@ -2462,15 +2460,15 @@
 		"author": [
 			{
 				"family": "Parkinson",
-				"given": "by EA"
+				"given": "E A"
 			},
 			{
 				"family": "Keeley",
-				"given": "Er"
+				"given": "E R"
 			},
 			{
 				"family": "Taylor",
-				"given": "Eb"
+				"given": "E B"
 			},
 			{
 				"family": "Pollard",
@@ -2478,7 +2476,7 @@
 			},
 			{
 				"family": "Tautz",
-				"given": "Af"
+				"given": "A F"
 			}
 		],
 		"issued": {
@@ -2554,11 +2552,11 @@
 		"author": [
 			{
 				"family": "Holtby",
-				"given": "Blair L."
+				"given": "Blair L"
 			},
 			{
 				"family": "Ciruna",
-				"given": "Kristine A."
+				"given": "Kristine A"
 			}
 		],
 		"accessed": {
@@ -5451,7 +5449,7 @@
 		"volume": "TCTR (22)-01",
 		"author": [
 			{
-				"family": "TTC",
+				"family": "Transboundary Technical Committee",
 				"given": ""
 			}
 		],
@@ -5460,6 +5458,52 @@
 				[
 					"2022",
 					3
+				]
+			]
+		}
+	},
+	{
+		"id": "EnglishEtAl2023PreliminaryAreaSalmon",
+		"type": "report",
+		"number": "Nisga'a Fisheries Report #22-16",
+		"page": "vi + 75 p.",
+		"publisher": "Prepared by LGL Ltd. and Nisga’a Lisims Government - Fisheries & Wildlife Department for the Pacific Salmon Foundation and Nisga’a-Canada-BC Treaty’s Joint Fisheries Management Committee",
+		"title": "Preliminary Area 3 Salmon (2018–2022) and Nass River Summer-Run Steelhead (1994–2022) Escapement, Catch, Run Size, and Exploitation Rate Estimates",
+		"URL": "https://salmonwatersheds.ca/document/lib_526/",
+		"author": [
+			{
+				"family": "English",
+				"given": "K. K."
+			},
+			{
+				"family": "Alexander",
+				"given": "Richard F."
+			},
+			{
+				"literal": "Ian A. Beveridge"
+			},
+			{
+				"family": "Challenger",
+				"given": "Wendell"
+			},
+			{
+				"family": "Percival",
+				"given": "Niva"
+			},
+			{
+				"family": "Hertz",
+				"given": "Eric"
+			},
+			{
+				"family": "Atkinson",
+				"given": "Clare"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2023",
+					9
 				]
 			]
 		}

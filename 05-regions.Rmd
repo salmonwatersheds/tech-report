@@ -13,7 +13,7 @@ Each **Region** within the Pacific Salmon Explorer has specific attributes relat
 knitr::include_graphics("figures/regions.png")
 ```
 
-## Transboundary Region {#transboundary-region}
+## Northern Transboundary Region {#transboundary-region}
 
 At the northwestern edge of BC lie some of the most remote and rugged salmon-bearing river basins in the province, including the Alsek, Chilkat, Taku, Whiting, Stikine, and Unuk. These river basins span Territories of the Champagne and Aishihik First Nations, Taku River Tlingit, and Tahltan First Nations and the international border between Canada and the United States (US). Salmon spawn in the headwaters of Canadian rivers and lakes and migrate out to the ocean in southeast Alaska. This northern Transboundary Region hosts five species of Pacific salmon and steelhead, including `r length(which(cu_list$Region == "Transboundary"))` CUs: `r length(which(cu_list$Region == "Transboundary" & cu_list$Species == "Chinook"))` Chinook, `r length(which(cu_list$Region == "Transboundary" & cu_list$Species == "Chum"))` chum, `r length(which(cu_list$Region == "Transboundary" & cu_list$Species == "Coho"))` coho, `r length(which(cu_list$Region == "Transboundary" & cu_list$Species %in% c("Pink (even)", "Pink (odd)")))` pink, `r length(which(cu_list$Region == "Transboundary" & cu_list$Species == "River sockeye"))` river-type sockeye, `r length(which(cu_list$Region == "Transboundary" & cu_list$Species == "Lake sockeye"))` lake-type sockeye, and `r length(which(cu_list$Region == "Transboundary" & cu_list$Species == "Steelhead"))` steelhead CUs ([Appendix 1](#appendix-1)).
 
@@ -62,10 +62,15 @@ There were no recruits-per-spawner data available at the CU-level for the Transb
 
 #### Juvenile Surveys {#transboundary-juvenile-surveys}
 
+Juvenile survey data were available from the TTC report [@TTC2022FinalEstimatesTransboundary] for Tahltan lake-type sockeye in the Stikine watershed and Tatsamenie lake-type sockeye in the Taku watershed. Both of these CUs report natural-origin and hatchery-origin juveniles. 
+
 #### Hatchery Releases {#transboundary-hatchery-releases}
+
+Data on hatchery locations, release sites, and release numbers are provided by DFO Salmon Enhancement Program staff. We compiled information on hatchery releases at 10 different locations throughout the Transboundary Region, representing 13 different location and CU combinations. 
 
 #### Biological Status {#transboundary-biological-status}
 
+Given that no spawner-recruit data were available for Transboundary CUs, we could only apply percentile benchmarks to assess biological status to eight CUs that had estimated spawner abundance. Given a lack of CU-scale information on spawner abundance, the other 36 CUs could not be assessed. These included all coho, pink, chum, and steelhead CUs in the Transboundary Region. 
 
 ## Nass Region {#nass-region}
 

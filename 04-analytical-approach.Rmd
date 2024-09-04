@@ -278,7 +278,6 @@ knitr::kable(
 
 <!-- SP: Need to clarify this description -->
 
-This criterion indicates how representative spawner surveys are of the entire CU, measured as the proportion of total spawners that spawn in indicator streams. If a CU has a higher proportion of spawners returning to indicator streams, we assume that the spawner abundance data within that CU is of higher quality since indicator streams are more consistently and reliably surveyed.
 
 This score is calculated as the average number of spawners in indicator streams divided by the average number of spawners in all indicator and non-indicator streams within the CU. To derive this proportion, we first determine which decade has the greatest coverage of spawner surveys across the indicator and non-indicator streams. We assume that there is a constant proportion of spawners from indicator and non-indicator streams through time. We then calculate the average number of spawners in all indicator and non-indicator streams according to:
 
@@ -310,16 +309,16 @@ knitr::kable(
 
 #### Juvenile Survey Method {#juvenile-survey-method}
 
-This criterion indicates the quality of the juvenile survey data over the most recent generation based on method type and execution.
+This criterion indicates the quality of the juvenile survey data based on the survey approach as outlined in Table \@ref(tab:juvSurvdataQual).
 
 | Score               | Definition                                                                                                                                                               |
 |:-------------|:---------------------------------------------------------|
-| NA - Not applicable | A Not Applicable score indicates that no juvenile surveys were completed for this Conservation Unit over the most recent generation.                                     |
-| 1 - Low             | A Low score indicates that most of the juvenile surveys were performed with low-effort or inconsistently executed methods, resulting in variable accuracy and precision. |
-| 2 - Medium-Low      | A Medium-Low score indicates that most of the juvenile surveys were performed with medium to low effort.                                                                 |
-| 3 - Medium          | A Medium score indicates that most of the juvenile surveys were performed with medium effort.                                                                            |
-| 4 - Medium-High     | A Medium-High score indicates that most of the juvenile surveys were performed with high effort.                                                                         |
-| 5 - High            | A High score indicates that most of the juvenile surveys produce counts of total juveniles.                                                                              |
+| NA - Not applicable | A Not Applicable score indicates that there are no juvenile surveys for this Conservation Unit.                                     |
+| 1 - Low             | Survey method is unknown.|
+| 2 - Medium-Low      | Methods such as electrofishing or snorkel surveys that provide relatively low-quality density estimates.|
+| 3 - Medium          | Surveys using fyke traps, inclined plane traps, or rotary screw traps that do not provide a complete survey.|
+| 4 - Medium-High     | Estimates of absolute abundance from mark-recapture studies.|
+| 5 - High            | Estimates of absolute abundance from full-spanning fences or weirs.|
 
 : (#tab:juvSurvdataQual) Data quality scores and their definitions for the juvenile survey data quality criteria.
 

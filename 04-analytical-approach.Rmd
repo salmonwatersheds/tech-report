@@ -185,9 +185,9 @@ We developed a standardized approach to assess the quality of data used to estim
 | Spawner survey method    | The quality of spawner survey data, based on the survey methods used across all indicator streams within the CU over the most recent generation.          | Spawner surveys, spawner abundance, recruits-per-spawner, trends in spawner abundance, biological status |
 | Spawner survey coverage  | How representative spawner surveys are of the CU, measured as the proportion of total spawners in the CU that spawn in indicator streams.                 | Spawner abundance, recruits-per-spawner, trends in spawner abundance, biological status                  |
 | Spawner survey execution | How consistently indicator streams have been monitored, measured as the proportion of indicator streams that were surveyed in the most recent generation. | Spawner abundance, recruits-per-spawner, trends in spawner abundance, biological status                  |
-| Juvenile survey method   | The quality of juvenile survey data, based on the survey methods used across all juvenile surveys in the CU.                                              | Juvenile surveys                                                                                         |
+| Juvenile survey method   | The quality of juvenile survey data, based on the survey methods used across all years and locations of juvenile surveys in the CU.                                              | Juvenile surveys                                                                                         |
 | Run timing quality       | The quality of run timing data, based on the number of years of data, the currency of the data, and whether sampling captured the entirety of the run.    | Run timing                                                                                               |
-| Catch estimation method  | The quality of catch estimates for the CU in the most recent generation based on a qualitative assessment of the rigor of the catch estimation method.    | Catch and run size, recruits-per-spawner, biological status                                              |
+| Catch estimation method  | The quality of catch estimates for the CU based on a qualitative assessment of the rigor of the catch estimation method.    | Catch and run size, recruits-per-spawner, biological status                                              |
 | Stock ID                 | The quality of recent stock identification data used in catch estimation for the CU.                                                                      | Catch and run size, recruits-per-spawner, biological status                                              |
 
 : (#tab:cudataQual) Summary of the seven criteria used to score overall CU-level data quality for population indicators.
@@ -309,7 +309,7 @@ knitr::kable(
 
 #### Juvenile Survey Method {#juvenile-survey-method}
 
-This criterion indicates the quality of the juvenile survey data based on the survey approach as outlined in Table \@ref(tab:juvSurvdataQual).
+This criterion indicates the quality of the juvenile survey data based on the survey approach as outlined in Table \@ref(tab:juvSurvdataQual). The CU-level juvenile survey method data quality score is calculated as the average score across all years and locations of data for the CU.
 
 | Score               | Definition                                                                                                                                                               |
 |:-------------|:---------------------------------------------------------|

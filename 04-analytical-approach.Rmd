@@ -262,8 +262,6 @@ knitr::kable(
 
 <!-- BSC:I added "check.names = F" in read.csv() because the " ", "(" and ")" were replaced by "." in header -->
 
-<!-- SP: What is the weighting by?  -->
-
 To determine CU-level spawner survey method criteria, we calculate a weighted average of the stream-level survey method data quality scores across all indicator streams over the most recent generation within the CU (Table \@ref(tab:cusurveyQual)). The average survey method score over the most recent generation for each stream is weighted by the geometric average spawner abundance of that survey stream over the sum of the average spawner abundances to all indicator streams in the CU. Where there are known issues with DFO's indicator stream list in NuSEDS, we manually override those data quality scores and substitute expert derived assessments of data quality based on expert knowledge of spawner survey methods. Specifically, this includes streams on the north and central coast [@English2016ReviewEscapementIndicator] and southern BC Chinook [@BrownEtAl20202020SummaryAbundance]. We do not include survey years where spawner survey methods are `Unknown` in the survey method scores. Note that this score reflects the reliability of the estimates of current spawner abundance for a CU over the most recent generation and not the reliability of estimates across the entire time series.
 
 ```{r cusurveyQual, include=TRUE, echo = FALSE}
@@ -276,14 +274,14 @@ knitr::kable(
 
 #### Spawner Survey Coverage {#spawner-survey-coverage}
 
-<!-- SP: Need to clarify this description -->
+<!-- SP: Need to clarify this description. Note that current calculation considers most recent generation only. -->
 
 
-This score is calculated as the average number of spawners in indicator streams divided by the average number of spawners in all indicator and non-indicator streams within the CU. To derive this proportion, we first determine which decade has the greatest coverage of spawner surveys across the indicator and non-indicator streams. We assume that there is a constant proportion of spawners from indicator and non-indicator streams through time. We then calculate the average number of spawners in all indicator and non-indicator streams according to:
+This score is calculated from the proportion of observed spawners in the CU that are counted in indicator streams. <!-- To derive this proportion, we first determine which decade has the greatest coverage of spawner surveys across the indicator and non-indicator streams. We assume that there is a constant proportion of spawners from indicator and non-indicator streams through time. We calculate the average number of spawners in all indicator and non-indicator streams according to:
 
-$$C= 5 \times \frac{\sum_{i - 1}^I E_{siady}}{\sum_{i - 1}^I E_{siady} + \sum_{j=1}^J E_{sjady}} $$ where $s$ = species, $i$ = indicator stream, $j$ = non-indicator stream, $a$ = CU, $d$ = decade, $y$ = year, $E_{siady}$ = indicator stream escapement (i.e. spawners), by stratum, and $E_{sjady}$ = non-indicator stream spawners, by stratum. This approach is used because it provides a weighted average of the actual number of spawners enumerated with higher quality methodology, rather than only counting the number of indicator and non-indicator streams. We then translate the **spawner survey coverage** score into a scale of 0-5 (labeled as Not Applicable, Low, Medium-Low, Medium, Medium-High, and High; Table \@ref(tab:spawncovScore)).
+$$C= 5 \times \frac{\sum_{i - 1}^I E_{siady}}{\sum_{i - 1}^I E_{siady} + \sum_{j=1}^J E_{sjady}} $$ where $s$ = species, $i$ = indicator stream, $j$ = non-indicator stream, $a$ = CU, $d$ = decade, $y$ = year, $E_{siady}$ = indicator stream escapement (i.e. spawners), by stratum, and $E_{sjady}$ = non-indicator stream spawners, by stratum. This approach is used because it provides a weighted average of the actual number of spawners enumerated with higher quality methodology, rather than only counting the number of indicator and non-indicator streams.--> We then translate the **spawner survey coverage** score into a scale of 0-5 (labeled as Not Applicable, Low, Medium-Low, Medium, Medium-High, and High; Table \@ref(tab:spawncovScore)).
 
-For CUs that do not use expansion procedures to generate CU-level estimates (e.g. Fraser sockeye, Chinook, and coho, and Vancouver Island & Mainland Inlets Chinook), spawner survey coverage scores were generated via expert opinion.
+<!--For CUs that do not use expansion procedures to generate CU-level estimates (e.g. Fraser sockeye, Chinook, and coho, and Vancouver Island & Mainland Inlets Chinook), spawner survey coverage scores were generated via expert opinion. -->
 
 ```{r spawncovScore, include=TRUE, echo = FALSE}
 hatch <- read.csv("tables/sec4_spawn_coverscores.csv")
@@ -295,9 +293,7 @@ knitr::kable(
 
 #### Spawner Survey Execution {#spawner-survey-excecution}
 
-This criterion indicates how consistently indicator streams in the CU have been surveyed over the most recent generation, measured as the proportion of monitored indicator streams. To calculate **Spawner Survey Execution**, we calculate the proportion of indicator streams that are surveyed within the CU in each year of the most recent generation and the generational average of the proportions for each year, according to the following formula: <!-- SP: I updated this formula; it is wrong in V11 and was the right formula in a 2020 version I had on file but there were still errors. Discuss.  --> $$E=\left( \sum_{y=Y-g+1}^{Y}\frac{ h_y}{I} \right) \times \frac{1}{g} \times 100$$
-
-where $h$ is the number of indicator streams surveyed in year $y$ of the most recent generation, $Y$ is the most recent year of spawner data, $g$ is the generation length, and $I$ is the total number of indicator streams. We then translate the Spawner Survey Execution score into a scale of 0-5 (labeled as Not Applicable, Low, Medium-Low, Medium, Medium-High, and High; Table \@ref(tab:spawnexecScore)).
+This criterion indicates how consistently indicator streams in the CU have been surveyed over the most recent generation, measured as the proportion of indicator streams that have data in the most recent generation. To calculate **Spawner Survey Execution**, we calculate the average proportion of indicator streams that are surveyed within the CU in each year of the most recent generation. <!-- and the generational average of the proportions for each year, according to the following formula: $$E=\left( \sum_{y=Y-g+1}^{Y}\frac{ h_y}{I} \right) \times \frac{1}{g} \times 100$$ where $h$ is the number of indicator streams surveyed in year $y$ of the most recent generation, $Y$ is the most recent year of spawner data, $g$ is the generation length, and $I$ is the total number of indicator streams. -->  We then translate the proportion into a scale of 0-5 (labeled as Not Applicable, Low, Medium-Low, Medium, Medium-High, and High; Table \@ref(tab:spawnexecScore)).
 
 ```{r spawnexecScore, include=TRUE, echo = FALSE}
 hatch <- read.csv("tables/sec4_spawn_execscores.csv")
@@ -381,14 +377,11 @@ As spawner-recruit benchmarks consider both productivity and carrying capacity o
 
 #### Spawner-Recruit Benchmarks {#spawner-recruit-benchmarks}
 
-<!-- Note from Steph (June 29, 2023): Need to update to reflect 100% Smsy and 75% S for upper benchmark, and add some text to justify change and provide history. LOTS OF UPDATES NEEDED FOR THIS SECTION-->
-<!-- Bruno: answer to comment above: I edited the text to switch back to 80& Smsy and 50th percentile. Not sure what you mean by "reflect 100% Smsy and 75%" considering we are not using those anymore.-->
-
 We use a Ricker model to describe the spawner-recruit relationship and define associated benchmarks:
 
-$$R_{i,t} = S_{i,t} \exp(a_i - b_i S_{i,t}) $$ where $R_{i,t}$ is the number of recruits for CU $i$ and brood year $t$, $S_{i,t}$ is the total number of spawners for CU $i$ in year $t$, $a_i$ is the CU-level productivity parameter that describes the population growth at low spawner abundance, and $b_i$ is the density-dependence parameter.
+$$R_{i,t} = S_{i,t} \exp(a_i - b_i S_{i,t}) $$ where $R_{i,t}$ is the number of recruits for CU $i$ and brood year $t$, $S_{i,t}$ is the total number of spawners for CU $i$ in year $t$, $a_i$ is the CU-level intrinsic productivity parameter that describes the population growth at low spawner abundance, and $b_i$ is the density-dependence parameter.
 
-<!-- BSC: you don't want to mention "intrinsic productivity" for $a_i$ in paragraph above?-->
+<!-- BSC: you don't want to mention "intrinsic productivity" for $a_i$ in paragraph above? SP: Added "intrinsic" above. -->
 
 A target reference point commonly applied in fisheries is the number of spawners that produces maximum sustainable yield, or $S_{MSY}$, where yield is $Y = R - S$. This can be calculated from the above Ricker equation given parameters $a$ and $b$:
 
@@ -460,7 +453,7 @@ Given the iterative and incremental development approach that we take to visuali
 
 ### Extinct, De Novo, and Transplant CUs {#extinct}
 
-Over time, DFO may re-classify CUs if: 1) CU-level spawner abundance declines to a point where the CU is lost ("extinct"), 2) a CU is extinct and then re-introduced with different genetic stock ("de novo"), 3) a CU is created by introducing populations to a location where they were not previously present ("transplant"). We visualize these categories on the Pacific Salmon Explorer, intending to maintain a historical record of Pacific salmon's changing genetic diversity and abundance (see [Appendix 1](#0) and [Appendix 4](#0)).
+Over time, DFO may re-classify CUs if: 1) CU-level spawner abundance declines to a point where the CU is lost ("extinct"), 2) a CU is extinct and then re-introduced with different genetic stock ("de novo"), 3) a CU is created by introducing populations to a location where they were not previously present ("transplant"). We visualize these categories on the Pacific Salmon Explorer, intending to maintain a historical record of Pacific salmon's changing genetic diversity and abundance (see [Appendix 1](#appendix-1) and [Appendix 4](#appendix-4)).
 
 ### Limitations: Biological Status Assessments
 

@@ -84,7 +84,7 @@ knitr::include_graphics("figures/nass_map.png")
 
 ### Population Data and Analytical Methods {#nass-pop-methods}
 
-As with the Skeena Region, many of the datasets necessary to understand the dynamics of salmon CUs in the Nass Region have been compiled and stored through the North and Central Coast (NCC) Database [@EnglishEtAl2018NorthCentralCoast; see Skeena Region]. In addition to these data, we also compiled additional data for six CUs (Lower Nass and Upper Nass coho; Fred Wright, Damodochax, and Meziadin lake-type sockeye; Lower Nass-Portland river-type sockeye) through a review of preliminary data with Nisga'a Lisims Government and LGL Limited staff. For steelhead, data were sourced from @EnglishEtAl2023PreliminaryAreaSalmon (see our [steelhead-specific Github repository](https://github.com/salmonwatersheds/steelhead-status) for all raw steelhead population data compiled). Details regarding nuances to the data and analytical methods that are specific to the Nass Region are described below.
+As with the Skeena Region, many of the datasets necessary to understand the dynamics of salmon CUs in the Nass Region were historically compiled and stored through the North and Central Coast (NCC) Database [@EnglishEtAl2018NorthCentralCoast; see Skeena Region]. However, in recent years, we have worked directly with the Nisga'a Lisims Government and LGL Limited staff to compile and synthesize CU-level information (@EnglishEtAl2023PreliminaryAreaSalmon). For steelhead, data were sourced from @EnglishEtAl2023PreliminaryAreaSalmon (see our [steelhead-specific Github repository](https://github.com/salmonwatersheds/steelhead-status) for all raw steelhead population data compiled). Details regarding nuances to the data and analytical methods that are specific to the Nass Region are described below.
 
 #### Spawner Surveys {#nass-spawner-surveys}
 
@@ -92,9 +92,9 @@ Spawner survey data for streams in the Nass Region were sourced from DFO's New S
 
 #### Spawner Abundance {#nass-spawner-abundance}
 
-Observed spawner abundance for CUs in the Nass Region is the sum of all spawner survey data as documented in NuSEDS, as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). Nass Region CU-level estimates of spawner abundance (run reconstructions) were sourced from the North and Central Coast (NCC) Database. Nass CU-level estimated spawner abundance time series were developed for the NCC Database according to the expansion factors described in the Skeena Region section above.
+Observed spawner abundance for CUs in the Nass Region is the sum of all spawner survey data as documented in NuSEDS, as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). Nass Region CU-level estimates of spawner abundance (run reconstructions) were sourced from @EnglishEtAl2023PreliminaryAreaSalmon. Some CU-level estimated spawner abundance time series were developed according to the expansion factors described in the Skeena Region section above.
 
-In addition, CU-level estimates of spawner abundance for five Nass CUs are derived from additional spawner enumeration methods. Specifically, three CUs have mark-recapture programs operated by Nisga'a Fisheries, and Wildlife's lower Nass River fish wheels have mark-recapture programs. These programs have been part of Nisga'a Treaty fisheries work since 1992. For steelhead, spawner abundance data were provided directly from the Nisga'a Lisims Goverment Fish and Wildlife and LGL Limited [@EnglishEtAl2023PreliminaryAreaSalmon].
+In addition, CU-level estimates of spawner abundance for five Nass CUs are derived from additional spawner enumeration methods. Specifically, three salmon CUs (plus one steelhead CU) have mark-recapture programs operated by Nisga'a Fisheries and Wildlife [@EnglishEtAl2023PreliminaryAreaSalmon].
 
 #### Run Timing {#nass-run-timing}
 
@@ -102,11 +102,11 @@ We currently do not have CU-level run timing data visualized for any CUs in the 
 
 #### Catch & Run Size {#nass-catch-and-run-size}
 
-Catch and run size, and subsequent exploitation rates for CUs in the Nass Region were calculated by LGL, Nisga'a Fish and Wildlife, and DFO from the Fisheries Operating System (FOS) and other DFO databases. Similar to our work in the Skeena, we accessed most of these datasets via the North and Central Coast (NCC) Database, maintained by LGL Ltd. [@EnglishEtAl2018NorthCentralCoast]. For a description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#catch-and-runsize).
+Catch and run size, and subsequent exploitation rates for CUs in the Nass Region were calculated by LGL, Nisga'a Fish and Wildlife, and DFO from the Fisheries Operating System (FOS) and other DFO databases. These data were reported in [@EnglishEtAl2023PreliminaryAreaSalmon]. For a description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#catch-and-runsize).
 
 #### Recruits-per-Spawner {#nass-recruits-per-spawner}
 
-Recruits-per-spawner data for CUs in the Nass Region were derived from the DFO age database and CU-level estimates of spawner abundance and catch and run size accessed from the NCC Database [@EnglishEtAl2018NorthCentralCoast]. For a description of recruits-per-spawner methods, see [Overview of Population Indicators: Recruits-per-Spawner](#recruits-per-spawner).
+Recruits-per-spawner data for CUs in the Nass Region were derived from the DFO age database and CU-level estimates of spawner abundance and catch and run size accessed from [@EnglishEtAl2023PreliminaryAreaSalmon]. For a description of recruits-per-spawner methods, see [Overview of Population Indicators: Recruits-per-Spawner](#recruits-per-spawner).
 
 #### Juvenile Surveys {#nass-juvenile-surveys}
 
@@ -114,11 +114,11 @@ Recruits-per-spawner data for CUs in the Nass Region were derived from the DFO a
 
 #### Hatchery Releases
 
-Hatchery releases in the Nass Region for all species were provided by DFO (Joan Bateman, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia's [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#0){style="font-size: 11pt;"} for details on data and analytical methods.
+Hatchery releases in the Nass Region for all species were provided by DFO (Brock Ramshaw, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia's [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#0){style="font-size: 11pt;"} for details on data and analytical methods.
 
 #### Biological Status
 
-The biological status assessments for CUs in the Nass Region currently reflect data sourced from the NCC Database that are current to *2017*. For steelhead, spawner abundance data were provided by the Nisga'a Lisims Goverment Fish and Wildlife and LGL Limited and are current up to 2022 [@EnglishEtAl2023PreliminaryAreaSalmon]. As new data become available, we will update the analyses and results in this report and the Pacific Salmon Explorer. See [Benchmarks for Assessing Biological Status](#benchmarks-biostatus) and [Decision Rules for Assessing Biological Status](#bs-decision-rules) for more details on biological status assessment methods.
+The biological status assessments for salmon CUs in the Nass Region currently reflect data that are current to *2022*. For steelhead, spawner abundance data were provided by the Nisga'a Lisims Goverment Fish and Wildlife and LGL Limited and are current up to 2022 [@EnglishEtAl2023PreliminaryAreaSalmon]. As new data become available, we will update the analyses and results in this report and the Pacific Salmon Explorer. See [Benchmarks for Assessing Biological Status](#benchmarks-biostatus) and [Decision Rules for Assessing Biological Status](#bs-decision-rules) for more details on biological status assessment methods.
 
 ### Habitat Data and Analytical Methods
 

@@ -2709,50 +2709,6 @@
 		}
 	},
 	{
-		"id": "ConnorsEtAl2013SkeenaSalmonConservation",
-		"type": "report",
-		"publisher": "Prepared for the Skeena Salmon Program Pacific Salmon Foundation",
-		"title": "Skeena Salmon Conservation Unit Snapshots",
-		"URL": "https://salmonwatersheds.ca/library/lib_420/",
-		"author": [
-			{
-				"family": "Connors",
-				"given": "B M"
-			},
-			{
-				"family": "Pickard",
-				"given": "D C"
-			},
-			{
-				"family": "Porter",
-				"given": "M"
-			},
-			{
-				"family": "Farrell",
-				"given": "G"
-			},
-			{
-				"family": "Bryan",
-				"given": "K"
-			},
-			{
-				"family": "Casely",
-				"given": "S"
-			},
-			{
-				"family": "Huang",
-				"given": "S"
-			}
-		],
-		"issued": {
-			"date-parts": [
-				[
-					"2013"
-				]
-			]
-		}
-	},
-	{
 		"id": "RuggeroneIrvine2018NumbersBiomassNatural",
 		"type": "article-journal",
 		"container-title": "Marine and Coastal Fisheries",
@@ -2837,16 +2793,21 @@
 	{
 		"id": "PickardEtAl2013SkeenaSalmonConservation",
 		"type": "report",
-		"publisher": "Prepared for the Skeena Salmon Program Pacific Salmon Foundation",
-		"title": "Skeena Salmon Conservation Unit: Snapshots",
+		"genre": "Report prepared by ESSA Technologies Ltd. for the Pacific Salmon Foundation",
+		"title": "Skeena Salmon Conservation Unit Snapshots",
+		"URL": "https://salmonwatersheds.ca/document/lib_420/",
 		"author": [
 			{
+				"family": "Connors",
+				"given": "B. M."
+			},
+			{
 				"family": "Pickard",
-				"given": "D C"
+				"given": "D. C."
 			},
 			{
 				"family": "Porter",
-				"given": "M"
+				"given": "M."
 			},
 			{
 				"family": "Farrell",
@@ -2854,11 +2815,15 @@
 			},
 			{
 				"family": "Bryan",
-				"given": "K"
+				"given": "K."
 			},
 			{
 				"family": "Casely",
 				"given": "S"
+			},
+			{
+				"family": "Huang",
+				"given": "S."
 			}
 		],
 		"issued": {
@@ -6129,6 +6094,30 @@
 			"date-parts": [
 				[
 					"2024"
+				]
+			]
+		}
+	},
+	{
+		"id": "BiologicalBenchmarksBuilding",
+		"type": "article-journal",
+		"abstract": "This research focuses on comparing methods for developing alternative aggregate-level biological reference points (including aggregate escapement goals) for Skeena and Nass Sockeye Salmon and evaluate advantages and disadvantages of each.",
+		"container-title": "Canadian Science Advisory Secretariat Science Advisory Report",
+		"issue": "008",
+		"language": "en",
+		"source": "Zotero",
+		"title": "Biological Benchmarks And Building Blocks For Aggregate-Level Management Targets For Skeena And Nass Sockeye Salmon (Oncorhynchus nerka)",
+		"volume": "2023",
+		"author": [
+			{
+				"family": "Fisheries and Oceans Canada",
+				"given": ""
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2023"
 				]
 			]
 		}

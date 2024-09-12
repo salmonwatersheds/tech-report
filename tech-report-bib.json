@@ -6121,5 +6121,25 @@
 				]
 			]
 		}
+	},
+	{
+		"id": "COSEWIC2021SockeyeSalmonOncorhynchus",
+		"type": "article-journal",
+		"language": "en",
+		"source": "Zotero",
+		"title": "COSEWIC assessment and status report on the Sockeye Salmon Oncorhynchus nerka, Alouette-ES population (original), Coquitlam-ES population (original), Adams-ES population (original), Momich-ES population (original), Fraser-ES population (original), North Barriere-ES population (original) and Seton-S population (original) in the Fraser River Drainage Basin, Canada.",
+		"author": [
+			{
+				"family": "COSEWIC",
+				"given": ""
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2021"
+				]
+			]
+		}
 	}
 ]

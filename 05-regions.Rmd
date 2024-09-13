@@ -76,6 +76,115 @@ Given that no spawner-recruit data were available for Transboundary CUs, we coul
 
 <!-- Katy to populate -->
 
+## Haida Gwaii Region
+
+The archipelago of Haida Gwaii is located off the North Central Coast of BC (Figure \@ref(fig:hgMap)), composed of two main islands; Graham Island (northern) and Moresby Island (southern), with hundreds of other smaller islands in total composing nearly 10,000 square kilometers. The Hecate Strait separates Haida Gwaii from mainland British Columbia by about 100 kilometers. Salmon-bearing waters on Haida Gwaii range from an abundance of small streams along the many kilometers of coastline to larger well-known salmon rivers such as the Yakoun and Tlell Rivers. All five species of Pacific salmon spawn and rear on Haida Gwaii within `r length(which(cu_list$Region == "Haida Gwaii"))` CUs. These CUs include: `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Chinook"))` Chinook, `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Chum"))` chum, `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Coho"))` coho, `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Pink (even)"))` pink (even-year), `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Pink (odd)"))` pink (odd-year), `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Lake sockeye"))` sockeye (lake-type), `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "River sockeye"))` sockeye (river-type), and `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Steelhead"))` steelhead CU. The process of data gathering and synthesis to complete the initial assessments within the Haida Gwaii Region was completed over one year (2021).
+
+In order to develop the Pacific Salmon Explorer for Haida Gwaii, we engaged with the Haida Nation, DFO, the Gowgaia Institute, Parks Canada, and other salmon experts in Haida Gwaii. We received input and feedback throughout the engagement processes, which included an in-person meeting in September 2021, meeting follow-up, and extended outreach.
+
+Based on feedback and local knowledge, we received contextual knowledge on salmon populations within the region, described within [Population Data and Analytical Methods](#hg-population-data), and were able to improve upon forestry data with contributions from the Gowgaia Institute (described in [Habitat Data and Analytical Methods](#hg-habitat-data)).
+
+### Conservation Unit Changes
+
+Based on feedback from the Haida Gwaii Technical Working Group, the name of the Marian Lake sockeye conservation unit was renamed to "Marian/Eden." The original name developed by DFO [@HoltbyCiruna2007ConservationUnitsPacific] and in DFO's New Salmon Escapement Database was "Marian" however, TWG members indicated that most of the salmon and surveys are in Eden Lake, and a recent DFO IFMP for Northern Salmon listed "Marian/Eden" rather than "Marian" [@DFO2019]. Additionally, while defined by @HoltbyCiruna2007ConservationUnitsPacific as a Conservation Unit, DFO did not have a CU boundary defined for this CU. We defined the CU boundary as the same spatial extent as the spawning habitat for Marian Lake (which encompasses the watersheds that contain Marian Lake, Eden Lake, and Roy Lake).
+
+```{r hgMap, fig.cap = "Map of the Haida Gwaii Region.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
+knitr::include_graphics("figures/haidagwaii_map.png")
+```
+
+### Population Data and Analytical Methods {#hg-population-data}
+
+As with the Skeena and Nass regions, in the Haida Gwaii Region many of the datasets necessary to understand the dynamics of salmon CUs have been compiled and stored through the North and Central Coast (NCC) Database [@EnglishEtAl2018NorthCentralCoast; see Skeena Region]. Details on specific data sources, analytical methods, and nuances specific to the Haida Gwaii Region are described below.
+
+#### Spawner Surveys
+
+**Spawner survey** data for streams in the Haida Gwaii Region were sourced from DFO's New Salmon Escapement Database (NuSEDS). For a description of the spawner survey indicator, see [Overview of Population Indicators: Spawner Surveys](#spawner-surveys).
+
+#### Spawner Abundance
+
+Observed spawner abundance for CUs on the in the Haida Gwaii Region is the sum of all spawner survey data as documented in NuSEDS, as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). Similar to our work in other adjacent regions (Central Coast, Skeena, Nass), we accessed most of these datasets via the North and Central Coast (NCC) database, maintained by LGL Ltd. [@EnglishEtAl2018NorthCentralCoast].
+
+Haida Gwaii CU-level **estimates of spawner abundance** (run reconstructions) were sourced from the North and Central Coast (NCC) database, updated by PSF for the years 2018-2021. Haida Gwaii CU-level estimated spawner abundance time series were developed for the NCC database according to the expansion factors described in the Skeena Region section above. On Haida Gwaii, the decline in monitoring coverage over the last 10-20 years was mentioned as an area of concern, and a decline in assessments may affect the relationships used to develop total estimates of spawner abundance (run reconstructions), as described in [Data Quality](#data-quality).
+
+#### Run Timing
+
+Run timing data were compiled from a variety of sources detailed in @WilsonPeacockInprepTimingMajorFreshwater. See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
+
+#### Catch & Run Size
+
+**Catch and run size** dand subsequent exploitation rates for CUs on the Haida Gwaii Region were calculated by LGL (and updated by PSF) from data in the Fisheries Operating System (FOS) and other DFO databases. Similar to our work in other adjacent regions (Central Coast, Skeena, Nass), we accessed most of these datasets via the North and Central Coast (NCC) database, maintained by LGL Ltd. [@EnglishEtAl2018NorthCentralCoast]. The data is current to *2021*. For a description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#catch-and-runsize).
+
+On Haida Gwaii, there are some specific nuances to catch data that are important to be aware of when considering the role of catch in estimates of total annual salmon run size. For sockeye salmon, the catch is calculated from a fixed estimate of an annual exploitation rate of 20%. Local knowledge suggests this value may be high, but the representativeness of a fixed rate is less likely to capture annual differences. There is only one Coded Wire Tag indicator stock for coho salmon, so these values are applied to all other coho when used in catch calculations. These considerations in estimates of catch are discussed in [Data Quality](#data-quality).
+
+#### Recruits-per-Spawner
+
+**Recruits-per-spawner** data for CUs in the Haida Gwaii Region were derived from the DFO age database and CU-level estimates of spawner abundance and catch and run size accessed from the North and Central Coast (NCC) database [@EnglishEtAl2018NorthCentralCoast]. For a description of recruits-per-spawner methods, see [Overview of Population Indicators: Recruits-per-Spawner](#recruits-per-spawner).
+
+#### Trends in Spawner Abundance
+
+**Trends in spawner abundance** for CUs on Haida Gwaii were derived from the CU-level estimates of spawner abundance accessed from the North and Central Coast (NCC) database [@EnglishEtAl2018NorthCentralCoast]. For a description of trends in spawner abundance methods, see [Overview of Population Indicators: Trends in Spawner Abundance](#spawner-abundance).
+
+#### Juvenile Surveys
+
+**Juvenile abundance** data for CUs in the Haida Gwaii were available from Haida Fisheries for a coho juvenile outmigration program at Deena River in the East Haida Gwaii coho CU. We will update this information as other juvenile data becomes available. For a description of the juvenile survey indicator, see [Overview of Population Indicators: Juvenile Surveys](#juvenile-surveys).
+
+#### Hatchery Releases
+
+**Hatchery releases** in the Haida Gwaii Region for all salmon species were provided by DFO (Joan Bateman, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia's [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#hatchery-releases) for details on data and analytical methods.
+
+#### Biological Status
+
+The **biological status** assessments for CUs in the Haida Gwaii Region currently reflect data sourced from the North and Central Coast (NCC) database that are current to **2017**. As new data become available, we will update the analyses and results in this report as well as on the Pacific Salmon Explorer. See [Sections 4.1.4. Benchmarks for Assessing Biological Status](#benchmarks-biostatus) and [4.1.5. Decision Rules for Assessing Biological Status](#bs-decision-rules) for more details on biological status assessment methods.
+
+### Habitat Data and Analytical Methods {#hg-habitat-data}
+
+Nuances regarding habitat pressure indicator data and analytical methods for the Haida Gwaii Region are listed below. Refer to [Habitat Status: Indicators & Benchmarks](#indicators-benchmarks-hab) for information on habitat pressure indicators, benchmarks, and the analytical methods used to assess habitat status. <!--Additional details on habitat pressure indicators, data sources, data currency, and benchmarks specific to the Haida Gwaii Region are available in [Appendix 6 (Description of Habitat Pressure Indicators & Relevance to Salmon)](#appendix-6), [Appendix 7 (Habitat Pressure Datasets & Data Sources)](#appendix-7), [Appendix 8 (Spatial Data Processing for Habitat Pressure Indicators)](#appendix-8), [Appendix 9 (Spatial Data Processing for Future Pressures)](#appendix-9), and [Appendix 12 (Habitat Pressure Benchmark Values by Region)](#appendix-12).-->
+
+#### Spawning Zones of Influence
+
+Methods for delineating Chinook CU spawning zones of influence (ZOIs) vary by region in accordance with the CU delineation approach used by DFO. In the Skeena, Nass, Central Coast, and Haida Gwaii regions, Chinook CUs are defined using a more restrictive geographic representation, which resulted in fewer (or no) spawning locations occurring within the CU boundaries. As such, spawning ZOIs for each Chinook CU were delineated using the extent of all 1:20K FWA Assessment Watersheds that directly intersected with Haida Gwaii Chinook CU boundaries.
+
+#### Spatial Data Processing for Habitat Pressure Indicators
+
+##### Forest Disturbance on Haida Gwaii
+
+Working with John Broadhead and Dave Leversee of the Gowgaia Institute, we accessed the best available logging history (harvested areas) dataset compiled for Haida Gwaii. The Gowgaia Institute produced this logging history dataset as part of the Riparian Fish Forest on Haida Gwaii project [@Broadhead2009RiparianFishForest], and they updated this dataset to 2021. The Gowgaia dataset provided a more complete representation of forest disturbance on Haida Gwaii than was available in the VRI and Consolidated Cutblocks datasets that we used to assess forest disturbance in other regions to date. The spatial data processing method for forest disturbance on Haida Gwaii was updated to source the Gowgaia dataset ([Appendix 8](#appendix-8)).
+
+With their expert knowledge of logging history on Haida Gwaii, the Gowgaia Institute also identified areas where assessing risk at the assessment watershed scale may over or underrepresent more localized risk. Categorizing risk at the assessment watershed-scale generalizes risk across watersheds. As such, at this scale, it is not possible to identify whether risk is evenly distributed across a watershed or is more concentrated in certain parts of a watershed. Areas that the Gowgaia Institute identified as suffering from this limitation were Haines Creek and watersheds on NE Graham Island, where much of these areas are unimpacted by harvesting; they were categorized as moderate risk due harvesting that occurred in concentrated areas of these watersheds.
+
+<!-- 
+###### Total Land Cover Alteration on Haida Gwaii
+
+The spatial data processing method for total land cover alteration on Haida Gwaii used newly available data sources from the Province of BC's Cumulative Effects Framework (BC CEF) team as well as the logging history (harvested areas) dataset from Gowgaia Institute. BC CEF's Human Disturbance with Base Thematic Mapping (2021) dataset was used as the data source for polygons representing the following disturbance types: mountain pine beetle (not present on Haida Gwaii), railway and airports, recreation, transmission lines, major rights of ways, mining, oil & gas infrastructure, seismic infrastructure (not present on Haida Gwaii), agriculture and urban areas. BC CEF's Integrated Roads (2021) dataset was used as the data source for roads which were then buffered as outlined for processing the road development indicator ([Appendix 8](#appendix-8)).
+
+##### Riparian Disturbance on Haida Gwaii
+
+The riparian disturbance indicator used the total land cover alteration layer as an input data layer. As such, the spatial data processing methods used newly available data sources from the Province of BC's Cumulative Effects Framework (BC CEF) team as well as the logging history (harvested areas) dataset from Gowgaia Institute ([Appendix 8](#appendix-8)).
+
+##### Road Development on Haida Gwaii
+
+The spatial data processing method for road development on Haida Gwaii used the newly available Integrated Roads (2021) dataset from the Province of BC's Cumulative Effects Framework team ([Appendix 8](#appendix-8)).
+
+##### Linear Development on Haida Gwaii
+
+The spatial data processing method for linear development on Haida Gwaii used the newly available Integrated Roads (2021) dataset from the Province of BC's Cumulative Effects Framework team ([Appendix 8](#appendix-8)).
+
+##### Equivalent Clearcut Area on Haida Gwaii
+
+The spatial data processing method for calculating equivalent clearcut area (ECA) used the total land cover alteration layer as an input data layer. As such, the spatial data processing methods used newly available data sources from the Province of BC's Cumulative Effects Framework (BC CEF) team as well as the logging history (harvested areas) dataset from Gowgaia Institute ([Appendix 8](#appendix-8)). Specifically, BC CEF's Human Disturbance with Base Thematic Mapping (2021) dataset was used as the data source for polygons representing the following disturbance types: mountain pine beetle (not present on Haida Gwaii), railway and airports, transmission lines, major rights of ways, mining, oil & gas infrastructure, seismic infrastructure (not present on Haida Gwaii), agriculture and urban areas. BC CEF's Integrated Roads dataset was used as the data source for roads which were then buffered as outlined for processing the road development indicator ([Table A.18; Appendix 8](#appendix-8-tbl18)). Fire polygons were sourced from the Current Fire Perimeters and Historical Fire Perimeters datasets available on DataBC. Harvested areas were sourced from the Vegetation Resources Inventory (VRI) database available on DataBC and supplemented with Gowgaia Institute's logging disturbance dataset for harvested areas not captured in the VRI dataset.
+
+ECA disturbance types were identified as "recoverable" and "non-recoverable." Non-recoverable disturbance types are those where the land disturbance is considered permanent and recorded as 100% ECA. Non-recoverable disturbance types include railway and airports, transmission lines, major rights of ways, mining, oil & gas infrastructure, seismic infrastructure (not present on Haida Gwaii), agriculture, and urban areas. Recoverable disturbance types, where the hydrologic function of the landscape is expected to recover over time (i.e. second-growth forest), include harvested areas, burned areas, and areas impacted by mountain pine beetle (not present on Haida Gwaii). ECA recovery curves identify a recovery factor based on stand height. Projected stand height is sourced from the VRI dataset. ECA recovery curves were updated in 2019 to differentiate recovery rates for interior and coastal forests (FREP 2019).
+
+A "non-recoverable" layer was created by first merging and dissolving all non-recoverable disturbance types. Harvested and burned area polygons were dissolved based on projected stand height and then merged with the non-recoverable layer. Lastly, harvested area and burned area polygons without stand height but with a date of disturbance were dissolved based on time since disturbance (years) and merged with the non-recoverable and recoverable polygons with stand height. This combined ECA layer was overlaid with the FWA assessment watersheds. The growth recovery of each polygon was calculated based on stand height using the coastal recovery curve or using a time since disturbance surrogate method where stand height information was not readily available. The growth recovery of each recoverable polygon with stand height information was calculated using the following equation:
+
+$$ ECA = A \times C \times (1-R/100) $$ where $A$ is the original polygon area, $C$ is the proportion of the opening covered by functional regeneration (determined from Table A2.1, MOF, 2001), and $R$ is the recovery factor (for coastal forests from @HudsonHorel2007OperationalMethodAssessing and from @WinklerBoon2015RevisedSnowRecoveryb for interior forests). For non-recoverable polygons, there is no functional regeneration or recovery factor, so for these polygons, $C$ will be equal to 1, and $R$ will be equal to 0. Where stand height is not available (e.g. for harvested areas sourced from the Gowgaia Institute) a time since disturbance surrogate was used to estimate ECA: 1-10 yrs = 100% ECA, 11-20 = 75%, 21-40 = 25% and 40-50 yrs = 5%, \>50 years = 0%[\^BC Cumulative Effects Framework (BC CEF) ECA method includes an additional step to approximate stand height where not available in VRI before defaulting to this time since disturbance surrogate ECA estimate. This data was not available to us at the time of our assessments but our upcoming work to revise our habitat indicator methods will aim to source ECA directly from BC CEF or to update our methods to fill stand height data gaps where possible.] . ECA was summed for each FWA watershed then divided by the total watershed area to give an ECA percentage for each watershed.
+-->
+
+#### Spawning Habitat Information from Expert Knowledge Holders
+
+In addition to the spawning habitat information we acquired from DataBC (primarily from the Fisheries Information Summary System (FISS) database), we collaborated with representatives from Haida Fisheries, Fisheries and Oceans Canada's Salmon Enhancement Program, Parks Canada, the Gowgaia Institute, the Hecate Strait Streamkeepers, and independent salmon experts to identify local salmon spawning locations. The collective identified 16 new salmon-bearing watersheds that had not been previously documented, further enhancing the baseline of available information for Haida Gwaii salmon.
+
+
 ## Nass Region {#nass-region}
 
 In northern BC, the Nass River watershed is the third-largest watershed in the province and includes several major tributaries, including the Bell-Irving, Cranberry, Meziadin, Kwinageese, and Damdochax Rivers. The Nass Region (Figure \@ref(fig:nassMap)), which consists of the watersheds draining into Portland Canal and Observatory Inlet, contains extensive spawning and rearing habitat for all five species of Pacific salmon. These salmon populations comprise `r length(which(cu_list$Region == "Nass"))` CUs: `r length(which(cu_list$Region == "Nass" & cu_list$Species == "Chinook"))` Chinook, `r length(which(cu_list$Region == "Nass" & cu_list$Species == "Chum"))` chum, `r length(which(cu_list$Region == "Nass" & cu_list$Species == "Coho"))` coho, `r length(which(cu_list$Region == "Nass" & cu_list$Species %in% c("Pink (even)", "Pink (odd)")))` pink, `r length(which(cu_list$Region == "Nass" & cu_list$Species == "River sockeye"))` river-type sockeye, `r length(which(cu_list$Region == "Nass" & cu_list$Species == "Lake sockeye"))` lake-type sockeye, and `r length(which(cu_list$Region == "Nass" & cu_list$Species == "Steelhead"))` steelhead CUs ([Appendix 1](#appendix-1)). The initial process of data gathering, synthesis, outreach, and engagement to complete the initial assessments within the Nass Region was conducted from 2015 to 2019.
@@ -476,114 +585,6 @@ A large portion of southeast Vancouver Island is privately managed forests. As s
 
 In addition to the spawning habitat information we acquired from the Fisheries Information Summary System (FISS) database and local knowledge derived through expert elicitation, we received additional spawning habitat information from a technical report provided by Graham Murrell (Fisheries Manager, Hupacasath First Nation; @Wright2008ShorelineSurveysSockeye).
 
-
-## Haida Gwaii Region
-
-The archipelago of Haida Gwaii is located off the North Central Coast of BC (Figure \@ref(fig:hgMap)), composed of two main islands; Graham Island (northern) and Moresby Island (southern), with hundreds of other smaller islands in total composing nearly 10,000 square kilometers. The Hecate Strait separates Haida Gwaii from mainland British Columbia by about 100 kilometers. Salmon-bearing waters on Haida Gwaii range from an abundance of small streams along the many kilometers of coastline to larger well-known salmon rivers such as the Yakoun and Tlell Rivers. All five species of Pacific salmon spawn and rear on Haida Gwaii within `r length(which(cu_list$Region == "Haida Gwaii"))` CUs. These CUs include: `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Chinook"))` Chinook, `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Chum"))` chum, `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Coho"))` coho, `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Pink (even)"))` pink (even-year), `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Pink (odd)"))` pink (odd-year), `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Lake sockeye"))` sockeye (lake-type), `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "River sockeye"))` sockeye (river-type), and `r length(which(cu_list$Region == "Haida Gwaii" & cu_list$Species == "Steelhead"))` steelhead CU. The process of data gathering and synthesis to complete the initial assessments within the Haida Gwaii Region was completed over one year (2021).
-
-In order to develop the Pacific Salmon Explorer for Haida Gwaii, we engaged with the Haida Nation, DFO, the Gowgaia Institute, Parks Canada, and other salmon experts in Haida Gwaii. We received input and feedback throughout the engagement processes, which included an in-person meeting in September 2021, meeting follow-up, and extended outreach.
-
-Based on feedback and local knowledge, we received contextual knowledge on salmon populations within the region, described within [Population Data and Analytical Methods](#hg-population-data), and were able to improve upon forestry data with contributions from the Gowgaia Institute (described in [Habitat Data and Analytical Methods](#hg-habitat-data)).
-
-### Conservation Unit Changes
-
-Based on feedback from the Haida Gwaii Technical Working Group, the name of the Marian Lake sockeye conservation unit was renamed to "Marian/Eden." The original name developed by DFO [@HoltbyCiruna2007ConservationUnitsPacific] and in DFO's New Salmon Escapement Database was "Marian" however, TWG members indicated that most of the salmon and surveys are in Eden Lake, and a recent DFO IFMP for Northern Salmon listed "Marian/Eden" rather than "Marian" [@DFO2019]. Additionally, while defined by @HoltbyCiruna2007ConservationUnitsPacific as a Conservation Unit, DFO did not have a CU boundary defined for this CU. We defined the CU boundary as the same spatial extent as the spawning habitat for Marian Lake (which encompasses the watersheds that contain Marian Lake, Eden Lake, and Roy Lake).
-
-```{r hgMap, fig.cap = "Map of the Haida Gwaii Region.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/haidagwaii_map.png")
-```
-
-### Population Data and Analytical Methods {#hg-population-data}
-
-As with the Skeena and Nass regions, in the Haida Gwaii Region many of the datasets necessary to understand the dynamics of salmon CUs have been compiled and stored through the North and Central Coast (NCC) Database [@EnglishEtAl2018NorthCentralCoast; see Skeena Region]. Details on specific data sources, analytical methods, and nuances specific to the Haida Gwaii Region are described below.
-
-#### Spawner Surveys
-
-**Spawner survey** data for streams in the Haida Gwaii Region were sourced from DFO's New Salmon Escapement Database (NuSEDS). For a description of the spawner survey indicator, see [Overview of Population Indicators: Spawner Surveys](#spawner-surveys).
-
-#### Spawner Abundance
-
-Observed spawner abundance for CUs on the in the Haida Gwaii Region is the sum of all spawner survey data as documented in NuSEDS, as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). Similar to our work in other adjacent regions (Central Coast, Skeena, Nass), we accessed most of these datasets via the North and Central Coast (NCC) database, maintained by LGL Ltd. [@EnglishEtAl2018NorthCentralCoast].
-
-Haida Gwaii CU-level **estimates of spawner abundance** (run reconstructions) were sourced from the North and Central Coast (NCC) database, updated by PSF for the years 2018-2021. Haida Gwaii CU-level estimated spawner abundance time series were developed for the NCC database according to the expansion factors described in the Skeena Region section above. On Haida Gwaii, the decline in monitoring coverage over the last 10-20 years was mentioned as an area of concern, and a decline in assessments may affect the relationships used to develop total estimates of spawner abundance (run reconstructions), as described in [Data Quality](#data-quality).
-
-#### Run Timing
-
-Run timing data were compiled from a variety of sources detailed in @WilsonPeacockInprepTimingMajorFreshwater. See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
-
-#### Catch & Run Size
-
-**Catch and run size** dand subsequent exploitation rates for CUs on the Haida Gwaii Region were calculated by LGL (and updated by PSF) from data in the Fisheries Operating System (FOS) and other DFO databases. Similar to our work in other adjacent regions (Central Coast, Skeena, Nass), we accessed most of these datasets via the North and Central Coast (NCC) database, maintained by LGL Ltd. [@EnglishEtAl2018NorthCentralCoast]. The data is current to *2021*. For a description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#catch-and-runsize).
-
-On Haida Gwaii, there are some specific nuances to catch data that are important to be aware of when considering the role of catch in estimates of total annual salmon run size. For sockeye salmon, the catch is calculated from a fixed estimate of an annual exploitation rate of 20%. Local knowledge suggests this value may be high, but the representativeness of a fixed rate is less likely to capture annual differences. There is only one Coded Wire Tag indicator stock for coho salmon, so these values are applied to all other coho when used in catch calculations. These considerations in estimates of catch are discussed in [Data Quality](#data-quality).
-
-#### Recruits-per-Spawner
-
-**Recruits-per-spawner** data for CUs in the Haida Gwaii Region were derived from the DFO age database and CU-level estimates of spawner abundance and catch and run size accessed from the North and Central Coast (NCC) database [@EnglishEtAl2018NorthCentralCoast]. For a description of recruits-per-spawner methods, see [Overview of Population Indicators: Recruits-per-Spawner](#recruits-per-spawner).
-
-#### Trends in Spawner Abundance
-
-**Trends in spawner abundance** for CUs on Haida Gwaii were derived from the CU-level estimates of spawner abundance accessed from the North and Central Coast (NCC) database [@EnglishEtAl2018NorthCentralCoast]. For a description of trends in spawner abundance methods, see [Overview of Population Indicators: Trends in Spawner Abundance](#spawner-abundance).
-
-#### Juvenile Surveys
-
-**Juvenile abundance** data for CUs in the Haida Gwaii were available from Haida Fisheries for a coho juvenile outmigration program at Deena River in the East Haida Gwaii coho CU. We will update this information as other juvenile data becomes available. For a description of the juvenile survey indicator, see [Overview of Population Indicators: Juvenile Surveys](#juvenile-surveys).
-
-#### Hatchery Releases
-
-**Hatchery releases** in the Haida Gwaii Region for all salmon species were provided by DFO (Joan Bateman, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia's [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#hatchery-releases) for details on data and analytical methods.
-
-#### Biological Status
-
-The **biological status** assessments for CUs in the Haida Gwaii Region currently reflect data sourced from the North and Central Coast (NCC) database that are current to **2017**. As new data become available, we will update the analyses and results in this report as well as on the Pacific Salmon Explorer. See [Sections 4.1.4. Benchmarks for Assessing Biological Status](#benchmarks-biostatus) and [4.1.5. Decision Rules for Assessing Biological Status](#bs-decision-rules) for more details on biological status assessment methods.
-
-### Habitat Data and Analytical Methods {#hg-habitat-data}
-
-Nuances regarding habitat pressure indicator data and analytical methods for the Haida Gwaii Region are listed below. Refer to [Habitat Status: Indicators & Benchmarks](#indicators-benchmarks-hab) for information on habitat pressure indicators, benchmarks, and the analytical methods used to assess habitat status. <!--Additional details on habitat pressure indicators, data sources, data currency, and benchmarks specific to the Haida Gwaii Region are available in [Appendix 6 (Description of Habitat Pressure Indicators & Relevance to Salmon)](#appendix-6), [Appendix 7 (Habitat Pressure Datasets & Data Sources)](#appendix-7), [Appendix 8 (Spatial Data Processing for Habitat Pressure Indicators)](#appendix-8), [Appendix 9 (Spatial Data Processing for Future Pressures)](#appendix-9), and [Appendix 12 (Habitat Pressure Benchmark Values by Region)](#appendix-12).-->
-
-#### Spawning Zones of Influence
-
-Methods for delineating Chinook CU spawning zones of influence (ZOIs) vary by region in accordance with the CU delineation approach used by DFO. In the Skeena, Nass, Central Coast, and Haida Gwaii regions, Chinook CUs are defined using a more restrictive geographic representation, which resulted in fewer (or no) spawning locations occurring within the CU boundaries. As such, spawning ZOIs for each Chinook CU were delineated using the extent of all 1:20K FWA Assessment Watersheds that directly intersected with Haida Gwaii Chinook CU boundaries.
-
-#### Spatial Data Processing for Habitat Pressure Indicators
-
-##### Forest Disturbance on Haida Gwaii
-
-Working with John Broadhead and Dave Leversee of the Gowgaia Institute, we accessed the best available logging history (harvested areas) dataset compiled for Haida Gwaii. The Gowgaia Institute produced this logging history dataset as part of the Riparian Fish Forest on Haida Gwaii project [@Broadhead2009RiparianFishForest], and they updated this dataset to 2021. The Gowgaia dataset provided a more complete representation of forest disturbance on Haida Gwaii than was available in the VRI and Consolidated Cutblocks datasets that we used to assess forest disturbance in other regions to date. The spatial data processing method for forest disturbance on Haida Gwaii was updated to source the Gowgaia dataset ([Appendix 8](#appendix-8)).
-
-With their expert knowledge of logging history on Haida Gwaii, the Gowgaia Institute also identified areas where assessing risk at the assessment watershed scale may over or underrepresent more localized risk. Categorizing risk at the assessment watershed-scale generalizes risk across watersheds. As such, at this scale, it is not possible to identify whether risk is evenly distributed across a watershed or is more concentrated in certain parts of a watershed. Areas that the Gowgaia Institute identified as suffering from this limitation were Haines Creek and watersheds on NE Graham Island, where much of these areas are unimpacted by harvesting; they were categorized as moderate risk due harvesting that occurred in concentrated areas of these watersheds.
-
-<!-- 
-###### Total Land Cover Alteration on Haida Gwaii
-
-The spatial data processing method for total land cover alteration on Haida Gwaii used newly available data sources from the Province of BC's Cumulative Effects Framework (BC CEF) team as well as the logging history (harvested areas) dataset from Gowgaia Institute. BC CEF's Human Disturbance with Base Thematic Mapping (2021) dataset was used as the data source for polygons representing the following disturbance types: mountain pine beetle (not present on Haida Gwaii), railway and airports, recreation, transmission lines, major rights of ways, mining, oil & gas infrastructure, seismic infrastructure (not present on Haida Gwaii), agriculture and urban areas. BC CEF's Integrated Roads (2021) dataset was used as the data source for roads which were then buffered as outlined for processing the road development indicator ([Appendix 8](#appendix-8)).
-
-##### Riparian Disturbance on Haida Gwaii
-
-The riparian disturbance indicator used the total land cover alteration layer as an input data layer. As such, the spatial data processing methods used newly available data sources from the Province of BC's Cumulative Effects Framework (BC CEF) team as well as the logging history (harvested areas) dataset from Gowgaia Institute ([Appendix 8](#appendix-8)).
-
-##### Road Development on Haida Gwaii
-
-The spatial data processing method for road development on Haida Gwaii used the newly available Integrated Roads (2021) dataset from the Province of BC's Cumulative Effects Framework team ([Appendix 8](#appendix-8)).
-
-##### Linear Development on Haida Gwaii
-
-The spatial data processing method for linear development on Haida Gwaii used the newly available Integrated Roads (2021) dataset from the Province of BC's Cumulative Effects Framework team ([Appendix 8](#appendix-8)).
-
-##### Equivalent Clearcut Area on Haida Gwaii
-
-The spatial data processing method for calculating equivalent clearcut area (ECA) used the total land cover alteration layer as an input data layer. As such, the spatial data processing methods used newly available data sources from the Province of BC's Cumulative Effects Framework (BC CEF) team as well as the logging history (harvested areas) dataset from Gowgaia Institute ([Appendix 8](#appendix-8)). Specifically, BC CEF's Human Disturbance with Base Thematic Mapping (2021) dataset was used as the data source for polygons representing the following disturbance types: mountain pine beetle (not present on Haida Gwaii), railway and airports, transmission lines, major rights of ways, mining, oil & gas infrastructure, seismic infrastructure (not present on Haida Gwaii), agriculture and urban areas. BC CEF's Integrated Roads dataset was used as the data source for roads which were then buffered as outlined for processing the road development indicator ([Table A.18; Appendix 8](#appendix-8-tbl18)). Fire polygons were sourced from the Current Fire Perimeters and Historical Fire Perimeters datasets available on DataBC. Harvested areas were sourced from the Vegetation Resources Inventory (VRI) database available on DataBC and supplemented with Gowgaia Institute's logging disturbance dataset for harvested areas not captured in the VRI dataset.
-
-ECA disturbance types were identified as "recoverable" and "non-recoverable." Non-recoverable disturbance types are those where the land disturbance is considered permanent and recorded as 100% ECA. Non-recoverable disturbance types include railway and airports, transmission lines, major rights of ways, mining, oil & gas infrastructure, seismic infrastructure (not present on Haida Gwaii), agriculture, and urban areas. Recoverable disturbance types, where the hydrologic function of the landscape is expected to recover over time (i.e. second-growth forest), include harvested areas, burned areas, and areas impacted by mountain pine beetle (not present on Haida Gwaii). ECA recovery curves identify a recovery factor based on stand height. Projected stand height is sourced from the VRI dataset. ECA recovery curves were updated in 2019 to differentiate recovery rates for interior and coastal forests (FREP 2019).
-
-A "non-recoverable" layer was created by first merging and dissolving all non-recoverable disturbance types. Harvested and burned area polygons were dissolved based on projected stand height and then merged with the non-recoverable layer. Lastly, harvested area and burned area polygons without stand height but with a date of disturbance were dissolved based on time since disturbance (years) and merged with the non-recoverable and recoverable polygons with stand height. This combined ECA layer was overlaid with the FWA assessment watersheds. The growth recovery of each polygon was calculated based on stand height using the coastal recovery curve or using a time since disturbance surrogate method where stand height information was not readily available. The growth recovery of each recoverable polygon with stand height information was calculated using the following equation:
-
-$$ ECA = A \times C \times (1-R/100) $$ where $A$ is the original polygon area, $C$ is the proportion of the opening covered by functional regeneration (determined from Table A2.1, MOF, 2001), and $R$ is the recovery factor (for coastal forests from @HudsonHorel2007OperationalMethodAssessing and from @WinklerBoon2015RevisedSnowRecoveryb for interior forests). For non-recoverable polygons, there is no functional regeneration or recovery factor, so for these polygons, $C$ will be equal to 1, and $R$ will be equal to 0. Where stand height is not available (e.g. for harvested areas sourced from the Gowgaia Institute) a time since disturbance surrogate was used to estimate ECA: 1-10 yrs = 100% ECA, 11-20 = 75%, 21-40 = 25% and 40-50 yrs = 5%, \>50 years = 0%[\^BC Cumulative Effects Framework (BC CEF) ECA method includes an additional step to approximate stand height where not available in VRI before defaulting to this time since disturbance surrogate ECA estimate. This data was not available to us at the time of our assessments but our upcoming work to revise our habitat indicator methods will aim to source ECA directly from BC CEF or to update our methods to fill stand height data gaps where possible.] . ECA was summed for each FWA watershed then divided by the total watershed area to give an ECA percentage for each watershed.
--->
-
-#### Spawning Habitat Information from Expert Knowledge Holders
-
-In addition to the spawning habitat information we acquired from DataBC (primarily from the Fisheries Information Summary System (FISS) database), we collaborated with representatives from Haida Fisheries, Fisheries and Oceans Canada's Salmon Enhancement Program, Parks Canada, the Gowgaia Institute, the Hecate Strait Streamkeepers, and independent salmon experts to identify local salmon spawning locations. The collective identified 16 new salmon-bearing watersheds that had not been previously documented, further enhancing the baseline of available information for Haida Gwaii salmon.
 
 
 ## Columbia Region

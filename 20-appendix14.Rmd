@@ -1,4 +1,4 @@
-# Appendix 14: NuSEDS Data Processing {#appendix-14 .unnumbered}
+# Appendix 2: NuSEDS Data Processing {#appendix-2 .unnumbered}
 
 The R script containing the code for the NuSEDS data processing procedure described below is available on [github](https://github.com/salmonwatersheds/population-indicators/blob/master/spawner-surveys/code/1_nuseds_collation.R).
 

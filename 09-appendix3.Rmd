@@ -1,11 +1,169 @@
-# Appendix 3: Map of all the FWA watersheds in BC {#appendix-3 .unnumbered}
+# Appendix 3: Biological Status Details {#appendix-3 .unnumbered}
+
+The following table details the biological status outcomes and benchmarks values for Conservation Units (CUs) in each region.
+
+Current abundance is calculated as the geometric average spawner abundance over the most recent generation, where generation length is determined by the life-history of the CU. The years contributing to the estimated current spawner abundance are in the Years column (note that if there are missing years of data in this date range, the average is still calculated unless all years are missing). Years of Data shows the number of years over the time series with CU-level estimates of spawner abundance. Biological status outcomes are provided for two benchmark types (percentile and spawner-recruit (SR), as well as from other assessments under Canada's Wild Salmon Policy (WSP), the Committee on the Status of Endangered Wildlife in Canada (COSEWIC), and the province of BC (applicable to steelhead only). For the spawner-recruitment benchmarks, the percentage in each column is the probability (%) of a given status based on the posterior distributions for benchmarks ($S_{GEN}$ and 80% $S_{MSY}$) from a hierarchical Bayesian model. For the spawner-recruit and percentile benchmark values, 95% credible intervals are shown in parentheses. 
+
+```{r app4, include = TRUE, echo = FALSE, message = FALSE, warnings=FALSE}
+options(width = 400)
+library(reactable)
+library(dplyr)
+library(RPostgreSQL)
+
+status_colours <- c("#C06263", "#DED38B", "#83B686")
+
+app4 <- read.csv("tables/appendix4.csv", na.strings = NA)
+
+# ***Remove Yukon and Transboundary for now ***
+app4 <- app4[which(app4$Region %in% c("Yukon", "Transboundary") == FALSE), ]
+
+# *** Remove steelhead for now ***
+# app4 <- app4[which(app4$Species != "Steelhead"), ]
+
+app4[which(is.na(app4), arr.ind = TRUE)] <- ""
 
 
-```{r fwa_wshds, include = TRUE, echo = FALSE, out.width='80%', fig.align='center'}
-knitr::include_graphics("figures/fwa.jpg")
+# Create new variables needed for table display
+sr_status <- app4$SR
+sr_red <- ifelse(sr_status != "poor",  "#FFFFFF", status_colours[1])
+sr_amber <- ifelse(sr_status != "fair", "#FFFFFF", status_colours[2])
+sr_green <- ifelse(sr_status != "good", "#FFFFFF", status_colours[3])
+
+# Define WSP colours
+# wsp_red <- ifelse(app4$WSP != "poor",  "#FFFFFF", status_colours[1])
+# sr_amber <- ifelse(sr_status != "fair", "#FFFFFF", status_colours[2])
+# sr_green <- ifelse(sr_status != "good", "#FFFFFF", status_colours[3])
+
+# app4$Region.Species <- paste(app4$Region, app4$Species, sep = " - ")
+
+# Remove those variables not for display
+# app4 <- app4[, which(names(app4) %in% c("Species", "Region", "SR") == FALSE)]
+app4_display <- app4[, which(names(app4) %in% c("SR", "WSP", "WSP.Year", "COSEWIC", "COSEWIC.Year", "Province", "Province.Year") == FALSE)]
+app4_display$WSP <- ifelse(app4$WSP == " ", "", paste0(app4$WSP, " (", app4$WSP.Year, ")"))
+app4_display$COSEWIC <- ifelse(app4$COSEWIC == " ", "", paste0(app4$COSEWIC, " (", app4$COSEWIC.Year, ")"))
+app4_display$BC <- ifelse(app4$Province == " ", "", paste0(app4$Province, " (", app4$Province.Year, ")"))
+
+# ***Do not display provincial steelhead assessments for now ***
+# app4_display$Province <- ifelse(app4$Province == " ", "", paste0(app4$Province, " (", app4$Province.Year, ")"))
+	
+# Render table
+reactable::reactable(
+	app4_display, 
+	# groupBy = c("Region"),
+	defaultColDef = colDef(
+		header = function(value) gsub(".", " ", value, fixed = TRUE),
+		cell = function(value) format(value, nsmall = 1),
+		align = "left",
+		minWidth = 160#,
+		# headerStyle = list(background = "#396D8E", color = "#FFFFFF")
+	),
+	columns = list(
+		# Region.Species = colDef(name = "Region - Species"),
+		Region = colDef(
+			maxWidth = 80
+		),
+		Species = colDef(
+			maxWidth = 100#,
+			# 			style = JS("function(rowInfo, column, state) {
+			#         const { speciesColours } = state.meta
+			#         return { backgroundColor: speciesColours[rowInfo.index] }
+			#       }")
+		),
+		Current.Spawner.Abundance = colDef(
+			maxWidth = 100
+		),	
+		Years = colDef(
+			maxWidth = 100
+		),
+		Years.of.Data = colDef(
+			maxWidth = 70
+		),
+		Percentile = colDef(
+			maxWidth = 70,
+			style = function(value){
+				if(value == "poor"){
+					background <- status_colours[1]
+				}else if(value == "fair"){
+					background <- status_colours[2]
+				}else if(value == "good"){
+					background <- status_colours[3]
+				} else{
+					background <- "#FFFFFF"
+				}
+				list(background = background, color = background)
+			}
+		),
+		Probability.of.Red.Status = colDef(
+			header = "SR % Red",
+			maxWidth = 70,
+			style = JS("function(rowInfo, column, state) {
+        const { srRed } = state.meta
+        return { backgroundColor: srRed[rowInfo.index] }
+      }")
+		),
+		Probability.of.Amber.Status = colDef(
+			header = "SR % Amber",
+			maxWidth = 70,
+			style = JS("function(rowInfo, column, state) {
+        const { srAmber } = state.meta
+        return { backgroundColor: srAmber[rowInfo.index] }
+      }")
+		),
+		Probability.of.Green.Status = colDef(
+			header = "SR % Green",
+			maxWidth = 70,
+			style = JS("function(rowInfo, column, state) {
+        const { srGreen } = state.meta
+        return { backgroundColor: srGreen[rowInfo.index] }
+      }")
+		),
+		WSP = colDef(
+			maxWidth = 100),
+		COSEWIC = colDef(
+			maxWidth = 100),
+		BC = colDef(
+			maxWidth = 100),
+		# Province = colDef(
+		# 	header = "Prov. BC",
+		# 	maxWidth = 100),
+		Conservation.Unit = colDef(
+			sticky = "left"
+		)
+	),
+	columnGroups = list(
+		colGroup(
+			name = " ",
+			columns = c("Region", "Species", "Conservation.Unit")
+		),
+		colGroup(
+			name = "Biological Status",
+			columns = c("Percentile", "Probability.of.Red.Status", "Probability.of.Amber.Status", "Probability.of.Green.Status", "WSP", "COSEWIC", "BC") #, "Province")
+		),
+		colGroup(
+			name = "Percentile Benchmarks",
+			columns = c("S25", "S50")
+		),
+		colGroup(
+			name = "Spawner-Recruit Benchmarks",
+			columns = c("Sgen", "Smsy")
+		)
+	),
+	meta = list(
+		srRed = sr_red,
+		srAmber = sr_amber,
+		srGreen = sr_green),
+	# speciesColours = species_colours),
+	bordered = TRUE,
+	highlight = TRUE,
+	striped = TRUE,
+	resizable = TRUE, 
+	wrap = TRUE,
+	pagination = TRUE,
+	searchable = TRUE,
+	style = list(fontSize = "1.25rem"),
+	showSortIcon = TRUE,
+	defaultSorted = "Region",
+	defaultPageSize = 15
+)
 
 ```
-All Freshwater Atlas (FWA) Assessment Watersheds in BC (n = 19469). FWA Assessment Watershed are those adjoining features outlined in black. FWA assessment watersheds are defined at a 1:20,000 watershed scale and delineated with sizes between 2,000 to 10,000 hectares by the Province of BC and are the basis for the freshwater habitat status assessments described in this report. The larger colourings show the 246 FWA watershed groups in BC.
-
-<!-- Trying to get Appendix-specific figure numbering
-{r fwa_wshds, fig.cap = "All Freshwater Atlas (FWA) Assessment Watersheds in BC (n = 19,469). FWA Assessment Watershed are those adjoining features outlined in black. FWA assessment watersheds are defined at a 1:20,000 watershed scale and delineated with sizes between 2,000 to 10,000 hectares by the Province of BC and are the basis for the freshwater habitat status assessments described in this report. The larger colorings show the 246 FWA watershed groups in BC.", include = TRUE, echo = FALSE, out.width='80%', fig.align='center', fig.cap.pre = 'Figure A', fig.lp = 'app-fig'} -->

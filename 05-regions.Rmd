@@ -208,7 +208,7 @@ Juvenile abundance data for the Babine (enhanced), Babine/Onerka, Tahlo/Morrison
 
 #### Hatchery Releases {#skeena-hatchery-releases}
 
-Hatchery releases in the Skeena Region for all species were provided by DFO (Brock Ramhsaw, DFO Salmonid Enhancement Program). For steelhead, Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia's [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#0){style="font-size: 11pt;"} for details on data and analytical methods.
+Hatchery releases in the Skeena Region for all species were provided by DFO (Brock Ramhsaw, DFO Salmonid Enhancement Program). For steelhead, Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia's [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#hatchery-releases) for details on data and analytical methods.
 
 #### Biological Status {#skeena-biological-status}
 
@@ -280,7 +280,7 @@ Run timing information for many Central Coast salmon CUs was sourced from @Goruk
 
 #### Hatchery Releases
 
-Hatchery releases in the Central Coast Region for all species were provided by DFO (Brock Ramshaw, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia's [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#0){style="font-size: 11pt;"} for details on data and analytical methods.
+Hatchery releases in the Central Coast Region for all species were provided by DFO (Brock Ramshaw, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia's [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#hatchery-releases) for details on data and analytical methods.
 
 #### Biological Status
 
@@ -368,7 +368,7 @@ In the Fraser Region, we accessed **juvenile survey** data for two sockeye CUs: 
 
 #### Hatchery Releases
 
-**Hatchery releases** in the Fraser Region for all species were provided by DFO (Brock Ramshaw, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia's [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#0){style="font-size: 11pt;"} for details on data and analytical methods.
+**Hatchery releases** in the Fraser Region for all species were provided by DFO (Brock Ramshaw, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia's [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#hatchery-releases) for details on data and analytical methods.
 
 #### Biological Status
 
@@ -381,7 +381,7 @@ For some sockeye CUs, annual cycle lines over time fluctuate in abundance by man
 
 ### Habitat Data and Analytical Methods
 
-Nuances regarding habitat pressure indicator data and analytical methods for the Fraser Region are listed below. Refer to [Habitat Status: Indicators & Benchmarks](#indicators-benchmarks-hab) for information on habitat pressure indicators, benchmarks, and the analytical methods used to assess habitat status. Additional details on habitat pressure indicators, data sources, data currency, and benchmarks specific to the Fraser Region are available in [Appendix 6 (Description of Habitat Pressure Indicators & Relevance to Salmon)](#appendix-6), [Appendix 7 (Habitat Pressure Datasets & Data Sources)](#appendix-7), [Appendix 8 (Spatial Data Processing for Habitat Pressure Indicators)](#appendix-8), [Appendix 9 (Spatial Data Processing for Future Pressures)](#appendix-9), and [Appendix 12 (Habitat Pressure Benchmark Values by Region)](#appendix-12).
+Nuances regarding habitat pressure indicator data and analytical methods for the Fraser Region are listed below. Refer to [Habitat Status: Indicators & Benchmarks](#indicators-benchmarks-hab) for information on habitat pressure indicators, benchmarks, and the analytical methods used to assess habitat status. <!--Additional details on habitat pressure indicators, data sources, data currency, and benchmarks specific to the Fraser Region are available in [Appendix 6 (Description of Habitat Pressure Indicators & Relevance to Salmon)](#appendix-6), [Appendix 7 (Habitat Pressure Datasets & Data Sources)](#appendix-7), [Appendix 8 (Spatial Data Processing for Habitat Pressure Indicators)](#appendix-8), [Appendix 9 (Spatial Data Processing for Future Pressures)](#appendix-9), and [Appendix 12 (Habitat Pressure Benchmark Values by Region)](#appendix-12).-->
 
 #### Spawning Zones of Influence
 
@@ -518,7 +518,7 @@ We acquired multiple sources' **juvenile survey** data for several CUs in the Va
 
 #### Hatchery Releases
 
-**Hatchery releases** in the Vancouver Island & Mainland Inlets Region for all species were provided by DFO (Joan Bateman, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of BC's [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#0){style="font-size: 11pt;"} for details on data and analytical methods.
+**Hatchery releases** in the Vancouver Island & Mainland Inlets Region for all species were provided by DFO (Joan Bateman, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of BC's [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#hatchery-releases) for details on data and analytical methods.
 
 #### Biological Status
 
@@ -530,7 +530,7 @@ For 14 Southern BC Chinook CUs in the Vancouver Island & Mainland Inlets Region,
 
 ### Habitat Data and Analytical Methods
 
-Nuances regarding habitat pressure indicator data and analytical methods for the Vancouver Island & Mainland Inlets Region are listed below. Refer to [Habitat Status: Indicators & Benchmarks](#indicators-benchmarks-hab) for information on habitat pressure indicators, benchmarks, and the analytical methods used to assess habitat status. Additional details on habitat pressure indicators, data sources, data currency, and benchmarks specific to the Vancouver Island & Mainland Inlet Region are available in [Appendix 6 (Description of Habitat Pressure Indicators & Relevance to Salmon)](#appendix-6), [Appendix 7 (Habitat Pressure Datasets & Data Sources)](#appendix-7), [Appendix 8 (Spatial Data Processing for Habitat Pressure Indicators)](#appendix-8), [Appendix 9 (Spatial Data Processing for Future Pressures)](#appendix-9), and [Appendix 12 (Habitat Pressure Benchmark Values by Region)](#appendix-12).
+Nuances regarding habitat pressure indicator data and analytical methods for the Vancouver Island & Mainland Inlets Region are listed below. Refer to [Habitat Status: Indicators & Benchmarks](#indicators-benchmarks-hab) for information on habitat pressure indicators, benchmarks, and the analytical methods used to assess habitat status. <!--Additional details on habitat pressure indicators, data sources, data currency, and benchmarks specific to the Vancouver Island & Mainland Inlet Region are available in [Appendix 6 (Description of Habitat Pressure Indicators & Relevance to Salmon)](#appendix-6), [Appendix 7 (Habitat Pressure Datasets & Data Sources)](#appendix-7), [Appendix 8 (Spatial Data Processing for Habitat Pressure Indicators)](#appendix-8), [Appendix 9 (Spatial Data Processing for Future Pressures)](#appendix-9), and [Appendix 12 (Habitat Pressure Benchmark Values by Region)](#appendix-12).-->
 
 #### Trans-regional Conservation Units
 
@@ -671,7 +671,7 @@ On Haida Gwaii, there are some specific nuances to catch data that are important
 
 #### Hatchery Releases
 
-**Hatchery releases** in the Haida Gwaii Region for all salmon species were provided by DFO (Joan Bateman, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia's [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#0){style="font-size: 11pt;"} for details on data and analytical methods.
+**Hatchery releases** in the Haida Gwaii Region for all salmon species were provided by DFO (Joan Bateman, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia's [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#hatchery-releases) for details on data and analytical methods.
 
 #### Biological Status
 
@@ -679,7 +679,7 @@ The **biological status** assessments for CUs in the Haida Gwaii Region currentl
 
 ### Habitat Data and Analytical Methods {#hg-habitat-data}
 
-Nuances regarding habitat pressure indicator data and analytical methods for the Haida Gwaii Region are listed below. Refer to [Habitat Status: Indicators & Benchmarks](#indicators-benchmarks-hab) for information on habitat pressure indicators, benchmarks, and the analytical methods used to assess habitat status. Additional details on habitat pressure indicators, data sources, data currency, and benchmarks specific to the Haida Gwaii Region are available in [Appendix 6 (Description of Habitat Pressure Indicators & Relevance to Salmon)](#appendix-6), [Appendix 7 (Habitat Pressure Datasets & Data Sources)](#appendix-7), [Appendix 8 (Spatial Data Processing for Habitat Pressure Indicators)](#appendix-8), [Appendix 9 (Spatial Data Processing for Future Pressures)](#appendix-9), and [Appendix 12 (Habitat Pressure Benchmark Values by Region)](#appendix-12).
+Nuances regarding habitat pressure indicator data and analytical methods for the Haida Gwaii Region are listed below. Refer to [Habitat Status: Indicators & Benchmarks](#indicators-benchmarks-hab) for information on habitat pressure indicators, benchmarks, and the analytical methods used to assess habitat status. <!--Additional details on habitat pressure indicators, data sources, data currency, and benchmarks specific to the Haida Gwaii Region are available in [Appendix 6 (Description of Habitat Pressure Indicators & Relevance to Salmon)](#appendix-6), [Appendix 7 (Habitat Pressure Datasets & Data Sources)](#appendix-7), [Appendix 8 (Spatial Data Processing for Habitat Pressure Indicators)](#appendix-8), [Appendix 9 (Spatial Data Processing for Future Pressures)](#appendix-9), and [Appendix 12 (Habitat Pressure Benchmark Values by Region)](#appendix-12).-->
 
 #### Spawning Zones of Influence
 
@@ -833,11 +833,11 @@ Estimates of the average timing at which Okanagan watershed salmon return to spa
 
 #### Juvenile Surveys
 
-**Juvenile survey** data for CUs in the Columbia were not available. For steelhead, juvenile survey data were sourced from the [Okanogan Basin Monitoring Program](https://www.okanoganmonitoring.org/Home/Index). For a description of the juvenile surveys indicator, see [Overview of Population Indicators: Juvenile Surveys](#0){style="font-size: 11pt;"}.
+**Juvenile survey** data for CUs in the Columbia were not available. For steelhead, juvenile survey data were sourced from the [Okanogan Basin Monitoring Program](https://www.okanoganmonitoring.org/Home/Index). For a description of the juvenile surveys indicator, see [Overview of Population Indicators: Juvenile Surveys](#hatchery-releases).
 
 #### Hatchery Releases
 
-**Hatchery releases** in the Columbia Region for all species were provided by DFO (Joan Bateman, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia's [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators, H: Hatchery Releases](#0){style="font-size: 11pt;"} for details on data and analytical methods.
+**Hatchery releases** in the Columbia Region for all species were provided by DFO (Joan Bateman, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia's [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators, Hatchery Releases](#hatchery-releases) for details on data and analytical methods.
 
 #### Biological Status
 
@@ -845,7 +845,7 @@ The **biological status** assessments for CUs in the Columbia Region currently r
 
 ### Habitat Data and Analytical Methods
 
-Nuances regarding habitat pressure indicator data and analytical methods for the Columbia Region are listed below. Refer to [Habitat Status: Indicators & Benchmarks](#indicators-benchmarks-hab) for information on habitat pressure indicators, benchmarks, and the analytical methods used to assess habitat status. Additional details on habitat pressure indicators, data sources, data currency, and benchmarks specific to the Columbia Region are available in [Appendix 6 (Description of Habitat Pressure Indicators & Relevance to Salmon)](#appendix-6), [Appendix 7 (Habitat Pressure Datasets & Data Sources)](#appendix-7), [Appendix 8 (Spatial Data Processing for Habitat Pressure Indicators)](#appendix-8), [Appendix 9 (Spatial Data Processing for Future Pressures)](#appendix-9), and [Appendix 12 (Habitat Pressure Benchmark Values by Region)](#appendix-12).
+Nuances regarding habitat pressure indicator data and analytical methods for the Columbia Region are listed below. Refer to [Habitat Status: Indicators & Benchmarks](#indicators-benchmarks-hab) for information on habitat pressure indicators, benchmarks, and the analytical methods used to assess habitat status. <!-- Additional details on habitat pressure indicators, data sources, data currency, and benchmarks specific to the Columbia Region are available in [Appendix 6 (Description of Habitat Pressure Indicators & Relevance to Salmon)](#appendix-6), [Appendix 7 (Habitat Pressure Datasets & Data Sources)](#appendix-7), [Appendix 8 (Spatial Data Processing for Habitat Pressure Indicators)](#appendix-8), [Appendix 9 (Spatial Data Processing for Future Pressures)](#appendix-9), and [Appendix 12 (Habitat Pressure Benchmark Values by Region)](#appendix-12).-->
 
 #### Spawning Zones of Influence
 

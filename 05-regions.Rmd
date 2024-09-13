@@ -197,7 +197,7 @@ knitr::include_graphics("figures/nass_map.png")
 
 ### Population Data and Analytical Methods {#nass-pop-methods}
 
-As with the Skeena Region, many of the datasets necessary to understand the dynamics of salmon CUs in the Nass Region were historically compiled and stored through the North and Central Coast (NCC) Database [@EnglishEtAl2018NorthCentralCoast; see Skeena Region]. However, in recent years, we have worked directly with the Nisga'a Lisims Government and LGL Limited staff to compile and synthesize CU-level information (@EnglishEtAl2023PreliminaryAreaSalmon). For steelhead, data were sourced from @EnglishEtAl2023PreliminaryAreaSalmon (see our [steelhead-specific Github repository](https://github.com/salmonwatersheds/steelhead-status) for all raw steelhead population data compiled). Details regarding nuances to the data and analytical methods that are specific to the Nass Region are described below.
+As with the Skeena Region, many of the datasets necessary to understand the dynamics of salmon CUs in the Nass Region were historically compiled and stored through the North and Central Coast (NCC) Database [@EnglishEtAl2018NorthCentralCoast; see Skeena Region]. However, in recent years, we have worked directly with the Nisga'a Lisims Government and LGL Limited staff to compile and synthesize CU-level information [@EnglishEtAl2023PreliminaryAreaSalmon]. For steelhead, data were sourced from @EnglishEtAl2023PreliminaryAreaSalmon (see our [steelhead-specific Github repository](https://github.com/salmonwatersheds/steelhead-status) for all raw steelhead population data compiled). Details regarding nuances to the data and analytical methods that are specific to the Nass Region are described below.
 
 #### Spawner Surveys {#nass-spawner-surveys}
 

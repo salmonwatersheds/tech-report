@@ -102,7 +102,7 @@ As with the Skeena and Nass regions, in the Haida Gwaii Region many of the datas
 
 #### Spawner Abundance
 
-Observed spawner abundance for CUs on the in the Haida Gwaii Region is the sum of all spawner survey data as documented in NuSEDS, as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). Similar to our work in other adjacent regions (Central Coast, Skeena, Nass), we accessed most of these datasets via the North and Central Coast (NCC) database, maintained by LGL Ltd. [@EnglishEtAl2018NorthCentralCoast].
+Observed spawner abundance for CUs on the in the Haida Gwaii Region is the sum of all spawner survey data as documented in NuSEDS, as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance).
 
 Haida Gwaii CU-level **estimates of spawner abundance** (run reconstructions) were sourced from the North and Central Coast (NCC) database, updated by PSF for the years 2018-2021. Haida Gwaii CU-level estimated spawner abundance time series were developed for the NCC database according to the expansion factors described in the Skeena Region section above. On Haida Gwaii, the decline in monitoring coverage over the last 10-20 years was mentioned as an area of concern, and a decline in assessments may affect the relationships used to develop total estimates of spawner abundance (run reconstructions), as described in [Data Quality](#data-quality).
 
@@ -112,7 +112,7 @@ Run timing data were compiled from a variety of sources detailed in @WilsonPeaco
 
 #### Catch & Run Size
 
-**Catch and run size** dand subsequent exploitation rates for CUs on the Haida Gwaii Region were calculated by LGL (and updated by PSF) from data in the Fisheries Operating System (FOS) and other DFO databases. Similar to our work in other adjacent regions (Central Coast, Skeena, Nass), we accessed most of these datasets via the North and Central Coast (NCC) database, maintained by LGL Ltd. [@EnglishEtAl2018NorthCentralCoast]. The data is current to *2021*. For a description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#catch-and-runsize).
+**Catch and run size** and subsequent exploitation rates for CUs on the Haida Gwaii Region were calculated by LGL and PSF from data in the Fisheries Operating System (FOS) and other DFO databases. Similar to our work in other adjacent regions (Central Coast, Skeena, Nass), we accessed most of these datasets via the North and Central Coast (NCC) database, maintained by LGL Ltd. and updated by PSF for the period 2018-2021 [@EnglishEtAl2018NorthCentralCoast]. The data is current to *2021*. For a description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#catch-and-runsize).
 
 On Haida Gwaii, there are some specific nuances to catch data that are important to be aware of when considering the role of catch in estimates of total annual salmon run size. For sockeye salmon, the catch is calculated from a fixed estimate of an annual exploitation rate of 20%. Local knowledge suggests this value may be high, but the representativeness of a fixed rate is less likely to capture annual differences. There is only one Coded Wire Tag indicator stock for coho salmon, so these values are applied to all other coho when used in catch calculations. These considerations in estimates of catch are discussed in [Data Quality](#data-quality).
 
@@ -130,11 +130,11 @@ On Haida Gwaii, there are some specific nuances to catch data that are important
 
 #### Hatchery Releases
 
-**Hatchery releases** in the Haida Gwaii Region for all salmon species were provided by DFO (Joan Bateman, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia's [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#hatchery-releases) for details on data and analytical methods.
+**Hatchery releases** in the Haida Gwaii Region for all salmon species were provided by DFO (Brock Ramshaw, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia's [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#hatchery-releases) for details on data and analytical methods.
 
 #### Biological Status
 
-The **biological status** assessments for CUs in the Haida Gwaii Region currently reflect data sourced from the North and Central Coast (NCC) database that are current to **2017**. As new data become available, we will update the analyses and results in this report as well as on the Pacific Salmon Explorer. See [Sections 4.1.4. Benchmarks for Assessing Biological Status](#benchmarks-biostatus) and [4.1.5. Decision Rules for Assessing Biological Status](#bs-decision-rules) for more details on biological status assessment methods.
+The **biological status** assessments for CUs in the Haida Gwaii Region currently reflect data sourced from the North and Central Coast (NCC) database that are current to **2021**. As new data become available, we will update the analyses and results in this report as well as on the Pacific Salmon Explorer. See [Sections 4.1.4. Benchmarks for Assessing Biological Status](#benchmarks-biostatus) and [4.1.5. Decision Rules for Assessing Biological Status](#bs-decision-rules) for more details on biological status assessment methods.
 
 ### Habitat Data and Analytical Methods {#hg-habitat-data}
 

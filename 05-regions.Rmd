@@ -316,7 +316,7 @@ Within the Fraser Region, we worked with First Nations, DFO regional biologists 
 
 ### Conservation Unit Changes 
 
-For sockeye, we made minor revisions to the CU list for the Fraser region. The Adams and Momich Lakes - Early Summer CU was removed from the CU list and we added separate CUs for Adams - Early Summer and Momich - Early Summer. The rational for this change was based on @COSEWIC2021SockeyeSalmonOncorhynchus.
+For sockeye, we made minor revisions to the CU list for the Fraser region. The Adams and Momich Lakes - Early Summer CU was removed from the CU list and replaced by two separate CUs for Adams - Early Summer and Momich - Early Summer. This is consistent with the separate assessments of these two CUs by @COSEWIC2021SockeyeSalmonOncorhynchus.
 
 For steelhead in the Fraser Region, we used CUs defined in @ParkinsonEtAl2005PopulationDatabaseDefining. Through our work and conversations with the Steelhead Technical Working Group, we identified a key issue with the spatial boundaries for some coastal steelhead CUs for groups of winter-run populations, including the Lower Fraser Winter CU in the Fraser Region. One of the key distinguishing features among steelhead CUs is run timing. The CU boundaries for this winter-run CU did not include watersheds that contain both winter-run and coastal summer-run populations of steelhead. These watersheds were only included in the corresponding coastal summer-run CU (in this case, the Lower Fraser Summer CU). To address this issue in a standardized way for all CUs with this issue, we expanded the CU boundaries for the winter-run CUs to include the entirety of watersheds in the corresponding summer-run CU. In this case, resulting in an overlapping region between the Lower Fraser Winter and Lower Fraser Summer CUs where steelhead from multiple CUs spawn. This approach did not capture watershed-specific nuances in the distribution of winter- and summer-run steelhead populations, which are often not documented. However, these changes to the Lower Fraser Winter CU ensure the CU is not missing key watersheds.
 
@@ -387,78 +387,6 @@ Nuances regarding habitat pressure indicator data and analytical methods for the
 
 Methods for delineating Chinook CU **spawning zones of influence (ZOIs)** vary by region in accordance with the CU delineation approach used by DFO. In the Fraser and Vancouver Island and Mainland Inlet regions, Chinook CUs are geographically more broadly defined, which means that the methods employed for determining pink, chum, and coho spawning ZOIs were also applicable to Chinook CUs. The localized spawning ZOI for each Fraser Chinook CU was delineated by capturing the extent of all 1:20K FWA assessment watersheds that directly intersect with known spawning locations for Chinook.
 
-````{=html}
-<!-- ### Results 
-
-#### Biological Status
-
-This section provides a high-level overview of the biological status results for all 62 salmon CUs in the Fraser Region. Of the 62 CUs we examined in the Region, we assessed biological status for 17 CUs (33%). Of the remaining 45 salmon CUs, eight were extinct (16%), and 37 (51%) had insufficient information for evaluating their biological status (see [Decision Rules for Assessing Biological Status](#bs-decision-rules) for the criteria used to define data deficient CUs). Of the CUs for which we assessed biological status, 10 (77%) are in the green status zone, 3 (23%) are in the amber zone, and none are in the red status zone. Biological status for all CUs is displayed by species in Figures \@ref(fig:frckBsmap), \@ref(fig:frchBsmap), \@ref(fig:frcoBsmap), \@ref(fig:frpkoBsmap), \@ref(fig:frpkeBsmap), \@ref(fig:frselBsmap), \@ref(fig:frserBsmap), and \@ref(fig:frshBsmap), below. More information on biological status and benchmarks for each CU are available in [Table A.7. in Appendix 4](#appendix-4-tbl7). Full results are available online through the Pacific Salmon Explorer, where individual figures, maps, data, and summary statistics are provided for each CU in the Region. The results of these assessments reflect data that are current to **2021**. As new data become available, we will update the analyses and results in this report and on the Pacific Salmon Explorer.
-
-```{r frckBsmap, fig.cap = "Pacific Salmon Foundation biological status of Fraser Chinook salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/frck_bsmap.png")
-```
-
-```{r frchBsmap, fig.cap = "Pacific Salmon Foundation biological status of Fraser chum salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/frch_bsmap.png")
-```
-
-```{r fracoBsmap, fig.cap = "Pacific Salmon Foundation biological status of Fraser coho salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/frco_bsmap.png")
-```
-
-```{r frpkoBsmap, fig.cap = "Pacific Salmon Foundation biological status of Fraser pink (odd) salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/frpko_bsmap.png")
-```
-
-```{r frpkeBsmap, fig.cap = "Pacific Salmon Foundation biological status of Fraser pink (even) salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/frpke_bsmap.png")
-```
-
-```{r frselBsmap, fig.cap = "Pacific Salmon Foundation biological status of Fraser sockeye (lake-type) salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/frsel_bsmap.png")
-```
-
-```{r frserBsmap, fig.cap = "Pacific Salmon Foundation biological status of Fraser sockeye (river-type) salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/frser_bsmap.png")
-```
-
-#### Habitat Status
-
-We completed habitat assessments for watersheds within the 54 salmon CUs in the Fraser Region. The habitat assessments produce two levels of outputs for spawning ZOIs: (1) a risk rating for each FWA assessment watershed in the study area for each individual habitat pressure indicator; (2) a cumulative pressure score for each FWA assessment watershed in the study area, representing the risk to a watershed from all habitat pressures combined. Of the 4,819 1:20K FWA assessment watersheds assessed in the Fraser Region, 45% (n= 2,184) were designated as spawning habitat based on compiled spawning location data. These 2,184 watersheds represent the combined spawning ZOI for all species. In terms of the cumulative pressure scores for the combined spawning ZOI for all species, 42% of spawning habitat in the Fraser Region is high risk (red), 30% is moderate risk (amber), and 28% is low risk (green). The percentage of spawning habitat in each risk category for each indicator is summarized in (Table \@ref(tab:frHabstat)).
-
-Quantifying both individual and cumulative pressures at the FWA assessment watershed-scale provides a snapshot of habitat pressures across the Fraser Region and highlights which CUs face the greatest risk. Specifically, an overview of habitat pressures emerges from identifying: 1. the percentage area of the combined spawning ZOI for all species that is rated high, moderate, or low risk (i.e. red, amber, green) for each of the evaluated individual habitat pressure indicators; and 2. the percentage area of the combined spawning ZOI for all species that is rated high, moderate, or low risk (i.e. red, amber, green) for cumulative habitat pressures;
-
-More information on habitat pressure benchmark values for each indicator is available in [Appendix 12](#appendix-12). More information on cumulative spawning Pressure Results by Region and Conservation Unit is available in [Appendix 13](#appendix-13). Full results are available online through the Pacific Salmon Explorer. The results can be downloaded directly from the Pacific Salmon Explorer for each CU. The datasets compiled for the analysis are also available for download via the Salmon Data Library.
-
-The percentage of area within the Fraser Region's combined spawning ZOI for all species rated high, moderate, or low risk (i.e. red, amber, green) for cumulative pressures and each of the evaluated individual habitat pressure indicators.
-
-```{r frHabstat, include=TRUE, echo = FALSE}
-habStat <- read.csv("tables/sec5_fr_habstat.csv", header = FALSE)
-# knitr::kable(
-#   habStat, booktabs = TRUE,
-#   caption = "The percentage of area within the Fraser Region's combined spawning ZOI for all species rated high, moderate, or low risk (i.e. red, amber, green) for cumulative pressures and each of the evaluated individual habitat pressure indicators."
-# )
-
-colnames(habStat) <- NULL
-habStat[2,2] <- cell_spec(habStat[2,2], format = "html", background = "#C06263", font = "bold", color = "white")
-habStat[2,3] <- cell_spec(habStat[2,3], format = "html", background = "#DED38B", font = "bold", color = "white")
-habStat[2,4] <- cell_spec(habStat[2,4], format = "html", background = "#83B686", font = "bold", color = "white")
-
-kableExtra::kbl(habStat[2:nrow(habStat),],
-								format = "html",
-								escape = FALSE,
-								caption = "The percentage of area within the Central Coast Region's combined spawning ZOI for all species rated high, moderate, or low risk (i.e. red, amber, green) for cumulative pressures and each of the evaluated individual habitat pressure indicators.",
-								row.names = FALSE) %>%
-  row_spec(1, bold = TRUE, color = "white", background = "#396D8E") %>%
-	column_spec(column = c(2:4), width = "4cm") %>%
-  kable_styling(bootstrap_options = c("striped", "hover")) %>%
-	add_header_above(c("", "% Area of Spawning Habitat" = 3), color = "white", background = "#396D8E") %>%
-	footnote(symbol = "4% of spawning habitat is data deficient for the forest disturbance indicator.")
-
-```
-
--->
-````
 
 ## Vancouver Island & Mainland Inlets
 
@@ -548,74 +476,6 @@ A large portion of southeast Vancouver Island is privately managed forests. As s
 
 In addition to the spawning habitat information we acquired from the Fisheries Information Summary System (FISS) database and local knowledge derived through expert elicitation, we received additional spawning habitat information from a technical report provided by Graham Murrell (Fisheries Manager, Hupacasath First Nation; @Wright2008ShorelineSurveysSockeye).
 
-````{=html}
-<!-- ### Results 
-
-#### Biological Status
-
-This section provides a high-level overview of the biological status results for all 86 salmon CUs in the Vancouver Island & Mainland Inlet Region. Of the 86 CUs we examined in the Region, we were able to assess biological status for 18 CUs (21%). The remaining 68 salmon CUs (79%) had insufficient information for evaluating their biological status (see [Decision Rules for Assessing Biological Status](#bs-decision-rules) for the criteria used to define data deficient CUs). Of the CUs for which we were able to assess biological status, 12 (67%) of CUs are in the green status zone, 3 (17%) are in the amber zone, and 3 (17%) are in the red status zone. Biological status for all CUs is displayed by species in Figures \@ref(fig:vmckBsmap), \@ref(fig:vmchBsmap), \@ref(fig:vmcoBsmap), \@ref(fig:vmpkoBsmap), \@ref(fig:vmpkeBsmap), \@ref(fig:vmselBsmap), \@ref(fig:vmserBsmap), and \@ref(fig:vmshBsmap), below. More information on biological status and benchmarks for each CU are available in [Table A.7. in Appendix 4](#appendix-4-tbl7). Full results are available online through the Pacific Salmon Explorer, where individual figures, maps, data, and summary statistics are provided for each CU in the Region. The results of these assessments reflect data that are current to **2018**. As new data become available, we will update the analyses and results in this report and on the Pacific Salmon Explorer.
-
-```{r vmckBsmap, fig.cap = "Pacific Salmon Foundation biological status of Vancouver Island & Mainland Inlets Chinook salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/vmck_bsmap.png")
-```
-
-```{r vmchBsmap, fig.cap = "Pacific Salmon Foundation biological status of Vancouver Island & Mainland Inlets chum salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/vmch_bsmap.png")
-```
-
-```{r vmacoBsmap, fig.cap = "Pacific Salmon Foundation biological status of Vancouver Island & Mainland Inlets coho salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/vmco_bsmap.png")
-```
-
-```{r vmpkoBsmap, fig.cap = "Pacific Salmon Foundation biological status of Vancouver Island & Mainland Inlets pink (odd) salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/vmpko_bsmap.png")
-```
-
-```{r vmpkeBsmap, fig.cap = "Pacific Salmon Foundation biological status of Vancouver Island & Mainland Inlets pink (even) salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/vmpke_bsmap.png")
-```
-
-```{r vmselBsmap, fig.cap = "Pacific Salmon Foundation biological status of Vancouver Island & Mainland Inlets sockeye (lake-type) salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/vmsel_bsmap.png")
-```
-
-```{r vmserBsmap, fig.cap = "Pacific Salmon Foundation biological status of Vancouver Island & Mainland Inlets sockeye (river-type) salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/vmser_bsmap.png")
-```
-
-#### Habitat Status
-
-We completed habitat assessments for watersheds within the 87 salmon CUs in the Vancouver Island & Mainland Inlets Region. The habitat assessments produce two levels of outputs for spawning ZOIs: (1) a risk rating for each FWA assessment watershed in the study area for each individual habitat pressure indicator; (2) a cumulative pressure score for each FWA assessment watershed in the study area, representing the risk to a watershed from all habitat pressures combined. Of the 1,539 1:20K, FWA assessment watersheds assessed in the Vancouver Island & Mainland Inlets Region, 56% (n= 864) were designated spawning habitat based on compiled spawning location data. These 864 watersheds represent the combined spawning ZOI for all species. In terms of the cumulative pressure scores for the combined spawning ZOI for all species, 42% of spawning habitat in the Vancouver Island & Mainland Inlets Region is high risk (red), 36% is moderate risk (amber), and 22% is low risk (green). The percentage of spawning habitat in each risk category for each indicator is summarized in (Table \@ref(tab:vmHabstat)) below.
-
-Quantifying both individual and cumulative pressures at the FWA assessment watershed-scale provides a snapshot of habitat pressures across the Vancouver Island & Mainland Inlets Re and highlights which CUs face the greatest risk. Specifically, an overview of habitat pressures emerges from identifying:
-
-1)  the percentage area of the combined spawning ZOI for all species that is rated high, moderate, or low risk (i.e. red, amber, green) for each of the evaluated individual habitat pressure indicators; and
-
-2)  the percentage area of the combined spawning ZOI for all species that is rated high, moderate, or low risk (i.e. red, amber, green) for cumulative habitat pressures;
-
-More information on habitat pressure benchmark values for each indicator is available in [Appendix 12](#appendix-12). More information on cumulative spawning Pressure Results by Region and Conservation Unit is available in [Appendix 13](#appendix-13). Full results are available online through the Pacific Salmon Explorer. The results can be downloaded directly from the Pacific Salmon Explorer for each CU. The datasets compiled for the analysis are also available for download via the Salmon Data Library.
-
-```{r vmHabstat, include=TRUE, echo = FALSE}
-habStat <- read.csv("tables/sec5_vm_habstat.csv", header = FALSE)
-
-colnames(habStat) <- NULL
-habStat[2,2] <- cell_spec(habStat[2,2], format = "html", background = "#C06263", font = "bold", color = "white")
-habStat[2,3] <- cell_spec(habStat[2,3], format = "html", background = "#DED38B", font = "bold", color = "white")
-habStat[2,4] <- cell_spec(habStat[2,4], format = "html", background = "#83B686", font = "bold", color = "white")
-
-kableExtra::kbl(habStat[2:nrow(habStat),],
-								format = "html",
-								escape = FALSE,
-								caption = "The percentage of area within the Vancouver Island & Mainland Inlets Region's combined spawning ZOI for all species rated high, moderate, or low risk (i.e. red, amber, green) for cumulative pressures and each of the evaluated individual habitat pressure indicators.",
-								row.names = FALSE) %>%
-  row_spec(1, bold = TRUE, color = "white", background = "#396D8E") %>%
-  kable_styling(bootstrap_options = c("striped", "hover")) %>%
-	add_header_above(c("", "% Area of Spawning Habitat" = 3), color = "white", background = "#396D8E") %>%
-  footnote(symbol = c("17% of spawning habitat is data deficient for the forest disturbance indicator"))
-```
-
--->
-````
 
 ## Haida Gwaii Region
 
@@ -693,6 +553,7 @@ Working with John Broadhead and Dave Leversee of the Gowgaia Institute, we acces
 
 With their expert knowledge of logging history on Haida Gwaii, the Gowgaia Institute also identified areas where assessing risk at the assessment watershed scale may over or underrepresent more localized risk. Categorizing risk at the assessment watershed-scale generalizes risk across watersheds. As such, at this scale, it is not possible to identify whether risk is evenly distributed across a watershed or is more concentrated in certain parts of a watershed. Areas that the Gowgaia Institute identified as suffering from this limitation were Haines Creek and watersheds on NE Graham Island, where much of these areas are unimpacted by harvesting; they were categorized as moderate risk due harvesting that occurred in concentrated areas of these watersheds.
 
+<!-- 
 ###### Total Land Cover Alteration on Haida Gwaii
 
 The spatial data processing method for total land cover alteration on Haida Gwaii used newly available data sources from the Province of BC's Cumulative Effects Framework (BC CEF) team as well as the logging history (harvested areas) dataset from Gowgaia Institute. BC CEF's Human Disturbance with Base Thematic Mapping (2021) dataset was used as the data source for polygons representing the following disturbance types: mountain pine beetle (not present on Haida Gwaii), railway and airports, recreation, transmission lines, major rights of ways, mining, oil & gas infrastructure, seismic infrastructure (not present on Haida Gwaii), agriculture and urban areas. BC CEF's Integrated Roads (2021) dataset was used as the data source for roads which were then buffered as outlined for processing the road development indicator ([Appendix 8](#appendix-8)).
@@ -718,80 +579,12 @@ ECA disturbance types were identified as "recoverable" and "non-recoverable." No
 A "non-recoverable" layer was created by first merging and dissolving all non-recoverable disturbance types. Harvested and burned area polygons were dissolved based on projected stand height and then merged with the non-recoverable layer. Lastly, harvested area and burned area polygons without stand height but with a date of disturbance were dissolved based on time since disturbance (years) and merged with the non-recoverable and recoverable polygons with stand height. This combined ECA layer was overlaid with the FWA assessment watersheds. The growth recovery of each polygon was calculated based on stand height using the coastal recovery curve or using a time since disturbance surrogate method where stand height information was not readily available. The growth recovery of each recoverable polygon with stand height information was calculated using the following equation:
 
 $$ ECA = A \times C \times (1-R/100) $$ where $A$ is the original polygon area, $C$ is the proportion of the opening covered by functional regeneration (determined from Table A2.1, MOF, 2001), and $R$ is the recovery factor (for coastal forests from @HudsonHorel2007OperationalMethodAssessing and from @WinklerBoon2015RevisedSnowRecoveryb for interior forests). For non-recoverable polygons, there is no functional regeneration or recovery factor, so for these polygons, $C$ will be equal to 1, and $R$ will be equal to 0. Where stand height is not available (e.g. for harvested areas sourced from the Gowgaia Institute) a time since disturbance surrogate was used to estimate ECA: 1-10 yrs = 100% ECA, 11-20 = 75%, 21-40 = 25% and 40-50 yrs = 5%, \>50 years = 0%[\^BC Cumulative Effects Framework (BC CEF) ECA method includes an additional step to approximate stand height where not available in VRI before defaulting to this time since disturbance surrogate ECA estimate. This data was not available to us at the time of our assessments but our upcoming work to revise our habitat indicator methods will aim to source ECA directly from BC CEF or to update our methods to fill stand height data gaps where possible.] . ECA was summed for each FWA watershed then divided by the total watershed area to give an ECA percentage for each watershed.
+-->
 
 #### Spawning Habitat Information from Expert Knowledge Holders
 
 In addition to the spawning habitat information we acquired from DataBC (primarily from the Fisheries Information Summary System (FISS) database), we collaborated with representatives from Haida Fisheries, Fisheries and Oceans Canada's Salmon Enhancement Program, Parks Canada, the Gowgaia Institute, the Hecate Strait Streamkeepers, and independent salmon experts to identify local salmon spawning locations. The collective identified 16 new salmon-bearing watersheds that had not been previously documented, further enhancing the baseline of available information for Haida Gwaii salmon.
 
-````{=html}
-<!-- ### Results 
-
-#### Biological Status
-
-This section provides a high-level overview of the biological status results for the 29 salmon CUs in the Haida Gwaii Region. Of the 29 CUs we examined in the Region, we were able to assess biological status for 16 CUs (55%). The remaining 13 salmon CUs (45%) had insufficient information for evaluating their biological status (see [Decision Rules for Assessing Biological Status](#bs-decision-rules) for the criteria used to define data deficient CUs). Of the CUs for which we were able to assess biological status, 9 (56%) of CUs are in the green status zone, 4 (25%) are in the amber zone, and 3 (19%) are in the red status zone. Biological status for each CU is displayed by species in Figures \@ref(fig:hgckBsmap), \@ref(fig:hgchBsmap), \@ref(fig:hgcoBsmap), \@ref(fig:hgpkoBsmap), \@ref(fig:hgpkeBsmap), \@ref(fig:hgselBsmap), \@ref(fig:hgserBsmap), and \@ref(fig:hgshBsmap), below.
-
-More information on biological status and benchmarks for each CU is available in [Table A.12 in Appendix 4](#appendix-4-tbl12). Full results are available online through the Pacific Salmon Explorer, where individual figures, maps, data, and summary statistics are provided for each CU in the Region. The results of these assessments reflect data that are current to 2017. As new data become available, we will update the analyses and results in this report and on the Pacific Salmon Explorer.
-
-```{r hgckBsmap, fig.cap = "Pacific Salmon Foundation biological status of Haida Gwaii Chinook salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/hgck_bsmap.png")
-```
-
-```{r hgchBsmap, fig.cap = "Pacific Salmon Foundation biological status of Haida Gwaii chum salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/hgch_bsmap.png")
-```
-
-```{r hgacoBsmap, fig.cap = "Pacific Salmon Foundation biological status of Haida Gwaii coho salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/hgco_bsmap.png")
-```
-
-```{r hgpkoBsmap, fig.cap = "Pacific Salmon Foundation biological status of Vancouver Island & Mainland Inlets pink (odd) salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/hgpko_bsmap.png")
-```
-
-```{r hgpkeBsmap, fig.cap = "Pacific Salmon Foundation biological status of Haida Gwaii pink (even) salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/hgpke_bsmap.png")
-```
-
-```{r hgselBsmap, fig.cap = "Pacific Salmon Foundation biological status of Haida Gwaii sockeye (lake-type) salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/hgsel_bsmap.png")
-```
-
-```{r hgserBsmap, fig.cap = "Pacific Salmon Foundation biological status of Haida Gwaii sockeye (river-type) salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/hgser_bsmap.png")
-```
-
-#### Habitat Status
-
-We completed habitat assessments for watersheds within the 29 salmon CUs in the Haida Gwaii Region. The habitat assessments produce two levels of outputs: (1) a risk rating for each Freshwater Atlas (FWA) assessment watershed in the Region for each individual habitat pressure indicator; (2) a cumulative pressure score for each FWA assessment watershed in the Region, representing the risk to a watershed from all habitat pressures combined. Of the 218 1:20K FWA assessment watersheds assessed in the Haida Gwaii Region, 67% (n= 145) were designated as spawning habitat based on compiled spawning location data. These 145 watersheds represent the combined spawning ZOI for all species. In terms of the cumulative pressure scores for the spawning habitat defined by these 145 watersheds, 32% of the spawning habitat is high risk (red), 27% is moderate risk (amber), and 41% is low risk (green). The percentage of spawning habitat area in each risk category for each indicator is summarized in (Table \@ref(tab:hgHabstat)) below.
-
-Quantifying both individual and cumulative pressures at the FWA assessment watershed-scale provides a snapshot of habitat pressures across Haida Gwaii and highlights which CUs face the greatest risk. Specifically, an overview of habitat pressures emerges from identifying:
-
-1)  the percent area of watersheds within the combined spawning ZOI for all species that are rated high, moderate, or low risk (i.e. red, amber, green) for each of the evaluated individual habitat pressure indicators; and
-
-2)  the percent area of watersheds within the combined spawning ZOI for all species that are rated high, moderate, or low risk (i.e. red, amber, green) for cumulative habitat pressures;
-
-More information on habitat pressure benchmark values for each indicator is available in [Appendix 12](#-appendix-3). More information on cumulative spawning Pressure Results by Region and Conservation Unit is available in [Appendix 13](appendix-13). Full results are available online through the Pacific Salmon Explorer. For each CU, the results can be accessed from the Pacific Salmon Explorer, and the datasets compiled for the analysis are available for download via the Salmon Data Library.
-
-```{r hgHabstat, include=TRUE, echo = FALSE}
-habStat <- read.csv("tables/sec5_hg_habstat.csv", header = FALSE)
-colnames(habStat) <- NULL
-habStat[2,2] <- cell_spec(habStat[2,2], format = "html", background = "#C06263", font = "bold", color = "white")
-habStat[2,3] <- cell_spec(habStat[2,3], format = "html", background = "#DED38B", font = "bold", color = "white")
-habStat[2,4] <- cell_spec(habStat[2,4], format = "html", background = "#83B686", font = "bold", color = "white")
-
-kableExtra::kbl(habStat[2:nrow(habStat),],
-									format = "html",
-								escape = FALSE,
-								caption = "The percentage of area within the Haida Gwaii Region's combined spawning ZOI for all species rated high, moderate, or low risk (i.e. red, amber, green) for cumulative pressures and each of the evaluated individual habitat pressure indicators.",
-								row.names = FALSE) %>%
-  row_spec(1, bold = TRUE, color = "white", background = "#396D8E") %>%
-	column_spec(column = c(2:4), width = "4cm") %>%
-  kable_styling(bootstrap_options = c("striped", "hover")) %>%
-	add_header_above(c("", "% Area of Spawning Habitat" = 3), color = "white", background = "#396D8E")
-```
-
--->
-````
 
 ## Columbia Region
 
@@ -851,6 +644,7 @@ Nuances regarding habitat pressure indicator data and analytical methods for the
 
 Methods for delineating Chinook CU **spawning zones of influence (ZOIs)** vary by region in accordance with the CU delineation approach used by DFO. In the Fraser, Vancouver Island and Mainland Inlets, and Columbia regions, Chinook CUs are more broadly defined geographically, which means that the methods employed for determining pink, chum, and coho spawning ZOIs were also applicable to Chinook CUs. The localized spawning ZOI for each Columbia Chinook CU was delineated by capturing the extent of all 1:20K FWA assessment watersheds that directly intersect with known spawning locations for Chinook.
 
+<!--
 #### Spatial Data Processing for Habitat Pressure Indicators
 
 ##### Total Land Cover Alteration on Columbia
@@ -880,55 +674,4 @@ where A is the original polygon area, C is the proportion of the opening covered
 #### Spawning Habitat Information
 
 Spawning areas identified in the Known BC Fish Observations and Distributions were minimal. We supplemented this data with local knowledge and information in published literature, including sockeye [@StockwellHyatt2003SummaryOkanaganSockeye; @HyattStockwell2019ChasingIllusionSuccessful; @StockwellEtAl2020MethodsSummaryObservations] and Chinook [@MatylewichEtAl2019SummaryOkanaganChinook; @MahonyEtAl2019RecoveryPotentialAssessmentb].
-
-````{=html}
-<!-- ### Results
-
-#### Biological Status
-
-This section provides a high-level overview of the biological status results for the two salmon CUs in the Columbia Region. Of the two CUs we examined in the Region, we were able to assess biological status for one CU (50%). The remaining salmon CUs had insufficient information for evaluating their biological status (see [Decision Rules for Assessing Biological Status](#bs-decision-rules) for the criteria used to define data deficient CUs). For the Osoyoos sockeye CU, we were able to assess status using the spawner abundance percentile benchmark method, which was in the green status zone. Biological status for each CU is displayed by species in Figures \@ref(fig:colckBsmap), \@ref(fig:colchBsmap), \@ref(fig:colcoBsmap), \@ref(fig:colpkoBsmap), \@ref(fig:colpkeBsmap), \@ref(fig:colselBsmap), \@ref(fig:colserBsmap), and \@ref(fig:colshBsmap), below. More information on biological status and benchmarks for each CU is available in [Table A.12 in Appendix 4](#appendix-4-tbl12). Full results are available online through the Pacific Salmon Explorer, where individual figures, maps, data, and summary statistics are provided for each CU in the Region. The results of these assessments reflect data that are current to 2020 for sockeye and 2015 for Chinook. As new data becomes available, we will update the analyses and results in this report and the Pacific Salmon Explorer.
-
-```{r colckBsmap, fig.cap = "Pacific Salmon Foundation biological status of Columbia Chinook salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/colck_bsmap.png")
-```
-
-```{r colselBsmap, fig.cap = "Pacific Salmon Foundation biological status of Columbia sockeye (lake-type) salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/colsel_bsmap.png")
-```
-
-#### Habitat Status
-
-We completed habitat assessments for watersheds within the two salmon CUs in the Columbia Inlets Region. The habitat assessments produce two levels of outputs for spawning ZOIs: (1) a risk rating for each FWA assessment watershed in the study area for each individual habitat pressure indicator; (2) a cumulative pressure score for each FWA assessment watershed in the study area, representing the risk to a watershed from all habitat pressures combined. Of the 2130 1:20K FWA assessment watersheds assessed in the Columbia Region, 7% (n= 148) were designated as spawning habitat based on compiled spawning location data. These 148 watersheds represent the combined spawning ZOI for all species. In terms of the cumulative pressure scores for the 148 spawning watersheds, 0% are low risk (red), 5% are moderate risk (amber), and 95% are high risk. The percent of spawning watersheds in each risk category for each indicator is summarized in (Table \@ref(tab:colHabstat)) below.
-
-Quantifying both individual and cumulative pressures at the FWA assessment watershed-scale provides a snapshot of habitat pressures across the entire Columbia region and highlights which CUs face the greatest risk. Specifically, an overview of habitat pressures emerges from identifying:
-
-1)  the percentage of watersheds within the combined spawning ZOI for all species that are rated high, moderate, or low risk (i.e. red, amber, green) for each of the evaluated individual habitat pressure indicators; and
-
-2)  the percentage of watersheds within the combined spawning ZOI for all species that are rated high, moderate, or low risk (i.e. red, amber, green) for cumulative habitat pressures;
-
-More information on habitat pressure benchmark values for each indicator is available in [Appendix 12](#appendix-12). More information on cumulative spawning Pressure Results by Region and Conservation Unit is available in [Appendix 13](#appendix-13). Full results are available online through the Pacific Salmon Explorer. For each CU, the results can be downloaded directly from the Pacific Salmon Explorer. The datasets compiled for the analysis are also available for download via the Salmon Data Library.
-
-```{r colHabstat, include=TRUE, echo = FALSE}
-habStat <- read.csv("tables/sec5_col_habstat.csv", header = FALSE)
-
-colnames(habStat) <- NULL
-habStat[2,2] <- cell_spec(habStat[2,2], format = "html", background = "#C06263", font = "bold", color = "white")
-habStat[2,3] <- cell_spec(habStat[2,3], format = "html", background = "#DED38B", font = "bold", color = "white")
-habStat[2,4] <- cell_spec(habStat[2,4], format = "html", background = "#83B686", font = "bold", color = "white")
-habStat[2,5] <- cell_spec(habStat[2,5], format = "html", background = "#BCBCBC", font = "bold", color = "white")
-
-
-kableExtra::kbl(habStat[2:nrow(habStat),],
-									format = "html",
-								escape = FALSE,
-								caption = "The percentage of area within the Columbia Region's combined spawning ZOI for all species rated high, moderate, or low risk (i.e. red, amber, green) for cumulative pressures and each of the evaluated individual habitat pressure indicators.",
-								row.names = FALSE) %>%
-  row_spec(1, bold = TRUE, color = "white", background = "#396D8E") %>%
-	column_spec(column = c(2:4), width = "4cm") %>%
-  kable_styling(bootstrap_options = c("striped", "hover")) %>%
-	add_header_above(c("", "% Area of Spawning Habitat" = 4), color = "white", background = "#396D8E") %>%
-	footnote(general = "The number of watersheds in each risk category are presented in parenthesis.")
-```
-
- -->
-````
+-->

@@ -415,7 +415,7 @@ For Fraser River sockeye, exploitation rates are also provided by Management Gro
 
 #### Recruits-per-Spawner
 
-**Recruits-per-spawner** data were derived by DFO and PSC and provided for pink (Fiona Martens, Pacific Salmon Commission) and sockeye (Fiona Martens, Pacific Salmon Commission) in the Fraser Region. For steelhead, recruits-per-spawner data for the Thompson Summer and Mid Fraser Summer CUs were sourced from @COSEWIC2020. For a description of recruits-per-spawner methods, see [Overview of Population Indicators: Recruits-per-Spawner](#recruits-per-spawner).
+**Recruits-per-spawner** data were derived by DFO and PSC and provided for pink (Fiona Martens, Pacific Salmon Commission) and sockeye (Fiona Martens, Pacific Salmon Commission) in the Fraser Region. For steelhead, recruits-per-spawner data for the Thompson Summer and Mid Fraser Summer CUs were sourced from @CommitteeontheStatusofEndangeredWildlifeinCanada2020COSEWICAssessmentStatus. For a description of recruits-per-spawner methods, see [Overview of Population Indicators: Recruits-per-Spawner](#recruits-per-spawner).
 
 #### Trends in Spawner Abundance
 

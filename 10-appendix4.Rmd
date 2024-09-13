@@ -1,4 +1,4 @@
-# Appendix 4: Map of all the FWA watersheds in BC {#appendix-3 .unnumbered}
+# Appendix 4: Map of all the FWA watersheds in BC {#appendix-4 .unnumbered}
 
 
 ```{r fwa_wshds, include = TRUE, echo = FALSE, out.width='80%', fig.align='center'}

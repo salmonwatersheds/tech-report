@@ -4948,7 +4948,7 @@
 		}
 	},
 	{
-		"id": "James2023",
+		"id": "JamesEtAl2023SizeTimingHatchery",
 		"type": "article-journal",
 		"container-title": "Canadian Journal of Fisheries and Aquatic Sciences",
 		"DOI": "10.1139/cjfas-2022-0121",
@@ -6125,6 +6125,55 @@
 			"date-parts": [
 				[
 					"2021"
+				]
+			]
+		}
+	},
+	{
+		"id": "McMillanEtAl2023GlobalSynthesisPeerreviewed",
+		"type": "article-journal",
+		"abstract": "Hatcheries have long produced salmonids for fisheries and mitigation, though their widespread use is increasingly controversial because of potential impacts to wild salmonids. We conducted a global literature search of peer-reviewed publications (1970–2021) evaluating how hatchery salmonids affected wild salmonids, developed a publicly available database, and synthesized results. Two hundred six publications met our search criteria, with 83% reporting adverse/minimally adverse effects on wild salmonids. Adverse genetic effects on diversity were most common, followed by effects on productivity and abundance via ecological and genetic processes. Few publications (3%) reported beneficial hatchery effects on wild salmonids, nearly all from intensive recovery programs used to bolster highly depleted wild populations. Our review suggests hatcheries commonly have adverse impacts on wild salmonids in freshwater and marine environments. Future research on less studied effects—such as epigenetics—could improve knowledge and management of the full extent of hatchery impacts.",
+		"container-title": "Fisheries Management and Ecology",
+		"DOI": "10.1111/fme.12643",
+		"ISSN": "13652400",
+		"page": "446-463",
+		"title": "A global synthesis of peer-reviewed research on the effects of hatchery salmonids on wild salmonids",
+		"URL": "https://onlinelibrary.wiley.com/doi/full/10.1111/fme.12643",
+		"volume": "30",
+		"author": [
+			{
+				"family": "McMillan",
+				"given": "John R."
+			},
+			{
+				"family": "Morrison",
+				"given": "Brian"
+			},
+			{
+				"family": "Chambers",
+				"given": "Nick"
+			},
+			{
+				"family": "Ruggerone",
+				"given": "Greg"
+			},
+			{
+				"family": "Bernatchez",
+				"given": "Louis"
+			},
+			{
+				"family": "Stanford",
+				"given": "Jack"
+			},
+			{
+				"family": "Neville",
+				"given": "Helen"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2023"
 				]
 			]
 		}

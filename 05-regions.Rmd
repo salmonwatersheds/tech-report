@@ -50,7 +50,7 @@ The available data from the TTC [@TTC2022FinalEstimatesTransboundary] provide CU
 
 #### Run Timing {#transboundary-run-timing}
 
-Run timing for Transboundary CUs was compiled from several sources. Start, peak, and end migration dates for Taku River lake-type sockeye CUs were based on migration past the Canyon Island fish wheel reported by @PestalEtAl2020TakuRiverSockeye. Tahltan lake-type sockeye daily passage through the Tahltan fence is reported in the TTC reports
+Run timing for Transboundary CUs was compiled from several sources. Start, peak, and end migration dates for Taku River lake-type sockeye CUs were based on migration past the Canyon Island fish wheel reported by @PestalEtAl2020TakuRiverSockeye. Tahltan lake-type sockeye daily passage through the Tahltan fence is reported in the TTC reports [@TTC2022FinalEstimatesTransboundary]. Data compilation and treatment are detailed in @WilsonPeacockInprepTimingMajorFreshwater. See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
 
 #### Catch & Run Size {#transboundary-catch-run-size}
 
@@ -71,6 +71,10 @@ Data on hatchery locations, release sites, and release numbers are provided by D
 #### Biological Status {#transboundary-biological-status}
 
 Given that no spawner-recruit data were available for Transboundary CUs, we could only apply percentile benchmarks to assess biological status to eight CUs that had estimated spawner abundance. Given a lack of CU-scale information on spawner abundance, the other 36 CUs could not be assessed. These included all coho, pink, chum, and steelhead CUs in the Transboundary Region. 
+
+### Habitat Data and Analytical Methods
+
+<!-- Katy to populate -->
 
 ## Nass Region {#nass-region}
 
@@ -98,7 +102,8 @@ In addition, CU-level estimates of spawner abundance for five Nass CUs are deriv
 
 #### Run Timing {#nass-run-timing}
 
-We currently do not have CU-level run timing data visualized for any CUs in the Nass Region. See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
+Run timing data were compiled from a variety of sources detailed in @WilsonPeacockInprepTimingMajorFreshwater, including the Gitwinksihlkw fish wheel and Coded-wire Tag recovery projects at Zolzap Creek and Kincolith River.
+<!-- Add more details when time to insert references from Wilson and Peacocj into zotero!-->
 
 #### Catch & Run Size {#nass-catch-and-run-size}
 
@@ -114,7 +119,7 @@ Recruits-per-spawner data for CUs in the Nass Region were derived from the DFO a
 
 #### Hatchery Releases
 
-Hatchery releases in the Nass Region for all species were provided by DFO (Brock Ramshaw, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia's [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#0){style="font-size: 11pt;"} for details on data and analytical methods.
+Hatchery releases in the Nass Region for all species were provided by DFO (Brock Ramshaw, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia's [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#hatchery-releases) for details on data and analytical methods.
 
 #### Biological Status
 
@@ -122,7 +127,7 @@ The biological status assessments for salmon CUs in the Nass Region currently re
 
 ### Habitat Data and Analytical Methods
 
-Nuances regarding habitat pressure indicator data and analytical methods for the Nass Region are listed below. Refer to [Population Status: Indicators & Benchmarks](#indicators-benchmarks-pop) for information on habitat pressure indicators, benchmarks, and the analytical methods used to assess habitat status. Additional details on habitat pressure indicators, data sources, data currency, and benchmarks specific to the Nass Region are available in [Appendix 6 (Description of Habitat Pressure Indicators & Relevance to Salmon)](#appendix-6), [Appendix 7 (Habitat Pressure Datasets & Data Sources)](#appendix-7), [Appendix 8 (Spatial Data Processing for Habitat Pressure Indicators)](#appendix-8), [Appendix 9 (Spatial Data Processing for Future Pressures)](#appendix-9), and [Appendix 12 (Habitat Pressure Benchmark Values by Region)](#appendix-12).
+Nuances regarding habitat pressure indicator data and analytical methods for the Nass Region are listed below. Refer to [Population Status: Indicators & Benchmarks](#indicators-benchmarks-pop) for information on habitat pressure indicators, benchmarks, and the analytical methods used to assess habitat status. <!-- ** Katy **  Additional details on habitat pressure indicators, data sources, data currency, and benchmarks specific to the Nass Region are available in [Appendix 6 (Description of Habitat Pressure Indicators & Relevance to Salmon)](#appendix-6), [Appendix 7 (Habitat Pressure Datasets & Data Sources)](#appendix-7), [Appendix 8 (Spatial Data Processing for Habitat Pressure Indicators)](#appendix-8), [Appendix 9 (Spatial Data Processing for Future Pressures)](#appendix-9), and [Appendix 12 (Habitat Pressure Benchmark Values by Region)](#appendix-12).-->
 
 #### Trans-regional Conservation Units
 
@@ -144,7 +149,7 @@ During the initial development of the Pacific Salmon Explorer for the Skeena, we
 
 ### Conservation Unit Changes {#skeena-cu-changes}
 
-Based on feedback from the Skeena Technical Advisory Committee, we made several changes to the CU list, such that the CUs listed in the Pacific Salmon Explorer may differ from those provided by DFO. Specifically, we combined the Mcdonnell, Aldrich, and Dennis lake-type sockeye CUs into a single CU (Mcdonnell/Aldrich/Dennis) since the contribution of each of these lakes cannot be currently assessed from the estimated spawner abundance data. For the same reason, we combined the Morice and Atna lake-type sockeye CUs (Morice/Atna), and the Bulkley and Maxan (Bulkley/Maxan) lake-type sockeye CUs. Following updates by DFO, the Swan/Club CU was removed from the PSE in August 2024 and its spawner surveys and spawning location data was assigned to the Stephens CU. 
+Based on feedback from the Skeena Technical Advisory Committee, we made several changes to the CU list, such that the CUs listed in the Pacific Salmon Explorer may differ from those provided by DFO. Specifically, we combined the Mcdonnell, Aldrich, and Dennis lake-type sockeye CUs into a single CU (Mcdonnell/Aldrich/Dennis) since the contribution of each of these lakes cannot be currently assessed from the estimated spawner abundance data. For the same reason, we combined the Morice and Atna lake-type sockeye CUs (Morice/Atna), and the Bulkley and Maxan (Bulkley/Maxan) lake-type sockeye CUs. Following updates by DFO, the Swan/Club CU was removed from the PSE in August 2024 and its spawner surveys and spawning location data was assigned to the Stephens CU. Similarly, the former Sicintine Chinook CU was removed with component populations assigned to the Upper Skeena Chinook CU [@WintherEtAl2024AssessmentSkeenaRiver].
 
 We split the Babine lake-type sockeye CU into four CUs based on run-timing and enhancement. The wild portions of the CU are split into Babine/Onerka (early timing), Tahlo/Morrison (mid timing), and Nilkitkwa (late timing). The enhanced portion of the CU (originating from the Pinkut and Fulton spawning channels) is considered as the Babine (enhanced) CU.
 
@@ -166,7 +171,8 @@ Skeena CU-level estimates of spawner abundance (run reconstructions) were source
 
 The expansion procedures, by necessity, make a number of simplifying assumptions. The first expansion factor assumes that the proportion of the overall CU that each indicator stream represents is constant through time. The second expansion factor assumes that indicator and non-indicator streams make up a constant contribution to the overall abundance of a CU. The final expansion factor assumes that observer efficiency is constant between years, CUs, methodologies (except for fences), and hydrological systems. For CUs in the Skeena Region (and for CUs in the Nass, Central Coast and Haida Gwaii Regions), we attempted to account for potential data quality issues associated with the final observer efficiency expansion factor (see [Data Quality](#data-quality)). However, these assumptions may potentially still incorporate uncertainty into our assessments of biological status in these Region's CUs. These uncertainties result from spawner surveys being conducted using various methodologies and/or by different observers throughout time, which is not currently accounted for.
 
-<!-- EH: This seems like a weird place for this information, maybe should go in Chapter 4? -->
+<!-- EH: This seems like a weird place for this information, maybe should go in Chapter 4? 
+SP: Agree; we can examine post-launch. :-S -->
 
 For Skeena Chinook, we used the estimated spawner abundance data reported in @WintherEtAl2024AssessmentSkeenaRiver. Estimated spawner abundance was available for six CUs, and were derived by expanding the proportion of Kitsumkalum River Chinook identified at the Tyee test fishery. 
 
@@ -178,7 +184,11 @@ For steelhead, we did not apply expansion procedures to observed spawner abundan
 
 Estimates of peak timing of river entry for the different sockeye CUs were estimated from DNA sampled from fish caught in the Tyee test fishery near the mouth of the Skeena River between 2000-2010 [@Cox-Rogers2012FisheriesOceansCanada]. The duration of the timing of river entry is assumed to have a bell-shaped curve (i.e. normal distribution), so the shape of the curves is defined by the mean and standard deviation of the available run timing data. However, in most instances, there is insufficient data to determine if a different distribution would better describe the shape of the curve. A normal distribution curve is likely a reasonable approximation for run timing in most cases if the run timing is unimodal (i.e. if there is a single peak in run timing). If the run timing is bi-modal (i.e. if there are two run timing groups), the assumption of spread is likely reasonable, but the peak may be misleading.
 
-Note that these run timing curves were only used to estimate exploitation rates for Skeena sockeye CUs. A conservative assumption of relatively broad run timing (80-110 days) for each sockeye CU was used so that exploitation rates would not be sensitive to small shifts in fishery timing. For some CUs, run timing information is not available, and for some species, run timing is assumed to be the same for all CUs. Run timing for other species was estimated by DFO North Coast staff. See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
+Note that these run timing curves were only used to estimate exploitation rates for Skeena sockeye CUs. A conservative assumption of relatively broad run timing (80-110 days) for each sockeye CU was used so that exploitation rates would not be sensitive to small shifts in fishery timing. For some CUs, run timing information is not available, and for some species, run timing is assumed to be the same for all CUs. 
+
+For six Chinook CUs, timing was estimated from Tyee test fishery data from 2009-2016, taken from @WintherEtAl2024AssessmentSkeenaRiver. Test fishery data were available for other years between 2000 and 2022, but often missed the start of the run and so we opted to use the period when the test fishery began operation in late-May, better capturing the start of Chinook migrations. For steelhead, run timing from the Tyee test fishery was taken from @BeachamEtAl2012PopulationStructureRun.
+
+For other CUs, run timing data were estimated by DFO North Coast Staff. See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
 
 #### Catch & Run Size {#skeena-catch-run-size}
 
@@ -206,7 +216,7 @@ The biological status assessments for CUs in the Skeena Region reflect data sour
 
 ### Habitat Data and Analytical Methods {#skeena-hab-methods}
 
-Nuances regarding habitat pressure indicator data and analytical methods for the Skeena Region are listed below. Refer to [Indicators and Benchmarks for Assessing Habitat Status](#indicators-benchmark-hab) for information on habitat pressure indicators, benchmarks, and the analytical methods used to assess habitat status. Additional details on habitat pressure indicators, data sources, data currency, and benchmarks specific to the Skeena Region are available in [Appendix 6 (Description of Habitat Pressure Indicators & Relevance to Salmon)](#appendix-6), [Appendix 7 (Habitat Pressure Datasets & Data Sources)](#appendix-7), [Appendix 8 (Spatial Data Processing for Habitat Pressure Indicators)](#appendix-8), [Appendix 9 (Spatial Data Processing for Future Pressures)](#appendix-9), [Appendix 12 (Habitat Pressure Benchmark Values by Region)](#appendix-12).
+Nuances regarding habitat pressure indicator data and analytical methods for the Skeena Region are listed below. Refer to [Indicators and Benchmarks for Assessing Habitat Status](#indicators-benchmark-hab) for information on habitat pressure indicators, benchmarks, and the analytical methods used to assess habitat status. <!--Additional details on habitat pressure indicators, data sources, data currency, and benchmarks specific to the Skeena Region are available in [Appendix 6 (Description of Habitat Pressure Indicators & Relevance to Salmon)](#appendix-6), [Appendix 7 (Habitat Pressure Datasets & Data Sources)](#appendix-7), [Appendix 8 (Spatial Data Processing for Habitat Pressure Indicators)](#appendix-8), [Appendix 9 (Spatial Data Processing for Future Pressures)](#appendix-9), [Appendix 12 (Habitat Pressure Benchmark Values by Region)](#appendix-12).-->
 
 #### Trans-regional Conservation Units {#skeena-trans-cus}
 
@@ -250,7 +260,7 @@ Central Coast CU-level **estimates of spawner abundance** (run reconstructions) 
 
 #### Run Timing
 
-We currently do not have CU-level **run timing** data for any CUs in the Central Coast Region. We will update this information as CU-level run timing data become publicly available. See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
+Run timing information for many Central Coast salmon CUs was sourced from @GorukWinther1992SalmonEscapementTiming. We relied on a several reports describing the life-history of steelhead in the region [e.g., @EnglishEtAl1999AssessmentDistributionTiming, @NelsonEtAl1998CompilationStockAssessment]. Further details on the compilation of run timing data are provided by @WilsonPeacockInprepTimingMajorFreshwater. See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
 
 #### Catch & Run Size
 
@@ -278,7 +288,7 @@ The biological status assessments for CUs in the Central Coast Region reflect da
 
 ### Habitat Data and Analytical Methods
 
-Nuances regarding habitat pressure indicator data and analytical methods for the Central Coast Region are listed below. Refer to [Habitat Status: Indicators & Benchmarks](#indicators-benchmarks-hab) for information on habitat pressure indicators, benchmarks, and the analytical methods used to assess habitat status. Additional details on habitat pressure indicators, data sources, data currency, and benchmarks specific to the Skeena Region are available in [Appendix 6 (Description of Habitat Pressure Indicators & Relevance to Salmon)](#appendix-6), [Appendix 7 (Habitat Pressure Datasets & Data Sources)](#appendix-7), [Appendix 8 (Spatial Data Processing for Habitat Pressure Indicators)](#appendix-8), [Appendix 9 (Spatial Data Processing for Future Pressures)](#appendix-9), [Appendix 12 (Habitat Pressure Benchmark Values by Region)](#appendix-12).
+Nuances regarding habitat pressure indicator data and analytical methods for the Central Coast Region are listed below. Refer to [Habitat Status: Indicators & Benchmarks](#indicators-benchmarks-hab) for information on habitat pressure indicators, benchmarks, and the analytical methods used to assess habitat status. <!--Additional details on habitat pressure indicators, data sources, data currency, and benchmarks specific to the Central Coast Region are available in [Appendix 6 (Description of Habitat Pressure Indicators & Relevance to Salmon)](#appendix-6), [Appendix 7 (Habitat Pressure Datasets & Data Sources)](#appendix-7), [Appendix 8 (Spatial Data Processing for Habitat Pressure Indicators)](#appendix-8), [Appendix 9 (Spatial Data Processing for Future Pressures)](#appendix-9), [Appendix 12 (Habitat Pressure Benchmark Values by Region)](#appendix-12). -->
 
 #### Trans-regional Conservation Units
 
@@ -291,79 +301,6 @@ Methods for delineating Chinook CU **spawning zones of influence (ZOIs)** vary b
 #### Additional Spawning Habitat Information Sources
 
 In addition to the spawning habitat information we acquired from the Fisheries Information Summary System (FISS) database and local knowledge derived through expert elicitation, we received additional spawning habitat information from a technical report provided by Diana Chan and Mike Reid (Fisheries, Heiltsuk First Nation) [@Temple2007SmallStreamSurveysb].
-
-````{=html}
-<!-- ### Results 
-
-#### Biological Status
-
-This section provides a high-level overview of the biological status results for all 114 salmon CUs in the Central Coast Region. Of the 114 CUs we examined in the Region, we assessed biological status for 49 CUs (43%). The remaining 65 salmon CUs (57%) had insufficient information for evaluating their biological status (see [Decision Rules for Assessing Biological Status](#bs-decision-rules) for the criteria used to define data deficient CUs). Of the CUs for which we were able to assess biological status, 18 (58%) are in the green status zone, 4 (13%) are in the amber zone, and 9 (29%) are in the red status zone. Biological status for all CUs is displayed by species in Figures \@ref(fig:ccckBsmap), \@ref(fig:ccchBsmap), \@ref(fig:cccoBsmap), \@ref(fig:ccpkoBsmap), \@ref(fig:ccpkeBsmap), \@ref(fig:ccselBsmap), and \@ref(fig:ccserBsmap), below. More information on biological status and benchmarks for each CU is available [Table A.6 in Appendix 4](#appendix-4-tbl6). Full results are available online through the Pacific Salmon Explorer, where individual figures, maps, data, and summary statistics are provided for each CU in the Region. The results of these assessments reflect data that are current to **2017**. As new data becomes available, we will update the analyses and results in this report and on the Pacific Salmon Explorer.
-
-```{r ccckBsmap, fig.cap = "Pacific Salmon Foundation biological status of Central Coast Chinook salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/ccck_bsmap.png")
-```
-
-```{r ccchBsmap, fig.cap = "Pacific Salmon Foundation biological status of Central Coast chum salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/ccch_bsmap.png")
-```
-
-```{r cccoBsmap, fig.cap = "Pacific Salmon Foundation biological status of Central Coast coho salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/ccco_bsmap.png")
-```
-
-```{r ccpkoBsmap, fig.cap = "Pacific Salmon Foundation biological status of Central Coast pink (odd-year) salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/ccpko_bsmap.png")
-```
-
-```{r ccpkeBsmap, fig.cap = "Pacific Salmon Foundation biological status of Central Coast pink (even-year) salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/ccpke_bsmap.png")
-```
-
-```{r ccselBsmap, fig.cap = "Pacific Salmon Foundation biological status of Skeena sockeye (lake-type) salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/ccsel_bsmap.png")
-```
-
-```{r ccserBsmap, fig.cap = "Pacific Salmon Foundation biological status of Central Coast sockeye (river-type) salmon Conservation Units.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/ccser_bsmap.png")
-```
-
-#### Habitat Status
-
-We completed habitat assessments for watersheds within the 114 salmon CUs in the Central Coast Region. The habitat assessments produce two levels of outputs for spawning ZOIs: (1) a risk rating for each FWA assessment watershed in the study area for each individual habitat pressure indicator; (2) a cumulative pressure score for each FWA assessment watershed in the study area, representing the risk to a watershed from all habitat pressures combined. Of the 1,132 1:20K, FWA assessment watersheds assessed in the Central Coast Region, 63% (n=709) were designated as spawning habitat based on compiled spawning location data. These 709 watersheds represent the combined spawning ZOI for all species. In terms of the cumulative pressure scores for the combined spawning ZOI for all species, 9% of spawning habitat in the Central Coast Region is high risk (red), 28% is moderate risk (amber), and 62% is low risk (green). The percentage of spawning habitat in each risk category for each indicator is summarized in (Table \@ref(tab:ccHabstat)).
-
-Quantifying both individual and cumulative pressures at the FWA assessment watershed-scale provides a snapshot of habitat pressures across the entire Central Coast and highlights which CUs face the greatest risk. Specifically, an overview of habitat pressures emerges from identifying:
-
-1.  the percentage area of the combined spawning ZOI for all species that is rated high, moderate, or low risk (i.e. red, amber, green) for each of the evaluated individual habitat pressure indicators; and
-2.  the percentage area of the combined spawning ZOI for all species that is rated high, moderate, or low risk (i.e. red, amber, green) for cumulative habitat pressures;
-
-More information on habitat pressure benchmark values for each indicator is available in [Appendix 12](#appendix-12). More information on cumulative spawning Pressure Results by Region and Conservation Unit is available in [Appendix 13](#appendix-13). Full results are available online through the Pacific Salmon Explorer. The results can be downloaded directly from the Pacific Salmon Explorer for each CU, while the datasets compiled for the analysis are also available for download via the Salmon Data Library.
-
-```{r ccHabstat, include=TRUE, echo = FALSE}
-habStat <- read.csv("tables/sec5_cc_habstat.csv", header = FALSE)
-
-# knitr::kable(
-#   habStat, booktabs = TRUE,
-#   caption = "The percentage of area within the Central Coast Region's combined spawning ZOI for all species rated high, moderate, or low risk (i.e. red, amber, green) for cumulative pressures and each of the evaluated individual habitat pressure indicators."
-# )
-
-colnames(habStat) <- NULL
-habStat[2,2] <- cell_spec(habStat[2,2], format = "html", background = "#C06263", font = "bold", color = "white")
-habStat[2,3] <- cell_spec(habStat[2,3], format = "html", background = "#DED38B", font = "bold", color = "white")
-habStat[2,4] <- cell_spec(habStat[2,4], format = "html", background = "#83B686", font = "bold", color = "white")
-
-kableExtra::kbl(habStat[2:nrow(habStat),],
-									format = "html",
-								escape = FALSE,
-								caption = "The percentage of area within the Central Coast Region's combined spawning ZOI for all species rated high, moderate, or low risk (i.e. red, amber, green) for cumulative pressures and each of the evaluated individual habitat pressure indicators.",
-								row.names = FALSE) %>%
-  row_spec(1, bold = TRUE, color = "white", background = "#396D8E") %>%
-	column_spec(column = c(2:4), width = "4cm") %>%
-  kable_styling(bootstrap_options = c("striped", "hover")) %>%
-	add_header_above(c("", "% Area of Spawning Habitat" = 3), color = "white", background = "#396D8E") 
-
-```
--->
-````
 
 ## Fraser Region
 
@@ -403,7 +340,11 @@ For steelhead, estimates for the total number of steelhead returning to the Thom
 
 #### Run Timing
 
-**Run timing** estimates were provided for all 25 Fraser sockeye CUs (Fiona Martens, Pacific Salmon Commission). The median estimate date and spread represent the run timing date through DFO Area 20 for each management unit from 1980 to 2017. Each CU within a management unit was assumed to have the same run timing. See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
+**Run timing** estimates were compiled by @WilsonPeacockInprepTimingMajorFreshwater. Data were provided for some Fraser sockeye CUs (Fiona Martens and Merran Hague, Pacific Salmon Commission). The median estimate date and spread represent the run timing date through DFO Area 20 for each management unit from 1980 to 2017. Each CU within a management unit was assumed to have the same run timing. For Fraser pink salmon, timing information from the hydroacoustic monitoring at Mission was provided by the Pacific Salmon Commission on request.
+
+CU run timing information came from @ParkenEtAl2008GeneticCodedWire for Chinook, @IrvineEtAl2001StockStatus for coho. Brittany Jenewin (DFO, pers. comm) shared raw data on chum salmon catch in the Albion test fishery. 
+
+For steelhead, life-history information was compiled from older reports including @Withler1966VariabilityLifeHistory and @Caverly1978LifeHistoryWinter. Data compilation and sources are detailed in @WilsonPeacockInprepTimingMajorFreshwater. See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
 
 #### Catch & Run Size
 
@@ -557,7 +498,7 @@ For steelhead, there are instances where long timeseries (i.e., spanning at leas
 
 #### Run Timing
 
-We currently do not have CU-level **run timing** data for any CUs in the Vancouver Island & Mainland Inlets Region. We will update this information as CU-level run timing data become publicly available. See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
+Run timing data were compiled from a variety of sources detailed in @WilsonPeacockInprepTimingMajorFreshwater. See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
 
 #### Catch & Run Size
 
@@ -708,7 +649,7 @@ Haida Gwaii CU-level **estimates of spawner abundance** (run reconstructions) we
 
 #### Run Timing
 
-We currently do not have CU-level **run timing** data for any CUs in the Haida Gwaii Region. We will update this information as CU-level run timing data become publicly available. See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
+Run timing data were compiled from a variety of sources detailed in @WilsonPeacockInprepTimingMajorFreshwater. See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
 
 #### Catch & Run Size
 

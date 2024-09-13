@@ -5588,6 +5588,26 @@
 		}
 	},
 	{
+		"id": "WilsonPeacockInprepTimingMajorFreshwater",
+		"type": "article-journal",
+		"container-title": "Canadian Journal of Fisheries and Aquatic Sciences",
+		"title": "Timing of major freshwater life-cycle events of Pacific salmon (Oncorhynchus spp.) in British Columbia, Canada",
+		"URL": "https://bookdown.org/salmonwatersheds/life-cycle-timing",
+		"author": [
+			{
+				"family": "Wilson",
+				"given": "Samantha E."
+			},
+			{
+				"family": "Peacock",
+				"given": "Stephanie J."
+			}
+		],
+		"issued": {
+			"literal": "In review"
+		}
+	},
+	{
 		"id": "SalmonWatershedsProgram2024StatusSteelheadPopulations",
 		"type": "report",
 		"event-place": "Vancouver, B.C.",
@@ -5745,6 +5765,57 @@
 			"date-parts": [
 				[
 					"2020"
+				]
+			]
+		}
+	},
+	{
+		"id": "ParkenEtAl2008GeneticCodedWire",
+		"type": "article-journal",
+		"abstract": "Conservation concerns for small, relatively unproductive populations of Chinook salmon Oncorhynchus tshawytscha limit the utility of fisheries in Canada’s Fraser River. To identify populationspecific migration time and to index abundance, we analyzed 4,822 fish sampled for genetic variation in 2000 and 2001 and 580 fish with coded wire tags (CWTs) caught from 1987 to 2004 in a test fishery near the river mouth. Population sizes estimated from microsatellite variation were within 3.4% of the known-origin population composition and were unbiased in comparison with known-origin population sizes. All but 1 of the 30 populations detected by both genetic methods and CWTs had overlapping migration times, but these times differed significantly for only 7 populations. Migration times were identified for another 23 untagged populations identified by using genetics, which resulted in the assignment of migration timing groups (peak passage) for 53 populations as spring (March–May), early summer (June), midsummer (July), late summer (August), and fall (September–October). Population abundance indices at the test fishery were significantly associated with run size at the river mouth. When populations were aggregated by geographic stock structure and migration time, the abundance indices for the test fishery explained 80% of the variation in run size. Incorporating genetic information can substantially improve the utility of test fishery data and thereby allow more-precise management of complex population aggregates such as those in the Fraser River.",
+		"container-title": "North American Journal of Fisheries Management",
+		"DOI": "10.1577/M06-110.1",
+		"ISSN": "0275-5947, 1548-8675",
+		"issue": "1",
+		"journalAbbreviation": "N American J Fish Manag",
+		"language": "en",
+		"page": "328-340",
+		"source": "DOI.org (Crossref)",
+		"title": "Genetic and Coded Wire Tag Results Combine to Allow More‐Precise Management of a Complex Chinook Salmon Aggregate",
+		"URL": "https://afspubs.onlinelibrary.wiley.com/doi/10.1577/M06-110.1",
+		"volume": "28",
+		"author": [
+			{
+				"family": "Parken",
+				"given": "Charles K."
+			},
+			{
+				"family": "Candy",
+				"given": "John R."
+			},
+			{
+				"family": "Irvine",
+				"given": "James R."
+			},
+			{
+				"family": "Beacham",
+				"given": "Terry D."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					2,
+					22
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2008",
+					2
 				]
 			]
 		}
@@ -6138,6 +6209,237 @@
 			"date-parts": [
 				[
 					"2021"
+				]
+			]
+		}
+	},
+	{
+		"id": "BeachamEtAl2012PopulationStructureRun",
+		"type": "article-journal",
+		"abstract": "Identiﬁcation of population-speciﬁc run timing is an important component of salmonid ﬁsheries management and was a major focus of our study. Population structure of steelhead Oncorhynchus mykiss was examined in the Skeena River of northern British Columbia. Variation at 14 microsatellites was surveyed in 3,062 steelhead sampled from 17 populations in the drainage. During 1998–2010, 6,691 individuals were sampled in a lower river test ﬁshery to obtain information on relative abundance and time of arrival of speciﬁc populations near the river mouth. The genetic differentiation index FST calculated over all populations and loci was 0.021; individual locus values ranged from 0.017 to 0.045. Differentiation in steelhead allele frequencies among populations was approximately 14 times the differentiation observed among years within populations. A regional structuring of populations was the general pattern observed, with steelhead populations from the upper portion of the drainage clustering together in 87% of dendrograms evaluated and those in the lower portion of the drainage clustering together in 100% of dendrograms. The 17 populations sampled were arranged in nine reporting groups for genetic stock identiﬁcation applications. The estimated stock composition of a simulated known-origin mixture was within 2% of the correct estimate for seven of the nine reporting groups present in the mixture. The stock composition of an actual known-origin sample was estimated within 2% of the correct estimate for eight of the nine reporting groups present. Application to actual samples from the test ﬁshery indicated that upper drainage populations generally migrated through the lower river earlier than other populations, whereas lower river populations typically migrated later. Genetic mixed-stock analysis can assist managers in regulating ﬁsheries to maintain productivity of Skeena River steelhead.",
+		"container-title": "North American Journal of Fisheries Management",
+		"DOI": "10.1080/02755947.2012.675953",
+		"ISSN": "0275-5947, 1548-8675",
+		"issue": "2",
+		"journalAbbreviation": "North American Journal of Fisheries Management",
+		"language": "en",
+		"page": "262-275",
+		"source": "DOI.org (Crossref)",
+		"title": "Population Structure and Run Timing of Steelhead in the Skeena River, British Columbia",
+		"URL": "http://doi.wiley.com/10.1080/02755947.2012.675953",
+		"volume": "32",
+		"author": [
+			{
+				"family": "Beacham",
+				"given": "Terry D."
+			},
+			{
+				"family": "Wallace",
+				"given": "Colin G."
+			},
+			{
+				"family": "Le",
+				"given": "Khai D."
+			},
+			{
+				"family": "Beere",
+				"given": "Mark"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					9,
+					12
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2012",
+					4
+				]
+			]
+		}
+	},
+	{
+		"id": "GorukWinther1992SalmonEscapementTiming",
+		"type": "report",
+		"event-place": "Prince Rupert, B.C.",
+		"publisher": "Department of Fisheries and Oceans",
+		"publisher-place": "Prince Rupert, B.C.",
+		"title": "Salmon Escapement and Timing Data for Statistical areas 6 to 10 of the Central Coast of British Columbia: Supplement Edition II",
+		"author": [
+			{
+				"family": "Goruk",
+				"given": "Ron"
+			},
+			{
+				"family": "Winther",
+				"given": "Ivan"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1992",
+					2
+				]
+			]
+		}
+	},
+	{
+		"id": "EnglishEtAl1999AssessmentDistributionTiming",
+		"type": "report",
+		"genre": "Report for Ministry of Environment, Lands, and Parks and Ministry of Fisheries funded by Fisheries Renewal British Columbia and the Habitat Conservation Trust",
+		"number": "EA 1101",
+		"title": "Assessment of the Distribution, Timing, and Abundance of Adult Steelhead Returns to the Bella Coola River Watershed in 1997 and 1998",
+		"author": [
+			{
+				"family": "English",
+				"given": "K K"
+			},
+			{
+				"family": "Alexander",
+				"given": "R. F."
+			},
+			{
+				"family": "Nelson",
+				"given": "T.C."
+			},
+			{
+				"family": "Ramsay",
+				"given": "M K"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1999"
+				]
+			]
+		}
+	},
+	{
+		"id": "NelsonEtAl1998CompilationStockAssessment",
+		"type": "report",
+		"genre": "Report for Ministry of Environment, Lands, and Parks and Ministry of Fisheries",
+		"title": "Compilation of Stock Assessment Information for Bella Coola River Steelhead",
+		"author": [
+			{
+				"family": "Nelson",
+				"given": "T. C."
+			},
+			{
+				"family": "Alexander",
+				"given": "R. F."
+			},
+			{
+				"family": "English",
+				"given": "K. K."
+			},
+			{
+				"family": "Ptolemy",
+				"given": "R A"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1998"
+				]
+			]
+		}
+	},
+	{
+		"id": "IrvineEtAl2001StockStatus",
+		"type": "article-journal",
+		"container-title": "Canadian Science Advisory Secretariat Research Document",
+		"language": "en",
+		"source": "Zotero",
+		"title": "2001 Stock Status Assessment of Coho Salmon from the Interior Fraser River",
+		"URL": "https://publications.gc.ca/collections/collection_2015/mpo-dfo/Fs70-5-2001-083-eng.pdf",
+		"volume": "2001/083",
+		"author": [
+			{
+				"family": "Irvine",
+				"given": "J R"
+			},
+			{
+				"family": "Parken",
+				"given": "C K"
+			},
+			{
+				"family": "Chen",
+				"given": "D G"
+			},
+			{
+				"family": "Candy",
+				"given": "J"
+			},
+			{
+				"family": "Ming",
+				"given": "T"
+			},
+			{
+				"family": "Supernault",
+				"given": "J"
+			},
+			{
+				"family": "Shaw",
+				"given": "W"
+			},
+			{
+				"family": "Bailey",
+				"given": "R E"
+			}
+		]
+	},
+	{
+		"id": "Withler1966VariabilityLifeHistory",
+		"type": "article-journal",
+		"container-title": "Journal of the Fisheries Research Board of Canada",
+		"issue": "3",
+		"language": "en",
+		"page": "365-393",
+		"source": "Zotero",
+		"title": "Variability in Life History Characteristics of Steelhead Trout (Salmo gairdneri) Along the Pacific Coast of North Arnerical",
+		"volume": "23",
+		"author": [
+			{
+				"family": "Withler",
+				"given": "I. L."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1966"
+				]
+			]
+		}
+	},
+	{
+		"id": "Caverly1978LifeHistoryWinter",
+		"type": "report",
+		"event-place": "Burnaby",
+		"genre": "Report submitted to Vic Swiatkiewicz, Regional Fisheries Biologist",
+		"publisher": "Region 2 Fish and Wildlife Branch",
+		"publisher-place": "Burnaby",
+		"title": "Life history of winter steelhead (Salmon gairdneri) in the Vedder-Chilliwack River - based on scale samples collected between 1948 and 1975",
+		"author": [
+			{
+				"family": "Caverly",
+				"given": "Alan"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1978",
+					3
 				]
 			]
 		}

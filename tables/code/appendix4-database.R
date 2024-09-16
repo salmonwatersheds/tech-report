@@ -94,4 +94,4 @@ app4_display <- data.frame(
 # Write to csv
 ###############################################################################
 
-write.csv(app4_display, file = "tables/appendix4/appendix4.csv", row.names = FALSE)
+write.csv(app4_display, file = "tables/appendix4.csv", row.names = FALSE)

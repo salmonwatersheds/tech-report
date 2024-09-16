@@ -105,7 +105,7 @@ knitr::kable(
 
 #### Spawner Abundance {#spawner-abundance}
 
-We visualize both observed and estimated **spawner abundance** on the [Pacific Salmon Explorer](https://www.salmonexplorer.ca). This indicator provides estimates of the total numbers of spawners that return to spawn each year for each CU. **Observed** spawner abundance is the sum of all spawner survey data as documented in [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), while **estimated** spawner abundance generally accounts for streams that are not surveyed in a given year by following expansion procedures. The approach for expanding from observed spawners to estimate the total spawners in a CU depends on the region and species, and are documented in the [Regions](#regions) section. Unless specified otherwise, estimated CU-level spawner abundance is used as input in the [Catch and Run Size](#catch-and-runsize), [Recruits-per-Spawner](#recruits-per-spawner), and [Trends in Spawner Abundance](#trends-spawner-abundance) indicators described below and when assessing biological status for each CU (see [Appendix 3](#appendix-3)).
+We visualize both observed and estimated **spawner abundance** on the [Pacific Salmon Explorer](https://www.salmonexplorer.ca). This indicator provides estimates of the total numbers of spawners that return to spawn each year for each CU. **Observed** spawner abundance is the sum of all spawner survey data as documented in [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), while **estimated** spawner abundance generally accounts for streams that are not surveyed in a given year by following expansion procedures. The approach for expanding from observed spawners to estimate the total spawners in a CU depends on the region and species, and are documented in the [Regions](#regions) section. Unless specified otherwise, estimated CU-level spawner abundance is used as input in the [Catch and Run Size](#catch-run-size), [Recruits-per-Spawner](#recruits-per-spawner), and [Trends in Spawner Abundance](#trends-spawner-abundance) indicators described below and when assessing biological status for each CU (see [Appendix 3](#appendix-3)).
 
 #### Run Timing {#run-timing}
 
@@ -113,7 +113,7 @@ We visualize both observed and estimated **spawner abundance** on the [Pacific S
 
 Where data are available, we show the estimated run timing for each CU as the relative proportion of the CU that is expected to enter freshwater on a given day averaged over all historical information for the CU. Often, daily counts are not available but there is information on the dates for start (2.5th percentile), peak (50th percentile), and end (2.5th percentile) run timing. In these cases, we assume a mixed normal distribution with different standard deviations for the left- and right-hand sides based on the start and end dates, respectively. If the end date or start date is missing, we assume equal tails. If only peak or start date is available, we assume a standard deviation equal to the average standard deviation among other CUs of the same region and species. If applied, these assumptions are reflected in the run timing data quality criteria (see [Data Quality](#data-quality)).
 
-#### Catch & Run Size {#catch-and-runsize}
+#### Catch & Run Size {#catch-run-size}
 
 **Catch** estimates report the number of adult salmon caught in commercial (including both Canadian and U.S.), recreational, and First Nations' food, social, and ceremonial (FSC) fisheries. **Run size** refers to the number of adult salmon that return from the ocean in a given year, including both **escapement** (i.e. estimated spawner abundance) and those that are caught (i.e. catch) at a CU-level. The **exploitation rate** is calculated as the proportion of a given run caught in all fisheries. This indicator provides important information on the long-term harvest rate of each CU, which has implications for the number of salmon returning to spawning grounds over time.
 
@@ -641,7 +641,7 @@ Habitat state indicators are defined within Strategy 2 of the WSP [@StalbergEtAl
 
 Work to quantify habitat state indicators has started with two indicators related to climate changes in salmon watersheds: stream temperature and stream flows.
 
-#### Stream temperature
+#### Stream temperature {#stream-temperature}
 
 Stream temperature is an important variable that structures aquatic ecosystems, dictating the species that can survive and thrive in an area and affecting the behaviour and life-history timing of those present [@FicklinEtAl2023RethinkingRiverWater]. Stream temperature is generally projected to increase throughout BC and the Yukon with climate change, as air temperatures rise, and hydrologic regimes shift from snow- or glacier-dominated to rainfall-dominated. For example, summer water temperatures in the Fraser River have warmed by \~1.5 °C since the 1950s [@BritishColumbiaMinistryofEnvironment2015IndicatorsClimateChangea]. These rising temperatures may have negative impacts on all freshwater life stages of salmon. We were interested in identifying an indicator that would provide information on increases to stream temperatures that may negatively affect salmonids. We chose to focus on the 7-day running average of the daily maximum temperature (`7DADM`), which is sensitive to changes in high stream temperatures that persist for a period of several days or more.
 
@@ -663,7 +663,7 @@ In the Pacific Salmon Explorer, stream temperature monitoring locations can be s
 
 : (#tab:streamTempDataSources) Sources of stream temperature data shown in the Pacific Salmon Explorer.
 
-#### Stream flow
+#### Stream flow {#stream-flow}
 
 Climate change is impacting the hydrology of freshwater ecosystems by altering precipitation patterns, reducing the snowpack and hastening glacial retreat, and changing the timing of spring snow melt, leading to more variable flows and changing the timing of peak flows [@UlIslamEtAl2019QuantifyingProjectedChanges]. The impacts of changing hydrographs on salmon will depend on season and life-stage. However, in general we expect salmon to experience lower flows in late summer and early fall during critical adult migration and spawning periods.
 

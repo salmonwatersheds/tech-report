@@ -2,7 +2,7 @@
 "Skeena","Lake sockeye","Alastair",171,"SEL-20-01"
 "Skeena","Lake sockeye","Asitika",190,"SEL-22-01"
 "Skeena","Lake sockeye","Azuklotz",191,"SEL-22-02"
-"Skeena","Lake sockeye","Babine/Onerka",180,"SEL-21-02, SEL-21-13"
+"Skeena","Lake sockeye","Babine/Onerka",180,"SEL-21-02-EW, SEL-21-13"
 "Skeena","Lake sockeye","Babine (enhanced)",203,", SEL-21-02-F"
 "Skeena","Lake sockeye","Bear",192,"SEL-22-03"
 "Skeena","Lake sockeye","Bulkley/Maxan",181,"SEL-21-03, SEL-21-06"
@@ -20,12 +20,13 @@
 "Skeena","Lake sockeye","Morice/Atna",185,"SEL-21-01, SEL-21-07"
 "Skeena","Lake sockeye","Motase",197,"SEL-22-08"
 "Skeena","Lake sockeye","Nilkitkwa",186,"SEL-21-02-LW"
+"Skeena","Lake sockeye","Prudhomme",291,"SEL-19-49"
+"Skeena","Lake sockeye","Shawatlan",292,"SEL-19-54"
 "Skeena","Lake sockeye","Sicintine",198,"SEL-22-09"
 "Skeena","Lake sockeye","Slamgeesh",199,"SEL-22-10"
 "Skeena","Lake sockeye","Spawning",200,"SEL-22-11"
 "Skeena","Lake sockeye","Stephens",187,"SEL-21-09"
 "Skeena","Lake sockeye","Sustut",201,"SEL-22-12"
-"Skeena","Lake sockeye","Swan/Club",188,"SEL-21-04, SEL-21-10"
 "Skeena","Lake sockeye","Tahlo/Morrison",189,"SEL-21-11"
 "Skeena","River sockeye","Skeena River (river-type)",226,"SER-18"
 "Skeena","River sockeye","Skeena River-High Interior (river-type)",216,"SER-19"
@@ -41,7 +42,6 @@
 "Skeena","Chinook","Lower Skeena",210,"CK-48"
 "Skeena","Chinook","Middle Skeena-Large Lakes",222,"CK-53"
 "Skeena","Chinook","Middle Skeena-Mainstem Tributaries",217,"CK-54"
-"Skeena","Chinook","Sicintine",241,"CK-81"
 "Skeena","Chinook","Skeena Estuary",224,"CK-45"
 "Skeena","Chinook","Upper Bulkley River",221,"CK-55"
 "Skeena","Chinook","Upper Skeena",212,"CK-56"
@@ -53,18 +53,18 @@
 "Skeena","Chum","Lower Skeena",211,"CM-27"
 "Skeena","Chum","Middle Skeena",214,"CM-28"
 "Skeena","Chum","Skeena Estuary",220,"CM-26"
-"Skeena","Chum","Upper Skeena",242,NA
-"Skeena","Steelhead","Babine",284,NA
-"Skeena","Steelhead","Bulkley",287,NA
-"Skeena","Steelhead","Kispiox",283,NA
-"Skeena","Steelhead","Middle Skeena",285,NA
-"Skeena","Steelhead","Morice",289,NA
-"Skeena","Steelhead","Skeena Coastal Summers",288,NA
-"Skeena","Steelhead","Skeena Coastal Winters",290,NA
-"Skeena","Steelhead","Suskwa",286,NA
-"Skeena","Steelhead","Upper Skeena",282,NA
-"Skeena","Steelhead","Upper Skeena Headwaters",280,NA
-"Skeena","Steelhead","Upper Sustut",281,NA
+"Skeena","Chum","Upper Skeena",242,""
+"Skeena","Steelhead","Babine",284,""
+"Skeena","Steelhead","Bulkley",287,""
+"Skeena","Steelhead","Kispiox",283,""
+"Skeena","Steelhead","Middle Skeena",285,""
+"Skeena","Steelhead","Morice",289,""
+"Skeena","Steelhead","Skeena Coastal Summers",288,""
+"Skeena","Steelhead","Skeena Coastal Winters",290,""
+"Skeena","Steelhead","Suskwa",286,""
+"Skeena","Steelhead","Upper Skeena",282,""
+"Skeena","Steelhead","Upper Skeena Headwaters",280,""
+"Skeena","Steelhead","Upper Sustut",281,""
 "Nass","Lake sockeye","Bowser",420,"SEL-24-01"
 "Nass","Lake sockeye","Clements",418,"SEL-23-01"
 "Nass","Lake sockeye","Damdochax",421,"SEL-24-02"
@@ -86,8 +86,8 @@
 "Nass","Chum","Lower Nass",405,"CM-31"
 "Nass","Chum","Portland Canal-Observatory",406,"CM-32"
 "Nass","Chum","Portland Inlet",404,"CM-30"
-"Nass","Steelhead","Nass Summer",480,NA
-"Nass","Steelhead","Nass Winter",481,NA
+"Nass","Steelhead","Nass Summer",480,""
+"Nass","Steelhead","Nass Winter",481,""
 "Central Coast","Lake sockeye","Backland",529,"SEL-18-01"
 "Central Coast","Lake sockeye","Banks",540,"SEL-19-01"
 "Central Coast","Lake sockeye","Bloomfield",541,"SEL-19-02"
@@ -98,7 +98,6 @@
 "Central Coast","Lake sockeye","Canoona",532,"SEL-18-02"
 "Central Coast","Lake sockeye","Cartwright Creek",546,"SEL-19-07"
 "Central Coast","Lake sockeye","Chic Chic",547,"SEL-19-08"
-"Central Coast","Lake sockeye","Citeyats",548,"SEL-19-09"
 "Central Coast","Lake sockeye","Curtis Inlet",550,"SEL-19-11"
 "Central Coast","Lake sockeye","Dallain Creek",551,"SEL-19-12"
 "Central Coast","Lake sockeye","Deer",552,"SEL-19-13"
@@ -163,6 +162,7 @@
 "Central Coast","Lake sockeye","Tsimtack/Moore/Roger",599,"SEL-19-62"
 "Central Coast","Lake sockeye","Tuno Creek East",600,"SEL-19-63"
 "Central Coast","Lake sockeye","Tuno Creek West",601,"SEL-19-64"
+"Central Coast","Lake sockeye","Tuwartz",548,"SEL-19-09"
 "Central Coast","Lake sockeye","Tyler Creek",602,"SEL-19-65"
 "Central Coast","Lake sockeye","Wale Creek",603,"SEL-19-66"
 "Central Coast","Lake sockeye","Wannock (Owikeno)",527,"SEL-15-04"
@@ -186,7 +186,6 @@
 "Central Coast","Chinook","Rivers Inlet",510,"CK-37"
 "Central Coast","Chinook","Wannock",511,"CK-38"
 "Central Coast","Coho","Bella Coola-Dean Rivers",518,"CO-22"
-"Central Coast","Coho","Brim-Wahoo",521,"CO-28"
 "Central Coast","Coho","Douglas Channel-Kitimat Arm",522,"CO-29"
 "Central Coast","Coho","Hecate Strait Mainland",520,"CO-27"
 "Central Coast","Coho","Mussel-Kynoch",519,"CO-26"
@@ -202,35 +201,34 @@
 "Central Coast","Chum","Smith Inlet",500,"CM-12"
 "Central Coast","Chum","Spiller-Fitz-Hugh-Burke",503,"CM-15"
 "Central Coast","Chum","Wannock",502,"CM-14"
-"Central Coast","Steelhead","Central Coast Winter",682,NA
-"Central Coast","Steelhead","North Coast Summer",681,NA
-"Central Coast","Steelhead","North Coast Winter",680,NA
-"Central Coast","Steelhead","Transition Summer",683,NA
-"Fraser","Lake sockeye","Adams-Early Summer",760,NA
-"Fraser","Lake sockeye","Adams & Momich Lakes-Early Summer",751,"SEL-09-xx"
-"Fraser","Lake sockeye","Alouette-Early Summer",756,NA
+"Central Coast","Steelhead","Central Coast Winter",682,""
+"Central Coast","Steelhead","North Coast Summer",681,""
+"Central Coast","Steelhead","North Coast Winter",680,""
+"Central Coast","Steelhead","Transition Summer",683,""
+"Fraser","Lake sockeye","Adams-Early Summer",760,""
+"Fraser","Lake sockeye","Alouette-Early Summer",756,""
 "Fraser","Lake sockeye","Anderson-Seton-Early Summer",719,"SEL-06-01"
 "Fraser","Lake sockeye","Bowron-Early Summer",735,"SEL-07-01"
 "Fraser","Lake sockeye","Chilko-Early Summer",720,"SEL-06-02"
 "Fraser","Lake sockeye","Chilko-Summer",721,"SEL-06-03"
 "Fraser","Lake sockeye","Chilliwack-Early Summer (cyclic)",711,"SEL-03-01"
-"Fraser","Lake sockeye","Coquitlam-Early Summer",757,NA
+"Fraser","Lake sockeye","Coquitlam-Early Summer",757,""
 "Fraser","Lake sockeye","Cultus-Late",712,"SEL-03-02"
 "Fraser","Lake sockeye","Francois-Fraser-Summer",725,"SEL-06-07"
 "Fraser","Lake sockeye","Fraser-Early Summer",753,"SEL-06-06"
 "Fraser","Lake sockeye","Harrison-Downstream Migrating-Late",713,"SEL-03-03"
 "Fraser","Lake sockeye","Harrison-Upstream Migrating-Late",714,"SEL-03-04"
 "Fraser","Lake sockeye","Kamloops-Early Summer",740,"SEL-10-01"
-"Fraser","Lake sockeye","Kawkawa-Late",758,NA
+"Fraser","Lake sockeye","Kawkawa-Late",758,""
 "Fraser","Lake sockeye","Lillooet-Harrison-Late",716,"SEL-04-01"
-"Fraser","Lake sockeye","Momich-Early Summer",761,NA
+"Fraser","Lake sockeye","Momich-Early Summer",761,""
 "Fraser","Lake sockeye","Nadina-Francois-Early Summer",727,"SEL-06-20"
 "Fraser","Lake sockeye","Nahatlatch-Early Summer",718,"SEL-05-02"
-"Fraser","Lake sockeye","North Barriere-Early Summer",763,NA
+"Fraser","Lake sockeye","North Barriere-Early Summer",763,""
 "Fraser","Lake sockeye","North Barriere-Early Summer (de novo)",752,"SEL-10-03"
 "Fraser","Lake sockeye","Pitt-Early Summer",715,"SEL-03-05"
 "Fraser","Lake sockeye","Quesnel-Summer (cyclic)",728,"SEL-06-10"
-"Fraser","Lake sockeye","Seton-Summer",759,NA
+"Fraser","Lake sockeye","Seton-Summer",759,""
 "Fraser","Lake sockeye","Seton-Late (de novo)",729,"SEL-06-11"
 "Fraser","Lake sockeye","Shuswap-Early Summer (cyclic)",738,"SEL-09-02"
 "Fraser","Lake sockeye","Shuswap-Late (cyclic)",739,"SEL-09-03"
@@ -268,12 +266,12 @@
 "Fraser","Coho","North Thompson",709,"CO-9"
 "Fraser","Coho","South Thompson",708,"CO-8"
 "Fraser","Chum","Lower Fraser",701,"CM-2"
-"Fraser","Steelhead","Boundary Bay Winter",785,NA
-"Fraser","Steelhead","Fraser Canyon Summer",783,NA
-"Fraser","Steelhead","Lower Fraser Summer",784,NA
-"Fraser","Steelhead","Lower Fraser Winter",782,NA
-"Fraser","Steelhead","Mid Fraser Summer",780,NA
-"Fraser","Steelhead","Thompson Summer",781,NA
+"Fraser","Steelhead","Boundary Bay Winter",785,""
+"Fraser","Steelhead","Fraser Canyon Summer",783,""
+"Fraser","Steelhead","Lower Fraser Summer",784,""
+"Fraser","Steelhead","Lower Fraser Winter",782,""
+"Fraser","Steelhead","Mid Fraser Summer",780,""
+"Fraser","Steelhead","Thompson Summer",781,""
 "Vancouver Island & Mainland Inlets","Lake sockeye","Alice",945,"SEL-13-01"
 "Vancouver Island & Mainland Inlets","Lake sockeye","Canoe Creek",946,"SEL-13-02"
 "Vancouver Island & Mainland Inlets","Lake sockeye","Cecilia",947,"SEL-13-03"
@@ -361,12 +359,12 @@
 "Vancouver Island & Mainland Inlets","Chum","Southern Coastal Streams",900,"CM-8"
 "Vancouver Island & Mainland Inlets","Chum","Southwest & West Vancouver Island",978,"CM-10"
 "Vancouver Island & Mainland Inlets","Chum","Upper Knight",979,"CM-9"
-"Vancouver Island & Mainland Inlets","Steelhead","East Vancouver Island Summer",985,NA
-"Vancouver Island & Mainland Inlets","Steelhead","East Vancouver Island Winter",981,NA
-"Vancouver Island & Mainland Inlets","Steelhead","South Coast Summer",983,NA
-"Vancouver Island & Mainland Inlets","Steelhead","South Coast Winter",980,NA
-"Vancouver Island & Mainland Inlets","Steelhead","West Vancouver Island Summer",984,NA
-"Vancouver Island & Mainland Inlets","Steelhead","West Vancouver Island Winter",982,NA
+"Vancouver Island & Mainland Inlets","Steelhead","East Vancouver Island Summer",985,""
+"Vancouver Island & Mainland Inlets","Steelhead","East Vancouver Island Winter",981,""
+"Vancouver Island & Mainland Inlets","Steelhead","South Coast Summer",983,""
+"Vancouver Island & Mainland Inlets","Steelhead","South Coast Winter",980,""
+"Vancouver Island & Mainland Inlets","Steelhead","West Vancouver Island Summer",984,""
+"Vancouver Island & Mainland Inlets","Steelhead","West Vancouver Island Winter",982,""
 "Haida Gwaii","Lake sockeye","Ain-Skundale-Ian",819,"SEL-17-01"
 "Haida Gwaii","Lake sockeye","Awun",820,"SEL-17-02"
 "Haida Gwaii","Lake sockeye","Fairfax",821,"SEL-17-03"
@@ -396,10 +394,10 @@
 "Haida Gwaii","Chum","North Haida Gwaii-Stanley Creek",800,"CM-25"
 "Haida Gwaii","Chum","Skidegate",804,"CM-22"
 "Haida Gwaii","Chum","West Haida Gwaii",803,"CM-23"
-"Haida Gwaii","Steelhead","Haida Gwaii Winter",880,NA
+"Haida Gwaii","Steelhead","Haida Gwaii Winter",880,""
 "Columbia","Lake sockeye","Osoyoos",1300,"SEL-01-01"
 "Columbia","Chinook","Okanagan",301,"CK-1"
-"Columbia","Steelhead","Mid Columbia Summer",1380,NA
+"Columbia","Steelhead","Mid Columbia Summer",1380,""
 "Yukon","Chinook","Big Salmon",1201,"CK-70"
 "Yukon","Chinook","Middle Yukon",1204,"CK-73"
 "Yukon","Chinook","Nordenskiold",1202,"CK-71"
@@ -420,47 +418,47 @@
 "Yukon","Chum","Stewart",1218,"CM-48"
 "Yukon","Chum","Teslin",1219,"CM-38"
 "Yukon","Chum","White",1215,"CM-44"
-"Transboundary","Lake sockeye","Blanchard",1031,"SEL-30-01"
-"Transboundary","Lake sockeye","Border",1024,"SEL-25-01"
-"Transboundary","Lake sockeye","Christina",1025,"SEL-26-01"
-"Transboundary","Lake sockeye","Chutine",1036,"SEL-26-03"
-"Transboundary","Lake sockeye","King Salmon",1033,"SEL-28-05"
-"Transboundary","Lake sockeye","Klukshu",1038,"SEL-30-02"
-"Transboundary","Lake sockeye","Kuthai",1027,"SEL-28-01"
-"Transboundary","Lake sockeye","Little Trapper",1028,"SEL-28-02"
-"Transboundary","Lake sockeye","Nesketahin",1039,"SEL-30-03"
-"Transboundary","Lake sockeye","Tahltan",1026,"SEL-26-02"
-"Transboundary","Lake sockeye","Tatsamenie",1029,"SEL-28-03"
-"Transboundary","Lake sockeye","Whiting",1037,"SEL-27-01"
-"Transboundary","River sockeye","Alsek (river-type)",1021,"SER-24"
-"Transboundary","River sockeye","Chilkat (river-type)",1022,"SER-023"
-"Transboundary","River sockeye","Northern Transboundary Fjords (river-type)",1023,"SER-22"
-"Transboundary","Pink (odd)","Transboundary Fjords (odd)",1020,"PKO-19"
-"Transboundary","Pink (even)","Transboundary Fjords (even)",1019,"PKE-13"
-"Transboundary","Chinook","Alsek",1004,"CK-67"
-"Transboundary","Chinook","Lynn Canal",1005,"CK-66"
-"Transboundary","Chinook","Stikine-Early Timing",1010,"CK-60"
-"Transboundary","Chinook","Stikine-Late Timing",1011,"CK-61"
-"Transboundary","Chinook","Taku-Early Timing",1006,"CK-63"
-"Transboundary","Chinook","Taku-Late Timing",1008,"CK-65"
-"Transboundary","Chinook","Taku-Mid Timing",1007,"CK-64"
-"Transboundary","Chinook","Unuk",1012,"CK-59"
-"Transboundary","Chinook","Whiting",1009,"CK-62"
-"Transboundary","Coho","Alsek",1013,"CO-45"
-"Transboundary","Coho","Lower Stikine",1017,"CO-39"
-"Transboundary","Coho","Lynn Canal",1014,"CO-44"
-"Transboundary","Coho","Taku-Early Timing",1034,"CO-41"
-"Transboundary","Coho","Taku-Late Timing",1015,"CO-42"
-"Transboundary","Coho","Taku-Mid Timing",1035,"CO-43"
-"Transboundary","Coho","Unuk",1018,"CO-38"
-"Transboundary","Coho","Whiting",1016,"CO-40"
-"Transboundary","Chum","Lower Stikine",1032,"CM-34"
-"Transboundary","Chum","Lynn Canal",1000,"CM-37"
-"Transboundary","Chum","Taku",1001,"CM-36"
-"Transboundary","Chum","Unuk",1003,"CM-33"
-"Transboundary","Chum","Whiting",1002,"CM-35"
-"Transboundary","Steelhead","Alsek Summer",1080,NA
-"Transboundary","Steelhead","Stikine Summer",1083,NA
-"Transboundary","Steelhead","Stikine Winter",1084,NA
-"Transboundary","Steelhead","Taku Summer",1081,NA
-"Transboundary","Steelhead","Taku Winter",1082,NA
+"Northern Transboundary","Lake sockeye","Blanchard",1031,"SEL-30-01"
+"Northern Transboundary","Lake sockeye","Border",1024,"SEL-25-01"
+"Northern Transboundary","Lake sockeye","Christina",1025,"SEL-26-01"
+"Northern Transboundary","Lake sockeye","Chutine",1036,"SEL-26-03"
+"Northern Transboundary","Lake sockeye","King Salmon",1033,"SEL-28-05"
+"Northern Transboundary","Lake sockeye","Klukshu",1038,"SEL-30-02"
+"Northern Transboundary","Lake sockeye","Kuthai",1027,"SEL-28-01"
+"Northern Transboundary","Lake sockeye","Little Trapper",1028,"SEL-28-02"
+"Northern Transboundary","Lake sockeye","Nesketahin",1039,"SEL-30-03"
+"Northern Transboundary","Lake sockeye","Tahltan",1026,"SEL-26-02"
+"Northern Transboundary","Lake sockeye","Tatsamenie",1029,"SEL-28-03"
+"Northern Transboundary","Lake sockeye","Whiting",1037,"SEL-27-01"
+"Northern Transboundary","River sockeye","Alsek (river-type)",1021,"SER-24"
+"Northern Transboundary","River sockeye","Chilkat (river-type)",1022,"SER-023"
+"Northern Transboundary","River sockeye","Northern Transboundary Fjords (river-type)",1023,"SER-22"
+"Northern Transboundary","Pink (odd)","Transboundary Fjords (odd)",1020,"PKO-19"
+"Northern Transboundary","Pink (even)","Transboundary Fjords (even)",1019,"PKE-13"
+"Northern Transboundary","Chinook","Alsek",1004,"CK-67"
+"Northern Transboundary","Chinook","Lynn Canal",1005,"CK-66"
+"Northern Transboundary","Chinook","Stikine-Early Timing",1010,"CK-60"
+"Northern Transboundary","Chinook","Stikine-Late Timing",1011,"CK-61"
+"Northern Transboundary","Chinook","Taku-Early Timing",1006,"CK-63"
+"Northern Transboundary","Chinook","Taku-Late Timing",1008,"CK-65"
+"Northern Transboundary","Chinook","Taku-Mid Timing",1007,"CK-64"
+"Northern Transboundary","Chinook","Unuk",1012,"CK-59"
+"Northern Transboundary","Chinook","Whiting",1009,"CK-62"
+"Northern Transboundary","Coho","Alsek",1013,"CO-45"
+"Northern Transboundary","Coho","Lower Stikine",1017,"CO-39"
+"Northern Transboundary","Coho","Lynn Canal",1014,"CO-44"
+"Northern Transboundary","Coho","Taku-Early Timing",1034,"CO-41"
+"Northern Transboundary","Coho","Taku-Late Timing",1015,"CO-42"
+"Northern Transboundary","Coho","Taku-Mid Timing",1035,"CO-43"
+"Northern Transboundary","Coho","Unuk",1018,"CO-38"
+"Northern Transboundary","Coho","Whiting",1016,"CO-40"
+"Northern Transboundary","Chum","Lower Stikine",1032,"CM-34"
+"Northern Transboundary","Chum","Lynn Canal",1000,"CM-37"
+"Northern Transboundary","Chum","Taku",1001,"CM-36"
+"Northern Transboundary","Chum","Unuk",1003,"CM-33"
+"Northern Transboundary","Chum","Whiting",1002,"CM-35"
+"Northern Transboundary","Steelhead","Alsek Summer",1080,""
+"Northern Transboundary","Steelhead","Stikine Summer",1083,""
+"Northern Transboundary","Steelhead","Stikine Winter",1084,""
+"Northern Transboundary","Steelhead","Taku Summer",1081,""
+"Northern Transboundary","Steelhead","Taku Winter",1082,""

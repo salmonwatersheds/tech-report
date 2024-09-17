@@ -51,7 +51,7 @@ multi_cuid <- names(which(tapply(app1_full$pooledcuid, app1_full$pooledcuid, len
 app1_full[which(app1_full$pooledcuid %in% multi_cuid), ]
 
 # Fix Club/Swan for now
-app1_full$cu_index[which(app1_full$cu_name_dfo == "Club Lake")] <- "SEL-21-04"
+# app1_full$cu_index[which(app1_full$cu_name_dfo == "Club Lake")] <- "SEL-21-04"
 app1_full$cu_index[app1_full$cu_name_dfo == "Babine-Pinkut"] <- ""
 
 ###############################################################################
@@ -69,6 +69,8 @@ app1_display <- data.frame(
 for(i in 1:length(multi_cuid)){
 	app1_display$Full.CU.Index[app1_display$CUID == multi_cuid[i]] <- paste(app1_full$cu_index[which(app1_full$pooledcuid ==  multi_cuid[i])], sep ='', collapse = ', ')
 }
+
+app1_display$Full.CU.Index[is.na(app1_display$Full.CU.Index)] <- ""
 
 ###############################################################################
 # Write to csv

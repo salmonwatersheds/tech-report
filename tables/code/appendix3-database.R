@@ -1,5 +1,5 @@
 ###############################################################################
-# Appendix 4: Biological Status Details
+# Appendix 3: Biological Status Details
 # Compile outcome from dataset102 from various regions
 ###############################################################################
 
@@ -56,8 +56,8 @@ error=function(cond) {
 # Import appendix4 view from appdata
 ###############################################################################
 
-# Get app4 view
-app4 <- dbGetQuery(
+# Get app3 view
+app3 <- dbGetQuery(
 	conn = connec, 
 	statement = "SELECT * FROM appdata.vwdl_setr_appendix4"
 )
@@ -66,32 +66,32 @@ app4 <- dbGetQuery(
 # Make pretty for table display
 ###############################################################################
 
-app4_display <- data.frame(
-	Region = app4$region,
-	Species = app4$species_name,
-	Conservation.Unit = app4$cu_name_pse,
-	Current.Spawner.Abundance = prettierNum(app4$curr_spw),
-	Years = ifelse(is.na(app4$curr_spw), "", paste0(app4$curr_spw_start_year, "-", app4$curr_spw_end_year)),
-	Years.of.Data = stripNA(app4$years_of_data),
-	Percentile = stripNA(app4$percentile_status),
-	SR = stripNA(app4$sr_status),
-	Probability.of.Red.Status = ifelse(is.na(app4$sr_red_prob), " ", paste0(app4$sr_red_prob*100, "%")),
-	Probability.of.Amber.Status = ifelse(is.na(app4$sr_yellow_prob), " ", paste0(app4$sr_yellow_prob*100, "%")),
-	Probability.of.Green.Status = ifelse(is.na(app4$sr_green_prob), " ", paste0(app4$sr_green_prob*100, "%")),
-	WSP = stripNA(app4$wsp_status),
-	WSP.Year = stripNA(app4$wsp_status_yr),
-	COSEWIC = stripNA(app4$cosewic_status),
-	COSEWIC.Year = stripNA(app4$cosewic_status_yr),
-	Province = stripNA(app4$province_status),
-	Province.Year = stripNA(app4$province_status_yr),
-	S25 = ifelse(is.na(app4$`25%_spw`), " ", paste0(prettierNum(round(app4$`25%_spw`)), " (",  prettierNum(round(app4$`25%_spw_lower`)), " - ", prettierNum(round(app4$`25%_spw_upper`)), ")")),
-	S50 = ifelse(is.na(app4$`75%_spw`), " ", paste0(prettierNum(round(app4$`75%_spw`)), " (",  prettierNum(round(app4$`75%_spw_lower`)), " - ", prettierNum(round(app4$`75%_spw_upper`)), ")")),
-	Sgen = ifelse(is.na(app4$sgen), " ", paste0(prettierNum(round(app4$sgen)), " (",  prettierNum(round(app4$sgen_lower)), " - ", prettierNum(round(app4$sgen_upper)), ")")),
-	Smsy = ifelse(is.na(app4$smsy80), "", paste0(prettierNum(round(app4$smsy80)), " (",  prettierNum(round(app4$smsy80_lower)), " - ", prettierNum(round(app4$smsy80_upper)), ")"))
+app3_display <- data.frame(
+	Region = app3$region,
+	Species = app3$species_name,
+	Conservation.Unit = app3$cu_name_pse,
+	Current.Spawner.Abundance = prettierNum(app3$curr_spw),
+	Years = ifelse(is.na(app3$curr_spw), "", paste0(app3$curr_spw_start_year, "-", app3$curr_spw_end_year)),
+	Years.of.Data = stripNA(app3$years_of_data),
+	Percentile = stripNA(app3$percentile_status),
+	SR = stripNA(app3$sr_status),
+	Probability.of.Red.Status = ifelse(is.na(app3$sr_red_prob), " ", paste0(round(app3$sr_red_prob, 1), "%")),
+	Probability.of.Amber.Status = ifelse(is.na(app3$sr_yellow_prob), " ", paste0(round(app3$sr_yellow_prob, 1), "%")),
+	Probability.of.Green.Status = ifelse(is.na(app3$sr_green_prob), " ", paste0(round(app3$sr_green_prob, 1), "%")),
+	WSP = stripNA(app3$wsp_status),
+	WSP.Year = stripNA(app3$wsp_status_yr),
+	COSEWIC = stripNA(app3$cosewic_status),
+	COSEWIC.Year = stripNA(app3$cosewic_status_yr),
+	Province = stripNA(app3$province_status),
+	Province.Year = stripNA(app3$province_status_yr),
+	S25 = ifelse(is.na(app3$`25%_spw`), " ", paste0(prettierNum(round(app3$`25%_spw`)), " (",  prettierNum(round(app3$`25%_spw_lower`)), " - ", prettierNum(round(app3$`25%_spw_upper`)), ")")),
+	S50 = ifelse(is.na(app3$`75%_spw`), " ", paste0(prettierNum(round(app3$`75%_spw`)), " (",  prettierNum(round(app3$`75%_spw_lower`)), " - ", prettierNum(round(app3$`75%_spw_upper`)), ")")),
+	Sgen = ifelse(is.na(app3$sgen), " ", paste0(prettierNum(round(app3$sgen)), " (",  prettierNum(round(app3$sgen_lower)), " - ", prettierNum(round(app3$sgen_upper)), ")")),
+	Smsy = ifelse(is.na(app3$smsy80), "", paste0(prettierNum(round(app3$smsy80)), " (",  prettierNum(round(app3$smsy80_lower)), " - ", prettierNum(round(app3$smsy80_upper)), ")"))
 )
 
 ###############################################################################
 # Write to csv
 ###############################################################################
 
-write.csv(app4_display, file = "tables/appendix4.csv", row.names = FALSE)
+write.csv(app3_display, file = "tables/appendix3.csv", row.names = FALSE)

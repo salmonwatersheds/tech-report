@@ -12,10 +12,10 @@ library(RPostgreSQL)
 
 status_colours <- c("#C06263", "#DED38B", "#83B686")
 
-app4 <- read.csv("tables/appendix4.csv", na.strings = NA)
+app4 <- read.csv("tables/appendix3.csv", na.strings = NA)
 
-# ***Remove Yukon and Transboundary for now ***
-app4 <- app4[which(app4$Region %in% c("Yukon", "Transboundary") == FALSE), ]
+# ***Remove Yukon for now ***
+app4 <- app4[which(app4$Region %in% c("Yukon") == FALSE), ]
 
 # *** Remove steelhead for now ***
 # app4 <- app4[which(app4$Species != "Steelhead"), ]

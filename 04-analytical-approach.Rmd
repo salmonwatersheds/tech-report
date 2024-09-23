@@ -127,15 +127,17 @@ For species with variable age-at-return, estimating the number of recruits for a
 
 **Trends in spawner abundance** is an estimate of the average change in estimated spawner abundance at the CU-level. This indicator highlights long-term changes that could otherwise be masked by high interannual variability in spawner abundance. 
 
-When calculating trends, we take the natural logarithm of spawner abundance and smooth time series using a one-generation moving average, which minimizes the impact of outliers (i.e. anomalously high or low abundance years) on the overall trend [@DEon-EggertsonEtAl2015ReliableIdentificationDeclining]. We fit a linear model to estimate the slope in log-transformed, smoothed spawner abundance over time. When estimated spawner abundance is zero, which occurs for only a few years, we add a small number (0.01) before log transforming and smoothing. Linear models are fitted to log-transformed, smoothed spawner abundance over the most recent three generations to estimate the short-term trend, and over all years of data to estimate the long-term trend. 
+When calculating trends, we take the natural logarithm of spawner abundance and smooth the time series using a one-generation moving average, which minimizes the impact of outliers (i.e. anomalously high or low abundance years) on the overall trend [@DEon-EggertsonEtAl2015ReliableIdentificationDeclining]. We fit a linear model to estimate the slope in log-transformed, smoothed spawner abundance over time. When estimated spawner abundance is zero, which occurs for only a few years, we add a small number (0.01) before log-transforming and smoothing. Linear models are fitted to log-transformed, smoothed spawner abundance over the most recent three generations to estimate the short-term trend, and over all years of data to estimate the long-term trend. 
 
-We report the magnitude of the trend as the total percent change over the short-term or long-term from the model-predicted abundance. For the short-term trend, this total percent change is calculated as 
+We report the magnitude of the trend as the total percent change over the short-term and long-term from the model-predicted abundance. The total percent change for the short-term trend is calculated as:
 $$\left( \exp(m_{3G} * (3G -1)) - 1 \right)\times 100, $$ 
-where $m_{3G}$ is the estimated slope over the most recent three generations and $G$ is the generation length in years. If there are fewer than $G$ years of estimated spawner abundance in the most recent three generations, then we do not show the short-term trend. For the long-term trend, this total percent change is calculated as 
-$$\left( \exp(m_{LT} * (Y_t - Y_0)) - 1 \right) \times 100,$$ 
-where $m_{LT}$ is the estimated slope over all years of data, $Y_t$ is the most recent year of data (e.g. 2022), and $Y_0$ is the first year of data (e.g. 1970). 
+where $m_{3G}$ is the estimated slope over the most recent three generations and $G$ is the generation length in years. We do not show the short-term trend if there are fewer than $G$ years with estimated spawner abundance in the most recent three generations. 
 
-Assuming the data are reliable, considering trends in population abundance over longer time periods may be more likely to detect true changes in abundance and trigger an appropriate management response [@DEon-EggertsonEtAl2015ReliableIdentificationDeclining; @PorsztEtAl2012ReliabilityIndicatorsDeclineb].
+The total percent change for the long-term trend is calculated as:
+$$\left( \exp(m_{LT} * (Y_t - Y_0)) - 1 \right) \times 100,$$ 
+where $m_{LT}$ is the estimated slope over all years of data, $Y_0$ and $Y_t$ are the oldest and most recent years in the time series, respectively (e.g. 1970 and 2022).
+
+Assuming the data are reliable, the long-term trend is better at detecting true changes in abundance, enabling more appropriate management responses [@DEon-EggertsonEtAl2015ReliableIdentificationDeclining; @PorsztEtAl2012ReliabilityIndicatorsDeclineb].
 
 #### Biological Status
 

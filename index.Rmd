@@ -1,7 +1,7 @@
 ---
 title: Methods for Assessing Status and Trends in Pacific Salmon Conservation Units and their Freshwater Habitats
 author: "Pacific Salmon Foundation"
-date: "`r Sys.Date()`"
+date: "`r strftime(Sys.Date(), format = '%d-%b-%Y')`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: tech-report-bib.json

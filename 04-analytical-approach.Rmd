@@ -403,11 +403,24 @@ The density-dependence parameter is estimated independently for each CU using CU
 
 <!-- SP: Question: Do we use habitat capacity estimates for ALL SEL CUs?? Or only some? Also, note that prior on Smax should be max spawners not mean spawners. Or should it? Korman and English (2013) use mean...  If these data are unavailable, we use $S_{\text{max},i} = 1 / \hat{S}_{\text{max},i}$ where $\hat{S}_{\text{max},i}$ is the maximum observed spawner abundance for CU $i$. -->
 
-We estimate parameters $a_i$ and $b_i$ for each CU $i$ by fitting the linearized Ricker model to spawner and recruit data: $$ \log \left( \frac{R_{i,t}}{S_{i,t}} \right) = a_i - b_i S_{i,t}$$ where $a_i$ is drawn from a region/species hyperdistribution as described above, with priors $\log (\mu_a) \sim N(0.5, 1000)$, $\sigma_a = \sqrt(1/\tau_a)$ where $\tau_a \sim \text{Gamma}(0.5, 0.5)$. The above linearized Ricker model is fit to all CUs for a given region and species together using the R package `R2jags` [@SuYajima2021R2jagsUsingRun], with a total number of iterations of 100,000, removing 5000 iterations for burnin and applying a thinning interval of 10. The resulting posterior draws for $a_i$ and $b_i$ are used to calculate posteriors for $S_{MSY}$ and $S_{GEN}$. The posteriors for these upper and lower benchmarks are summarized by calculating the highest posterior density (HPD) and 95% highest posterior density interval (HPDI). We chose to use these summary statistics instead of the mean or median because the posteriors for $S_{MSY}$ and $S_{GEN}$ were, in some cases, quite skewed given the tendancy for spawner abundance to be log-normally distributed. For CUs with extremely low productivity, $S_{MSY}$ can be less than $S_{GEN}$, yielding benchmark values that do not make biological sense [@HoltEtAl2018EvaluatingBenchmarksBiological; @PeacockEtAl2020EvaluatingConsequencesCommon]. We do not use spawner-recruit benchmarks in these cases and instead apply percentile benchmarks.
+We estimate parameters $a_i$ and $b_i$ for each CU $i$ by fitting the linearized Ricker model to spawner and recruit data: 
+
+$$ \log \left( \frac{R_{i,t}}{S_{i,t}} \right) = a_i - b_i S_{i,t}$$ 
+
+where $a_i$ is drawn from a region/species hyperdistribution as described above, with priors $\log (\mu_a) \sim N(0.5, 1000)$, $\sigma_a = \sqrt(1/\tau_a)$ where $\tau_a \sim \text{Gamma}(0.5, 0.5)$. The above linearized Ricker model is fit to all CUs for a given region and species together using the R package `R2jags` [@SuYajima2021R2jagsUsingRun], with a total number of iterations of 100,000, removing 5000 iterations for burnin and applying a thinning interval of 10. The resulting posterior draws for $a_i$ and $b_i$ are used to calculate posteriors for $S_{MSY}$ and $S_{GEN}$. The posteriors for these upper and lower benchmarks are summarized by calculating the highest posterior density (HPD) and 95% highest posterior density interval (HPDI). We chose to use these summary statistics instead of the mean or median because the posteriors for $S_{MSY}$ and $S_{GEN}$ were, in some cases, quite skewed given the tendancy for spawner abundance to be log-normally distributed. For CUs with extremely low productivity, $S_{MSY}$ can be less than $S_{GEN}$, yielding benchmark values that do not make biological sense [@HoltEtAl2018EvaluatingBenchmarksBiological; @PeacockEtAl2020EvaluatingConsequencesCommon]. We do not use spawner-recruit benchmarks in these cases and instead apply percentile benchmarks.
+
+The posterior distributions of the model parameters are obtained using the Markov Chain Monte Carlo (MCMC) method implemented with a Gibbs sampling algorithm (JAGS). The model likelihood is calculated assuming the error term, $\epsilon_{i}$, follows a normal distribution centered at zero with a standard deviation $\sigma_{i,\epsilon}$:
+
+$$ log(\frac{R_{i,t}}{S_{i,t}}) = a_{i} - b_{i}S_{i,t} + \epsilon_{i}$$
+
+$$ \epsilon_{i} \sim N(0,\sigma_{i,\epsilon}) $$
+
+$$ \sigma_{i,\epsilon} \sim Unif(0.05,10) $$
 
 <!-- Need to add description of generation length. -->
 
 Biological status of each CU is assessed by comparing the geometric mean spawner abundance over the most recent generation against upper and lower benchmarks. We compare the geometric mean spawner abundance against all posterior draws of $S_{MSY}$ and $S_{GEN}$ to yield a probability of a CU having each status outcome. The status colour shown on the Pacific Salmon Explorer is the most likely outcome (i.e. the one with the highest posterior probability). The HPD and 95% HPDI for the lower and upper spawner-recruit benchmarks are also shown. See @KormanEnglish2013BenchmarkAnalysisPacific for further details, including a discussion of uncertainty and possible biases in benchmarks and status assessments derived from spawner-recruit models.
+
 
 #### Percentile Benchmarks {#percentile-benchmarks}
 

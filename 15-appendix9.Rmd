@@ -1,0 +1,11 @@
+# Appendix 9: Method for Assessing Cumulative Habitat Pressure {#appendix-9 .unnumbered}
+
+Cumulative Pressures aggregates the seven indicator threat categories (forest harvest, fires, insect damage, agriculture, urban & industrial development, roads, mines) into a single composite threat score using a ‘roll-up’ rule set based on the number of the indicators that were rated high (red), moderate (amber), or low (green):
+
+- If all seven core pressure indicators are rated low, then the cumulative pressures score for a watershed is low.
+
+- If one or more indicators is rated high or if three or more indicators are rated moderate, then the cumulative pressures score for a watershed is high.
+
+- For all other scenarios, the cumulative pressures score for a watershed is moderate.
+
+Each indicator is weighted equally with respect to impacts on salmon habitats.

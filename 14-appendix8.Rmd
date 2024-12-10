@@ -1,0 +1,40 @@
+# Appendix 8: Spatial Processing for Habitat Indicators {#appendix-8 .unnumbered}
+
+__Forest Harvest__
+
+Adjustment factor to forest harvest polygons to account for reduced impacts of forest harvest on peak flows and other hydrological processes over time, as in table below (adjusted from WSEP 2021):
+
+| Time Since Disturbance | Peak Flow Disturbance Factor |
+|:--------------|:-----------|
+| 1-10 years | 100% |
+| 11-20 years | 75% |
+|21-30 years | 50% |
+|31-40 years | 25% |
+|40-60 years | 10% |
+| >60 years | 0%|
+: Table 8.1 Peak flow disturbance factor by time since disturbance.
+
+__Fire__
+
+In addition to the extent of hydrological recovery of the watershed since time of wildfire disturbance (time since disturbance as above for forest harvest) an additional regionally-based adjustment factor to burned polygons is incorporated to account for assumed variable impacts of burned areas on peak flows based on fire severity, as in table below (from WSEP 2021):
+
+| Burn Severity | Burn Severity Disturbance Factor - Coast | Burn Severity Disturbance Factor - Interior |
+|:---------------|:-----------|:-----------|
+| Low | 15% | 25% |
+| Moderate | 75% | 75%|
+| High | 100% | 100% |
+| Unknown | 40% | 60% |
+: Table 8.2  Severity disturbance factor by coastal or interior burn severity.
+
+__Insect Damage__
+
+In addition to hydrological recovery since time of insect disturbance (time since disturbance as above for forest harvest) an additional adjustment factor to insect damaged polygons is incorporated to account for the assumed differential impacts of insect damage on peak flows over time. Death of trees from insect damage only becomes a concerning factor with high rates of mortality across a watershed and retained dead trees do not represent the same level of impact to watershed peak flows as trees that are removed from the watershed through forest harvesting. Forest mortality adjustment factor is calculated as (from WSEP 2021):
+
+| Insect Damage Severity | Insect Damage Severity Disturbance Factor | 
+|:----------------|:-----------|
+| Trace | 0% | 
+| Light | 0% |
+| Moderate | 50% |
+| High | 100% | 
+| Very High | 100% | 
+: Table 8.3 Mortality disturbance factor by insect damage severity.

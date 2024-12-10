@@ -51,5 +51,5 @@
 | Runways_25k | N/A | Same as above | GeoYukon | Urban & Industrial | Yukon |
 | Canvec Pipelines 50K canvec_50K_YT_Res_MGT.gdb\pipeline_1 | N/A | Same as above | Natural Resources Canada | Urban & Industrial | Yukon |
 
-
+: Table 7.1: Spatial data processing methods for habitat pressure indicators.
 

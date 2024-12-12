@@ -555,7 +555,7 @@ Once we have identified salmon habitat and ZOIs, we use a set of habitat pressur
 
 Descriptions of each of these indicators are provided in Table \@ref(tab:habInddefs).
 
-| Indicator      | Definition             | Relevance             | Indicator Reference(s)           |
+| Indicator      | Definition             | Relevance             | Indicator Reference(s)†           |
 |:---------------|:-------------------|:-----------------------|:-----------------------|
 | Forest Harvest |  Impacts on peak flows and other hydrological processes from areas within a watershed where trees have been cut and removed for processing at sawmills or pulp mills. | Forest harvest (logging) results in a reduction in forest cover that can change watershed hydrology by affecting rainfall interception, transpiration, and snowmelt processes. Such changes in hydrology can affect salmon habitats through altered peak flows, low flows, annual water yields, and elevated stream temperatures. | MOF 2001; Smith and Redding 2012; Grant et al. 2008; Winkler et al. 2015; Stednick 1996; MacDonald et al. 1997; Watertight Solutions Ltd. 2007; Guillemette et al. 2005; Buma and Livneh 2017, Hou and Wei 2024, Naman et al. 2023; Tschaplinski and Pike 2017; Wilson et al. 2022; Crampe et al. 2020; Giles-Hansen et al. 2019; Goeking and Tarboton 2020; Gronsdahl et al. 2019; Moore and Wondzell 2005; Winkler and Boon 2017; Winkler et al. 2015; Hou et al. 2024 |
 | Fire | Impacts on peak flows and other hydrological processes from areas within a watershed where there has been combustion of forests and woodlands. | Fires can result in a reduction in forest cover that can change watershed hydrology by affecting rainfall interception, transpiration, and snowmelt processes. Such changes in hydrology can affect salmon habitats through altered peak flows, low flows, annual water yields, and elevated stream temperatures. | Hallema et al. 2018; Goeking and Tarboton 2022; Williams et al. 2022; Dunham et al. 2007 |
@@ -565,6 +565,8 @@ Descriptions of each of these indicators are provided in Table \@ref(tab:habIndd
 |Agriculture | Areas within a watershed that have been converted from natural landscapes to support agricultural production (i.e. crops or livestock). | Agricultural development can increase runoff in a watershed, destabilizing flows, water temperatures, and channel morphologies in stream habitats used by salmon. Agriculture can also impact water and habitat quality through the introduction of contaminants and nutrients found in agricultural herbicides and fertilizers, and a reduced supply of coarse organic matter for spawning and rearing. | Smith and Redding 2012; MOF 2001 Meehan 1991; Forman and Alexander 1998; Gustavson and Brown 2002; Valdal and Quinn 2011; Gucinski et al. 2008; Reid and Dunne 1984 |
 | Mines | Locations within a watershed that have been excavated for removal of coal, minerals, or gravel. | The footprint of a mine and mining activity can change geomorphology and the hydrological processes of nearby water bodies. Runoff from mines can also introduce fine sediments and toxic contaminants into streams, impairing water quality, salmon prey densities, and overall survival and productivity of salmon. | Nelson et al. 1991; Kondolf 1991; Daniel et al. 2015; Sergeant et al. 2022 |
 : (#tab:habInddefs) Habitat pressure indicator definitions and their relevance to salmon habitat.
+
+<small>†See [Appendix 10](#appendix-10) for the reference list specific to Tables \@ref(tab:habInddefs) and \@ref(tab:habBenchmarks).</small>
 
 
 #### Data Sources {#hab-data-sources}
@@ -590,7 +592,7 @@ We quantify each indicator at the scale of assessment watersheds using ArcGIS Pr
 
 Similar to the biological status assessments, we quantify benchmarks for each habitat pressure indicator to assess the relative threat of degradataion to salmon habitat. Using benchmarks allows us to categorize threat as low, moderate, or high (green, amber, or red, respectively). For the seven habitat pressure indicators we use empirical benchmarks for habitat pressure indicators based on published literature (Table \@ref(tab:habBenchmarks)).
 
-| Indicator      | Pressure Metric           | Watershed Threat Benchmark           | Benchmark Reference(s)   |
+| Indicator      | Pressure Metric           | Watershed Threat Benchmark           | Benchmark Reference(s)†   |
 |:---------------|:-------------------|:-----------------------|:-----------------------|
 | Forest Harvest | % of total watershed area that has been harvested in the last 60 years with disturbance effects adjusted by time since forest harvest to reflect the progressive hydrological recovery of the watershed.*  | <20% of watershed area harvested (low threat) <br/> 20 - 30% of watershed area harvested (moderate threat) <br/> >30% of watershed area harvested (high threat) | Stednick 1996; MacDonald et al. 1997; Watertight Solutions Ltd. 2007; Guillemette et al. 2005; Buma and Livneh 2017; Winkler and Boon 2017; Winkler et al. 2015; Moore and Scott 2005; Zhang and Wei 2015; Winkler and Boon 2017;  Crampe et al. 2020; Gronsdahl et al. 2019; Hou and Wei 2024; Hou et al. 2024 |
 | Fire | % of total watershed area that has burned in the last 60 years with disturbance effects adjusted by time since burn disturbance (as for forest harvest) and also by severity of burn* | <20% of watershed area burned (low threat) <br/> 20 - 30% of watershed area burned (moderate threat) <br/> >30% of watershed area burned (high threat) | Hallema et al. 2018; Goerking and Tarboton 2020; Williams et al. 2022 |
@@ -602,6 +604,8 @@ Similar to the biological status assessments, we quantify benchmarks for each ha
 : (#tab:habBenchmarks) Habitat pressure indicator metrics and benchmarks. (Note that watershed refers to the Province of British Columbia’s 1:20,000 Freshwater Atlas (FWA) Assessment Watersheds.)
 
 <small>*Hydrologic recovery is the restoration of hydrologic characteristics to pre-disturbance, mature stand conditions with forest regrowth. Our analysis assumes full hydrological recovery at 60 years post-harvest after which stream flow processes within the watershed are considered to have returned to pre-disturbance patterns. See [Appendix 8](#appendix-8) for hydrologic recovery adjustment factors.</small>
+
+<small>†See [Appendix 10](#appendix-10) for the reference list specific to Tables \@ref(tab:habInddefs) and \@ref(tab:habBenchmarks).</small>
 
 Additional habitat disturbance information (termed supplemental data) is also visualized in the Pacific Salmon Explorer but cannot (at this time) be empirically benchmarked for watershed-scale threat categorization and is simply mapped as individual  disturbance locations within a watershed. Examples of supplemental information includes such habitat disturbances as water withdrawal locations, waste  discharge sites, mine footprints, oil and gas well locations, and pipeline locations. 
 

@@ -1,0 +1,168 @@
+# Appendix 10: References for Habitat Indicator Tables {#appendix-10 .unnumbered}
+
+This is a temporary appendix to list references specified in Tables 4.13 and 4.14. The references in these tables will be hyperlinked to the References section as is done for other references, but, while we work on that, the references specified in Tables 4.13 and 4.14 are provided below.
+<br/>
+<br/>
+
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Adams , H.D., C.H. Luce, D.D. Breshears, C.D. Allen, M. Weiller, V.C. Hale, A.M.S. Smith, and T.E. Huxman. 2012. Ecohydrological consequences of drought- and infestation triggered tree die-off: Insights and hypotheses. Ecohydrology 5: 145-159.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+B.C. Ministry of Forests (MOF). 2001. Watershed assessment procedure guidebook. 2nd ed., Version 2.1, Forest Practices Branch, Ministry of Forests, Victoria, B.C. Forest Practices Code Guidebook. www.for.gov.bc.ca/tasb/legsregs/fpc/FPCGUIDE/wap/WAPGdbk-Web.pdf
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Booth, D. and L. Reinelt. 1993. Consequences of urbanization on aquatic system: Measured effects, degradation thresholds, and corrective strategies pp. 545-550 in Proceedings Watershed ’93 A National Conference on Watershed Management. March 21-24, 1993. Alexandria, Virginia.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Booth, D. B. and C. R. Jackson. 1997. Urbanization of aquatic systems: Degradation thresholds, stormwater detection, and the limits of mitigation. Journal of the American Water Resources Association 33: 1077-1090.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Buma, B. and B. Livneh. 2017. Key landscape and biotic indicators of watersheds sensitivity to forest disturbance identified using remote sensing and historical hydrography data. Environmental Research Letters 12 074028.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Carver, M., M. Weiler, C. Scheffler, and K. Rosin. 2009. Development and application of a peak-flow hazard model for the Fraser Basin (British Columbia). Natural Resources Canada: Mountain Pine Beetle working paper 2009-13.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Crampe, E. A. C. Segura, and J.A. Jones. 2020. Fifty years of runoff response to conversion of old-growth forest to planted forest in the H. J. Andrews Forest, Oregon, USA. Hydrological Processes. 2021;35:e14168.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Daniel, W.M., D.M. Infante, R.M. Hughes, Y. Tsang, P.C. Esselman, D. Wieferich, K. Herreman, A.R. Cooper, L. Wang, and W.W. Taylor. 2015. Characterizing coal and mineral mines as a regional source of stress to stream fish assemblages. Ecological Indicators 50: 50-61.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Dunham, J.B., A.E. Rosenberger, C.H. Luce, and B.E. Rieman. 2007. Influences of wildfire and channel reorganization on spatial and temporal variation in stream temperature and the distribution of fish and amphibians. Ecosystems(2007) DOI: 10.1007/s10021-007-92029-8
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+EDI (Environmental Dynamics Inc). 2008. Mountain Pine Beetle infestation: Hydrological impacts. Report prepared for Ministry of Environment Mountain Pine Beetle Action Team. Available from: https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs/445817/finishdownloaddocument.pdf
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Forman, R.T.T., and L.E. Alexander. 1998. Roads and their major ecological effects. Annual Review of Ecology and Systematics 29: 207-31.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Forest Practices Board (FPB). 2007. The effect of Mountain Pine Beetle attack and salvage harvesting on streamflows: Special investigation. Report Number FPB/SIR/16.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Giles-Hansen, K.,Q. Li, and X. Wei. 2019. The cumulative effects of forest disturbance and climate variability on streamflow in the Deadman River watershed. Forests 2019, 10(2), 196.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Goeking, S.A, and D.G. Tarboton. 2020. Forests and water yield: A synthesis of disturbance effects on streamflow and snowpack in western coniferous forests. Journal of Forestry 118(2): 172-192.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Grant, G.E., S. L. Lewis, F.J. Swanson, J. H. Cissel, and J.J. McDonnell. 2008. Effects of Forest Practices on Peak Flows and Consequent Channel Response: A State-of-Science Report for Western Oregon and Washington. US Dept of Agriculture, Forest Service, Pacific Northwest Research Station. General Technical Report PNG-BTR-760. 84pp.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Gronsdahl, S. R.D. Moore, J. Rosenfeld, R. McCleary, and R. Winkler. 2019. Effects of forestry on summertime low flows and physical fish habitat in snowmelt-dominant headwater catchments of the Pacific Northwest. Hydrological Processes 33: 3152–3168.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Gucinski, H., M.J. Furniss, R.R. Ziemer, M.H. Brooks. 2001. Forest roads: A synthesis of scientific information, General Technical Report PNW-GTR-509, U.S. Department of Agriculture, Forest Service, Portland, Oregon, 103 p.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Guillemette, R., A.P. Plamondon, M. Prevost, and D. Levesque. 2005. Rainfall generated stormflow response to clearcutting a boreal forest: Peak flow comparison with 50 world-wide basin studies. Journal of Hydrology 302: 137-153.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Gustavson, K., and D. Brown. 2002. Monitoring land use impacts on fish sustainability in forest environments. Gustavson Ecological Resource Consulting, Daryl Brown Associates Inc.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Hallema, D.W., G. Sun, P.V. Caldwell, S.P. Norman, E.C. Cohen, Y. Lui, K.D. Bladon, and S.G. McNulty. 2018. Burned forests impact water supplies. Nature Communications 9:1307: 1-8
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Klein, R.D. 1979. Urbanization and stream quality impairment. Water Resources Bulletin 15: 948-963.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Hui, Y. and X. Wei. 2024. Forest disturbance thresholds and cumulative hydrological impacts. Water Resources Research 10.1029/2024WR037339.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Jokinen, C.C., H. Schreier, W. Mauro, E. Taboada, J.L. Isaac-Renton, E. Topp, T. Edge, J.E. Thomas, and V.P.J. Gannon. 2010. The occurrence and sources of Campylobacter spp., Salmonella enterica and Escherichia coli O157:H7 in the Nass Area: Cumulative Pressures on Salmon Habitat (Technical Report) 69 Salmon River, British Columbia, Canada. Journal of Water and Health. 374- 386.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Kondolf, G.M. 1997. Hungry water: Effects of dams and gravel mining on river channels. Environmental Management 21: 533-551.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Lee, J.W., S.R. Park, and S.W. Lee. 2023. Effect of land use on stream water quality and biological conditions in multi-scale watersheds. Water 15: 1-17.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+MacDonald, L.H., E.E. Wohl, and S.W. Madsen. 1997. Validation of water yield thresholds on the Kootenai National Forest. Final Report: Department of Earth Resources, Colorado State University.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Moore, R.D. and S.M. Wondzell. 2005. Physical hydrology and the effects of forest harvesting in the Pacific Northwest: A review. Journal of the American Water Resources Association 41(4): 763-784.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Moore, R.D. and D.F. Scott. 2005. Camp Creek revisited: streamflow changes following salvage harvesting in a medium-sized, snowmelt dominated catchment. Canadian Water Resources Journal 30(4):331–344.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+May, C.W., R. Horner, and J.R. Karr. 1997. Effects of urbanization on small streams in the Puget Sound Lowland Ecoregion. Watershed Protection Techniques 2(1): 1-26
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Meehan, W.R. (ed.). 1991. Influence of Forest and Rangeland Management on Salmonid Fishes and Their Habitats. American Fisheries Society. Bethesda, Md. 751 pp.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Naman, S., K.J. Pitman, D.S. Cunningham, A. Potapova, S.M. Chartrand, M.R. Sloat, and J.W. Moore. 2023. Forestry impacts on stream flows and temperatures: A quantitative synthesis of paired catchment studies across the Pacific Salmon range.	Ecological Solutions and Evidence:5:e:12328.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Nelson, R.L., M.L. McHenry, and W.S. Platts. 1991. Mining. In W.R. Meehan (ed). Influence of Forest and Rangeland Management on Salmonid Fishes and Their Habitats. American Fisheries Society. Bethesda, Md. 751 pp.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Paul, M.J., and J.L. Meyer. 2001. Streams in the urban landscape. Annual Review of Ecological Systems. 32: 333-365.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Redding, T., R. Winkler, P. Teti, D. Spittlehouse, S. Boon, J. Rex, S. Dube, R.D. Moore, A. Wei, M. Carver, M. Schnorbus, L. Reese-Hansen, and S.Chatwin. 2008. Mountain pine beetle and watershed hydrology. In Mountain Pine Beetle: From Lessons Learned to Community-based Solutions Conference Proceedings, June 10–11, 2008. BC Journal of Ecosystems and Management 9(3):33–50.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Reid, L.M. and T. Dunne. 1984. Sediment production from forest road surfaces. Water Resources Research. 20(11): 1753-1761.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Schendel, E.K., H. Schreier, and L.M. Lavkulich. 2004. Linkages between phosphorus index estimates and environmental quality indicators. Journal of soil and water conservation. 59 (6): 243-251. 
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Schindler, D.W., P.J. Dillon, and H. Schreier. 2006. A review of anthropogenic sources of nitrogen and their effects on Canadian aquatic ecosystems. Biogeochemistry. 79: 25-44.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Schueler, T. 2000. The importance of imperviousness. The Practice of Watershed Protection. Center for Watershed Protection, Ellicott City, MD. Pages 7-18.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Sergeant, C.J. and multiple authors. 2022. Risks of mining to salmonid-bearing watersheds. ScienceAdvances 8, No. 26.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Smith, I.M, K.J. Hall, L.M. Lavkulich, and H. Schreier. 2007. Trace metal concentrations in an intensive agricultural watershed in British Columbia, Canada. Journal of the American Water Resources Association. 43 (6): 1455- 1467
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Smith, R., and T. Redding. 2012. Cumulative effects assessment: Runoff generation in snowmelt-dominated montane and boreal plain catchments. Streamline Watershed Management Bulletin 15(1): 24-34.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Stednick, J. 1996. Monitoring the effects of timber harvest on annual water yield. Journal of Hydrology 176: 79-95.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Tschaplinski, P. J., and R.G. Pike. 2017. Carnation Creek watershed experiment—Long-term responses of coho salmon populations to historic forest practices. Ecohydrology, 10(2), e1812. 
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Uunilla, L., B. Guy, and R. Pike. 2006. Hydrologic effects of Mountain Pine Beetle in the interior pine forests of British Columbia. Key questions and current knowledge. Streamline Watershed Management Bulletin 9(2): 1-6.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Valdal, E., and M. Quinn. 2011. Spatial analysis of forestry related disturbance on Westslope Cutthroat trout (Oncorhynchus clarkia lewisi); Implications for policy and management. Appl Spat. Anal. Pol., 4(2):95-111.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Wang, L.Z., J. Lyons, P. Kanehl and R. Gatti. 1997. Influences of watershed land use on habitat quality and biotic integrity in Wisconsin streams. Fisheries 22: 6–12
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Wang, L.Z., J. Lyons, P. Kanehl, R. Banneman, and R. Emmons. 2000. Watershed urbanization and changes in fish communities in southeastern Wisconsin streams	Journal of the American Water Resources Association 36(5): 1173-1189.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Wang, L., J. Lyons, P. Rasmussen, P. Seelbach, T. Simon, M. Wiley, P. Kanehl, E. Baker, S. Niemela, and P.M. Stewart. 2003. Watershed, reach, and riparian influences on stream fish assemblages in the Northern Lakes and Forest Ecoregion, U.S.A. Canadian Journal of Fisheries and Aquatic Sciences 60: 491-505.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Watertight Solutions Ltd. 2007. Hydrologic effects of forest harvesting. Final Report: Sundance Forest Industries Forest Management Area.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Williams, A.P., B. Livneh, K.A. McKinnone, W.D. Hanseng , J.S. Mankinb, B.I. Cook, J.E. Smerdon, A.M. Varuolo-Clarkeb, N.R. Bjarked, C.S. Juang, and D.P. Lettenmaier. 2022. Growing impact of wildfire on western US water supply. PNAS 119(10): 1-8.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Wilson, K. L., C.J. Bailey, T.D. Davies, and J.W. Moore. 2022. Marine and freshwater regime changes impact a community of migratory Pacific salmonids in decline. Global Change Biology, 28(1), 72–85.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Winkler, R., D. Spittlehouse, S. Boon, S., and B. Zimonick. 2015. Forest disturbance effects on snow and water yield in interior British Columbia. Hydrology Research, 46(4), pp.521-532.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Winkler, R. and S. Boon. 2017. Equivalent Clearcut Area as an indicator of hydrologic change in snow-dominated watersheds of southern British Columbia. Prov. B.C., Victoria, B.C. Exten. Note 118.
+</div>
+<div style="margin-left: 2.5em; text-indent: -2.5em;">
+Zhang, M. and X. Wei. 2012. The effects of cumulative forest disturbance on streamflow in a large watershed in the central interior of British Columbia, Canada. Hydrology and Earth Systems Science 16(7):2021–2034.
+</div>

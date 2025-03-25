@@ -3,21 +3,20 @@
 ###############################################################################
 
 library(dplyr)
-library(RPostgreSQL)
+library(RPostgres)
 
 ###############################################################################
 # Create connection to postreSQL salmonwatersheds database
 ###############################################################################
-library(RPostgreSQL)
 
-dsn_database <- "salmondb_prod"   # Specify the name of your Database
-dsn_hostname <- "data.salmonwatersheds.ca"  # Specify host name e.g.:"aws-us-east-1-portal.4.dblayer.com"
-dsn_port <- "5432"                # Specify your port number. e.g. 98939
-dsn_uid <- "salmonwatersheds"         # Specify your username. e.g. "admin"
+dsn_database = "salmondb_prod"
+dsn_hostname = "3.99.23.175" # "data.salmonwatersheds.ca", # , # change: https://salmonwatersheds.slack.com/archives/CKNVB4MCG/p1739293987758589
+dsn_port = "5432"
+dsn_uid = "salmonwatersheds"
 dsn_pwd <- readline(prompt="Enter database password: " )    # Specify your password. e.g. "xxx"
 
 tryCatch({
-	drv <- dbDriver("PostgreSQL")
+	drv <- RPostgres::Postgres()
 	print("Connecting to Database…")
 	connec <- dbConnect(drv, 
 											dbname = dsn_database,

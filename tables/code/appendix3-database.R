@@ -62,6 +62,7 @@ app3 <- dbGetQuery(
 	statement = "SELECT * FROM appdata.vwdl_setr_appendix4"
 )
 
+app3$years_of_data <- as.numeric(app3$years_of_data)
 ###############################################################################
 # Make pretty for table display
 ###############################################################################
@@ -73,14 +74,14 @@ app3_display <- data.frame(
 	Current.Spawner.Abundance = prettierNum(app3$curr_spw),
 	Years = ifelse(is.na(app3$curr_spw), "", paste0(app3$curr_spw_start_year, "-", app3$curr_spw_end_year)),
 	Years.of.Data = stripNA(app3$years_of_data),
-	percentile.status = stripNA(app3$percentile_status),
+	percentile_status = stripNA(app3$percentile_status),
 	percentile_red_prob = stripNA(app3$percentile_red_prob),
 	percentile_yellow_prob = stripNA(app3$percentile_yellow_prob),
 	percentile_green_prob = stripNA(app3$percentile_green_prob),
-	SR = stripNA(app3$sr_status),
-	Probability.of.Red.Status = ifelse(is.na(app3$sr_red_prob), " ", paste0(round(app3$sr_red_prob, 1), "%")),
-	Probability.of.Amber.Status = ifelse(is.na(app3$sr_yellow_prob), " ", paste0(round(app3$sr_yellow_prob, 1), "%")),
-	Probability.of.Green.Status = ifelse(is.na(app3$sr_green_prob), " ", paste0(round(app3$sr_green_prob, 1), "%")),
+	sr_status = stripNA(app3$sr_status),
+	sr_red_prob = ifelse(is.na(app3$sr_red_prob), " ", paste0(round(app3$sr_red_prob, 1), "%")),
+	sr_yellow_prob = ifelse(is.na(app3$sr_yellow_prob), " ", paste0(round(app3$sr_yellow_prob, 1), "%")),
+	sr_green_prob = ifelse(is.na(app3$sr_green_prob), " ", paste0(round(app3$sr_green_prob, 1), "%")),
 	WSP = stripNA(app3$wsp_status),
 	WSP.Year = stripNA(app3$wsp_status_yr),
 	COSEWIC = stripNA(app3$cosewic_status),

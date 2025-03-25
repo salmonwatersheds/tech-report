@@ -4,7 +4,7 @@ The following table details the biological status outcomes and benchmarks values
 
 Current abundance is calculated as the geometric average spawner abundance over the most recent generation, where generation length is determined by the life-history of the CU. The years contributing to the estimated current spawner abundance are in the Years column (note that if there are missing years of data in this date range, the average is still calculated unless all years are missing). Years of Data shows the number of years over the time series with CU-level estimates of spawner abundance. Biological status outcomes are provided for two benchmark types (percentile and spawner-recruit (SR), as well as from other assessments under Canada's Wild Salmon Policy (WSP), the Committee on the Status of Endangered Wildlife in Canada (COSEWIC), and the province of BC (applicable to steelhead only). For the spawner-recruitment benchmarks, the percentage in each column is the probability (%) of a given status based on the posterior distributions for benchmarks ($S_{GEN}$ and 80% $S_{MSY}$) from a hierarchical Bayesian model. For the spawner-recruit and percentile benchmark values, 95% credible intervals are shown in parentheses. 
 
-```{r app4, include = TRUE, echo = FALSE, message = FALSE, warnings=FALSE}
+```{r app3, include = TRUE, echo = FALSE, message = FALSE, warnings=FALSE}
 options(width = 400)
 library(reactable)
 library(dplyr)
@@ -12,43 +12,34 @@ library(RPostgreSQL)
 
 status_colours <- c("#C06263", "#DED38B", "#83B686")
 
-app4 <- read.csv("tables/appendix3.csv", na.strings = NA)
+app3 <- read.csv("tables/appendix3.csv", na.strings = NA)
 
 # ***Remove Yukon for now ***
-app4 <- app4[which(app4$Region %in% c("Yukon") == FALSE), ]
+app3 <- app3[which(app3$Region %in% c("Yukon") == FALSE), ]
 
-# *** Remove steelhead for now ***
-# app4 <- app4[which(app4$Species != "Steelhead"), ]
-
-app4[which(is.na(app4), arr.ind = TRUE)] <- ""
+app3[which(is.na(app3), arr.ind = TRUE)] <- ""
 
 
 # Create new variables needed for table display
-sr_status <- app4$SR
+sr_status <- app3$sr_status
 sr_red <- ifelse(sr_status != "poor",  "#FFFFFF", status_colours[1])
 sr_amber <- ifelse(sr_status != "fair", "#FFFFFF", status_colours[2])
 sr_green <- ifelse(sr_status != "good", "#FFFFFF", status_colours[3])
 
-# Define WSP colours
-# wsp_red <- ifelse(app4$WSP != "poor",  "#FFFFFF", status_colours[1])
-# sr_amber <- ifelse(sr_status != "fair", "#FFFFFF", status_colours[2])
-# sr_green <- ifelse(sr_status != "good", "#FFFFFF", status_colours[3])
-
-# app4$Region.Species <- paste(app4$Region, app4$Species, sep = " - ")
+perc_status <- app3$percentile_status
+perc_red <- ifelse(perc_status != "poor",  "#FFFFFF", status_colours[1])
+perc_amber <- ifelse(perc_status != "fair", "#FFFFFF", status_colours[2])
+perc_green <- ifelse(perc_status != "good", "#FFFFFF", status_colours[3])
 
 # Remove those variables not for display
-# app4 <- app4[, which(names(app4) %in% c("Species", "Region", "SR") == FALSE)]
-app4_display <- app4[, which(names(app4) %in% c("SR", "WSP", "WSP.Year", "COSEWIC", "COSEWIC.Year", "Province", "Province.Year") == FALSE)]
-app4_display$WSP <- ifelse(app4$WSP == " ", "", paste0(app4$WSP, " (", app4$WSP.Year, ")"))
-app4_display$COSEWIC <- ifelse(app4$COSEWIC == " ", "", paste0(app4$COSEWIC, " (", app4$COSEWIC.Year, ")"))
-app4_display$BC <- ifelse(app4$Province == " ", "", paste0(app4$Province, " (", app4$Province.Year, ")"))
+app3_display <- app3[, which(names(app3) %in% c("percentile_status", "sr_status", "WSP", "WSP.Year", "COSEWIC", "COSEWIC.Year", "Province", "Province.Year") == FALSE)]
+app3_display$WSP <- ifelse(app3$WSP == " ", "", paste0(app3$WSP, " (", app3$WSP.Year, ")"))
+app3_display$COSEWIC <- ifelse(app3$COSEWIC == " ", "", paste0(app3$COSEWIC, " (", app3$COSEWIC.Year, ")"))
+app3_display$BC <- ifelse(app3$Province == " ", "", paste0(app3$Province, " (", app3$Province.Year, ")"))
 
-# ***Do not display provincial steelhead assessments for now ***
-# app4_display$Province <- ifelse(app4$Province == " ", "", paste0(app4$Province, " (", app4$Province.Year, ")"))
-	
 # Render table
 reactable::reactable(
-	app4_display, 
+	app3_display, 
 	# groupBy = c("Region"),
 	defaultColDef = colDef(
 		header = function(value) gsub(".", " ", value, fixed = TRUE),
@@ -58,16 +49,11 @@ reactable::reactable(
 		# headerStyle = list(background = "#396D8E", color = "#FFFFFF")
 	),
 	columns = list(
-		# Region.Species = colDef(name = "Region - Species"),
 		Region = colDef(
 			maxWidth = 80
 		),
 		Species = colDef(
-			maxWidth = 100#,
-			# 			style = JS("function(rowInfo, column, state) {
-			#         const { speciesColours } = state.meta
-			#         return { backgroundColor: speciesColours[rowInfo.index] }
-			#       }")
+			maxWidth = 100
 		),
 		Current.Spawner.Abundance = colDef(
 			maxWidth = 100
@@ -78,22 +64,31 @@ reactable::reactable(
 		Years.of.Data = colDef(
 			maxWidth = 70
 		),
-		Percentile = colDef(
+		percentile_red_prob = colDef(
+			header = "Percentile % Red",
 			maxWidth = 70,
-			style = function(value){
-				if(value == "poor"){
-					background <- status_colours[1]
-				}else if(value == "fair"){
-					background <- status_colours[2]
-				}else if(value == "good"){
-					background <- status_colours[3]
-				} else{
-					background <- "#FFFFFF"
-				}
-				list(background = background, color = background)
-			}
+			style = JS("function(rowInfo, column, state) {
+        const { percRed } = state.meta
+        return { backgroundColor: percRed[rowInfo.index] }
+      }")
 		),
-		Probability.of.Red.Status = colDef(
+		percentile_yellow_prob = colDef(
+			header = "Percentile % Amber",
+			maxWidth = 70,
+			style = JS("function(rowInfo, column, state) {
+        const { percAmber } = state.meta
+        return { backgroundColor: percAmber[rowInfo.index] }
+      }")
+		),
+		percentile_green_prob = colDef(
+			header = "Percentile % Green",
+			maxWidth = 70,
+			style = JS("function(rowInfo, column, state) {
+        const { percGreen } = state.meta
+        return { backgroundColor: percGreen[rowInfo.index] }
+      }")
+		),
+		sr_red_prob = colDef(
 			header = "SR % Red",
 			maxWidth = 70,
 			style = JS("function(rowInfo, column, state) {
@@ -101,7 +96,7 @@ reactable::reactable(
         return { backgroundColor: srRed[rowInfo.index] }
       }")
 		),
-		Probability.of.Amber.Status = colDef(
+		sr_yellow_prob = colDef(
 			header = "SR % Amber",
 			maxWidth = 70,
 			style = JS("function(rowInfo, column, state) {
@@ -109,7 +104,7 @@ reactable::reactable(
         return { backgroundColor: srAmber[rowInfo.index] }
       }")
 		),
-		Probability.of.Green.Status = colDef(
+		sr_green_prob = colDef(
 			header = "SR % Green",
 			maxWidth = 70,
 			style = JS("function(rowInfo, column, state) {
@@ -137,7 +132,7 @@ reactable::reactable(
 		),
 		colGroup(
 			name = "Biological Status",
-			columns = c("Percentile", "Probability.of.Red.Status", "Probability.of.Amber.Status", "Probability.of.Green.Status", "WSP", "COSEWIC", "BC") #, "Province")
+			columns = c("percentile_red_prob", "percentile_yellow_prob", "percentile_green_prob", "sr_red_prob", "sr_yellow_prob", "sr_green_prob", "WSP", "COSEWIC", "BC") #, "Province")
 		),
 		colGroup(
 			name = "Percentile Benchmarks",
@@ -149,6 +144,9 @@ reactable::reactable(
 		)
 	),
 	meta = list(
+		percRed = perc_red,
+		percAmber = perc_amber,
+		percGreen = perc_green,
 		srRed = sr_red,
 		srAmber = sr_amber,
 		srGreen = sr_green),

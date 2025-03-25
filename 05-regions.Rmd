@@ -59,7 +59,7 @@ The available data from the TTC [@TTC2022FinalEstimatesTransboundary] provide CU
 
 #### Run Timing {#transboundary-run-timing}
 
-Run timing for Transboundary CUs was compiled from several sources. Start, peak, and end migration dates for Taku River lake-type sockeye CUs were based on migration past the Canyon Island fish wheel reported by @PestalEtAl2020TakuRiverSockeye. Tahltan lake-type sockeye daily passage through the Tahltan fence is reported in the TTC reports [@TTC2022FinalEstimatesTransboundary]. Data compilation and treatment are detailed in @WilsonPeacockInprepTimingMajorFreshwater. See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
+Run timing for Transboundary CUs was compiled from several sources. Start, peak, and end migration dates for Taku River lake-type sockeye CUs were based on migration past the Canyon Island fish wheel reported by @PestalEtAl2020TakuRiverSockeye. Tahltan lake-type sockeye daily passage through the Tahltan fence is reported in the TTC reports [@TTC2022FinalEstimatesTransboundary]. Data compilation and treatment are detailed in @WilsonPeacock2025FreshwaterLifecycleTiming See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
 
 #### Catch & Run Size {#transboundary-catch-run-size}
 
@@ -117,7 +117,7 @@ Haida Gwaii CU-level **estimates of spawner abundance** (run reconstructions) we
 
 #### Run Timing {#haida-gwaii-run-timing}
 
-Run timing data were compiled from a variety of sources detailed in @WilsonPeacockInprepTimingMajorFreshwater. See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
+Run timing data were compiled from a variety of sources detailed in @WilsonPeacock2025FreshwaterLifecycleTiming See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
 
 #### Catch & Run Size {#haida-gwaii-catch-run-size}
 
@@ -188,7 +188,7 @@ In addition, CU-level estimates of spawner abundance for five Nass CUs are deriv
 
 #### Run Timing {#nass-run-timing}
 
-Run timing data were compiled from a variety of sources detailed in @WilsonPeacockInprepTimingMajorFreshwater, including the Gitwinksihlkw fish wheel and Coded-wire Tag recovery projects at Zolzap Creek and Kincolith River.
+Run timing data were compiled from a variety of sources detailed in @WilsonPeacock2025FreshwaterLifecycleTiming, including the Gitwinksihlkw fish wheel and Coded-wire Tag recovery projects at Zolzap Creek and Kincolith River.
 <!-- Add more details when time to insert references from Wilson and Peacocj into zotero!-->
 
 #### Catch & Run Size {#nass-catch-run-size}
@@ -328,7 +328,7 @@ There are several nuances to the data sources and analytical methods specific to
 
 #### Spawner Surveys {#central-coast-spawner-surveys}
 
-**Spawner survey** data for streams in the Central Coast were sourced from DFO's New Salmon Escapement Database (NuSEDS). For a description of the spawner survey indicator, see [Overview of Population Indicators: Spawner Surveys](#spawner-surveys). For steelhead, spawner survey data were sourced from @Englishetal1999BellaCoolaSteelhead, @Peard2017ResultsKloiyaRiver, and @PtolemyEtAl2006ResultsSteelheadStock.
+**Spawner survey** data for streams in the Central Coast were sourced from DFO's New Salmon Escapement Database (NuSEDS). For a description of the spawner survey indicator, see [Overview of Population Indicators: Spawner Surveys](#spawner-surveys). For steelhead, spawner survey data were sourced from @EnglishEtAl1999AssessmentDistributionTiming, @Peard2017ResultsKloiyaRiver, and @PtolemyEtAl2006ResultsSteelheadStock.
 
 #### Juvenile Surveys {#central-coast-juvenile-surveys}
 
@@ -340,13 +340,13 @@ Hatchery releases in the Central Coast Region for all species were provided by D
 
 #### Spawner Abundance {#central-coast-spawner-abundance}
 
-**Observed spawner abundance** for CUs in the Central Coast Region is the sum of all spawner survey data documented in NuSEDS, as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). For steelhead, observed spawner data are summed spawner survey data sourced from @Englishetal1999BellaCoolaSteelhead, @Peard2017ResultsKloiyaRiver, and @PtolemyEtAl2006ResultsSteelheadStock.
+**Observed spawner abundance** for CUs in the Central Coast Region is the sum of all spawner survey data documented in NuSEDS, as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). For steelhead, observed spawner data are summed spawner survey data sourced from @EnglishEtAl1999AssessmentDistributionTiming, @Peard2017ResultsKloiyaRiver, and @PtolemyEtAl2006ResultsSteelheadStock.
 
 Central Coast CU-level **estimates of spawner abundance** (run reconstructions) were updated by PSF via the North and Central Coast (NCC) database. Central Coast CU-level estimated spawner abundance time series were developed for the NCC database according to the expansion factors described in the Skeena Region section above.
 
 #### Run Timing {#central-coast-run-timing}
 
-Run timing information for many Central Coast salmon CUs was sourced from @GorukWinther1992SalmonEscapementTiming. We relied on a several reports describing the life-history of steelhead in the region [e.g., @EnglishEtAl1999AssessmentDistributionTiming, @NelsonEtAl1998CompilationStockAssessment]. Further details on the compilation of run timing data are provided by @WilsonPeacockInprepTimingMajorFreshwater. See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
+Run timing information for many Central Coast salmon CUs was sourced from @GorukWinther1992SalmonEscapementTiming. We relied on a several reports describing the life-history of steelhead in the region [e.g., @EnglishEtAl1999AssessmentDistributionTiming, @NelsonEtAl1998CompilationStockAssessment]. Further details on the compilation of run timing data are provided by @WilsonPeacock2025FreshwaterLifecycleTiming See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
 
 #### Catch & Run Size {#central-coast-catch-run-size}
 
@@ -424,11 +424,11 @@ For steelhead, estimates for the total number of steelhead returning to the Thom
 
 #### Run Timing {#fraser-run-timing}
 
-**Run timing** estimates were compiled by @WilsonPeacockInprepTimingMajorFreshwater. Data were provided for some Fraser sockeye CUs (Fiona Martens and Merran Hague, Pacific Salmon Commission). The median estimate date and spread represent the run timing date through DFO Area 20 for each management unit from 1980 to 2017. Each CU within a management unit was assumed to have the same run timing. For Fraser pink salmon, timing information from the hydroacoustic monitoring at Mission was provided by the Pacific Salmon Commission on request.
+**Run timing** estimates were compiled by @WilsonPeacock2025FreshwaterLifecycleTiming Data were provided for some Fraser sockeye CUs (Fiona Martens and Merran Hague, Pacific Salmon Commission). The median estimate date and spread represent the run timing date through DFO Area 20 for each management unit from 1980 to 2017. Each CU within a management unit was assumed to have the same run timing. For Fraser pink salmon, timing information from the hydroacoustic monitoring at Mission was provided by the Pacific Salmon Commission on request.
 
 Other CU run timing information came from @ParkenEtAl2008GeneticCodedWire for Chinook and @IrvineEtAl2001StockStatus for coho. Brittany Jenewin (DFO, pers. comm) shared raw data on chum salmon catch in the Albion test fishery. 
 
-For steelhead, life-history information was compiled from older reports including @Withler1966VariabilityLifeHistory and @Caverly1978LifeHistoryWinter. Data compilation and sources are detailed in @WilsonPeacockInprepTimingMajorFreshwater. See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
+For steelhead, life-history information was compiled from older reports including @Withler1966VariabilityLifeHistory and @Caverly1978LifeHistoryWinter. Data compilation and sources are detailed in @WilsonPeacock2025FreshwaterLifecycleTiming See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
 
 #### Catch & Run Size {#fraser-catch-run-size}
 
@@ -476,7 +476,7 @@ For the Vancouver Island & Mainland Inlet Region, we engaged with First Nations,
 
 ### Conservation Unit Changes {#vimi-cu-changes}
 
-The Sakinaw sockeye CU was declared extinct in the wild by DFO as of 2009 [@FisheriesandOceansCanadaDFO20182017FraserSockeyeb]. However, there is still a population from a captive broodstock program maintaining a hatchery-derived population in Sakinaw Lake. However, since this CU was immediately reintroduced from broodstock from the same CU, it does not meet the criteria for being declared de novo [@WadeEtAl2019FrameworkReviewingApproving].
+The Sakinaw sockeye CU was declared extinct in the wild by DFO as of 2009 [@RamshawEtAl2019RecoveryPotentialAssessment]. However, there is still a population from a captive broodstock program maintaining a hatchery-derived population in Sakinaw Lake. However, since this CU was immediately reintroduced from broodstock from the same CU, it does not meet the criteria for being declared de novo [@WadeEtAl2019FrameworkReviewingApproving].
 
 For steelhead in the Vancouver Island & Mainland Inlet Region, we used CUs defined in @ParkinsonEtAl2005PopulationDatabaseDefining. Through our work and conversations with the Steelhead Technical Working Group, we identified a key issue with the spatial boundaries for some coastal steelhead CUs for groups of winter-run populations, including the West Coast Vancouver Island Winter, East Coast Vancouver Island Winter, and South Coast Winter CUs in the Vancouver Island & Mainland Inlet Region. One of the key distinguishing features among steelhead CUs is run timing. The CU boundaries for this winter-run CU did not include watersheds that contain both winter-run and coastal summer-run populations of steelhead. These watersheds were only included in the corresponding coastal summer-run CU (in this case, the West Coast Vancouver Island Summer, East Coast Vancouver Island Summer, and South Coast Summer CUs). To address this issue in a standardized way for all CUs with this issue, we expanded the CU boundaries for the winter-run CUs to include the entirety of watersheds in the corresponding summer-run CU. In this case, resulting in an overlapping region between the West Coast Vancouver Island Winter and West Coast Vancouver Island Summer CUs, the East Coast Vancouver Island Winter and East Coast Vancouver Island Summer CUs, and the South Coast Winter and South Coast Summer CUs, where steelhead from both CUs spawn. This approach did not capture watershed-specific nuances in the distribution of winter- and summer-run steelhead populations, which are often not documented. However, these changes to the West Coast Vancouver Island Winter, East Coast Vancouver Island Winter, and South Coast Winter CUs ensure these CUs is not missing key watersheds.
 
@@ -513,7 +513,7 @@ For steelhead, there are instances where long timeseries (i.e., spanning at leas
 #### Run Timing {#vimi-run-timing}
 <!-- Steph to add detailed sources from paper when feasible. -->
 
-Run timing data were compiled from a variety of sources detailed in @WilsonPeacockInprepTimingMajorFreshwater. See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
+Run timing data were compiled from a variety of sources detailed in @WilsonPeacock2025FreshwaterLifecycleTiming See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
 
 #### Catch & Run Size  {#vimi-catch-run-size}
 
@@ -569,7 +569,11 @@ In the Columbia Region, we accessed datasets for biological indicators from publ
 
 #### Spawner Surveys {#columbia-spawner-surveys}
 
-**Spawner survey** data for streams in the Columbia Region were sourced from DFO's (New Salmon Escapement Database (NuSEDS), Chuck Parken, (pers comm), and the Sylix Okanagan Nation (Elinor McGrath, personal communication). For a description of the spawner survey indicator, For a description of the spawner survey indicator, see [Overview of Population Indicators: Spawner Surveys](#spawner-surveys).
+**Spawner survey** data for streams in the Columbia Region were sourced from DFO's (New Salmon Escapement Database (NuSEDS), Chuck Parken, (pers comm), and the Sylix Okanagan Nation (Elinor McGrath, personal communication). 
+
+Steelhead spawning surveys are reported annually by the [Okanogan Basin Monitoring and Evaluation Program](https://www.okanoganmonitoring.org/). For the period 2006-2011, a fence count was undertaken in akskʷəkʷant (Inkaneep Creek) [@WiensEtAl2012SteelheadSpawnerEnumeration]. Starting in 2006, steelhead estimates for the Okanagan River are based on PIT-tag detections at one or more sites between the Canada/US border and Vernon, BC. Annual estimates based on these detections are reported by the[Okanogan Basin Monitoring and Evaluation Program](https://www.okanoganmonitoring.org/) [e.g., @OBEMP20252024OkanoganSubbasin]. We report the total (natural-origin + hatchery) abundance in the spawner survey but natural-origin abundance only for the CU-level spawner abundance (see [below](#columbia-spawner-abundance).
+
+For a description of the spawner survey indicator, For a description of the spawner survey indicator, see [Overview of Population Indicators: Spawner Surveys](#spawner-surveys).
 
 #### Juvenile Surveys {#columbia-juvenile-surveys}
 
@@ -581,7 +585,7 @@ In the Columbia Region, we accessed datasets for biological indicators from publ
 
 #### Spawner Abundance {#columbia-spawner-abundance}
 
-**Observed spawner abundance** for CUs in the Columbia Region, represent the total number of mature salmon that return to a CU to spawn in a given year, and were available from DFO's (New Salmon Escapement Database (NuSEDS), Chuck Parken, (pers comm), and the Sylix Okanagan Nation (Elinor McGrath, pers comm). @StockwellHyatt2003SummaryOkanaganSockeye describe survey methods and analytical techniques of summary estimates of annual escapement. Considerations in spawner abundance are also described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). Columbia CU-level **estimates of spawner abundance** (run reconstructions) were also sourced from DFO's (New Salmon Escapement Database (NuSEDS), Chuck Parken, (pers comm), and the Sylix Okanagan Nation (Elinor McGrath, personal communication). For steelhead, observed spawner abundance data for the Mid Columbia Summer CU were sourced from @WiensEtAl2012SteelheadSpawnerEnumeration and estimated spawner abundance data for the Mid Columbia Summer CU were sourced from the [Okanogan Basin Monitoring Program Database](https://www.okanoganmonitoring.org/).
+**Observed spawner abundance** for CUs in the Columbia Region, represent the total number of mature salmon that return to a CU to spawn in a given year, and were available from DFO's (New Salmon Escapement Database (NuSEDS), Chuck Parken, (pers comm), and the Sylix Okanagan Nation (Elinor McGrath, pers comm). @StockwellHyatt2003SummaryOkanaganSockeye describe survey methods and analytical techniques of summary estimates of annual escapement. Considerations in spawner abundance are also described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). Columbia CU-level **estimates of spawner abundance** (run reconstructions) were also sourced from DFO's (New Salmon Escapement Database (NuSEDS), Chuck Parken, (pers comm), and the Sylix Okanagan Nation (Elinor McGrath, personal communication). For steelhead, estimated spawner abundance data for the Mid Columbia Summer CU are sourced annually from the [Okanogan Basin Monitoring Program Database](https://www.okanoganmonitoring.org/) [e.g., @OBEMP20252024OkanoganSubbasin].
 
 #### Run Timing {#columbia-run-timing}
 

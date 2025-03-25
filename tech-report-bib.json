@@ -233,9 +233,12 @@
 	},
 	{
 		"id": "PestalEtAl2020TakuRiverSockeye",
-		"type": "report",
+		"type": "article-journal",
+		"collection-title": "Pacific Salmon Commission Technical Report",
+		"container-title": "Pacific Salmon Commission Technical Report",
 		"title": "Taku River Sockeye Salmon Stock Assessment Review and Updated 1984-2018 Abundance Estimates",
 		"URL": "www.psc.org",
+		"volume": "No. 43",
 		"author": [
 			{
 				"family": "Pestal",
@@ -803,26 +806,6 @@
 		}
 	},
 	{
-		"id": "FisheriesandOceansCanadaDFO20182017FraserSockeyeb",
-		"type": "report",
-		"event-place": "Vancouver, BC",
-		"publisher": "Canadian Science Advisory Secretariat Research Document 2018/017.",
-		"publisher-place": "Vancouver, BC",
-		"title": "The 2017 Fraser sockeye salmon (Oncorhynchus nerka) integrated biological status re-assessment under the Wild Salmon Policy.",
-		"author": [
-			{
-				"literal": "Fisheries and Oceans Canada (DFO)"
-			}
-		],
-		"issued": {
-			"date-parts": [
-				[
-					"2018"
-				]
-			]
-		}
-	},
-	{
 		"id": "DFO2019",
 		"type": "report",
 		"page": "434",
@@ -878,7 +861,7 @@
 		}
 	},
 	{
-		"id": "GrantEtAl20202017FraserSockeyec",
+		"id": "GrantEtAl20202017FraserSockeye",
 		"type": "article-journal",
 		"container-title": "Canadian Science Advisory Secretariat Research Document",
 		"page": "vii + 211 p.",
@@ -1301,45 +1284,6 @@
 			"date-parts": [
 				[
 					"2001"
-				]
-			]
-		}
-	},
-	{
-		"id": "PorsztEtAl2012ReliabilityIndicatorsDeclineb",
-		"type": "article-journal",
-		"container-title": "Conservation Biology",
-		"issue": "5",
-		"page": "894-904",
-		"title": "Reliability of Indicators of Decline in Abundance",
-		"URL": "https://doi.org/10.1111/j.1523-1739.2012.01882.x",
-		"volume": "26",
-		"author": [
-			{
-				"family": "Porszt",
-				"given": "E. J."
-			},
-			{
-				"family": "Peterman",
-				"given": "R. M."
-			},
-			{
-				"family": "Dulvy",
-				"given": "N. K."
-			},
-			{
-				"family": "Cooper",
-				"given": "A. B."
-			},
-			{
-				"family": "Irvine",
-				"given": "J. R."
-			}
-		],
-		"issued": {
-			"date-parts": [
-				[
-					"2012"
 				]
 			]
 		}
@@ -1892,59 +1836,6 @@
 		}
 	},
 	{
-		"id": "EnglishEtAl2018NorthCentralCoast",
-		"type": "report",
-		"abstract": "English, K., Peacock, D., Challenger, W., Noble, C., Beveridge, I., Robichaud, D., Beach, K., Hertz, E., and Connors, K. 2018. North and Central Coast Salmon Escapement, Catch, Run Size and Exploitation Rate Estimates for each Salmon Conservation Unit for 1954-2017. Prepared by LGL Ltd. for the Pacific Salmon Foundation. 125p.",
-		"publisher": "Prepared by LGL Ltd. for the Pacific Salmon Foundation. 125p.",
-		"title": "North and Central Coast Salmon Escapement, Catch, Run Size and Exploitation Rate Estimates for each Salmon Conservation Unit for 1954-2017.",
-		"URL": "https://salmonwatersheds.ca/document/lib_451/",
-		"author": [
-			{
-				"family": "English",
-				"given": "K K"
-			},
-			{
-				"family": "Peacock",
-				"given": "D"
-			},
-			{
-				"family": "Challenger",
-				"given": "W"
-			},
-			{
-				"family": "Noble",
-				"given": "C"
-			},
-			{
-				"family": "Beveridge",
-				"given": "I"
-			},
-			{
-				"family": "Robichaud",
-				"given": "D"
-			},
-			{
-				"family": "Beach",
-				"given": "K"
-			},
-			{
-				"family": "Hertz",
-				"given": "E"
-			},
-			{
-				"family": "Connors",
-				"given": "K"
-			}
-		],
-		"issued": {
-			"date-parts": [
-				[
-					"2018"
-				]
-			]
-		}
-	},
-	{
 		"id": "PorterEtAl2013SkeenaLakeSockeye",
 		"type": "report",
 		"event-place": "Vancouver, BC",
@@ -2008,7 +1899,10 @@
 	{
 		"id": "English2016ReviewEscapementIndicator",
 		"type": "report",
+		"genre": "Report prepared by LGL Ltd for Pacific Salmon Foundation and Fisheries and Oceans Canada",
+		"page": "iii + 51 p.",
 		"title": "Review of Escapement Indicator Streams for the North and Central Coast Salmon Monitoring Program Final Report",
+		"URL": "https://salmonwatersheds.ca/document/lib_440/",
 		"author": [
 			{
 				"family": "English",
@@ -2018,7 +1912,9 @@
 		"issued": {
 			"date-parts": [
 				[
-					"2016"
+					"2016",
+					7,
+					25
 				]
 			]
 		}
@@ -2085,6 +1981,45 @@
 			"date-parts": [
 				[
 					"2001"
+				]
+			]
+		}
+	},
+	{
+		"id": "PorsztEtAl2012ReliabilityIndicatorsDecline",
+		"type": "article-journal",
+		"container-title": "Conservation Biology",
+		"issue": "5",
+		"page": "894-904",
+		"title": "Reliability of Indicators of Decline in Abundance",
+		"URL": "https://doi.org/10.1111/j.1523-1739.2012.01882.x",
+		"volume": "26",
+		"author": [
+			{
+				"family": "Porszt",
+				"given": "E. J."
+			},
+			{
+				"family": "Peterman",
+				"given": "R. M."
+			},
+			{
+				"family": "Dulvy",
+				"given": "N. K."
+			},
+			{
+				"family": "Cooper",
+				"given": "A. B."
+			},
+			{
+				"family": "Irvine",
+				"given": "J. R."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2012"
 				]
 			]
 		}
@@ -2196,6 +2131,61 @@
 			"date-parts": [
 				[
 					"2011"
+				]
+			]
+		}
+	},
+	{
+		"id": "EnglishEtAl2018NorthCentralCoast",
+		"type": "report",
+		"genre": "Report prepared by LGL Limited for the Pacific Salmon Foundation",
+		"page": "vi + 117 p.",
+		"title": "North and Central Coast Salmon Escapement, Catch, Run Size and Exploitation Rate Estimates for each Salmon Conservation Unit for 1954-2017",
+		"URL": "https://salmonwatersheds.ca/document/lib_451/",
+		"author": [
+			{
+				"family": "English",
+				"given": "Karl K"
+			},
+			{
+				"family": "Peacock",
+				"given": "Dave"
+			},
+			{
+				"family": "Challenger",
+				"given": "Wendell"
+			},
+			{
+				"family": "Noble",
+				"given": "Cameron"
+			},
+			{
+				"family": "Beveridge",
+				"given": "Ian"
+			},
+			{
+				"family": "Robichaud",
+				"given": "David"
+			},
+			{
+				"family": "Beach",
+				"given": "Katie"
+			},
+			{
+				"family": "Hertz",
+				"given": "Eric"
+			},
+			{
+				"family": "Connors",
+				"given": "Katrina"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2018",
+					11,
+					20
 				]
 			]
 		}
@@ -3762,8 +3752,11 @@
 		"id": "WiensEtAl2012SteelheadSpawnerEnumeration",
 		"type": "report",
 		"event-place": "Westbank, BC",
+		"page": "v + 28 p.",
+		"publisher": "Okanagan Nation Alliance Fisheries Department",
 		"publisher-place": "Westbank, BC",
 		"title": "Steelhead Spawner Enumeration in akskʷəkʷant ( Inkaneep Creek ) – 2011",
+		"URL": "https://www.okanoganmonitoring.org/",
 		"author": [
 			{
 				"family": "Wiens",
@@ -3778,10 +3771,20 @@
 				"given": "Tatiana"
 			}
 		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2025",
+					3,
+					25
+				]
+			]
+		},
 		"issued": {
 			"date-parts": [
 				[
-					"2012"
+					"2012",
+					2
 				]
 			]
 		}
@@ -5293,37 +5296,6 @@
 		}
 	},
 	{
-		"id": "Englishetal1999BellaCoolaSteelhead",
-		"type": "report",
-		"publisher": "Ministry of Environment, Lands and Parks. Williams Lake, BC. and Ministry of Fisheries. Victoria, BC.",
-		"title": "Assessment of the Distribution, Timing, and Abundance of Adult Steelhead Returns to the Bella Cool River Watershed in 1997 and 1998",
-		"author": [
-			{
-				"family": "English",
-				"given": "K K"
-			},
-			{
-				"family": "Alexander",
-				"given": "R F"
-			},
-			{
-				"family": "Nelson",
-				"given": "T. C."
-			},
-			{
-				"family": "Ramsay",
-				"given": "M K"
-			}
-		],
-		"issued": {
-			"date-parts": [
-				[
-					"1999"
-				]
-			]
-		}
-	},
-	{
 		"id": "Buchananetal2020BridgeRiver",
 		"type": "report",
 		"number": "BRGMON-09",
@@ -5500,6 +5472,38 @@
 		}
 	},
 	{
+		"id": "RamshawEtAl2019RecoveryPotentialAssessment",
+		"type": "article-journal",
+		"container-title": "Fisheries and Oceans Canada Canadian Science Advisory Secretariat",
+		"language": "en",
+		"page": "ix + 99",
+		"source": "Zotero",
+		"title": "Recovery Potential Assessment for the Sakinaw Lake Sockeye Salmon (Oncorhynchus nerka) (2017)",
+		"URL": "https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/4088563x.pdf",
+		"volume": "2019/027",
+		"author": [
+			{
+				"family": "Ramshaw",
+				"given": "Brock"
+			},
+			{
+				"family": "Luedke",
+				"given": "Wilf"
+			},
+			{
+				"family": "Korman",
+				"given": "Josh"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
 		"id": "Scheuerell2016ExplicitSolutionCalculating",
 		"type": "article-journal",
 		"abstract": "<p> Stock-recruitment models have been used for decades in fisheries management as a means of formalizing the expected number of offspring that recruit to a fishery based on the number of parents. In particular, Ricker’s stock recruitment model is widely used due to its flexibility and ease with which the parameters can be estimated. After model fitting, the spawning stock size that produces the maximum sustainable yield ( <italic>S</italic> <sub>MSY</sub> ) to a fishery, and the harvest corresponding to it ( <italic>U</italic> <sub>MSY</sub> ), are two of the most common biological reference points of interest to fisheries managers. However, to date there has been no explicit solution for either reference point because of the transcendental nature of the equation needed to solve for them. Therefore, numerical or statistical approximations have been used for more than 30 years. Here I provide explicit formulae for calculating both <italic>S</italic> <sub>MSY</sub> and <italic>U</italic> <sub>MSY</sub> in terms of the productivity and density-dependent parameters of Ricker’s model. </p>",
@@ -5588,11 +5592,12 @@
 		}
 	},
 	{
-		"id": "WilsonPeacockInprepTimingMajorFreshwater",
+		"id": "WilsonPeacock2025FreshwaterLifecycleTiming",
 		"type": "article-journal",
 		"container-title": "Canadian Journal of Fisheries and Aquatic Sciences",
-		"title": "Timing of major freshwater life-cycle events of Pacific salmon (Oncorhynchus spp.) in British Columbia, Canada",
-		"URL": "https://bookdown.org/salmonwatersheds/life-cycle-timing",
+		"title": "Freshwater life-cycle timing of Pacific salmon and steelhead (Oncorhynchus spp.) in Canada",
+		"URL": "https://doi.org/10.1139/cjfas-2024-0213",
+		"volume": "Just-IN",
 		"author": [
 			{
 				"family": "Wilson",
@@ -5604,7 +5609,11 @@
 			}
 		],
 		"issued": {
-			"literal": "In review"
+			"date-parts": [
+				[
+					"2025"
+				]
+			]
 		}
 	},
 	{
@@ -6219,7 +6228,7 @@
 		}
 	},
 	{
-		"id": "BiologicalBenchmarksBuilding",
+		"id": "FisheriesandOceansCanada2023BiologicalBenchmarksBuilding",
 		"type": "article-journal",
 		"abstract": "This research focuses on comparing methods for developing alternative aggregate-level biological reference points (including aggregate escapement goals) for Skeena and Nass Sockeye Salmon and evaluate advantages and disadvantages of each.",
 		"container-title": "Canadian Science Advisory Secretariat Science Advisory Report",
@@ -6489,6 +6498,53 @@
 				[
 					"1978",
 					3
+				]
+			]
+		}
+	},
+	{
+		"id": "ChumTechnicalCommittee20242020PostSeason",
+		"type": "article-journal",
+		"container-title": "Pacific Salmon Commission Chum Technical Committee",
+		"page": "ix + 58 p.",
+		"title": "2020 Post Season Summary Report",
+		"URL": "https://www.psc.org/publications/technical-reports/technical-committee-reports/chum/",
+		"volume": "TCCHUM (24)-01",
+		"author": [
+			{
+				"family": "Chum Technical Committee",
+				"given": ""
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2024",
+					7
+				]
+			]
+		}
+	},
+	{
+		"id": "OBEMP20252024OkanoganSubbasin",
+		"type": "report",
+		"event-place": "Nespelem, WA",
+		"genre": "Report submitted to the Bonneville Power Administration, Project No. 2003-022-00.",
+		"publisher": "Colville Confederated Tribes Fish and Wildlife Department",
+		"publisher-place": "Nespelem, WA",
+		"title": "2024 Okanogan Subbasin Steelhead Spawning Abundance and Distribution",
+		"URL": "https://www.okanoganmonitoring.org/",
+		"author": [
+			{
+				"family": "OBEMP",
+				"given": ""
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2025",
+					2
 				]
 			]
 		}

@@ -2,9 +2,9 @@
 .Rhistory
 .RData
 .Ruserdata
+.DS_Store
 
 # Ignore figures file
-figures/
 _book/
 
 tables/code/ignore

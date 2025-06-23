@@ -6584,5 +6584,84 @@
 				]
 			]
 		}
+	},
+	{
+		"id": "AtlasEtAl2025LinkingHierarchicalPopulation",
+		"type": "article-journal",
+		"abstract": "Managing data-limited populations is a challenge to the sustainability of fisheries globally. Meta-analytic approaches, where insights from data-rich populations are drawn on to inform data-limited ones, along with the use of habitat-based information, have each been proposed as ways to overcome data-limited assessment challenges, but the two approaches have rarely been combined. Sockeye Salmon Oncorhynchus nerka spawn and rear in many remote coastal watersheds of British Columbia, Canada, challenging comprehensive population assessments. Estimating conservation and management reference points for such populations is particularly relevant given their importance to Indigenous and commercial fisheries. Most Sockeye Salmon have obligate lake-rearing as juveniles, and total abundance is typically limited by production in nursery lakes. Although methods have been developed to estimate population capacity based on the photosynthetic rate of nursery lakes and lake area or volume, they have not yet been widely incorporated into spawner–recruitment analyses.We tested the value of combining these lake-based capacity estimates with various hierarchical structures in spawner–­recruitment analyses to assess population status using a set of Bayesian spawner–recruitment models for 69 populations across coastal British Columbia, many of which were data limited.Our analysis revealed regional variation in the population productivity of Sockeye Salmon, with coastal populations exhibiting slightly lower mean productivity than those in interior watersheds. Hierarchical spawner–recruitment models with and without informative lake habitat-based priors greatly improved predictive ability across all populations.These findings reveal opportunities to integrate spatial analyses of habitat characteristics with population models to inform the conservation and management of exploited species and their natal habitats, particularly where populations are data limited.Evaluating the status of data limited fish populations to inform fisheries management is a core challenge for the sustainability of fisheries around the world. In Canada’s remote North and Central Coast region, hundreds of salmon populations are lacking in formal assessment to define management benchmarks. One opportunity to improve the available information about population status and inform sustainable fisheries management is to integrate habitat-based insights with traditional spawner–recruit modeling to estimate stock status and management benchmarks for data-limited populations. Most Sockeye Salmon rear in freshwater lakes for 1–2 years prior to their seaward migration, and maximum population sizes are limited by the size and productivity of their rearing lake. Using a Bayesian-hierarchical modeling approach, we integrated information on lake size and productivity into a Ricker spawner–recruit model as prior information for 69 Sockeye Salmon populations on the remote North and Central Coast of British Columbia. We further evaluated the benefits incorporating regional biogeographic differences in productivity—the number of offspring produced at low spawner abundance—into models that we used to estimate the status of Sockeye Salmon populations. Overall, we found that this Bayesian-hierarchical approach greatly reduced uncertainty in the estimated population parameters that are used to inform assessments of stock status, particularly for the most data-limited populations that we evaluated.",
+		"container-title": "Marine and Coastal Fisheries",
+		"DOI": "10.1093/mcfafs/vtaf008",
+		"ISSN": "1942-5120",
+		"issue": "2",
+		"journalAbbreviation": "Marine and Coastal Fisheries",
+		"page": "vtaf008",
+		"source": "Silverchair",
+		"title": "Linking hierarchical population models with habitat data improves assessment of data-limited salmon stocks",
+		"URL": "https://doi.org/10.1093/mcfafs/vtaf008",
+		"volume": "17",
+		"author": [
+			{
+				"family": "Atlas",
+				"given": "William I"
+			},
+			{
+				"family": "Glaser",
+				"given": "Dylan M"
+			},
+			{
+				"family": "Connors",
+				"given": "Brendan M"
+			},
+			{
+				"family": "Holt",
+				"given": "Carrie A"
+			},
+			{
+				"family": "Greenberg",
+				"given": "Daniel A"
+			},
+			{
+				"family": "Selbie",
+				"given": "Daniel T"
+			},
+			{
+				"family": "Cox-Rogers",
+				"given": "Steve"
+			},
+			{
+				"family": "Carr-Harris",
+				"given": "Charmaine"
+			},
+			{
+				"family": "Hertz",
+				"given": "Eric"
+			},
+			{
+				"family": "Hart",
+				"given": "Jonathan L"
+			},
+			{
+				"family": "Moore",
+				"given": "Jonathan W"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2025",
+					6,
+					2
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2025",
+					3,
+					1
+				]
+			]
+		}
 	}
 ]

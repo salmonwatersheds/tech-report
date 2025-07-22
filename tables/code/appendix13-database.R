@@ -3,50 +3,24 @@
 ###############################################################################
 
 library(dplyr)
-library(RPostgreSQL)
+
+# Source functions to pull from database
+source("https://raw.githubusercontent.com/salmonwatersheds/population-indicators/refs/heads/master/code/functions_general.R")
 
 ###############################################################################
-# Create connection to postreSQL salmonwatersheds database
-###############################################################################
-library(RPostgreSQL)
-
-dsn_database <- "salmondb_prod"   # Specify the name of your Database
-dsn_hostname <- "data.salmonwatersheds.ca"  # Specify host name e.g.:"aws-us-east-1-portal.4.dblayer.com"
-dsn_port <- "5432"                # Specify your port number. e.g. 98939
-dsn_uid <- "salmonwatersheds"         # Specify your username. e.g. "admin"
-dsn_pwd <- readline(prompt="Enter database password: " )    # Specify your password. e.g. "xxx"
-
-tryCatch({
-	drv <- dbDriver("PostgreSQL")
-	print("Connecting to Database…")
-	connec <- dbConnect(drv, 
-											dbname = dsn_database,
-											host = dsn_hostname, 
-											port = dsn_port,
-											user = dsn_uid, 
-											password = dsn_pwd)
-	print("Database Connected!")
-},
-error=function(cond) {
-	print("Unable to connect to Database.")
-})
-
-###############################################################################
-# Import appendix4 view from appdata
+# Import view from appdata
 ###############################################################################
 
-# Get app4 view
-app13 <- dbGetQuery(
-	conn = connec, 
-	statement = "SELECT * FROM appdata.vwdl_setr_appendix13"
-)
-app13[which(app13 == -989898)] <- NA
+app13 <- retrieve_data_from_PSF_databse_fun(name_dataset = "appdata.vwdl_setr_appendix13")
 
 regions <- data.frame(
-	regionid = c(1:10),
-	region_name = c("Skeena", "Nass", "Central Coast", "Fraser", "Vancouver Island & Mainland Inlets", "Haida Gwaii", "Columbia", "Yukon", NA, "Transboundary")
+	regionid = c(1:14),
+	region_name = c("Skeena", "Nass", "Central Coast", "Fraser", "Vancouver Island & Mainland Inlets", "Haida Gwaii", "Columbia", "Yukon", NA, "Northern Transboundary", NA, NA, "East Vancouver Island & Mainland Inlets", "West Vancouver Island")
 )
 app13$region <- regions$region_name[app13$regionid]
+
+# Filter out Yukon 
+app13 <- app13 %>% filter(region != "Yukon")
 
 # # Check rollup %
 # sum_rollup <- round(apply(app13[, c("rollup_lo_pct", "rollup_mod_pct", "rollup_hi_pct")], 1, sum, na.rm = TRUE), 3)
@@ -71,3 +45,4 @@ app13_display <- data.frame(
 ###############################################################################
 
 write.csv(app13_display, file = "tables/appendix13.csv", row.names = FALSE)
+

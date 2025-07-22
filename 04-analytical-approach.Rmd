@@ -36,7 +36,7 @@ To characterize key salmon population dynamics, temporal trends in fisheries dat
 -   Hatchery release data; and
 -   Recruits-per-spawner datasets.
 
-The data sources and analyses differ among regions, with the main differences occurring between the North and Central Coast (Nass, Skeena, Central Coast Regions) and the South Coast (Fraser and Vancouver Island & Mainland Inlets Regions). Region-specific data nuances are included in [Regions](#regions).
+The data sources and analyses differ among regions, with the main differences occurring between the North and Central Coast (Nass, Skeena, Central Coast Regions) and the South Coast (Fraser, East Vancouver Island & Mainland Inlets, and West Vancouver Island Regions). Region-specific data nuances are included in [Regions](#regions).
 
 We synthesize the types of data listed above to generate output datasets that are available for download in the [Salmon Data Library](https://www.data.salmonwatersheds.ca). These output datasets are visualized in the [Pacific Salmon Explorer](https://www.salmonexplorer.ca) through [nine population indicators](#overview-biological-indicators). These datasets also inform a CU-level [Hatchery Contribution Score](#hatchery-contribution-score) and [Data Quality Scores](#data-quality-score). The data compilation exercise also highlights data gaps across and within Regions. We aim to update these key datasets annually or as new input data become available.
 
@@ -291,7 +291,7 @@ This score is calculated from the proportion of observed spawners in the CU that
 
 $$C= 5 \times \frac{\sum_{i - 1}^I E_{siady}}{\sum_{i - 1}^I E_{siady} + \sum_{j=1}^J E_{sjady}} $$ where $s$ = species, $i$ = indicator stream, $j$ = non-indicator stream, $a$ = CU, $d$ = decade, $y$ = year, $E_{siady}$ = indicator stream escapement (i.e. spawners), by stratum, and $E_{sjady}$ = non-indicator stream spawners, by stratum. This approach is used because it provides a weighted average of the actual number of spawners enumerated with higher quality methodology, rather than only counting the number of indicator and non-indicator streams.--> We then translate the **spawner survey coverage** score into a scale of 0-5 (labeled as Not Applicable, Low, Medium-Low, Medium, Medium-High, and High; Table \@ref(tab:spawncovScore)).
 
-<!--For CUs that do not use expansion procedures to generate CU-level estimates (e.g. Fraser sockeye, Chinook, and coho, and Vancouver Island & Mainland Inlets Chinook), spawner survey coverage scores were generated via expert opinion. -->
+<!--For CUs that do not use expansion procedures to generate CU-level estimates (e.g. Fraser sockeye, Chinook, and coho, and East Vancouver Island & Mainland Inlets and West Vancouver Island Chinook), spawner survey coverage scores were generated via expert opinion. -->
 
 ```{r spawncovScore, include=TRUE, echo = FALSE}
 hatch <- read.csv("tables/sec4_spawn_coverscores.csv")

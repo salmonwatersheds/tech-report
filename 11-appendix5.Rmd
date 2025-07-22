@@ -20,11 +20,11 @@ Spatial processing for all ZOIs has been conducted using ArcGIS Desktop 10.6 usi
 
 ### Chinook CU Zones of Influence {.unnumbered}
 
-Methods for delineating Chinook CU spawning zones of influence vary by region in accordance with the CU delineation approach used by DFO. In the Skeena, Nass, Central Coast, and Haida Gwaii Regions, Chinook CUs are defined using a more restrictive geographic representation. In the Fraser, Vancouver Island and Mainland Inlets, and Columbia regions, Chinook CUs are more broadly defined geographically.
+Methods for delineating Chinook CU spawning zones of influence vary by region in accordance with the CU delineation approach used by DFO. In the Skeena, Nass, Central Coast, and Haida Gwaii Regions, Chinook CUs are defined using a more restrictive geographic representation. In the Fraser, East Vancouver Island and Mainland Inlets, West Vancouver Island, and Columbia regions, Chinook CUs are more broadly defined geographically.
 
 **Spawning ZOI (Skeena, Nass, Central Coast, and Haida Gwaii Regions ):** All the FWA assessment watersheds that intersect directly with Chinook CU locations, regardless of whether or not spawning locations were identified for Chinook within an assessment watershed.
 
-**Spawning ZOI (Fraser, VIMI, and Columbia Regions):** Defined by the full extent of the 1:20K FWA assessment watersheds that directly intersect with identified spawning locations for each Chinook CU. In the Columbia region, assessment watersheds that contained spawning locations upstream of the CU boundary were included as part of the CU's spawning ZOI.
+**Spawning ZOI (Fraser, East Vancouver Island & Mainland Inlets, West Vancouver Island, and Columbia Regions):** Defined by the full extent of the 1:20K FWA assessment watersheds that directly intersect with identified spawning locations for each Chinook CU. In the Columbia region, assessment watersheds that contained spawning locations upstream of the CU boundary were included as part of the CU's spawning ZOI.
 
 ### Coho CU Zones of Influence {.unnumbered}
 

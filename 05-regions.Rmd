@@ -360,7 +360,7 @@ Nuances regarding habitat pressure indicator data and analytical methods for the
 
 #### Trans-regional Conservation Units {#central-coast-trans-cu}
 
-The pink (odd-year) Homathko-Klinaklini-Smith-Rivers-Bella Coola-Dean CU spans the boundary between the Central Coast and East Vancouver Island & Mainland Inlets Regions.
+The pink (odd-year) Homathko-Klinaklini-Smith-Rivers-Bella Coola-Dean CU spans the boundary between the Central Coast and the East Vancouver Island & Mainland Inlets Regions.
 
 #### Spawning Zones of Influence {#central-coast-zoi}
 
@@ -531,11 +531,11 @@ Nuances regarding habitat pressure indicator data and analytical methods for the
 
 #### Trans-regional Conservation Units {#evimi-trans-cu}
 
-The pink (odd-year) Homathko-Klinaklini-Smith-Rivers-Bella Coola-Dean CU spans the boundary between the Central Coast and East Vancouver Island & Mainland Inlets regions. The pink (odd-year) Nahwitti CU and the coho Nahwitti Lowland CU span the boundary between the West Vancouver Island and East Vancouver Island and Mainland Inlets Regions.
+The pink (odd-year) Homathko-Klinaklini-Smith-Rivers-Bella Coola-Dean CU spans the boundary between the Central Coast and the East Vancouver Island & Mainland Inlets Regions. The pink (odd-year) Nahwitti CU and the coho Nahwitti Lowland CU span the boundary between the West Vancouver Island and the East Vancouver Island and Mainland Inlets Regions.
 
 #### Spawning Zones of Influence {#evimi-zoi}
 
-Methods for delineating Chinook CU **spawning zones of influence (ZOIs)** vary by region in accordance with the CU delineation approach used by DFO. In the Fraser and East Vancouver Island and Mainland Inlets regions, Chinook CUs are more broadly defined geographically, which meant that the methods employed for determining pink, chum, and coho spawning ZOIs were also applicable to Chinook CUs. The localized spawning ZOI for each East Vancouver Island & Mainland Inlets Chinook CU was delineated by capturing the extent of all 1:20K FWA assessment watersheds that directly intersect with known spawning locations for Chinook.
+Methods for delineating Chinook CU **spawning zones of influence (ZOIs)** vary by region in accordance with the CU delineation approach used by DFO. In the Fraser and East Vancouver Island and Mainland Inlets Regions, Chinook CUs are more broadly defined geographically, which meant that the methods employed for determining pink, chum, and coho spawning ZOIs were also applicable to Chinook CUs. The localized spawning ZOI for each East Vancouver Island & Mainland Inlets Chinook CU was delineated by capturing the extent of all 1:20K FWA assessment watersheds that directly intersect with known spawning locations for Chinook.
 
 #### Forest Harvest on Southeast East Vancouver Island {#evimi-forest-disturbance}
 
@@ -616,7 +616,7 @@ Nuances regarding habitat pressure indicator data and analytical methods for the
 
 #### Trans-regional Conservation Units {#wvi-trans-cu}
 
-The pink (odd-year) Nahwitti CU and the coho Nahwitti Lowland CU span the boundary between the West Vancouver Island and East Vancouver Island and Mainland Inlets Regions.
+The pink (odd-year) Nahwitti CU and the coho Nahwitti Lowland CU span the boundary between the West Vancouver Island and the East Vancouver Island and Mainland Inlets Regions.
 
 #### Spawning Zones of Influence {#wvi-zoi}
 

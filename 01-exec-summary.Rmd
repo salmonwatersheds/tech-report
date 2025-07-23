@@ -9,7 +9,7 @@ library(kableExtra)
 library(dplyr)
 
 cu_list <- read.csv("tables/appendix1.csv")
-biostatus <- read.csv("tables/appendix3.csv")
+app3 <- read.csv("tables/appendix3.csv")
 ```
 
 Throughout British Columbia (BC), Canada, Pacific salmon play a vital part in the province's culture, ecology, and economy. They provide food, social, and economic benefits to coastal communities and support significant commercial and recreational fisheries throughout the region. Canada’s wild Pacific salmon populations are comprised of over 400 ecologically, geographically, and genetically distinct groups– defined as Conservation Units (CUs) under Canada’s Wild Salmon Policy – which represent unique spawning populations that occur throughout BC and the Yukon. This abundance of CUs represents an important piece of all salmon biodiversity within Canada. While some salmon populations in BC and the Yukon are doing well, others are degraded, declining, or of conservation concern. However, for many populations, we know very little about their current status or the state of their essential freshwater habitats. 

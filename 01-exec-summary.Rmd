@@ -4,7 +4,15 @@
 knitr::include_graphics("figures/salmon2.png")
 ```
 
-Throughout British Columbia (BC), Canada, Pacific salmon play a vital part in the province's culture, ecology, and economy. They provide food, social, and economic benefits to coastal communities and support significant commercial and recreational fisheries throughout the region. Canada’s wild Pacific salmon populations are comprised of 430 ecologically, geographically, and genetically distinct groups– defined as Conservation Units (CUs) under Canada’s Wild Salmon Policy – which represent unique spawning populations that occur throughout BC and the Yukon. This abundance of CUs represents an important piece of all salmon biodiversity within Canada. While some salmon populations in BC and the Yukon are doing well, others are degraded, declining, or of conservation concern. However, for many populations, we know very little about their current status or the state of their essential freshwater habitats. 
+```{r echo = FALSE, include = FALSE}
+library(kableExtra)
+library(dplyr)
+
+cu_list <- read.csv("tables/appendix1.csv")
+biostatus <- read.csv("tables/appendix3.csv")
+```
+
+Throughout British Columbia (BC), Canada, Pacific salmon play a vital part in the province's culture, ecology, and economy. They provide food, social, and economic benefits to coastal communities and support significant commercial and recreational fisheries throughout the region. Canada’s wild Pacific salmon populations are comprised of over 400 ecologically, geographically, and genetically distinct groups– defined as Conservation Units (CUs) under Canada’s Wild Salmon Policy – which represent unique spawning populations that occur throughout BC and the Yukon. This abundance of CUs represents an important piece of all salmon biodiversity within Canada. While some salmon populations in BC and the Yukon are doing well, others are degraded, declining, or of conservation concern. However, for many populations, we know very little about their current status or the state of their essential freshwater habitats. 
 
 The ability to maintain salmon biodiversity depends, in part, on the ability to detect changes in salmon production over time. This type of information helps to diagnose the drivers of salmon population dynamics and identify when and where conservation and management measures are needed to reverse declines. In BC, however, our current ability to make salmon-focused and evidence-based decisions is hindered by the lack of timely and broadly available information on the status of salmon CUs.
 
@@ -16,6 +24,6 @@ Due to the release of hatchery-produced salmon in rivers and streams throughout 
 
 To assess habitat status and evaluate individual and cumulative pressures on freshwater salmon habitat, we use 7 habitat pressure indicators (forest harvest, fire, insect damage, roads, urban & industrial development, agriculture, and mines). We quantify the extent and intensity of each indicator above in every salmon-bearing watershed in BC. 
 
-To date, PSF and our collaborators have undertaken biological and habitat status assessments for salmon CUs within the Skeena, Nass, Central Coast, Fraser, East Vancouver Island & Mainland Inlets, West Vancouver Island, Columbia, Haida Gwaii, and Northern Transboundary Regions in BC. We assessed the biological status of 339 of the 370 salmon CUs within these nine Regions.
+To date, PSF and our collaborators have undertaken biological and habitat status assessments for salmon the `length(cu_list$CUID)` CUs within the Skeena, Nass, Central Coast, Fraser, East Vancouver Island & Mainland Inlets, West Vancouver Island, Columbia, Haida Gwaii, and Northern Transboundary Regions in BC. Of these `length(cu_list$CUID)` CUs, `r length(which(app3$PSF.Status == "extinct"))` are extinct, `r length(which(app3$PSF.Status == "data-deficient"))` are data deficient, `r length(which(app3$PSF.Status == "poor"))` have poor status, `r length(which(app3$PSF.Status == "fair"))` have fair status, `r length(which(app3$PSF.Status == "good"))` have good status, and `r length(which(app3$PSF.Status == "not-assessed"))` CUs could not be assessed using PSF's methods.
 
 A key output of this work is the development of baseline information on the status of salmon populations and their habitats throughout BC. All of the data and assessments developed through this work are integrated into the [Pacific Salmon Explorer](https://www.salmonexplorer.ca), an online data visualization tool that displays information on salmon populations and their habitats in the Skeena, Nass, Central Coast, Fraser, East Vancouver Island & Mainland Inlets, West Vancouver Island, Columbia, Haida Gwaii, and Northern Transboundary Regions. The source datasets are also freely available to the public via our [Salmon Data Library](https://www.data.salmonwatersheds.ca). 

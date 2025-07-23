@@ -35,6 +35,7 @@ app1_full$cu_index[app1_full$cu_name_dfo == "Babine-Pinkut"] <- ""
 app1_display <- data.frame(
 	Region = app1$region,
 	Species = app1$species_name,
+	Species.Qualified = app1$species_qualified,
 	Conservation.Unit = app1$cu_name_pse,
 	CUID = app1$cuid,
 	Full.CU.Index = app1$cu_index 

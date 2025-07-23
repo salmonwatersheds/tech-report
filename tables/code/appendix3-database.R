@@ -45,10 +45,13 @@ bs <- bs %>% filter(region != "Yukon")
 app3_display <- data.frame(
 	Region = bs$region,
 	Species = bs$species_name,
+	Species.Qualified = bs$species_qualified,
 	Conservation.Unit = bs$cu_name_pse,
 	Current.Spawner.Abundance = prettierNum(bs$curr_spw),
 	Years = ifelse(is.na(bs$curr_spw), "", paste0(bs$curr_spw_start_year, "-", bs$curr_spw_end_year)),
 	Years.of.Data = stripNA(bs$years_of_data),
+	PSF.Status = stripNA(bs$psf_status),
+	PSF.Status.Type = stripNA(bs$psf_status_type),
 	percentile_status = stripNA(bs$percentile_status),
 	percentile_red_prob = stripNA(bs$percentile_red_prob),
 	percentile_yellow_prob = stripNA(bs$percentile_yellow_prob),
@@ -74,3 +77,4 @@ app3_display <- data.frame(
 ###############################################################################
 
 write.csv(app3_display, file = "tables/appendix3.csv", row.names = FALSE)
+

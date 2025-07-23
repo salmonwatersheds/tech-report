@@ -34,6 +34,7 @@ app13 <- app13 %>% filter(region != "Yukon")
 app13_display <- data.frame(
 	Region = app13$region,
 	Species = app13$species_name,
+	Species.Qualified = app13$species_qualified,
 	Conservation.Unit = app13$cu_name_pse,
 	High.Risk = ifelse(is.na(app13$rollup_hi_pct), "0%", paste0(round(app13$rollup_hi_pct*100), "%")),
 	Moderate.Risk = ifelse(is.na(app13$rollup_mod_pct), "0%", paste0(round(app13$rollup_mod_pct*100), "%")),

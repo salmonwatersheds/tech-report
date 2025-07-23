@@ -521,7 +521,7 @@ Run timing data were compiled from a variety of sources detailed in @WilsonPeaco
 **Trends in spawner abundance** were derived for chum (Diana Dobson, DFO Stock Assessment), pink (Pieter van Will, DFO Stock Assessment), and sockeye (Diana Dobson and Pieter van Will, DFO Stock Assessment) in the East Vancouver Island & Mainland Inlets Region. For steelhead, data used to derive estimated spawner abundance for was sourced from the Province of BC's [EcoCat](https://a100.gov.bc.ca/pub/acat/public/welcome.do) and @Mcculloch2020WestCoastRegion. For a description of trends in spawner abundance methods, see [Overview of Population Indicators: Trends in Spawner Abundance](#spawner-abundance).
 -->
 
-#### Biological Status
+#### Biological Status {#evimi-biological-status}
 
 Biological status for CUs in the Region was assessed using our standardized approach. See [Benchmarks for Assessing Biological Status](#benchmarks-biostatus) and [Decision Rules for Assessing Biological Status](#bs-decision-rules) for more details on biological status assessment methods.
 
@@ -606,11 +606,11 @@ Run timing data were compiled from a variety of sources detailed in @WilsonPeaco
 **Trends in spawner abundance** were derived for chum (Diana Dobson, DFO Stock Assessment), pink (Pieter van Will, DFO Stock Assessment), and sockeye (Diana Dobson and Pieter van Will, DFO Stock Assessment) in the West Vancouver Island Region. For steelhead, data used to derive estimated spawner abundance for was sourced from the Province of BC's [EcoCat](https://a100.gov.bc.ca/pub/acat/public/welcome.do) and @Mcculloch2020WestCoastRegion. For a description of trends in spawner abundance methods, see [Overview of Population Indicators: Trends in Spawner Abundance](#spawner-abundance).
 -->
 
-#### Biological Status
+#### Biological Status {#wvi-biological-status}
 
 Biological status for CUs in the Region was assessed using our standardized approach. See [Benchmarks for Assessing Biological Status](#benchmarks-biostatus) and [Decision Rules for Assessing Biological Status](#bs-decision-rules) for more details on biological status assessment methods.
 
-### Habitat Data and Analytical Methods  {#wvi-hab-data}
+### Habitat Data and Analytical Methods {#wvi-hab-data}
 
 Nuances regarding habitat pressure indicator data and analytical methods for the West Vancouver Island Region are listed below. Refer to [Habitat Status: Indicators & Benchmarks](#indicators-benchmarks-hab) for information on habitat pressure indicators, benchmarks, and the analytical methods used to assess habitat status. <!--Additional details on habitat pressure indicators, data sources, data currency, and benchmarks specific to the West Vancouver Island Region are available in [Appendix 6 (Description of Habitat Pressure Indicators & Relevance to Salmon)](#appendix-6), [Appendix 7 (Habitat Pressure Datasets & Data Sources)](#appendix-7), [Appendix 8 (Spatial Data Processing for Habitat Pressure Indicators)](#appendix-8), [Appendix 9 (Spatial Data Processing for Future Pressures)](#appendix-9), and [Appendix 12 (Habitat Pressure Benchmark Values by Region)](#appendix-12).-->
 

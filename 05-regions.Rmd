@@ -25,7 +25,7 @@ Because of the Transboundary life-cycles of salmon in this region, most monitori
 
 #### Spawner Surveys {#transboundary-spawner-surveys}
 
-Annual spawner survey data were mostly acquired from NuSEDS and the TTC annual reports. There are over 20 appendices in the annual TTC reports that include escapement estimates from assessment projects including fishwheels, weirs, video weirs, sonars, snorkel surveys and aerial surveys. Where spawner estimates were reported in both datasets, they were most often identical. For some streams and years, the TTC estimates were lower. For example, the Klukshu River Chinook, coho, and sockeye estimates from 2000-2020 were often lower in the TTC reports than in NuSEDS. There were fewer cases where TTC estimates were higher than NuSEDS and these differences tended to be smaller in magnitude. 
+Annual spawner survey data were mostly acquired from [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6) and the TTC annual reports. There are over 20 appendices in the annual TTC reports [e.g. @TTC2022FinalEstimatesTransboundary] that include escapement estimates from assessment projects including fishwheels, weirs, video weirs, sonars, snorkel surveys and aerial surveys. Where spawner estimates were reported in both datasets, they were most often identical. For some streams and years, the TTC estimates were lower. For example, the Klukshu River Chinook, coho, and sockeye estimates from 2000-2020 were often lower in the TTC reports than in NuSEDS. There were fewer cases where TTC estimates were higher than NuSEDS and these differences tended to be smaller in magnitude. 
 
 Based on guidance from the TWG, who advised that data in TTC reports were more reliable and current than in NuSEDS, we preferentially relied on TTC data when spawner surveys were reported in both sources. In some cases (e.g. Klukshu River coho), the NuSEDS time series extended further back in time than the TTC data, but estimates differed between the two sources in more recent years. In these cases, we used only the TTC data, even though that meant losing some historical data that were in NuSEDS, to avoid misrepresenting changes in abundance through time that are due to different data processing steps between data sources.
 
@@ -99,7 +99,7 @@ As with the Skeena and Nass regions, in the Haida Gwaii Region many of the datas
 
 #### Spawner Surveys {#haida-gwaii-spawner-surveys}
 
-**Spawner survey** data for streams in the Haida Gwaii Region were sourced from DFO's New Salmon Escapement Database (NuSEDS). For a description of the spawner survey indicator, see [Overview of Population Indicators: Spawner Surveys](#spawner-surveys).
+**Spawner survey** data for streams in the Haida Gwaii Region were sourced from [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6). For a description of the spawner survey indicator, see [Overview of Population Indicators: Spawner Surveys](#spawner-surveys).
 
 #### Juvenile Surveys {#haida-gwaii-juvenile-surveys}
 
@@ -111,7 +111,7 @@ As with the Skeena and Nass regions, in the Haida Gwaii Region many of the datas
 
 #### Spawner Abundance {#haida-gwaii-spawner-abundance}
 
-Observed spawner abundance for CUs on the in the Haida Gwaii Region is the sum of all spawner survey data as documented in NuSEDS, as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance).
+Observed spawner abundance for CUs on the in the Haida Gwaii Region is the sum of all spawner survey data as documented in [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance).
 
 Haida Gwaii CU-level **estimates of spawner abundance** (run reconstructions) were sourced from the North and Central Coast (NCC) database, updated by PSF for the years 2018-2021. Haida Gwaii CU-level estimated spawner abundance time series were developed for the NCC database according to the expansion factors described in the Skeena Region section above. On Haida Gwaii, the decline in monitoring coverage over the last 10-20 years was mentioned as an area of concern, and a decline in assessments may affect the relationships used to develop total estimates of spawner abundance (run reconstructions), as described in [Data Quality](#data-quality).
 
@@ -121,7 +121,7 @@ Run timing data were compiled from a variety of sources detailed in @WilsonPeaco
 
 #### Catch & Run Size {#haida-gwaii-catch-run-size}
 
-**Catch and run size** and subsequent exploitation rates for CUs on the Haida Gwaii Region were calculated by LGL and PSF from data in the Fisheries Operating System (FOS) and other DFO databases. Similar to our work in other adjacent regions (Central Coast, Skeena, Nass), we accessed most of these datasets via the North and Central Coast (NCC) database, maintained by LGL Ltd. and updated by PSF for the period 2018-2021 [@EnglishEtAl2018NorthCentralCoast]. The data is current to *2021*. For a description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#catch-run-size).
+**Catch and run size** and subsequent exploitation rates for CUs on the Haida Gwaii Region were calculated by LGL and PSF from data in the [Fisheries Operating System (FOS)](https://open.canada.ca/data/en/dataset/7ac5fe02-308d-4fff-b805-80194f8ddeb4) and other DFO databases. Similar to our work in other adjacent regions (Central Coast, Skeena, Nass), we accessed most of these datasets via the North and Central Coast (NCC) database, maintained by LGL Ltd. and updated by PSF for the period 2018-2021 [@EnglishEtAl2018NorthCentralCoast]. The data is current to *2021*. For a description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#catch-run-size).
 
 On Haida Gwaii, there are some specific nuances to catch data that are important to be aware of when considering the role of catch in estimates of total annual salmon run size. For sockeye salmon, the catch is calculated from a fixed estimate of an annual exploitation rate of 20%. Local knowledge suggests this value may be high, but the representativeness of a fixed rate is less likely to capture annual differences. There is only one Coded Wire Tag indicator stock for coho salmon, so these values are applied to all other coho when used in catch calculations. These considerations in estimates of catch are discussed in [Data Quality](#data-quality).
 
@@ -170,7 +170,7 @@ As with the Skeena Region, many of the datasets necessary to understand the dyna
 
 #### Spawner Surveys {#nass-spawner-surveys}
 
-Spawner survey data for streams in the Nass Region were sourced from DFO's New Salmon Escapement Database (NuSEDS). For a description of the spawner survey indicator, see [Overview of Population Indicators: Spawner Surveys](#spawner-surveys). For steelhead, spawner survey data were provided directly from the Nisga'a Lisims Goverment Fish and Wildlife and LGL Limited [@EnglishEtAl2023PreliminaryAreaSalmon].
+Spawner survey data for streams in the Nass Region were sourced from [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6). For a description of the spawner survey indicator, see [Overview of Population Indicators: Spawner Surveys](#spawner-surveys). For steelhead, spawner survey data were provided directly from the Nisga'a Lisims Goverment Fish and Wildlife and LGL Limited [@EnglishEtAl2023PreliminaryAreaSalmon].
 
 #### Juvenile Surveys {#nass-juvenile-surveys}
 
@@ -182,7 +182,7 @@ Hatchery releases in the Nass Region for all species were provided by DFO (Brock
 
 #### Spawner Abundance {#nass-spawner-abundance}
 
-Observed spawner abundance for CUs in the Nass Region is the sum of all spawner survey data as documented in NuSEDS, as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). Nass Region CU-level estimates of spawner abundance (run reconstructions) were sourced from @EnglishEtAl2023PreliminaryAreaSalmon. Some CU-level estimated spawner abundance time series were developed according to the expansion factors described in the Skeena Region section.
+Observed spawner abundance for CUs in the Nass Region is the sum of all spawner survey data as documented in [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). Nass Region CU-level estimates of spawner abundance (run reconstructions) were sourced from @EnglishEtAl2023PreliminaryAreaSalmon. Some CU-level estimated spawner abundance time series were developed according to the expansion factors described in the Skeena Region section.
 
 In addition, CU-level estimates of spawner abundance for five Nass CUs are derived from additional spawner enumeration methods. Specifically, three salmon CUs (plus one steelhead CU) have mark-recapture programs operated by Nisga'a Fisheries and Wildlife [@EnglishEtAl2023PreliminaryAreaSalmon].
 
@@ -193,7 +193,7 @@ Run timing data were compiled from a variety of sources detailed in @WilsonPeaco
 
 #### Catch & Run Size {#nass-catch-run-size}
 
-Catch and run size, and subsequent exploitation rates for CUs in the Nass Region were calculated by LGL, Nisga'a Fish and Wildlife, and DFO from the Fisheries Operating System (FOS) and other DFO databases. These data were reported in @EnglishEtAl2023PreliminaryAreaSalmon. For a description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#catch-run-size).
+Catch and run size, and subsequent exploitation rates for CUs in the Nass Region were calculated by LGL, Nisga'a Fish and Wildlife, and DFO from the [Fisheries Operations System](https://open.canada.ca/data/en/dataset/7ac5fe02-308d-4fff-b805-80194f8ddeb4) and other DFO databases. These data were reported in @EnglishEtAl2023PreliminaryAreaSalmon. For a description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#catch-run-size).
 
 #### Recruits-per-Spawner {#nass-recruits-per-spawner}
 
@@ -274,7 +274,7 @@ For other CUs, run timing data were estimated by DFO North Coast Staff. See [Ove
 
 #### Catch & Run Size {#skeena-catch-run-size}
 
-Catch and run size, and subsequent exploitation rates for CUs in the Skeena region were calculated by LGL and DFO from the Fisheries Operating System (FOS) and other DFO databases. We accessed these datasets for pink, chum and coho salmon via the North and Central Coast (NCC) Database, maintained by LGL Ltd. [@EnglishEtAl2018NorthCentralCoast] and for sockeye following @BiologicalBenchmarksBuilding. For a description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#catch-run-size).
+Catch and run size, and subsequent exploitation rates for CUs in the Skeena region were calculated by LGL and DFO from the [Fisheries Operating System (FOS)](https://open.canada.ca/data/en/dataset/7ac5fe02-308d-4fff-b805-80194f8ddeb4) and other DFO databases. We accessed these datasets for pink, chum and coho salmon via the North and Central Coast (NCC) Database, maintained by LGL Ltd. [@EnglishEtAl2018NorthCentralCoast] and for sockeye following @BiologicalBenchmarksBuilding. For a description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#catch-run-size).
 
 #### Recruits-per-Spawner {#skeena-recruits-per-spawner}
 
@@ -344,7 +344,7 @@ Run timing information for many Central Coast salmon CUs was sourced from @Goruk
 
 #### Catch & Run Size {#central-coast-catch-run-size}
 
-**Catch and run size**, and subsequent exploitation rates for CUs on the Central Coast were calculated by DFO and LGL from data in the Fisheries Operating System (FOS) and other DFO databases. Similar to our work in the Skeena and Nass, we accessed most of these datasets via the North and Central Coast (NCC) Database, maintained by LGL Ltd, and updated by PSF for 2018-202. [@EnglishEtAl2018NorthCentralCoast]. For a description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#bs-indicators).
+**Catch and run size**, and subsequent exploitation rates for CUs on the Central Coast were calculated by DFO and LGL from data in the [Fisheries Operating System (FOS)](https://open.canada.ca/data/en/dataset/7ac5fe02-308d-4fff-b805-80194f8ddeb4) and other DFO databases. Similar to our work in the Skeena and Nass, we accessed most of these datasets via the North and Central Coast (NCC) Database, maintained by LGL Ltd, and updated by PSF for 2018-202. [@EnglishEtAl2018NorthCentralCoast]. For a description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#bs-indicators).
 
 #### Recruits-per-Spawner {#central-coast-recruits-per-spawner}
 
@@ -390,7 +390,7 @@ For steelhead in the Fraser Region, we used CUs defined in @ParkinsonEtAl2005Pop
 
 ### Population Data and Analytical Methods {#fraser-pop-data}
 
-In the Fraser Region, we accessed datasets for biological status and indicators directly from DFO and PSC staff. Additional data was sourced from NuSEDS and FOS. For steelhead, there is no centralized public database for population data so these data were compiled from disparate sources, including from online databases, individual reports, and data custodians (see our [steelhead-specific Github repository](https://github.com/salmonwatersheds/steelhead-status) for all raw steelhead population data compiled). Details on specific data sources and analytical methods for the Fraser Region are described below.
+In the Fraser Region, we accessed datasets for biological status and indicators directly from DFO and PSC staff. Additional data was sourced from NuSEDS and [Fisheries Operating System (FOS)](https://open.canada.ca/data/en/dataset/7ac5fe02-308d-4fff-b805-80194f8ddeb4). For steelhead, there is no centralized public database for population data so these data were compiled from disparate sources, including from online databases, individual reports, and data custodians (see our [steelhead-specific Github repository](https://github.com/salmonwatersheds/steelhead-status) for all raw steelhead population data compiled). Details on specific data sources and analytical methods for the Fraser Region are described below.
 
 #### Spawner Surveys {#fraser-spawner-surveys}
 
@@ -468,9 +468,9 @@ For the East Vancouver Island & Mainland Inlets and West Vancouver Island Region
 
 ### Conservation Unit Changes {#evimi-cu-changes}
 
-The Sakinaw sockeye CU was declared extinct in the wild by DFO as of 2009 [@RamshawEtAl2019RecoveryPotentialAssessment]. However, there is still a population from a captive broodstock program maintaining a hatchery-derived population in Sakinaw Lake. However, since this CU was immediately reintroduced from broodstock from the same CU, it does not meet the criteria for being declared de novo [@WadeEtAl2019FrameworkReviewingApproving].
+The Sakinaw sockeye CU was declared extinct in the wild by DFO as of 2009 [@RamshawEtAl2019RecoveryPotentialAssessment]. There is still a population from a captive broodstock program maintaining a hatchery-derived population in Sakinaw Lake. However, since this CU was immediately reintroduced from broodstock from the same CU, it does not meet the criteria for being declared de novo [@WadeEtAl2019FrameworkReviewingApproving].
 
-For steelhead in the East Vancouver Island & Mainland Inlets Region, we used CUs defined in @ParkinsonEtAl2005PopulationDatabaseDefining. Through our work and conversations with the Steelhead Technical Working Group, we identified a key issue with the spatial boundaries for some coastal steelhead CUs for groups of winter-run populations, including the East Coast East Vancouver Island Winter, and South Coast Winter CUs in the East Vancouver Island & Mainland Inlets Region. One of the key distinguishing features among steelhead CUs is run timing. The CU boundaries for this winter-run CU did not include watersheds that contain both winter-run and coastal summer-run populations of steelhead. These watersheds were only included in the corresponding coastal summer-run CU (in this case, the East Coast East Vancouver Island Summer, and South Coast Summer CUs). To address this issue in a standardized way for all CUs with this issue, we expanded the CU boundaries for the winter-run CUs to include the entirety of watersheds in the corresponding summer-run CU. In this case, resulting in an overlapping region between the East Coast East Vancouver Island Winter and East Coast East Vancouver Island Summer CUs, and the South Coast Winter and South Coast Summer CUs, where steelhead from both CUs spawn. This approach did not capture watershed-specific nuances in the distribution of winter- and summer-run steelhead populations, which are often not documented. However, these changes to the East Coast East Vancouver Island Winter, and South Coast Winter CUs ensure these CUs is not missing key watersheds.
+For steelhead in the East Vancouver Island & Mainland Inlets Region, we used CUs defined in @ParkinsonEtAl2005PopulationDatabaseDefining. Through our work and conversations with the Steelhead Technical Working Group, we identified a key issue with the spatial boundaries for some coastal steelhead CUs for groups of winter-run populations, including the East Coast East Vancouver Island Winter, and South Coast Winter CUs in the East Vancouver Island & Mainland Inlets Region. One of the key distinguishing features among steelhead CUs is run timing. The CU boundaries for this winter-run CU did not include watersheds that contain both winter-run and coastal summer-run populations of steelhead. These watersheds were only included in the corresponding coastal summer-run CU (in this case, the East Coast East Vancouver Island Summer, and South Coast Summer CUs). To address this issue in a standardized way among all CUs, we expanded the CU boundaries for the winter-run CUs to include the entirety of watersheds in the corresponding summer-run CU. In this case, resulting in an overlapping region between the East Coast East Vancouver Island Winter and East Coast East Vancouver Island Summer CUs, and the South Coast Winter and South Coast Summer CUs, where steelhead from both CUs spawn. This approach did not capture watershed-specific nuances in the distribution of winter- and summer-run steelhead populations, which are often not documented. However, these changes to the East Coast East Vancouver Island Winter, and South Coast Winter CUs ensure these CUs is not missing key watersheds.
 
 ```{r EVIMIMap, fig.cap = "Map of the East East Vancouver Island & Mainland Inlets Region.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
 knitr::include_graphics("figures/EVIMI_region.png")
@@ -478,7 +478,7 @@ knitr::include_graphics("figures/EVIMI_region.png")
 
 ### Population Data and Analytical Methods {#evimi-pop-data}
 
-In the East Vancouver Island & Mainland Inlets Region, we directly accessed datasets for biological indicators from DFO staff. Additional data was sourced from NuSEDS and FOS. For steelhead, there is no centralized public database for population data so these data were compiled from disparate sources, including from online databases, individual reports, and data custodians (see our [steelhead-specific Github repository](https://github.com/salmonwatersheds/steelhead-status) for all raw steelhead population data compiled). Details on specific data sources and analytical methods for the East Vancouver Island & Mainland Inlets Region are described below.
+In the East Vancouver Island & Mainland Inlets Region, we directly accessed datasets for biological indicators from DFO staff. Additional data was sourced from [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6) and [Fisheries Operating System (FOS)](https://open.canada.ca/data/en/dataset/7ac5fe02-308d-4fff-b805-80194f8ddeb4). For steelhead, there is no centralized public database for population data so these data were compiled from disparate sources, including from online databases, individual reports, and data custodians (see our [steelhead-specific Github repository](https://github.com/salmonwatersheds/steelhead-status) for all raw steelhead population data compiled). Details on specific data sources and analytical methods for the East Vancouver Island & Mainland Inlets Region are described below.
 
 #### Spawner Surveys {#evimi-spawner-surveys}
 
@@ -494,7 +494,7 @@ We acquired multiple sources' **juvenile survey** data for several CUs in the Ea
 
 #### Spawner Abundance {#evimi-spawner-abundance}
 
-In the East Vancouver Island & Mainland Inlets Region, **observed spawner abundance** is the sum of all spawner survey data documented in NuSEDS, as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). For steelhead, spawner survey were sourced from the Province of BC's [EcoCat](https://a100.gov.bc.ca/pub/acat/public/welcome.do), @KormanandSchick2019, and @Mcculloch2020WestCoastRegion.
+In the East Vancouver Island & Mainland Inlets Region, **observed spawner abundance** is the sum of all spawner survey data documented in [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). For steelhead, spawner survey were sourced from the Province of BC's [EcoCat](https://a100.gov.bc.ca/pub/acat/public/welcome.do), @KormanandSchick2019, and @Mcculloch2020WestCoastRegion.
 
 **Estimated spawner abundance** in the East Vancouver Island & Mainland Inlets Region is not available from a centralized database. Thus, estimates of spawner abundance were acquired from specific DFO biologists. For sockeye, estimated spawner abundance for Sproat and Great Central CUs was provided by Dawn Lewis  (DFO Stock Assessment). The Nimpkish CU was provided by Pieter van Will (DFO Stock Assessment). For pink salmon, we visualize a dataset acquired from DFO (Pieter van Will). For Chinook, estimated spawner abundance was generated through the Southern BC Chinook Working Group [@BrownEtAl20202020SummaryAbundance].
 
@@ -563,11 +563,11 @@ knitr::include_graphics("figures/WVI_region.png")
 
 ### Population Data and Analytical Methods {#wvi-pop-data}
 
-In the West Vancouver Island Region, we directly accessed datasets for biological indicators from DFO staff. Additional data was sourced from NuSEDS and FOS. For steelhead, there is no centralized public database for population data so these data were compiled from disparate sources, including from online databases, individual reports, and data custodians (see our [steelhead-specific Github repository](https://github.com/salmonwatersheds/steelhead-status) for all raw steelhead population data compiled). Details on specific data sources and analytical methods for the West Vancouver Island Region are described below.
+In the West Vancouver Island Region, we directly accessed datasets for biological indicators from DFO staff. Additional data was sourced from [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), and [Fisheries Operating System (FOS)](https://open.canada.ca/data/en/dataset/7ac5fe02-308d-4fff-b805-80194f8ddeb4). For steelhead, there is no centralized public database for population data so these data were compiled from disparate sources, including from online databases, individual reports, and data custodians (see our [steelhead-specific Github repository](https://github.com/salmonwatersheds/steelhead-status) for all raw steelhead population data compiled). Details on specific data sources and analytical methods for the West Vancouver Island Region are described below.
 
 #### Spawner Surveys {#wvi-spawner-surveys}
 
-**Spawner survey** data for streams in the West Vancouver Island Region were sourced from DFO's New Salmon Escapement Database (NuSEDS). For steelhead, spawner survey were sourced from the Province of BC's [EcoCat](https://a100.gov.bc.ca/pub/acat/public/welcome.do), @KormanandSchick2019, and @Mcculloch2020WestCoastRegion. For a description of the spawner survey indicator, see [Overview of Population Indicators: Spawner Surveys](#spawner-surveys).
+**Spawner survey** data for streams in the West Vancouver Island Region were sourced from [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6). For steelhead, spawner survey were sourced from the Province of BC's [EcoCat](https://a100.gov.bc.ca/pub/acat/public/welcome.do), @KormanandSchick2019, and @Mcculloch2020WestCoastRegion. For a description of the spawner survey indicator, see [Overview of Population Indicators: Spawner Surveys](#spawner-surveys).
 
 #### Juvenile Surveys {#wvi-juvenile-surveys}
 
@@ -579,7 +579,7 @@ We acquired multiple sources' **juvenile survey** data for several CUs in the We
 
 #### Spawner Abundance {#wvi-spawner-abundance}
 
-In the West Vancouver Island Region, **observed spawner abundance** is the sum of all spawner survey data documented in NuSEDS, as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). For steelhead, spawner survey were sourced from the Province of BC's [EcoCat](https://a100.gov.bc.ca/pub/acat/public/welcome.do), @KormanandSchick2019, and @Mcculloch2020WestCoastRegion.
+In the West Vancouver Island Region, **observed spawner abundance** is the sum of all spawner survey data documented in [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). For steelhead, spawner survey were sourced from the Province of BC's [EcoCat](https://a100.gov.bc.ca/pub/acat/public/welcome.do), @KormanandSchick2019, and @Mcculloch2020WestCoastRegion.
 
 **Estimated spawner abundance** in the West Vancouver Island Region is not available from a centralized database. Thus, estimates of spawner abundance were acquired from specific DFO biologists. For sockeye, estimated spawner abundance for Sproat and Great Central CUs was provided by Dawn Lewis  (DFO Stock Assessment). The Nimpkish CU was provided by Pieter van Will (DFO Stock Assessment). For pink salmon, we visualize a dataset acquired from DFO (Pieter van Will). For Chinook, estimated spawner abundance was generated through the Southern BC Chinook Working Group [@BrownEtAl20202020SummaryAbundance].
 
@@ -642,11 +642,11 @@ The Columbia River has an extensive history of development, including dams -- sa
 
 ### Population Data and Analytical Methods {#columbia-pop-data}
 
-In the Columbia Region, we accessed datasets for biological indicators from published reports [@COSEWIC2017COSEWICAssessmentStatus; @HyattStockwell2019ChasingIllusionSuccessful; @MatylewichEtAl2019SummaryOkanaganChinook], DFO (Chuck Parken, pers comm), and the Sylix Okanagan Nation (Elinor McGrath, personal communication). Additional data was sourced from NuSEDS if applicable. For steelhead, there is no centralized public database for population data so these data were compiled from disparate sources, including from online databases, individual reports, and data custodians (see our [steelhead-specific Github repository](https://github.com/salmonwatersheds/steelhead-status) for all raw steelhead population data compiled). Details on specific data sources and analytical methods for the Columbia Region are described below.
+In the Columbia Region, we accessed datasets for biological indicators from published reports [@COSEWIC2017COSEWICAssessmentStatus; @HyattStockwell2019ChasingIllusionSuccessful; @MatylewichEtAl2019SummaryOkanaganChinook], DFO (Chuck Parken, pers comm), and the Sylix Okanagan Nation (Elinor McGrath, personal communication). Additional data was sourced from [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6) if applicable. For steelhead, there is no centralized public database for population data so these data were compiled from disparate sources, including from online databases, individual reports, and data custodians (see our [steelhead-specific Github repository](https://github.com/salmonwatersheds/steelhead-status) for all raw steelhead population data compiled). Details on specific data sources and analytical methods for the Columbia Region are described below.
 
 #### Spawner Surveys {#columbia-spawner-surveys}
 
-**Spawner survey** data for streams in the Columbia Region were sourced from DFO's (New Salmon Escapement Database (NuSEDS), Chuck Parken, (pers comm), and the Sylix Okanagan Nation (Elinor McGrath, personal communication). 
+**Spawner survey** data for streams in the Columbia Region were sourced from [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), Chuck Parken, (pers comm), and the Sylix Okanagan Nation (Elinor McGrath, personal communication). 
 
 Steelhead spawning surveys are reported annually by the [Okanogan Basin Monitoring and Evaluation Program](https://www.okanoganmonitoring.org/). For the period 2006-2011, a fence count was undertaken in akskʷəkʷant (Inkaneep Creek) [@WiensEtAl2012SteelheadSpawnerEnumeration]. Starting in 2006, steelhead estimates for the Okanagan River are based on PIT-tag detections at one or more sites between the Canada/US border and Vernon, BC. Annual estimates based on these detections are reported by the[Okanogan Basin Monitoring and Evaluation Program](https://www.okanoganmonitoring.org/) [e.g., @OBEMP20252024OkanoganSubbasin]. We report the total (natural-origin + hatchery) abundance in the spawner survey but natural-origin abundance only for the CU-level spawner abundance (see [below](#columbia-spawner-abundance).
 
@@ -662,7 +662,7 @@ For a description of the spawner survey indicator, For a description of the spaw
 
 #### Spawner Abundance {#columbia-spawner-abundance}
 
-**Observed spawner abundance** for CUs in the Columbia Region, represent the total number of mature salmon that return to a CU to spawn in a given year, and were available from DFO's (New Salmon Escapement Database (NuSEDS), Chuck Parken, (pers comm), and the Sylix Okanagan Nation (Elinor McGrath, pers comm). @StockwellHyatt2003SummaryOkanaganSockeye describe survey methods and analytical techniques of summary estimates of annual escapement. Considerations in spawner abundance are also described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). Columbia CU-level **estimates of spawner abundance** (run reconstructions) were also sourced from DFO's (New Salmon Escapement Database (NuSEDS), Chuck Parken, (pers comm), and the Sylix Okanagan Nation (Elinor McGrath, personal communication). For steelhead, estimated spawner abundance data for the Mid Columbia Summer CU are sourced annually from the [Okanogan Basin Monitoring Program Database](https://www.okanoganmonitoring.org/) [e.g., @OBEMP20252024OkanoganSubbasin].
+**Observed spawner abundance** for CUs in the Columbia Region, represent the total number of mature salmon that return to a CU to spawn in a given year, and were available from [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), Chuck Parken, (pers comm), and the Sylix Okanagan Nation (Elinor McGrath, pers comm). @StockwellHyatt2003SummaryOkanaganSockeye describe survey methods and analytical techniques of summary estimates of annual escapement. Considerations in spawner abundance are also described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). Columbia CU-level **estimates of spawner abundance** (run reconstructions) were also sourced from [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), Chuck Parken, (pers comm), and the Sylix Okanagan Nation (Elinor McGrath, personal communication). For steelhead, estimated spawner abundance data for the Mid Columbia Summer CU are sourced annually from the [Okanogan Basin Monitoring Program Database](https://www.okanoganmonitoring.org/) [e.g., @OBEMP20252024OkanoganSubbasin].
 
 #### Run Timing {#columbia-run-timing}
 

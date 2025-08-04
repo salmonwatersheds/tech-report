@@ -455,17 +455,17 @@ We use the following guiding questions to determine which benchmarks to apply gi
 
 **1. Is there an estimate of spawner abundance for the CU for at least one year over the most recent generation?**
 
-We require at least one annual estimate of spawner abundance over the most recent generation to quantify current spawner abundance. We then take the geometric mean of current spawner abundance over the most recent generation to compare to the estimated benchmarks for that CU to assess biological status.
+We require at least one annual estimate of spawner abundance over the most recent generation to quantify current spawner abundance. the "most recent generation" is a period equal to the average generation length for the CU, ending at most two years prior to the current calendar year. We then take the geometric mean of current spawner abundance over the most recent generation to compare to the estimated benchmarks for that CU to assess biological status.
 
-**2. Is there a spawner-recruit relationship available with CU-level catch estimates medium-low quality or higher?**
+**2. Is current spawner abundance < 1,500 and can it be considered an absolute count of spawners for the CU?**
+
+If the CU has an absolute current spawner abundance less than 1,500 it is assessed as habing poor biological status. Below this critically low population size, the CU is vulnerable to extirpation from demographic or environmental stochasticity.
+
+**3. Is there a spawner-recruit relationship available with CU-level catch estimates medium-low quality or higher?**
 
 A spawner-recruit relationship must be available to calculate spawner-recruit benchmarks. Most spawner-recruit relationships have over 10 data points (see [Appendix 3](#appendix-3)). Furthermore, errors in estimating catch can lead to misclassification of status using spawner-recruit benchmarks [@PeacockEtAl2020EvaluatingConsequencesCommon]. As such, we do not apply spawner-recruit when CU-level catch estimates are highly uncertain (i.e. the data quality score for catch estimates is low; see [Data Quality](#data-quality)).
 
-**3. Is there published evidence of cyclic dominance for the CU?**
-
-Some CUs have population dynamics characterized by cyclic dominance (e.g. a four-year generation length that involves a dominant brood year that is most abundant, a sub-dominant brood year, followed by two brood lines with lower abundance). For these cyclic dominant CUs we do not pool data across brood lines to generate estimates of current spawner abundance or to generate CU-level benchmarks because spawner abundance is so different from year to year [@GrantEtAl20202017FraserSockeye]. For these CUs, we currently only visualize biological status assessments on the Pacific Salmon Explorer developed through integrated status assessments that incorporate expert judgment and quantitative modeling, where available [e.g. @GrantEtAl20202017FraserSockeye].
-
-**4. Does the CU-level spawner abundance time series span at least 20 years?**
+**4. Are there at least 20 years of spawner abundance data?**
 
 Estimates of spawner abundance over a relatively long time series are required to assess the biological status of a CU. We require a minimum of 20 years of annual estimates of spawner abundance, although we do not require that these estimates are continuous. In some cases, we may use only a subset of the available time series. We do this if expert opinion suggests that using the entire time series is not appropriate.
 
@@ -473,9 +473,9 @@ Estimates of spawner abundance over a relatively long time series are required t
 
 In most circumstances, we do not apply percentile benchmarks if productivity is low (\< 2.5) and/or fisheries exploitation is high (\> 40%). In these cases, percentile benchmarks can result in biological status assessments that are overly optimistic and, therefore, risky from a long-term management perspective [@HoltEtAl2018EvaluatingBenchmarksBiological; @PeacockEtAl2020EvaluatingConsequencesCommon].
 
-**6. Is the status outcome in the *Red* (Poor) category based on percentile benchmarks?**
+**6. Is the status outcome poor based on percentile benchmarks?**
 
-For cases where there is information to suggest that a CU is experiencing productivity below 2.5 and/or exploitation above 40%, we will only report on status outcomes based on percentile benchmarks if the status is in the *red zone*. In these cases, the potential bias will not have resulted in an overly optimistic status outcome because the red status zone is the lowest status zone.
+For cases where there is information to suggest that a CU is experiencing productivity below 2.5 and/or exploitation above 40%, we will only report on status outcomes based on percentile benchmarks if the status is *poor*. In these cases, the potential bias will not have resulted in an overly optimistic status outcome.
 
 The spawner-recruit benchmarks modelling approach can sometimes result in lower benchmarks ($S_{GEN}$) exceeding upper benchmarks (80% of $S_{MSY}$). In such instances, we employ the percentile benchmark approach. <!-- "Holt and Ogden (2013) recommended against using stockrecruitment benchmarks when Ricker 𝛼𝛼 falls below 1.5 because at low productivity the lower benchmark, Sgen tends to be higher than 80% of SMSY, the upper benchmark in (Holt et al. 2018)-->
 

@@ -13,6 +13,18 @@ Each **Region** within the Pacific Salmon Explorer has specific attributes relat
 knitr::include_graphics("figures/regions.png")
 ```
 
+## Yukon Region {#yukon-region}
+
+[intro text]
+
+### Population Data and Analytical Methods {#transboundary-pop-data}
+
+[placeholder]
+
+### Habitat Data and Analytical Methods {#yukon-hab-data}
+
+[placeholder]
+
 ## Northern Transboundary Region {#transboundary-region}
 
 At the northwestern edge of BC lie some of the most remote and rugged salmon-bearing river basins in the province, including the Alsek, Chilkat, Taku, Whiting, Stikine, and Unuk. These river basins span Territories of the Champagne and Aishihik First Nations, Taku River Tlingit, and Tahltan First Nations and the international border between Canada and the United States (US). Salmon spawn in the headwaters of Canadian rivers and lakes and migrate out to the ocean in southeast Alaska. This northern Transboundary Region hosts five species of Pacific salmon and steelhead, including `r length(which(cu_list$Region == "Northern Transboundary"))` CUs: `r length(which(cu_list$Region == "Northern Transboundary" & cu_list$Species.Qualified == "CK"))` Chinook, `r length(which(cu_list$Region == "Northern Transboundary" & cu_list$Species.Qualified == "CM"))` chum, `r length(which(cu_list$Region == "Northern Transboundary" & cu_list$Species.Qualified == "CO"))` coho, `r length(which(cu_list$Region == "Northern Transboundary" & cu_list$Species == "Pink"))` pink, `r length(which(cu_list$Region == "Northern Transboundary" & cu_list$Species.Qualified == "SER"))` river-type sockeye, `r length(which(cu_list$Region == "Northern Transboundary" & cu_list$Species.Qualified == "SEL"))` lake-type sockeye, and `r length(which(cu_list$Region == "Northern Transboundary" & cu_list$Species.Qualified == "SH"))` steelhead CUs ([Appendix 1](#appendix-1)).

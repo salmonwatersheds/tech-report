@@ -11,7 +11,7 @@ app1 <- read.csv("tables/appendix1.csv")
 # species_colours <- c("#D4A876", "#B8A6BE", "#BBB172", "#D0A4AA", "#D0A4AA", "#98A879", "#98A879", "#0000FF40")[as.numeric(as.factor(app1$Species))]
 
 # ***Remove Yukon and Transboundary for now ***
-app1 <- app1[which(app1$Region %in% c("Yukon", "Transboundary") == FALSE), ]
+# app1 <- app1[which(app1$Region %in% c("Yukon", "Transboundary") == FALSE), ]
 
 # *** Remove steelhead for now ***
 # app1 <- app1[which(app1$Species != "Steelhead"), ]

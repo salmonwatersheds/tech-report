@@ -15,7 +15,7 @@ status_colours <- c("#C06263", "#DED38B", "#83B686")
 app3 <- read.csv("tables/appendix3.csv", na.strings = NA)
 
 # ***Remove Yukon for now ***
-app3 <- app3[which(app3$Region %in% c("Yukon") == FALSE), ]
+# app3 <- app3[which(app3$Region %in% c("Yukon") == FALSE), ]
 
 app3[which(is.na(app3), arr.ind = TRUE)] <- ""
 

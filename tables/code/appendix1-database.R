@@ -17,9 +17,8 @@ app1 <- retrieve_data_from_PSF_databse_fun(name_dataset = "appdata.vwdl_conserva
 # Full decoder with Cu breakdowns where PSF CUs differ from DFO CUs
 app1_full <- retrieve_data_from_PSF_databse_fun(name_dataset = "appdata.vwdl_conservationunits_decoder")
 
-
 # Filter out Yukon
-app1 <- app1 %>% filter(region != "Yukon")
+# app1 <- app1 %>% filter(region != "Yukon")
 
 multi_cuid <- names(which(tapply(app1_full$pooledcuid, app1_full$pooledcuid, length) > 1))
 app1_full[which(app1_full$pooledcuid %in% multi_cuid), ]

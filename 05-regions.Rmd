@@ -13,12 +13,15 @@ app3 <- read.csv("tables/appendix3.csv", na.strings = NA)
 Each **Region** within the Pacific Salmon Explorer has specific attributes related to management regimes, data collection, documentation protocols, and most importantly, salmon populations and habitats (Figure \@ref(fig:regions)). Here, we document Region-specific data sources, methodological considerations, and social processes used in each of the initial biological status, habitat pressure assessments, and any other unique information for each region currently within the Pacific Salmon Explorer.
 
 ```{r regions, fig.cap = "Map of the PSE Regions.", include=TRUE, echo = FALSE, out.width='100%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/regions.png")
+#knitr::include_graphics("figures/regions.png")
+knitr::include_graphics("figures/regions_YK.png")
 ```
 
 ## Yukon Region {#yukon-region}
 
-[intro text]
+```{r ykMap, fig.cap = "Map of the Yukon Region.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
+knitr::include_graphics("figures/yukon_map.png")
+```
 
 ### Population Data and Analytical Methods {#transboundary-pop-data}
 
@@ -35,7 +38,7 @@ Spawner survey data has been collected until now but have not been reported to N
 
 #### Spawner Abundance {#yukon-spawner-abundance}
 
-Estimated spawner abundances for Chinook were obtained from [Connors et al.'s (2025) run-reconsruction](https://github.com/Pacific-salmon-assess/yukon-CK-ResDoc) (in particular the dataset [brood_table_long.csv](https://github.com/Pacific-salmon-assess/yukon-CK-ResDoc/blob/main/analysis/data/generated/brood_table_long.csv)) for the following CUs: Big Salmon, Nordenskiold, Pelly, Middle Yukon, Stewart, White and Northern Yukon. Although estimates are also available in this dataset for the Upper Yukon and Teslin CUs, they are unrealistically high compared with local observations. To address this, we derived CU-level spawner abundances from two spawner surveys for each of these CUs  (cf., details [here](https://bookdown.org/salmonwatersheds/teslin-upper-yukon-alternatives/teslin-upper-yukon-alternatives.html)). For the Porcupine and Old Crow CUs, we used estimated counts from the Porcupine sonar, as reported by the [JTC](https://www.yukonriverpanel.com/publications/yukon-river-joint-technical-committee-reports/). Although it was not possible to partition these totals between the two CUs, the combined abundance fell below the absolute benchmark of 1,500 spawners. Accordingly, we applied the same time series to both CUs, resulting in a poor biological status.
+**Estimated spawner abundances** for Chinook were obtained from [Connors et al.'s (2025) run-reconsruction](https://github.com/Pacific-salmon-assess/yukon-CK-ResDoc) (in particular the dataset [brood_table_long.csv](https://github.com/Pacific-salmon-assess/yukon-CK-ResDoc/blob/main/analysis/data/generated/brood_table_long.csv)) for the following CUs: Big Salmon, Nordenskiold, Pelly, Middle Yukon, Stewart, White and Northern Yukon. Although estimates are also available in this dataset for the Upper Yukon and Teslin CUs, they are unrealistically high compared with local observations. To address this, we derived CU-level spawner abundances from two spawner surveys for each of these CUs  (cf., details [here](https://bookdown.org/salmonwatersheds/teslin-upper-yukon-alternatives/teslin-upper-yukon-alternatives.html)). For the Porcupine and Old Crow CUs, we used estimated counts from the Porcupine sonar, as reported by the [JTC](https://www.yukonriverpanel.com/publications/yukon-river-joint-technical-committee-reports/). Although it was not possible to partition these totals between the two CUs, the combined abundance fell below the absolute benchmark of 1,500 spawners. Accordingly, we applied the same time series to both CUs, resulting in a poor biological status.
 
 
 For Chum, we used [JTC]((https://www.yukonriverpanel.com/publications/yukon-river-joint-technical-committee-reports/)) data to estimate spawner abundance for four of the seven CUs, combining total escapement estimates from the Eagle sonar with relative proportion obtained from genetic stock identification. For the Porcupine CU, we used the Fishing Branch estimate from the [JTC 2025 report](https://www.yukonriverpanel.com/publications/yukon-river-joint-technical-committee-reports/) (appendix B12) as relative abundance time series.
@@ -62,8 +65,7 @@ The **biological status** assessments for CUs in the Yukon Region are current to
 
 ### Habitat Data and Analytical Methods {#yukon-hab-data}
 
-[placeholder]
-
+[place holder]
 
 ## Northern Transboundary Region {#transboundary-region}
 

@@ -74,11 +74,15 @@ For **Chinook CUs in Yukon Mainstem**:
 
 3) The CU-level `combined_catch` = `estimated_count` / (1 - `exploitation_rate`) * `exploitation_rate` (we assume equal vulnerability of the CUs to harvest)
 
-4) The CU-level `cu_catch` and `cdn_catch` calculated using `total US catch` and `total canadian catch` estimates, which are available in Appendix B18 for years > 2000. Because their sum differ slightly from `total combined catch` above, we do not use these values to calculate a rate (like for `total combined catch` and `exploitation_rate`) but instead determine the relative proportions of US *vs.* Canadian catches, which we then multiply to the CU-level `combined_catch`.
+4) The CU-level `cu_catch` and `cdn_catch` calculated using `total US catch` and `total canadian catch` estimates, which are available in Appendix B18 for years > 2000. Because their sum differ slightly from `total combined catch` above, we do not use these values to calculate a rate (like for `total combined catch` and `exploitation_rate`) but instead determine the relative proportions of US *vs.* Canadian catches, which we then multiply to the CU-level `combined_catch`:
+ 
+		- `cu_catch` = `combined_catch` * `total US catch` / (`total US catch` + `total canadian catch`)
+		
+		- `cdn_catch` = `combined_catch` - `cu_catch`
 
 For CU *Upper Yukon*, we use an alternative absolute escapement time series that accounts for en route mortality (cf. Section ???). But here the harvest rate (`exploitation_rate`) should be applied to the count at the border and not in the spawning locations so we use the time series in Brendon et al ???? for `estimated_count` and define `run_size_adjustement` as the difference between the count at the border and the count in dataset1.
 
-For *Teslin* we also use an alternative time series but the latter does not represent an absolute count (cf. ???). We consequently decide to not show the count data as it is not possible to discriminate between the en route mortality and abundances in un-monitored streams (i.e., `run_size_adjustement` cannot be estimated). We howevery display `exploitation_rate` because it is assumed to be the same as the other CUs.
+For *Teslin* we also use an alternative time series but the latter does not represent an absolute count (cf. ???). We consequently decide to not show the count data as it is not possible to discriminate between the en route mortality and abundances in un-monitored streams (i.e., `run_size_adjustement` cannot be estimated). We however display `exploitation_rate` because it is assumed to be the same as the other CUs.
 
 5) The CU-level `total_run` = `estimated_count` + `combined_catch` + `run_size_adjustment`
 
@@ -108,7 +112,7 @@ As previously, we determine the overall exploitation rate (`exploitation_rate`) 
 		
 		- `us_catch` = `combined_catch` * `total US catch` / `total combined catch`
 
-		- `cdn_catch` = `combined_catch` * `total Canadian catch` / `total combined catch`
+		- `cdn_catch` = `combined_catch` - `us_catch`
 
 
 6) Define for each CU `total_run` = `estimated_count` + `combined_catch`

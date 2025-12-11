@@ -1,28 +1,28 @@
 # Appendix 6: Habitat Pressure Datasets & Data Sources {#appendix-6 .unnumbered}
 
 | Source | Indicator | Date of Data | Date Accessed |
-|:-----------------|:-----------------|:-----------------|:-----------------|
+|:---|:---|:---|:---|
 | [Surface Disturbance - Linear Features](https://open.yukon.ca/data/datasets/surface-disturbance-linear-features) (GeoYukon) | Agriculture | 2025-07-14 | 2025-08-01 |
-| [Baseline Thematic Mapping](https://catalogue.data.gov.bc.ca/dataset/baseline-thematic-mapping-present-land-use-version-1-spatial-layer) (DataBC) | Agriculture | 1992 | 2024-02-18 |
-| [VRI](https://catalogue.data.gov.bc.ca/dataset/vri-2023-forest-vegetation-composite-polygons) (DataBC) | Agriculture | 2023 | 2024-10-01 |
-| [Historical Fire Polygons](https://catalogue.data.gov.bc.ca/dataset/bc-wildfire-fire-perimeters-historical) (DataBC) | Fire | 2024-04-01 | 2024-02-08 |
-| [Current Fire Polygons](https://catalogue.data.gov.bc.ca/dataset/bc-wildfire-fire-perimeters-current) (DataBC) | Fire | 2024-09-24 | 2024-09-30 |
+| [Baseline Thematic Mapping](https://catalogue.data.gov.bc.ca/dataset/baseline-thematic-mapping-present-land-use-version-1-spatial-layer) (DataBC) | Agriculture | 1992 | 2025-07-08 |
+| [VRI](https://catalogue.data.gov.bc.ca/dataset/vri-2023-forest-vegetation-composite-polygons) (DataBC) | Agriculture | 2024 | 2025-07-08 |
+| [Historical Fire Polygons](https://catalogue.data.gov.bc.ca/dataset/bc-wildfire-fire-perimeters-historical) (DataBC) | Fire | 2025-07-08 | 2025-07-09 |
+| [Current Fire Polygons](https://catalogue.data.gov.bc.ca/dataset/bc-wildfire-fire-perimeters-current) (DataBC) | Fire | 2025-00-08 | 2025-07-09 |
 | [Fire History](https://open.yukon.ca/data/datasets/fire-history) (DataBC) | Fire | 2025-07-06 | 2025-07-08 |
-| [Burn Severity Polygons](https://catalogue.data.gov.bc.ca/dataset/fire-burn-severity-historical) (DataBC) | Fire | 2023-11-24 | 2024-02-10 |
+| [Burn Severity Polygons](https://catalogue.data.gov.bc.ca/dataset/fire-burn-severity-historical) (DataBC) | Fire | 2025-02-26 | 2025-07-09 |
 | [Forest Inventory Zones](https://catalogue.data.gov.bc.ca/dataset/forest-inventory-zones) (DataBC) | Fire | 2018-03-30 | 2024-10-01 |
-| [Harvested Areas in BC (Consolidated Cutblocks)](https://catalogue.data.gov.bc.ca/dataset/harvested-areas-of-bc-consolidated-cutblocks-) (DataBC) | Forest Harvest | 2023-10-24 | 2024-02-08 |
-| [Results Inventory (for reserves)](https://catalogue.data.gov.bc.ca/dataset/results-forest-cover-inventory) (DataBC) | Forest Harvest | 2024-03-30 | 2024-03-30 |
+| [Harvested Areas in BC (Consolidated Cutblocks)](https://catalogue.data.gov.bc.ca/dataset/harvested-areas-of-bc-consolidated-cutblocks-) (DataBC) | Forest Harvest | 2025-07-25 | 2025-08-20 |
+| [Results Inventory (for reserves)](https://catalogue.data.gov.bc.ca/dataset/results-forest-cover-inventory) (DataBC) | Forest Harvest | 2025-07-07 | 2025-07-25 |
 | [Forest Disturbance in the Haida Gwaii Region](https://data.salmonwatersheds.ca/result?datasetid=444) (Gowgaia Institute) | Forest Harvest | 2021 | 2021-11-09 |
 | [Forest Openings](https://open.yukon.ca/data/datasets/forest-openings) (GeoYukon) | Forest Harvest | 2021-07-06 | 2025-10-03 |
 | [Forest Opening Pre-1990](https://open.yukon.ca/data/datasets/forest-openings-pre1990) (GeoYukon) | Forest Harvest | 2021-07-06 | 2025-10-03 |
 | [Historic Silviculture Inventory 50K](https://open.yukon.ca/data/datasets/forest-openings) (GeoYukon) | Forest Harvest | 2004-01-01 | 2025-08-20 |
 | [Surface Disturbance - Areal Features](https://open.yukon.ca/data/datasets/surface-disturbance-areal-features) (GeoYukon) | Forest Harvest | 2025-07-14 | 2025-08-05 |
-| [Pest Infestation Polygons](https://catalogue.data.gov.bc.ca/dataset/pest-infestation-polygons) (DataBC) | Insect Damage | 2022 | 2025-08-01 |
-| [VRI Dead Layer](https://catalogue.data.gov.bc.ca/dataset/vri-2023-forest-vegetation-composite-dead-layer-d-) (DataBC) | Insect Damage | 2023 | 2024-10-01 |
-| [Forest Health Overview](https://open.yukon.ca/data/datasets/forest-health-aerial-overview-50k) (GeoYukon) | Insect Damage | 2022 | 2024-03-04 |
-| [Minfile Inventory Database](https://catalogue.data.gov.bc.ca/dataset/minfile-inventory-database) (DataBC) | Mines | 2024-02-12 | 2024-02-21 |
-| [Minfile Production Database](https://catalogue.data.gov.bc.ca/dataset/minfile-production-database) (DataBC) | Mines | 2021 | 2024-02-21 |
-| [BC Aggregate Inventory Private Pits (2004)](http://apps.empr.gov.bc.ca/pub/mapplace/mp2/fusion/templates/mapguide/slate/index.html?ApplicationDefinition=Library://mp2.ApplicationDefinition&locale=en&bcgovtm=20200319_GCPE_AM_COVID_4_NOTIFICATION_BCGOV_BCGOV_EN_BC__NOTIFICATION) (British Columbia Geological Survey MapPlace) | Mines | 2004 | 2012 |
+| [Pest Infestation Polygons](https://catalogue.data.gov.bc.ca/dataset/pest-infestation-polygons) (DataBC) | Insect Damage | 2025-02-05 | 2025-08-01 |
+| [VRI Dead Layer](https://catalogue.data.gov.bc.ca/dataset/vri-2023-forest-vegetation-composite-dead-layer-d-) (DataBC) | Insect Damage | 2025-05-28 | 2025-08-01 |
+| [Forest Health Overview](https://open.yukon.ca/data/datasets/forest-health-aerial-overview-50k) (GeoYukon) | Insect Damage | 2025-07-27 | 2025-08-01 |
+| [Minfile Inventory Database](https://catalogue.data.gov.bc.ca/dataset/minfile-inventory-database) (DataBC) | Mines | 2025-09-10 | 2025-09-11 |
+| [Minfile Production Database](https://catalogue.data.gov.bc.ca/dataset/minfile-production-database) (DataBC) | Mines | 2025-09-10 | 2025-09-11 |
+| [BC Aggregate Inventory Private Pits (2004)](http://apps.empr.gov.bc.ca/pub/mapplace/mp2/fusion/templates/mapguide/slate/index.html?ApplicationDefinition=Library://mp2.ApplicationDefinition&locale=en&bcgovtm=20200319_GCPE_AM_COVID_4_NOTIFICATION_BCGOV_BCGOV_EN_BC__NOTIFICATION) (British Columbia Geological Survey MapPlace) | Mines | 2004 | 2024-04-07 |
 | [Mineral Occurrences](https://open.yukon.ca/data/mineral-occurrences) (GeoYukon) | Mines | 2025-08-01 | 2025-08-01 |
 | [Historical Mineral Claims](https://open.yukon.ca/data/datasets/historical-mineral-claims-50k) (GeoYukon) | Mines | 2021-11-18 | 2025-08-01 |
 | [Gravel Pits 25K](https://open.yukon.ca/data/datasets/gravel-pits-25k) (GeoYukon) | Mines | 2023-09-16 | 2025-09-11 |
@@ -37,9 +37,11 @@
 | [Landcover circa 2000](https://open.canada.ca/data/en/dataset/97126362-5a85-4fe0-9dc2-915464cfdbb7) (Government of Canada) | Urban & Industrial Development | 2000s | 2025-07-08 |
 | [Mine Footprints](https://data.salmonwatersheds.ca/result?datasetid=540) (Hatfield Consultants) | Urban & Industrial Development | 2024-07-17 | 2025-10-16 |
 | [Oil & Gas Seismic Lines](https://open.yukon.ca/data/oil-and-gas-seismic-lines) (GeoYukon) | Urban & Industrial Development | 2021-01-03 | 2025-10-08 |
-| [Utilities Line 50K](https://open.yukon.ca/data/datasets/utilities-line-50k) (GeoYukon) | Urban & Industrial Development | 2004-06-14 | 2025-10-08 |
+| [Utilities Line 50K](https://open.yukon.ca/data/datasets/utilities-line-50k) (GeoYukon) | Urban & Industrial Development | 2021-11-18 | 2025-10-08 |
 | [YEC Power Lines](https://open.yukon.ca/data/datasets/yec-power-lines) (GeoYukon) | Urban & Industrial Development | 2021-01-13 | 2025-10-15 |
 | [YEC Power Distribution Lines](https://open.yukon.ca/data/datasets/yec-power-distribution-lines) (GeoYukon) | Urban & Industrial Development | 2021-01-13 | 2025-09-11 |
+| [YEC_Power_Generating_Stations](https://open.yukon.ca/data/yec-power-generating-stations) (GeoYukon) | Urban & Industrial Development | 2021-01-03 | 2025-09-21 |
+| [YEC_Power_Substations](https://open.yukon.ca/data/yec-power-substations) (GeoYukon) | Urban & Industrial Development | 2021-01-03 | 2025-09-21 |
 | [Railroads 50K Canvec](https://open.yukon.ca/data/datasets/railroads-50k-canvec) (GeoYukon) | Urban & Industrial Development | 2017-08-24 | 2025-09-19 |
 | [Runways 25K](https://open.yukon.ca/data/datasets/runways-25k) (GeoYukon) | Urban & Industrial Development | 2021-01-03 | 2025-10-15 |
 | [Surface Disturbance - Areal Features](https://open.yukon.ca/data/datasets/surface-disturbance-areal-features) (GeoYukon) | Urban & Industrial Development | 2025-07-14 | 2025-08-05 |

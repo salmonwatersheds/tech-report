@@ -2,7 +2,7 @@
 
 Below is a summary of NuSEDS cleaning procedure and attribution of the data to Conservation Units (CUs) as defined in the Pacific Salmon Explorer ([PSE](https://www.salmonexplorer.ca/)). The complete details of the cleaning procedure can be found at [1_nuseds_collation.html]( https://bookdown.org/salmonwatersheds/1_nuseds_collation/1_nuseds_collation.html) and the corresponding Rmd script can be accessed from [github/.../spawner-surveys/code/1_nuseds_collation.rmd](https://github.com/salmonwatersheds/population-indicators/blob/master/spawner-surveys/code/1_nuseds_collation.rmd). 
 
-The detailed procedure to match the cleaned NuSEDS data to CUs is available at [2_nuseds_cuid_pse.html](https://bookdown.org/salmonwatersheds/2_nuseds_cuid_pse/2_nuseds_cuid_pse.html) and the corresponding Rmd script can be downloaded from [github/.../spawner-surveys/code/2_nuseds_cuid_pse.rmd](https://github.com/salmonwatersheds/population-indicators/blob/master/spawner-surveys/code/2_nuseds_cuid_pse.Rmd).
+The detailed procedure to match the cleaned NuSEDS data to CUs is available at [2_nuseds_cuid_pse.html](https://bookdown.org/salmonwatersheds/2_nuseds_cuid_pse/2_nuseds_cuid_pse.html) and the corresponding Rmd script can be downloaded from [github/.../spawner-surveys/code/2_nuseds_cuid_pse.rmd](https://github.com/salmonwatersheds/population-indicators/blob/master/spawner-surveys/code/2_nuseds_cuid_pse.rmd).
 
 The different versions of the dataset can be downloaded from [zenodo/.../2_nuseds_cuid_streamid](https://doi.org/10.5281/zenodo.14194638).
 

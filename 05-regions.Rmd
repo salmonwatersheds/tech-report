@@ -90,7 +90,7 @@ For *Teslin* we also use an alternative time series but the latter does not repr
 
 For **Chinook CUs in the Porcupine River**:
 
-Harvest estimate of the Porcupine river are not available and are assume to be marginal ([Connors et al. 2023][@ConnorsEtAl2023EstimatesBiologicalReference]).
+Harvest estimate of the Porcupine river are not available and are assume to be marginal [@ConnorsEtAl2023EstimatesBiologicalReference].
 
 For **Chum CUs in Yukon Mainstem**:
 

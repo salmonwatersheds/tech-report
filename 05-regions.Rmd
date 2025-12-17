@@ -199,7 +199,7 @@ See [Limitations: Habitat Pressure Indicators & Analysis Methods](#hab-method-li
 
 #### Spawning Habitat Information from Expert Knowledge Holders
 
-Spawning habitat information for the Yukon was acquired directly from the Fish Information Summary System (FISS) Yukon data custodian and also through collaborations with representatives from <!-- Katy to populate list Yukon groups --> and independent salmon experts to identify local salmon spawning locations. Efforts to expand this information will continue, to ensure that our assessments reflect the known extent of spawning habitats throughout the Yukon.
+In addition to the spawning habitat information we acquired from the Yukon Fisheries Information Summary System (FISS) database, we collaborated with representatives from the Yukon First Nations Salmon Stewardship Alliance, Fisheries and Oceans Canada's staff, and salmon biologist Al von Finster, to identify local salmon spawning locations in the Region. For Chinook, we also relied on the comprehensive catalogue of Chinook salmon spawning areas by Brown et. al (2017). Efforts to expand this information will continue, to ensure that our assessments reflect the known extent of spawning habitats throughout the Yukon.
 
 ## Northern Transboundary Region {#transboundary-region}
 

@@ -1,12 +1,12 @@
 # Appendix 6: Habitat Pressure Datasets & Data Sources {#appendix-6 .unnumbered}
 
 | Source | Indicator | Date of Data | Date Accessed |
-|:---|:---|:---|:---|
+|:-----------------|:-----------------|:-----------------|:-----------------|
 | [Surface Disturbance - Linear Features](https://open.yukon.ca/data/datasets/surface-disturbance-linear-features) (GeoYukon) | Agriculture | 2025-07-14 | 2025-08-01 |
 | [Baseline Thematic Mapping](https://catalogue.data.gov.bc.ca/dataset/baseline-thematic-mapping-present-land-use-version-1-spatial-layer) (DataBC) | Agriculture | 1992 | 2025-07-08 |
 | [VRI](https://catalogue.data.gov.bc.ca/dataset/vri-2023-forest-vegetation-composite-polygons) (DataBC) | Agriculture | 2024 | 2025-07-08 |
 | [Historical Fire Polygons](https://catalogue.data.gov.bc.ca/dataset/bc-wildfire-fire-perimeters-historical) (DataBC) | Fire | 2025-07-08 | 2025-07-09 |
-| [Current Fire Polygons](https://catalogue.data.gov.bc.ca/dataset/bc-wildfire-fire-perimeters-current) (DataBC) | Fire | 2025-00-08 | 2025-07-09 |
+| [Current Fire Polygons](https://catalogue.data.gov.bc.ca/dataset/bc-wildfire-fire-perimeters-current) (DataBC) | Fire | 2025-07-08 | 2025-07-09 |
 | [Fire History](https://open.yukon.ca/data/datasets/fire-history) (DataBC) | Fire | 2025-07-06 | 2025-07-08 |
 | [Burn Severity Polygons](https://catalogue.data.gov.bc.ca/dataset/fire-burn-severity-historical) (DataBC) | Fire | 2025-02-26 | 2025-07-09 |
 | [Forest Inventory Zones](https://catalogue.data.gov.bc.ca/dataset/forest-inventory-zones) (DataBC) | Fire | 2018-03-30 | 2024-10-01 |

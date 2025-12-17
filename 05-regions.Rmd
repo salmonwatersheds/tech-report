@@ -56,7 +56,7 @@ For Chum, we used [JTC]((https://www.yukonriverpanel.com/publications/yukon-rive
 
 #### Run Timing {#yukon-run-timing}
 
-Coming soon.
+Run timing data were compiled from a variety of sources detailed in @WilsonPeacock2025FreshwaterLifecycleTiming, including from the Federal Science Library (FSL) and the Alaska Department of Fish and Game (ADF&G). See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
 
 
 #### Catch & Run Size {#yukon-catch-run-size}
@@ -67,9 +67,9 @@ For **Chinook CUs in Yukon Mainstem**:
 
 We first calculate the overall all exploitation rate across the CUs, which we then apply to each CU, assuming equal vulnerability to harvest:
 
-1)  `total combined catch` = `Total Run` - `Escapement` (data from Appendix B26: total counts across the CUs)
+1)  Define `total combined catch` = `Total Run` - `Escapement` (data from Appendix B26: total counts across the CUs)
 
-2)  `exploitation_rate` = `total combined catch` / `Total Run`
+2)  Define `exploitation_rate` = `total combined catch` / `Total Run`
 
 3)  The CU-level `combined_catch` = `estimated_count` / (1 - `exploitation_rate`) \* `exploitation_rate` (we assume equal vulnerability of the CUs to harvest)
 
@@ -85,18 +85,18 @@ For CU *Upper Yukon*, we use an alternative absolute escapement time series that
 
 For *Teslin* we also use an alternative time series but the latter does not represent an absolute count (see [Section 5.1.1.4. Spawner Abundance](#yukon-spawner-abundance)). We consequently decide to not show the count data as it is impossible to discriminate between the en route mortality and abundances in unmonitored streams (i.e., `run_size_adjustement` cannot be estimated). We however display `exploitation_rate` because it is assumed to be the same as for the other CUs.
 
-5)  Finally we define the CU-level `total_run` = `estimated_count` + `combined_catch` + `run_size_adjustment`
+5)  Finally we define for each CU `total_run` = `estimated_count` + `combined_catch` + `run_size_adjustment`
 
 
 For **Chinook CUs in the Porcupine River**:
 
-Harvest estimate of the Porcupine river are not available and are assume to be marginal [@ConnorsEtAl2023EstimatesBiologicalReference].
+Harvest estimate of the Porcupine river are not available and are assumed to be marginal [@ConnorsEtAl2023EstimatesBiologicalReference].
 
 For **Chum CUs in Yukon Mainstem**:
 
-The total US and Canadian catch data and total run size (all four CUs confounded) is available in Appendix B20. The table also contains `spawning escapement` data, but that latter differs slightly from `spawning escapement estimate` in Appendix B16, which we used to define CU-level spawner abundance (cf. section ???). For consistency, we decide to use the escapement data in Appendix B16 and not Appendix B20.
+The total US and Canadian catch data and total run size across all four CUs are available in Appendix B20. The table also contains `spawning escapement` data, but the latter differs slightly from `spawning escapement estimate` in Appendix B16, which we used to define CU-level spawner abundance (see [Section 5.1.1.4. Spawner Abundance](#yukon-spawner-abundance)). For consistency, we decide to use the escapement data from Appendix B16 and not Appendix B20.
 
-As previously, we determine the overall exploitation rate (`exploitation_rate`) and we assume that all four CUs are equality vulnerable to harvest.
+As previously, we determine the overall exploitation rate (`exploitation_rate`) and we assume that all four CUs are equality vulnerable to harvest:
 
 1)  Define `total spawning escapement` = `spawning escapement estimate` in Appendix B16
 
@@ -104,9 +104,9 @@ As previously, we determine the overall exploitation rate (`exploitation_rate`) 
 
 3)  Define `total run size` = `total spawning escapement` + `total US catch` + `total Canadian catch` (instead of using `Total estimated Canadian origin run size` in Appendix 20)
 
-4)  Define `exploitation_rate` = `total combined catch` / `total run size` in Appendix B20
+4)  Define `exploitation_rate` = `total combined catch` / `total run size` 
 
-5)  Define for each CU the number of fish caught:
+5)  Define catch for the US `us_catch`, Canadian `cdn_catch` and total harvest `combined_catch` for each CU:
 
     ```         
      - `combined_catch` = `estimated_count` / (1 - `exploitation_rate`) * `exploitation_rate`
@@ -118,26 +118,24 @@ As previously, we determine the overall exploitation rate (`exploitation_rate`) 
 
 6)  Define for each CU `total_run` = `estimated_count` + `combined_catch`
 
+
 For **Chum CU the Porcupine River**:
 
-The estimates for spawner escapement (cf. section ???) and catch the Chum *Porcupine* CU represent the Fishing Branch and are not absolute counts. The catch data is in Appendix B22.
+The estimated spawner abundance for the Chum *Porcupine* CU represents the Fishing Branch portion of the Porcupine river, which cannot be considered as an absolute count (see [Section 5.1.1.4. Spawner Abundance](#yukon-spawner-abundance)). The catch data is in Appendix B22 and also concerns only the Fishing Branch.
 
-The total US and Canadian catch data and total run size (all four CUs confounded) is available in Appendix B22. The table also contains `spawning escapement` data, but that latter differs slightly from `spawning escapement estimate` in Appendix B15, which we used to define spawner abundance (cf. section ???). For consistency, decide to use the escapement data in Appendix B15 and not Appendix B22.
-
-As previously, we determine the overall exploitation rate (`exploitation_rate`) and we assume that all four CUs are equality vulnerable to harvest.
+The total US and Canadian catch data and total run size across all four CUs is available in Appendix B22. The table also contains `spawning escapement` data, but that latter differs slightly from `spawning escapement estimate` in Appendix B15, which we used to define spawner abundance (see [Section 5.1.1.4. Spawner Abundance](#yukon-spawner-abundance)). For consistency, we decide to use the escapement data in Appendix B15 and not Appendix B22:
 
 1)  Define `estimated_count`= `escapemnent at Fishing Branch River` in Appendix B15
 
 2)  Define `total_run` = `Total estimated Fishing Branch River run size` in Appendix B22
 
-3)  Define catches:
+3)  Define catches (from Appendix B22):
 
     ```         
-     - `us_catch` = `U.S. Fishing Branch River harvest` in Appendix B22
+     - `us_catch` = `U.S. Fishing Branch River harvest`
 
-     - `cdn_catch` = `Canada Fishing Branch River harvest` in Appendix B22
+     - `cdn_catch` = `Canada Fishing Branch River harvest`
 
-     - `us_catch` = `U.S. Fishing Branch River harvest` in Appendix B22
     ```
 
 There is no value for `us_catch` in 2011 but there is one for `cdn_catch`. So we define for this year `us_catch` = `total_run` - `estimated_count` - `cdn_catch`.
@@ -150,9 +148,11 @@ There is no value for `us_catch` in 2011 but there is one for `cdn_catch`. So we
 
 5)  Define `exploitation_rate` = `combined_catch` / `total_run`
 
+
 #### Recruits-per-Spawner {#yukon-recruits-per-spawner}
 
 The recruits abundance data is only available from [Connors et al.'s (2025) run-reconsruction work](https://github.com/Pacific-salmon-assess/yukon-CK-ResDoc) (in particular the dataset [brood_table_long.csv](https://github.com/Pacific-salmon-assess/yukon-CK-ResDoc/blob/main/analysis/data/generated/brood_table_long.csv)) for the Chinook CUs Big Salmon, Nordenskiold, Pelly, Middle Yukon, Stewart, White and Northern Yukon.
+
 
 #### Biological Status {#yukon-biological-status}
 

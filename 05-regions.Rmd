@@ -179,11 +179,11 @@ Assessment watersheds for the Yukon were derived from the MERIT-BASINS dataset, 
 
 As with other DEM-derived watershed products, MERIT-BASINS includes known limitations related to flow-routing resolution. In particular, very small watershed polygons can occur at basin outlets where multiple upstream catchments converge. These polygons reflect flow-routing resolution effects rather than discrete, independently functioning watersheds and are not suitable units for habitat pressure assessment.
 
-To address this limitation, watershed areas were evaluated across the Yukon region and ranked by size. Watersheds within the smallest 3% by area—identified using a clear inflection point in the area distribution—were classified as non-representative units and assigned a threat status of Data Deficient.
+To address this limitation, watershed areas were evaluated across the Yukon region and ranked by size. The distribution of watershed areas showed a clear inflection separating a small group of exceptionally small polygons from the remaining watersheds. Watersheds within this smallest 3% were considered non-representative units and were classified as Data Deficient.
 
 #### Spawning Zones of Influence
 
-Methods for delineating spawning zones of influence (ZOIs) vary by region in accordance with the CU delineation approach used by DFO. For the Yukon, spawning ZOIs for each species CU were delineated using the extent of all MERIT-Basins Assessment Watersheds that directly intersected with the CU boundaries of that species.
+Methods for delineating spawning zones of influence (ZOIs) vary by region in accordance with the CU delineation approach used by DFO. For the Yukon, spawning ZOIs for each species CU were delineated using the extent of all Assessment Watersheds that directly intersected with the CU boundaries of that species.
 
 #### Mining Activities in the Yukon
 

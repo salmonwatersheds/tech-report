@@ -1774,6 +1774,46 @@
 		}
 	},
 	{
+		"id": "PestalEtAl2022ReviewAvailableAbundance",
+		"type": "report",
+		"genre": "Technical Report",
+		"number": "48",
+		"page": "x + 347 p.",
+		"publisher": "Pacific Salmon Commission",
+		"title": "Review of available abundance, age, and stock composition data useful for reconstructing historical stock specific runs, harvest, and escapement of Yukon River Chinook salmon (Oncorhynchus tshawytscha), 1981- 2019",
+		"URL": "https://www.psc.org/publications/technical-reports/technical-report-series/",
+		"author": [
+			{
+				"family": "Pestal",
+				"given": "Gottfried"
+			},
+			{
+				"family": "Mather",
+				"given": "Vesta"
+			},
+			{
+				"family": "West",
+				"given": "Fred"
+			},
+			{
+				"family": "Liller",
+				"given": "Zachary"
+			},
+			{
+				"family": "Smith",
+				"given": "Steve"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2022",
+					4
+				]
+			]
+		}
+	},
+	{
 		"id": "EnglishEtAl2018NorthCentralCoast",
 		"type": "report",
 		"genre": "Report prepared by LGL Limited for the Pacific Salmon Foundation",
@@ -4951,6 +4991,28 @@
 		}
 	},
 	{
+		"id": "YukonRiverJointTechnicalCommittee2023YukonRiverSalmon",
+		"type": "report",
+		"number": "(23)-01",
+		"page": "vi + 181 p.",
+		"title": "Yukon River Salmon 2022 Season Summary and 2023 Season Outlook",
+		"URL": "https://www.yukonriverpanel.com/publications/yukon-river-joint-technical-committee-reports/",
+		"author": [
+			{
+				"family": "Yukon River Joint Technical Committee",
+				"given": ""
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2023",
+					3
+				]
+			]
+		}
+	},
+	{
 		"id": "FisheriesandOceansCanada2018WildSalmonPolicy",
 		"type": "report",
 		"abstract": "Introduction The goal of Canada’s Wild Salmon Policy (WSP) \"To restore and maintain healthy and diverse salmon populations and their habitats for the benefit and enjoyment of the people of Canada in perpetuity\" (WSP, 2005, P.8). WSP Implementation Plan This Plan describes Fisheries and Oceans Canada’s commitment to Canada’s Policy for Conservation of Pacific Wild Salmon (Wild Salmon Policy or WSP) through three key themes: Assessment, Maintaining and Rebuilding Stocks, and Accountability. Over the next five years, DFO will develop common guidance, standardized methods, and useful tools to advance the long-term goal and objectives of the WSP.",
@@ -6399,6 +6461,27 @@
 		}
 	},
 	{
+		"id": "YukonRiverJointTechnicalCommittee2024YukonRiverSalmon",
+		"type": "report",
+		"number": "(24)-01",
+		"page": "vi + 181 p.",
+		"title": "Yukon River Salmon 2023 Season Summary and 2024 Season Outlook",
+		"URL": "https://www.yukonriverpanel.com/publications/yukon-river-joint-technical-committee-reports/",
+		"author": [
+			{
+				"literal": "Yukon River Joint Technical Committee"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2024",
+					3
+				]
+			]
+		}
+	},
+	{
 		"id": "ConnorsEtAl2023EstimatesBiologicalReference",
 		"type": "article-journal",
 		"container-title": "Canadian Science Advisory Secretariat Research Document",
@@ -6431,6 +6514,27 @@
 			"date-parts": [
 				[
 					"2023"
+				]
+			]
+		}
+	},
+	{
+		"id": "YukonRiverJointTechnicalCommittee2022YukonRiverSalmon",
+		"type": "report",
+		"number": "3A22-01",
+		"page": "vi + 174 p.",
+		"title": "Yukon River Salmon 2021 Season Summary and 2022 Season Outlook",
+		"URL": "https://www.yukonriverpanel.com/publications/yukon-river-joint-technical-committee-reports/",
+		"author": [
+			{
+				"family": "Yukon River Joint Technical Committee",
+				"given": ""
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2022"
 				]
 			]
 		}
@@ -6776,6 +6880,45 @@
 		}
 	},
 	{
+		"id": "CarturanPeacock2024CleanedSpawnerSurvey",
+		"type": "dataset",
+		"abstract": "This dataset is a version of the New Salmon Escapement Database (NuSEDS) downloaded from Open Data Canada on January 22, 2024: https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6. These data have been cleaned and matched to Conservation Units by staff at the Pacific Salmon Foundation. Details of the data cleaning procedure are outlined in the Pacific Salmon Explorer Technical Report (Appendix 2) available online at https://www.salmonexplorer.ca/methods/appendix-2.html.",
+		"DOI": "10.5281/zenodo.14194639",
+		"publisher": "Zenodo",
+		"source": "Zenodo",
+		"title": "Cleaned spawner survey data",
+		"URL": "https://zenodo.org/records/14194639",
+		"version": "v0",
+		"author": [
+			{
+				"family": "Carturan",
+				"given": "Bruno"
+			},
+			{
+				"family": "Peacock",
+				"given": "Stephanie"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					11,
+					20
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2024",
+					11,
+					20
+				]
+			]
+		}
+	},
+	{
 		"id": "ChumTechnicalCommittee20242020PostSeason",
 		"type": "article-journal",
 		"container-title": "Pacific Salmon Commission Chum Technical Committee",
@@ -6818,6 +6961,27 @@
 				[
 					"2025",
 					2
+				]
+			]
+		}
+	},
+	{
+		"id": "YukonRiverJointTechnicalCommittee2025YukonRiverSalmon",
+		"type": "report",
+		"number": "(25)-01",
+		"page": "vii + 186 p.",
+		"title": "Yukon River Salmon 2024 Season Summary and 2025 Season Outlook",
+		"URL": "https://www.yukonriverpanel.com/publications/yukon-river-joint-technical-committee-reports/",
+		"author": [
+			{
+				"literal": "Yukon River Joint Technical Committee"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2025",
+					3
 				]
 			]
 		}
@@ -6923,6 +7087,149 @@
 				[
 					"2019",
 					2
+				]
+			]
+		}
+	},
+	{
+		"id": "YukonRiverJointTechnicalCommittee2013YukonRiverSalmon",
+		"type": "report",
+		"language": "en",
+		"number": "3A13-02",
+		"page": "viii + 198 p.",
+		"source": "Zotero",
+		"title": "Yukon River salmon 2012 season summary and 2013 season outlook.  Alaska Department of Fish and Game, Division of Commercial Fisheries, Regional Information Report 3A13-02, Anchorage.",
+		"author": [
+			{
+				"family": "Yukon River Joint Technical Committee",
+				"given": ""
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2013"
+				]
+			]
+		}
+	},
+	{
+		"id": "EDI2022MoreleyRivChinookRestoPlanMon",
+		"type": "report",
+		"language": "en",
+		"number": "CRE-172-21",
+		"page": "iii + 13 p.",
+		"publisher": "Teslin Tlingit Council",
+		"title": "2021 Morley River Chinook Stock Restoration  Planning and Monitoring",
+		"URL": "https://airtable.com/appcOJZRUczgtPBcc/shrYLkoD0iLpJzwYW/tblQ57TntOtNTYBQs/viwBOnNDYjf9mEiBC/recam8ZamTSGN58lu/fldhUMUYccVSSTmSu/attJJ51Yuqo3VMxTu?viewControls=on",
+		"author": [
+			{
+				"family": "EDI Environmental Dynamics Inc.",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2025",
+					8,
+					11
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2022",
+					5
+				]
+			]
+		}
+	},
+	{
+		"id": "Sparling2003InvestigationsFishHabitats",
+		"type": "report",
+		"note": "Sparling2003CRE-27-02",
+		"number": "CRE-27-02",
+		"page": "46",
+		"publisher": "Selkirk Renewable Resource Council",
+		"title": "Investigations into Fish Habitats of Tributaries to the Pelly and Macmillan Rivers 2002",
+		"URL": "http://www.yukonriverpanel.com/download/80/restoration/631/cre-27-02-investigations-into-fish-habitats-of-tributaries-of-the-pelly-and-mcmillan-rivers.pdf",
+		"author": [
+			{
+				"family": "Sparling",
+				"given": "P."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2003"
+				]
+			]
+		}
+	},
+	{
+		"id": "MilliganEtAl1986DistributionAbundanceChum",
+		"type": "report",
+		"collection-title": "Canadian Technical Report of Fisheries and Aquatic Sciences",
+		"number": "1351",
+		"page": "xiii + 141 p.",
+		"publisher": "DFO",
+		"title": "The Distribution and Abundance of Chum Salmon (Oncorhynchus keta) in the Upper Yukon River Basin as Determined by a Radio.:ragging and Spaghetti Tagging Program: 1982-1983",
+		"author": [
+			{
+				"family": "Milligan",
+				"given": "P.A."
+			},
+			{
+				"family": "Rublee",
+				"given": "W.O."
+			},
+			{
+				"family": "Cornett",
+				"given": "D.D."
+			},
+			{
+				"family": "Johnston",
+				"given": "R.A.C."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1986",
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "YukonRiverJointTechnicalCommittee1999YukonRiverSalmon",
+		"type": "report",
+		"language": "en-US",
+		"page": "iii + 131 p.",
+		"title": "Yukon river season review for 1999 and technical committee report",
+		"URL": "https://www.yukonriverpanel.com/publications/yukon-river-joint-technical-committee-reports/",
+		"author": [
+			{
+				"family": "Yukon River Joint Technical Committee",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2025",
+					9,
+					8
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"1999"
 				]
 			]
 		}

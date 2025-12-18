@@ -6900,5 +6900,31 @@
 				]
 			]
 		}
+	},
+	{
+		"id": "FisheriesandOceansCanad2019JuvenileChinookSalmon",
+		"type": "report",
+		"event-place": "Whitehorse, YT",
+		"genre": "Report prepared for the Yukon River Panel",
+		"number": "CRE-26-18",
+		"page": "38 p.",
+		"publisher": "Fisheries and Oceans Canada, Yukon/Transboundary River Area",
+		"publisher-place": "Whitehorse, YT",
+		"title": "Juvenile Chinook Salmon, Oncorhynchus tshawytscha, Outmigration Assessment in the Big Salmon River Yukon",
+		"URL": "https://www.yukonriverpanel.com/re-fund-project/yukon-river-canadian-origin-juvenile-chinook-out-migrant-assessment/",
+		"author": [
+			{
+				"family": "Fisheries and Oceans Canad",
+				"given": ""
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019",
+					2
+				]
+			]
+		}
 	}
 ]

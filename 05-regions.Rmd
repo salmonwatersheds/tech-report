@@ -39,7 +39,7 @@ Spawner survey data has been collected until now but have not been reported to N
 
 #### Juvenile Surveys {#yukon-juvenile-surveys}
 
-The estimated juvenile abundance data for the Chinook *Big Salmon* CU comes from @FisheriesandOceansCanad2019JuvenileChinookSalmon.
+The estimated juvenile abundance data for the Chinook *Big Salmon* CU originates from a mark-recapture study conducted between 2015 and 2017 in the Big Salmon River by Fisheries and Oceans Canada for the Yukon River Panel [@FisheriesandOceansCanad2019JuvenileChinookSalmon].
 
 <!-- source: X Drive\1_PROJECTS\1_Active\Yukon\Data & Assessments\Other_Sources/Chinook_Juvenile_BigSalmon_CRE-26-18A_Appendix8.csv -->
 

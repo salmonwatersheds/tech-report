@@ -5,13 +5,203 @@ library(kableExtra)
 library(dplyr)
 
 cu_list <- read.csv("tables/appendix1.csv")
+
+# Import appendix 3: biostatus details
+app3 <- read.csv("tables/appendix3.csv", na.strings = NA)
 ```
 
 Each **Region** within the Pacific Salmon Explorer has specific attributes related to management regimes, data collection, documentation protocols, and most importantly, salmon populations and habitats (Figure \@ref(fig:regions)). Here, we document Region-specific data sources, methodological considerations, and social processes used in each of the initial biological status, habitat pressure assessments, and any other unique information for each region currently within the Pacific Salmon Explorer.
 
 ```{r regions, fig.cap = "Map of the PSE Regions.", include=TRUE, echo = FALSE, out.width='100%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/regions.png")
+#knitr::include_graphics("figures/regions.png")
+knitr::include_graphics("figures/regions_YK.png")
 ```
+
+
+## Yukon Region {#yukon-region}
+
+```{r ykMap, fig.cap = "Map of the Yukon Region.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
+knitr::include_graphics("figures/yukon_map.png")
+```
+
+
+### Population Data and Analytical Methods {#yukon-pop-data}
+
+The Yukon data landscape is unique, as most fish counts are derived from U.S. border sonar monitoring stations: the Eagle sonar and the Porcupine sonar operating just downstream of Old Crow. For Chinook, run reconstruction modelling work has been undertaken to estimate CU-level spawner and recruit abundances using sonar total counts and genetic stock identification (GSI) ([Connors et al., 2022](https://doi.org/10.1002/eap.2709)). The data is maintained through the Canadian Science Advisory Secretariat (CSAS) process and the related R code, datasets and documentation are available at [yukon-CK-ResDoc](https://github.com/Pacific-salmon-assess/yukon-CK-ResDoc). For chum, run reconstruction has not been pursued but the total counts at the Eagle sonar and associated relative CU-proportions are available for several CUs in the [Yukon River Joint Technical Committee (JTC) reports](https://www.yukonriverpanel.com/publications/yukon-river-joint-technical-committee-reports/). Finally, no data has been assembled yet for the coho CU.
+
+Spawner survey data has been collected until now but have not been reported to NuSEDS since 2008 ([Atkinson et al., 2025](https://doi.org/10.1139/cjfas-2024-0387)); therefore, they must be obtained from alternative sources.
+
+
+#### Spawner Surveys {#yukon-spawner-surveys}
+
+**Spawner survey** data for streams in the Yukon Region were sourced principally from the [Yukon River Joint Technical Committee (JTC) 2025 report](https://www.yukonriverpanel.com/publications/yukon-river-joint-technical-committee-reports/) (Appendices B12 and B15), Connors et al.'s (2025) report titled [Stock status and biological and fishery consequences of alternative harvest and rebuilding actions for Yukon River Chinook salmon (Oncorhynchus tshawytscha)](https://github.com/Pacific-salmon-assess/yukon-CK-ResDoc) (in particular the dataset [trib-spwn.csv](https://github.com/Pacific-salmon-assess/yukon-CK-ResDoc/blob/main/analysis/data/raw/trib-spwn.csv)), the Pacific Salmon Commission's Technical Report No. 48 ([Pestal et al., 2022](https://www.psc.org/publications/technical-reports/technical-report-series/)), and [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6) (more precisely, its [cleaned version](https://doi.org/10.5281/zenodo.14194638)). The following sources were also used for additional data points: [JTC's reports from 1999 and 2013](https://www.yukonriverpanel.com/publications/yukon-river-joint-technical-committee-reports/), Yukon River Panel's Restoration & Enhancement Fund project reports ([CRE-172-21](https://airtable.com/appcOJZRUczgtPBcc/shrYLkoD0iLpJzwYW/tblQ57TntOtNTYBQs?backgroundColor=yellowLight&viewControls=on), [CRE-27-02](http://www.yukonriverpanel.com/download/80/restoration/631/cre-27-02-investigations-into-fish-habitats-of-tributaries-of-the-pelly-and-mcmillan-rivers.pdf)), and the Canadian Technical Report of Fisheries and Aquatic Sciences No. 1351 ([Milligan et al., 1986](https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/11855.pdf)). For a description of the spawner survey indicator, see [Overview of Population Indicators: Spawner Surveys](#spawner-surveys).
+
+
+#### Juvenile Surveys {#yukon-juvenile-surveys}
+
+The estimated juvenile abundance data for the Chinook *Big Salmon* CU originates from a mark-recapture study conducted between 2015 and 2017 in the Big Salmon River by Fisheries and Oceans Canada for the Yukon River Panel [@FisheriesandOceansCanad2019JuvenileChinookSalmon].
+
+<!-- source: X Drive\1_PROJECTS\1_Active\Yukon\Data & Assessments\Other_Sources/Chinook_Juvenile_BigSalmon_CRE-26-18A_Appendix8.csv -->
+
+
+#### Hatchery Releases {#yukon-hatchery-releases}
+
+Hatchery releases in the Yukon Region for all species were provided by DFO (Brock Ramshaw, Salmonid Enhancement Program). Refer to [Overview of Population Indicators: Hatchery Releases](#hatchery-releases) for details on data and analytical methods.
+
+
+#### Spawner Abundance {#yukon-spawner-abundance}
+
+**Estimated spawner abundances** for Chinook were obtained from [Connors et al.'s (2025) run-reconsruction](https://github.com/Pacific-salmon-assess/yukon-CK-ResDoc) (in particular the dataset [esc-data.csv](https://github.com/Pacific-salmon-assess/yukon-CK-ResDoc/blob/main/analysis/data/generated/esc-data.csv)) for the following CUs: Big Salmon, Nordenskiold, Pelly, Middle Yukon, Stewart, White and Northern Yukon. Although estimates are also available in this dataset for the Upper Yukon and Teslin CUs, they are unrealistically high compared with local observations. To address this, we derived CU-level spawner abundances from two spawner surveys for each of these CUs (cf., details [here](https://bookdown.org/salmonwatersheds/teslin-upper-yukon-alternatives/teslin-upper-yukon-alternatives.html)). For the Porcupine and Old Crow CUs, we used estimated counts from the Porcupine sonar, as reported by the [JTC](https://www.yukonriverpanel.com/publications/yukon-river-joint-technical-committee-reports/). Although it was not possible to partition these totals between the two CUs, the combined abundance fell below the absolute benchmark of 1,500 spawners. Accordingly, we applied the same time series to both CUs, resulting in a poor biological status.
+
+For Chum, we used [JTC]((https://www.yukonriverpanel.com/publications/yukon-river-joint-technical-committee-reports/)) data to estimate spawner abundance for four of the seven CUs, combining total escapement estimates from the Eagle sonar with relative proportion obtained from genetic stock identification. For the Porcupine CU, we used the Fishing Branch estimate from the [JTC 2025 report](https://www.yukonriverpanel.com/publications/yukon-river-joint-technical-committee-reports/) (appendix B12) as relative abundance time series.
+
+
+#### Run Timing {#yukon-run-timing}
+
+Run timing data were compiled from a variety of sources detailed in @WilsonPeacock2025FreshwaterLifecycleTiming, including from the Federal Science Library (FSL) and the Alaska Department of Fish and Game (ADF&G). See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
+
+
+#### Catch & Run Size {#yukon-catch-run-size}
+
+All the data used comes from the [JTC](https://www.yukonriverpanel.com/publications/yukon-river-joint-technical-committee-reports/) report 2025. The nature of the data and the related procedure differ among species and groups of CUs associated to the mainstem of the Yukon river and the Porcupine river. The following sections provide the sequential steps of these procedures for each group of CUs. 
+
+For **Chinook CUs in Yukon Mainstem**:
+
+We first calculate the overall all exploitation rate across the CUs, which we then apply to each CU, assuming equal vulnerability to harvest:
+
+1)  Define `total combined catch` = `Total Run` - `Escapement` (data from Appendix B26: total counts across the CUs)
+
+2)  Define `exploitation_rate` = `total combined catch` / `Total Run`
+
+3)  The CU-level `combined_catch` = `estimated_count` / (1 - `exploitation_rate`) \* `exploitation_rate` (we assume equal vulnerability of the CUs to harvest)
+
+4)  We then calculate the CU-level US catch `us_catch` and Canadian catch `cdn_catch` using `total US catch` and `total canadian catch` estimates from Appendix B18 for years \> 2000. Because their sum differ slightly from `total combined catch` calculated above, we do not use these values to calculate a rate (like for `total combined catch` and `exploitation_rate`) but instead determine the relative proportions of US *vs.* Canadian catch, which we then multiply to the CU-level `combined_catch`:
+
+    ```         
+     - `us_catch` = `combined_catch` * `total US catch` / (`total US catch` + `total canadian catch`)
+
+     - `cdn_catch` = `combined_catch` - `us_catch`
+    ```
+
+For CU *Upper Yukon*, we use an alternative absolute escapement time series that accounts for en route mortality (see [Section 5.1.1.4. Spawner Abundance](#yukon-spawner-abundance)). But in this case the harvest rate (`exploitation_rate`) should be applied to the count at the border and not in the spawning locations so we use the estimated spawner abundance from [Connors et al.'s (2025) esc-data.csv](https://github.com/Pacific-salmon-assess/yukon-CK-ResDoc/blob/main/analysis/data/generated/esc-data.csv) for `estimated_count` and define `run_size_adjustement` as the difference between the count at the border and the count in the alternative time series.
+
+For *Teslin* we also use an alternative time series but the latter does not represent an absolute count (see [Section 5.1.1.4. Spawner Abundance](#yukon-spawner-abundance)). We consequently decide to not show the count data as it is impossible to discriminate between the en route mortality and abundances in unmonitored streams (i.e., `run_size_adjustement` cannot be estimated). We however display `exploitation_rate` because it is assumed to be the same as for the other CUs.
+
+5)  Finally we define for each CU `total_run` = `estimated_count` + `combined_catch` + `run_size_adjustment`
+
+
+For **Chinook CUs in the Porcupine River**:
+
+Harvest estimate of the Porcupine river are not available and are assumed to be marginal [@ConnorsEtAl2023EstimatesBiologicalReference].
+
+For **Chum CUs in Yukon Mainstem**:
+
+The total US and Canadian catch data and total run size across all four CUs are available in Appendix B20. The table also contains `spawning escapement` data, but the latter differs slightly from `spawning escapement estimate` in Appendix B16, which we used to define CU-level spawner abundance (see [Section 5.1.1.4. Spawner Abundance](#yukon-spawner-abundance)). For consistency, we decide to use the escapement data from Appendix B16 and not Appendix B20.
+
+As previously, we determine the overall exploitation rate (`exploitation_rate`) and we assume that all four CUs are equality vulnerable to harvest:
+
+1)  Define `total spawning escapement` = `spawning escapement estimate` in Appendix B16
+
+2)  Define `total combined catch` = `total US catch` + `total Canadian catch` in Appendix B20
+
+3)  Define `total run size` = `total spawning escapement` + `total US catch` + `total Canadian catch` (instead of using `Total estimated Canadian origin run size` in Appendix 20)
+
+4)  Define `exploitation_rate` = `total combined catch` / `total run size` 
+
+5)  Define catch for the US `us_catch`, Canadian `cdn_catch` and total harvest `combined_catch` for each CU:
+
+    ```         
+     - `combined_catch` = `estimated_count` / (1 - `exploitation_rate`) * `exploitation_rate`
+
+     - `us_catch` = `combined_catch` * `total US catch` / `total combined catch`
+
+     - `cdn_catch` = `combined_catch` - `us_catch`
+    ```
+
+6)  Define for each CU `total_run` = `estimated_count` + `combined_catch`
+
+
+For **Chum CU the Porcupine River**:
+
+The estimated spawner abundance for the Chum *Porcupine* CU represents the Fishing Branch portion of the Porcupine river, which cannot be considered as an absolute count (see [Section 5.1.1.4. Spawner Abundance](#yukon-spawner-abundance)). The catch data is in Appendix B22 and also concerns only the Fishing Branch.
+
+The total US and Canadian catch data and total run size across all four CUs is available in Appendix B22. The table also contains `spawning escapement` data, but that latter differs slightly from `spawning escapement estimate` in Appendix B15, which we used to define spawner abundance (see [Section 5.1.1.4. Spawner Abundance](#yukon-spawner-abundance)). For consistency, we decide to use the escapement data in Appendix B15 and not Appendix B22:
+
+1)  Define `estimated_count`= `escapemnent at Fishing Branch River` in Appendix B15
+
+2)  Define `total_run` = `Total estimated Fishing Branch River run size` in Appendix B22
+
+3)  Define catches (from Appendix B22):
+
+    ```         
+     - `us_catch` = `U.S. Fishing Branch River harvest`
+
+     - `cdn_catch` = `Canada Fishing Branch River harvest`
+
+    ```
+
+There is no value for `us_catch` in 2011 but there is one for `cdn_catch`. So we define for this year `us_catch` = `total_run` - `estimated_count` - `cdn_catch`.
+
+```         
+    - `combined_catch` = `cdn_catch` + `us_catch` for year > 2010 and = `total_run` - `estimated_count` otherwise
+```
+
+4)  Define `run_size_adjustment` = `total_run` - `estimated_count` - `combined_catch` (which is =! 0 for year \> 2011).
+
+5)  Define `exploitation_rate` = `combined_catch` / `total_run`
+
+
+#### Recruits-per-Spawner {#yukon-recruits-per-spawner}
+
+The recruits abundance data is only available from [Connors et al.'s (2025) run-reconsruction work](https://github.com/Pacific-salmon-assess/yukon-CK-ResDoc) (in particular the dataset [brood_table_long.csv](https://github.com/Pacific-salmon-assess/yukon-CK-ResDoc/blob/main/analysis/data/generated/brood_table_long.csv)) for the Chinook CUs Big Salmon, Nordenskiold, Pelly, Middle Yukon, Stewart, White and Northern Yukon.
+
+
+#### Biological Status {#yukon-biological-status}
+
+```{r, include=FALSE}
+cond_rg <- app3$Region == "Yukon"
+years <- unique(app3$Years[cond_rg])
+years <- years[years != ""]
+year <- strsplit(x = years,split = "-") |> unlist() |> max()
+
+# NOT YUKON REGION YET
+```
+
+The **biological status** assessments for CUs in the Yukon Region are current to `r year`. As new data become available, we will update the analyses and results in this report as well as on the Pacific Salmon Explorer. See [Sections 4.1.4. Benchmarks for Assessing Biological Status](#benchmarks-biostatus) and [4.1.5. Decision Rules for Assessing Biological Status](#bs-decision-rules) for more details on biological status assessment methods.
+
+### Habitat Data and Analytical Methods {#yukon-hab-data}
+
+Nuances regarding habitat pressure indicator data and analytical methods for the Yukon Region are listed below. Refer to [Habitat Status: Indicators & Benchmarks](#hab-press-benchmarks) for information on habitat pressure indicators, benchmarks, and the analytical methods used to assess habitat status.
+
+#### Freshwater Assessment Watersheds Delineation
+
+With the development of the Harmonized Assessment Watersheds dataset to enable standardized assessment of habitat pressures across BC and the Yukon, it is acknowledged that, despite efforts to identify comparable datasets and minimize boundary inconsistencies, some issues remain. In particular, boundary mismatches have created minor artifacts or slivers where multiple watershed datasets intersect. As a result, a small number of these artifacts are treated as actual watersheds and assigned a threat rating. To address these artifacts we have assigned them a threat rating of 'data deficient.'<!-- Remove the above once the watershed dataset has been updated to remove these artifacts-->
+
+#### Spawning Zones of Influence
+
+Methods for delineating spawning zones of influence (ZOIs) vary by region in accordance with the CU delineation approach used by DFO. For the Yukon, spawning ZOIs for each species CU were delineated using the extent of all MERIT-Basins Assessment Watersheds that directly intersected with the CU boundaries of that species.
+
+#### Mining Activities in the Yukon
+
+Given the Region’s long mining history, mining-related disturbances pose significant risks to salmon habitat. Placer mining is of particular concern because operations occur directly within rivers and along their banks, displacing large volumes of sediment and water during gold extraction.
+
+To evaluate mining pressures on salmon habitat, PSF analysts reviewed all available spatial data layers and assessed their relevance to mining disturbance. Staking and survey claim information was determined to reflect early, pre-extraction phases that cause little or no detectable landscape impact, indicating only potential future activity.
+
+In contrast, land-use permits, mining licenses, and leases represent active surface disturbances from excavation. These disturbances can be readily identified using satellite imagery from GeoYukon’s new change-detection layer—Surface Disturbance Features—which maps areal surface impacts across the landscape. Through imagery analysis and cross-validation with other datasets, Environment Yukon analysts were able to distinguish disturbance types associated with major industries and their key activities.
+
+In the Yukon, several spatial data layers uniquely capture both historical and current placer mining activity—unlike in British Columbia, where no publicly available placer-mining disturbance layer exists. Because placer mining is widespread across the Region and directly affects salmon habitat, these Yukon datasets were prioritized in the analysis and integrated with available information on mineral, coal, and gravel mining.
+
+Historical placer mining information provided by the [Yukon Geological Survey](https://data.geology.gov.yk.ca/) referenced two datasets: Historical Placer Claims 1M and Historical Placer Dredging Extents. Since the 1M layer is display-only, analysts instead used the Historical Mineral Claims 50K dataset and filtered for Expired Prospecting Placer Leases, which closely aligned with the historical features shown in the Geological Yukon 1M data.
+
+For current activity, the Current Surface Disturbance Layer—filtered to include only Significant Placer Mining Areas and General Mining Areas—corresponded well with areas captured in the Historical Placer Dredging Extents.
+
+Together, these datasets provided a consistent and repeatable approach for identifying both historical and current placer mining disturbances across the Region.
+
+See [Limitations: Habitat Pressure Indicators & Analysis Methods](#hab-method-limits) for special considerations when interpreting the results of other indicators in the Yukon.
+
+#### Spawning Habitat Information from Expert Knowledge Holders
+
+In addition to the spawning habitat information we acquired from the Yukon Fisheries Information Summary System (FISS) database, we collaborated with representatives from the Yukon First Nations Salmon Stewardship Alliance, Fisheries and Oceans Canada's staff, and salmon biologist Al von Finster, to identify local salmon spawning locations in the Region. For Chinook, we also relied on the comprehensive catalogue of Chinook salmon spawning areas by Brown et. al (2017). Efforts to expand this information will continue, to ensure that our assessments reflect the known extent of spawning habitats throughout the Yukon.
 
 ## Northern Transboundary Region {#transboundary-region}
 
@@ -19,19 +209,19 @@ At the northwestern edge of BC lie some of the most remote and rugged salmon-bea
 
 The first round of data compilation and local consultation in the Transboundary Region took place from 2021-2024 in collaboration with a Transboundary Technical Working Group, made up of fisheries staff from the Tahltan Central Government, Taku River Tlingit First Nation, the Champagne and Aishihik First Nations, and DFO Regional Biologists, as well as independent salmon experts. This work was funded by the BC Salmon Restoration and Innovation Fund. We also retained Gottfried Pestal (Solv Consulting) to assist in compiling Transboundary population data and providing technical advice on the feasibility of estimating certain indicators.
 
-### Population Data and Analytical Methods {#transboundary-pop-data}
+### Population Data and Analytical Methods
 
 Because of the Transboundary life-cycles of salmon in this region, most monitoring data are focused on mandatory reporting under the Pacific Salmon Treaty between Canada and the US. Specifically, we relied heavily on data in the Transboundary Technical Committee (TTC) reports and associated appendices [@TTC2022FinalEstimatesTransboundary]. Data in published reports often lag behind data collection by 2-3 years, and we were able to obtain up-to-date version of report appendices from DFO on request (Aaron Foos, pers. comm.). The TTC reports are focused on "Treaty stocks", equivalent to Stock Management Units, for Chinook, coho, and sockeye in the major river basins (Alsek, Stikine, Taku). Information on CUs outside of these Treaty stocks was sparse.
 
 #### Spawner Surveys {#transboundary-spawner-surveys}
 
-Annual spawner survey data were mostly acquired from [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6) and the TTC annual reports. There are over 20 appendices in the annual TTC reports [e.g. @TTC2022FinalEstimatesTransboundary] that include escapement estimates from assessment projects including fishwheels, weirs, video weirs, sonars, snorkel surveys and aerial surveys. Where spawner estimates were reported in both datasets, they were most often identical. For some streams and years, the TTC estimates were lower. For example, the Klukshu River Chinook, coho, and sockeye estimates from 2000-2020 were often lower in the TTC reports than in NuSEDS. There were fewer cases where TTC estimates were higher than NuSEDS and these differences tended to be smaller in magnitude. 
+Annual spawner survey data were mostly acquired from [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6) and the TTC annual reports. There are over 20 appendices in the annual TTC reports [e.g. @TTC2022FinalEstimatesTransboundary] that include escapement estimates from assessment projects including fishwheels, weirs, video weirs, sonars, snorkel surveys and aerial surveys. Where spawner estimates were reported in both datasets, they were most often identical. For some streams and years, the TTC estimates were lower. For example, the Klukshu River Chinook, coho, and sockeye estimates from 2000-2020 were often lower in the TTC reports than in NuSEDS. There were fewer cases where TTC estimates were higher than NuSEDS and these differences tended to be smaller in magnitude.
 
 Based on guidance from the TWG, who advised that data in TTC reports were more reliable and current than in NuSEDS, we preferentially relied on TTC data when spawner surveys were reported in both sources. In some cases (e.g. Klukshu River coho), the NuSEDS time series extended further back in time than the TTC data, but estimates differed between the two sources in more recent years. In these cases, we used only the TTC data, even though that meant losing some historical data that were in NuSEDS, to avoid misrepresenting changes in abundance through time that are due to different data processing steps between data sources.
 
-We report the published estimates directly from the TTC or NuSEDS for all spawner surveys except the Taku River survey of the Northern Transboundary Fjords river-type sockeye CU. In this case, the Taku River sockeye reconstruction from TTC includes the river-type sockeye CU and four lake-type sockeye CUs. Since 2004, all four lake-type sockeye CUs have weirs and thus their contribution to can be accounted for to estimate the river-type component of the overall Taku River sockeye. We do not report spawner survey data for Taku River prior to 2004, when the estimates could not be attributed to CUs. 
+We report the published estimates directly from the TTC or NuSEDS for all spawner surveys except the Taku River survey of the Northern Transboundary Fjords river-type sockeye CU. In this case, the Taku River sockeye reconstruction from TTC includes the river-type sockeye CU and four lake-type sockeye CUs. Since 2004, all four lake-type sockeye CUs have weirs and thus their contribution to can be accounted for to estimate the river-type component of the overall Taku River sockeye. We do not report spawner survey data for Taku River prior to 2004, when the estimates could not be attributed to CUs.
 
-There were two additional spawner surveys that we extracted from sources other than the TTC reports and NuSEDS. A sonar project on the Nahlin River, funded by the Pacific Salmon Commission’s Northern Fund, provided Chinook estimates from 2016 – 202336. The sonar project targets large Chinook (>659 mm mid-eye to fork length) and the estimates are separate from the Nahlin River Chinook estimates in the TTC report. In addition, the Lynn Canal Chinook CU was monitored from 1981-1991 at Stonehouse Creek [@Pahlke1992EscapementsChinookSalmon].
+There were two additional spawner surveys that we extracted from sources other than the TTC reports and NuSEDS. A sonar project on the Nahlin River, funded by the Pacific Salmon Commission’s Northern Fund, provided Chinook estimates from 2016 – 202336. The sonar project targets large Chinook (\>659 mm mid-eye to fork length) and the estimates are separate from the Nahlin River Chinook estimates in the TTC report. In addition, the Lynn Canal Chinook CU was monitored from 1981-1991 at Stonehouse Creek [@Pahlke1992EscapementsChinookSalmon].
 
 Along with spawner survey counts, we compiled additional information including species, site, year, quality, and method and synthesized these data by CU. Spawner survey method and data quality are consistently reported in NuSEDS, but often had to be extracted from footnotes or within the text for TTC-reported data.
 
@@ -47,15 +237,15 @@ knitr::kable(
 
 #### Juvenile Surveys {#transboundary-juvenile-surveys}
 
-Juvenile survey data were available from the TTC report [@TTC2022FinalEstimatesTransboundary] for Tahltan lake-type sockeye in the Stikine watershed and Tatsamenie lake-type sockeye in the Taku watershed. Both of these CUs report natural-origin and hatchery-origin juveniles. 
+Juvenile survey data were available from the TTC report [@TTC2022FinalEstimatesTransboundary] for Tahltan lake-type sockeye in the Stikine watershed and Tatsamenie lake-type sockeye in the Taku watershed. Both of these CUs report natural-origin and hatchery-origin juveniles.
 
 #### Hatchery Releases {#transboundary-hatchery-releases}
 
-Data on hatchery locations, release sites, and release numbers are provided by DFO Salmon Enhancement Program staff. We compiled information on hatchery releases at 10 different locations throughout the Transboundary Region, representing 13 different location and CU combinations. 
+Data on hatchery locations, release sites, and release numbers are provided by DFO Salmon Enhancement Program staff. We compiled information on hatchery releases at 10 different locations throughout the Transboundary Region, representing 13 different location and CU combinations.
 
 #### Spawner Abundance {#transboundary-spawner-abundance}
 
-The available data from the TTC [@TTC2022FinalEstimatesTransboundary] provide CU-level estimated spawner abundance for eight of the 44 CUs in the Transboundary Region. These CUs are located in the Alsek, Stikine, and Taku River basins. Seven of these CUs are lake-type sockeye with a weir at the downstream extent of the CU (i.e. outlet of the lake) such that this spawner survey can also provide the CU-level estimated spawner abundance. One Chinook CU (Alsek Chinook) has reliable spawner survey data at the Klukshu River that is expanded to represent the entire CU. There are no CU-level spawner abundances for CUs in the Chilkat, Unuk, or Whiting watersheds, or for the coho, chum, pink and steelhead CUs of the Region. 
+The available data from the TTC [@TTC2022FinalEstimatesTransboundary] provide CU-level estimated spawner abundance for eight of the 44 CUs in the Transboundary Region. These CUs are located in the Alsek, Stikine, and Taku River basins. Seven of these CUs are lake-type sockeye with a weir at the downstream extent of the CU (i.e. outlet of the lake) such that this spawner survey can also provide the CU-level estimated spawner abundance. One Chinook CU (Alsek Chinook) has reliable spawner survey data at the Klukshu River that is expanded to represent the entire CU. There are no CU-level spawner abundances for CUs in the Chilkat, Unuk, or Whiting watersheds, or for the coho, chum, pink and steelhead CUs of the Region.
 
 #### Run Timing {#transboundary-run-timing}
 
@@ -65,13 +255,13 @@ Run timing for Transboundary CUs was compiled from several sources. Start, peak,
 
 The TTC reports on weekly harvest and effort, annual harvest, and annual estimates of catch (based on coded-wire tags – CWT – or genetic stock identification – GSI) in US and Canadian commercial, recreational, and First Nations fisheries for specific Stock Management Units (SMUs) and indicator populations covered by the Treaty. From TTC report [@TTC2022FinalEstimatesTransboundary], estimates of spawners, Canadian catch, US catch, and run size are available for the following SMUs: Alsek Chinook, Alsek sockeye, Stikine Chinook, Stikine sockeye, Taku Chinook, Taku coho, and Taku sockeye. In the Stikine, the catch and run size information is further split into the mainstem and Tahltan River components. Based on these data, we provide CU-level estimates of catch and run size for the Alsek Chinook CU and the Tahltan lake-type sockeye CU.
 
-#### Recruits-per-Spawner {#transboundary-recruits-per-spawner}
+#### Recruits-per-Spawner {#recruits-per-spawner}
 
 There were no recruits-per-spawner data available at the CU-level for the Transboundary Region.
 
-#### Biological Status {#transboundary-biological-status}
+#### Biological Status
 
-Given that no spawner-recruit data were available for Transboundary CUs, we could only apply percentile benchmarks to assess biological status to eight CUs that had estimated spawner abundance. Given a lack of CU-scale information on spawner abundance, the other 36 CUs could not be assessed. These included all coho, pink, chum, and steelhead CUs in the Transboundary Region. 
+Given that no spawner-recruit data were available for Transboundary CUs, we could only apply percentile benchmarks to assess biological status to eight CUs that had estimated spawner abundance. Given a lack of CU-scale information on spawner abundance, the other 36 CUs could not be assessed. These included all coho, pink, chum, and steelhead CUs in the Transboundary Region.
 
 ### Habitat Data and Analytical Methods {#transboundary-hab-data}
 
@@ -149,10 +339,9 @@ Working with John Broadhead and Dave Leversee of the Gowgaia Institute, we acces
 
 With their expert knowledge of logging history on Haida Gwaii, the Gowgaia Institute also identified areas where assessing risk at the assessment watershed scale may over or underrepresent more localized risk. Categorizing risk at the assessment watershed-scale generalizes risk across watersheds. As such, at this scale, it is not possible to identify whether risk is evenly distributed across a watershed or is more concentrated in certain parts of a watershed. Areas that the Gowgaia Institute identified as suffering from this limitation were around Haines Creek, NE Graham Island, and watersheds near Tasu Sound. The Harvested Cutblocks layer is provided along-side the Forest Harvest Habitat Assessment layer to faciliate more localized examination of forest harvest impacts in relation the Assessment Watershed boundaries (which can be optionally added to the map from the Layers Catalogue).
 
-#### Spawning Habitat Information from Expert Knowledge Holders {#haida-gwaii-expert-knowledge} 
+#### Spawning Habitat Information from Expert Knowledge Holders {#haida-gwaii-expert-knowledge}
 
 In addition to the spawning habitat information we acquired from DataBC (primarily from the Fisheries Information Summary System (FISS) database), we collaborated with representatives from Haida Fisheries, Fisheries and Oceans Canada's Salmon Enhancement Program, Parks Canada, the Gowgaia Institute, the Hecate Strait Streamkeepers, and independent salmon experts to identify local salmon spawning locations. The collective identified 16 new salmon-bearing watersheds that had not been previously documented, further enhancing the baseline of available information for Haida Gwaii salmon.
-
 
 ## Nass Region {#nass-region}
 
@@ -176,7 +365,7 @@ Spawner survey data for streams in the Nass Region were sourced from [NuSEDS](ht
 
 **Juvenile surveys** for the Lower Nass coho CU was provided by Nisga'a Fish and Wildlife. For a description of the juvenile surveys indicator, see [Overview of Population Indicators: Juvenile Surveys](#juvenile-surveys).
 
-#### Hatchery Releases {#nass-hatchery-releases} 
+#### Hatchery Releases {#nass-hatchery-releases}
 
 Hatchery releases in the Nass Region for all species were provided by DFO (Brock Ramshaw, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the Province of British Columbia's [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#hatchery-releases) for details on data and analytical methods.
 
@@ -188,8 +377,7 @@ In addition, CU-level estimates of spawner abundance for five Nass CUs are deriv
 
 #### Run Timing {#nass-run-timing}
 
-Run timing data were compiled from a variety of sources detailed in @WilsonPeacock2025FreshwaterLifecycleTiming, including the Gitwinksihlkw fish wheel and Coded-wire Tag recovery projects at Zolzap Creek and Kincolith River.
-<!-- Add more details when time to insert references from Wilson and Peacocj into zotero!-->
+Run timing data were compiled from a variety of sources detailed in @WilsonPeacock2025FreshwaterLifecycleTiming, including the Gitwinksihlkw fish wheel and Coded-wire Tag recovery projects at Zolzap Creek and Kincolith River. <!-- Add more details when time to insert references from Wilson and Peacocj into zotero!-->
 
 #### Catch & Run Size {#nass-catch-run-size}
 
@@ -207,7 +395,7 @@ The biological status assessments for salmon CUs in the Nass Region currently re
 
 Nuances regarding habitat pressure indicator data and analytical methods for the Nass Region are listed below. Refer to [Population Status: Indicators & Benchmarks](#indicators-benchmarks-pop) for information on habitat pressure indicators, benchmarks, and the analytical methods used to assess habitat status. <!-- ** Katy **  Additional details on habitat pressure indicators, data sources, data currency, and benchmarks specific to the Nass Region are available in [Appendix 6 (Description of Habitat Pressure Indicators & Relevance to Salmon)](#appendix-6), [Appendix 7 (Habitat Pressure Datasets & Data Sources)](#appendix-7), [Appendix 8 (Spatial Data Processing for Habitat Pressure Indicators)](#appendix-8), [Appendix 9 (Spatial Data Processing for Future Pressures)](#appendix-9), and [Appendix 12 (Habitat Pressure Benchmark Values by Region)](#appendix-12).-->
 
-#### Spawning Zones of Influence {#nass-zoi} 
+#### Spawning Zones of Influence {#nass-zoi}
 
 Methods for delineating Chinook CU spawning zones of influence (ZOIs) vary by region in accordance with the CU delineation approach used by DFO. In the Skeena, Nass, and Central Coast regions, Chinook CUs are defined using a more restrictive geographic representation, which resulted in fewer (or no) spawning locations occurring within the CU boundaries. As such, spawning ZOIs for each Chinook CU were delineated using the extent of all 1:20K FWA Assessment Watersheds that directly intersected with Nass Chinook CU boundaries.
 
@@ -249,24 +437,26 @@ Hatchery releases in the Skeena Region for all species were provided by DFO (Bro
 
 Observed spawner abundance for CUs in the Skeena Region is the sum of all spawner survey data documented in NuSEDS, as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance).
 
-Skeena CU-level estimates of spawner abundance (run reconstructions) were sourced from the North and Central Coast (NCC) database for pink, chum and coho salmon. The quantity and quality of the estimated spawner abundance in NuSEDS varies by time period, region, and stream. Meanwhile, the observed spawner abundance data are not always representative of actual changes in abundance through time for a CU. As such, an "expansion procedure" is needed so that any changes in abundance through time are not confounded with changes in monitoring effort. Since 2008, PSF has worked with LGL Limited to generate Skeena (and Nass and Central Coast) CU-level estimated spawner abundance or run reconstructions in collaboration with DFO North Coast stock assessment staff [@EnglishEtAl2006NorthCentralCoast; @English2012ExtendTimeSeries; @EnglishEtAl2018NorthCentralCoast]. Three expansion factors are used to generate estimated spawner abundance. The first expansion factor uses historical proportional contribution data to infill indicator streams not monitored in a given year. The second expansion factor expands the data from the monitored indicator streams so that the estimated spawner abundance is representative of the entire CU. The final expansion factor expands this number again for observer efficiency. 
+Skeena CU-level estimates of spawner abundance (run reconstructions) were sourced from the North and Central Coast (NCC) database for pink, chum and coho salmon. The quantity and quality of the estimated spawner abundance in NuSEDS varies by time period, region, and stream. Meanwhile, the observed spawner abundance data are not always representative of actual changes in abundance through time for a CU. As such, an "expansion procedure" is needed so that any changes in abundance through time are not confounded with changes in monitoring effort. Since 2008, PSF has worked with LGL Limited to generate Skeena (and Nass and Central Coast) CU-level estimated spawner abundance or run reconstructions in collaboration with DFO North Coast stock assessment staff [@EnglishEtAl2006NorthCentralCoast; @English2012ExtendTimeSeries; @EnglishEtAl2018NorthCentralCoast]. Three expansion factors are used to generate estimated spawner abundance. The first expansion factor uses historical proportional contribution data to infill indicator streams not monitored in a given year. The second expansion factor expands the data from the monitored indicator streams so that the estimated spawner abundance is representative of the entire CU. The final expansion factor expands this number again for observer efficiency.
 
 The expansion procedures, by necessity, make a number of simplifying assumptions. The first expansion factor assumes that the proportion of the overall CU that each indicator stream represents is constant through time. The second expansion factor assumes that indicator and non-indicator streams make up a constant contribution to the overall abundance of a CU. The final expansion factor assumes that observer efficiency is constant between years, CUs, methodologies (except for fences), and hydrological systems. For CUs in the Skeena Region (and for CUs in the Nass, Central Coast and Haida Gwaii Regions), we attempted to account for potential data quality issues associated with the final observer efficiency expansion factor (see [Data Quality](#data-quality)). However, these assumptions may potentially still incorporate uncertainty into our assessments of biological status in these Region's CUs. These uncertainties result from spawner surveys being conducted using various methodologies and/or by different observers throughout time, which is not currently accounted for.
 
+```{=html}
 <!-- EH: This seems like a weird place for this information, maybe should go in Chapter 4? 
 SP: Agree; we can examine post-launch. :-S -->
+```
 
-For Skeena Chinook, we used the estimated spawner abundance data reported in @WintherEtAl2024AssessmentSkeenaRiver. Estimated spawner abundance was available for six CUs, and was derived by expanding the proportion of Kitsumkalum River Chinook identified at the Tyee test fishery. 
+For Skeena Chinook, we used the estimated spawner abundance data reported in @WintherEtAl2024AssessmentSkeenaRiver. Estimated spawner abundance was available for six CUs, and was derived by expanding the proportion of Kitsumkalum River Chinook identified at the Tyee test fishery.
 
-In contrast to Chinook, there has been more consistent distribution and quantity of monitoring effort for Skeena sockeye CUs dating back to 1960. Skeena sockeye data underwent a significant review and update in 2022 [@BiologicalBenchmarksBuilding]. We were provided an update of the estimated spawner abundance data file by DFO (Charmain Carr-Harris, personal communication). 
+In contrast to Chinook, there has been more consistent distribution and quantity of monitoring effort for Skeena sockeye CUs dating back to 1960. Skeena sockeye data underwent a significant review and update in 2022 [@BiologicalBenchmarksBuilding]. We were provided an update of the estimated spawner abundance data file by DFO (Charmain Carr-Harris, personal communication).
 
-For steelhead, we did not apply expansion procedures to observed spawner abundance data to produce estimated spawner abundance. Instead, where spawner survey data approximate the CU-scale (i.e. counts or estimates are produced that are inclusive of all steelhead populations in the CU), we present these data as estimated spawner abundance. Data sources for these data include custodians at the Skeena Region Office of the Province of BC's Fish and Wildlife Branch, @SkeenaFisheriesBranch2019UpperSustutRiver, and @SaimotoSaimoto2011WetSuwetFisheries. For the case of the Bulkley and Morice CUs, estimates from @SaimotoSaimoto2011WetSuwetFisheries represent the total number of spawners returning to these two CUs combined and there is not precedence for estimating the proportion of spawners returning to each individual CU. We visualize these estimates as the estimated spawner abundance for both the Bulkley and Morice CUs (i.e. the same estimated spawner abundance data are visualized for the spawner abundance indicator for both CUs).The Tyee Test Fishery has operated at the mouth of the Skeena River since 1955 providing an aggregate-level index of spawner abundance for steelhead returning to the 10 summer-run CUs in the Skeena watershed. There are, however, currently no available data for escapement to specific CUs or populations based on Tyee Test Fishery monitoring. 
+For steelhead, we did not apply expansion procedures to observed spawner abundance data to produce estimated spawner abundance. Instead, where spawner survey data approximate the CU-scale (i.e. counts or estimates are produced that are inclusive of all steelhead populations in the CU), we present these data as estimated spawner abundance. Data sources for these data include custodians at the Skeena Region Office of the Province of BC's Fish and Wildlife Branch, @SkeenaFisheriesBranch2019UpperSustutRiver, and @SaimotoSaimoto2011WetSuwetFisheries. For the case of the Bulkley and Morice CUs, estimates from @SaimotoSaimoto2011WetSuwetFisheries represent the total number of spawners returning to these two CUs combined and there is not precedence for estimating the proportion of spawners returning to each individual CU. We visualize these estimates as the estimated spawner abundance for both the Bulkley and Morice CUs (i.e. the same estimated spawner abundance data are visualized for the spawner abundance indicator for both CUs).The Tyee Test Fishery has operated at the mouth of the Skeena River since 1955 providing an aggregate-level index of spawner abundance for steelhead returning to the 10 summer-run CUs in the Skeena watershed. There are, however, currently no available data for escapement to specific CUs or populations based on Tyee Test Fishery monitoring.
 
 #### Run Timing {#skeena-run-timing}
 
 Estimates of peak timing of river entry for the different sockeye CUs were estimated from DNA sampled from fish caught in the Tyee test fishery near the mouth of the Skeena River between 2000-2010 [@Cox-Rogers2012FisheriesOceansCanada]. The duration of the timing of river entry is assumed to have a bell-shaped curve (i.e. normal distribution), so the shape of the curves is defined by the mean and standard deviation of the available run timing data. However, in most instances, there is insufficient data to determine if a different distribution would better describe the shape of the curve. A normal distribution curve is likely a reasonable approximation for run timing in most cases if the run timing is unimodal (i.e. if there is a single peak in run timing). If the run timing is bi-modal (i.e. if there are two run timing groups), the assumption of spread is likely reasonable, but the peak may be misleading.
 
-Note that these run timing curves were only used to estimate exploitation rates for Skeena sockeye CUs. A conservative assumption of relatively broad run timing (80-110 days) for each sockeye CU was used so that exploitation rates would not be sensitive to small shifts in fishery timing. For some CUs, run timing information is not available, and for some species, run timing is assumed to be the same for all CUs. 
+Note that these run timing curves were only used to estimate exploitation rates for Skeena sockeye CUs. A conservative assumption of relatively broad run timing (80-110 days) for each sockeye CU was used so that exploitation rates would not be sensitive to small shifts in fishery timing. For some CUs, run timing information is not available, and for some species, run timing is assumed to be the same for all CUs.
 
 For six Chinook CUs, timing was estimated from Tyee test fishery data from 2009-2016, taken from @WintherEtAl2024AssessmentSkeenaRiver. Test fishery data were available for other years between 2000 and 2022, but often missed the start of the run and so we opted to use the period when the test fishery began operation in late-May, better capturing the start of Chinook migrations. For steelhead, run timing from the Tyee test fishery was taken from @BeachamEtAl2012PopulationStructureRun.
 
@@ -288,11 +478,13 @@ The biological status assessments for CUs in the Skeena Region reflect data sour
 
 Nuances regarding habitat pressure indicator data and analytical methods for the Skeena Region are listed below. Refer to [Indicators and Benchmarks for Assessing Habitat Status](#indicators-benchmark-hab) for information on habitat pressure indicators, benchmarks, and the analytical methods used to assess habitat status. <!--Additional details on habitat pressure indicators, data sources, data currency, and benchmarks specific to the Skeena Region are available in [Appendix 6 (Description of Habitat Pressure Indicators & Relevance to Salmon)](#appendix-6), [Appendix 7 (Habitat Pressure Datasets & Data Sources)](#appendix-7), [Appendix 8 (Spatial Data Processing for Habitat Pressure Indicators)](#appendix-8), [Appendix 9 (Spatial Data Processing for Future Pressures)](#appendix-9), [Appendix 12 (Habitat Pressure Benchmark Values by Region)](#appendix-12).-->
 
+```{=html}
 <!-- Katy: Commenting this out as it seems no longer relevant with the empirical benchmarks, right?
 #### Trans-regional Conservation Units {#skeena-trans-cus}
 
 The pink (even-year) Nass-Skeena Estuary CU spans the boundary between the Skeena and Nass regions. For habitat indicators that used relative benchmarks, habitat status for this trans-regional CU was assessed based on benchmarks derived from the Skeena Region because a significant portion of this CU's spawning habitat fell inside the Skeena Region.
 -->
+```
 
 #### Spawning Zones of Influence {#skeena-zoi}
 
@@ -418,7 +610,7 @@ For steelhead, estimates for the total number of steelhead returning to the Thom
 
 **Run timing** estimates were compiled by @WilsonPeacock2025FreshwaterLifecycleTiming Data were provided for some Fraser sockeye CUs (Fiona Martens and Merran Hague, Pacific Salmon Commission). The median estimate date and spread represent the run timing date through DFO Area 20 for each management unit from 1980 to 2017. Each CU within a management unit was assumed to have the same run timing. For Fraser pink salmon, timing information from the hydroacoustic monitoring at Mission was provided by the Pacific Salmon Commission on request.
 
-Other CU run timing information came from @ParkenEtAl2008GeneticCodedWire for Chinook and @IrvineEtAl2001StockStatus for coho. Brittany Jenewin (DFO, pers. comm) shared raw data on chum salmon catch in the Albion test fishery. 
+Other CU run timing information came from @ParkenEtAl2008GeneticCodedWire for Chinook and @IrvineEtAl2001StockStatus for coho. Brittany Jenewin (DFO, pers. comm) shared raw data on chum salmon catch in the Albion test fishery.
 
 For steelhead, life-history information was compiled from older reports including @Withler1966VariabilityLifeHistory and @Caverly1978LifeHistoryWinter. Data compilation and sources are detailed in @WilsonPeacock2025FreshwaterLifecycleTiming See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
 
@@ -434,12 +626,13 @@ For Fraser River sockeye, exploitation rates are also provided by Management Gro
 
 **Recruits-per-spawner** data were derived by DFO and PSC and provided for pink (Fiona Martens, Pacific Salmon Commission) and sockeye (Fiona Martens, Pacific Salmon Commission) in the Fraser Region. For steelhead, recruits-per-spawner data for the Thompson Summer and Mid Fraser Summer CUs were sourced from @CommitteeontheStatusofEndangeredWildlifeinCanada2020COSEWICAssessmentStatus. For a description of recruits-per-spawner methods, see [Overview of Population Indicators: Recruits-per-Spawner](#recruits-per-spawner).
 
+```{=html}
 <!-- Steph is removing because there is no region-specific details for this indicator/assessment
 #### Trends in Spawner Abundance 
 
 **Trends in spawner abundance** were derived for pink and sockeye from the estimated spawner abundance data provided by the Pacific Salmon Commission (Fiona Martens), while the Chinook data is from @BrownEtAl20202020SummaryAbundance. For steelhead, trends in spawner abundance were derived from estimates of spawner abundance for the Thompson Summer and Mid Fraser Summer CUs provided directly from the Thompson Regional Office of the Province of BC's Fish and Wildlife Branch (Rob Bison, Fisheries Stock Assessment Biologist). For a description of trends in spawner abundance methods, see [Overview of Population Indicators: Trends in Spawner Abundance](#spawner-abundance).
 -->
-
+```
 
 #### Biological Status {#fraser-biological-status}
 
@@ -457,14 +650,13 @@ Nuances regarding habitat pressure indicator data and analytical methods for the
 
 Methods for delineating Chinook CU **spawning zones of influence (ZOIs)** vary by region in accordance with the CU delineation approach used by DFO. In the Fraser, East Vancouver Island and Mainland Inlets, and West Vancouver Island Regions, Chinook CUs are geographically more broadly defined, which means that the methods employed for determining pink, chum, and coho spawning ZOIs were also applicable to Chinook CUs. The localized spawning ZOI for each Fraser Chinook CU was delineated by capturing the extent of all 1:20K FWA assessment watersheds that directly intersect with known spawning locations for Chinook.
 
-
 ## East Vancouver Island & Mainland Inlets {#evimi-region}
 
 East Vancouver Island & Mainland Inlets on the Pacific Salmon Explorer includes `r length(which(cu_list$Region == "East Vancouver Island & Mainland Inlets"))` distinct CUs, including all five species of Pacific salmon and steelhead. By species, the Region supports `r length(which(cu_list$Region == "East Vancouver Island & Mainland Inlets" & cu_list$Species.Qualified == "CK"))` Chinook, `r length(which(cu_list$Region == "East Vancouver Island & Mainland Inlets" & cu_list$Species.Qualified == "CM"))` chum, `r length(which(cu_list$Region == "East Vancouver Island & Mainland Inlets" & cu_list$Species.Qualified == "CO"))` coho, `r length(which(cu_list$Region == "East Vancouver Island & Mainland Inlets" & cu_list$Species == "Pink"))` pink, `r length(which(cu_list$Region == "East Vancouver Island & Mainland Inlets" & cu_list$Species.Qualified == "SER"))` river-type sockeye, `r length(which(cu_list$Region == "East Vancouver Island & Mainland Inlets" & cu_list$Species.Qualified == "SEL"))` lake-type sockeye, and `r length(which(cu_list$Region == "East Vancouver Island & Mainland Inlets" & cu_list$Species.Qualified == "SH"))` steelhead CUs ([Appendix 1](#appendix-1)).
 
 In 2025, based on feedback from our Population Science Advisory Committee, we split the former Region of Vancouver Island & Mainland Inlets into two regions to better represent the distinct ecology and environments of East Vancouver Island & Mainland Inlets and West Vancouver Island. We defined the East Vancouver Island & Mainland Inlets Region according to similar criteria used on the Central Coast: geographic proximity to other Regions within the Pacific Salmon Explorer, geographic extent of CUs mainly contained within the Region and FWA Watershed Groups. The resulting East Vancouver Island & Mainland Inlets Region (Figure \@ref(fig:EVIMIMap)) encompasses 58,305 km$^2$ across East Vancouver Island and the adjacent mainland fjords and inlets, from Burrard Inlet and Howe Sound in the south to Smith Inlet and the northern Broughton Archipelago in the north. The process of data gathering, synthesis, outreach, and engagement to complete the initial assessments within the East Vancouver Island & Mainland Inlets Region was conducted over two years, from the spring of 2018 to 2020.
 
-For the East Vancouver Island & Mainland Inlets and West Vancouver Island Regions, we engaged with First Nations, DFO regional biologists and managers, and other salmon experts who provided feedback on the development of the Pacific Salmon Explorer through several localized Technical Meetings. The make-up of stakeholders at these Technical Meetings was based on various geographic and social groupings present across the region. Through the Technical Meeting and engagement process, we received feedback from First Nation aggregate organizations and individual First Nations across the Region, including the Island Marine Aquatic Working Group (IMAWG), A-Tlegay Fisheries Society and member Nations, Nuu-chah-nulth Tribal Council, and Nuu-chah-nulth First Nations, Maa-nulth Treaty Society and member Nations, Q'ul-lhanumutsun Aquatic Resources Society and Cowichan Tribes First Nation, Broughton Aquaculture Transition Initiative and the Namgis First Nation, Musgamagw Dzawada'enuxw Fisheries Group, the Quatsino First Nation, and Kwakiutl First Nation. 
+For the East Vancouver Island & Mainland Inlets and West Vancouver Island Regions, we engaged with First Nations, DFO regional biologists and managers, and other salmon experts who provided feedback on the development of the Pacific Salmon Explorer through several localized Technical Meetings. The make-up of stakeholders at these Technical Meetings was based on various geographic and social groupings present across the region. Through the Technical Meeting and engagement process, we received feedback from First Nation aggregate organizations and individual First Nations across the Region, including the Island Marine Aquatic Working Group (IMAWG), A-Tlegay Fisheries Society and member Nations, Nuu-chah-nulth Tribal Council, and Nuu-chah-nulth First Nations, Maa-nulth Treaty Society and member Nations, Q'ul-lhanumutsun Aquatic Resources Society and Cowichan Tribes First Nation, Broughton Aquaculture Transition Initiative and the Namgis First Nation, Musgamagw Dzawada'enuxw Fisheries Group, the Quatsino First Nation, and Kwakiutl First Nation.
 
 ### Conservation Unit Changes {#evimi-cu-changes}
 
@@ -498,19 +690,19 @@ We acquired multiple sources' **juvenile survey** data for several CUs in the Ea
 
 In the East Vancouver Island & Mainland Inlets Region, **observed spawner abundance** is the sum of all spawner survey data documented in [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). For steelhead, spawner survey were sourced from the Province of BC's [EcoCat](https://a100.gov.bc.ca/pub/acat/public/welcome.do), @KormanandSchick2019, and @Mcculloch2020WestCoastRegion.
 
-**Estimated spawner abundance** in the East Vancouver Island & Mainland Inlets Region is not available from a centralized database. Thus, estimates of spawner abundance were acquired from specific DFO biologists. The Nimpkish CU was provided by Pieter van Will (DFO Stock Assessment). For pink salmon, we visualize a dataset acquired from DFO (Pieter van Will). For Chinook, estimated spawner abundance was generated through the Southern BC Chinook Working Group [@BrownEtAl20202020SummaryAbundance].
-<!-- SP: Where did the estimated spawner abundance for Sakinaw sockeye come from? -->
+**Estimated spawner abundance** in the East Vancouver Island & Mainland Inlets Region is not available from a centralized database. Thus, estimates of spawner abundance were acquired from specific DFO biologists. The Nimpkish CU was provided by Pieter van Will (DFO Stock Assessment). For pink salmon, we visualize a dataset acquired from DFO (Pieter van Will). For Chinook, estimated spawner abundance was generated through the Southern BC Chinook Working Group [@BrownEtAl20202020SummaryAbundance]. <!-- SP: Where did the estimated spawner abundance for Sakinaw sockeye come from? -->
 
 In contrast to estimated spawner abundance values for other species and areas, East Vancouver Island & Mainland Inlets Chinook values are only a subset of the entire CU. These subset values are based on the most intensively monitored streams (i.e. there is no expansion made so that the estimated value represents the whole CU). The year at which each estimate spawner abundance time series for Chinook also varies based on the availability and quality of data, with the start year of the time series determined by expert opinion [@BrownEtAl20202020SummaryAbundance]. For chum, estimated spawner abundance was provided by Diana Dobson (DFO Stock Assessment) based on @HoltEtAl2018EvaluatingBenchmarksBiological data. There are no CU-level estimates of spawner abundance for coho salmon in the East Vancouver Island & Mainland Inlets Region. Thus, biological status for coho is data deficient for this Region.
 
 For steelhead, there are instances where long timeseries (i.e., spanning at least 20 years) of spawner survey data are available for some, but not all streams within a CU. If we assume that the sum of spawners observed in these streams is a reasonable indicator of the relative abundance of the overall CU through time, then we can use these streams as an *index* of spawner abundance for the CU. In these cases, all available spawner counts or estimates in a CU are summed for each year to provide a historical timeseries of the *observed* spawner abundance for the CU. We account for years where one or more of the streams were not monitored by infilling data for those years based on the average proportional contribution from a given stream over the whole time series (i.e. the average proportion of total spawners typically from this stream). The resulting timeseries is then presented as the *estimated* spawner abundance timeseries. This protocol was applied to generate the estimated spawner abundance timeseries presented for the East Vancouver Island Winter and East Vancouver Island Summer CUs. Data used to derive these indices of estimated spawner abundance for these CUs was sourced from the Province of BC's [EcoCat](https://a100.gov.bc.ca/pub/acat/public/welcome.do) and @Mcculloch2020WestCoastRegion. This approach was endorsed by PSF's Steelhead Technical Working Group and the Province of BC's West Coast Region Fisheries Biologist (Mike McCulloch) because there is observed synchrony in trends among steelhead populations within the same CUs on East Vancouver Island.
 
 #### Run Timing {#evimi-run-timing}
+
 <!-- Steph to add detailed sources from paper when feasible. -->
 
 Run timing data were compiled from a variety of sources detailed in @WilsonPeacock2025FreshwaterLifecycleTiming See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
 
-#### Catch & Run Size  {#evimi-catch-run-size}
+#### Catch & Run Size {#evimi-catch-run-size}
 
 **Catch and run size** data were provided for chum (Diana Dobson, DFO Stock Assessment), pink (Pieter van Will, DFO Stock Assessment), and sockeye (Diana Dobson and Pieter van Will, DFO Stock Assessment) in the East Vancouver Island & Mainland Inlets Region. For a general description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#catch-run-size).
 
@@ -568,29 +760,30 @@ In the West Vancouver Island Region, we directly accessed datasets for biologica
 
 #### Juvenile Surveys {#wvi-juvenile-surveys}
 
-We acquired multiple sources' **juvenile survey** data for several CUs in the West Vancouver Island Region.  
-Juvenile survey data for streams within the West Vancouver Island-South (Fall 0.x) Chinook CU were provided by Bob Bocking (Maa-nulth Treaty Society) and Jared Dick (Nuu-chah-nulth Tribal Council). Juvenile survey data for streams within the West Vancouver Island coho CU were provided by Roger Dunlop (Nuu-chah-nulth Tribal Council), Karalea Cantera (DFO, Fish and Fish Habitat Protection Program), and sourced from Wade and Irvine [@WadeIrvine2018SynthesisSmoltSpawner]. Juvenile surveye data for streams within the Juan de Fuca-Pachena coho CU were sourced from @WadeIrvine2018SynthesisSmoltSpawner. Juvenile survey data for the Great Central Lake sockeye, Sproat Lake sockeye), and Hucuktlis Lake sockeye CUs were provided by Graham Murrell (Nuu-chah-nulth Tribal Council). 
+We acquired multiple sources' **juvenile survey** data for several CUs in the West Vancouver Island Region.\
+Juvenile survey data for streams within the West Vancouver Island-South (Fall 0.x) Chinook CU were provided by Bob Bocking (Maa-nulth Treaty Society) and Jared Dick (Nuu-chah-nulth Tribal Council). Juvenile survey data for streams within the West Vancouver Island coho CU were provided by Roger Dunlop (Nuu-chah-nulth Tribal Council), Karalea Cantera (DFO, Fish and Fish Habitat Protection Program), and sourced from Wade and Irvine [@WadeIrvine2018SynthesisSmoltSpawner]. Juvenile surveye data for streams within the Juan de Fuca-Pachena coho CU were sourced from @WadeIrvine2018SynthesisSmoltSpawner. Juvenile survey data for the Great Central Lake sockeye, Sproat Lake sockeye), and Hucuktlis Lake sockeye CUs were provided by Graham Murrell (Nuu-chah-nulth Tribal Council).
 
 #### Hatchery Releases {#wvi-hatchery-releases}
 
 **Hatchery releases** in the West Vancouver Island Region for all species were provided by DFO (Brock Ramshaw, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#hatchery-releases) for details on data and analytical methods.
 
-#### Spawner Abundance {#wvi-spawner-abundance}
+#### Spawner Abundance
 
-In the West Vancouver Island Region, **observed spawner abundance** is the sum of all spawner survey data documented in [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). 
+In the West Vancouver Island Region, **observed spawner abundance** is the sum of all spawner survey data documented in [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance).
 
-**Estimated spawner abundance** in the West Vancouver Island Region is not available from a centralized database. Thus, estimates of spawner abundance were acquired from specific DFO biologists. For Chinook, estimated spawner abundance was generated through the Southern BC Chinook Working Group [@BrownEtAl20202020SummaryAbundance]. For sockeye, estimated spawner abundance and recruits per spawner data for Sproat, Great Central and Hucuktlis (formerly Henderson) CUs were provided by Nicholas Brown (DFO). For pink salmon, we visualize a dataset acquired from Pieter van Will (DFO). 
+**Estimated spawner abundance** in the West Vancouver Island Region is not available from a centralized database. Thus, estimates of spawner abundance were acquired from specific DFO biologists. For Chinook, estimated spawner abundance was generated through the Southern BC Chinook Working Group [@BrownEtAl20202020SummaryAbundance]. For sockeye, estimated spawner abundance and recruits per spawner data for Sproat, Great Central and Hucuktlis (formerly Henderson) CUs were provided by Nicholas Brown (DFO). For pink salmon, we visualize a dataset acquired from Pieter van Will (DFO).
 
 In contrast to estimated spawner abundance values for other species and areas, West Vancouver Island Chinook values are only a subset of the entire CU. These subset values are based on the most intensively monitored streams (i.e. there is no expansion made so that the estimated value represents the whole CU). The year at which each estimate spawner abundance time series for Chinook also varies based on the availability and quality of data, with the start year of the time series determined by expert opinion [@BrownEtAl20202020SummaryAbundance]. For chum, estimated spawner abundance was provided by Diana Dobson (DFO Stock Assessment) based on @HoltEtAl2018EvaluatingBenchmarksBiological data. There are no CU-level estimates of spawner abundance for coho salmon in the West Vancouver Island Region. Thus, biological status for coho is data deficient for this Region.
 
 For steelhead, there are instances where long timeseries (i.e., spanning at least 20 years) of spawner survey data are available for some, but not all streams within a CU. If we assume that the sum of spawners observed in these streams is a reasonable indicator of the relative abundance of the overall CU through time, then we can use these streams as an *index* of spawner abundance for the CU. In these cases, all available spawner counts or estimates in a CU are summed for each year to provide a historical timeseries of the *observed* spawner abundance for the CU. We account for years where one or more of the streams were not monitored by infilling data for those years based on the average proportional contribution from a given stream over the whole time series (i.e. the average proportion of total spawners typically from this stream). The resulting time series is then presented as the *estimated* spawner abundance time series. This protocol was applied to generate the estimated spawner abundance time series presented for the West Vancouver Island Summer CU. Data used to derive these indices of estimated spawner abundance for these CUs was sourced from the Province of BC's [EcoCat](https://a100.gov.bc.ca/pub/acat/public/welcome.do) and @Mcculloch2020WestCoastRegion. This approach was endorsed by PSF's Steelhead Technical Working Group and the Province of BC's West Coast Region Fisheries Biologist (Mike McCulloch) because there is observed synchrony in trends among steelhead populations within the same CUs on Vancouver Island.
 
-#### Run Timing {#wvi-run-timing}
+#### Run Timing {#run-timing}
+
 <!-- Steph to add detailed sources from paper when feasible. -->
 
 Run timing data were compiled from a variety of sources detailed in @WilsonPeacock2025FreshwaterLifecycleTiming See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
 
-#### Catch & Run Size  {#wvi-catch-run-size}
+#### Catch & Run Size {#catch-run-size}
 
 **Catch and run size** data were provided for chum (Diana Dobson, DFO Stock Assessment), pink (Pieter van Will, DFO Stock Assessment), and sockeye (Diana Dobson and Pieter van Will, DFO Stock Assessment) in the West Vancouver Island Region. For a general description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#catch-run-size).
 
@@ -598,11 +791,13 @@ Run timing data were compiled from a variety of sources detailed in @WilsonPeaco
 
 **Recruits-per-spawner** data were derived by DFO and provided for chum (Diana Dobson, DFO Stock Assessment), pink (Pieter van Will, DFO Stock Assessment), and sockeye (Nicholas Brown, DFO) in the West Vancouver Island Region. For a general description of recruits-per-spawner methods, see [Overview of Population Indicators: Recruits-per-Spawner](#recruits-per-spawner).
 
+```{=html}
 <!-- SP: Commented out because no region-specific considerations for this assessment.
 #### Trends in Spawner Abundance
 
 **Trends in spawner abundance** were derived for chum (Diana Dobson, DFO Stock Assessment), pink (Pieter van Will, DFO Stock Assessment), and sockeye (Diana Dobson and Pieter van Will, DFO Stock Assessment) in the West Vancouver Island Region. For steelhead, data used to derive estimated spawner abundance for was sourced from the Province of BC's [EcoCat](https://a100.gov.bc.ca/pub/acat/public/welcome.do) and @Mcculloch2020WestCoastRegion. For a description of trends in spawner abundance methods, see [Overview of Population Indicators: Trends in Spawner Abundance](#spawner-abundance).
 -->
+```
 
 #### Biological Status {#wvi-biological-status}
 
@@ -644,7 +839,7 @@ In the Columbia Region, we accessed datasets for biological indicators from publ
 
 #### Spawner Surveys {#columbia-spawner-surveys}
 
-**Spawner survey** data for streams in the Columbia Region were sourced from [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), Chuck Parken, (pers comm), and the Sylix Okanagan Nation (Elinor McGrath, personal communication). 
+**Spawner survey** data for streams in the Columbia Region were sourced from [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), Chuck Parken, (pers comm), and the Sylix Okanagan Nation (Elinor McGrath, personal communication).
 
 Steelhead spawning surveys are reported annually by the [Okanogan Basin Monitoring and Evaluation Program](https://www.okanoganmonitoring.org/). For the period 2006-2011, a fence count was undertaken in akskʷəkʷant (Inkaneep Creek) [@WiensEtAl2012SteelheadSpawnerEnumeration]. Starting in 2006, steelhead estimates for the Okanagan River are based on PIT-tag detections at one or more sites between the Canada/US border and Vernon, BC. Annual estimates based on these detections are reported by the[Okanogan Basin Monitoring and Evaluation Program](https://www.okanoganmonitoring.org/) [e.g., @OBEMP20252024OkanoganSubbasin]. We report the total (natural-origin + hatchery) abundance in the spawner survey but natural-origin abundance only for the CU-level spawner abundance (see [below](#columbia-spawner-abundance).
 
@@ -674,11 +869,13 @@ Estimates of the average timing at which Okanagan watershed salmon return to spa
 
 **Recruits-per-spawner** data for CUs in the Columbia Region were not available. For a description of recruits-per-spawner methods, see [Overview of Population Indicators: Recruits-per-Spawner](#recruits-per-spawner).
 
+```{=html}
 <!-- SP: Removed because no region-specific information; based on estimated spawner abundance
 #### Trends in Spawner Abundance 
 
 **Trends in spawner abundance** for CUs in the Columbia Region were derived from Spawner Abundance Estimates. For steelhead, estimated spawner abundance data for the Mid Columbia Summer CU were sourced from the [Okanogan Basin Monitoring Program Database](#0). For a description of trends in spawner abundance methods, see [Overview of Population Indicators: Trends in Spawner Abundance](#spawner-abundance).
 -->
+```
 
 #### Biological Status {#columbia-biological-status}
 
@@ -692,6 +889,7 @@ Nuances regarding habitat pressure indicator data and analytical methods for the
 
 Methods for delineating Chinook CU **spawning zones of influence (ZOIs)** vary by region in accordance with the CU delineation approach used by DFO. In the Fraser, Vancouver Island and Mainland Inlets, and Columbia regions, Chinook CUs are more broadly defined geographically, which means that the methods employed for determining pink, chum, and coho spawning ZOIs were also applicable to Chinook CUs. The localized spawning ZOI for each Columbia Chinook CU was delineated by capturing the extent of all 1:20K FWA assessment watersheds that directly intersect with known spawning locations for Chinook.
 
+```{=html}
 <!--
 #### Spatial Data Processing for Habitat Pressure Indicators
 
@@ -723,3 +921,4 @@ where A is the original polygon area, C is the proportion of the opening covered
 
 Spawning areas identified in the Known BC Fish Observations and Distributions were minimal. We supplemented this data with local knowledge and information in published literature, including sockeye [@StockwellHyatt2003SummaryOkanaganSockeye; @HyattStockwell2019ChasingIllusionSuccessful; @StockwellEtAl2020MethodsSummaryObservations] and Chinook [@MatylewichEtAl2019SummaryOkanaganChinook; @MahonyEtAl2019RecoveryPotentialAssessmentb].
 -->
+```

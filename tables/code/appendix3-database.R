@@ -36,7 +36,7 @@ stripNA <- function(x){
 bs <- retrieve_data_from_PSF_databse_fun(name_dataset = "appdata.vwdl_biologicalstatus_output")
 
 # Filter out Yukon for now
-bs <- bs %>% filter(region != "Yukon")
+# bs <- bs %>% filter(region != "Yukon")
 
 ###############################################################################
 # Make pretty for table display

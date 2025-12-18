@@ -51,9 +51,9 @@ Hatchery releases in the Yukon Region for all species were provided by DFO (Broc
 
 #### Spawner Abundance {#yukon-spawner-abundance}
 
-**Estimated spawner abundances** for Chinook were obtained from [Connors et al.'s (2025) run-reconsruction](https://github.com/Pacific-salmon-assess/yukon-CK-ResDoc) (in particular the dataset [esc-data.csv](https://github.com/Pacific-salmon-assess/yukon-CK-ResDoc/blob/main/analysis/data/generated/esc-data.csv)) for the following CUs: Big Salmon, Nordenskiold, Pelly, Middle Yukon, Stewart, White and Northern Yukon. Although estimates are also available in this dataset for the Upper Yukon and Teslin CUs, they are unrealistically high compared with local observations. To address this, we derived CU-level spawner abundances from two spawner surveys for each of these CUs (cf., details [here](https://bookdown.org/salmonwatersheds/teslin-upper-yukon-alternatives/teslin-upper-yukon-alternatives.html)). For the Porcupine and Old Crow CUs, we used estimated counts from the Porcupine sonar, as reported by the [JTC](https://www.yukonriverpanel.com/publications/yukon-river-joint-technical-committee-reports/). Although it was not possible to partition these totals between the two CUs, the combined abundance fell below the absolute benchmark of 1,500 spawners. Accordingly, we applied the same time series to both CUs, resulting in a poor biological status.
+**Estimated spawner abundances** for Chinook were obtained from [Connors et al.'s (2025) run-reconsruction](https://github.com/Pacific-salmon-assess/yukon-CK-ResDoc) (in particular the dataset [esc-data.csv](https://github.com/Pacific-salmon-assess/yukon-CK-ResDoc/blob/main/analysis/data/generated/esc-data.csv)) for the following CUs: *Big Salmon, Nordenskiold, Pelly, Middle Yukon, Stewart, White* and *Northern Yukon*. Although estimates are also available in this dataset for the *Upper Yukon* and *Teslin* CUs, they are unrealistically high compared with local observations. To address this, we derived CU-level spawner abundances from two spawner surveys for each of these CUs (cf., details [here](https://bookdown.org/salmonwatersheds/teslin-upper-yukon-alternatives/teslin-upper-yukon-alternatives.html)). For the *Porcupine* and *Old Crow* CUs, we used estimated counts from the Porcupine sonar, as reported by the [JTC](https://www.yukonriverpanel.com/publications/yukon-river-joint-technical-committee-reports/). Although it was not possible to partition these totals between the two CUs, the combined abundance fell below the absolute benchmark of 1,500 spawners. Accordingly, we applied the same time series to both CUs ( which results in a poor biological status).
 
-For Chum, we used [JTC]((https://www.yukonriverpanel.com/publications/yukon-river-joint-technical-committee-reports/)) data to estimate spawner abundance for four of the seven CUs, combining total escapement estimates from the Eagle sonar with relative proportion obtained from genetic stock identification. For the Porcupine CU, we used the Fishing Branch estimate from the [JTC 2025 report](https://www.yukonriverpanel.com/publications/yukon-river-joint-technical-committee-reports/) (appendix B12) as relative abundance time series.
+For Chum, we used [JTC]((https://www.yukonriverpanel.com/publications/yukon-river-joint-technical-committee-reports/)) data to estimate spawner abundance for four of the seven CUs, combining total escapement estimates from the Eagle sonar with relative proportion obtained from genetic stock identification. For the *Porcupine* CU, we used the Fishing Branch estimate from the [JTC 2025 report](https://www.yukonriverpanel.com/publications/yukon-river-joint-technical-committee-reports/) (Appendix B12) as relative abundance time series.
 
 
 #### Run Timing {#yukon-run-timing}
@@ -121,9 +121,9 @@ As previously, we determine the overall exploitation rate (`exploitation_rate`) 
 6)  Define for each CU `total_run` = `estimated_count` + `combined_catch`
 
 
-For **Chum CU the Porcupine River**:
+For **Chum CU in the Porcupine River**:
 
-The estimated spawner abundance for the Chum *Porcupine* CU represents the Fishing Branch portion of the Porcupine river, which cannot be considered as an absolute count (see [Section 5.1.1.4. Spawner Abundance](#yukon-spawner-abundance)). The catch data is in Appendix B22 and also concerns only the Fishing Branch.
+The estimated spawner abundance for the Chum *Porcupine* CU represents the Fishing Branch portion of the Porcupine river, which cannot be considered as an absolute count (see [Section 5.1.1.4. Spawner Abundance](#yukon-spawner-abundance)). The catch data is in Appendix B22 and concerns only the Fishing Branch as well.
 
 The total US and Canadian catch data and total run size across all four CUs is available in Appendix B22. The table also contains `spawning escapement` data, but that latter differs slightly from `spawning escapement estimate` in Appendix B15, which we used to define spawner abundance (see [Section 5.1.1.4. Spawner Abundance](#yukon-spawner-abundance)). For consistency, we decide to use the escapement data in Appendix B15 and not Appendix B22:
 
@@ -146,14 +146,14 @@ There is no value for `us_catch` in 2011 but there is one for `cdn_catch`. So we
     - `combined_catch` = `cdn_catch` + `us_catch` for year > 2010 and = `total_run` - `estimated_count` otherwise
 ```
 
-4)  Define `run_size_adjustment` = `total_run` - `estimated_count` - `combined_catch` (which is =! 0 for year \> 2011).
+4)  Define `run_size_adjustment` = `total_run` - `estimated_count` - `combined_catch` (which is $\neq 0$ for year \> 2011).
 
 5)  Define `exploitation_rate` = `combined_catch` / `total_run`
 
 
 #### Recruits-per-Spawner {#yukon-recruits-per-spawner}
 
-The recruits abundance data is only available from [Connors et al.'s (2025) run-reconsruction work](https://github.com/Pacific-salmon-assess/yukon-CK-ResDoc) (in particular the dataset [brood_table_long.csv](https://github.com/Pacific-salmon-assess/yukon-CK-ResDoc/blob/main/analysis/data/generated/brood_table_long.csv)) for the Chinook CUs Big Salmon, Nordenskiold, Pelly, Middle Yukon, Stewart, White and Northern Yukon.
+The recruits abundance data is only available for the Chinook CUs *Big Salmon, Nordenskiold, Pelly, Middle Yukon, Stewart, White* and *Northern Yukon* and it comes from [Connors et al.'s (2025) run-reconsruction work](https://github.com/Pacific-salmon-assess/yukon-CK-ResDoc) (in particular the dataset [brood_table_long.csv](https://github.com/Pacific-salmon-assess/yukon-CK-ResDoc/blob/main/analysis/data/generated/brood_table_long.csv)) .
 
 
 #### Biological Status {#yukon-biological-status}

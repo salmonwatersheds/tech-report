@@ -5,7 +5,9 @@ account: salmonwatersheds
 server: bookdown.org
 hostUrl: https://bookdown.org/__api__
 appId: 12344
-bundleId: 85462
+bundleId: 91019
 url: https://bookdown.org/salmonwatersheds/tech-report/
+when: 1700583986.97572
+lastSyncTime: 1700583986.97573
 asMultiple: FALSE
 asStatic: FALSE

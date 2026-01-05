@@ -29,7 +29,7 @@ Thank you to everyone who has supported and been a part of this collaborative ef
 
 We also thank our funders for supporting this work to date. Thank you to the Gordon and Betty Moore Foundation, the Government of Canada through Fisheries and Oceans Canada's Coastal Restoration Fund, the Pacific Salmon Endowment Fund Society, the Government of British Columbia, Environment and Climate Change Canada's Habitat Stewardship Fund, the Willow Grove Foundation, and the BC Salmon Restoration and Innovation Fund.
 
-This report was produced by the Pacific Salmon Foundation's Salmon Watersheds Program. Thank you to all program staff who have been involved in the body of work described in this report, including Katrina Connors, Eric Hertz, Leah Honka, Eileen Jones, Katy Bryan, Christine Stevenson, Charlotte Whitney, Vesta Mathers, Clare Atkinson, Kathleen Belton, Bruno Carturan, Rheanna Drennan, Steph Peacock, and Marc Porter.
+This report was produced by the Pacific Salmon Foundation's Salmon Watersheds Program. Thank you to all program staff who have been involved in the body of work described in this report, including Katrina Connors, Eric Hertz, Leah Honka, Eileen Jones, Katy Bryan, Christine Stevenson, Charlotte Whitney, Vesta Mather, Clare Atkinson, Kathleen Belton, Bruno Carturan, Rheanna Drennan, Steph Peacock, and Marc Porter.
 
 ```{r include=TRUE, echo = FALSE, out.width='60%', fig.align='center', fig.alt='Illustration by Aimée van Drimmelen.'}
 knitr::include_graphics("figures/illustration-Aimee-VD-fingerlings-sm.jpg")

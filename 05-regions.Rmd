@@ -13,15 +13,14 @@ app3 <- read.csv("tables/appendix3.csv", na.strings = NA)
 Each **Region** within the Pacific Salmon Explorer has specific attributes related to management regimes, data collection, documentation protocols, and most importantly, salmon populations and habitats (Figure \@ref(fig:regions)). Here, we document Region-specific data sources, methodological considerations, and social processes used in each of the initial biological status, habitat pressure assessments, and any other unique information for each region currently within the Pacific Salmon Explorer.
 
 ```{r regions, fig.cap = "Map of the PSE Regions.", include=TRUE, echo = FALSE, out.width='100%', fig.align='center', fig.alt=''}
-#knitr::include_graphics("figures/regions.png")
-knitr::include_graphics("figures/regions_YK.png")
+knitr::include_graphics("figures/regions.png")
 ```
 
 
 ## Yukon Region {#yukon-region}
 
-```{r ykMap, fig.cap = "Map of the Yukon Region.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/yukon_map.png")
+```{r ykMap, fig.cap = "Map of the Yukon Region.", include=TRUE, echo = FALSE, out.width='50%', fig.align='center', fig.alt=''}
+knitr::include_graphics("figures/region_yukon.png")
 ```
 
 
@@ -213,6 +212,10 @@ At the northwestern edge of BC lie some of the most remote and rugged salmon-bea
 
 The first round of data compilation and local consultation in the Transboundary Region took place from 2021-2024 in collaboration with a Transboundary Technical Working Group, made up of fisheries staff from the Tahltan Central Government, Taku River Tlingit First Nation, the Champagne and Aishihik First Nations, and DFO Regional Biologists, as well as independent salmon experts. This work was funded by the BC Salmon Restoration and Innovation Fund. We also retained Gottfried Pestal (Solv Consulting) to assist in compiling Transboundary population data and providing technical advice on the feasibility of estimating certain indicators.
 
+```{r tbrMap, fig.cap = "Map of the Northern Transboundary Region.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
+knitr::include_graphics("figures/region_northerntransboundary.png")
+```
+
 ### Population Data and Analytical Methods
 
 Because of the Transboundary life-cycles of salmon in this region, most monitoring data are focused on mandatory reporting under the Pacific Salmon Treaty between Canada and the US. Specifically, we relied heavily on data in the Transboundary Technical Committee (TTC) reports and associated appendices [@TTC2022FinalEstimatesTransboundary]. Data in published reports often lag behind data collection by 2-3 years, and we were able to obtain up-to-date version of report appendices from DFO on request (Aaron Foos, pers. comm.). The TTC reports are focused on "Treaty stocks", equivalent to Stock Management Units, for Chinook, coho, and sockeye in the major river basins (Alsek, Stikine, Taku). Information on CUs outside of these Treaty stocks was sparse.
@@ -284,7 +287,7 @@ Based on feedback and local knowledge, we received contextual knowledge on salmo
 Based on feedback from the Haida Gwaii Technical Working Group, the name of the Marian Lake sockeye conservation unit was renamed to "Marian/Eden." The original name developed by DFO [@HoltbyCiruna2007ConservationUnitsPacific] and in DFO's New Salmon Escapement Database was "Marian" however, TWG members indicated that most of the salmon and surveys are in Eden Lake, and a recent DFO IFMP for Northern Salmon listed "Marian/Eden" rather than "Marian" [@DFO2019]. Additionally, while defined by @HoltbyCiruna2007ConservationUnitsPacific as a Conservation Unit, DFO did not have a CU boundary defined for this CU. We defined the CU boundary as the same spatial extent as the spawning habitat for Marian Lake (which encompasses the watersheds that contain Marian Lake, Eden Lake, and Roy Lake).
 
 ```{r hgMap, fig.cap = "Map of the Haida Gwaii Region.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/haidagwaii_map.png")
+knitr::include_graphics("figures/region_haidagwaii.png")
 ```
 
 ### Population Data and Analytical Methods {#haida-gwaii-pop-data}
@@ -354,7 +357,7 @@ In northern BC, the Nass River watershed is the third-largest watershed in the p
 We worked with First Nations in the Nass Region to garner feedback on the Pacific Salmon Explorer approach and analyses through the Nisga'a-Canada-BC Nass Joint Technical Committee and the Gitanyow Fisheries Authority. In addition, in 2015 - 2016, we formed a Nass Technical Advisory Committee to engage with First Nations, DFO regional biologists and managers, and other salmon experts throughout the watershed.
 
 ```{r nassMap, fig.cap = "Map of the Nass Region.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/nass_map.png")
+knitr::include_graphics("figures/region_nass.png")
 ```
 
 ### Population Data and Analytical Methods {#nass-pop-data}
@@ -408,7 +411,7 @@ Methods for delineating Chinook CU spawning zones of influence (ZOIs) vary by re
 The Skeena River watershed, located along the north coast of BC, is the second-largest in the province, contains important tributaries, including the Babine, Kispiox, and Bulkley Rivers, and is one of the most productive river systems in BC. All five species of Pacific salmon spawn and rear in the lower and upper portions of the Skeena River Basin (Figure \@ref(fig:skeenaMap)) within `r length(which(cu_list$Region == "Skeena"))` CUs: `r length(which(cu_list$Region == "Skeena" & cu_list$Species.Qualified == "CK"))` Chinook, `r length(which(cu_list$Region == "Skeena" & cu_list$Species.Qualified == "CM"))` chum, , `r length(which(cu_list$Region == "Skeena" & cu_list$Species.Qualified == "CO"))` coho, `r length(which(cu_list$Region == "Skeena" & cu_list$Species %in% c("Pink (odd)", "Pink (even)")))` pink, `r length(which(cu_list$Region == "Skeena" & cu_list$Species.Qualified == "SER"))` river-type sockeye, `r length(which(cu_list$Region == "Skeena" & cu_list$Species.Qualified == "SEL"))` lake-type sockeye, and `r length(which(cu_list$Region == "Skeena" & cu_list$Species.Qualified == "SH"))` steelhead ([Appendix 1](#appendix-1)). The initial process of data gathering, synthesis, outreach, and engagement to complete the initial assessments for five salmon species within the Skeena Region was conducted over five years, from 2010 to 2014. Subsequent updates to those data have occurred regularly, and steelhead were added in 2023.
 
 ```{r skeenaMap, fig.cap = "Map of the Skeena Region.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/skeena_map.png")
+knitr::include_graphics("figures/region_skeena.png")
 ```
 
 During the initial development of the Pacific Salmon Explorer for the Skeena, we formed a Skeena Technical Advisory Committee and engaged with First Nations, DFO, and other salmon experts throughout the watershed. Through the Technical Advisory Committee process, we received input and feedback from the Gitanyow Fisheries Authority, DFO, Office of the Wet'suwet'en, Lake Babine Nation, Gitxsan Watershed Authorities, Gitxaala First Nation, North Coast-Skeena First Nations Stewardship Society, SkeenaWild Conservation Trust, Bulkley Valley Research Centre, Suskwa Research, BC Ministry of Environment, and DFO.
@@ -509,7 +512,7 @@ As part of the Technical Committee review process, we removed two CUs (Whalen La
 For steelhead in the Central Coast Region, we used CUs defined in @ParkinsonEtAl2005PopulationDatabaseDefining. Through our work and conversations with the Steelhead Technical Working Group, we identified a key issue with the spatial boundaries for some coastal steelhead CUs for groups of winter-run populations, including the North Coast Winter CU in the Central Coast Region. One of the key distinguishing features among steelhead CUs is run timing. The CU boundaries for this winter-run CU did not include watersheds that contain both winter-run and coastal summer-run populations of steelhead. These watersheds were only included in the corresponding coastal summer-run CU (in this case, the North Coast Summer CU). To address this issue in a standardized way for all CUs with this issue, we expanded the CU boundaries for the winter-run CUs to include the entirety of watersheds in the corresponding summer-run CU. In this case, resulting in an overlapping region between the North Coast Winter and North Coast Summer CUs where steelhead from multiple CUs spawn. This approach did not capture watershed-specific nuances in the distribution of winter- and summer-run steelhead populations, which are often not documented. However, these changes to the North Coast Winter CU ensure the CU is not missing key watersheds.
 
 ```{r CentralMap, fig.cap = "Map of the Central Coast Region.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/centralcoast_map.png")
+knitr::include_graphics("figures/region_centralcoast.png")
 ```
 
 ### Population Data and Analytical Methods {#central-coast-pop-data}
@@ -573,7 +576,7 @@ The Fraser River watershed and adjacent coastal watersheds (collectively, the "F
 DFO officially uses the European designation to indicate age class for CUs within the Fraser Region. <!-- Eric - what is this? Add reference of description.  --> However, in the Pacific Salmon Explorer and this report, we use the Gilbert-Rich designation, which is more familiar to most users. We made this decision based on feedback from the Population Science Advisory Committee and other local users in the Region. The process of data gathering, synthesis, outreach, and engagement to complete the initial assessments within the Fraser Region was conducted over two years, from the spring of 2018 to 2020.
 
 ```{r fraserMap, fig.cap = "Map of the Fraser Region.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/fraser_map.png")
+knitr::include_graphics("figures/region_fraser.png")
 ```
 
 Within the Fraser Region, we worked with First Nations, DFO regional biologists and managers, and other salmon experts to garner feedback on the Pacific Salmon Explorer approach and analyses through four sub-regions according to geographic and social groupings: Lower Fraser, Middle Fraser - Mainstem, Middle Fraser - Thompson, and Upper Fraser. Through a series of introductory and Technical Meetings, we received feedback from First Nation aggregate organizations and individual First Nations across those areas, including the Lower Fraser Fisheries Alliance (LFFA) and Lower Fraser First Nations, Secwepemc Fisheries Commission (SFC), and SFC First Nations, Scw'exmx Tribal Council (STC), St'at'imc Chiefs Council (SCC) and member Nations, Nlaka'pamux Nation Tribal Council (NNTC) and NNTC First Nations, Okanagan Nation Alliance (ONA), and the Upper Fraser Fisheries Conservation Alliance including members of the Tsilhqot'in National Government, Carrier-Sekani Tribal Council (CSTC), North Shuswap Tribal Council (NSTC), and Carrier-Chilcotin Tribal Council (CCTC).
@@ -671,7 +674,7 @@ DFO has proposed changes to the CUs for Nanaimo River watershed Spring Chinook, 
 For steelhead in the East Vancouver Island & Mainland Inlets Region, we used CUs defined in @ParkinsonEtAl2005PopulationDatabaseDefining. Through our work and conversations with the Steelhead Technical Working Group, we identified a key issue with the spatial boundaries for some coastal steelhead CUs for groups of winter-run populations, including the East Coast East Vancouver Island Winter, and South Coast Winter CUs in the East Vancouver Island & Mainland Inlets Region. One of the key distinguishing features among steelhead CUs is run timing. The CU boundaries for this winter-run CU did not include watersheds that contain both winter-run and coastal summer-run populations of steelhead. These watersheds were only included in the corresponding coastal summer-run CU (in this case, the East Coast East Vancouver Island Summer, and South Coast Summer CUs). To address this issue in a standardized way among all CUs, we expanded the CU boundaries for the winter-run CUs to include the entirety of watersheds in the corresponding summer-run CU. In this case, resulting in an overlapping region between the East Coast East Vancouver Island Winter and East Coast East Vancouver Island Summer CUs, and the South Coast Winter and South Coast Summer CUs, where steelhead from both CUs spawn. This approach did not capture watershed-specific nuances in the distribution of winter- and summer-run steelhead populations, which are often not documented. However, these changes to the East Coast East Vancouver Island Winter, and South Coast Winter CUs ensure these CUs is not missing key watersheds.
 
 ```{r EVIMIMap, fig.cap = "Map of the East Vancouver Island & Mainland Inlets Region.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/EVIMI_region.png")
+knitr::include_graphics("figures/region_EVIMI.png")
 ```
 
 ### Population Data and Analytical Methods {#evimi-pop-data}
@@ -751,7 +754,7 @@ For the West Vancouver Island and East Vancouver Island and Mainland Inlets Regi
 For steelhead in the West Vancouver Island Region, we used CUs defined in @ParkinsonEtAl2005PopulationDatabaseDefining. Through our work and conversations with the Steelhead Technical Working Group, we identified a key issue with the spatial boundaries for some coastal steelhead CUs for groups of winter-run populations, including the West Coast Vancouver Island Winter CU in the West Vancouver Island Region. One of the key distinguishing features among steelhead CUs is run timing. The CU boundaries for this winter-run CU did not include watersheds that contain both winter-run and coastal summer-run populations of steelhead. These watersheds were only included in the corresponding coastal summer-run CU (in this case, the West Coast Vancouver Island Summer). To address this issue in a standardized way for all CUs with this issue, we expanded the CU boundaries for the winter-run CUs to include the entirety of watersheds in the corresponding summer-run CU. In this case, resulting in an overlapping region between the West Coast Vancouver Island Winter and West Coast Vancouver Island Summer CUs, where steelhead from both CUs spawn. This approach did not capture watershed-specific nuances in the distribution of winter- and summer-run steelhead populations, which are often not documented. However, these changes to the West Coast Vancouver Island Winter CU ensures this CU is not missing key watersheds.
 
 ```{r WVIMap, fig.cap = "Map of the West Vancouver Island Region.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/WVI_region.png")
+knitr::include_graphics("figures/region_WVI.png")
 ```
 
 ### Population Data and Analytical Methods {#wvi-pop-data}
@@ -832,7 +835,7 @@ In addition to the spawning habitat information we acquired from the Fisheries I
 The headwaters of the Columbia River in Canada are part of a vast system over 2000 km in length, with much of the watershed located within the continental United States (US). We have not assessed the biological status or threats to salmon habitats within those areas outside of Canada (Figure \@ref(fig:colMap)), having defined the Columbia region as the entirety of the watershed in Canada. There are two salmon CUs within the Canadian Columbia Region on the Pacific Salmon Explorer - one Chinook and one lake-type sockeye. The process of data gathering and synthesis to complete the initial assessments within the Columbia Region took place over a number of years and was completed in 2022.
 
 ```{r colMap, fig.cap = "Map of the Columbia Region.", include=TRUE, echo = FALSE, out.width='70%', fig.align='center', fig.alt=''}
-knitr::include_graphics("figures/columbia_map.png")
+knitr::include_graphics("figures/region_columbia.png")
 ```
 
 The Columbia River has an extensive history of development, including dams -- salmon have been extirpated from most of the upper Columbia drainage in Canada for more than 80 years. The Okanagan River sub-basin contains the only remaining salmon populations. While two CUs are currently defined, local and traditional knowledge and downstream observations suggest a spring Chinook run (distinct from the current Chinook CU) and coho also occur in the region. Steelhead passage also occurs through the Zosel dam, just south end of Osoyoos lake, a cross border lake.

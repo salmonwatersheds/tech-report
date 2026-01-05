@@ -62,6 +62,12 @@ app4 <- dbGetQuery(
 	statement = "SELECT * FROM appdata.vwdl_setr_appendix4"
 )
 
+# Gett biostatus from other view table
+dat101 <- dbGetQuery(
+	conn = connec, 
+	statement = "SELECT * FROM appdata.vwdl_dataset101_output"
+)
+
 # Get Dataset102: exploitation, current aabundance, benchmarks
 dat102 <- dbGetQuery(
 	conn = connec, 

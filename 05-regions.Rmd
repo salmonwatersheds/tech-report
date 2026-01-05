@@ -181,7 +181,7 @@ As with other DEM-derived watershed products, MERIT-BASINS includes known limita
 
 To address this limitation, watershed areas were evaluated across the Yukon region and ranked by size. The distribution of watershed areas showed a clear inflection separating a small group of exceptionally small polygons from the remaining watersheds. Watersheds within this smallest 3% were considered non-representative units and were classified as Data Deficient.
 
-#### Spawning Zones of Influence
+#### Spawning Zones of Influence {#yukon-zoi}
 
 Methods for delineating spawning zones of influence (ZOIs) vary by region in accordance with the CU delineation approach used by DFO. For the Yukon, spawning ZOIs for each species CU were delineated using the extent of all Assessment Watersheds that directly intersected with the CU boundaries of that species.
 
@@ -259,7 +259,7 @@ Run timing for Transboundary CUs was compiled from several sources. Start, peak,
 
 The TTC reports on weekly harvest and effort, annual harvest, and annual estimates of catch (based on coded-wire tags – CWT – or genetic stock identification – GSI) in US and Canadian commercial, recreational, and First Nations fisheries for specific Stock Management Units (SMUs) and indicator populations covered by the Treaty. From TTC report [@TTC2022FinalEstimatesTransboundary], estimates of spawners, Canadian catch, US catch, and run size are available for the following SMUs: Alsek Chinook, Alsek sockeye, Stikine Chinook, Stikine sockeye, Taku Chinook, Taku coho, and Taku sockeye. In the Stikine, the catch and run size information is further split into the mainstem and Tahltan River components. Based on these data, we provide CU-level estimates of catch and run size for the Alsek Chinook CU and the Tahltan lake-type sockeye CU.
 
-#### Recruits-per-Spawner {#recruits-per-spawner}
+#### Recruits-per-Spawner {#transboundary-recruits-per-spawner}
 
 There were no recruits-per-spawner data available at the CU-level for the Transboundary Region.
 
@@ -452,7 +452,7 @@ SP: Agree; we can examine post-launch. :-S -->
 
 For Skeena Chinook, we used the estimated spawner abundance data reported in @WintherEtAl2024AssessmentSkeenaRiver. Estimated spawner abundance was available for six CUs, and was derived by expanding the proportion of Kitsumkalum River Chinook identified at the Tyee test fishery.
 
-In contrast to Chinook, there has been more consistent distribution and quantity of monitoring effort for Skeena sockeye CUs dating back to 1960. Skeena sockeye data underwent a significant review and update in 2022 [@BiologicalBenchmarksBuilding]. We were provided an update of the estimated spawner abundance data file by DFO (Charmain Carr-Harris, personal communication).
+In contrast to Chinook, there has been more consistent distribution and quantity of monitoring effort for Skeena sockeye CUs dating back to 1960. Skeena sockeye data underwent a significant review and update in 2022 [@FisheriesandOceansCanada2023BiologicalBenchmarksBuilding, @PestalCarr-Harris2025BiologicalBenchmarksBuilding]. We were provided an update of the estimated spawner abundance data file by DFO (Charmain Carr-Harris, personal communication).
 
 For steelhead, we did not apply expansion procedures to observed spawner abundance data to produce estimated spawner abundance. Instead, where spawner survey data approximate the CU-scale (i.e. counts or estimates are produced that are inclusive of all steelhead populations in the CU), we present these data as estimated spawner abundance. Data sources for these data include custodians at the Skeena Region Office of the Province of BC's Fish and Wildlife Branch, @SkeenaFisheriesBranch2019UpperSustutRiver, and @SaimotoSaimoto2011WetSuwetFisheries. For the case of the Bulkley and Morice CUs, estimates from @SaimotoSaimoto2011WetSuwetFisheries represent the total number of spawners returning to these two CUs combined and there is not precedence for estimating the proportion of spawners returning to each individual CU. We visualize these estimates as the estimated spawner abundance for both the Bulkley and Morice CUs (i.e. the same estimated spawner abundance data are visualized for the spawner abundance indicator for both CUs).The Tyee Test Fishery has operated at the mouth of the Skeena River since 1955 providing an aggregate-level index of spawner abundance for steelhead returning to the 10 summer-run CUs in the Skeena watershed. There are, however, currently no available data for escapement to specific CUs or populations based on Tyee Test Fishery monitoring.
 
@@ -468,11 +468,11 @@ For other CUs, run timing data were estimated by DFO North Coast Staff. See [Ove
 
 #### Catch & Run Size {#skeena-catch-run-size}
 
-Catch and run size, and subsequent exploitation rates for CUs in the Skeena region were calculated by LGL and DFO from the [Fisheries Operating System (FOS)](https://open.canada.ca/data/en/dataset/7ac5fe02-308d-4fff-b805-80194f8ddeb4) and other DFO databases. We accessed these datasets for pink, chum and coho salmon via the North and Central Coast (NCC) Database, maintained by LGL Ltd. [@EnglishEtAl2018NorthCentralCoast] and for sockeye following @BiologicalBenchmarksBuilding. For a description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#catch-run-size).
+Catch and run size, and subsequent exploitation rates for CUs in the Skeena region were calculated by LGL and DFO from the [Fisheries Operating System (FOS)](https://open.canada.ca/data/en/dataset/7ac5fe02-308d-4fff-b805-80194f8ddeb4) and other DFO databases. We accessed these datasets for pink, chum and coho salmon via the North and Central Coast (NCC) Database, maintained by LGL Ltd. [@EnglishEtAl2018NorthCentralCoast] and for sockeye following @FisheriesandOceansCanada2023BiologicalBenchmarksBuilding. For a description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#catch-run-size).
 
 #### Recruits-per-Spawner {#skeena-recruits-per-spawner}
 
-Recruits-per-spawner data for CUs in the Skeena Region were derived from the DFO age database and CU-level estimates of spawner abundance and catch and run size, accessed from the NCC Database [@EnglishEtAl2018NorthCentralCoast] for pink, chum, and coho salmon. Sockeye salmon data was from @BiologicalBenchmarksBuilding and Chinook salmon data was from @WintherEtAl2024AssessmentSkeenaRiver. For a description of recruits-per-spawner methods, see [Overview of Population Indicators: Recruits-per-Spawner](#recruits-per-spawner).
+Recruits-per-spawner data for CUs in the Skeena Region were derived from the DFO age database and CU-level estimates of spawner abundance and catch and run size, accessed from the NCC Database [@EnglishEtAl2018NorthCentralCoast] for pink, chum, and coho salmon. Sockeye salmon data was from @FisheriesandOceansCanada2023BiologicalBenchmarksBuilding and Chinook salmon data was from @WintherEtAl2024AssessmentSkeenaRiver. For a description of recruits-per-spawner methods, see [Overview of Population Indicators: Recruits-per-Spawner](#recruits-per-spawner).
 
 #### Biological Status {#skeena-biological-status}
 
@@ -771,7 +771,7 @@ Juvenile survey data for streams within the West Vancouver Island-South (Fall 0.
 
 **Hatchery releases** in the West Vancouver Island Region for all species were provided by DFO (Brock Ramshaw, Salmonid Enhancement Program). Data on hatchery locations, release sites, and release numbers from the Freshwater Fisheries Society of BC are available through the [BC Data Catalogue](https://catalogue.data.gov.bc.ca/). Refer to [Overview of Population Indicators: Hatchery Releases](#hatchery-releases) for details on data and analytical methods.
 
-#### Spawner Abundance
+#### Spawner Abundance {#wvi-spawner-abundance}
 
 In the West Vancouver Island Region, **observed spawner abundance** is the sum of all spawner survey data documented in [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance).
 
@@ -781,13 +781,13 @@ In contrast to estimated spawner abundance values for other species and areas, W
 
 For steelhead, there are instances where long timeseries (i.e., spanning at least 20 years) of spawner survey data are available for some, but not all streams within a CU. If we assume that the sum of spawners observed in these streams is a reasonable indicator of the relative abundance of the overall CU through time, then we can use these streams as an *index* of spawner abundance for the CU. In these cases, all available spawner counts or estimates in a CU are summed for each year to provide a historical timeseries of the *observed* spawner abundance for the CU. We account for years where one or more of the streams were not monitored by infilling data for those years based on the average proportional contribution from a given stream over the whole time series (i.e. the average proportion of total spawners typically from this stream). The resulting time series is then presented as the *estimated* spawner abundance time series. This protocol was applied to generate the estimated spawner abundance time series presented for the West Vancouver Island Summer CU. Data used to derive these indices of estimated spawner abundance for these CUs was sourced from the Province of BC's [EcoCat](https://a100.gov.bc.ca/pub/acat/public/welcome.do) and @Mcculloch2020WestCoastRegion. This approach was endorsed by PSF's Steelhead Technical Working Group and the Province of BC's West Coast Region Fisheries Biologist (Mike McCulloch) because there is observed synchrony in trends among steelhead populations within the same CUs on Vancouver Island.
 
-#### Run Timing {#run-timing}
+#### Run Timing {#wvi-run-timing}
 
 <!-- Steph to add detailed sources from paper when feasible. -->
 
 Run timing data were compiled from a variety of sources detailed in @WilsonPeacock2025FreshwaterLifecycleTiming See [Overview of Population Indicators: Run Timing](#run-timing) for a description of the run timing indicator and methods.
 
-#### Catch & Run Size {#catch-run-size}
+#### Catch & Run Size {#wvi-catch-run-size}
 
 **Catch and run size** data were provided for chum (Diana Dobson, DFO Stock Assessment), pink (Pieter van Will, DFO Stock Assessment), and sockeye (Diana Dobson and Pieter van Will, DFO Stock Assessment) in the West Vancouver Island Region. For a general description of catch and run size methods, see [Overview of Population Indicators: Catch & Run Size](#catch-run-size).
 
@@ -845,7 +845,7 @@ In the Columbia Region, we accessed datasets for biological indicators from publ
 
 **Spawner survey** data for streams in the Columbia Region were sourced from [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), Chuck Parken, (pers comm), and the Sylix Okanagan Nation (Elinor McGrath, personal communication).
 
-Steelhead spawning surveys are reported annually by the [Okanogan Basin Monitoring and Evaluation Program](https://www.okanoganmonitoring.org/). For the period 2006-2011, a fence count was undertaken in akskʷəkʷant (Inkaneep Creek) [@WiensEtAl2012SteelheadSpawnerEnumeration]. Starting in 2006, steelhead estimates for the Okanagan River are based on PIT-tag detections at one or more sites between the Canada/US border and Vernon, BC. Annual estimates based on these detections are reported by the[Okanogan Basin Monitoring and Evaluation Program](https://www.okanoganmonitoring.org/) [e.g., @OBEMP20252024OkanoganSubbasin]. We report the total (natural-origin + hatchery) abundance in the spawner survey but natural-origin abundance only for the CU-level spawner abundance (see [below](#columbia-spawner-abundance).
+Steelhead spawning surveys are reported annually by the [Okanogan Basin Monitoring and Evaluation Program](https://www.okanoganmonitoring.org/). For the period 2006-2011, a fence count was undertaken in akskʷəkʷant (Inkaneep Creek) [@WiensEtAl2012SteelheadSpawnerEnumeration]. Starting in 2006, steelhead estimates for the Okanagan River are based on PIT-tag detections at one or more sites between the Canada/US border and Vernon, BC. Annual estimates based on these detections are reported by the[Okanogan Basin Monitoring and Evaluation Program](https://www.okanoganmonitoring.org/) [e.g., @OBMEP20252024OkanoganSubbasin]. We report the total (natural-origin + hatchery) abundance in the spawner survey but natural-origin abundance only for the CU-level spawner abundance (see [below](#columbia-spawner-abundance).
 
 For a description of the spawner survey indicator, For a description of the spawner survey indicator, see [Overview of Population Indicators: Spawner Surveys](#spawner-surveys).
 
@@ -859,7 +859,7 @@ For a description of the spawner survey indicator, For a description of the spaw
 
 #### Spawner Abundance {#columbia-spawner-abundance}
 
-**Observed spawner abundance** for CUs in the Columbia Region, represent the total number of mature salmon that return to a CU to spawn in a given year, and were available from [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), Chuck Parken, (pers comm), and the Sylix Okanagan Nation (Elinor McGrath, pers comm). @StockwellHyatt2003SummaryOkanaganSockeye describe survey methods and analytical techniques of summary estimates of annual escapement. Considerations in spawner abundance are also described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). Columbia CU-level **estimates of spawner abundance** (run reconstructions) were also sourced from [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), Chuck Parken, (pers comm), and the Sylix Okanagan Nation (Elinor McGrath, personal communication). For steelhead, estimated spawner abundance data for the Mid Columbia Summer CU are sourced annually from the [Okanogan Basin Monitoring Program Database](https://www.okanoganmonitoring.org/) [e.g., @OBEMP20252024OkanoganSubbasin].
+**Observed spawner abundance** for CUs in the Columbia Region, represent the total number of mature salmon that return to a CU to spawn in a given year, and were available from [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), Chuck Parken, (pers comm), and the Sylix Okanagan Nation (Elinor McGrath, pers comm). @StockwellHyatt2003SummaryOkanaganSockeye describe survey methods and analytical techniques of summary estimates of annual escapement. Considerations in spawner abundance are also described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance). Columbia CU-level **estimates of spawner abundance** (run reconstructions) were also sourced from [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), Chuck Parken, (pers comm), and the Sylix Okanagan Nation (Elinor McGrath, personal communication). For steelhead, estimated spawner abundance data for the Mid Columbia Summer CU are sourced annually from the [Okanogan Basin Monitoring Program Database](https://www.okanoganmonitoring.org/) [e.g., @OBMEP20252024OkanoganSubbasin].
 
 #### Run Timing {#columbia-run-timing}
 

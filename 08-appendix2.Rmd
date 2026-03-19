@@ -1,99 +1,125 @@
 # Appendix 2: NuSEDS Data Processing {#appendix-2 .unnumbered}
 
-Below is a summary of NuSEDS cleaning procedure and attribution of the data to Conservation Units (CUs) as defined in the Pacific Salmon Explorer ([PSE](https://www.salmonexplorer.ca/)). The complete details of the cleaning procedure can be found at [1_nuseds_collation.html]( https://bookdown.org/salmonwatersheds/1_nuseds_collation/1_nuseds_collation.html) and the corresponding Rmd script can be accessed from [github/.../spawner-surveys/code/1_nuseds_collation.rmd](https://github.com/salmonwatersheds/population-indicators/blob/master/spawner-surveys/code/1_nuseds_collation.rmd). 
+This is a summary of the NuSEDS cleaning procedure and attribution of the data to Conservation Units (CUs) as defined in the Pacific Salmon Explorer ([PSE](https://www.salmonexplorer.ca/)). The complete details of the cleaning procedure can be found at [1_nuseds_collation.html]( https://salmonwatersheds.github.io/population-indicators/spawner-surveys/code/1_nuseds_collation.html) and the corresponding Rmd script can be accessed from [github/.../spawner-surveys/code/1_nuseds_collation.rmd](https://github.com/salmonwatersheds/population-indicators/blob/master/spawner-surveys/code/1_nuseds_collation.rmd).
 
-The detailed procedure to match the cleaned NuSEDS data to CUs is available at [2_nuseds_cuid_pse.html](https://bookdown.org/salmonwatersheds/2_nuseds_cuid_pse/2_nuseds_cuid_pse.html) and the corresponding Rmd script can be downloaded from [github/.../spawner-surveys/code/2_nuseds_cuid_pse.rmd](https://github.com/salmonwatersheds/population-indicators/blob/master/spawner-surveys/code/2_nuseds_cuid_pse.rmd).
+These is the first step in preparing the spawner-survey data and it concerns the cleaning of NuSEDS exclusively. The other consecutive steps and associated documentation are provided at the end of this page.
 
-The different versions of the dataset can be downloaded from [zenodo/.../2_nuseds_cuid_streamid](https://doi.org/10.5281/zenodo.14194638).
 
 ## Cleaning Procedure {-}
 
-The objective of the procedure is to obtain the yearly counts of each salmon population in their respective stream and associate these populations to their corresponding conservation unit (CU). The NuSEDS data is separated into two datasets. The all_areas_nuseds dataset contains the observed yearly counts (related fields: `NATURAL_ADULT_SPAWNERS`, `NATURAL_SPAWNERS_TOTAL`, etc.) for each population (related fields: `SPECIES`, `POP_ID`, `POPULATION`) in their respective site (related fields: `AREA`, `GFE_ID`, `WATERBODY`, `GAZETTED_NAME`, etc.), along with the associated methods used (related fields: `ESTIMATE_METHOD`, `ESTIMATE_CLASSIFICATION`, `ENUMERATION_METHODS`). 
+The objective of the procedure is to obtain the yearly counts (i.e. "time series") of each salmon **population** -- defined as a group of salmon belonging to the same conservation unit (CU) and spawning in the same stream -- and associate these populations to their CU. The NuSEDS data is separated into two datasets. The *All Areas NuSEDS* dataset contains the observed yearly counts (related fields: `NATURAL_ADULT_SPAWNERS`, `NATURAL_SPAWNERS_TOTAL`, etc.) for each population (related fields: `SPECIES`, `POP_ID`, `POPULATION`) in their respective site (related fields: `AREA`, `GFE_ID`, `WATERBODY`, `GAZETTED_NAME`, etc.), along with the associated methods used (related fields: `ESTIMATE_METHOD`, `ESTIMATE_CLASSIFICATION`, `ENUMERATION_METHODS`). Note that as the 2025-11-03 NuSEDS update, the CU-related field `FULL_CU_IN` is now in *All Areas NuSEDS* as well.
 
-We first define the unique yearly count field `MAX_ESTIMATE` for each population as the maximum value of the count-related fields in all_areas_nuseds, i.e., `NATURAL_ADULT_SPAWNERS`, `NATURAL_JACK_SPAWNERS`, `NATURAL_SPAWNERS_TOTAL`, `ADULT_BROODSTOCK_REMOVALS`, `JACK_BROODSTOCK_REMOVALS`, `TOTAL_BROODSTOCK_REMOVALS`, `OTHER_REMOVALS` and `TOTAL_RETURN_TO_RIVER`. `MAX_ESTIMATE` is the only count-related field we use in the rest of the procedure. A population’s `MAX_ESTIMATE` data points is referred to as its “time series”.
+The second dataset, *Conservation Unit Census Sites*, links each population (related fields: `POP_ID`) to their respective CU (related fields: `CU_NAME`, `FULL_CU_IN`, `CU_LONGT`, `CU_LAT`, etc.) and site (related fields: `GFE_ID`, `CENSUS_SITE`, `X_LONGT`, `Y_LAT`). Ideally, attributing each time series in *All Areas NuSEDS* its corresponding CU and location’s coordinates in  *Conservation Unit Census Sites* would simply consist in merging the two datasets using the population and location identification number `POP_ID` and `GFE_ID`, respectively. Unfortunately, numerous time series are problematic, which occurs when:
 
-The second dataset, conservation_unit_system_sites, links each population (related fields: `POP_ID`) to their respective CU (related fields: `CU_NAME`, `FULL_CU_IN`, `CU_LONGT`, `CU_LAT`, etc.) and site (related fields: `GFE_ID`, `SYSTEM_SITE`, `X_LONGT`, `Y_LAT`). Ideally, attributing each time series in all_areas_nuseds its corresponding CU and location’s coordinates in conservation_unit_system_sites would simply consist in merging the two datasets using the population and location identification number `POP_ID` and `GFE_ID`, respectively. Unfortunately, numerous time series are problematic, which occurs when:
-
-- A time series is present in all_areas_nuseds but its `POP_ID` and `GFE_ID` association is absent in conservation_unit_system_sites (there are 4428 populations in that case).
+- A time series is present in *All Areas NuSEDS* but its `POP_ID` and `GFE_ID` association is absent in  *Conservation Unit Census Sites* (there are 4447 populations in that case).
 
 - Multiple time series of the same population (i.e. same `POP_ID`) are observed in multiple locations (i.e. different `GFE_IDs`), which should not occur because a `POP_ID` should be defined for a unique location.
 
-- Multiple populations (i.e. different `POP_ID`) of a same CU are observed in the same location (i.e. same `GFE_ID`), suggesting that these populations should form one unique population.
+- Multiple populations (i.e. different `POP_ID`) of a same CU are observed in the same location (i.e. same `GFE_ID`), suggesting that these populations should form one unique population (these `POP_ID` are probably related to different surveys of a same population).
 
-The observation of problematic time series revealed inconsistencies such as missing, duplicated, and conflicting data points (i.e. different counts in the same year). In order to rescue as much data as possible, we attempted to solve these issues by either *(i)* **deleting**, *(ii)* **combining** or *(iii)* **summing** a problematic series to an **alternative series** (i.e., a time series present in all_areas_nuseds that shares either the same `POP_ID` or `GFE_ID` and species), or *(iv)* **creating** a new reference to the time series in conservation_unit_system_sites. In each case, we used all the information available in the different fields and made assumptions based on our professional judgment. Below are more details about the different interventions applied to problematic time series:
-
-- We **deleted** a problematic time series (or a portion of it) from all_areas_nuseds when (1) it was a duplicate of another time series, (2) it had less than four data points and was not spotted during the cleaning process, or (3) the lack of information prevented to combine or merge it to an alternative series or to create a new series in conservation_unit_system_sites (e.g. if run timing was unknown).
-
-- We **combined** a problematic time series with an alternative series when data points were not in conflict (i.e. different value for a same year) and the information available in the other fields was not prescriptive (e.g. the population belong to the same CU, the locations have similar names or spatial coordinates, the runtimings are not different).
-
-- We **summed** a problematic time series to an alternative series having different `POP_ID` but same `GFE_ID` and `CU_NAME` and with conflicting data points.
-
-- We **created** a new reference of the problematic time series in conservation_unit_system_sites (i.e. a new row with a unique `POP_ID` - `GFE_ID` combination) when it could not be deleted, merged or combined to an alternative series.
-
-The diverse and idiosyncratic nature of these problematic cases prevented the establishment of a systematic and simple cleaning process. Many of these cases were resolved individually by observing and comparing time series and accounting for the information available. We proceeded in consecutive steps in which we applied the different types of intervention mentioned above, either after visually inspecting individual time series or by applying a systematic procedure. These steps are detailed below:
-
-1. Remove the time series (i.e. unique `POP_ID` - `GFE_ID` associations) with only NAs values for `MAX_ESTIMATE` in all_areas_nuseds (corresponding to 4424 time series, 101,944 rows or 25% of all_areas_nuseds)
-
-2. Assess all the references to time series present in conservation_unit_system_sites but absent in all_areas_nuseds (247 out of 714 time series in all_areas_nuseds are not referenced in conservation_unit_system_sites)
-
-  + 2.a. Cases with presence of alternative series in all_areas_nuseds (n = 3)
-  
-    - Each case was assessed visually.
-
-  + 2.b. Cases with no alternative time series in all_areas_nuseds (n = 243)
-  
-    - The rows corresponding to these time series are removed from conservation_unit_system_sites (242 of the 243 references correspond to time series in all_areas_nuseds removed in step 1. above because they contained only NAs).
-
-  + 2.c. Case with multiple `GFE_ID` for a single `POP_ID` (n = 1)
-  
-    - The problematic time series was simply removed from conservation_unit_system_sites.
-
-3. Case of time series with the same `POP_ID` but different `GFE_ID`s in conservation_unit_system_sites and present in all_areas_nuseds (n = 1).
-
-  - Two time series had the same `POP_ID` but different `GFE_ID`. Both time series were kept because they are not compatible and have many and recent data points.
-
-4. Assess all the time series present in all_areas_nuseds but absent in conservation_unit_system_sites (n = 242)
-
-  + 4.a. Cases of series with alternative `POP_ID` and no alternative `GFE_ID` (n = 126)
-
-    - Each case was assessed visually.
-
-  + 4.b. Cases of series with alternative `GFE_ID` with or without alternative `POP_ID` (n = 64)
-
-    - Problematic series with the same `POP_ID`s (e.g. series with `POP_ID` = 47925 and `GFE_ID` = 15, 31516 and 31740, respectively) having the same alternative series (e.g. series with `POP_ID` = 47925 and `GFE_ID` = 14) are assessed together, resulting in 37 groups of time series to assess separately.
-
-  + 4.c. Cases with no alternative series (n = 166)
-  
-    - We attempted to associate these time series to a CU using the fields `X_LONGT` and `Y_LAT` to intersect them with the CUs’ shapefiles used in the PSE.
-
-    - Time series without coordinates (or for which coordinates could not be found) were removed from all_areas_nuseds (n = 5).
- 
-    - The reference of the rest of the time series was added to conservation_unit_system_sites
-
-5.  Merge all_areas_nuseds and conservation_unit_system_sites using the fields `POP_ID` and `GFE_ID`.
-
-6.  Assess time series with different `POP_ID` but a same `CU_NAME` and `GFE_ID` (n = 126).
-
-  - Case 1: there is only one data point in one of the series; if it is compatible, then merge to the alternative series, otherwise remove it from all_areas_nuseds.
-
-  - Case 2: One of the series is 100% duplicated with the other one: to remove from all_areas_nuseds.
-
-  - Case 3: the rest of the series are merged; adding the values when data points are in conflict.
+The observation of problematic time series revealed inconsistencies such as missing, duplicated, and conflicting data points (i.e. different counts in the same year). The goal of the procedure is to fix these time series to rescue as many data points as possible.
 
 
-## Attribution of the geographic regions to CUs {-}
+### Determine total count (MAX_ESTIMATE) {-}
 
-We matched the cleaned NuSEDS data with the CUs and streams defined in the Pacific Salmon Explorer, which are associated with a given region ([PSE](https://salmonexplorer.ca)). We used the fields `POP_ID`, `FULL_C_IN` and `CU_NAME`to match the CUs and the fields `SYSTEM_SITE`, `X_LONGT` and `Y_LAT` to match the streams. There are 23 `CU_NAME` not matching to any CUs in the PSE, corresponding to 87 populations and 2256 data points. These time series are kept in the dataset *2_nuseds_cuid_streamid.csv* but do not appear in the PSE.
-
-
-## Estimation of population counts {-}
-
-The **observed count** (or `MAX_ESTIMATE` in the cleaned dataset) for each population is the maximum value of the following fields in all_areas_nuseds: `NATURAL_ADULT_SPAWNERS`, `NATURAL_JACK_SPAWNERS`, `NATURAL_SPAWNERS_TOTAL`, `ADULT_BROODSTOCK_REMOVALS`, `JACK_BROODSTOCK_REMOVALS`, `TOTAL_BROODSTOCK_REMOVALS`, `OTHER_REMOVALS` and `TOTAL_RETURN_TO_RIVER`.
-
-## Coordinates adjustment {-}
-
-There are 41 locations (with a unique GFE_ID) with identical coordinates in conservation_unit_system_sites. This is because the `Y_LAT` and `X_LONGT` field does not corresponds to the survey locations but to the "location of the mouth of the waterbody if flowing, or the centroid if not". Consequently, all locations within a water body have the same coordinates. In large rivers (e.g. Thompson river), such imprecision can shift the coordinates 100s of km away from the true assessment location. We consequently manually adjusted the coordiantes of certain locations to prevent duplication and to improve spatial accuracy.
+We first define the unique yearly count field `MAX_ESTIMATE` for each population as the maximum value of the count-related fields in *All Areas NuSEDS*, i.e., `NATURAL_ADULT_SPAWNERS`, `NATURAL_JACK_SPAWNERS`, `NATURAL_SPAWNERS_TOTAL`, `ADULT_BROODSTOCK_REMOVALS`, `JACK_BROODSTOCK_REMOVALS`, `TOTAL_BROODSTOCK_REMOVALS`, `OTHER_REMOVALS` and `TOTAL_RETURN_TO_RIVER`. `MAX_ESTIMATE` is the only count-related field we use in the rest of the procedure. A population’s `MAX_ESTIMATE` data points is referred to as its “time series”.
 
 
+### Remove duplicated and conflictal rows {-}
 
+There are 60 duplicated rows in *All Areas NuSEDS* when considering the fields related to population (`SPECIES`, `POP_ID`, `POPULATION`), location (`GFE_ID`) and counts (`Year`, `NATURAL_ADULT_SPAWNERS`, `NATURAL_JACK_SPAWNERS`, `NATURAL_SPAWNERS_TOTAL`, `ADULT_BROODSTOCK_REMOVALS`, `JACK_BROODSTOCK_REMOVALS`, `TOTAL_BROODSTOCK_REMOVALS`, `OTHER_REMOVALS`, `TOTAL_RETURN_TO_RIVER`, `ENUMERATION_METHODS`, `ESTIMATE_CLASSIFICATION`), most of them having NA for `MAX_ESTIMATE`. These rows are removed. There are no duplicated rows in *Conservation Unit Census Sites*.
+
+There are two instances in *All Areas NuSEDS* where a same `POP_ID` has two different `MAX_ESTIMATE` values in a same `Year`. We keep the value corresponding to the better method (`ESTIMATE_METHOD`) or the most recent entry.
+
+
+### Find missing stream coordinates {-}
+
+There are nine locations (`GFE_ID`) without coordinates (`Y_LAT`, `X_LONGT`) in *Conservation Unit Census Sites* and 23 in *All Areas NuSEDS* (the coordinates could not be found the other DFO files with `GFE_ID` that were sent to us). We define these coordinates manually using the best information available.
+
+
+### Remove time series only made of NAs {-}
+
+There are 4425 time series in *All Areas NuSEDS* that only have NAs for `MAX_ESTIMATE`. The corresponding 10,2104 rows (24.4%) are removed (the time series with NAs AND 0s are kept).
+
+
+### Time series not in Conservation Unit Census Sites {-}
+
+There are 264 time series in *All Areas NuSEDS* whose reference (i.e. `POP_ID` and `GFE_ID` association) is not in *Conservation Unit Census Sites*. Among those, only 53 have a `CU_NAME` and `FULL_CUN_IN`, which we use to find the corresponding  PSE's `cuid` and `cu_name_pse`. For the remaining 211 time series without a `CU_NAME` and `FULL_CUN_IN` (corresponding to 208 `POP_ID`), we first find their `cuid` and `cu_name_pse` by intersection the their stream coordinates (`X_LONGT`, `Y_LAT`) with the CUs’ shape files used in the PSE. When more than one CU layer is intersected (for a same species), we use the information in `POPULATION` and `WATERBODY` to manually select the correct CU. Once their `cuid` is found, we can find their `CU_NAME` and `FULL_CUN_IN`.
+
+After the procedure, there remain (1) five populations for which we found their `cuid` and `cu_name_pse` but did not find the corresponding `CU_NAME` and `FULL_CU_IN`, and (2) two time series with a `CU_NAME` and `FULL_CU_IN` for which we could not find a `cuid` and `cu_name_pse`.
+
+The reference of these time series is then added to *Conservation Unit Census Sites*.
+
+
+### Find the cuid and cu_name_pse of the remaining time series {-}
+
+We now find the `cuid` and `cu_name_pse` to all the remining time series using `FULL_IN_IN` and `CU_NAME` in both *All Areas NuSEDS* and *Conservation Unit Census Sites*.
+
+After the procedure, there remain (1) the five time series with a `cuid` and `cu_name_pse` but no `CU_NAME` and `FULL_CU_IN` (the ones mention in the section above) and (2) 86 time series (corresponding to 22 `FULL_CU_IN` and `CU_NAME`) for which we could not find a `cuid` and `cu_name_pse`. These series are kept at this stage.
+
+
+### Cases where a CU has multiple time series in a single location {-}
+
+There are 79 instances where multiple time series of a single CU are associated to a one location (`GFE_ID`). Checking all these cases reveals clear duplicated data points or single data point that are not worth keeping. To fix these issues we proceed as follow:
+
+-   **Case 1**: one of the duplicated series has only one data point:
+
+    -   if it is complementary: merge to the other (longer) series
+
+    -   if it is in conflict or a duplicate: remove the focal series
+
+-   **Case 2**: the shorter series is 100% duplicated: removed the focal series
+
+-   **Case 3**: for the rest of the duplicated series:
+
+    -   points that are conflictual or duplicated are summed up
+
+    -   points that are complementary are merged
+
+In the few cases where conflictual data points are summed, we assume that the different runs (e.g., “Chinook Run 1” and “Chinook Run 2”) can be considered a single population. For example, the Bridge River has "Summer" and "Late run" sockeye surveys, but these are both the MIDDLE FRASER river-type sockeye CU.
+
+In the few instances where data points are summed, we define the `ESTIMATE_CLASSIFICATION` (e.g., “RELATIVE ABUNDANCE (TYPE-3)”) as the value corresponding to the highest `MAX_ESTIMATE` value between the two data points.
+
+
+### Cases where a CU has multiple time series in a single location {-}
+
+There are 37 instances where a single `POP_ID` is associated to multiple locations (`GFE_ID`). Similarly as in the previous section, checking all these cases reveals inconsistencies in the data. For instance, the `POPULATION` "Fennel Creek Early Summer Sockeye" (`POP_ID` = 3416) has two complementary time series, one in the `WATERBODAY` "FENNEL CREEK AND SAKUM CREEK" (`GFE_ID` = 2746) and in "FENNEL CREEK" (`GFE_ID` = 261), and these two locations have the same coordinates (`Y_LAT` and `X_LONGT`). In this type of cases, we merge the two series by replacing the location-related fields (i.e. `WATERBODAY`, `CENSUS_SITE`, `GFE_ID`, etc.) of one time series by the values of the other time series in *All Areas NuSEDS*. We only make changes to the data when the issue is obvious and the appropriate information is available to make the correction.
+
+
+### Additional corrections for the Northern Transboundary {-}
+
+PSF formed a technical working group (TWG) specifically to compile data for the Transboundary region (cf. [transboundary-data](https://github.com/salmonwatersheds/transboundary-data/tree/main)). As part of the work the following modifications were requested:
+
+
+- TATSAMENIE RIVER coho (`POP_ID = 45152`) for 1994 and earlier changed to TATSATUA RIVER (`POP_ID = 45154`) and remaining records 1995+ are removed
+
+- any records of `POP_ID = 45151` (Tatsamenie River lake-type sockeye) for 1994 or earlier get changed to `POP_ID = 45153` (TATSATUA RIVER river-type sockeye)
+
+- one record with `POP_ID = 45165` (Chinook Run 2) change to `45164` (Chinook Run 1) in Nahlin river
+
+
+### Merge the two dataset {-}
+
+We merge *All Areas NuSEDS* and *Conservation Unit Census Sites* and the resulting file is exported.
+
+
+### Next steps {-}
+
+There are other consecutive scripts that process the spawner-survey before it is ready for the PSE:
+
+- [2_nuseds_cuid_pse.rmd](https://github.com/salmonwatersheds/population-indicators/blob/master/spawner-surveys/code/2_nuseds_cuid_pse.rmd): to do additional corrections of time series, modifications related to the PSE; for all details: [2_nuseds_cuid_pse.html](https://salmonwatersheds.github.io/population-indicators/spawner-surveys/code/2_nuseds_cuid_pse.html); the different versions of the dataset can be downloaded from [zenodo/.../2_nuseds_cuid_streamid](https://doi.org/10.5281/zenodo.14194638).
+
+- [3_data_extra_Reynolds_lab.rmd](https://github.com/salmonwatersheds/population-indicators/blob/master/spawner-surveys/code/3_data_extra_Reynolds_lab.rmd): to include the Reynolds's Lab data for several populations in the Central Coast; for all details:  [3_data_extra_Reynolds_lab.html](https://salmonwatersheds.github.io/population-indicators/spawner-surveys/code/3_data_extra_Reynolds_lab.html).
+
+- [yukon-data](https://github.com/salmonwatersheds/yukon-data): to compile additional data for all the CUs.
+
+- [columbia-data](https://github.com/salmonwatersheds/columbia-data): to compile additional data for the lake sockeye "Osoyoos" CU. 
+
+- [transboundary-data](https://github.com/salmonwatersheds/transboundary-data): to compile additional data and corrections of data from NuSEDS for multiple CUs
+
+- [central-coast-data](https://github.com/salmonwatersheds/central-coast-data): to compile additional data for the lake sockeye "South Atnarko Lake" CU.
+
+- [steelhead-data](https://github.com/salmonwatersheds/steelhead-data): to compile the data for all CUs across all regions.
+
+- [4_datasets_for_PSE.R](https://github.com/salmonwatersheds/population-indicators/blob/master/spawner-surveys/code/4_datasets_for_PSE.R): to combine all the datasets generated in the different repositories above. 
 

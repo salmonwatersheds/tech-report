@@ -296,7 +296,7 @@ As with the Skeena and Nass regions, in the Haida Gwaii Region many of the datas
 
 #### Spawner Surveys {#haida-gwaii-spawner-surveys}
 
-**Spawner survey** data for streams in the Haida Gwaii Region were sourced from [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6). For a description of the spawner survey indicator, see [Overview of Population Indicators: Spawner Surveys](#spawner-surveys).
+**Spawner survey** data for streams in the Haida Gwaii Region were sourced from [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6). For the "North Haida Gwaii" Chinook, spawner survey data in the Yakoun River the most recent years (2021 to 2025) comes from recent monitoring done by the Haida Nation (Mark Spoljaric, personal communication, April 9, 2026). For a description of the spawner survey indicator, see [Overview of Population Indicators: Spawner Surveys](#spawner-surveys).
 
 #### Juvenile Surveys {#haida-gwaii-juvenile-surveys}
 
@@ -310,7 +310,7 @@ As with the Skeena and Nass regions, in the Haida Gwaii Region many of the datas
 
 Observed spawner abundance for CUs on the in the Haida Gwaii Region is the sum of all spawner survey data as documented in [NuSEDS](https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6), as described in [Overview of Population Indicators: Spawner Abundance](#spawner-abundance).
 
-Haida Gwaii CU-level **estimates of spawner abundance** (run reconstructions) were sourced from the North and Central Coast (NCC) database, updated by PSF for the years 2018-2021. Haida Gwaii CU-level estimated spawner abundance time series were developed for the NCC database according to the expansion factors described in the Skeena Region section above. On Haida Gwaii, the decline in monitoring coverage over the last 10-20 years was mentioned as an area of concern, and a decline in assessments may affect the relationships used to develop total estimates of spawner abundance (run reconstructions), as described in [Data Quality](#data-quality).
+Haida Gwaii CU-level **estimates of spawner abundance** (run reconstructions) were sourced from the North and Central Coast (NCC) database, updated by PSF for the years 2018-2021. Haida Gwaii CU-level estimated spawner abundance time series were developed for the NCC database according to the expansion factors described in the Skeena Region section above. On Haida Gwaii, the decline in monitoring coverage over the last 10-20 years was mentioned as an area of concern, and a decline in assessments may affect the relationships used to develop total estimates of spawner abundance (run reconstructions), as described in [Data Quality](#data-quality). For the "North Haida Gwaii" Chinook, spawner abundance data used for the most recent years (2021 to 2025) is the spawner survey data for the Yakoun River, collected during monitoring done by the Haida Nation (Mark Spoljaric, personal communication, April 9, 2026).
 
 #### Run Timing {#haida-gwaii-run-timing}
 

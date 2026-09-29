@@ -60,7 +60,7 @@ After the procedure, there remain (1) the five time series with a `cuid` and `cu
 
 ### Cases where a CU has multiple time series in a single location {-}
 
-There are 79 instances where multiple time series of a single CU are associated to a one location (`GFE_ID`). Checking all these cases reveals clear duplicated data points or single data point that are not worth keeping. To fix these issues we proceed as follow:
+There are 79 instances where multiple time series of a single CU are associated to one location (`GFE_ID`). Checking all these cases reveals clear duplicated data points or single data point that are not worth keeping. To fix these issues we proceed as follow:
 
 -   **Case 1**: one of the duplicated series has only one data point:
 
@@ -81,7 +81,7 @@ In the few cases where conflictual data points are summed, we assume that the di
 In the few instances where data points are summed, we define the `ESTIMATE_CLASSIFICATION` (e.g., “RELATIVE ABUNDANCE (TYPE-3)”) as the value corresponding to the highest `MAX_ESTIMATE` value between the two data points.
 
 
-### Cases where a CU has multiple time series in a single location {-}
+### Cases where a POP_ID is associated to multiple locations {-}
 
 There are 37 instances where a single `POP_ID` is associated to multiple locations (`GFE_ID`). Similarly as in the previous section, checking all these cases reveals inconsistencies in the data. For instance, the `POPULATION` "Fennel Creek Early Summer Sockeye" (`POP_ID` = 3416) has two complementary time series, one in the `WATERBODAY` "FENNEL CREEK AND SAKUM CREEK" (`GFE_ID` = 2746) and in "FENNEL CREEK" (`GFE_ID` = 261), and these two locations have the same coordinates (`Y_LAT` and `X_LONGT`). In this type of cases, we merge the two series by replacing the location-related fields (i.e. `WATERBODAY`, `CENSUS_SITE`, `GFE_ID`, etc.) of one time series by the values of the other time series in *All Areas NuSEDS*. We only make changes to the data when the issue is obvious and the appropriate information is available to make the correction.
 
